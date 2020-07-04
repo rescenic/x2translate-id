@@ -1,0 +1,2760 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+#include "conditional.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Finnish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FIN)
+#ifdef _WIN32
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Tiedosto"
+    BEGIN
+        MENUITEM "&Avaa\tEnter",                ID_FILE_BROWSE
+        MENUITEM "Selaa uudessa &ikkunassa\tCtrl+Enter", ID_FILE_CLONEBROWSE
+        MENUITEM SEPARATOR
+        MENUITEM "Uusi &välilehti\tCtrl+Ins",   ID_FILE_NEWTAB
+        MENUITEM "Selaa &latteana\tVaihto+Enter", ID_FILE_BROWSEFLAT
+        MENUITEM "L&ähetä leikeastiaan\tCtrl+S", ID_FILE_SENDTOSCRAP
+        MENUITEM SEPARATOR
+        MENUITEM "&Näytä\tF3",                  ID_FILE_VIEW
+        MENUITEM "&Muokkaa\tF4",                ID_FILE_EDIT
+        MENUITEM "&Ominaisuudet...\tF12",       ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Uudelleen nimeä\tF2",        ID_FILE_RENAME
+        MENUITEM "Vaihda &tyyppi\tCtrl+F2",     ID_FILE_CHANGETYPE
+        MENUITEM "&Joukon uudelleen nimeäminen", ID_FILE_MASSRENAME
+        MENUITEM "&Poista\tDel",                ID_FILE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Sulje",                      ID_FILE_CLOSE
+        MENUITEM "&Lopeta\tAlt+X",              ID_APP_EXIT
+    END
+    POPUP "M&ene"
+    BEGIN
+        MENUITEM "&Ylös\tAskelpalautin",        ID_FILE_UPALEVEL
+        MENUITEM "&Takaisin\tAlt+vasen nuoli",  ID_GOTO_BACK
+        MENUITEM "&Eteenpäin\tAlt+oikea nuoli", ID_GOTO_FORWARD
+        MENUITEM "Etsi &kohde\tCtrl+L",         ID_EDIT_FINDTARGET
+        MENUITEM SEPARATOR
+        MENUITEM "Valitse &asema...\tAlt+F1",   ID_GOTO_DRIVE
+        MENUITEM "Kansio h&istoria\tAlt+F2",    ID_GOTO_RECENTFOLDER
+        POPUP "Erikois&hakemistot"
+        BEGIN
+            MENUITEM "O&mat tiedostot\tCtrl+K",     ID_GOTO_MEDOCS
+            MENUITEM "&Historia",                   ID_GOTO_RECENTD
+            MENUITEM "&Roskakori",                  ID_GOTO_KRAP
+            MENUITEM SEPARATOR
+            MENUITEM "&Työpöytä\tCtrl+Askelpalautin", ID_GOTO_DESKTOP
+            MENUITEM "&Juuri\tVaihto+Askelpalautin", ID_GOTO_ROOT
+            MENUITEM "&Oma tietokone",              ID_GOTO_MEKOMP
+            MENUITEM "&Verkkoyhteydet",             ID_GOTO_NETWORK
+            MENUITEM SEPARATOR
+            MENUITEM "Ohjaus&paneeli",              ID_GOTO_CPANEL
+            MENUITEM "T&ulostimet",                 ID_GOTO_PRINTERS
+            MENUITEM "K&äynnistysvalikko",          ID_GOTO_STARTMENU
+            MENUITEM "&Käynistys",                  ID_GOTO_STARTUP
+            MENUITEM "&CD:n poltto",                ID_GOTO_CDBURNING
+            MENUITEM "&Lähetä",                     ID_GOTO_SENDTO
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Hae &pikamerkki\tCtrl+F1",    ID_GOTO_BOOKMARK
+        MENUITEM "Aseta pika&merkki\tCtrl+Vaihto+F1", ID_GOTO_SETBOOKMARK
+        MENUITEM SEPARATOR
+        MENUITEM "Peili&selailu\tCtrl+M",       ID_GOTO_MIRRORBROWSING
+        MENUITEM "Peili&vieritys",              ID_GOTO_MIRRORSCROLLING
+        MENUITEM SEPARATOR
+        MENUITEM "Sama ka&nsio\tCtrl+I",        ID_GOTO_SAMEFOLDER
+        MENUITEM "Vaihda &ruutuja\tCtrl+U",     ID_GOTO_SWAPPANES
+    END
+    POPUP "&Kirjanmerkit"
+    BEGIN
+        MENUITEM "Lisää &nykyinen",             ID_BOOKMARKS_ADD
+        MENUITEM "&Järjestä...",                ID_BOOKMARKS_ORGANIZE
+        MENUITEM SEPARATOR
+        MENUITEM "(dummy)",                     ID_BOOKMARKS_FIRST
+        MENUITEM SEPARATOR
+        MENUITEM "&Lisää...",                   ID_BOOKMARKS_MORE
+        MENUITEM "IE &Suosikit",                ID_BOOKMARKS_FAVORITES
+    END
+    POPUP "&Valinta"
+    BEGIN
+        MENUITEM "&Valitse kaikki\tCtrl+A",     ID_MARK_SELECTALL
+        MENUITEM "&Poista valinta\tAlt+A",      ID_MARK_UNSELECTALL
+        MENUITEM "&Kaikki kansiot\tCtrl+Alt+Q", ID_MARK_ALLFOLDERS
+        MENUITEM "&Tahmea valinta\tAlt+S",      ID_MARK_STICKYSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "Valitse &ryhmä...\tGray +",   ID_MARK_SELECTGROUP
+        MENUITEM "Poista r&yhmän valinta...\tGray -", ID_MARK_UNSELECTGROUP
+        MENUITEM "V&astakkainen valinta\tGray *", ID_MARK_INVERTSELECTION
+        MENUITEM "Valitse kanta&ma...",         ID_MARK_SELECTRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Synkronisoi ruu&dut\tF9",     ID_MARK_SYNCHRONIZEPANES
+        MENUITEM "Synkronisointi &Welho...\tCtrl+F9", ID_MARK_SYNCWIZARD
+        MENUITEM "Tarkista &rakenne...\tCtrl+F12", ID_MARK_CHECKBUILD
+        MENUITEM SEPARATOR
+        MENUITEM "&Sisältää tekstiä...\tCtrl+G", ID_MARK_CONTAININGTEXT
+        MENUITEM "Vastaa s&ääntöä...\tAlt+G",   ID_MARK_RULEBASED
+        MENUITEM SEPARATOR
+        POPUP "Va&linta"
+        BEGIN
+            MENUITEM "&Ota talteen\tCtrl+F11",      ID_MARK_SELECTION_STORE
+            MENUITEM SEPARATOR
+            MENUITEM "&Valitse\tF11",               ID_MARK_SELECTION_SELECT
+            MENUITEM "&Poista valinta\tAlt+F11",    ID_MARK_SELECTION_UNSELECT
+
+            MENUITEM "&Yhdistä\tVaihto+F11",        ID_MARK_SELECTION_COMBINE
+
+        END
+    END
+    POPUP "&Muokkaa"
+    BEGIN
+        MENUITEM "L&eikkaa\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "&Kopioi\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "K&opioi kohteeseen...\tF5",   ID_EDIT_COPYTO
+        MENUITEM "&Siirrä...\tF6",              ID_EDIT_MOVETO
+        MENUITEM SEPARATOR
+        MENUITEM "&Liitä\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Liitä &pikakuvake",           ID_EDIT_PASTELINK
+        POPUP "Liitä e&rikoisesti"
+        BEGIN
+            MENUITEM "Kova &linkki\tCtrl+Alt+H",    ID_ACTIONS_PASTEHARDLINK
+            MENUITEM "&Kansioiden rakenne",         ID_EDIT_PASTESPECIAL_FOLDERSTRUCTURE
+
+            MENUITEM "&Rakenteiset leikkeet",       ID_EDIT_PASTESPECIAL_STRUCTUREDSCRAPCLIPS
+
+        END
+        MENUITEM "Luo &kopio",                  ID_EDIT_DUPLICATEFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Kopioi &nimet\tAlt+C",        ID_EDIT_COPYNAMES
+        MENUITEM "Kopioi esikatsel&u",          ID_EDIT_COPYPREVIEW
+        MENUITEM "Kopioi s&arakkeet\tCtrl+P",   ID_EDIT_COPYSELECTION
+    END
+    POPUP "&Näytä"
+    BEGIN
+        MENUITEM "&Tupla näkymä\tCtrl+O",       ID_VIEW_DUALPANE
+        MENUITEM "&Esikatselija\tCtrl+Q",       ID_VIEW_QUICKVIEWER
+        POPUP "T&yökalupalkit"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "&Kaikki työkalupalkit",       ID_VIEW_TOOLBAR
+            MENUITEM "&Tilarivi",                   ID_VIEW_STATUS_BAR
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Ruudun tyyli"
+        BEGIN
+            MENUITEM "&Suuret kuvakkeet",           ID_VIEW_LARGEICONS
+            MENUITEM "&Pienet kuvakkeet",           ID_VIEW_SMALLICONS
+            MENUITEM "&Luettelo",                   ID_VIEW_LIST
+            MENUITEM "&Tiedot",                     ID_VIEW_DETAILS
+            MENUITEM "T&humbnailit",                ID_VIEW_THUMBNAILS
+        END
+        MENUITEM "&Määrittle sarakkeet...\tAlt+K", ID_VIEW_SELECTCOLUMNS
+        POPUP "&Järjestä"
+        BEGIN
+            MENUITEM "&Nimi\tCtrl+Alt+N",           ID_VIEW_SORTBY_NAME
+            MENUITEM "&Koko\tCtrl+Alt+S",           ID_VIEW_SORTBY_SIZE
+            MENUITEM "&Päiväys\tCtrl+Alt+D",        ID_VIEW_SORTBY_DATE
+            MENUITEM "&Tyyppi\tCtrl+Alt+T",         ID_VIEW_SORTBY_TYPE
+            MENUITEM "Muu",                         ID_VIEW_SORTBY_OTHER
+            , GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "&Älä järjestä\tCtrl+Alt+U",   ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "&Nouseva\tCtrl+Alt+A",        ID_VIEW_SORTBY_ASCENDING
+        END
+        MENUITEM "Autom. &sarakkeiden leveys \tCtrl+Add", 
+                                                ID_VIEW_AUTOSIZECOLUMNS
+        MENUITEM SEPARATOR
+        MENUITEM "&Päivitä\tCtrl+R",            ID_VIEW_REFRESH
+        MENUITEM "Pidätä a&utom. virkistystä\tCtrl+Alt+R", 
+                                                ID_VIEW_HOLDAUTOREFRESH
+        MENUITEM "R&aaka sisältö",              ID_VIEW_RAWCONTENTS
+        MENUITEM SEPARATOR
+        MENUITEM "&Näytä kansiopuu\tCtrl+T",    ID_VIEW_SHOWTREE
+        MENUITEM "Hae kansio&puusta\tAlt+T",    ID_VIEW_LOCATEINTREE
+        MENUITEM SEPARATOR
+        POPUP "N&äkymän suodatus"
+        BEGIN
+            MENUITEM "&Villikortti...\tCtrl+H",     ID_FILE_VISUALFILTER
+            MENUITEM "Sääntöön &perustuva...\tAlt+H", 
+                                                    ID_VIEW_VISUALFILTER_RULEBASED
+
+            MENUITEM "&Päällä/Poissa\tCtrl+J",      ID_MARK_USEVISUALFILTER
+            MENUITEM SEPARATOR
+            MENUITEM "Piilota &kansiot\tAlt+J",     ID_VIEW_HIDEFOLDERS
+            MENUITEM "Valitut &ainoastaan\tCtrl+Alt+J", ID_VIEW_SELECTEDONLY
+            MENUITEM SEPARATOR
+            MENUITEM "&Sama suodatus\tCtrl+Alt+M",  ID_VIEW_VISUALFILTER_SAMEFILTER
+
+        END
+        MENUITEM "Näytä &kaikki",               ID_VIEW_SHOWALL
+    END
+    POPUP "T&oiminnot"
+    BEGIN
+        MENUITEM "&Uusi tiedosto\tF7",          ID_ACTIONS_NEWFILE
+        MENUITEM "Uusi &kansio\tF8",            ID_ACTIONS_NEWFOLDER
+        MENUITEM "&Aseta kommentti...\tAlt+Z",  ID_ACTIONS_SETCOMMENT
+        MENUITEM SEPARATOR
+        MENUITEM "&Määritteet...\tVaihto+F12",  ID_ACTIONS_CHANGEATTRIBUTES
+        MENUITEM "S&ynk-kosketus",              ID_ACTIONS_SYNCTOUCH
+        MENUITEM SEPARATOR
+        MENUITEM "&Erota tiedosto...",          ID_ACTIONS_SPLIT
+        MENUITEM "&Yhdistä tiedostot...",       ID_ACTIONS_MERGEFILES
+        MENUITEM "&Silppuri",                   ID_ACTIONS_SHRED
+        MENUITEM SEPARATOR
+        MENUITEM "&Tallenna asetukset nyt",     ID_VIEW_SAVESETTINGSNOW
+        POPUP "&Kansion asetukset"
+        BEGIN
+            MENUITEM "&Tallenna",                   ID_ACTIONS_FOLDERSETTINGS_SAVE
+
+            MENUITEM "T&yhjennä",                   ID_ACTIONS_FOLDERSETTINGS_CLEAR
+
+            MENUITEM SEPARATOR
+            MENUITEM "&Lakkauta",                   ID_ACTIONS_FOLDERSETTINGS_SUSPEND
+
+        END
+    END
+    POPUP "&Työkalut"
+    BEGIN
+        MENUITEM "&Suorita",                    ID_TOOLS_RUNCOMMAND
+        MENUITEM "&DOS-komento\tF10",           ID_TOOLS_DOSCOMMAND
+        MENUITEM "Suorita h&istoriasta...\tCtrl+F10", ID_TOOLS_RUNHISTORY
+        MENUITEM "T&oista komento\tAlt+F10",    ID_TOOLS_REPEATCOMMAND
+        MENUITEM SEPARATOR
+        MENUITEM "&Komentosarja...\tCtrl+B",    ID_TOOLS_COMMANDSCRIPT
+        MENUITEM "&Etsi tiedostot...\tCtrl+F",  ID_TOOLS_FINDFILES
+        MENUITEM SEPARATOR
+        MENUITEM "&Vapaa tila\tCtrl+Alt+Väli",  ID_TOOLS_FREESPACE
+        MENUITEM "Ali&hakemiston koko\tCtrl+D", ID_TOOLS_SUBFOLDERSIZE
+        MENUITEM "Kansion &tilastot...\tAlt+D", ID_TOOLS_FOLDERSTATISTICS
+        MENUITEM SEPARATOR
+        MENUITEM "&Asetukset...",               ID_TOOLS_OPTIONS
+    END
+    POPUP "&Ikkuna"
+    BEGIN
+        MENUITEM "Leike&astia",                 ID_WINDOW_SCRAPFRAME
+        MENUITEM "L&ista...\tCtrl+W",           ID_WINDOW_LIST
+        MENUITEM SEPARATOR
+        MENUITEM "Sulje &välilehti\tCtrl+F4",   ID_WINDOW_CLOSETAB
+        MENUITEM "Sulje &kaikki välilehdet",    ID_WINDOW_CLOSEALLTABS
+        MENUITEM SEPARATOR
+        MENUITEM "&Kloonaus\tCtrl+N",           ID_WINDOW_CLONE
+        MENUITEM "&Tallenna ulkoasu...",        ID_WINDOW_SETREGKEY
+        MENUITEM SEPARATOR
+        MENUITEM "(dummy)",                     ID_REGDATA_FIRST
+        MENUITEM SEPARATOR
+        MENUITEM "&Järjestä...",                ID_WINDOW_SETACCELERATOR
+        MENUITEM "&Lisää ulkoasuja...",         ID_WINDOW_MORE
+    END
+    POPUP "M&ukauta"
+    BEGIN
+        POPUP "&Työkalupalkki"
+        BEGIN
+            MENUITEM "&Lisää uusi...",              ID_CUSTOMIZE_TOOLBARS_ADDNEW
+
+            MENUITEM "&Järjestä...",                ID_CUSTOMIZE_TOOLBARS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_TBCUST_FIRST
+        END
+        POPUP "&Sarakeasetelmat"
+        BEGIN
+            MENUITEM "&Lisää nykyinen",             ID_CUSTOMIZE_COLUMNS_ADD
+            MENUITEM "&Järjestä...",                ID_CUSTOMIZE_COLUMNS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_COLUMNSET_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Lisää...",                   ID_CUSTOMIZE_COLUMNS_MORE
+
+        END
+        POPUP "&Käyttäjäkomennot"
+        BEGIN
+            MENUITEM "&Lisää uusi...",              ID_CUSTOMIZE_USERCOMMANDS_ADDNEW
+
+            MENUITEM "&Järjestä...",                ID_CUSTOMIZE_USERCOMMANDS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_USERTOOL_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Lisää...",                   ID_CUSTOMIZE_USERCOMMANDS_MORE
+
+        END
+        POPUP "K&ansioryhmät"
+        BEGIN
+            MENUITEM "&Lisää nykyinen",             ID_CUSTOMIZE_TABSETS_ADDNEW
+
+            MENUITEM "&Järjestä...",                ID_CUSTOMIZE_TABSETS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_TABSETS_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Lisää...",                   ID_CUSTOMIZE_TABSETS_MORE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Näppäimistön käyttö...",     ID_CUSTOMIZE_KEYBOARDUSE
+    END
+    POPUP "&Ohje"
+    BEGIN
+        MENUITEM "&Esittely",                   ID_HELP_ALPHAINFO
+        MENUITEM "&Ohjekirja\tF1",              ID_HELP_CONTENTS
+        MENUITEM "&Päivän vihje...",            ID_HELP_TIPOFTHEDAY
+        MENUITEM SEPARATOR
+        MENUITEM "&Rekisteröi ohjelma",         ID_HELP_REGISTERPROGRAM
+        MENUITEM "&Lahjoita",                   ID_HELP_DONATE
+        MENUITEM "&Tarkista päivitykset",       ID_HELP_CHECKUPDATES
+        MENUITEM "&Online-tuki",                ID_HELP_GETSUPPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&Viimeisin virheilmoitus",    ID_HELP_LASTERROR
+        MENUITEM SEPARATOR
+        MENUITEM "Tietoja &xplorer²:sta...",    ID_APP_ABOUT
+    END
+END
+
+IDR_CONTEXTMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "paneLR"
+    BEGIN
+        MENUITEM "&Uusi tiedosto\tF7",          ID_ACTIONS_NEWFILE
+        MENUITEM "Uusi &kansio\tF8",            ID_ACTIONS_NEWFOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "&Liitä\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Liitä &pikakuvake",           ID_EDIT_PASTELINK
+        POPUP "Liitä &erikoisena"
+        BEGIN
+            MENUITEM "Kova &linkki\tCtrl+Alt+H",    ID_ACTIONS_PASTEHARDLINK
+            MENUITEM "&Kansioiden rakenne",         ID_EDIT_PASTESPECIAL_FOLDERSTRUCTURE
+
+            MENUITEM "&Rakenteiset leikkeet",       ID_EDIT_PASTESPECIAL_STRUCTUREDSCRAPCLIPS
+
+        END
+        MENUITEM SEPARATOR
+        POPUP "Ruudun &tyyli"
+        BEGIN
+            MENUITEM "&Suuret kuvakkeet",           ID_VIEW_LARGEICONS
+            MENUITEM "Pienet kuvakkeet",            ID_VIEW_SMALLICONS
+            MENUITEM "&Luettelo",                   ID_VIEW_LIST
+            MENUITEM "&Tiedot",                     ID_VIEW_DETAILS
+            MENUITEM "T&humbnailit",                ID_VIEW_THUMBNAILS
+        END
+        POPUP "&Järjestä kuvakkeet"
+        BEGIN
+            MENUITEM "&Nimi\tCtrl+Alt+N",           ID_VIEW_SORTBY_NAME
+            MENUITEM "&Koko\tCtrl+Alt+S",           ID_VIEW_SORTBY_SIZE
+            MENUITEM "&Päiväys\tCtrl+Alt+D",        ID_VIEW_SORTBY_DATE
+            MENUITEM "&Tyyppi\tCtrl+Alt+T",         ID_VIEW_SORTBY_TYPE
+            MENUITEM "Muu",                         ID_VIEW_SORTBY_OTHER
+            , GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "&Älä järjestä\tCtrl+Alt+U",   ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "&Nouseva\tCtrl+Alt+A",        ID_VIEW_SORTBY_ASCENDING
+        END
+    END
+    POPUP "paneMulti"
+    BEGIN
+        MENUITEM "&Avaa\tEnter",                ID_FILE_BROWSE2
+        MENUITEM "&Selaa\tCtrl+Enter",          ID_FILE_CLONEBROWSE2
+        MENUITEM SEPARATOR
+        MENUITEM "&Kopioi\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "&Liitä\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Ka&rsi\tDel",                 ID_FILE_REMOVE
+        MENUITEM SEPARATOR
+        POPUP "Ruudun &tyyli"
+        BEGIN
+            MENUITEM "&Suuret kuvakkeet",           ID_VIEW_LARGEICONS
+            MENUITEM "&Pienet kuvakkeet",           ID_VIEW_SMALLICONS
+            MENUITEM "&Luettelo",                   ID_VIEW_LIST
+            MENUITEM "&Tiedot",                     ID_VIEW_DETAILS
+            MENUITEM "T&humbnailit",                ID_VIEW_THUMBNAILS
+        END
+        POPUP "&Järjestä kuvakkeet"
+        BEGIN
+            MENUITEM "&Nimi\tCtrl+Alt+N",           ID_VIEW_SORTBY_NAME
+            MENUITEM "&Koko\tCtrl+Alt+S",           ID_VIEW_SORTBY_SIZE
+            MENUITEM "&Päiväys\tCtrl+Alt+D",        ID_VIEW_SORTBY_DATE
+            MENUITEM "&Tyyppi\tCtrl+Alt+T",         ID_VIEW_SORTBY_TYPE
+            MENUITEM "P&olku",                      ID_VIEW_ARRANGEBY_PATH
+            MENUITEM "Muu",                         ID_VIEW_SORTBY_OTHER
+            , GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "&Älä järjestä\tCtrl+Alt+U",   ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "&Nouseva\tCtrl+Alt+A",        ID_VIEW_SORTBY_ASCENDING
+        END
+    END
+    POPUP "pmRiteDrag"
+    BEGIN
+        MENUITEM "&Aseta tähän",                ID_PMRITEDRAG_INSERTHERE
+        MENUITEM "Selaa &pelkistettynä",        ID_ACTIONS_FLATTENPATH
+        MENUITEM SEPARATOR
+        MENUITEM "&Peruuta",                    ID_PMRITEDRAG_CANCEL
+    END
+    POPUP "header"
+    BEGIN
+        MENUITEM "Valitse &sarakkeet...\tAlt+K", ID_VIEW_SELECTCOLUMNS
+    END
+    POPUP "quikview"
+    BEGIN
+        MENUITEM "&Kopioi\tCtrl+C",             ID_QUIKVIEW_COPY
+        MENUITEM "&Valitse kaikki\tCtrl+A",     ID_QUIKVIEW_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Etsi...\tCtrl+F",            ID_QUIKVIEW_FIND
+        MENUITEM "E&tsi seuraava\tF3",          ID_QUIKVIEW_FINDNEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Word wrap\tF2",              ID_QUIKVIEW_WORDWRAP
+        MENUITEM "Aseta &fontti...",            ID_QUIKVIEW_SETFONT
+        POPUP "K&oodaus"
+        BEGIN
+            MENUITEM "&Windows",                    ID_QUIKVIEW_ENCODING_WINDOWS
+
+            MENUITEM "&OEM",                        ID_QUIKVIEW_ENCODING_OEM
+            MENUITEM "UTF-&8",                      ID_QUIKVIEW_ENCODING_UTF8
+
+            MENUITEM "&Unicode",                    ID_QUIKVIEW_ENCODING_UNICODE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "V&ain teksti",                ID_QUIKVIEW_TEXTMODE
+        MENUITEM "&Seuraava\tCtrl+Nuoli alas",  ID_QUIKVIEW_NEXT
+        MENUITEM "E&dellinen\tCtrl+Nuoli ylös", ID_QUIKVIEW_PREVIOUS
+    END
+    POPUP "tabz"
+    BEGIN
+        MENUITEM "Siirrä &vasemmalle",          ID_TABZ_MOVELEFT
+        MENUITEM "Siirrä &oikealle",            ID_TABZ_MOVERIGHT
+    END
+END
+
+IDR_SCRAPFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Tiedosto"
+    BEGIN
+        MENUITEM "&Avaa\tEnter",                ID_FILE_BROWSE2
+        MENUITEM "S&elaa\tCtrl+Enter",          ID_FILE_CLONEBROWSE2
+        MENUITEM SEPARATOR
+        MENUITEM "&Näytä\tF3",                  ID_FILE_VIEW
+        MENUITEM "&Muokkaa\tF4",                ID_FILE_EDIT
+        MENUITEM "&Ominaisuudet...\tF12",       ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Uudelleen nimeä\tF2",        ID_FILE_RENAME
+        MENUITEM "Vaihda &tyyppi\tCtrl+F2",     ID_FILE_CHANGETYPE
+        MENUITEM "&Joukon uudelleen nimeäminen", ID_FILE_MASSRENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Karsi\tDel",                 ID_FILE_REMOVE
+        MENUITEM "&Poista\tCtrl+Del",           ID_FILE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Sulje",                      ID_FILE_CLOSE
+        MENUITEM "&Lopeta\tAlt+X",              ID_APP_EXIT
+    END
+    POPUP "&Valinta"
+    BEGIN
+        MENUITEM "&Valitse kaikki\tCtrl+A",     ID_MARK_SELECTALL
+        MENUITEM "&Poista valinta\tAlt+A",      ID_MARK_UNSELECTALL
+        MENUITEM "&Kaikki kansiot\tCtrl+Alt+Q", ID_MARK_ALLFOLDERS
+        MENUITEM "&Tahmea valinta\tAlt+S",      ID_MARK_STICKYSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "Valitse &ryhmä...\tGray +",   ID_MARK_SELECTGROUP
+        MENUITEM "Poista r&yhmän valinta...\tGray -", ID_MARK_UNSELECTGROUP
+        MENUITEM "V&astakkainen valinta\tGray *", ID_MARK_INVERTSELECTION
+        MENUITEM "Valitse kanta&ma...",         ID_MARK_SELECTRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Synkronisoi ruu&dut\tF9",     ID_MARK_SYNCHRONIZEPANES
+        MENUITEM "Synkronisointi &Welho...\tCtrl+F9", ID_MARK_SYNCWIZARD
+        MENUITEM SEPARATOR
+        MENUITEM "&Sisältää tekstiä...\tCtrl+G", ID_MARK_CONTAININGTEXT
+        MENUITEM "Vastaa s&ääntöä...\tAlt+G",   ID_MARK_RULEBASED
+        MENUITEM SEPARATOR
+        POPUP "Va&linta"
+        BEGIN
+            MENUITEM "&Ota talteen\tCtrl+F11",      ID_MARK_SELECTION_STORE
+            MENUITEM SEPARATOR
+            MENUITEM "&Valitse\tF11",               ID_MARK_SELECTION_SELECT
+            MENUITEM "&Poista valinta\tAlt+F11",    ID_MARK_SELECTION_UNSELECT
+
+            MENUITEM "&Yhdistä\tVaihto+F11",        ID_MARK_SELECTION_COMBINE
+
+        END
+    END
+    POPUP "&Muokkaa"
+    BEGIN
+        MENUITEM "L&eikka\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "&Kopioi\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "K&opioi kohteeseen...\tF5",   ID_EDIT_COPYTO
+        MENUITEM "&Siirrä..\tF6",               ID_EDIT_MOVETO
+        MENUITEM SEPARATOR
+        MENUITEM "&Liitä\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "S&ynkronisoi ja liitä",       ID_EDIT_SYNCOPASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Kopioi &nimet\tAlt+C",        ID_EDIT_COPYNAMES
+        MENUITEM "Kopioi esikatsel&u",          ID_EDIT_COPYPREVIEW
+        MENUITEM "Kopioi s&arakkeet\tCtrl+P",   ID_EDIT_COPYSELECTION
+    END
+    POPUP "&Näytä"
+    BEGIN
+        MENUITEM "&Tupla näkymä\tCtrl+O",       ID_VIEW_DUALPANE
+        MENUITEM "&Esikatselija\tCtrl+Q",       ID_VIEW_QUICKVIEWER
+        POPUP "T&yökalupalkit"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "&Kaikki työkalupalkit",       ID_VIEW_TOOLBAR
+            MENUITEM "&Tilarivi",                   ID_VIEW_STATUS_BAR
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Ruudun tyyli"
+        BEGIN
+            MENUITEM "&Suuret kuvakkeet",           ID_VIEW_LARGEICONS
+            MENUITEM "&Pienet kuvakkeet",           ID_VIEW_SMALLICONS
+            MENUITEM "&Luettelo",                   ID_VIEW_LIST
+            MENUITEM "&Tiedot",                     ID_VIEW_DETAILS
+            MENUITEM "T&humbnailit",                ID_VIEW_THUMBNAILS
+        END
+        MENUITEM "&Määritele sarakkeet...\tAlt+K", ID_VIEW_SELECTCOLUMNS
+        POPUP "&Järjestä"
+        BEGIN
+            MENUITEM "&Nimi\tCtrl+Alt+N",           ID_VIEW_SORTBY_NAME
+            MENUITEM "&Koko\tCtrl+Alt+S",           ID_VIEW_SORTBY_SIZE
+            MENUITEM "&Päiväys\tCtrl+Alt+D",        ID_VIEW_SORTBY_DATE
+            MENUITEM "&Tyyppi\tCtrl+Alt+T",         ID_VIEW_SORTBY_TYPE
+            MENUITEM "P&olku",                      ID_VIEW_ARRANGEBY_PATH
+            MENUITEM "Muu",                         ID_VIEW_SORTBY_OTHER
+            , GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "&Älä järjestä\tCtrl+Alt+U",   ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "&Nouseva\tCtrl+Alt+A",        ID_VIEW_SORTBY_ASCENDING
+        END
+        MENUITEM "Autom. &sarakkeiden leveys \tCtrl+Add", 
+                                                ID_VIEW_AUTOSIZECOLUMNS
+        MENUITEM SEPARATOR
+        MENUITEM "&Päivitä\tCtrl+R",            ID_VIEW_REFRESH
+        MENUITEM "Pidätä a&utom. päivitystä\tCtrl+Alt+R", 
+                                                ID_VIEW_HOLDAUTOREFRESH
+        MENUITEM SEPARATOR
+        POPUP "N&äkymän suodatus"
+        BEGIN
+            MENUITEM "&Villikortti...\tCtrl+H",     ID_FILE_VISUALFILTER
+            MENUITEM "Sääntöön &perustuva...\tAlt+H", 
+                                                    ID_VIEW_VISUALFILTER_RULEBASED
+
+            MENUITEM "&Päällä/Poissa\tCtrl+J",      ID_MARK_USEVISUALFILTER
+            MENUITEM SEPARATOR
+            MENUITEM "Piilota &kansiot\tAlt+J",     ID_VIEW_HIDEFOLDERS
+            MENUITEM "Valitut &ainoastaan\tCtrl+Alt+J", ID_VIEW_SELECTEDONLY
+            MENUITEM SEPARATOR
+            MENUITEM "&Sama suodatus\tCtrl+Alt+M",  ID_VIEW_VISUALFILTER_SAMEFILTER
+
+        END
+        MENUITEM "Näytä &kaikki",               ID_VIEW_SHOWALL
+    END
+    POPUP "T&oiminnot"
+    BEGIN
+        MENUITEM "Latista p&olku...",           ID_ACTIONS_FLATTENPATH
+        MENUITEM SEPARATOR
+        MENUITEM "&Määritteet...\tVaihto+F12",  ID_ACTIONS_CHANGEATTRIBUTES
+        MENUITEM "&Aseta kommentti...\tAlt+Z",  ID_ACTIONS_SETCOMMENT
+        MENUITEM SEPARATOR
+        MENUITEM "&Erota tiedosto...",          ID_ACTIONS_SPLIT
+        MENUITEM "&Yhdistä tiedostot...",       ID_ACTIONS_MERGEFILES
+        MENUITEM "&Silppuri",                   ID_ACTIONS_SHRED
+        MENUITEM SEPARATOR
+        MENUITEM "&Lataa sisältö...",           ID_ACTIONS_LOADCONTENTS
+        MENUITEM "&Tallenna sisältö\tCtrl+S",   ID_ACTIONS_WRITECONTENTS
+        MENUITEM "Syötä leike&pöydältä",        ID_ACTIONS_IMPORTCLIPBOARD
+    END
+    POPUP "&Työkalut"
+    BEGIN
+        MENUITEM "&Suorita",                    ID_TOOLS_RUNCOMMAND
+        MENUITEM "&DOS-komento\tF10",           ID_TOOLS_DOSCOMMAND
+        MENUITEM "Suorita h&istoriasta...\tCtrl+F10", ID_TOOLS_RUNHISTORY
+        MENUITEM "T&oista komento\tAlt+F10",    ID_TOOLS_REPEATCOMMAND
+        MENUITEM SEPARATOR
+        MENUITEM "&Komentosarja...\tCtrl+B",    ID_TOOLS_COMMANDSCRIPT
+        MENUITEM "Ali&hakemiston koko\tCtrl+D", ID_TOOLS_SUBFOLDERSIZE
+        MENUITEM "&Hae kohde\tCtrl+L",          ID_EDIT_FINDTARGET
+        MENUITEM SEPARATOR
+        MENUITEM "&Etsi tiedostot...\tCtrl+F",  ID_TOOLS_FINDFILES
+        MENUITEM "Etsinnän &tila...",           ID_TOOLS_SEARCHSTATUS
+        MENUITEM SEPARATOR
+        MENUITEM "Tarkista d&uplikaatit...",    ID_TOOLS_CHECKDUPLICATES
+        MENUITEM "&Paljasta",                   ID_TOOLS_REVEALUNIQUE
+        MENUITEM SEPARATOR
+        MENUITEM "&Asetukset...",               ID_TOOLS_OPTIONS
+    END
+    POPUP "&Ikkuna"
+    BEGIN
+        MENUITEM "&Uusi leikeastia",            ID_WINDOW_SCRAPFRAME
+        MENUITEM "L&ista...\tCtrl+W",           ID_WINDOW_LIST
+        MENUITEM SEPARATOR
+        MENUITEM "Peili&vieritys\tCtrl+M",      ID_GOTO_MIRRORSCROLLING
+    END
+    POPUP "M&ukauta"
+    BEGIN
+        POPUP "&Työkalupalkki"
+        BEGIN
+            MENUITEM "&Lisää uusi...",              ID_CUSTOMIZE_TOOLBARS_ADDNEW
+
+            MENUITEM "&Järjestä...",                ID_CUSTOMIZE_TOOLBARS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_TBCUST_FIRST
+        END
+        POPUP "&Sarakeasetelmat"
+        BEGIN
+            MENUITEM "&Lisää nykyinen",             ID_CUSTOMIZE_COLUMNS_ADD
+            MENUITEM "&Järjestä...",                ID_CUSTOMIZE_COLUMNS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_COLUMNSET_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Lisää...",                   ID_CUSTOMIZE_COLUMNS_MORE
+
+        END
+        POPUP "&Käyttäjäkomennot"
+        BEGIN
+            MENUITEM "&Lisää uusi...",              ID_CUSTOMIZE_USERCOMMANDS_ADDNEW
+
+            MENUITEM "&Järjestä...",                ID_CUSTOMIZE_USERCOMMANDS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_USERTOOL_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Lisää...",                   ID_CUSTOMIZE_USERCOMMANDS_MORE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Näppäimistön käyttö...",     ID_CUSTOMIZE_KEYBOARDUSE
+    END
+    POPUP "&Ohje"
+    BEGIN
+        MENUITEM "&Esittely",                   ID_HELP_ALPHAINFO
+        MENUITEM "&Ohjekirja\tF1",              ID_HELP_CONTENTS
+        MENUITEM "&Päivän vihje...",            ID_HELP_TIPOFTHEDAY
+        MENUITEM SEPARATOR
+        MENUITEM "&Rekisteröi ohjelma",         ID_HELP_REGISTERPROGRAM
+        MENUITEM "&Tarkista päivitykset",       ID_HELP_CHECKUPDATES
+        MENUITEM "&Online-tuki",                ID_HELP_GETSUPPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&Viimeisin virheilmoitus",    ID_HELP_LASTERROR
+        MENUITEM SEPARATOR
+        MENUITEM "Tietoja &xplorer²:sta...",    ID_APP_ABOUT
+    END
+END
+
+IDR_DIRSTATFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&Toiminnot"
+    BEGIN
+        MENUITEM "&Selaa\tEnter",               ID_FILE_CLONEBROWSE2
+        MENUITEM SEPARATOR
+        MENUITEM "Järjestä &nimen mukaan",      ID_VIEW_SORTBY_NAME
+        MENUITEM "Järjestä &koon mukaan",       ID_VIEW_SORTBY_SIZE
+        MENUITEM SEPARATOR
+        MENUITEM "Kopioi &teksti\tCtrl+C",      ID_DIRDATA_COPYTEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Sulje",                      ID_FILE_CLOSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(PRO)
+#if defined(APSTUDIO_INVOKED)
+IDD_ABOUTBOX$(PRO) DIALOG DISCARDABLE  0, 0, 242, 121
+#else
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 242, 121
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tietoja xplorer² professionalista"
+FONT 8, "Verdana"
+BEGIN
+    EDITTEXT        IDC_CHECK_REGI,67,38,85,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "osta lisenssi",IDC_EMAIL,179,7,50,24,BS_MULTILINE
+    PUSHBUTTON      "online-tuki",IDC_ONLINE,173,37,63,14,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE
+    DEFPUSHBUTTON   "ok",IDOK,179,57,50,14
+    EDITTEXT        IDC_BUILD,67,14,85,12,ES_MULTILINE | ES_READONLY
+    CTEXT           "© Copyright 2002-2005 by Nikos Bozinis\nKaikki oikeudet pidetään",
+                    IDC_STATIC,11,60,149,19
+    ICON            IDR_MAINFRAME,IDC_STATIC,13,10,20,20
+    GROUPBOX        "",IDC_STATIC,7,3,158,82
+    LTEXT           "Versio:",IDC_STATIC,36,16,24,8
+    LTEXT           "Rekisteröinti #",IDC_STATIC,17,40,49,8
+    LTEXT           "Warning: this computer program is protected by copyright law and international treaties. Unauthorized reproduction or distribution of this program may result in severe civil and criminal penalties.",
+                    IDC_WARNING,7,93,228,25
+    LTEXT           "www.zabkat.com",IDC_ZABKAT,176,77,56,8
+END
+#endif
+
+IDD_TEXTINPUT_DLG DIALOG DISCARDABLE  0, 0, 139, 45
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "Verdana"
+BEGIN
+    COMBOBOX        IDC_COMBO,7,6,125,95,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "ok",IDOK,21,26,42,14
+    PUSHBUTTON      "peruuta",IDCANCEL,75,26,42,14
+END
+
+IDD_NOTIFY_DLG DIALOG DISCARDABLE  0, 0, 238, 107
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "&Älä näytä tätä ilmoitusta uudelleen",IDC_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,32,78,129,10
+    DEFPUSHBUTTON   "valmis",IDOK,181,67,50,14
+    PUSHBUTTON      "peruuta",IDCANCEL,181,86,50,14
+    ICON            "",IDC_CUSTICON,7,73,20,20
+    LTEXT           "message",IDC_MESSAGE,7,7,224,52
+END
+
+IDD_GREP_DLG DIALOG DISCARDABLE  0, 0, 187, 138
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Etsi tekstiä tiedostoista"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "E&tsittävät:",IDC_STATIC,8,9,34,8
+    COMBOBOX        IDC_COMBO_FIND,47,7,133,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "E&rikoismerkit:",IDC_STATIC,8,26,47,8
+    COMBOBOX        IDC_COMBO_ESPECIAL,61,24,51,81,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Kirjaimellinen",IDC_CHECK_VERBA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,121,25,59,10
+    CONTROL         "&Vertaa merkkien kokoa",IDC_CHECK_CASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,41,89,10
+    CONTROL         "&Ainoastaan kokonaiset sanat",IDC_CHECK_WORD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,52,110,10
+    CONTROL         "&Etsi myös ei tekstitiedostoista",IDC_CHECK_BINARY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,64,109,10
+    CONTROL         "Säännönmukainen &ilmaus",IDC_CHECK_REGEXP,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,13,75,97,10
+    LTEXT           "Tekstitiedostojen koodaus",IDC_STATIC,14,93,86,8
+    COMBOBOX        IDC_COMBO_ENCODING,103,91,51,69,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "v&alitse",IDOK,7,117,50,14
+    PUSHBUTTON      "&poista valinta",IDC_UNSELECT,68,117,50,14
+    PUSHBUTTON      "peruuta",IDCANCEL,130,117,50,14
+END
+
+IDD_SCRIPTBUILD_DLG DIALOG DISCARDABLE  0, 0, 286, 142
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Komentosarja"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "Malli&pohja:",IDC_STATIC,8,9,36,8
+    COMBOBOX        IDC_COMBO_BATPLATE,44,7,235,106,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Erikois&tokenit:",IDC_STATIC,60,26,47,8
+    COMBOBOX        IDC_COMBO_TOKENS,108,24,116,88,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "&esikatselu",IDC_BUTTON_PREVIEW,7,24,50,14
+    PUSHBUTTON      "$-token &apu",IDC_BUTTON_HELP,229,23,50,14
+    PUSHBUTTON      "&muokkaa",IDC_BUTTON_EDIT,7,121,50,14
+    PUSHBUTTON      "s&uorita (DOS)",IDOK,73,121,61,14
+    PUSHBUTTON      "&suorita (shell)",IDC_BUTTON_WINEXEC,150,121,61,14
+    PUSHBUTTON      "peruuta",IDCANCEL,227,121,50,14
+    EDITTEXT        IDC_EDIT_PREVIEW,7,43,272,70,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+END
+
+IDD_SYNCWIZARD_DLG DIALOG DISCARDABLE  0, 0, 187, 118
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Synkronisointi Welho"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Valitse kohteet, jotka ovat:",IDC_STATIC,7,7,110,50,
+                    WS_GROUP
+    CONTROL         "U&niikkeja",IDC_CHECK_UNIQUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,18,46,10
+    CONTROL         "&Identtisiä",IDC_CHECK_IDENTICAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,62,18,46,10
+    CONTROL         "&Uudempia",IDC_CHECK_NEWER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,31,49,10
+    CONTROL         "&Vanhempia",IDC_CHECK_OLDER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,31,53,10
+    CONTROL         "M&äärittelemätön",IDC_CHECK_UNDECIDABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,28,43,69,10
+    GROUPBOX        "Vertailu perustuu:",IDC_STATIC,7,63,109,48,WS_GROUP
+    CONTROL         "&Muokkausajankohtiin",IDC_RADIO_MOD,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,73,85,10
+    CONTROL         "&Tiedostojen sisältöön",IDC_RADIO_CONTENT,"Button",
+                    BS_AUTORADIOBUTTON,13,85,85,10
+    CONTROL         "Vain &nimiin",IDC_RADIO_NAME,"Button",
+                    BS_AUTORADIOBUTTON,13,96,52,10
+    CONTROL         "&Ota huomioon myös kansiot",IDC_CHECK_FOLDERS,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_GROUP | WS_TABSTOP,
+                    123,21,57,21
+    DEFPUSHBUTTON   "ok",IDOK,130,75,50,14
+    PUSHBUTTON      "peruuta",IDCANCEL,130,95,50,14
+END
+
+IDD_SPLIT_DLG DIALOG DISCARDABLE  0, 0, 219, 71
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tiedoston jakamisen asetukset"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Jaon koko (kt):",IDC_STATIC,7,10,51,8
+    EDITTEXT        IDC_EDIT_SIZE,61,8,51,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "&Kohdekansio:",IDC_STATIC,7,28,46,8
+    COMBOBOX        IDC_COMBO_SPLITARGET,58,27,139,78,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_DOTS,199,27,13,12
+    LTEXT           "S&tandardit",IDC_STATIC,119,9,35,8
+    COMBOBOX        IDC_COMBO_STD,158,7,54,46,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "ok",IDOK,93,50,50,14
+    PUSHBUTTON      "peruuta",IDCANCEL,162,50,50,14
+END
+
+IDD_BUILDSYNC_DLG DIALOG DISCARDABLE  0, 0, 187, 142
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tarkista rakenne"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Muunnossäännöt",IDC_STATIC,7,7,173,63
+    LTEXT           "&Mistä (villit kortit):",IDC_STATIC,14,21,61,8
+    EDITTEXT        IDC_EDIT_FROM,76,19,95,12,ES_AUTOHSCROLL
+    LTEXT           "M&ihin (päätteet):",IDC_STATIC,18,36,55,8
+    EDITTEXT        IDC_EDIT_TO,76,34,95,12,ES_AUTOHSCROLL
+    CTEXT           "&Ennalta määritelty:",IDC_STATIC,15,48,37,17
+    COMBOBOX        IDC_COMBO_PREDEF,59,50,112,74,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Valitse lähdetiedostot, jotka ovat:",IDC_STATIC,7,74,
+                    120,61,WS_GROUP
+    CONTROL         "&Ei rakennettu",IDC_CHECK_UNIQUE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,87,59,10
+    CONTROL         "M&uokattu viimeisestä kerrasta",IDC_CHECK_NEWER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,102,110,10
+    CONTROL         "&Ajan tasalla",IDC_CHECK_OLDER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,117,54,10
+    DEFPUSHBUTTON   "ok",IDOK,130,97,50,14
+    PUSHBUTTON      "peruuta",IDCANCEL,130,121,50,14
+END
+
+IDD_COLSELECT_DLG DIALOG DISCARDABLE  0, 0, 274, 159
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sarakkeiden määrittely"
+FONT 8, "Verdana"
+BEGIN
+    CTEXT           "&Käytössä",IDC_TBPLACE,7,7,97,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LISTBOX         IDC_LIST_CURRENT,7,20,97,105,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "&Vapaana",IDC_STATIC,170,7,97,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LISTBOX         IDC_LIST_AVAIL,170,20,97,105,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Lisää <",IDC_BUTTON_ADD,111,46,50,14
+    PUSHBUTTON      "&Poista >",IDC_BUTTON_REMOVE,111,75,50,14
+    DEFPUSHBUTTON   "ok",IDOK,154,138,50,14
+    PUSHBUTTON      "peruuta",IDCANCEL,217,138,50,14
+    LTEXT           "",IDC_STATIC_DESCRIPTION,7,134,131,18,SS_SUNKEN
+END
+
+IDD_FILTER_DLG DIALOG 0, 0, 235, 163
+STYLE DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "Verdana"
+BEGIN
+    RTEXT           "Nime&ltä:",IDC_STATIC,7,7,28,8
+    COMBOBOX        IDC_COMBO_NAMED,39,5,133,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Tiedostot",IDC_CHECK_FILES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,177,2,46,10
+    CONTROL         "&Kansiot",IDC_CHECK_DIRS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,177,12,40,10
+    GROUPBOX        "&Sisältää Tekstiä",IDC_STATIC,7,27,221,44,WS_GROUP
+    COMBOBOX        IDC_COMBO_FIND,14,38,133,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ESPECIAL,166,38,51,81,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Kir&jainkoot samat",IDC_CHECK_CASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,56,70,10
+    CONTROL         "K&okonaiset sanat",IDC_CHECK_WORD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,80,56,69,10
+    CONTROL         "Ets&i kaikki tiedostot",IDC_CHECK_BINARY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,151,56,75,10
+    LTEXT           "Lisäsäänn&öt",IDC_TBPLACE,7,80,221,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "",IDC_LISTRULES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | 
+                    LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_TABSTOP,7,93,
+                    221,44,WS_EX_CLIENTEDGE
+    CTEXT           "Ennalta m&ääritelty:",IDC_STATIC,7,142,39,18
+    COMBOBOX        IDC_COMBO_SAVED,51,147,133,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "T&allenna",IDC_BUTTON_SAVE,192,146,36,14
+END
+
+IDD_FPP_DATE DIALOG DISCARDABLE  0, 0, 195, 49
+STYLE DS_NOFAILCREATE | DS_CONTROL | WS_CHILD
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Päiväyksen asetukset",IDC_STATIC,2,0,190,47,WS_GROUP
+    CONTROL         "V&iime aikoina:",IDC_RADIO_PREV,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,5,11,63,10
+    CONTROL         "&Välillä:",IDC_RADIO_BETWEEN,"Button",
+                    BS_AUTORADIOBUTTON,5,30,38,10
+    EDITTEXT        IDC_EDIT_XDAYS,88,10,39,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_PREVNUM,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,119,9,10,14
+    COMBOBOX        IDC_COMBO_DTUNIT,133,10,56,57,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_DATE_FROM,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,54,28,59,13
+    CTEXT           "ja",IDC_STATIC,115,30,12,8
+    CONTROL         "DateTimePicker1",IDC_DATE_TO,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,130,28,59,13
+END
+
+IDD_FPP_NUMBER DIALOG DISCARDABLE  0, 0, 195, 49
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Numeroasetukset",IDC_STATIC,2,0,190,47,WS_GROUP
+    LTEXT           "M&inimi:",IDC_STATIC,11,12,24,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_MINSIZE,47,10,91,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_MIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,130,9,10,14
+    LTEXT           "M&aksimi:",IDC_STATIC,9,31,30,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_MAXSIZE,47,29,91,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_MAX,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,130,28,10,14
+    LTEXT           "&Yksikkö",IDC_STATIC,146,11,26,8
+    COMBOBOX        IDC_COMBO_UNITS,146,22,40,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FPP_TEXT DIALOG DISCARDABLE  0, 0, 195, 49
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Tekstiasetukset",-1,2,0,190,47,WS_GROUP
+    LTEXT           "&Etsi:",-1,8,20,15,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_FINDTXT,29,18,158,12,ES_AUTOHSCROLL
+END
+
+IDD_FILTEREDIT_DLG DIALOG DISCARDABLE  0, 0, 195, 140
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Säännön määrittely"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Ominaisuudet ja kuvaus:",IDC_STATIC,5,9,83,8
+    COMBOBOX        IDC_COMBO_PROPERTIES,4,21,105,112,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_STATIC_DESCRIPTION,113,5,77,35,SS_SUNKEN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,2,42,190,47
+    GROUPBOX        "Boolean sisältö",IDC_STATIC,7,100,108,33
+    CONTROL         "&Ja",IDC_RADIO_AND,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,115,23,10
+    CONTROL         "&Tai",IDC_RADIO_OR,"Button",BS_AUTORADIOBUTTON,47,115,
+                    26,10
+    CONTROL         "&Ei",IDC_RADIO_NOT,"Button",BS_AUTORADIOBUTTON,82,115,
+                    22,10
+    DEFPUSHBUTTON   "ok",IDOK,138,100,50,14,WS_GROUP
+    PUSHBUTTON      "peruuta",IDCANCEL,138,119,50,14
+END
+
+IDD_TOUCHATTR_DLG DIALOG DISCARDABLE  0, 0, 205, 102
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | DS_NOFAILCREATE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Muokkaa ominaisuuksia"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Muokattu:",IDC_STATIC,7,9,34,8
+    CONTROL         "DateTimePicker1",IDC_DATE_MODIFIED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,54,7,59,13
+    CONTROL         "DateTimePicker1",IDC_TIME_MODIFIED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,115,7,52,
+                    13
+    PUSHBUTTON      "nyt",IDC_BUTTON_MODNOW,170,7,28,13
+    LTEXT           "&Luotu:",IDC_STATIC,7,29,22,8
+    CONTROL         "DateTimePicker1",IDC_DATE_CREATED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,54,27,59,13
+    CONTROL         "DateTimePicker1",IDC_TIME_CREATED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,115,27,52,
+                    13
+    PUSHBUTTON      "nyt",IDC_BUTTON_CRNOW,170,27,28,13
+    GROUPBOX        "Määritteet",IDC_STATIC,7,52,124,42,WS_GROUP
+    CONTROL         "&Arkisto",IDC_CHECK_ARCHIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,64,39,10
+    CONTROL         "&Vain luku",IDC_CHECK_READONLY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,78,46,10
+    CONTROL         "&Piilotettu",IDC_CHECK_HIDDEN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,73,64,44,10
+    CONTROL         "&Järjestelmä",IDC_CHECK_SYSTEM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,73,78,54,10
+    DEFPUSHBUTTON   "ok",IDOK,148,59,50,14,WS_GROUP
+    PUSHBUTTON      "peruuta",IDCANCEL,148,80,50,14
+END
+
+IDD_DUPEWIZARD_DLG DIALOG DISCARDABLE  0, 0, 147, 95
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Duplikaattien etsintä"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Vertailun perusteet:",-1,7,7,133,43,WS_GROUP
+    CONTROL         "&Nimi",IDC_CHECK_NAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,20,30,10
+    CONTROL         "&Koko",IDC_CHECK_SIZE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,91,20,33,10
+    CONTROL         "&Muokkauspäiväys",IDC_CHECK_MDATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,33,74,10
+    CONTROL         "&Sisältö",IDC_CHECK_CONTENT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,91,33,38,10
+    CONTROL         "Valitse kaikki &duplikaatit",IDC_CHECK_SELECTEM,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,30,56,91,10
+    DEFPUSHBUTTON   "Etsi",IDOK,31,74,50,14
+    PUSHBUTTON      "peruuta",IDCANCEL,90,74,50,14
+END
+
+IDD_GENERICLOG_DLG DIALOG 0, 0, 358, 177
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "Courier New"
+BEGIN
+    EDITTEXT        IDC_EDIT,2,2,354,173,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_OPTFRAME_PDLG DIALOG DISCARDABLE  0, 0, 250, 218
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Ikkuna"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Ruudut",IDC_STATIC,7,3,236,90,WS_GROUP
+    CONTROL         "&Yksittäisklikkaus aktivointi",IDC_CHK_1CLICKLIST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,12,99,10
+    CONTROL         "&Ruudukko tiedot näkymässä",IDC_CHK_GRIDLIST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,127,12,105,10
+    CONTROL         "&Näytä vinkkilaatikot kohteille",IDC_CHK_TIPLIST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,23,106,10
+    CONTROL         "Koko r&ivin valinta",IDC_CHK_FULLROWSEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,127,23,70,10
+    CONTROL         "&Salli hidas tupla-klikkaus uud. nimeämiseen",
+                    IDC_CHECK_CLKRENAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,34,157,10
+    CONTROL         "K&elluva valinta",IDC_CHECK_TRACKSEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,177,33,60,10
+    CONTROL         "&Järjestä automaattisesti sisällys kopioinin ja siirtämisen jälkeen",
+                    IDC_AUTOSORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,45,
+                    220,10
+    CONTROL         "&Korosta varsinainen lajittelusarake (vain XP)",
+                    IDC_CHECK_SORTCOL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,56,162,10
+    LTEXT           "L&uettelon max leveys",IDC_STATIC,14,68,76,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_MAXWIDTH,91,67,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Kansioiden &lajittelu",IDC_STATIC,120,68,63,8
+    COMBOBOX        IDC_COMBO_DIRSORT,184,66,55,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ruutujen sijoittelu tupla näkymässä:",IDC_STATIC,13,80,
+                    122,8,NOT WS_GROUP
+    CONTROL         "&Vaakasuora",IDC_TILE_HORZ,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,137,80,50,10
+    CONTROL         "&Pystysuora",IDC_TILE_VERT,"Button",BS_AUTORADIOBUTTON,
+                    192,80,49,10
+    GROUPBOX        "Kansiopuu",IDC_STATIC,7,96,236,56,WS_GROUP
+    CONTROL         "K&ansion avaus automaattisesti valinnan yhteydessä",
+                    IDC_CHK_1CLICKTREE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,105,181,10
+    CONTROL         "Ko&hdista valinta aktiiviseen ruutuun kohteen valinnan jälkeen",
+                    IDC_CHK_FOKOSTREE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,116,213,10
+    CONTROL         "Auto&m. kansioiden avaaminen kun kohde vedetään kansion päälle",
+                    IDC_CHK_HOVERTREE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,127,228,10
+    CONTROL         "Pid&ä synkronisoituna aktiivisen ruudun kanssa",
+                    IDC_CHECK_TREESYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,138,167,10
+    GROUPBOX        "Esikatselija",IDC_STATIC,7,155,236,35,WS_GROUP
+    LTEXT           "&Tekstiesikatselun koko (tavua)",IDC_STATIC,13,165,103,
+                    8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_TSIZE,118,163,45,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Ta&bin leveys",IDC_STATIC,166,165,42,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_TABS,213,163,24,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Mediatiedostojen toisto automaattisesti",
+                    IDC_CHECK_AUTOPLAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,176,143,10
+    CONTROL         "Ei he&xa esikatselua",IDC_CHECK_NOHEX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,161,176,79,10
+    PUSHBUTTON      "&Fontti...",IDC_BUTTON_FONT,7,197,50,14,WS_GROUP
+    CTEXT           "passiivinen\n tausta",IDC_STATIC,70,195,44,18
+    PUSHBUTTON      "",IDC_BUTTON_IBGCOL,115,197,30,14,BS_BITMAP
+    CONTROL         "Suppeat valik&ot",IDC_CHECK_PLAINMEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,161,194,67,10
+    CONTROL         "Ilmapallovihjeet",IDC_CHECK_BALONI,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,161,205,69,10
+END
+
+IDD_OPTGENERAL_PDLG DIALOG DISCARDABLE  0, 0, 250, 218
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "&Tallenna ohjelman tila lopetettaessa",IDC_SAVEONEXIT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,132,10
+    CONTROL         "Näytä &Piilotetut tiedostot ja kansiot",IDC_SHOWHIDDEN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,18,126,10
+    CONTROL         "Näytä järjestelmän valvojan verkon &jaetut tiedostot",
+                    IDC_CHECK_NETSHARE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,29,185,10
+    CONTROL         "&Näytä tiedostojen koot tavuina",IDC_CHECK_BYTES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,40,133,10
+    CONTROL         "&Hälytä varoituksista ja virheistä",IDC_CHECK_BEEP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,51,116,10
+    CONTROL         "S&yö ensimmäinen hiiren klikkaus ruudulla (suojelee valintaa)",
+                    IDC_CHECK_EATCLIK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,62,216,10
+    CONTROL         "Ohjaa &DOS-komennot ohjelman omaan konsoli-ikkunaan",
+                    IDC_CHECK_CONSOLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,73,203,10
+    LTEXT           "T&aannoin vierailuiden kohteiden määrä pudotusvalikossa",
+                    IDC_STATIC,7,88,186,8,NOT WS_GROUP
+    EDITTEXT        IDC_NUMHISTORY,196,86,26,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Thumbnailien k&oko (pikseliä)",IDC_STATIC,7,102,94,8,
+                    NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_THUMBSIZE,104,100,32,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "&Ikonit",IDC_STATIC,148,102,20,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_ICONS,170,100,68,46,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Ulkoisen tekstieditorin/-katselijan komentorivit",
+                    IDC_STATIC,7,118,236,46,WS_GROUP
+    LTEXT           "Edito&ri",IDC_STATIC,16,132,22,8,NOT WS_GROUP
+    EDITTEXT        IDC_EXTEDITORNAME,39,130,181,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_DOTS_EDITOR,224,130,13,12
+    LTEXT           "&Katselija",IDC_STATIC,9,149,28,8,NOT WS_GROUP
+    EDITTEXT        IDC_EXTVIEWERNAME,39,147,181,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_DOTS_VIEWER,224,147,13,12
+    GROUPBOX        "Rajoitukset tiedonhaulle... (arvot tavuina, 0 = ei rajoitettu)",
+                    IDC_STATIC,7,169,236,45,WS_GROUP
+    LTEXT           "&Vinkkilaatikot",IDC_STATIC,12,183,45,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_INFOSIZE,59,181,47,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Th&umbnailit",IDC_STATIC,19,199,39,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SIZEPIX,59,197,47,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Tarkistus&summa sareke",IDC_STATIC,108,183,79,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIT_SUMSIZE,189,181,47,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Kohde pakattu tai &FTP",IDC_STATIC,115,199,72,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIT_ZIPSIZE,189,197,47,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "lisäasetukset",IDC_BUTTON_KEALLA,179,7,64,14
+END
+
+IDD_MASSRENAME_DLG DIALOG DISCARDABLE  0, 0, 231, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Usean kohteen uudelleen nimeäminen"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Nimipohja:",IDC_STATIC,46,9,36,8
+    COMBOBOX        IDC_COMBO_RNTEMPL,88,7,137,106,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "E&rikoistokenit:",IDC_STATIC,68,26,48,8
+    COMBOBOX        IDC_COMBO_TOKENS,121,24,104,88,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "$-token &apu",IDC_BUTTON_HELP,7,85,50,14
+    PUSHBUTTON      "&uudelleen nimeä",IDOK,101,85,61,14
+    PUSHBUTTON      "peruuta",IDCANCEL,174,85,50,14
+    EDITTEXT        IDC_EDIT_PREVIEW,7,43,218,36,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    DEFPUSHBUTTON   "&esikatselu",IDC_BUTTON_PREVIEW,7,24,50,14
+END
+
+IDD_FINDFILES_DLG DIALOG DISCARDABLE  0, 0, 235, 266
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Etsi tiedostoja ja kansioita"
+FONT 8, "Verdana"
+BEGIN
+    RTEXT           "Koh&de:",-1,2,9,32,8
+    COMBOBOX        IDC_COMBO_WHERE,39,7,171,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_DOTS,214,7,13,12
+    LTEXT           "&Erikoiskansiot:",-1,11,24,49,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_VIRTUALS,63,22,116,73,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Etsi ali&hakemistoista",IDC_CHECK_SUBFOLDERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,38,78,10
+    CONTROL         "A&rkistoitu sisältö",IDC_CHECK_ZIPFOLDERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,88,38,67,10
+    CONTROL         "&Mene syvälle ensin",IDC_RADIO_DEPTH,"Button",
+                    BS_AUTORADIOBUTTON,38,50,78,10
+    CONTROL         "Etsi pi&nnalta ensin",IDC_RADIO_BREADTH,"Button",
+                    BS_AUTORADIOBUTTON,122,50,75,10
+    CONTROL         "&Paikallinen etsintä",IDC_CHECK_REFINE,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,156,38,72,10
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,64,227,1
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,68,228,170
+    PUSHBUTTON      "t&yhjennä",IDC_BUTTON_CLEAR,7,243,50,14
+    DEFPUSHBUTTON   "Etsi",IDOK,113,243,50,14
+    PUSHBUTTON      "peruuta",IDCANCEL,177,243,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,237,227,1
+END
+
+IDD_MATCHRULE_DLG DIALOG DISCARDABLE  0, 0, 235, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Valitse kohteet perustuen sääntöön"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,3,228,170
+    PUSHBUTTON      "t&yhjennä",IDC_BUTTON_CLEAR,7,177,50,14
+    DEFPUSHBUTTON   "&valitse",IDOK,71,177,50,14
+    PUSHBUTTON      "&poista valinta",IDC_UNSELECT,125,177,50,14
+    PUSHBUTTON      "peruuta",IDCANCEL,179,177,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,171,227,1
+END
+
+IDD_TRYKS_DLG DIALOG DISCARDABLE  0, 0, 227, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Päivän vihje"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "&Näytä käynistettäessä",IDC_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,139,89,10
+    PUSHBUTTON      "&seuraava vihje",IDC_NEXT,104,137,57,14
+    DEFPUSHBUTTON   "sulje",IDOK,170,137,50,14
+    LTEXT           "",IDC_PLACEHOLDER,7,7,213,121
+END
+
+IDD_CUSTLIST_DLG DIALOG 0, 0, 298, 145
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Järjestä"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,19,284,101,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "ok",IDOK,178,124,50,14
+    PUSHBUTTON      "peruuta",IDCANCEL,241,124,50,14
+    LTEXT           "",IDC_TBPLACE,7,7,284,13,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_CUSTPROPS_DLG DIALOG DISCARDABLE  0, 0, 209, 110
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " - asetukset"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Nimi",IDC_STATIC,26,11,15,8
+    EDITTEXT        IDC_EDIT_NAME,50,9,151,12,ES_AUTOHSCROLL
+    LTEXT           "&Kuvaus",IDC_STATIC,22,30,25,8
+    EDITTEXT        IDC_EDIT_DESCR,50,30,152,28,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY
+    GROUPBOX        "Näppäimistön oikopolku",IDC_STATIC,7,69,128,34,WS_GROUP
+    CONTROL         "&Ctrl",IDC_CHECK_CTRL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,83,28,10
+    CONTROL         "&Alt",IDC_CHECK_ALT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,42,83,22,10
+    CONTROL         "&Vaihto",IDC_CHECK_SHIFT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,68,83,31,10
+    COMBOBOX        IDC_COMBO_NUM,103,81,27,90,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "ok",IDOK,152,69,50,14,WS_GROUP
+    PUSHBUTTON      "peruuta",IDCANCEL,152,88,50,14
+    PUSHBUTTON      "&info",IDC_BUTTON_LINFO,16,47,30,11,WS_DISABLED
+END
+
+IDD_REGPROMPT_DLG DIALOG DISCARDABLE  0, 0, 281, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "xplorer² kokeilujakso"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Ole ystävällinen ja anna rekisteröintiavain:",
+                    IDC_STATIC,7,49,142,8
+    EDITTEXT        IDC_EDIT_CODE,7,61,267,64,ES_MULTILINE | ES_AUTOVSCROLL
+    DEFPUSHBUTTON   "osta lisenssi...",IDC_BUTTON_BUY,7,133,84,14
+    PUSHBUTTON      "jatka",IDOK,224,133,50,14,WS_DISABLED
+    ICON            "",IDC_CUSTICON,7,7,20,20
+    LTEXT           "Valitettavasti kokeilujakso on päättynyt. Jos haluat jatkaa ohjelman käyttämistä sinun täytyy ostaa lisenssi ja antaa rekisteröintiavain (registration key) alla olevaan laatikkoon.",
+                    IDC_MESSAGE,33,7,241,36
+    LTEXT           "",IDC_MESSAGE2,33,36,117,8
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(CHEAPO)
+#if defined(APSTUDIO_INVOKED)
+IDD_ABOUTBOX$(CHEAPO) DIALOG DISCARDABLE  0, 0, 242, 121
+#else
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 242, 121
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tietoja xplorer² litestä"
+FONT 8, "Verdana"
+BEGIN
+    PUSHBUTTON      "päivitä pro\n versioksi",IDC_EMAIL,174,10,61,27,
+                    BS_MULTILINE
+    DEFPUSHBUTTON   "ok",IDOK,179,48,50,14
+    EDITTEXT        IDC_BUILD,72,14,85,12,ES_MULTILINE | ES_READONLY
+    CTEXT           "Täysivaltaista tiedostojen hallintaa massoille\n\n© Copyright 2002-2005 by Nikos Bozinis\nKaikki oikeudet pidetään",
+                    IDC_STATIC,11,32,149,34
+    ICON            IDR_MAINFRAME,IDC_STATIC,17,10,20,20
+    GROUPBOX        "",IDC_STATIC,7,3,158,87
+    LTEXT           "Versio:",IDC_STATIC,41,16,24,8
+    LTEXT           "Warning: this computer program is protected by copyright law and international treaties. Unauthorized reproduction or distribution of this program may result in severe civil and criminal penalties.",
+                    IDC_WARNING,7,93,228,25
+    CTEXT           "ILMAINEN vain yksityisessä ja akateemisessa käytössä",
+                    IDC_FREEMANS,11,69,148,17
+    LTEXT           "www.zabkat.com",IDC_ZABKAT,176,73,56,8
+END
+#endif
+
+IDD_VISHFILTER_DLG DIALOG DISCARDABLE  0, 0, 235, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Näytä kohteita säännön mukaan"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,3,228,170
+    PUSHBUTTON      "t&yhjennä",IDC_BUTTON_CLEAR,7,177,50,14
+    DEFPUSHBUTTON   "&suodata",IDOK,119,177,50,14
+    PUSHBUTTON      "peruuta",IDCANCEL,179,177,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,171,227,1
+END
+
+IDD_CONFIRMALL_DLG DIALOG DISCARDABLE  0, 0, 238, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "message",IDC_MESSAGE,7,7,224,45
+    PUSHBUTTON      "&Kyllä",IDYES,7,55,50,14
+    PUSHBUTTON      "K&yllä kaikkiin",IDIGNORE,7,74,50,14
+    PUSHBUTTON      "&Ei",IDNO,181,55,50,14
+    PUSHBUTTON      "E&i kaikkiin",IDCANCEL,181,74,50,14
+    PUSHBUTTON      "&peruuta",IDABORT,94,55,50,14
+    ICON            "",IDC_CUSTICON,110,71,20,20
+END
+
+IDD_COPYTO_DLG DIALOG DISCARDABLE  0, 0, 211, 106
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " hakemistoon"
+FONT 8, "Verdana"
+BEGIN
+    COMBOBOX        IDC_COMBO_TARGET,42,44,147,78,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_DOTS,191,44,13,12
+    COMBOBOX        IDC_COMBO_TABS,62,64,142,79,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&asetukset",IDC_BUTTON_OPTIONS,7,85,50,14
+    CONTROL         "&Vastakkaiseen ruutuun",IDC_RADIO_OPPOSITE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,6,25,86,10
+    CONTROL         "&Tänne",IDC_RADIO_HERE,"Button",BS_AUTORADIOBUTTON,7,45,
+                    30,10
+    CONTROL         "&Välilehdelle",IDC_RADIO_TAB,"Button",
+                    BS_AUTORADIOBUTTON,7,65,53,10
+    DEFPUSHBUTTON   "",IDOK,94,85,50,14,WS_GROUP
+    PUSHBUTTON      "peruuta",IDCANCEL,154,85,50,14
+    EDITTEXT        IDC_OTHER_PANE,96,24,108,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           " %d valittua kohdetta:",IDC_LABEL,16,8,128,8
+END
+
+IDD_COPYOPTIONS_DLG DIALOG DISCARDABLE  0, 0, 211, 173
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Siirtoasetukset"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "&Hiljainen toimenpide; ei vahvistuksia tai virheilmoituksia",
+                    IDC_CHECK_SILENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    6,194,10
+    GROUPBOX        "Olemassa olevien kohteiden päällekirjoitus",IDC_STATIC,
+                    7,20,197,49,WS_GROUP
+    CONTROL         "&Kysy vahvistus",IDC_RDOVR_ASK,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,11,31,65,10
+    CONTROL         "P&äällekirjoita jos uudempi muutoin ohita",
+                    IDC_RDOVR_NEWER,"Button",BS_AUTORADIOBUTTON,11,42,147,10
+    CONTROL         "&Aina vahvista lue ainoastaan ja järjestelmän tiedostot",
+                    IDC_CHECK_READHID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    9,56,190,10
+    GROUPBOX        "Virheiden sattuessa",IDC_STATIC,7,75,197,35,WS_GROUP
+    CONTROL         "&Raportoi ja kysy toimenpidettä",IDC_RDERR_PROMPT,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,11,85,117,10
+    CONTROL         "K&irjaa virheet ja jatka kopiointia",IDC_RDERR_LOGIT,
+                    "Button",BS_AUTORADIOBUTTON,11,96,122,10
+    CONTROL         "&Jätä edistysikkuna auki siirron loppumisen jälkeen",
+                    IDC_CHECK_WINDOWON,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,7,114,181,10
+    CONTROL         "&Poista ""vain luku""-määrite kohdetiedostoista",
+                    IDC_CHECK_CDRONLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,125,155,10
+    GROUPBOX        "Tehtävän prioriteetti",IDC_STATIC,7,140,118,26
+    CONTROL         "&normaali",IDC_RDPRI_NORMAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,11,150,45,10
+    CONTROL         "&taka-alalla",IDC_RDPRI_BG,"Button",BS_AUTORADIOBUTTON,
+                    62,150,50,10
+    DEFPUSHBUTTON   "ok",IDOK,154,135,50,14,WS_GROUP
+    PUSHBUTTON      "peruuta",IDCANCEL,154,152,50,14
+END
+
+IDD_COPYPROGRESS_DLG DIALOG 0, 0, 263, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Siirtäminen"
+FONT 8, "Verdana"
+BEGIN
+    PUSHBUTTON      "",IDC_BUTTON_PAUSE,140,82,50,14
+    PUSHBUTTON      "peruuta",IDCANCEL,206,82,50,14
+    LTEXT           "&Mistä:",IDC_STATIC,8,7,20,8
+    EDITTEXT        IDC_EDIT_CPFROM,31,6,225,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "M&ihin:",IDC_STATIC,8,21,20,8
+    EDITTEXT        IDC_EDIT_CPTO,31,20,225,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "&Tiedostoa siirretty:",IDC_STATIC,7,42,63,8
+    EDITTEXT        IDC_EDIT_TOTFILES,88,41,37,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "&Nopeus (/sek):",IDC_STATIC,135,42,50,8
+    EDITTEXT        IDC_EDIT_TOTBYTES,197,41,59,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Aikaa &kulunut:",IDC_STATIC,7,63,48,8
+    EDITTEXT        IDC_EDIT_TIME,60,62,51,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "J&äljellä (arviolta):",IDC_STATIC,136,63,59,8
+    EDITTEXT        IDC_EDIT_REMAINDER,205,61,51,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&virheloki",IDC_BUTTON_LOG,7,82,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TEXTINPUT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_NOTIFY_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_GREP_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_SCRIPTBUILD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_SYNCWIZARD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_SPLIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_BUILDSYNC_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_COLSELECT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_FILTER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_FPP_DATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_FPP_NUMBER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_FPP_TEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_FILTEREDIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_TOUCHATTR_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_DUPEWIZARD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_GENERICLOG_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 356
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_OPTFRAME_PDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_OPTGENERAL_PDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_MASSRENAME_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_FINDFILES_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_MATCHRULE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_TRYKS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_CUSTLIST_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_CUSTPROPS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_REGPROMPT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_VISHFILTER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_CONFIRMALL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_COPYTO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_COPYOPTIONS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_COPYPROGRESS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "xplorer²"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_CLOSE           "Sulje tämä ikkuna"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Näyttä ohjelman tiedot, versionumero ja tekijänoikeustiedot\nTiedot"
+    ID_APP_EXIT             "Sulje ohjelma ja kaikki avoinna olevat ikkunat"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPY            "Kopioi valinta ja laita se leikepöydälle\nKopioi (Ctrl+C)"
+    ID_EDIT_CUT             "Leikkaa valinta ja laita se leikepöydälle\nLeikkaa (Ctrl+X)"
+    ID_EDIT_PASTE           "Lisää leikepöydän sisältö\nLiitä (Ctrl+V)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Näytä tai piilota työkalupalkit"
+    ID_VIEW_STATUS_BAR      "Näytä tai piilota tilarivi"
+    ID_VIEW_REFRESH         "Päivitä valitun ruudun sisältö\nPäivitä (Ctrl+R)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_SCSIZE          "Vaihda ikkunan kokoa"
+    ATL_IDS_SCMOVE          "Vaihda ikkunan asemaa"
+    ATL_IDS_SCMINIMIZE      "Pienennä ikkunan koko minimaaliseksi"
+    ATL_IDS_SCMAXIMIZE      "Suurenna ikkunan koko täyteen mittaansa"
+    ATL_IDS_SCCLOSE         "Sulje aktiivinen ikkuna"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_SCRESTORE       "Palauta ikkuna normaaliin kokoonsa"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Valmis"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_CLONE         "Avaa toinen samanlainen ikkuna"
+    ID_FILE_TRASH           "Poista pysyvästi valitut kohteet (ohita roskakori)\nRoskat (Vaihto+Del)"
+    ID_WINDOW_SETREGKEY     "Tallenna nykyiset ikkunoiden ulkoasu- ja historia-asetukset"
+    ID_FILE_BROWSE          "Avaa kansio tai tiedosto"
+    ID_FILE_CLONEBROWSE     "Selaa valittuna olevaa kohdetta uudessa ikkunassa"
+    ID_FILE_UPALEVEL        "Siirry nykyisen hakemiston isäntähakemistoon\nYlös (Askelpalautin)"
+    ID_VIEW_LARGEICONS      "Näytä kohteet käyttäen suuria kuvakkeita"
+    ID_VIEW_SMALLICONS      "Näytä kohteet käyttäen pieniä kuvakkeita"
+    ID_VIEW_LIST            "Näytä kohteet luettelossa"
+    ID_VIEW_DETAILS         "Näytä tietoja ikkunan jokaisesta kohteesta"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INFO_PANE            "tiedosto: 1,999,999 t; Muokattu 31/01/2001 13:35:00"
+    ID_SELECTION_PANE       "9999999: 999.234 MB"
+    ID_FILTRO_PANE          "F"
+    ID_FREESPACE_PANE       "100.9Mt vapaana"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_REGDATA_FIRST        "Selaa aktiivista kohdetta uudessa ikkunassa käyttäen käytössä olevaa sommitelmaa"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MEMO_REGNAME        "Ulkoasut"
+    IDS_TITLE_ADDCOLSET     "Sarakeasetelman otsikko"
+    IDS_SIZE_FOLDER         "<kansio>"
+    IDS_COLUMN_OFF          "<ei saatavilla>"
+    IDS_COLYMN_FILETYPE     "tiedosto"
+    IDS_STOCKCOL_NAME       "Nimi"
+    IDS_STOCKCOL_FULLNAME   "Kokonimi"
+    IDS_STOCKCOL_EXTENSION  "Pääte"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NUMBOUNDS       "Ole ystävällinen ja anna numero väliltä %d - %d"
+    IDS_ERR_INVALIDINPUT    "Keskusyksikkö ei saanut selvää viimeisimmästä syötteestä"
+    IDS_ERR_PARTIALREAD     "Joitakin kohteita ei voitu avata (riittämättömät käyttöoikeudet?)"
+    IDS_ERR_NOVISFILTER     "Ei aktiivista näkymän suodatusta"
+    IDS_ERR_NOCAPABILITY    "Valinta ei tue tätä verbiä"
+    IDS_ERR_NODRAGDROP      "Valintaa ei voi raahata"
+    IDS_ERR_NOCLIPBOARD     "Leikepöytä on tavoittamattomissa"
+    IDS_ERR_REFRESHFAILED   "Kansion sisältöä ei voitu päivittää, yritä uudelleen"
+    IDS_ERR_NOCONTENT       "Valittujen kohteiden sisältöihin ei päästy käsiksi"
+    IDS_ERR_PASTEFAULT      "Liittäminen leikepöydältä epäonnistui"
+    IDS_ERR_RENAMEFAULT     "Syystä tai toiseta kohteita ei voitu uudelleen nimetä"
+    IDS_ERR_RENAMENIET      "Kohteita ei voitu uudeelleen nimetä"
+    IDS_ERR_NOSHORTCUT      "Tämä komento vaatii pikakuvakkeen valitsemisen"
+    IDS_ERR_RESOLVELINK     "Joitakin linkkejä ei voida selvittää tänään"
+    IDS_ERR_NOPREVIEW       "Tällä kohteella ei ole esikatselukuvaa"
+    IDS_ERR_CREATEFAULT     "Uuden tiedoston luonti epäonnistui"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STOCKCOL_SIZE       "Koko"
+    IDS_STOCKCOL_ATTRIBUTES "Määritteet"
+    IDS_STOCKCOL_MODIFIED   "Muokattu"
+    IDS_STOCKCOL_CREATED    "Luotu"
+    IDS_STOCKCOL_ACCESSED   "Avattu"
+    IDS_STOCKCOL_TYPE       "Tyyppi"
+    IDS_STOCKCOL_PATH       "Polku"
+    IDS_STOCKCOL_VERSION    "Versio"
+    IDS_STOCKCOL_HLINKS     "Linkit"
+    IDS_STOCKCOL_CHECKSUM   "Tarkistussumma"
+    IDS_STOCKCOL_VOLINFO    "Media"
+    IDS_STOCKCOL_83         "8.3 Nimi"
+    IDS_STOCKCOL_COMPRESSED "Koko levyllä"
+    IDS_STOCKCOL_COMMENT    "Kommentti"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_COPYNAMEOK      "Valitut kokonimet kopioitu leikepöydälle"
+    IDS_MSG_FOLDERBUSTED    "Kansio uudelleen nimettiin tai poistettiin; siirrytään työpöydälle"
+    IDS_MSG_REFRESHOK       "Ruudun sisällön päivitys onnistui"
+    IDS_STAT_EMPTYFOLDER    "Tyhjä ruutu"
+    IDS_STAT_FORMATTOTAL    "%u kohdetta"
+    IDS_STAT_VIRTFOLDER     "nimiavaruuden pääte"
+    IDS_STAT_THINGME        "virtuaalinen kohde"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_THUMBNAILS      "Näytä kohteet käyttäen pieniä kuvia"
+    ID_FILE_PROPERTIES      "Näytä valittujen kohteiden ominaisuudet\nOminaisuudet (F12)"
+    ID_EDIT_COPYNAMES       "Kopioi täydelliset nimet valituista kohteista leikepöydälle (<Vaihto> 8.3 polkuja varten)"
+    ID_MARK_SELECTALL       "Valitse kaikki kohteet"
+    ID_FILE_VIEW            "Näytä tiedoston sisältö tekstinä\nNäytä (F3)"
+    ID_FILE_EDIT            "Muokkaa tiedoston sisältöä tekstinä\nMuokkaa (F4)"
+    ID_EDIT_COPYPREVIEW     "Kopioi kohteen esikatselukuva"
+    ID_FILE_DELETE          "Lähetä valitut kohteet roskakoriin (<Vaihto> pysyvä poistaminen)\nPoista (Del)"
+    ID_FILE_RENAME          "Uudelleen nimeä valittu kohde\nUudelleen nimeä (F2)"
+    ID_EDIT_COPYTO          "Kopioi valitut kohteet toiseen hakemistoon (<Alt> viimeisimpään kohteeseen)\nKopioi kohteeseen (F5)"
+    ID_EDIT_MOVETO          "Siirrä valitut kohteet toiseen hakemistoon (<Alt> viimeisimpään kohteeseen)\nSiirrä (F6)"
+    ID_ACTIONS_NEWFILE      "Luo uusi tyhjä tiedosto\nUusi tiedosto (F7)"
+    ID_ACTIONS_NEWFOLDER    "Luo uusi kansio\nUusi kansio (F8)"
+    ID_EDIT_PASTELINK       "Luo pikakuvake kohteeseen, joka on tallennettu leikepöydälle"
+    ID_EDIT_FINDTARGET      "Hae tiedosto, johon tämä pikakuvake viittaa"
+    ID_ACTIONS_PASTEHARDLINK 
+                            "Luo kovat linkit kohteille, jotka ovat tallennettuna leikepöydällä (ainoastaan NTFS)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ACTIONS_SHRED        "Poista pysyvästi valitut kohteet\nSilppuri"
+    ID_ACTIONS_TOUCH        "Määritä valittujen kohteiden muokkauspäiväys"
+    ID_MARK_STICKYSELECTION "Ota käyttöön tai poista käytöstä tahmea valinta\nTahmea valinta (Alt+S)"
+    ID_MARK_UNSELECTALL     "Poista valinta"
+    ID_MARK_USEVISUALFILTER "Ota käyttöön tai poista käytöstä villiin korttiin tai sääntöön perustuva suodatus"
+    ID_VIEW_LOCATEINTREE    "Hae valittuna oleva kansio kansiopuusta\nHae puusta (Alt+T)"
+    ID_VIEW_SHOWTREE        "Näytä tai piilota kansiopuu\nKansiopuu (Ctrl+T)"
+    ID_WINDOW_SCRAPFRAME    "Avaa leikeastia pitääksesi väliaikaisesti kohteita useista eri hakemistoista samassa astiassa\nLeikeastia"
+    ID_ACTIONS_CHANGEATTRIBUTES 
+                            "Vaihda valittujen kohteiden päiväyksiä ja määritteitä\nMääritteet (Vaihto+F12)"
+    ID_FILE_BROWSE2         "Avaa valittu kohde (oletustoiminto)"
+    ID_FILE_CLONEBROWSE2    "Lataa valitut kohteet tavalliseen kansioruutuun"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STAT_FOLDER         "kansio"
+    IDS_STAT_SHORTCUT       "linkki"
+    IDS_MSG_PREVIEWCOPIED   "Esikatselukuva asetettu leikepöydälle"
+    IDS_NEW_FILE            "Uusi tiedosto"
+    IDS_NEW_FOLDER          "Uusi kansio"
+    IDS_MSG_OPENWARN        "Oletko varma, että haluat avata kaikki nämä tiedostot?"
+    IDS_MSG_MPVITEMSREMOVED "Kohteet poistettu näkyvistä (ne ovat silti olemassa asemalla/medialla)"
+    IDS_MSG_FILTERMAYHIDE   "Aktiivinen suodatus on voinut piilottaa tai häiritä joitakin lisättyjä kohteita"
+    IDS_HL_CONFIRMTITLE     "Kova Linkki"
+    IDS_HL_STATUSMSG        "Liitetään erikoisesti... (ESC peruttaa)"
+    IDS_SCRAPTITLE          "scrap² - "
+    IDS_MFV_WRITEOK         "Ruudun sisällön tallennus onnistui"
+    IDS_COMMANDPROMPT       "F1:llä kokonaiset nimet; $-tokenit hyväksytään; paina <Return> suorittaaksesi"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_REMOVE          "Karsi valitut kohteet ruudulta pois (oikeat tiedostot eivät vahingoitu)\nKarsi (Del)"
+    ID_PMRITEDRAG_INSERTHERE "Aseta kohteet tähän ruutuun"
+    ID_PMRITEDRAG_CANCEL    "Peruuta tämä toiminto"
+    ID_ACTIONS_SPLIT        "Erota valittu tiedosto pienempiin osiin\nErota"
+    ID_ACTIONS_MERGEFILES   "Yhdistä valitut kohteet yhdeksi tiedostoksi (ruudussa näkyvässä järjestyksessä)\nYhdistä"
+    ID_ACTIONS_WRITECONTENTS 
+                            "Tallenna ruudun sisältö myöhempää käyttöä varten\nTallenna (Ctrl+S)"
+    ID_ACTIONS_LOADCONTENTS "Avaa aikaisemmin tallennettu sisältötiedosto (.cida)\nAvaa"
+    ID_ACTIONS_FLATTENPATH  "Pura kaikki kansiot mukaan luettuna kansion alikansiot tänne (tai avaa cida-tiedosto)"
+    ID_TOOLS_RUNCOMMAND     "Käynistä mikä tahansa windows (GUI) ohjelma\nSuorita"
+    ID_TOOLS_DOSCOMMAND     "Suorita komento, joka vaatii DOS tulkitsijan (dir, ren, jne)\nDOS (F10)"
+    ID_GOTO_BACK            "Palaa edelliseen hakemistoon\nTakaisin (Alt+vasen nuoli)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NOMAINFRAME     "Ensisijainen ikkuna on tavoittamattomissa"
+    IDS_ERR_NOSCRAPFRAME    "Ei voitu luoda leikeastiaa"
+    IDS_ERR_EXTEDITVIEW     "Ei voitu käynnistää editoria/katselijaa. Tarkista asetukset komentorivit Työkalut | Asetukset valikosta"
+    IDS_ERR_CANTEXECUTE     "Prosessori yritti parhaansa, mutta tämä komento on mitäänsanomaton"
+    IDS_ERR_HLNOTFILESYS    "Liitä erikoisesti komennot vaativat tiedostolähteen (ja kohteen)"
+    IDS_ERR_HLCANTLINK      "Virhe luotaessa kovia linkkejä; ovatko lähde ja kohde samalla NTFS partitionilla?"
+    IDS_ERR_HLUPONSELF      "Ei voida liittää (tai kova linkittää) kohde on alkuperäisessä kansiossa"
+    IDS_ERR_HLBOOTSTRAP     "Ei voida liittää kansiota itsensä sisään"
+    IDS_ERR_MFVWRITEKAK     "Virhe kirjoitettaessa sisältötiedostoa"
+    IDS_ERR_MFVLOAD         "Virhe lukemisessa ja/tai korruptoitunut sisältötiedosto"
+    IDS_ERR_MFVLOADPARTIAL  "Joitakin kohteita ei voitu paikantaa"
+    IDS_ERR_PIDLRANGE       "Tavoiteltu polku on paikallisen nimitilan juuren ulkopuolella"
+    IDS_ERR_FOLDERKAK       "Lukeminen %1 epäonnistui surkeasti"
+    IDS_ERR_DATASOURCE      "Tämä kansio ei vaikuta olevan kelvollinen tiedon lähde"
+    IDS_ERR_DROPTARGET      "Kohdekansio ei hyväksy tätä toimintoa"
+    IDS_ERR_INVALIDFILTER   "Määritelty suodatin on virheellinen"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_SCRAPFRAME          "leikeastia #"
+    IDR_CMDFRAME            "console²"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_DIRSTATFRAME        "kansio tiedot - "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MEDIA_UNKNOWN       "(tuntematon)"
+    IDS_MEDIA_FLOPPY        "Korppu"
+    IDS_MEDIA_FIXED         "Kiintolevy"
+    IDS_MEDIA_REMOTE        "Verkko"
+    IDS_MEDIA_CD            "CD-ROM"
+    IDS_MEDIA_RAM           "RAM-levy"
+    IDS_MSG_BOOKMARKSET     "Kirjanmerkin asettaminen onnistui"
+    IDS_ADDRESSBAR          "Osoiterivi"
+    IDS_TRANSLATION         "English translation"
+    IDS_MSG_FOCUSWARP       "Kohdistettu viimeisimpään kohteeseen"
+    IDS_SYNC_FILTERSON      "Ainakin yhdellä ruudulla on aktiivinen näkymän suodatus;%n synkronisointi voi olla vajavainen.%nJatketaanko silti? "
+    IDS_SYNC_IDENTIFIED     "Synkronointi on havainnut ja valinnut kohteet lisätoimia varten"
+    IDS_SYNC_IDENTICAL      "Kahden kansion sisällöt vaikuttavat identtisiltä"
+    IDS_MSG_NOCMDHISTORY    "Komento historia on tyhjä"
+    IDS_SELECTFILTER        "Valitse suodatin"
+    IDS_UNSELECTFILTER      "Poista suodattimen valinta"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GOTO_FORWARD         "Mene seuraavaan kansioon\nEteenpäin (Alt+oikea nuoli)"
+    ID_GOTO_BOOKMARK        "Mene kansion, jossa on nykyinen pikamerkki\nHyppää (Ctrl+F1)"
+    ID_GOTO_SETBOOKMARK     "Aseta pikamerkki valitulle kansiolle"
+    ID_VIEW_DUALPANE        "Vaihda tilaa yksittäisen ja tupla näkymän välillä\nNäkymä (Ctrl+O)"
+    ID_MARK_SYNCHRONIZEPANES 
+                            "Valitse kohteet, jotka ovat erilaisia ruutujen välillä vertailen päiväystietoja\nVertaile (F9)"
+    ID_TOOLS_REPEATCOMMAND  "Toista viimeisin suoritettu komento"
+    ID_MARK_SELECTGROUP     "Valitse kohteet, jotka vastaavat annettua suodatusta"
+    ID_MARK_UNSELECTGROUP   "Poista kohteiden valinta, jotka vastaavat annettua suodatusta"
+    ID_MARK_INVERTSELECTION "Valitse kohteet, joita ei ole valittu ja päin vastoin"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NOFILTERMATCH   "Yksikään kohde ei vastannut määriteltyä suodatusta"
+    IDS_ERR_INTERRUPT       "Lukuvirhe tai käyttäjän keskeytys"
+    IDS_ERR_NOSYNCFOLDERS   "Vastaavia kansioita ei löytynyt; oletko kokeillut synkronisointikomentoa (F9)?"
+    IDS_ERR_CMDSYNTAX       "Ole ystävällinen ja käytä $ tai > merkkejä määrittäeksesi komennon tyypin tai anna polku, joka lisätään listaan"
+    IDS_ERR_IOSCRIPT        "I/O virhe kirjoitettaessa komentosarjatiedostoa"
+    IDS_ERR_OUTOFMEM        "Liian vähän muistia haluttua operaatiota varten"
+    IDS_ERR_CMDTEMPL        "Komentomalli on virheellinen"
+    IDS_ERR_NOHELPFILE      "Tiedostoa ""%s"" ei tavoitettu asennuskansiosta"
+    IDS_ERR_SHREDIO         "Kirjoitusvirhe, silppurointi peruutettu"
+    IDS_ERR_NOTFILE         "Tämä toiminto vaatii tiedostokohteen"
+    IDS_ERR_SPLITIO         "I/O virhe tai käyttäjä keskeytti operaation"
+    IDS_ERR_NOMERGE         "Liian vähän tiedostoja valittu, jotta ne voitaisiin yhdistää"
+    IDS_ERR_NOFOLDERTARGET  "Kohde kansio on virheellinen"
+    IDS_ERRDDV_BUILDFROM    """Mistäkenttä"" ei saisi olla tyhjä"
+    IDS_ERRDDV_BUILDTO      """Minnekenttä"" ei saisi olla tyhjä\ntai sisältää villejä kortteja, pilkkuja tai pisteitä"
+    IDS_ERR_VIRTCOLUMNS     "Sarakevalintaa ei tueta virtuaalisille kansioille"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_VISUALFILTER    "Rajoita näkyvissä olevia kohteita villin kortin avulla"
+    ID_GOTO_MIRRORBROWSING  "Jos valittu niin ruudut seuraavat toisiaan selailun aikana\nPeiliselailu(Ctrl+M)"
+    ID_TOOLS_COMMANDSCRIPT  "Luo komentosarja (.bat tiedosto) käyttäen komentopohjaa jokaiseen valittuun kohteeseen\nKomento (Ctrl+B)"
+    ID_EDIT_SYNCOPASTE      "Pakota syvät synkronisointi tulokset kopioimalla valitut kohteet niitä vastaaville kansiolle"
+    ID_MARK_CONTAININGTEXT  "Valitsee tiedostot, jotka sisältävät määritellyn tekstin\nSisältää (Ctrl+G)"
+    ID_TOOLS_RUNHISTORY     "Valitse komento historia listalta\nSuorita historiasta (Ctrl+F10)"
+    ID_GOTO_SAMEFOLDER      "Pakota passiivinen ruutu saamaan kansioon aktiivisen kanssa (<Alt> käänteinen vaikutus)\nSamat"
+    ID_GOTO_SWAPPANES       "Vaihda ruutujen paikkaa keskenään"
+    ID_HELP_ALPHAINFO       "xplorer²:n esittelyopas (englannin kielinen)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_VF_INSTRUCTIONS     "Määritä suodatin (esim. '*.cpp') ja paina <Return>"
+    IDS_VF_TITLE            "Näkymän suodatin:"
+    IDS_MSG_READINGFOLDER   "Luetaan kansion sisältöä..."
+    IDS_VF_FILESNOTSAVED    "Aktiivinen näkymän suodatus (tai duplikaattien etsijä) on voinut piilottaa joitakin kohteita;%nsellaisia piilotettuja kohteita ei tallenneta; Jatketaanko silti? "
+    IDS_FP_BFFTITLE         "Valitse kansio, joka latistetaan"
+    IDS_FP_FLATTENINGMSG    "(ESC peruttaa); latistetaan kansiota %d..."
+    IDS_SYNC_NOMATCH        "Ei täsmänneitä kohteita"
+    IDS_SYNC_DODGY          " (määrittelemättömiä kohteita esiintyy)"
+    IDS_MSG_GREPROMPT       "Selataan sisältöä... (ESC peruttaa)"
+    IDS_GREP_NOMATCH        "Yksikään kohde ei vastaa määriteltyä (teksti)sääntöä"
+    IDS_GREP_FOUND          "Kohteet, jotka vastasivat (teksti)sääntöä ovat valittu lisätoimia varten"
+    IDS_TIT_CMDHISTORY      "Valitse komento:"
+    IDS_MSG_CMDTOKENS       "Nämä erikoistokenit ovat automaattisesti sijoitettu komentopohjiin:\n\n$N\tTiedoston nimi (malli.txt)\n$B\tKantanimi (malli)\n$E\tPääte (txt)\n$P\tPolku (c:\\kansio)\n$D\tMuokkauspäiväys (13/3/2004 10:12)\n$C\tAlkuperän pintanimi (kansio)\n$F\tPolku+tiedosto (c:\\kansio\\malli.txt)\n$S\tKaikki valitut tiedoston nimet\n$A\tKaikki valitut tiedoston nimet (kokonaiset polut)\n$L\tVasemman (ylemmän) ruudun polku\n$R\tOikean (alemman) ruudun polku\n$I\tPassiivisen ruudun polku\n$Q\tTiedoston nimi passiiviselta ruudulta (toinen.txt)\n$G\tTiedoston nimi+polku passiivisella ruudulla (d:\\toinen.txt)\n$Z\tVäliaikainen tiedoston nimi purettu zipkansiosta, FTP:ltä, jne.\n$#\tAutomaattisesti kasvava laskuri alkaen numerosta #\n$$\t""$""-merkille\n\nKaikki pienillä kirjaimilla kirjoitetut (esim. $f) käyttävät tiiviitä 8.3 tiedostojen/polkujen nimiä"
+    IDS_MSG_BRANCHEXPAND    "Avataan kaikki oksat... (ESC peruttaa)"
+    IDS_OFN_SAVEPROMPT      "Tallennetaanko muutokset '%1' ?"
+    IDS_MSG_SYNCPROGRESS    "Vertaillaan kohteita... (ESC peruttaa)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_HELP_CONTENTS        "Ohjekirja (englannin kielinen)"
+    ID_GOTO_DESKTOP         "Työpöytä"
+    ID_GOTO_MEDOCS          "Sisältää henkilökohtaiset tiedostot"
+    ID_GOTO_NETWORK         "Lähellä olevat tietokoneet"
+    ID_GOTO_KRAP            "Poistetut tiedostot"
+    ID_GOTO_CPANEL          "Tietokoneen asetukset"
+    ID_GOTO_MEKOMP          "Paikalliset ja määritellyt asemat"
+    ID_GOTO_PRINTERS        "Saatavilla olevat tulostimet"
+    ID_GOTO_RECENTD         "Tiedostot ja kansiot, joita on käytetty viime aikoina"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GOTO_STARTMENU       "Kansio, joka edustaa käynistysvalikkoa"
+    ID_GOTO_STARTUP         "Ohjelmat, jotka käynistyvät aina tietokoneen käynistyksen yhteydessä"
+    ID_GOTO_CDBURNING       "Tiedostot, jotka odottavat CD:lle polttamista (ainoastaan XP)"
+    ID_GOTO_SENDTO          "Kohteet, jotka näkyvät järjestelmän lähetä-toiminnolla"
+    ID_BOOKMARKS_FAVORITES  "Mene kansioon, jossa säilytetään Internet Explorerin suosikkeja"
+    ID_TOOLS_FINDFILES      "Etsi tiedostoja ja kansioita, jotka vastaavat haluttua suodatusta\nEtsi (Ctrl+F)"
+    ID_MARK_SYNCWIZARD      "Synkronisoi ruudut kätevän Welhon avulla"
+    ID_MARK_CHECKBUILD      "Valitse kohteet muunnossääntöjen mukaan\nRakenne (Ctrl+F12)"
+    ID_VIEW_SELECTCOLUMNS   "Järjestä sarakkeet tiedot näkymää varten\nSarakkeet (Alt+K)"
+    ID_MARK_SELECTRANGE     "Valitse halutun numeron verran kohteita valitun kohteen alapuolella"
+    ID_VIEW_SORTBY_NAME     "Järjestä nimen mukaan aakkosellisesti"
+    ID_VIEW_SORTBY_SIZE     "Järjestä koon mukaan pienimmästä suurimpaan"
+    ID_VIEW_SORTBY_DATE     "Järjestä muokkauspäiväyksen mukaan tuoreimmasta vanhimpaan"
+    ID_VIEW_SORTBY_TYPE     "Järjestä tiedoston tyypin mukaan"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ECF_EOL             "Rivin loppu"
+    IDS_ECF_TAB             "Sarkain"
+    IDS_ECF_CR              "Return"
+    IDS_ECF_LF              "Rivinvaihto"
+    IDS_ECF_SPACE           "Väli"
+    IDS_ECF_COMMA           "Pilkku"
+    IDS_MSG_SHREDWARNING    "Olet tuhoamassa tiedostot pysyvästi.\nSilppuroituja tiedostoja on mahdoton palauttaa.\n\nOletko varma, että haluat aloittaa silppuroinnin?"
+    IDS_MSG_SHREDDING       "Silppuroidaan... (ESC peruttaa)"
+    IDS_MSG_SHREDABORTED    "Silppurointi peruutettu, mutta jotkut tiedostot ovat voineet tuhoutua"
+    IDS_OVERWRITE_QUESTION  "%s\n\nTiedoston nimi on jo olemassa. Korvataanko silti?"
+    IDS_SPLIT_CONFIRMTITLE  "Jaa tiedosto osiin"
+    IDS_SPLIT_PROMPT        "Jaetaan... (ESC peruttaa)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ASYNCMERGE          "Valittujen tiedostojen luomispäiväykset eivät ole järjestyksessä\n(varmista, että olet järjestellyt ne asianmukaisesti)\n\nJatketaanko yhdistämistä silti?"
+    IDS_MERGE_TARGET        "Anna yhdistettäville nimi"
+    IDS_MERGE_PROMPT        "Yhdistetään... (ESC peruttaa)"
+    IDS_CHKBLD_ALLOK        "Kaikki kohteet ovat ajan tasalla"
+    IDS_CHKBLD_NOMATCH      "Yksikään kohde ei vastannut määriteltyä suodatusta"
+    IDS_STOCKDESCR_NAME     "Näytä nimi"
+    IDS_STOCKDESCR_FULLNAME "Todellinen tiedoston nimi"
+    IDS_STOCKDESCR_EXTENSION "Tiedostonimen pääte"
+    IDS_STOCKDESCR_SIZE     "Tiedoston koko"
+    IDS_STOCKDESCR_ATTRIBUTES "Tiedoston määritteet"
+    IDS_STOCKDESCR_MODIFIED "Muokkattu"
+    IDS_STOCKDESCR_CREATED  "Luotu"
+    IDS_STOCKDESCR_ACCESSED "Viimeksi käytetty"
+    IDS_STOCKDESCR_TYPE     "Tiedoston tyyppi"
+    IDS_STOCKDESCR_PATH     "Koko polku"
+    IDS_STOCKDESCR_VERSION  "Suoritettava ohjelma tai DLL versio"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STOCKDESCR_HLINKS   "Kovien linkkejen lukumäärä"
+    IDS_STOCKDESCR_CHECKSUM "Yksinkertainen varmistussumma sisällöstä"
+    IDS_STOCKDESCR_VOLINFO  "Median tiedot"
+    IDS_STOCKDESCR_83       "DOS 8.3 Nimi"
+    IDS_STOCKDESCR_COMPRESSED 
+                            "Todellinen käytetty tila asemalla (mukaan luettuna pakatut tiedostot)"
+    IDS_STOCKDESCR_COMMENT  "Lisäkäyttäjätiedot"
+    IDS_EST_FILE            "Tiedoston nimi"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EST_BASE            "Kantanimi"
+    IDS_EST_EXT             "Pääte"
+    IDS_EST_COUNTER         "Automaattinen laskuri"
+    IDS_EST_DOLLAR          "Dollari ($)"
+    IDS_EST_DATE            "Muokattu"
+    IDS_EST_PARENT          "Isäntäkansio"
+    IDS_EST_FOLDER          "Kansiopolku"
+    IDS_EST_PATH            "Koko polku"
+    IDS_EST_SEL             "Kaikki valitut tiedostonnimet"
+    IDS_EST_SELPATH         "Kaikki valitut täydelliset polut"
+    IDS_EST_LPATH           "Vasemman (ylemmän) ruudun polku"
+    IDS_EST_RPATH           "Oikean (alemman) ruudun polku"
+    IDS_EST_IPATH           "Passiivisen ruudun polku"
+    IDS_EST_IFOCUS          "Passiivisen ruudun kohde"
+    IDS_EST_IFULLPATH       "Passiivisen kohteen kokopolku"
+    IDS_EST_ZIPTEMP         "Purettu zip-kansiotiedosto"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EST_COMMA           "Pilkku (,)"
+    IDS_FMT_FREESPACE       "Vapaa tila: "
+    IDS_FMT_SELRANGE        "Etäisyys kohteen %d alapuolella "
+    IDS_TIT_RENAMEDOS       "Kohteen uusi nimi:"
+    IDS_MIRRORB_ON          "Peiliselailu ja -vieritys käytössä"
+    IDS_MIRRORB_OFF         "Peiliselailu ja -vieritys poissa käytöstä"
+    IDS_SCRAP_UNTITLED      "otsikoton"
+    IDS_MSG_COPYCOLSOK      "Valintasarakkeet kopioitu leikepöydälle"
+    IDS_MSG_SELCLIPOK       "Nykyinen valinta otettu talteen"
+    IDS_MSG_ACTIVATESIZECOL "Kansioiden viemän tilan tulokset on suositeltava näytettävän käyttäen vakiokokoisia sarakkeita"
+    IDS_MSG_DIRSIZEPROGRESS "Luetaan alihakemistoja... (ESC peruttaa)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERRDDV_NOCOLUMNS    "Sinun täytyy valita vähintää yksi sarake"
+    IDS_ERR_NOFREESPACE     "Tämä komento on sopiva ainoastaan tiedostojärjestelmän kansioille"
+    IDS_ERR_NORENCOLUMN     "Tätä saraketta ei voida uudelleen nimetä; ole ystävällinen ja laita nimisarake ensimmäiseksi"
+    IDS_ERR_NOSELCLIP       "Leikepöytä on tyhjä"
+    IDS_ERR_SECNOMATCH      "Vastaavia kohteita löytynyt leikepöydältä"
+    IDS_ERR_PSNODIRS        "Liitetty kohde ei sisällä kansiota"
+    IDS_ERR_PSWRITE         "Kirjoitusvirhe liitettäessä erikoiskohdetta"
+    IDS_ERR_PSDESKTOP       "Kansioiden rakenne on epäselvä; liittäminen peruutettu"
+    IDS_ERR_RULEINVALID     "Virheellinen valinta säännölle\nOle ystävällinen ja tarkista, että päiväykset ja koot ovat kunnossa"
+    IDS_ERRDDV_NOLOOKIN     "Sinun täytyy määritellä aloituskansio etsinnälle"
+    IDS_ERR_FILTERNOCON     "Etsintäsuodatin ei saa olla täysin vapaamuotoinen"
+    IDS_ERR_LOOKINFAULT     "Kohteen määritely on virheellinen"
+    IDS_ERR_NOTFILESYSCMD   "Tämä komento on sopiva ainoastaan tiedostojärjestelmän kohteille"
+    IDS_ERR_ATTRIBUTEIO     "Joitakin määritteitä ei voitu asettaa"
+    IDS_ERR_NOCOMMENT       "Jotkin kohteet eivät tue kommentteja (FAT partitio?)"
+    IDS_ERR_NOITEMSNODUPE   "Sinun täytyy täyttää kohteet, jotka tahdot vertailtavan ensiksi (esim. käyttämällä latista polku komentoa)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_SORTBY_UNSORTED "Älä järjestä kohteita vaan näytä ne järjestyksessä, jossa ne luetaan asemalta/medialta"
+    ID_VIEW_ARRANGEBY_PATH  "Järjestä isäntäkansion polun mukaan"
+    ID_VIEW_SORTBY_OTHER    "Järjestä vapaa valintaisen sarakkeen mukaan"
+    ID_VIEW_SORTBY_ASCENDING "Vaihda lajittelu ""pienimmästä suurimpaan"""
+    ID_TOOLS_FREESPACE      "Tarkista asemien/medioiden vapaa tila (päivittää näkymää tarvittaessa)\nVapaa tila"
+    ID_FILE_CHANGETYPE      "Uudelleen nimeä kohde mukaan luettuna kohteen DOS-pääte"
+    ID_FILE_BROWSEFLAT      "Avaa leikeastia valinnalle (kansio tai cida) ja lisää valittujen sisältö astiaan (<Ctrl> käyttääksesi nykyistä ikkunaa)\nLatista (Vaihto+Enter)"
+    ID_HELP_CHECKUPDATES    "Mene ohjelman kotisivuille hakemaan uusin versio ohjelmasta"
+    ID_WINDOW_LIST          "Lista kaikista ikkunoista, jotka ovat tämän ohjelman käytössä\nIkkunat (Ctrl+W)"
+    ID_VIEW_SAVESETTINGSNOW "Tallenna kaikki nykyiset asetukset"
+    ID_EDIT_COPYSELECTION   "Kopioi valittujen kohteiden sarakkeiden tekstit (tulostamista varten jne.)"
+    ID_MARK_SELECTION_STORE "Ota talteen valitut kohteet myöhempää käyttöä varten"
+    ID_MARK_SELECTION_SELECT 
+                            "Valitse kaikki kohteet, jotka on aikaisemmin otettu talteen"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MARK_SELECTION_UNSELECT 
+                            "Poista kaikkien niiden kohteiden valinta, jotka on otettu aikaisemmin talteen"
+    ID_EDIT_PASTESPECIAL_FOLDERSTRUCTURE 
+                            "Liitä kaikki alihakemistot ilman tiedostoja, joita ne pitävät sisällään"
+    ID_EDIT_PASTESPECIAL_STRUCTUREDSCRAPCLIPS 
+                            "Liitä kohteet (lähteenä leikeastia) uudelleen luoden alkuperäisen alihakemistojen rakenteen"
+    ID_TOOLS_SUBFOLDERSIZE  "Mittaa alihakemistojen viemän tilan kokonaismäärä\nMittaa (Ctrl+D)"
+    ID_LTB_NEW              "Lisää uusi (Väli)"
+    ID_LTB_DELETE           "Poista (Del)"
+    ID_LTB_UP               "Siirrä ylös (Ctrl+Nuoli ylös)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_LTB_DOWN             "Siirrä alas (Ctrl+Nuoli alas)"
+    ID_LTB_EDIT             "Ominaisuudet (Enter)"
+    ID_MARK_RULEBASED       "Valitse kohteet joiden ominaisuudet vastaavat monimutkaista sääntöä"
+    ID_GOTO_MIRRORSCROLLING "Automaattisesti vierittää passiivista ruutua aktiivisen rinnalla"
+    ID_VIEW_QUICKVIEWER     "Näytä tai piilota esikatselija\nEsikatselu (Ctrl+Q)"
+    ID_QUIKVIEW_SELECTALL   "Valitse kaikki teksti"
+    ID_QUIKVIEW_SETFONT     "Vaihda fontin asetuksia esikatselulle"
+    ID_QUIKVIEW_WORDWRAP    "Ota käyttöön tai poista käytöstä Word wrap (rivin automaattinen vaihtaminen)"
+    ID_QUIKVIEW_FINDNEXT    "Etsi seuraava hakua vastaava kohde"
+    ID_QUIKVIEW_FIND        "Etsi tekstiä"
+    ID_GOTO_DRIVE           "Paikalliset asemat\nAsema (Alt+F1)"
+    ID_QUIKVIEW_COPY        "Kopioi valinta tai kuva leikepöydälle"
+    ID_GOTO_ROOT            "Nykyisen kansion aseman juuri (esim. C:\\)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DTUNIT_MONTH        "kuukauden"
+    IDS_DTUNIT_DAY          "päivän"
+    IDS_DTUNIT_HOUR         "tunnin"
+    IDS_DTUNIT_MINS         "minuutin"
+    IDS_DTUNIT_SEC          "sekunnin"
+    IDS_FMT_PREVDATE        "%s viimeisten %u %s aikana"
+    IDS_FMT_DATEWITHIN      "%s aikavälillä %s - %s"
+    IDS_FMT_DATEAFTER       "%s myöhemmin kuin %s"
+    IDS_FMT_DATEBEFORE      "%s aikaisemmin kuin %s"
+    IDS_FMT_INTWITHIN       "%s välillä %u%c - %u%c"
+    IDS_FMT_INTLARGER       "%s suurempi kuin %u%c"
+    IDS_FMT_INTSMALLER      "%s pienempi kuin %u%c"
+    IDS_FMT_TEXTWITH        "%s sisältää ""%s"""
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MGS_SEARCHINGFILES  "(ESC peruttaa); etsitään %s ..."
+    IDS_TIT_ROOTSEARCH      "Valitse kansio, josta etsiminen aloitetaan"
+    IDS_TIT_LOCALDISK       "Paikalliset kiintolevyt"
+    IDS_MIRRORSCR_OFF       "Peilivieritys on poissa käytöstä"
+    IDS_MIRRORSCR_ON        "Peilivieritys on käytössä"
+    IDS_PREVIEW_MORE        "(...lisää...)"
+    IDS_MSG_READINGFOLDER_ESC "Luetaan kansion sisältöä... (ESC peruttaa)"
+    IDS_ACD_TITLE           "Aseta kommentti"
+    IDS_MSG_SUSPENDARON     "Automaattinen päivitys poissa käytöstä"
+    IDS_MSG_SUSPENDAROFF    "Automaattinen päivitys käytössä"
+    IDS_CPMVTO_MOVE         "Siirrä"
+    IDS_CPMVTO_COPY         "Kopioi"
+    IDS_TIT_CPMVTGT         "Valitse kohdekansio"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ACTIONS_SETCOMMENT   "Aseta tai muokkaa kohteen kommenttia jos mahdollista\nKommentti (Alt+Z)"
+    ID_GOTO_RECENTFOLDER    "Siirry viimeaikoina käytettyjen kansioiden joukosta haluamaasi"
+    ID_VIEW_HOLDAUTOREFRESH "Ota väliaikaisesti pois käytöstä aktiivisen ruudun automaattinen virkistys"
+    ID_VIEW_HIDEFOLDERS     "Piilota tai tuo takaisin näkyviin kaikki kansiot aktiivisessa ruudussa"
+    ID_QUIKVIEW_ENCODING_WINDOWS "Normal character set"
+    ID_QUIKVIEW_ENCODING_OEM "Original Equipment Manufacturer's code page"
+    ID_QUIKVIEW_ENCODING_UTF8 "Multibyte unicode"
+    ID_QUIKVIEW_ENCODING_UNICODE "Wide character unicode (16)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ENC_DEFAULT         "Oletus"
+    IDS_ENC_OEM             "OEM"
+    IDS_ENC_UTF8            "UTF-8"
+    IDS_ENC_UNICODE         "Unicode"
+    IDS_DUPESFOUND          "Duplikaatit tunnistettu ja ryhmitelty"
+    IDS_MSG_SAVEDSETTINGS   "Asetukset tallennettu onnistuneesti"
+    IDS_MSG_LINKRESOLVE     "Ratkaistaan linkkejä... (ESC peruttaa)"
+    IDS_MSG_FOLDERSAVED     "Kansion asetukset tallennettu"
+    IDS_MSG_ADDED2SCRAP     "%d kohdetta lisätty"
+    IDS_INFO_LOGDETAILS     "\r\nYksityiskohtaiset tiedot\r\n--------------------\r\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_AUTOSIZECOLUMNS "Säädä sarakkeiden leveyttä niin, että kaikki kohteet mahtuvat näkyville (<Vaihto> otsikoita varten)"
+    ID_TOOLS_CHECKDUPLICATES 
+                            "Tarkista valitut kohteet duplikaattien varalta\nDuplikaatit"
+    ID_QUIKVIEW_TEXTMODE    "Lukitse esikatselija näyttämään ainoastaan tekstiä (ilman ääntä tai kuvaa)"
+    ID_ACTIONS_FOLDERSETTINGS_SAVE 
+                            "Tallenna tämän kansion asetukset mukaan luettuna ruudun tyyli, sarakkeet ja järjestys"
+    ID_ACTIONS_FOLDERSETTINGS_CLEAR 
+                            "Poista kaikki tälle kansiolle tallennetut asetukset"
+    ID_FILE_SENDTOSCRAP     "Aseta valinta lähimpään leikeastiaan\nLeikeastiaan (Ctrl+S)"
+    ID_VIEW_SETFONT         "Aseta näkymän fontti\nFontti"
+    ID_CMDEDIT_FIND         "Etsi tekstiä\nEtsi (Ctrl+F)"
+    ID_TOOLS_REVEALUNIQUE   "Tuo näkyviin kaikki piilotetut kohteet, jotka eivät ole näkyvissä duplikaattien etsinnän takia"
+    ID_TOOLS_OPTIONS        "Säädä ohjelman asetuksia\nAsetukset"
+    ID_FILE_MASSRENAME      "Vaihda valitujen tiedostojen nimet käyttämällä nimipohjia"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NODUPECRITERIA  "Sinun täytyy määritellä vähintää yksi kriteeri vertailulle"
+    IDS_ERR_NODUPES         "Duplikaatteja ei löytynyt"
+    IDS_ERR_DESKINI         "I/O Virhe avattaessa desktop.ini tiedostoa"
+    IDS_ERR_SCRAPLOADMISSING 
+                            "Joitakin kohteita cida-tiedostossa ei tavoitettu\nHaluatko nähdä lokitiedoston?"
+    IDS_ERR_ILLEGALRENCH    "Nimipohja sisältää merkkejä, jotka ovat laittomia tiedostoille.\nUudelleen nimeämiskomento tulee todennäköisesti epäonnistumaan; jatketaanko silti?"
+    IDS_ERR_NOVARTEMPLATE   "Nimipohjallasi ei ole yhtään vaihtelevaisuutta ($-tokenia).\nKaikki tiedostot tullaan uudelleen nimeämään käyttäen samaa kohdenimeä; jatketaanko silti?"
+    IDS_ERR_NOSEARCHLOG     "Tietoja ei ole saatavilla"
+    IDS_ERR_NOSYNTOUMATCH   "Vastaavia kohteita ei löytynyt passiivisesta ruudusta"
+    IDS_ERR_NOTREECMD       "Tämä komento ei ole käyttökelpoinen kansiopuussa"
+    IDS_ERRDDV_NOCUST       "Sinun täytyy jättää vähintään yksi kohde listalle"
+    IDS_ERR_DUPLNAME        "Tämä tunniste on jo olemassa, ole ystävällinen ja käytä toista"
+    IDS_ERR_CUSTNAME        """Nimilaatikko"" ei saisi olla tyhjä"
+    IDS_ERR_CUSTSHIFT       "<Vaihto> ei ole sallittu pikanäppäin yksinään\nOle ystävällinen ja käytä sitä yhdistelmässä <Alt> ja/tai <Ctrl> näppäinten kanssa"
+    IDS_ERR_CUSTALT         "Pikanäppäimet, jotka ovat tarkoitettu kirjanmerkeille ei saa sisältää <Alt>-merkkiä"
+    IDS_ERR_CUSTOVERFLOW    " lista on täysi, ole ystävällinen ja poista käyttämättömiä kohteita"
+    IDS_ERR_CUSTDESCR       """Kuvauslaatikko"" ei saisi olla tyhjä"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TIT_SCRAPERLOG      "Kohteiden loki on kadoksissa"
+    IDS_TIT_CMDFIND         "Etsi tekstiä"
+    IDS_GREP_UNSELECTED     "Poista kohteiden valinta, jotka vastaavat (teksti)sääntöä"
+    IDS_MSG_TREEPRINT       "Aktiivinen oksisto kopioitu leikepöydälle"
+    IDS_TIT_OPTIONS         "Ohjelman asetukset [%s]"
+    IDS_DASEMPTY            "(tyhjä)"
+    IDS_ICON_NORMALLEN      "Normaali"
+    IDS_ICON_SIMPLE         "Yksinkertainen (nopea)"
+    IDS_ICON_PLAIN          "Niukka (nopein)"
+    IDS_MSG_GENERROR        "!Virhe!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_RENPROGRESS     "Uudelleen nimetään... (ESC peruttaa)"
+    IDS_TIT_SEARCHLOG       "Etsinnän loki"
+    IDS_FFLOG_FINITO        "\r\nEtsiminen valmis"
+    IDS_FFLOG_ONGOING       "\r\nEtsitään lisää..."
+    IDS_FFLOG_ROOT          "Etsitään: %s\r\n"
+    IDS_FFLOG_EXCLUDED      "Poissuljetut kansiot: %s\r\n"
+    IDS_FFLOG_SUBDIRS       "Alihakemistot, "
+    IDS_FFLOG_ARCHIVE       "Arkistoitu sisältö, "
+    IDS_FFLOG_BREADTH       "Leveys ensin"
+    IDS_FFLOG_DEPTH         "Syvyys ensin"
+    IDS_FFLOG_FLAGS         "Parametrit: %s\r\n"
+    IDS_FFLOG_PROLOG        "----------------------\r\nKANSIOT JOTKA TUTKITTU\r\n----------------------\r\n"
+    IDS_FFLOG_FILTER        "SUODATTIMEN YKSITYISKOHDAT\r\nTäsmättävät kohteet: %s\r\n"
+    IDS_FFLOG_FOLDERS       "Kansiot, "
+    IDS_FFLOG_FILES         "Tiedostot"
+    IDS_FFLOG_WILDCARD      "Villikortti: %s\r\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_SEARCHSTATUS   "Näytä meneillään olevan tai menneen ""etsi tiedostoja""-komennon loki"
+    ID_HELP_TIPOFTHEDAY     "Vihjeitä ja vinkkejä ohjelman käytöstä!\nVinkkejä"
+    ID_VIEW_RAWCONTENTS     "Selaa virtuaalista kansiota niin kuin se on levylle tallennettu (ohittaa explorerin)"
+    ID_MARK_SELECTION_COMBINE 
+                            "Yhdistä nykyiset ja tallennetut valinnat (bolean JA tyyliin)"
+    ID_ACTIONS_SYNCTOUCH    "Synkronisoi vastaavien kohteiden muokkauspäiväykset (aktiivisesta passiiviseen ruutuun)"
+    ID_VIEW_SELECTEDONLY    "Piilota kaikki kohteet joita ei ole valittu"
+    ID_VIEW_SHOWALL         "Poista kaikki näkymän suodatukset"
+    ID_VIEW_VIEWMODE        "Vaihda aktiivisen ruudun tyyliä\nNäkymät (Ctrl+Alt+V)"
+    ID_BOOKMARKS_ADD        "Lisää nykyinen kansio kirjanmerkkeihin"
+    ID_BOOKMARKS_ORGANIZE   "Uudelleen nimeä, poista tai järjestä kirjanmerkkejä, sekä muokkaa pikanäppäimiä"
+    ID_BOOKMARKS_MORE       "Valitse kohde kirjanmerkkien listalta"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FFLOG_ANDRULE       "[JA] %s\r\n"
+    IDS_FFLOG_ORRULE        "[TAI] %s\r\n"
+    IDS_FFLOG_NOTRULE       "[EI] %s\r\n"
+    IDS_FFLOG_GREP          "Sisältää tekstiä: %s\r\n"
+    IDS_FFLOG_TEXTOPT       "Tekstiasetukset: %s\r\n"
+    IDS_FFLOG_CASE          "Kirjainten koolla on merkitystä, "
+    IDS_FFLOG_BIN           "Kaikki tiedostot"
+    IDS_FFLOG_FENCO         "Pakotettu koodaus: %s\r\n"
+    IDS_FFLOG_WORDS         "Sanat ainoastaan, "
+    IDS_FFLOG_SUMA          "yhteensä %u kansiota tutkittu\r\n"
+    IDS_FFLOG_BLAKLIST      " [POISSULJETTU]\r\n"
+    IDS_RTF_TIPPROLOG       "{\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang2057{\\fonttbl{\\f0\\fswiss\\fprq2\\fcharset0 Verdana;}{\\f1\\fmodern\\fprq1\\fcharset0 Courier New;}}\n{\\colortbl ;\\red255\\green0\\blue0;\\red0\\green0\\blue255;}\n\\viewkind4\\uc1\\pard\\b\\f0\\fs26 Tiesitkö että...\\fs18\\b0\\par\n\\par\n"
+    IDS_MSG_SYNCTOUCHOK     "Päiväykset siirretty kohdekansioon onnistuneesti"
+    IDS_MSG_LOADIDA         "Ladataa kohteita..."
+    IDS_TOOLBAR             "Työkalupalkki"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BOOKMARKS_FIRST      "Mene tähän kansioon"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CUSTOMIZE_TOOLBARS_ADDNEW "Lisää ylimääräinen työkalupalkki"
+    ID_CUSTOMIZE_TOOLBARS_ORGANIZE 
+                            "Uudelleen nimeä tai poista työkalupalkkeja"
+    ID_CUSTOMIZE_COLUMNS_ADD "Lisää nykyinen sarakeasetelma listalle"
+    ID_CUSTOMIZE_COLUMNS_ORGANIZE 
+                            "Uudelleen nimeä, poista tai järjestä sarakeasetelmia ja määrittele pikanäppäimiä"
+    ID_CUSTOMIZE_COLUMNS_MORE "Valitse sarakeasetelma listalta"
+    ID_CUSTOMIZE_USERCOMMANDS_ADDNEW "Lisää komentopohja käyttäjävalikkoon"
+    ID_CUSTOMIZE_USERCOMMANDS_ORGANIZE 
+                            "Uudelleen nimeä, poista tai järjestä käyttäjäkomentoja ja määrittele pikanäppäimiä"
+    ID_CUSTOMIZE_USERCOMMANDS_MORE "Valitse komento listalta"
+    ID_WINDOW_SETACCELERATOR 
+                            "Määrittele pikanäppäimiä tai poista ikkunoiden sommitelmia"
+    ID_WINDOW_MORE          "Kloonaa ikkuna aikaisemmin tallennetun ulkoasun perusteella"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TBCUST_FIRST         "Lisää tai poista painikkeita tästä työkalupalkista (oikealla hiiren klikkauksella tekstivalinnat)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_COLUMNSET_FIRST      "Palauta tämä sarakeasetelma"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_USERTOOL_FIRST       "Suorita tämä komento"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MEMO_FAVNAME        "Kirjanmerkit"
+    IDS_MEMO_UCOMNAME       "Käyttäjäkomennot"
+    IDS_MEMO_CSETNAME       "Sarakeasetelmat"
+    IDS_STR_DESCRIPTION     "Kuvaus"
+    IDS_STR_ACCEL           "Pikakuvake"
+    IDS_STR_SELECT          "Valitse"
+    IDS_TITLE_ADDX          "Lisää %s"
+    IDS_CUMSG_ACCELEXISTS   "Tämä näppäimistön pikanäppäin on jo käytössä\nKorvataanko silti?"
+    IDS_TIT_ACCELLOG        "Näppäimistön käyttö"
+    IDS_ACLOG_AVAIL         "(vapaa)"
+    IDS_MSG_EXECUTING       "Suoritettu: "
+    IDS_ASK_COLUMNCLSID     "Tämä sarakeasetelma kuuluu erillaiselle kansiotyypille;\notetaanko silti käyttöön?"
+    IDS_DSM_ASFILE          "tiedostoina"
+    IDS_DSM_BUNDLE          "erillään"
+    IDS_DSM_MIXED           "jaoteltuna"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_CUSTMODIFIER    "Sinun täytyy valita muuttujanäppäin oikotielle (esim. <Ctrl>)"
+    IDS_ERR_INVALIDRKEY     "Sommitelman nimi sisältää virheellisiä merkkejä tai on jo käytössä"
+    IDS_ERR_INCOMPATCOLS    "Tämä sarakeasetelma on yhteensopimaton nykyisen kansion näkymän kanssa"
+    IDS_ERR_INCOMPATHFILT   "Tämä suodatin ei ole yhteensopiva tämän etsinnän vaikutusalueen kanssa\nJotkin sen säännöistä vastaavat eri kansiotyyppiin"
+    IDS_ERR_HFILTNAME       "Sinun täytyy määritellä nimi suodattimelle"
+    IDS_ERR_IDNAME          "Tunnisteet eivät voi olla pidempiä kuin %1!d! merkkiä"
+    IDS_ERR_REGLIC          "Lisessoinin alijärjestelmän kriittinen virhe %d:%08x:%d%d%d\n\nMahdollisesti:\n*Sinulla ei ole järjestelmän valvojan oikeuksia tälle asennukselle\n*Oletko antanut rekisteröintiavaimen väärin?\n\nJos ongelma jatkuu  ota yhteyttä ohjelman tekijöihin"
+    IDS_ERR_INVALIDRC       "Tämä ei ole kelvollinen rekisteröintiavain;\navaimet ovat ~200 merkkiä pitkiä ja sisältävät ainoastaan ISOJA kirjaimia ja numeroita\n\nOn helpompi KOPIOIDA avain suoraan viestistä, jossa se sinulle toimitettiin sähköpostilla\nja sitten vain LIITTÄÄ suoraan laatikkoon, johon rekisteröintiavain tulee syöttää"
+    IDS_ERR_FATALREG        "Asennuksen yhteydessä ilmenneiden ongelmien vuoksi tämä ohjelma sulkeutuu\nHaluatko lähettää virheraportin ohjelman tekijöille?"
+    IDS_ERR_INCOMPATDIRS    "Mukana olevilla kansioilla on yhteensopimattomia sarakkeita"
+    IDS_ERR_NOCLTEXT        "Leikepöytä ei sisällä tekstiä"
+    IDS_ERR_NOTAB           "Uuden välilehden luominen epäonnistui"
+    IDS_ERR_NOTABGROUP      "Vaaditaan vähintään kaksi välilehteä, jotta voidaan muodostaa ryhmä"
+    IDS_ERR_FOPSOURCEREAD   "Virhe luettaessa lähteestä"
+    IDS_ERR_FOPSOURCEONSELF "Kohde ei saa olla identtinen lähteen nimen kanssa"
+    IDS_ERR_FOPSOURCEMISMATCH 
+                            "Yritys päällekirjoittaa kansio tiedostolla tai päinvastoin"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CUSTOMIZE_KEYBOARDUSE 
+                            "Näytä käytössä ja vapaana olevat näppäimistön pikanäppäimet"
+    ID_MARK_ALLFOLDERS      "Valitse kaikki kansiot"
+    ID_EDIT_CLEARSCREEN     "\nTyhjennä"
+    ID_TBCM_TEXTLABELS      "Ota käyttöön tai poista käytöstä tekstin etiketti tälle työkalupalkille"
+    ID_VIEW_SORTBY          "Vaihda kohteiden järjestystä\nJärjestä"
+    ID_GOTO_SYSTEM          "Järjestelmän erikoishakemistot\nJärjestelmä (Ctrl+Alt+F)"
+    ID_HELP_REGISTERPROGRAM "Hanki lisenssi ""pro"" versiota varten, jolla saat käyttöösi kaikki ohjelman ominaisuudet.\nRekisteröi"
+    ID_HELP_DONATE          "Tue tämän ohjelman kehitystä vapaaehtoisella lahjoituksella\nLahjoita"
+    ID_HELP_GETSUPPORT      "Mene asiakkaiden tukisivulle (englannin kielinen)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_UNIT_1              "1"
+    IDS_UNIT_KILO           "Kilo"
+    IDS_UNIT_MEGA           "Mega"
+    IDS_UNIT_GIGA           "Giga"
+    IDS_TBCM_LABEL          "Tekstiselitteet"
+    IDS_TBCM_CUSTOM         "Mukauta..."
+    IDS_HFILT_DELETE        "Oletko varma, että haluat poistaa tämän suodattimen?"
+    IDS_HFILT_OVERWRITE     "Tämän niminen suodatin on jo käytössä\nKorvataanko silti?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TBSHOW_FIRST         "Näytä tai piilota tämä työkalupalkki"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_LAYOUTREG       "Sommitelman tietoja ei voida tallentaa kun automaattinen asetusten tallentaminen on poissa käytöstä.\nTallennetaanko asetukset nyt? (automaattisen tallentamisen asetukset eivät muutu)"
+    IDS_MSG_THREADBUSY      "Taustalla suoritetaan toimintoja.\nTämän ikkunan sulkeminen voi johtaa ennalta arvaamattomiin tuloksiin;\nJatketaanko silti?"
+    IDS_SPLIT_35            "3.5 Disketti"
+    IDS_SPLIT_CD            "CD-R 650"
+    IDS_SPLIT_CD2           "CD-R 700"
+    IDS_MSG_TRIAL           "xplorer² on trialware-ohjelma, jota saa kokeilla ilmaiseksi rajallisen kokeilujakson ajan. Ole ystävällinen ja osta lisenssi poistaaksesi kaikki rajoitukset mukaan luettuna tämä rekisteröintimuistutus."
+    IDS_MSG_TRIAL2          "Päiviä jäljellä kokeilujaksossa: %d"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CHECK_BINARY        "Etsi Word-dokumenttejen, sovellusten ja muiden binaaristen tiedostojen sisältä\nTekee etsimisestä hitaamman"
+    IDC_COMBO_FIND          "Erottele useat avainsanat pilkuilla\nRivien väliin + tai - JA/EI määritelmille\n(esim. ""+text, -exclude"")"
+    IDC_COMBO_WHERE         "Etsinnän juurihakemistot\nUseat pilkulla erotellut polut ja poissulkemiset sallitaan\n""c:\\, d:\\, -*temp*"" etsii C:n/D:n paitsi kansiot joiden nimissä esiintyy ""temp"""
+    IDC_COMBO_NAMED         "Mitä tiedoston nimiä vertaillaan\nOsittaiset nimet ja villit kortit hyväksytään\nesim. ""*.cpp, *.h"""
+    IDC_BUTTON_PREVIEW      "Testaa komentopohjaa käytössä olevaan valintaan\nJos haluat esikatselun niin suorita varsinainen komento"
+    IDC_RADIO_MOD           "(vertailee myös tiedostojen kokoa)\nErittäin nopea, mutta ei 100% luotettava"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_EDIT_TSIZE          "Esikatselija lataa ainoastaan osan tiedostosta\nMitä enemmän näet, sitä hitaammin se lataa"
+    IDC_CHECK_NOHEX         "Valitse jos et halua nähdä esikatselua\nohjelmatiedostoista"
+    IDC_CHECK_VERBA         "Ota pois käytöstä erikoismerkkien käsittely (pilkut ja $)\nHae tekstiä täsmälleen niin kuin se on kirjoitettu"
+    IDC_EDIT_NAME           "Kohteen tunniste, käytetään valikoissa ja työkalupalkeissa\nTäytyy olla uniikki omassa ryhmässään"
+    IDC_EDIT_DESCR          "Kirjanmerkit: Kansion polku\nKäyttäjän komennot: mitä suoritetaan (aloita > tai $ merkeillä)\nJäljelle jääville tyypeille: kommentti"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_RADIO_CONTENT       "Vertaile tiedostoja tavu tavulta\nTarkka, mutta hidas"
+    IDC_RADIO_NAME          "Jos nimet vastaavat toisiaan ovat ne ""identtisiä""\n(ilman tarkempia tarkistuksia)"
+    IDC_CHECK_UNDECIDABLE   "Nämä kohteet joilla on kysymysmerkit ikoneissaan"
+    IDC_COMBO_ESPECIAL      "Lisää erikoismerkkejä\n$xx etsii merkkejä hexa-koodista"
+    IDC_EDIT_SIZE           "Kuinka suuret tahdot kunkin osan olevan\nValitse kohteen laitteen mukaan\nesim. 1423 kt korpuille"
+    IDC_COMBO_TOKENS        "$-tokenit korvataan valittujen tiedostojen nimien osilla\nNe mahdollistavat uudelleen käytettävät mallipohjat"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_COMBO_NUM           "Valitse numero oikopolulle\njätä tyhjäksi poistaaksesi jo olemassa olevan oikopolun"
+    IDC_COMBO_DIRSORT       "tiedostoina: sekoitettuna tiedostojen joukkoon\nerillään: aina näytetään ensimmäisenä\njaoteltuna: erillään nimen/päätteen mukaan ja lajiteltuna koon yms mukaan"
+    IDC_CHECK_PLAINMEN      "Supista valikkojen kokoa niin, että\n valikoissa on näkyvillä vain peruskomennot"
+    IDC_CHECK_BALONI        "Ota käyttöön tai poista käytöstä nämä ilmapallovihjeet"
+    IDC_COMBO_ENCODING      "Oletettu koodaus tekstitiedostoille ilman BOMia (byte order mark)"
+    IDC_CHECK_CONTENT       "Jos vain sisältö on valittuna tiedostot vertaillaan binaarisesti\nHidas, mutta erittäin järeä\n(havaitsee duplikaatit, joilla on eri nimet)"
+    IDC_COMBO_RNTEMPL       "Yhdistä tekstiä ja erikoistokeneita nimille\nesim. ""$B.xxx"" vaihtaa tiedoston päätteen xxx:ksi"
+    IDC_EXTEDITORNAME       "Muokkaaminen tapahtuu käyttäen tätä ohjelmaa (F4)\nvoit lisätä vapaaehtoisia argumentteja"
+    IDC_EXTVIEWERNAME       "Käyttääksesi tätä ohjelmaa kun editor² on käynnissä paina <Ctrl+F3>"
+    IDC_EDIT_ZIPSIZE        "Rajoita kohteiden sisällön purkamista\nzipkansioista, FTP:ltä jne."
+    IDC_COMBO_BATPLATE      "Kehitä komentoja valituille kohteille käyttäen $-tokeneita\nUsealle komennolle käytä pilkkuja\nesim. copy $N $B.dat, del $N"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_LISTRULES           "Tuplaklikkaa lisääksesi ylimääräisiä sääntöjä\nKaikkia kansioiden sarakkeita voidaan käyttää parametreinä\nesim. Koko, Päiväys, Kommentti, Omistaja jne."
+    IDC_CHECK_REFINE        "Etsi viimeisimpien tulosten joukosta\n(kohteet, jotka ovat näkyvillä aktiivisessa ruudussa)"
+    IDC_DOTS                "Selaa kansiota"
+    IDC_BUTTON_SAVE         "Tallenna nykyinen suodatin tai poista vanha"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CHECK_SYSTEM        "Älä vaihda tätä määritettä\nellet ole aivan varma sen tarkoituksesta"
+    IDC_DATE_MODIFIED       "Päiväys vaihdettu ainoastaan jos merkitset laatikon valinnan"
+    IDC_BUTTON_MODNOW       "Aseta tiedoston päiväys vastaamaan tämän hetkistä päiväystä"
+    IDC_RADIO_BREADTH       "Käytä tätä menetelmää kun et odota kohteiden\nolevan liian syvällä juurihakemistosta"
+    IDC_CHECK_SELECTEM      "Käytännöllinen duplikaattien poistamiseen niiden havaitsemisen jälkeen"
+    IDC_MAXWIDTH            "(pikseliä); vaikuttaa vain luottelotyyliin"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_BUTTON_EDIT         "Kehitä komentosarja ja lataa se muokkaamista varten\nSuorittaaksesi tuplaklikkaa .BAT-tiedostoa"
+    IDC_BUTTON_WINEXEC      "Ainoastaan puhtaille windows komentosarjoille\ntulkittuja komentoja (ren jne) ei sallita"
+    IDC_COMBO_SPLITARGET    "Minne asetetaan jaon osat"
+    IDC_CHECK_FOLDERS       "Kansiot ovat vertailtu ainoastaan nimen mukaan"
+    IDC_COMBO_SAVED         "Ota käyttöön suodatin, joka on aikaisemmin tallennettu\ntai anna nimi nykyiselle suodattimelle ja tallenna se myöhempää käyttöä varten\ntai paina ensiksi tyhjennä ja sitten tallenna poistaaksesi tallennetun suodattimen"
+    IDC_DATE_TO             "Valitse yläraja päiväykselle\nMuutoin verrataan kaikki tiedostot päiväyksen alarajaan asti"
+    IDC_COMBO_STD           "Todelliset koot tyypillisille medioille"
+    IDC_BUTTON_BUY          "Mene verkkosivuille hankkiaksesi rekisteröintiavain"
+    IDC_EDIT_CODE           "Anna avain, jonka sait rekisteröintiviestin mukana\nVoit kopioida sen suoraan viestistä ja sitten vain liittää Ctrl+V avulla tänne\nJatkaaksesi kokeilua jätä tämä laatikko tyhjäksi"
+    IDC_BUTTON_LINFO        "Lisätietoja tälle kohteelle jos saatavilla"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_DATE_FROM           "Valitse alaraja päiväykselle\nMuutoin verrataan kaikki tiedostot päiväyksen ylärajaan asti"
+    IDC_EDIT_MINSIZE        "Jätä tyhjäksi ""pienempi kuin"" sääntöä varten"
+    IDC_EDIT_MAXSIZE        "Jätä tyhjäksi ""suurempi kuin"" sääntöä varten"
+    IDC_EDIT_FINDTXT        "Mitä etsitään sarakkeiden tekstistä\nErottele useat avainsanat pilkuilla\nesim. ""+A, -H"" on hyväksyttävä määritteiden etsinnälle"
+    IDC_COMBO_PROPERTIES    "Ominaisuudet vastaa kansion sarakkeita"
+    IDC_RADIO_NOT           "Hae ainoastaan kohteita, jotka _eivät_ vastaa tätä sääntöä"
+    IDC_BUTTON_CLEAR        "Tyhjennä kaikki suodatin kentät"
+    IDC_CHECK_ZIPFOLDERS    "Valitse etsiäksesi hitaista kansioista\nkuten zip-tiedostoista, FTP:ltä, verkkokansioista jne."
+    IDC_COMBO_VIRTUALS      "Juurra etsintä erikoiskansioon\n""Kohde""-kenttä saa sisältää poissulkemista varten villin kortin esim. ""-*temp*"""
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_REGWELCOME      "Rekisteröintiavain on hyväsytty.\nOle ystävällinen ja pidä se varmassa tallessa, sillä voit tarvita sitä asiakastuen saamiseksi\n\nÄLÄ JAA TÄTÄ REKISTERÖINTIAVAINTA ETEENPÄIN!\nAvaimen jakaminen toisille rikkoo sinun hyväksyämiäsi lisenssiehtoja\n\nKiitoksia, että valitsit meidät pitämään huolta tiedostojenhallinnasta!"
+    IDS_INFO_REGOPT         "On olemassa ""eksoottisempia"" asetuksia, jotka on mahdollista ottaa käytöön rekisterin muokkaamisen avulla\nLisätietoja löydät registry.txt tiedostosta"
+    IDS_INFO_DIRDATA        """%s"" [%s]: Alihakemistot=%d, Tiedostot=%d"
+    IDS_INFO_LFDATA         "%s %d paikallisessa tiedostossa"
+    IDS_HELP_MAINPDF        "\n\nOhjetiedosto on suurehko, joten se on saatavilla erillisenä pakettina.\nHaluatko mennä imuroimaan ohjetiedoston nyt?"
+    IDS_STATUS_FREE         "%s vapaana"
+    IDS_MEMO_DIRTABNAME     "Kansioryhmät"
+    IDS_TIT_FILEREPLACE     "Vahvista tiedoston korvaus"
+    IDS_MSG_FILEXIST        "Tämä kansio sisältää ennestään tiedoston nimeltä '%s'\n\nHaluatko korvata nykyisen tiedoston\n%s\ntällä tiedostolla\n%s\n"
+    IDS_MSG_COPYACTIVE      "Kaikki kopiointitoiminnot eivät ole vielä valmiit.\nOdotetaanko toimintojen valmistumista?"
+    IDS_TIT_KOPYERLOG       "Tiedostojen siirron loki"
+    IDS_MGS_SEECPLOG        "Siirron aikana havaittiin joitakin ongelmia\nHaluatko nähdä lokin?"
+    IDS_BUT_PAUSE           "&pysäytä"
+    IDS_BUT_RESUME          "&jatka"
+    IDS_MSG_MOVEROF         "Lähdetiedostolla '%s' on erikoismäärite\n%s\nOletko varma, että haluat sen poispyyhittävän?\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_UNSELECT            "Poista kohteiden valinta, jotka vastaavat valitsemaasi kriteeriä"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DIRDATA_COPYTEXT     "Kopioi kansion hierarkia tekstinä alkaen valittuna olevasta kohteesta"
+    ID_TOOLS_FOLDERSTATISTICS 
+                            "Näytä kansion ja sen alikansioiden tilastot\nTilastot (Alt+D)"
+    ID_HELP_LASTERROR       "Näytä viimeisin virheilmoitus uudelleen"
+    ID_QUIKVIEW_NEXT        "Lataa seuraava tiedosto aktiivisesta ruudusta"
+    ID_QUIKVIEW_PREVIOUS    "Lataa edellinen tiedosto aktiivisesta ruudusta"
+    ID_VIEW_VISUALFILTER_RULEBASED 
+                            "Näytä ainoastaan ne kohteet joiden ominaisuudet vastaavat antamaasi sääntöä\nSuodatus (Alt+H)"
+    ID_VIEW_VISUALFILTER_SAMEFILTER 
+                            "Pakota samanlainen suodatus taustalla olevalle ruudulle"
+    ID_ACTIONS_IMPORTCLIPBOARD 
+                            "Syötä kohteita leikepöydän nimistä (yksi polku riviä kohden)"
+    ID_FILE_NEWTAB          "Selaa tarkennettua kohdetta uudessa välilehdessä\nVälilehti (Ctrl+Ins)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CHECK_TRACKSEL      "Yhteensopimaton ""tahmean valinnan"" kanssa"
+    IDC_BUTTON_IBGCOL       "Väri jota käytetään passiivisen\n ruudun taustana"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CUSTOMIZE_TABSETS_ADDNEW "Lisää nykyinen kansio ryhmään"
+    ID_CUSTOMIZE_TABSETS_ORGANIZE 
+                            "Uudelleen nimeä, poista tai järjestä kansioryhmiä ja määrittele pikanäppäimiä"
+    ID_CUSTOMIZE_TABSETS_MORE "Valitse kansioryhmä listalta"
+    ID_WINDOW_CLOSETAB      "Sulje aktiivinen välilehti"
+    ID_WINDOW_CLOSEALLTABS  "Sulje kaikki välilehdet paitsi aktiivinen"
+    ID_EDIT_DUPLICATEFILE   "Luo kopio valituista kohteista samaan kansioon"
+    ID_ACTIONS_FOLDERSETTINGS_SUSPEND 
+                            "Väliaikaisesti sivuuta kaikki erikoiset kansion asetukset tälle ruudulle (tilanvaihto)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TABSETS_FIRST        "Palauta tämä kansioryhmä"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_FOPBOOTSTRAP    "Yritys siirtää kansio itsensä alapuolelle"
+    IDS_ERR_FOPDIRCREATE    "Virhe luotaessa kohdekansiota"
+    IDS_ERR_FOPDIRREAD      "Kansiota ei voitu lukea kokonaisuudessaan"
+    IDS_ERR_FOPCOPY         "Tiedoston kopiointi epäonnistui"
+    IDS_ERR_FOPSTREAMLOST   "Toissijaisia lähteitä (esim. tiedoston kommenteja) ei voitu siirtää kohteeseen"
+    IDS_ERR_FOPFREESPACE    "Medialla ei ole tarpeeksi vapaata tilaa\nAseta uusi media jatkaaksesi"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_RDPRI_BG            "Kopioi tiedostot hitaammin käyttäen vähemmän resursseja"
+    IDC_CHECK_CDRONLY       "Käytännöllinen kopioitaessa tiedostoja CD-levyiltä"
+    IDC_BUTTON_PAUSE        "Pysäytä tiedon siirto väliaikaisesti"
+    IDC_CHECK_WINDOWON      "Hyödyllinen virheiden ja yli hypättyjen tiedostojen yksityiskohtien tarkasteluun"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TIT_MOVEROF         "Vahvista tiedoston poisto"
+    IDS_BUT_CLOSE           "sulje"
+END
+
+#endif    // Finnish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "#include ""conditional.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_LISTTOOLS TOOLBAR DISCARDABLE  14, 12
+BEGIN
+    BUTTON      ID_LTB_NEW
+    BUTTON      ID_LTB_DELETE
+    BUTTON      ID_LTB_EDIT
+    BUTTON      ID_LTB_UP
+    BUTTON      ID_LTB_DOWN
+END
+
+IDR_TOOLBAR_DUMMY TOOLBAR DISCARDABLE  1, 16
+BEGIN
+    BUTTON      IDC_ADDRBAR_COMBO
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_LISTTOOLS           BITMAP  DISCARDABLE     "res\\listtool.bmp"
+IDR_TOOLBAR_DUMMY       BITMAP  DISCARDABLE     "res\\toolbar_.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\kenny.ico"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

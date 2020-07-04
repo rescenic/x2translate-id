@@ -1,0 +1,2962 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+#include "conditional.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "#include ""conditional.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_LISTTOOLS TOOLBAR DISCARDABLE  14, 12
+BEGIN
+    BUTTON      ID_LTB_NEW
+    BUTTON      ID_LTB_DELETE
+    BUTTON      ID_LTB_EDIT
+    BUTTON      ID_LTB_UP
+    BUTTON      ID_LTB_DOWN
+END
+
+IDR_TOOLBAR_DUMMY TOOLBAR DISCARDABLE  1, 16
+BEGIN
+    BUTTON      IDC_ADDRBAR_COMBO
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_LISTTOOLS           BITMAP  DISCARDABLE     "res\\listtool.bmp"
+IDR_TOOLBAR_DUMMY       BITMAP  DISCARDABLE     "res\\toolbar_.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Fisier"
+    BEGIN
+        MENUITEM "E&xplorare\tEnter",           ID_FILE_BROWSE
+        MENUITEM "&Clonare+explorare\tCtrl+Enter", ID_FILE_CLONEBROWSE
+        MENUITEM SEPARATOR
+        MENUITEM "Tab no&u\tCtrl+Ins",          ID_FILE_NEWTAB
+        MENUITEM "Eplorare &flat\tShift+Enter", ID_FILE_BROWSEFLAT
+        MENUITEM "Trimitere &la scrap\tCtrl+S", ID_FILE_SENDTOSCRAP
+        MENUITEM SEPARATOR
+        MENUITEM "Ex&aminare\tF3",              ID_FILE_VIEW
+        MENUITEM "&Editare\tF4",                ID_FILE_EDIT
+        MENUITEM "&Proprietati...\tF12",        ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Redenumire\tF2",             ID_FILE_RENAME
+        MENUITEM "Schimbare &tip\tCtrl+F2",     ID_FILE_CHANGETYPE
+        MENUITEM "Redenumire &multipla...",     ID_FILE_MASSRENAME
+        MENUITEM "&Stergere\tDel",              ID_FILE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "I&nchidere",                  ID_FILE_CLOSE
+        MENUITEM "&Iesire\tAlt+X",              ID_APP_EXIT
+    END
+    POPUP "&Salt la"
+    BEGIN
+        MENUITEM "&Mai sus cu un nivel\tBksp",  ID_FILE_UPALEVEL
+        MENUITEM "I&napoi\tAlt+left",           ID_GOTO_BACK
+        MENUITEM "&Inainte\tAlt+right",         ID_GOTO_FORWARD
+        MENUITEM "Cautare &tinta\tCtrl+L",      ID_EDIT_FINDTARGET
+        MENUITEM SEPARATOR
+        MENUITEM "Selectare &unitate...\tAlt+F1", ID_GOTO_DRIVE
+        MENUITEM "&Foldere recente\tAlt+F2",    ID_GOTO_RECENTFOLDER
+        POPUP "F&oldere speciale"
+        BEGIN
+            MENUITEM "Documentele &mele\tCtrl+K",   ID_GOTO_MEDOCS
+            MENUITEM "Documente &recente",          ID_GOTO_RECENTD
+            MENUITEM "Cos &de reciclare",           ID_GOTO_KRAP
+            MENUITEM SEPARATOR
+            MENUITEM "&Spatiu de lucru\tCtrl+Back", ID_GOTO_DESKTOP
+            MENUITEM "Radacina &unitate\tShift+Back", ID_GOTO_ROOT
+            MENUITEM "&Computerul meu",             ID_GOTO_MEKOMP
+            MENUITEM "R&etea",                      ID_GOTO_NETWORK
+            MENUITEM SEPARATOR
+            MENUITEM "&Panou de control",           ID_GOTO_CPANEL
+            MENUITEM "&Imprimante",                 ID_GOTO_PRINTERS
+            MENUITEM "Me&niul Start",               ID_GOTO_STARTMENU
+            MENUITEM "P&ornire",                    ID_GOTO_STARTUP
+            MENUITEM "Unit&ate CD-RW",              ID_GOTO_CDBURNING
+            MENUITEM "&Trimitere la",               ID_GOTO_SENDTO
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Semn de carte rapid\tCtrl+F1", ID_GOTO_BOOKMARK
+        MENUITEM "Fi&xare semn de carte rapid\tCtrl+Shift+F1", 
+                                                ID_GOTO_SETBOOKMARK
+        MENUITEM SEPARATOR
+        MENUITEM "&Explorare in oglinda\tCtrl+M", ID_GOTO_MIRRORBROWSING
+        MENUITEM "S&crolling in oglinda",       ID_GOTO_MIRRORSCROLLING
+        MENUITEM SEPARATOR
+        MENUITEM "&Acelasi folder\tCtrl+I",     ID_GOTO_SAMEFOLDER
+        MENUITEM "Interschimbare &panouri\tCtrl+U", ID_GOTO_SWAPPANES
+    END
+    POPUP "Semn de &carte"
+    BEGIN
+        MENUITEM "&Adaugare curent",            ID_BOOKMARKS_ADD
+        MENUITEM "&Organizare...",              ID_BOOKMARKS_ORGANIZE
+        MENUITEM SEPARATOR
+        MENUITEM "(dummy)",                     ID_BOOKMARKS_FIRST
+        MENUITEM SEPARATOR
+        MENUITEM "&Mai mult...",                ID_BOOKMARKS_MORE
+        MENUITEM "Pre&ferinte IE",              ID_BOOKMARKS_FAVORITES
+    END
+    POPUP "&Marcare"
+    BEGIN
+        MENUITEM "Select&are totala\tCtrl+A",   ID_MARK_SELECTALL
+        MENUITEM "Deselectare tota&la\tAlt+A",  ID_MARK_UNSELECTALL
+        MENUITEM "Toate &folderele\tCtrl+Alt+Q", ID_MARK_ALLFOLDERS
+        MENUITEM "Selectare ade&ziva\tAlt+S",   ID_MARK_STICKYSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "&Selectare grup...\tGray +",  ID_MARK_SELECTGROUP
+        MENUITEM "&Deselectare grup...\tGray -", ID_MARK_UNSELECTGROUP
+        MENUITEM "&Inversare selectie\tGray *", ID_MARK_INVERTSELECTION
+        MENUITEM "Selecta&re sir...",           ID_MARK_SELECTRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Sincronizare &panouri\tF9",   ID_MARK_SYNCHRONIZEPANES
+        MENUITEM "E&xpert sincronizare...\tCtrl+F9", ID_MARK_SYNCWIZARD
+        MENUITEM "Verificare &compilarea...\tCtrl+F12", ID_MARK_CHECKBUILD
+        MENUITEM SEPARATOR
+        MENUITEM "C&ontinand textul...\tCtrl+G", ID_MARK_CONTAININGTEXT
+        MENUITEM "&Potrivit unei reguli...\tAlt+G", ID_MARK_RULEBASED
+        MENUITEM SEPARATOR
+        POPUP "S&electie"
+        BEGIN
+            MENUITEM "Pas&trare\tCtrl+F11",         ID_MARK_SELECTION_STORE
+            MENUITEM SEPARATOR
+            MENUITEM "&Selectare\tF11",             ID_MARK_SELECTION_SELECT
+            MENUITEM "&Deselectare\tAlt+F11",       ID_MARK_SELECTION_UNSELECT
+
+            MENUITEM "&Combinare\tShift+F11",       ID_MARK_SELECTION_COMBINE
+
+        END
+    END
+    POPUP "&Editare"
+    BEGIN
+        MENUITEM "&Decupare\tCtrl+X",           ID_EDIT_CUT
+        MENUITEM "&Copiere\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "Copiere in &folderul...\tF5", ID_EDIT_COPYTO
+        MENUITEM "&Mutare in folderul...\tF6",  ID_EDIT_MOVETO
+        MENUITEM "Stare &asteptare...",         ID_EDIT_QUEUESTATUS
+        MENUITEM SEPARATOR
+        MENUITEM "&Lipire\tCtrl+V",             ID_EDIT_PASTE
+        MENUITEM "Lipire c&omanda rapida",      ID_EDIT_PASTELINK
+        POPUP "Lipir&e speciala"
+        BEGIN
+            MENUITEM "Legatura &hard\tCtrl+Alt+H",  ID_ACTIONS_PASTEHARDLINK
+            MENUITEM "Structura &folder",           ID_EDIT_PASTESPECIAL_FOLDERSTRUCTURE
+
+            MENUITEM "&Scrap clips structurat",     ID_EDIT_PASTESPECIAL_STRUCTUREDSCRAPCLIPS
+
+        END
+        MENUITEM "D&uplicare",                  ID_EDIT_DUPLICATEFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Copiere &nume\tAlt+C",        ID_EDIT_COPYNAMES
+        MENUITEM "Copiere &vizualizare",        ID_EDIT_COPYPREVIEW
+        MENUITEM "Co&piere coloane\tCtrl+P",    ID_EDIT_COPYSELECTION
+    END
+    POPUP "&Vizualizare"
+    BEGIN
+        MENUITEM "&Doua panouri\tCtrl+O",       ID_VIEW_DUALPANE
+        MENUITEM "Pre&vizualizare\tCtrl+Q",     ID_VIEW_QUICKVIEWER
+        POPUP "&Bare de instrumente"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "&Toate barele",               ID_VIEW_TOOLBAR
+            MENUITEM "B&ara de stare",              ID_VIEW_STATUS_BAR
+            MENUITEM "&Bara de informatii",         ID_VIEW_TOOLBARS_INFOBARS
+
+        END
+        MENUITEM SEPARATOR
+        POPUP "Stil &panou"
+        BEGIN
+            MENUITEM "Picto&grame mari",            ID_VIEW_LARGEICONS
+            MENUITEM "Pictogra&me mici",            ID_VIEW_SMALLICONS
+            MENUITEM "&Listare",                    ID_VIEW_LIST
+            MENUITEM "&Detalii",                    ID_VIEW_DETAILS
+            MENUITEM "Miniat&uri",                  ID_VIEW_THUMBNAILS
+        END
+        MENUITEM "S&electare coloane...\tAlt+K", ID_VIEW_SELECTCOLUMNS
+        POPUP "&Aranjare pictograme dupa"
+        BEGIN
+            MENUITEM "&Nume\tCtrl+Alt+N",           ID_VIEW_SORTBY_NAME
+            MENUITEM "&Dimensiune\tCtrl+Alt+S",     ID_VIEW_SORTBY_SIZE
+            MENUITEM "&Modificat\tCtrl+Alt+D",      ID_VIEW_SORTBY_DATE
+            MENUITEM "&Tip\tCtrl+Alt+T",            ID_VIEW_SORTBY_TYPE
+            MENUITEM "Altceva",                     ID_VIEW_SORTBY_OTHER
+            , GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "N&esortat\tCtrl+Alt+U",       ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "&Ascendent\tCtrl+Alt+A",      ID_VIEW_SORTBY_ASCENDING
+        END
+        MENUITEM "Autoaran&jare coloane\tCtrl+Add", ID_VIEW_AUTOSIZECOLUMNS
+        MENUITEM SEPARATOR
+        MENUITEM "&Reimprospatare\tCtrl+R",     ID_VIEW_REFRESH
+        MENUITEM "Oprire a&utoreimprospatare\tCtrl+Alt+R", 
+                                                ID_VIEW_HOLDAUTOREFRESH
+        MENUITEM "Cont&inut brut",              ID_VIEW_RAWCONTENTS
+        MENUITEM SEPARATOR
+        MENUITEM "Afi&sare arbore de foldere\tCtrl+T", ID_VIEW_SHOWTREE
+        MENUITEM "Lo&calizare in arb. de foldere\tAlt+T", 
+                                                ID_VIEW_LOCATEINTREE
+        MENUITEM SEPARATOR
+        POPUP "Filtru vi&zual"
+        BEGIN
+            MENUITEM "&Wildcard...\tCtrl+H",        ID_FILE_VISUALFILTER
+            MENUITEM "Pot&rivit unei reguli...\tAlt+H", 
+                                                    ID_VIEW_VISUALFILTER_RULEBASED
+
+            MENUITEM "&Auto-filtru",                ID_VIEW_AUTOFILTER
+            MENUITEM "P&ornit/Oprit\tCtrl+J",       ID_MARK_USEVISUALFILTER
+            MENUITEM SEPARATOR
+            MENUITEM "Ascundere &foldere\tAlt+J",   ID_VIEW_HIDEFOLDERS
+            MENUITEM "Doar se&lectia\tCtrl+Alt+J",  ID_VIEW_SELECTEDONLY
+            MENUITEM SEPARATOR
+            MENUITEM "Acela&si filtru\tCtrl+Alt+M", ID_VIEW_VISUALFILTER_SAMEFILTER
+
+        END
+        MENUITEM "Afisare t&otala",             ID_VIEW_SHOWALL
+    END
+    POPUP "Ac&tiuni"
+    BEGIN
+        MENUITEM "Fisier &nou\tF7",             ID_ACTIONS_NEWFILE
+        MENUITEM "&Folder nou\tF8",             ID_ACTIONS_NEWFOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "Atribuire &comentariu...\tAlt+Z", ID_ACTIONS_SETCOMMENT
+        POPUP "ADS"
+        BEGIN
+            MENUITEM "&Vizualizare fluxuri de date", ID_ACTIONS_VIEWSTREAMS
+            MENUITEM "&Impachetare pentru transport...", 
+                                                    ID_ACTIONS_BUNDLETOGO
+            MENUITEM "&Despachetare",               ID_ACTIONS_UNPACKBUNDLE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Schimbare &atribute...\tShift+F12", 
+                                                ID_ACTIONS_CHANGEATTRIBUTES
+        MENUITEM "S&incronizare data modificare", ID_ACTIONS_SYNCTOUCH
+        MENUITEM SEPARATOR
+        MENUITEM "&Divizare fisier...",         ID_ACTIONS_SPLIT
+        MENUITEM "&Unire fisiere...",           ID_ACTIONS_MERGEFILES
+        MENUITEM "Distru&gere",                 ID_ACTIONS_SHRED
+        MENUITEM SEPARATOR
+        MENUITEM "&Salvare setari imediat",     ID_VIEW_SAVESETTINGSNOW
+        MENUITEM "E&xportare setari",           ID_ACTIONS_EXPORTSETTINGS
+        POPUP "Setari fold&er"
+        BEGIN
+            MENUITEM "&Salvare",                    ID_ACTIONS_FOLDERSETTINGS_SAVE
+
+            MENUITEM "&Eliberare",                  ID_ACTIONS_FOLDERSETTINGS_CLEAR
+
+            MENUITEM SEPARATOR
+            MENUITEM "S&uspendare",                 ID_ACTIONS_FOLDERSETTINGS_SUSPEND
+
+        END
+    END
+    POPUP "&Instrumente"
+    BEGIN
+        MENUITEM "&Rulare comanda",             ID_TOOLS_RUNCOMMAND
+        MENUITEM "Comanda &DOS\tF10",           ID_TOOLS_DOSCOMMAND
+        MENUITEM "Rulare &istoric...\tCtrl+F10", ID_TOOLS_RUNHISTORY
+        MENUITEM "R&epetare comanda\tAlt+F10",  ID_TOOLS_REPEATCOMMAND
+        MENUITEM "&Script de comenzi...\tCtrl+B", ID_TOOLS_COMMANDSCRIPT
+        MENUITEM SEPARATOR
+        MENUITEM "Cautare &fisiere...\tCtrl+F", ID_TOOLS_FINDFILES
+        MENUITEM "&Verificare dubluri...",      ID_TOOLS_CHECKDUPLICATES
+        MENUITEM "Comparare su&bfoldere...",    ID_TOOLS_COMPARESUBFOLDERS
+        MENUITEM SEPARATOR
+        MENUITEM "S&patiu liber\tCtrl+Alt+Space", ID_TOOLS_FREESPACE
+        MENUITEM "Dimensiune s&ubfolder\tCtrl+D", ID_TOOLS_SUBFOLDERSIZE
+        MENUITEM "S&tatistica folder...\tAlt+D", ID_TOOLS_FOLDERSTATISTICS
+        MENUITEM SEPARATOR
+        MENUITEM "&Optiuni...",                 ID_TOOLS_OPTIONS
+    END
+    POPUP "Fe&reastra"
+    BEGIN
+        MENUITEM "Container scra&p",            ID_WINDOW_SCRAPFRAME
+        MENUITEM "&Listare...\tCtrl+W",         ID_WINDOW_LIST
+        MENUITEM SEPARATOR
+        MENUITEM "Inchidere &tab\tCtrl+F4",     ID_WINDOW_CLOSETAB
+        MENUITEM "Inchide to&ate tab-urile",    ID_WINDOW_CLOSEALLTABS
+        MENUITEM SEPARATOR
+        MENUITEM "&Clonare\tCtrl+N",            ID_WINDOW_CLONE
+        MENUITEM "&Salvare configuratie...",    ID_WINDOW_SETREGKEY
+        MENUITEM SEPARATOR
+        MENUITEM "(dummy)",                     ID_REGDATA_FIRST
+        MENUITEM SEPARATOR
+        MENUITEM "&Organizare...",              ID_WINDOW_SETACCELERATOR
+        MENUITEM "&Mai multe configuratii...",  ID_WINDOW_MORE
+    END
+    POPUP "&Particularizare"
+    BEGIN
+        POPUP "&Bare de instrumente"
+        BEGIN
+            MENUITEM "&Adaugare...",                ID_CUSTOMIZE_TOOLBARS_ADDNEW
+
+            MENUITEM "&Organizare...",              ID_CUSTOMIZE_TOOLBARS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_TBCUST_FIRST
+        END
+        POPUP "&Seturi de coloane"
+        BEGIN
+            MENUITEM "&Adaugare curent",            ID_CUSTOMIZE_COLUMNS_ADD
+            MENUITEM "&Organizare...",              ID_CUSTOMIZE_COLUMNS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_COLUMNSET_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Mai mult...",                ID_CUSTOMIZE_COLUMNS_MORE
+
+        END
+        POPUP "&Comenzi utilizator"
+        BEGIN
+            MENUITEM "&Adaugare...",                ID_CUSTOMIZE_USERCOMMANDS_ADDNEW
+
+            MENUITEM "&Organizare...",              ID_CUSTOMIZE_USERCOMMANDS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_USERTOOL_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Mai mult...",                ID_CUSTOMIZE_USERCOMMANDS_MORE
+
+        END
+        POPUP "&Grupuri de foldere"
+        BEGIN
+            MENUITEM "&Adaugare curent",            ID_CUSTOMIZE_TABSETS_ADDNEW
+
+            MENUITEM "&Organizare...",              ID_CUSTOMIZE_TABSETS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_TABSETS_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Mai mult...",                ID_CUSTOMIZE_TABSETS_MORE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Utilizare tastatura",        ID_CUSTOMIZE_KEYBOARDUSE
+    END
+    POPUP "&Ajutor"
+    BEGIN
+        MENUITEM "&Ghid",                       ID_HELP_ALPHAINFO
+        MENUITEM "&Continut\tF1",               ID_HELP_CONTENTS
+        MENUITEM "Sfa&tul zilei",               ID_HELP_TIPOFTHEDAY
+        MENUITEM SEPARATOR
+        MENUITEM "In&registrare program",       ID_HELP_REGISTERPROGRAM
+        MENUITEM "&Donatii",                    ID_HELP_DONATE
+        MENUITEM "Verificare act&ualizari",     ID_HELP_CHECKUPDATES
+        MENUITEM "Asistenta &online",           ID_HELP_GETSUPPORT
+        MENUITEM SEPARATOR
+        MENUITEM "U&ltima eroare",              ID_HELP_LASTERROR
+        MENUITEM SEPARATOR
+        MENUITEM "D&espre xplorer²...",         ID_APP_ABOUT
+    END
+END
+
+IDR_CONTEXTMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "paneLR"
+    BEGIN
+        MENUITEM "Fisier &nou\tF7",             ID_ACTIONS_NEWFILE
+        MENUITEM "&Folder nou\tF8",             ID_ACTIONS_NEWFOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "&Lipire\tCtrl+V",             ID_EDIT_PASTE
+        MENUITEM "Lipire c&omanda rapida",      ID_EDIT_PASTELINK
+        POPUP "Lipir&e speciala"
+        BEGIN
+            MENUITEM "Legatura &hard\tCtrl+Alt+H",  ID_ACTIONS_PASTEHARDLINK
+            MENUITEM "Structura &folder",           ID_EDIT_PASTESPECIAL_FOLDERSTRUCTURE
+
+            MENUITEM "&Scrap clips structurat",     ID_EDIT_PASTESPECIAL_STRUCTUREDSCRAPCLIPS
+
+        END
+        MENUITEM SEPARATOR
+        POPUP "Stil &panou"
+        BEGIN
+            MENUITEM "Picto&grame mari",            ID_VIEW_LARGEICONS
+            MENUITEM "Pictogra&me mici",            ID_VIEW_SMALLICONS
+            MENUITEM "&Listare",                    ID_VIEW_LIST
+            MENUITEM "&Detalii",                    ID_VIEW_DETAILS
+            MENUITEM "Miniat&uri",                  ID_VIEW_THUMBNAILS
+        END
+        POPUP "&Aranjare pictograme dupa"
+        BEGIN
+            MENUITEM "&Nume\tCtrl+Alt+N",           ID_VIEW_SORTBY_NAME
+            MENUITEM "&Dimensiune\tCtrl+Alt+S",     ID_VIEW_SORTBY_SIZE
+            MENUITEM "&Modificat\tCtrl+Alt+D",      ID_VIEW_SORTBY_DATE
+            MENUITEM "&Tip\tCtrl+Alt+T",            ID_VIEW_SORTBY_TYPE
+            MENUITEM "Altceva",                     ID_VIEW_SORTBY_OTHER
+            , GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "N&esortat\tCtrl+Alt+U",       ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "&Ascendent\tCtrl+Alt+A",      ID_VIEW_SORTBY_ASCENDING
+        END
+    END
+    POPUP "paneMulti"
+    BEGIN
+        MENUITEM "&Deschidere\tEnter",          ID_FILE_BROWSE2
+        MENUITEM "E&xplorare\tCtrl+Enter",      ID_FILE_CLONEBROWSE2
+        MENUITEM SEPARATOR
+        MENUITEM "&Copiere\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "&Lipire\tCtrl+V",             ID_EDIT_PASTE
+        MENUITEM "&Eliminare\tDel",             ID_FILE_REMOVE
+        MENUITEM SEPARATOR
+        POPUP "Stil &panou"
+        BEGIN
+            MENUITEM "Picto&grame mari",            ID_VIEW_LARGEICONS
+            MENUITEM "Pictogra&me mici",            ID_VIEW_SMALLICONS
+            MENUITEM "&Listare",                    ID_VIEW_LIST
+            MENUITEM "&Detalii",                    ID_VIEW_DETAILS
+            MENUITEM "Miniat&uri",                  ID_VIEW_THUMBNAILS
+        END
+        POPUP "&Aranjare pictograme dupa"
+        BEGIN
+            MENUITEM "&Nume\tCtrl+Alt+N",           ID_VIEW_SORTBY_NAME
+            MENUITEM "&Dimensiune\tCtrl+Alt+S",     ID_VIEW_SORTBY_SIZE
+            MENUITEM "&Modificat\tCtrl+Alt+D",      ID_VIEW_SORTBY_DATE
+            MENUITEM "&Tip\tCtrl+Alt+T",            ID_VIEW_SORTBY_TYPE
+            MENUITEM "&Cale",                       ID_VIEW_ARRANGEBY_PATH
+            MENUITEM "Altceva",                     ID_VIEW_SORTBY_OTHER
+            , GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "N&esortat\tCtrl+Alt+U",       ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "&Ascendent\tCtrl+Alt+A",      ID_VIEW_SORTBY_ASCENDING
+        END
+    END
+    POPUP "pmRiteDrag"
+    BEGIN
+        MENUITEM "&Inserare aici",              ID_PMRITEDRAG_INSERTHERE
+        MENUITEM "Eplorare &flat",              ID_ACTIONS_FLATTENPATH
+        MENUITEM SEPARATOR
+        MENUITEM "&Revocare",                   ID_PMRITEDRAG_CANCEL
+    END
+    POPUP "header"
+    BEGIN
+        MENUITEM "S&electare coloane...\tAlt+K", ID_VIEW_SELECTCOLUMNS
+        MENUITEM "Autoaran&jare coloane\tCtrl+Add", ID_VIEW_AUTOSIZECOLUMNS
+    END
+    POPUP "quikview"
+    BEGIN
+        MENUITEM "&Copiere\tCtrl+C",            ID_QUIKVIEW_COPY
+        MENUITEM "S&electare totala\tCtrl+A",   ID_QUIKVIEW_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "C&autare...\tCtrl+F",         ID_QUIKVIEW_FIND
+        MENUITEM "&Urmatorul gasit\tF3",        ID_QUIKVIEW_FINDNEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Incadrare cuvant\tF2",       ID_QUIKVIEW_WORDWRAP
+        MENUITEM "&Font...",                    ID_QUIKVIEW_SETFONT
+        POPUP "C&odificare"
+        BEGIN
+            MENUITEM "&Windows",                    ID_QUIKVIEW_ENCODING_WINDOWS
+
+            MENUITEM "&OEM",                        ID_QUIKVIEW_ENCODING_OEM
+            MENUITEM "UTF-&8",                      ID_QUIKVIEW_ENCODING_UTF8
+
+            MENUITEM "&Unicode",                    ID_QUIKVIEW_ENCODING_UNICODE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Numai &text",                 ID_QUIKVIEW_TEXTMODE
+        MENUITEM "U&rmator\tCtrl+Down",         ID_QUIKVIEW_NEXT
+        MENUITEM "&Precedent\tCtrl+Up",         ID_QUIKVIEW_PREVIOUS
+    END
+    POPUP "tabz"
+    BEGIN
+        MENUITEM "Mutare in &stanga",           ID_TABZ_MOVELEFT
+        MENUITEM "Mutare in &dreapta",          ID_TABZ_MOVERIGHT
+        MENUITEM "&Redenumire",                 ID_TABZ_RENAME
+    END
+END
+
+IDR_SCRAPFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Fisier"
+    BEGIN
+        MENUITEM "&Deschidere\tEnter",          ID_FILE_BROWSE2
+        MENUITEM "E&xplorare\tCtrl+Enter",      ID_FILE_CLONEBROWSE2
+        MENUITEM SEPARATOR
+        MENUITEM "Ex&aminare\tF3",              ID_FILE_VIEW
+        MENUITEM "&Editare\tF4",                ID_FILE_EDIT
+        MENUITEM "&Proprietati...\tF12",        ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Redenumire\tF2",             ID_FILE_RENAME
+        MENUITEM "Schimbare &tip\tCtrl+F2",     ID_FILE_CHANGETYPE
+        MENUITEM "Redenumire &multipla...",     ID_FILE_MASSRENAME
+        MENUITEM SEPARATOR
+        MENUITEM "E&liminare\tDel",             ID_FILE_REMOVE
+        MENUITEM "&Stergere\tCtrl+Del",         ID_FILE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "I&nchidere",                  ID_FILE_CLOSE
+        MENUITEM "&Iesire\tAlt+X",              ID_APP_EXIT
+    END
+    POPUP "&Marcare"
+    BEGIN
+        MENUITEM "Select&are totala\tCtrl+A",   ID_MARK_SELECTALL
+        MENUITEM "Deselectare tota&la\tAlt+A",  ID_MARK_UNSELECTALL
+        MENUITEM "Toate &folderele\tCtrl+Alt+Q", ID_MARK_ALLFOLDERS
+        MENUITEM "Selectare ade&ziva\tAlt+S",   ID_MARK_STICKYSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "&Selectare grup...\tGray +",  ID_MARK_SELECTGROUP
+        MENUITEM "&Deselectare grup...\tGray -", ID_MARK_UNSELECTGROUP
+        MENUITEM "&Inversare selectie\tGray *", ID_MARK_INVERTSELECTION
+        MENUITEM "Selecta&re sir...",           ID_MARK_SELECTRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Sincronizare &panouri\tF9",   ID_MARK_SYNCHRONIZEPANES
+        MENUITEM "E&xpert sincronizare...\tCtrl+F9", ID_MARK_SYNCWIZARD
+        MENUITEM SEPARATOR
+        MENUITEM "C&ontinand textul...\tCtrl+G", ID_MARK_CONTAININGTEXT
+        MENUITEM "&Potrivit unei reguli...\tAlt+G", ID_MARK_RULEBASED
+        MENUITEM SEPARATOR
+        POPUP "S&electie"
+        BEGIN
+            MENUITEM "Pas&trare\tCtrl+F11",         ID_MARK_SELECTION_STORE
+            MENUITEM SEPARATOR
+            MENUITEM "&Selectare\tF11",             ID_MARK_SELECTION_SELECT
+            MENUITEM "&Deselectare\tAlt+F11",       ID_MARK_SELECTION_UNSELECT
+
+            MENUITEM "&Combinare\tShift+F11",       ID_MARK_SELECTION_COMBINE
+
+        END
+    END
+    POPUP "&Editare"
+    BEGIN
+        MENUITEM "&Decupare\tCtrl+X",           ID_EDIT_CUT
+        MENUITEM "&Copiere\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "Copiere in &folderul...\tF5", ID_EDIT_COPYTO
+        MENUITEM "&Mutare in folderul...\tF6",  ID_EDIT_MOVETO
+        MENUITEM "Stare &asteptare...",         ID_EDIT_QUEUESTATUS
+        MENUITEM SEPARATOR
+        MENUITEM "&Lipire\tCtrl+V",             ID_EDIT_PASTE
+        MENUITEM "&Sinc && lipire",             ID_EDIT_SYNCOPASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Copiere &nume\tAlt+C",        ID_EDIT_COPYNAMES
+        MENUITEM "Copiere &vizualizare",        ID_EDIT_COPYPREVIEW
+        MENUITEM "Co&piere coloane\tCtrl+P",    ID_EDIT_COPYSELECTION
+    END
+    POPUP "&Vizualizare"
+    BEGIN
+        MENUITEM "&Doua panouri\tCtrl+O",       ID_VIEW_DUALPANE
+        MENUITEM "Pre&vizualizare\tCtrl+Q",     ID_VIEW_QUICKVIEWER
+        POPUP "&Bare de instrumente"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "&Toate barele",               ID_VIEW_TOOLBAR
+            MENUITEM "B&ara de stare",              ID_VIEW_STATUS_BAR
+            MENUITEM "&Bara de informatii",         ID_VIEW_TOOLBARS_INFOBARS
+
+        END
+        MENUITEM SEPARATOR
+        POPUP "Stil &panou"
+        BEGIN
+            MENUITEM "Picto&grame mari",            ID_VIEW_LARGEICONS
+            MENUITEM "Pictogra&me mici",            ID_VIEW_SMALLICONS
+            MENUITEM "&Listare",                    ID_VIEW_LIST
+            MENUITEM "&Detalii",                    ID_VIEW_DETAILS
+            MENUITEM "Miniat&uri",                  ID_VIEW_THUMBNAILS
+        END
+        MENUITEM "S&electare coloane...\tAlt+K", ID_VIEW_SELECTCOLUMNS
+        POPUP "&Aranjare pictograme dupa"
+        BEGIN
+            MENUITEM "&Nume\tCtrl+Alt+N",           ID_VIEW_SORTBY_NAME
+            MENUITEM "&Dimensiune\tCtrl+Alt+S",     ID_VIEW_SORTBY_SIZE
+            MENUITEM "&Modificat\tCtrl+Alt+D",      ID_VIEW_SORTBY_DATE
+            MENUITEM "&Tip\tCtrl+Alt+T",            ID_VIEW_SORTBY_TYPE
+            MENUITEM "&Cale",                       ID_VIEW_ARRANGEBY_PATH
+            MENUITEM "Altceva",                     ID_VIEW_SORTBY_OTHER
+            , GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "N&esortat\tCtrl+Alt+U",       ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "&Ascendent\tCtrl+Alt+A",      ID_VIEW_SORTBY_ASCENDING
+        END
+        MENUITEM "Autoaran&jare coloane\tCtrl+Add", ID_VIEW_AUTOSIZECOLUMNS
+        MENUITEM SEPARATOR
+        MENUITEM "&Reimprospatare\tCtrl+R",     ID_VIEW_REFRESH
+        MENUITEM "Oprire a&utoreimprospatare\tCtrl+Alt+R", 
+                                                ID_VIEW_HOLDAUTOREFRESH
+        MENUITEM SEPARATOR
+        POPUP "Filtru vi&zual"
+        BEGIN
+            MENUITEM "&Wildcard...\tCtrl+H",        ID_FILE_VISUALFILTER
+            MENUITEM "Pot&rivit unei reguli...\tAlt+H", 
+                                                    ID_VIEW_VISUALFILTER_RULEBASED
+
+            MENUITEM "P&ornit/Oprit\tCtrl+J",       ID_MARK_USEVISUALFILTER
+            MENUITEM SEPARATOR
+            MENUITEM "Ascundere &foldere\tAlt+J",   ID_VIEW_HIDEFOLDERS
+            MENUITEM "Doar se&lectia\tCtrl+Alt+J",  ID_VIEW_SELECTEDONLY
+            MENUITEM SEPARATOR
+            MENUITEM "Acela&si filtru\tCtrl+Alt+M", ID_VIEW_VISUALFILTER_SAMEFILTER
+
+        END
+        MENUITEM "Afisare t&otala",             ID_VIEW_SHOWALL
+    END
+    POPUP "Ac&tiuni"
+    BEGIN
+        MENUITEM "Adresa &flat",                ID_ACTIONS_FLATTENPATH
+        MENUITEM SEPARATOR
+        MENUITEM "Schimbare &atribute...\tShift+F12", 
+                                                ID_ACTIONS_CHANGEATTRIBUTES
+        MENUITEM "Atribuire &comentariu...\tAlt+Z", ID_ACTIONS_SETCOMMENT
+        POPUP "ADS"
+        BEGIN
+            MENUITEM "&Vizualizare fluxuri de date", ID_ACTIONS_VIEWSTREAMS
+            MENUITEM "&Impachetare pentru transport...", 
+                                                    ID_ACTIONS_BUNDLETOGO
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Divizare fisier...",         ID_ACTIONS_SPLIT
+        MENUITEM "&Unire fisiere...",           ID_ACTIONS_MERGEFILES
+        MENUITEM "Distru&gere",                 ID_ACTIONS_SHRED
+        MENUITEM SEPARATOR
+        MENUITEM "I&ncarcare continut...",      ID_ACTIONS_LOADCONTENTS
+        MENUITEM "&Scriere continut\tCtrl+S",   ID_ACTIONS_WRITECONTENTS
+        MENUITEM "&Importare clipboard",        ID_ACTIONS_IMPORTCLIPBOARD
+    END
+    POPUP "&Instrumente"
+    BEGIN
+        MENUITEM "&Rulare comanda",             ID_TOOLS_RUNCOMMAND
+        MENUITEM "Comanda &DOS\tF10",           ID_TOOLS_DOSCOMMAND
+        MENUITEM "Rulare &istoric...\tCtrl+F10", ID_TOOLS_RUNHISTORY
+        MENUITEM "R&epetare comanda\tAlt+F10",  ID_TOOLS_REPEATCOMMAND
+        MENUITEM SEPARATOR
+        MENUITEM "&Script de comenzi...\tCtrl+B", ID_TOOLS_COMMANDSCRIPT
+        MENUITEM "Dimensiune s&ubfolder\tCtrl+D", ID_TOOLS_SUBFOLDERSIZE
+        MENUITEM "Cautare &tinta\tCtrl+L",      ID_EDIT_FINDTARGET
+        MENUITEM SEPARATOR
+        MENUITEM "Cautare &fisiere...\tCtrl+F", ID_TOOLS_FINDFILES
+        MENUITEM "Stare &cautare...",           ID_TOOLS_SEARCHSTATUS
+        MENUITEM SEPARATOR
+        MENUITEM "&Verificare dubluri...",      ID_TOOLS_CHECKDUPLICATES
+        MENUITEM "&Afisare unicate",            ID_TOOLS_REVEALUNIQUE
+        MENUITEM SEPARATOR
+        MENUITEM "&Optiuni...",                 ID_TOOLS_OPTIONS
+    END
+    POPUP "Fe&reastra"
+    BEGIN
+        MENUITEM "Container scra&p",            ID_WINDOW_SCRAPFRAME
+        MENUITEM "&Listare...\tCtrl+W",         ID_WINDOW_LIST
+        MENUITEM SEPARATOR
+        MENUITEM "S&crolling in oglinda\tCtrl+M", ID_GOTO_MIRRORSCROLLING
+    END
+    POPUP "&Particularizare"
+    BEGIN
+        POPUP "&Bare de instrumente"
+        BEGIN
+            MENUITEM "&Adaugare...",                ID_CUSTOMIZE_TOOLBARS_ADDNEW
+
+            MENUITEM "&Organizare...",              ID_CUSTOMIZE_TOOLBARS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_TBCUST_FIRST
+        END
+        POPUP "&Seturi de coloane"
+        BEGIN
+            MENUITEM "&Adaugare curent",            ID_CUSTOMIZE_COLUMNS_ADD
+            MENUITEM "&Organizare...",              ID_CUSTOMIZE_COLUMNS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_COLUMNSET_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Mai mult...",                ID_CUSTOMIZE_COLUMNS_MORE
+
+        END
+        POPUP "&Comenzi utilizator"
+        BEGIN
+            MENUITEM "&Adaugare...",                ID_CUSTOMIZE_USERCOMMANDS_ADDNEW
+
+            MENUITEM "&Organizare...",              ID_CUSTOMIZE_USERCOMMANDS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_USERTOOL_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Mai mult...",                ID_CUSTOMIZE_USERCOMMANDS_MORE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Utilizare tastatura",        ID_CUSTOMIZE_KEYBOARDUSE
+    END
+    POPUP "&Ajutor"
+    BEGIN
+        MENUITEM "&Ghid",                       ID_HELP_ALPHAINFO
+        MENUITEM "&Continut\tF1",               ID_HELP_CONTENTS
+        MENUITEM "Sfa&tul zilei",               ID_HELP_TIPOFTHEDAY
+        MENUITEM SEPARATOR
+        MENUITEM "In&registrare program",       ID_HELP_REGISTERPROGRAM
+        MENUITEM "Verificare act&ualizari",     ID_HELP_CHECKUPDATES
+        MENUITEM "Asistenta &online",           ID_HELP_GETSUPPORT
+        MENUITEM SEPARATOR
+        MENUITEM "U&ltima eroare",              ID_HELP_LASTERROR
+        MENUITEM SEPARATOR
+        MENUITEM "D&espre xplorer²...",         ID_APP_ABOUT
+    END
+END
+
+IDR_DIRSTATFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "Ac&tiuni"
+    BEGIN
+        MENUITEM "E&xplorare\tEnter",           ID_FILE_CLONEBROWSE2
+        MENUITEM SEPARATOR
+        MENUITEM "Sortare dupa &nume",          ID_VIEW_SORTBY_NAME
+        MENUITEM "&Sortare dupa dimensiune",    ID_VIEW_SORTBY_SIZE
+        MENUITEM SEPARATOR
+        MENUITEM "Copiere &text\tCtrl+C",       ID_DIRDATA_COPYTEXT
+        MENUITEM SEPARATOR
+        MENUITEM "I&nchidere",                  ID_FILE_CLOSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\kenny.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(PRO)
+#if defined(APSTUDIO_INVOKED)
+IDD_ABOUTBOX$(PRO) DIALOG DISCARDABLE  0, 0, 242, 121
+#else
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 242, 121
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Despre xplorer² professional"
+FONT 8, "Verdana"
+BEGIN
+    EDITTEXT        IDC_CHECK_REGI,67,38,85,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "cumparare licenta",IDC_EMAIL,179,7,50,24,BS_MULTILINE
+    PUSHBUTTON      "asistenta online",IDC_ONLINE,173,37,63,14,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE
+    DEFPUSHBUTTON   "ok",IDOK,179,57,50,14
+    EDITTEXT        IDC_BUILD,67,14,85,12,ES_MULTILINE | ES_READONLY
+    CTEXT           "© Drept de autor 2002-2005 Nikos Bozinis\nToate drepturile rezervate",
+                    IDC_STATIC,11,60,149,19
+    ICON            IDR_MAINFRAME,IDC_STATIC,13,10,20,20
+    GROUPBOX        "",IDC_STATIC,7,3,158,82
+    LTEXT           "Versiune:",IDC_STATIC,33,16,32,8
+    LTEXT           "Inregistrare #",IDC_STATIC,17,40,47,8
+    LTEXT           "Atentie: acest program este protejat de legea dreptului de autor si tratatele internationale. Reproducerea sau distribuirea neautorizata a acestui program poate conduce la penalitati severe civile sau penale.",
+                    IDC_WARNING,7,93,228,25
+    LTEXT           "www.zabkat.com",IDC_ZABKAT,176,77,56,8
+END
+#endif
+
+IDD_TEXTINPUT_DLG DIALOG DISCARDABLE  0, 0, 139, 45
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "Verdana"
+BEGIN
+    COMBOBOX        IDC_COMBO,7,6,125,95,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "ok",IDOK,21,26,42,14
+    PUSHBUTTON      "revocare",IDCANCEL,75,26,42,14
+END
+
+IDD_NOTIFY_DLG DIALOG DISCARDABLE  0, 0, 239, 163
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "&Nu se mai afiseaza acest mesaj",IDC_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,49,135,117,10
+    DEFPUSHBUTTON   "ok",IDOK,182,124,50,14
+    PUSHBUTTON      "revocare",IDCANCEL,182,142,50,14
+    ICON            "",IDC_CUSTICON,7,130,18,20
+    LTEXT           "message",IDC_MESSAGE,7,7,225,111
+END
+
+IDD_GREP_DLG DIALOG DISCARDABLE  0, 0, 187, 138
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cautare text in fisiere"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Cautare:",IDC_STATIC,7,9,30,8
+    COMBOBOX        IDC_COMBO_FIND,47,7,133,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Caractere &speciale:",IDC_STATIC,8,26,65,8
+    COMBOBOX        IDC_COMBO_ESPECIAL,76,24,51,81,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Exact",IDC_CHECK_VERBA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,137,25,34,10
+    CONTROL         "&Potrivire litere mari/mici",IDC_CHECK_CASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,50,95,10
+    CONTROL         "T&ot cuvantul",IDC_CHECK_WORD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,63,56,10
+    CONTROL         "Cautare in &fisiere care nu sunt de tip text",
+                    IDC_CHECK_BINARY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,76,151,10
+    CONTROL         "&Expresii uzuale",IDC_CHECK_REGEXP,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,115,63,65,10
+    LTEXT           "Codificare fisier te&xt",IDC_STATIC,33,93,67,8
+    COMBOBOX        IDC_COMBO_ENCODING,103,91,51,69,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "selec&tare",IDOK,7,117,50,14
+    PUSHBUTTON      "&deselectare",IDC_UNSELECT,68,117,50,14
+    PUSHBUTTON      "revocare",IDCANCEL,130,117,50,14
+END
+
+IDD_SCRIPTBUILD_DLG DIALOG DISCARDABLE  0, 0, 286, 142
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Expert script"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Sablon:",IDC_STATIC,7,9,26,8
+    COMBOBOX        IDC_COMBO_BATPLATE,39,7,240,106,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Jetoane:",IDC_STATIC,84,26,29,8
+    COMBOBOX        IDC_COMBO_TOKENS,120,24,104,88,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "&previzualizare",IDC_BUTTON_PREVIEW,7,24,50,14
+    PUSHBUTTON      "&ajutor jeton $",IDC_BUTTON_HELP,229,23,50,14
+    PUSHBUTTON      "&editare",IDC_BUTTON_EDIT,7,121,50,14
+    PUSHBUTTON      "e&xecutare (DOS)",IDOK,73,121,61,14
+    PUSHBUTTON      "exe&cutare (shell)",IDC_BUTTON_WINEXEC,150,121,61,14
+    PUSHBUTTON      "revocare",IDCANCEL,227,121,50,14
+    EDITTEXT        IDC_EDIT_PREVIEW,7,43,272,70,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+END
+
+IDD_SYNCWIZARD_DLG DIALOG DISCARDABLE  0, 0, 187, 118
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Optiuni sincronizare"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Selectare elemente:",IDC_STATIC,7,7,110,50,WS_GROUP
+    CONTROL         "&Unice",IDC_CHECK_UNIQUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,18,34,10
+    CONTROL         "&Identice",IDC_CHECK_IDENTICAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,18,42,10
+    CONTROL         "&Noi",IDC_CHECK_NEWER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,31,26,10
+    CONTROL         "&Vechi",IDC_CHECK_OLDER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,31,34,10
+    CONTROL         "N&edeterminate",IDC_CHECK_UNDECIDABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,28,43,64,10
+    GROUPBOX        "Comparare bazata pe:",IDC_STATIC,7,62,109,48,WS_GROUP
+    CONTROL         "&Data modificarii",IDC_RADIO_MOD,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,73,67,10
+    CONTROL         "&Continut fisier",IDC_RADIO_CONTENT,"Button",
+                    BS_AUTORADIOBUTTON,13,85,62,10
+    CONTROL         "D&oar numele",IDC_RADIO_NAME,"Button",
+                    BS_AUTORADIOBUTTON,13,96,58,10
+    CONTROL         "Considera si &folderele",IDC_CHECK_FOLDERS,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_GROUP | WS_TABSTOP,
+                    128,20,55,24
+    DEFPUSHBUTTON   "ok",IDOK,130,75,50,14
+    PUSHBUTTON      "revocare",IDCANCEL,130,95,50,14
+    CONTROL         "&Potrivire inexacta a numelor",IDC_CHECK_FREEFORM,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,128,
+                    45,55,26
+    COMBOBOX        IDC_COMBO_SCENARIA,123,7,59,38,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SPLIT_DLG DIALOG DISCARDABLE  0, 0, 219, 71
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Optiuni divizare fisier"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Marime (kO):",IDC_STATIC,7,10,45,8
+    EDITTEXT        IDC_EDIT_SIZE,59,8,51,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Folder tinta:",IDC_STATIC,11,29,40,8
+    COMBOBOX        IDC_COMBO_SPLITARGET,58,27,139,78,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_DOTS,199,27,13,12
+    LTEXT           "S&tandard",IDC_STATIC,119,9,31,8
+    COMBOBOX        IDC_COMBO_STD,158,7,54,46,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "ok",IDOK,93,50,50,14
+    PUSHBUTTON      "revocare",IDCANCEL,162,50,50,14
+END
+
+IDD_BUILDSYNC_DLG DIALOG DISCARDABLE  0, 0, 187, 142
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Expert verificare compilare"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Reguli de transformare",IDC_STATIC,7,7,173,63
+    LTEXT           "&De la (wildcard):",IDC_STATIC,14,21,59,8
+    EDITTEXT        IDC_EDIT_FROM,76,19,95,12,ES_AUTOHSCROLL
+    LTEXT           "&La extensia/ile:",IDC_STATIC,18,36,54,8
+    EDITTEXT        IDC_EDIT_TO,76,34,95,12,ES_AUTOHSCROLL
+    LTEXT           "&Predefinit:",IDC_STATIC,14,52,35,8
+    COMBOBOX        IDC_COMBO_PREDEF,59,50,112,74,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Selectare fisiere sursa:",IDC_STATIC,7,74,110,61,
+                    WS_GROUP
+    CONTROL         "&Necompilate",IDC_CHECK_UNIQUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,87,56,10
+    CONTROL         "&Modificate",IDC_CHECK_NEWER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,102,49,10
+    CONTROL         "&Actualizate",IDC_CHECK_OLDER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,117,51,10
+    DEFPUSHBUTTON   "ok",IDOK,130,97,50,14
+    PUSHBUTTON      "revocare",IDCANCEL,130,121,50,14
+END
+
+IDD_COLSELECT_DLG DIALOG DISCARDABLE  0, 0, 275, 181
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Organizare coloane"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Schema curenta",IDC_TBPLACE,7,7,97,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LISTBOX         IDC_LIST_CURRENT,7,20,97,105,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "&Coloane disponibile",IDC_STATIC,171,7,97,13,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LISTBOX         IDC_LIST_AVAIL,171,20,97,105,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Adaugare <",IDC_BUTTON_ADD,111,46,50,14
+    PUSHBUTTON      "&Eliminare >",IDC_BUTTON_REMOVE,111,75,50,14
+    LTEXT           "&Predefinit:",IDC_STATIC,44,136,39,8
+    COMBOBOX        IDC_COMBO_PRECOLS,90,134,143,115,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "ok",IDOK,154,160,50,14
+    PUSHBUTTON      "revocare",IDCANCEL,218,160,50,14
+    LTEXT           "",IDC_STATIC_DESCRIPTION,7,156,131,18,SS_SUNKEN
+END
+
+IDD_FILTER_DLG DIALOG DISCARDABLE  0, 0, 235, 163
+STYLE DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "Verdana"
+BEGIN
+    RTEXT           "&Numit:",IDC_STATIC,7,7,23,8
+    COMBOBOX        IDC_COMBO_NAMED,39,5,133,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Fisiere",IDC_CHECK_FILES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,177,2,37,10
+    CONTROL         "F&oldere",IDC_CHECK_DIRS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,177,12,40,10
+    GROUPBOX        "Continand &Textul",IDC_STATIC,7,27,221,44,WS_GROUP
+    COMBOBOX        IDC_COMBO_FIND,14,36,140,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ESPECIAL,166,36,51,81,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Sensibil la litere",IDC_CHECK_CASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,50,68,10
+    CONTROL         "&Tot cuvantul",IDC_CHECK_WORD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,60,56,10
+    CONTROL         "&Cautare toate fis.",IDC_CHECK_BINARY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,89,50,73,10
+    CONTROL         "E&xact",IDC_CHECK_VERBA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,89,60,34,10
+    CONTROL         "&ER",IDC_CHECK_REGEXP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,137,60,25,10
+    COMBOBOX        IDC_COMBO_ENCODING,166,54,51,69,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Reguli aditionale",IDC_TBPLACE,7,80,221,13,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "",IDC_LISTRULES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | 
+                    LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_TABSTOP,7,93,
+                    221,44,WS_EX_CLIENTEDGE
+    RTEXT           "&Predefinit:",IDC_STATIC,7,149,35,8
+    COMBOBOX        IDC_COMBO_SAVED,51,147,133,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "sal&vare",IDC_BUTTON_SAVE,192,146,36,14
+END
+
+IDD_FPP_DATE DIALOG DISCARDABLE  0, 0, 195, 49
+STYLE DS_NOFAILCREATE | DS_CONTROL | WS_CHILD
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Optiuni data",IDC_STATIC,2,0,190,47,WS_GROUP
+    CONTROL         "&Inainte cu:",IDC_RADIO_PREV,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,5,11,51,10
+    CONTROL         "&Intre:",IDC_RADIO_BETWEEN,"Button",BS_AUTORADIOBUTTON,
+                    5,30,35,10
+    EDITTEXT        IDC_EDIT_XDAYS,88,10,39,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_PREVNUM,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,119,9,10,14
+    COMBOBOX        IDC_COMBO_DTUNIT,133,10,56,57,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_DATE_FROM,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,54,28,59,13
+    LTEXT           "si",IDC_STATIC,118,30,8,8
+    CONTROL         "DateTimePicker1",IDC_DATE_TO,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,130,28,59,13
+END
+
+IDD_FPP_NUMBER DIALOG DISCARDABLE  0, 0, 195, 49
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Optiuni numar",IDC_STATIC,2,0,190,47,WS_GROUP
+    LTEXT           "&Minim:",IDC_STATIC,11,12,23,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_MINSIZE,47,10,91,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_MIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,130,9,10,14
+    LTEXT           "Ma&xim:",IDC_STATIC,9,31,25,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_MAXSIZE,47,29,91,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_MAX,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,130,28,10,14
+    LTEXT           "&Unitate",IDC_STATIC,146,11,24,8
+    COMBOBOX        IDC_COMBO_UNITS,146,22,40,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FPP_TEXT DIALOG DISCARDABLE  0, 0, 195, 49
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Optiuni text",-1,2,0,190,47,WS_GROUP
+    LTEXT           "&Cautare:",-1,7,20,29,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_FINDTXT,39,18,148,12,ES_AUTOHSCROLL
+END
+
+IDD_FILTEREDIT_DLG DIALOG DISCARDABLE  0, 0, 195, 140
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Definire regula"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Proprietate && descriere:",IDC_STATIC,5,9,79,8
+    COMBOBOX        IDC_COMBO_PROPERTIES,4,21,105,112,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_STATIC_DESCRIPTION,113,5,77,35,SS_SUNKEN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,2,42,190,47
+    GROUPBOX        "Context logic",IDC_STATIC,7,100,108,33
+    CONTROL         "&Si",IDC_RADIO_AND,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,115,23,10
+    CONTROL         "S&au",IDC_RADIO_OR,"Button",BS_AUTORADIOBUTTON,42,115,
+                    30,10
+    CONTROL         "&Negare",IDC_RADIO_NOT,"Button",BS_AUTORADIOBUTTON,74,
+                    115,34,10
+    DEFPUSHBUTTON   "ok",IDOK,138,100,50,14,WS_GROUP
+    PUSHBUTTON      "revocare",IDCANCEL,138,119,50,14
+END
+
+IDD_TOUCHATTR_DLG DIALOG DISCARDABLE  0, 0, 205, 102
+STYLE DS_MODALFRAME | DS_NOFAILCREATE | DS_CONTEXTHELP | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Schimbare atribute"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Modificat:",IDC_STATIC,7,9,32,8
+    CONTROL         "DateTimePicker1",IDC_DATE_MODIFIED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,54,7,59,13
+    CONTROL         "DateTimePicker1",IDC_TIME_MODIFIED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,115,7,52,
+                    13
+    PUSHBUTTON      "acum",IDC_BUTTON_MODNOW,170,7,28,13
+    LTEXT           "&Creat:",IDC_STATIC,7,29,22,8
+    CONTROL         "DateTimePicker1",IDC_DATE_CREATED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,54,27,59,13
+    CONTROL         "DateTimePicker1",IDC_TIME_CREATED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,115,27,52,
+                    13
+    PUSHBUTTON      "acum",IDC_BUTTON_CRNOW,170,27,28,13
+    GROUPBOX        "Atribute",IDC_STATIC,7,52,119,42,WS_GROUP
+    CONTROL         "&Arhiva",IDC_CHECK_ARCHIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,64,37,10
+    CONTROL         "&Doar in citire",IDC_CHECK_READONLY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,78,55,10
+    CONTROL         "Asc&uns",IDC_CHECK_HIDDEN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,76,64,39,10
+    CONTROL         "&Sistem",IDC_CHECK_SYSTEM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,76,78,38,10
+    DEFPUSHBUTTON   "ok",IDOK,148,59,50,14,WS_GROUP
+    PUSHBUTTON      "revocare",IDCANCEL,148,80,50,14
+END
+
+IDD_COPYTO_DLG DIALOG DISCARDABLE  0, 0, 246, 106
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " in folderul destinatie"
+FONT 8, "Verdana"
+BEGIN
+    COMBOBOX        IDC_COMBO_TARGET,39,44,182,78,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_DOTS,226,44,13,12
+    COMBOBOX        IDC_COMBO_TABS,39,64,182,79,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "o&ptiuni",IDC_BUTTON_OPTIONS,189,7,50,14
+    CONTROL         "Panoul &opus",IDC_RADIO_OPPOSITE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,6,25,55,10
+    CONTROL         "&Aici",IDC_RADIO_HERE,"Button",BS_AUTORADIOBUTTON,7,45,
+                    27,10
+    CONTROL         "&Tab",IDC_RADIO_TAB,"Button",BS_AUTORADIOBUTTON,7,65,28,
+                    10
+    DEFPUSHBUTTON   "",IDOK,131,85,50,14,WS_GROUP
+    PUSHBUTTON      "&in asteptare",IDC_BUTTON_QUEUE,39,85,50,14
+    PUSHBUTTON      "revocare",IDCANCEL,189,85,50,14
+    EDITTEXT        IDC_OTHER_PANE,74,24,165,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           " %d element/e selectat/e in:",IDC_LABEL,16,8,128,8
+END
+
+IDD_DUPEWIZARD_DLG DIALOG DISCARDABLE  0, 0, 147, 95
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Detectare dubluri"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Comparare bazata pe",-1,7,7,133,43,WS_GROUP
+    CONTROL         "&Nume",IDC_CHECK_NAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,20,35,10
+    CONTROL         "&Marime",IDC_CHECK_SIZE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,91,20,40,10
+    CONTROL         "&Data modificarii",IDC_CHECK_MDATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,33,67,10
+    CONTROL         "&Continut",IDC_CHECK_CONTENT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,91,33,43,10
+    CONTROL         "&Selecteaza toate dublurile",IDC_CHECK_SELECTEM,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,30,56,98,10
+    DEFPUSHBUTTON   "ok",IDOK,31,74,50,14
+    PUSHBUTTON      "revocare",IDCANCEL,90,74,50,14
+END
+
+IDD_GENERICLOG_DLG DIALOG DISCARDABLE  0, 0, 358, 177
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "Courier New"
+BEGIN
+    EDITTEXT        IDC_EDIT,2,2,354,173,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_OPTFRAME_PDLG DIALOG DISCARDABLE  0, 0, 250, 218
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Fereastra"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Vizualizare panouri",IDC_STATIC,7,3,236,90,WS_GROUP
+    CONTROL         "Activare printr-un &singur clic",IDC_CHK_1CLICKLIST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,12,110,10
+    CONTROL         "Afisare &grila in modul detaliat",IDC_CHK_GRIDLIST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,126,12,110,10
+    CONTROL         "&Informatii pop-up pt. elemente",IDC_CHK_TIPLIST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,23,110,10
+    CONTROL         "Selecta&re linie intreaga",IDC_CHK_FULLROWSEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,126,23,88,10
+    CONTROL         "Permite dublu clic incet pentru redenumire",
+                    IDC_CHECK_CLKRENAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,34,150,10
+    CONTROL         "Planare && selectare",IDC_CHECK_TRACKSEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,166,34,75,10
+    CONTROL         "Resortare automata a continutului dupa copiere/mutare &etc.",
+                    IDC_AUTOSORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,45,
+                    213,10
+    CONTROL         "Subliniaza coloana dupa care se face sortare (Doar XP)",
+                    IDC_CHECK_SORTCOL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,56,198,10
+    LTEXT           "Latime &maxima coloana",IDC_STATIC,15,68,79,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_MAXWIDTH,94,67,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Sor&tare foldere",IDC_STATIC,129,68,51,8
+    COMBOBOX        IDC_COMBO_DIRSORT,181,66,55,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Aliniere panouri:",IDC_STATIC,40,80,68,8,NOT WS_GROUP
+    CONTROL         "Ori&zontala",IDC_TILE_HORZ,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,118,80,47,10
+    CONTROL         "&Verticala",IDC_TILE_VERT,"Button",BS_AUTORADIOBUTTON,
+                    175,80,39,10
+    GROUPBOX        "Arbore foldere",IDC_STATIC,7,96,236,56,WS_GROUP
+    CONTROL         "S&chimbare folder cu un singur clic && activare ""maini libere""",
+                    IDC_CHK_1CLICKTREE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,105,202,10
+    CONTROL         "Schimbare automata a &focusului dupa activare",
+                    IDC_CHK_FOKOSTREE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,116,175,10
+    CONTROL         "Extindere &automata a unui nod cand se planeaza deasupra lui",
+                    IDC_CHK_HOVERTREE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,127,214,10
+    CONTROL         "Sincroni&zare cu folderul din panoul inactiv",
+                    IDC_CHECK_TREESYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,138,153,10
+    GROUPBOX        "Previzualizare",IDC_STATIC,7,155,236,35,WS_GROUP
+    LTEXT           "&Dimensiune text (octeti)",IDC_STATIC,13,165,86,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIT_TSIZE,103,163,45,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Latime Ta&b",IDC_STATIC,167,165,37,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_TABS,207,163,24,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Pornire fisiere mu&ltimedia imediat",IDC_CHECK_AUTOPLAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,176,126,10
+    CONTROL         "Fara. viz in he&xa",IDC_CHECK_NOHEX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,166,176,70,10
+    PUSHBUTTON      "F&ont...",IDC_BUTTON_FONT,7,197,50,14,WS_GROUP
+    LTEXT           "Fundal\ninactiv",IDC_STATIC,80,195,25,18
+    PUSHBUTTON      "",IDC_BUTTON_IBGCOL,108,197,30,14,BS_BITMAP
+    CONTROL         "Meni&uri simple",IDC_CHECK_PLAINMEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,161,194,63,10
+    CONTROL         "A&jutor tip pop-up",IDC_CHECK_BALONI,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,161,205,71,10
+END
+
+IDD_OPTGENERAL_PDLG DIALOG DISCARDABLE  0, 0, 250, 218
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "General"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "&Salvare stare program la inchidere",IDC_SAVEONEXIT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,139,10
+    CONTROL         "A&fisare fisiere si foldere ascunse",IDC_SHOWHIDDEN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,18,119,10
+    CONTROL         "&Afisare foldere partajate din retea",
+                    IDC_CHECK_NETSHARE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,29,127,10
+    CONTROL         "Raportare &dimensiune fisiere in octeti",
+                    IDC_CHECK_BYTES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    40,138,10
+    CONTROL         "Semnale s&onore la erori si atentionari",IDC_CHECK_BEEP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,51,139,10
+    CONTROL         "Ignorar&e primul clic in panou pentru a proteja selectia",
+                    IDC_CHECK_EATCLIK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,62,193,10
+    CONTROL         "Redirectionare comanda DOS la &consola locala",
+                    IDC_CHECK_CONSOLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,73,169,10
+    LTEXT           "Eleme&nte mentinute in istoricul barei de adrese",
+                    IDC_STATIC,7,88,154,8,NOT WS_GROUP
+    EDITTEXT        IDC_NUMHISTORY,163,86,26,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Dimensiune minia&turi",IDC_STATIC,7,102,79,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIT_THUMBSIZE,88,100,32,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "P&ictograme",IDC_STATIC,130,102,38,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_ICONS,170,100,68,46,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Linie comanda editor/examinator text extern",IDC_STATIC,
+                    7,118,236,46,WS_GROUP
+    LTEXT           "E&ditor",IDC_STATIC,13,132,20,8,NOT WS_GROUP
+    EDITTEXT        IDC_EXTEDITORNAME,39,130,181,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_DOTS_EDITOR,224,130,13,12
+    LTEXT           "E&xamin.",IDC_STATIC,10,149,27,8,NOT WS_GROUP
+    EDITTEXT        IDC_EXTVIEWERNAME,39,147,181,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_DOTS_VIEWER,224,147,13,12
+    GROUPBOX        "Limita dimensiunii fisierelor in octeti pentru extragere... (0=nelimitat)",
+                    IDC_STATIC,7,169,236,45,WS_GROUP
+    LTEXT           "In&fo. pop-up",IDC_STATIC,17,183,42,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_INFOSIZE,60,181,47,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Miniat&uri",IDC_STATIC,17,199,28,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SIZEPIX,60,197,47,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Coloana chec&ksum",IDC_STATIC,118,183,63,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SUMSIZE,185,181,47,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Elemente in zi&p/FTP",IDC_STATIC,118,199,65,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIT_ZIPSIZE,185,197,47,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "alte optiuni...",IDC_BUTTON_KEALLA,179,7,64,14
+END
+
+IDD_MASSRENAME_DLG DIALOG DISCARDABLE  0, 0, 231, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Expert redenumire multipla"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "Sablon &nume:",IDC_STATIC,7,9,52,8
+    COMBOBOX        IDC_COMBO_RNTEMPL,61,7,164,106,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Jetoane:",IDC_STATIC,87,26,29,8
+    COMBOBOX        IDC_COMBO_TOKENS,121,24,104,88,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&ajutor jeton $",IDC_BUTTON_HELP,7,85,50,14
+    PUSHBUTTON      "&redenumire",IDOK,101,85,61,14
+    PUSHBUTTON      "revocare",IDCANCEL,174,85,50,14
+    EDITTEXT        IDC_EDIT_PREVIEW,7,43,218,36,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    DEFPUSHBUTTON   "&previzualizare",IDC_BUTTON_PREVIEW,7,24,50,14
+END
+
+IDD_FINDFILES_DLG DIALOG DISCARDABLE  0, 0, 235, 266
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cautare fisiere si foldere"
+FONT 8, "Verdana"
+BEGIN
+    RTEXT           "T&inta:",-1,2,9,32,8
+    COMBOBOX        IDC_COMBO_WHERE,39,7,171,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_DOTS,214,7,13,12
+    LTEXT           "Fol&dere speciale:",-1,7,24,56,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_VIRTUALS,63,22,116,73,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Cautare in &subfoldere",IDC_CHECK_SUBFOLDERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,38,82,10
+    CONTROL         "Continut ar&hivat",IDC_CHECK_ZIPFOLDERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,93,38,69,10
+    CONTROL         "In ada&ncime",IDC_RADIO_DEPTH,"Button",
+                    BS_AUTORADIOBUTTON,58,50,57,10
+    CONTROL         "In lati&me",IDC_RADIO_BREADTH,"Button",
+                    BS_AUTORADIOBUTTON,125,50,45,10
+    CONTROL         "Cautare &locala",IDC_CHECK_REFINE,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,168,38,63,10
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,64,227,1
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,68,228,170
+    PUSHBUTTON      "r&einitializare",IDC_BUTTON_CLEAR,7,243,50,14
+    DEFPUSHBUTTON   "ok",IDOK,113,243,50,14
+    PUSHBUTTON      "revocare",IDCANCEL,177,243,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,237,227,1
+END
+
+IDD_MATCHRULE_DLG DIALOG DISCARDABLE  0, 0, 235, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Marcare elemente potrivit regulii"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,3,228,170
+    PUSHBUTTON      "r&einitializare",IDC_BUTTON_CLEAR,7,177,50,14
+    DEFPUSHBUTTON   "&selectare",IDOK,71,177,50,14
+    PUSHBUTTON      "&deselectare",IDC_UNSELECT,125,177,50,14
+    PUSHBUTTON      "revocare",IDCANCEL,179,177,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,171,227,1
+END
+
+IDD_TRYKS_DLG DIALOG DISCARDABLE  0, 0, 227, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sfatul zilei"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "&Arata-mi sfaturi in fiecare zi",IDC_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,139,104,10
+    PUSHBUTTON      "&sfatul urmator",IDC_NEXT,113,137,50,14
+    DEFPUSHBUTTON   "inchidere",IDOK,170,137,50,14
+    LTEXT           "",IDC_PLACEHOLDER,7,7,213,121
+END
+
+IDD_CUSTLIST_DLG DIALOG DISCARDABLE  0, 0, 298, 145
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Organizare"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,19,284,101,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "ok",IDOK,178,124,50,14
+    PUSHBUTTON      "revocare",IDCANCEL,241,124,50,14
+    LTEXT           "",IDC_TBPLACE,7,7,284,13,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_CUSTPROPS_DLG DIALOG DISCARDABLE  0, 0, 209, 110
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " (proprietati)"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Nume",IDC_STATIC,26,11,20,8
+    EDITTEXT        IDC_EDIT_NAME,50,9,151,12,ES_AUTOHSCROLL
+    LTEXT           "&Descriere",IDC_STATIC,14,31,32,8
+    EDITTEXT        IDC_EDIT_DESCR,50,30,152,28,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY
+    GROUPBOX        "Taste de comanda rapida",IDC_STATIC,7,69,128,34,
+                    WS_GROUP
+    CONTROL         "&Ctrl",IDC_CHECK_CTRL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,83,28,10
+    CONTROL         "&Alt",IDC_CHECK_ALT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,43,83,25,10
+    CONTROL         "&Shift",IDC_CHECK_SHIFT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,70,83,31,10
+    COMBOBOX        IDC_COMBO_NUM,103,81,27,90,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "ok",IDOK,152,69,50,14,WS_GROUP
+    PUSHBUTTON      "revocare",IDCANCEL,152,88,50,14
+    PUSHBUTTON      "&info",IDC_BUTTON_LINFO,16,47,30,11,WS_DISABLED
+END
+
+IDD_REGPROMPT_DLG DIALOG DISCARDABLE  0, 0, 281, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Evaluare xplorer²"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "Va rugam sa scrieti/lipiti cheia personala de &inregistrare:",
+                    IDC_STATIC,7,49,187,8
+    EDITTEXT        IDC_EDIT_CODE,7,61,267,64,ES_MULTILINE | ES_AUTOVSCROLL
+    DEFPUSHBUTTON   "cumpara o licenta...",IDC_BUTTON_BUY,7,133,84,14
+    PUSHBUTTON      "continuare",IDOK,224,133,50,14,WS_DISABLED
+    ICON            "",IDC_CUSTICON,7,7,20,20
+    LTEXT           "Cu parere de rau va anuntam ca perioada de evaluare a expirat. Daca doriti sa folositi xplorer² in continuare trebuie sa cumparati o licenta si sa scrieti cheia de inregistrare mai jos",
+                    IDC_MESSAGE,33,7,241,36
+    LTEXT           "",IDC_MESSAGE2,33,36,191,8
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(CHEAPO)
+#if defined(APSTUDIO_INVOKED)
+IDD_ABOUTBOX$(CHEAPO) DIALOG DISCARDABLE  0, 0, 242, 121
+#else
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 242, 121
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Despre xplorer² lite"
+FONT 8, "Verdana"
+BEGIN
+    PUSHBUTTON      "avanseaza la\nversiune pro",IDC_EMAIL,174,10,61,27,
+                    BS_MULTILINE
+    DEFPUSHBUTTON   "ok",IDOK,179,48,50,14
+    EDITTEXT        IDC_BUILD,72,14,85,12,ES_MULTILINE | ES_READONLY
+    CTEXT           "Empowering file management for the masses\n\n© Drept de autor 2002-2005 Nikos Bozinis\nToate drepturile rezervate",
+                    IDC_STATIC,11,34,149,34
+    ICON            IDR_MAINFRAME,IDC_STATIC,17,10,20,20
+    GROUPBOX        "",IDC_STATIC,7,3,158,82
+    LTEXT           "Versiune:",IDC_STATIC,38,16,31,8
+    LTEXT           "Atentie: acest program este protejat de legea dreptului de autor si tratatele internationale. Reproducerea sau distribuirea neautorizata a acestui program poate conduce la penalitati severe civile sau penale.",
+                    IDC_WARNING,7,93,228,25
+    LTEXT           "GRATUIT pentru uz privat si academic",IDC_FREEMANS,14,
+                    72,146,8
+    LTEXT           "www.zabkat.com",IDC_ZABKAT,176,73,56,8
+END
+#endif
+
+IDD_VISHFILTER_DLG DIALOG DISCARDABLE  0, 0, 235, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Afisare elemente potrivit regulii"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,3,228,170
+    PUSHBUTTON      "r&einitializare",IDC_BUTTON_CLEAR,7,177,50,14
+    DEFPUSHBUTTON   "&filtru",IDOK,119,177,50,14
+    PUSHBUTTON      "revocare",IDCANCEL,179,177,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,171,227,1
+END
+
+IDD_CONFIRMALL_DLG DIALOG DISCARDABLE  0, 0, 238, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "message",IDC_MESSAGE,7,7,224,45
+    PUSHBUTTON      "&da",IDYES,7,55,50,14
+    PUSHBUTTON      "d&a pentru tot",IDIGNORE,7,74,50,14
+    PUSHBUTTON      "&nu",IDNO,181,55,50,14
+    PUSHBUTTON      "n&u pentru tot",IDCANCEL,181,74,50,14
+    PUSHBUTTON      "&revocare",IDABORT,94,55,50,14
+    ICON            "",IDC_CUSTICON,110,71,20,20
+END
+
+IDD_COPYOPTIONS_DLG DIALOG DISCARDABLE  0, 0, 211, 192
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Optiuni transfer"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "Operatiune &silentioasa; fara confirmari/raportari de erori",
+                    IDC_CHECK_SILENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,
+                    6,196,10
+    GROUPBOX        "Inlocuire obiecte existente",IDC_STATIC,7,20,197,57,
+                    WS_GROUP
+    CONTROL         "Cere con&firmare",IDC_RDOVR_ASK,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,9,31,71,10
+    CONTROL         "&Inlocuire daca este mai recent, altfel trece mai departe",
+                    IDC_RDOVR_NEWER,"Button",BS_AUTORADIOBUTTON,9,42,193,10
+    CONTROL         "Redenumire &tinta",IDC_RDOVR_RENAME,"Button",
+                    BS_AUTORADIOBUTTON,9,53,71,10
+    CONTROL         "C&onfirmare pentru fisiere doar in citire si de sistem",
+                    IDC_CHECK_READHID,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,9,64,190,10
+    GROUPBOX        "In caz de eroare",IDC_STATIC,7,82,197,35,WS_GROUP
+    CONTROL         "&Raporteaza si anunta utilizatorul pentru actiune",
+                    IDC_RDERR_PROMPT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,11,92,187,10
+    CONTROL         "&Creare raport de eroare si continua copierea",
+                    IDC_RDERR_LOGIT,"Button",BS_AUTORADIOBUTTON,11,103,181,
+                    10
+    CONTROL         "Calc&uleaza dimensiunea fisierelor inaintea transferului",
+                    IDC_CHECK_SIZEUPFRONT,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,7,122,197,10
+    CONTROL         "&Mentine fereastra de progres dupa terminarea transferului",
+                    IDC_CHECK_WINDOWON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,133,207,10
+    CONTROL         "&Elimina atributul doar in citire pentru fisierele tinta",
+                    IDC_CHECK_CDRONLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,144,176,10
+    GROUPBOX        "Prioritate activitate",IDC_STATIC,7,159,118,26
+    CONTROL         "&normala",IDC_RDPRI_NORMAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,21,169,39,10
+    CONTROL         "&fundal",IDC_RDPRI_BG,"Button",BS_AUTORADIOBUTTON,76,
+                    169,46,10
+    DEFPUSHBUTTON   "ok",IDOK,154,154,50,14,WS_GROUP
+    PUSHBUTTON      "revocare",IDCANCEL,154,171,50,14
+END
+
+IDD_COPYPROGRESS_DLG DIALOG DISCARDABLE  0, 0, 262, 126
+STYLE WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Transfer intens"
+FONT 8, "Verdana"
+BEGIN
+    PUSHBUTTON      "",IDC_BUTTON_PAUSE,205,59,50,14
+    PUSHBUTTON      "revocare",IDCANCEL,205,77,50,14
+    RTEXT           "&De la:",IDC_STATIC,0,7,33,8
+    EDITTEXT        IDC_EDIT_CPFROM,34,6,221,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "&La:",IDC_STATIC,8,21,23,8
+    EDITTEXT        IDC_EDIT_CPTO,34,20,221,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "T&otal fisiere transferate:",IDC_STATIC,7,88,92,8
+    EDITTEXT        IDC_EDIT_TOTFILES,102,87,76,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "&Rata de transfer:",IDC_STATIC,14,74,85,8
+    EDITTEXT        IDC_EDIT_TOTBYTES,102,73,76,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "&Estimare timp ramas:",IDC_STATIC,14,60,85,8
+    EDITTEXT        IDC_EDIT_REMAINDER,102,59,76,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "raport &erori",IDC_BUTTON_LOG,205,105,50,14
+    CONTROL         "&Mentine fereastra deschisa dupa terminarea transferului",
+                    IDC_CHECK_WINDOWON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,109,197,10
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,
+                    41,248,10
+END
+
+IDD_OPT3RD_PDLG DIALOG DISCARDABLE  0, 0, 250, 218
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Advansat"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Bara de stare",IDC_STATIC,7,3,236,36,WS_GROUP
+    CONTROL         "Afi&sare dimensiune folder",IDC_CHECK_STATDIR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,13,99,10
+    CONTROL         "A&fisare spatiu liber pe disc",IDC_CHECK_STATFREE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,137,13,102,10
+    CONTROL         "Afisare informatii element activ",IDC_CHECK_STATINFO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,25,118,10
+    CONTROL         "Afisare &taburi deasupra panourilor",IDC_CHECK_TABSTOP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,46,128,10
+    CONTROL         "Subliniere bara de titlu a &panoului activ ca in 2xExplorer",
+                    IDC_CHECK_2XMODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    56,199,10
+    CONTROL         "Sortare &naturala a numerelor (doar XP)",
+                    IDC_CHECK_XPSORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    66,146,10
+    CONTROL         "Folderul explorat nu se &blocheaza",IDC_CHECK_NOCURDIR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,76,126,10
+    CONTROL         "&Calculare automata a dimensiunii subfolderelor",
+                    IDC_CHECK_AUTOSUBDIR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,86,170,10
+    CONTROL         "Extragere mini pict&ograme particulare (e.g. pentru CVS)",
+                    IDC_CHECK_CVSOVERLAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,96,201,10
+    CONTROL         "Panoul de previzualizare ancorat la dreapta arborelui de foldere",
+                    IDC_CHECK_QVDOCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    106,229,10
+    CONTROL         "Autocompletare cale in bara de adrese in stil &Explorer",
+                    IDC_CHECK_XPAUTOCOMP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,116,192,10
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(CHEAPO)
+#if defined(APSTUDIO_INVOKED)
+IDD_ADPRO_DLG$(CHEAPO) DIALOG DISCARDABLE  0, 0, 243, 99
+#else
+IDD_ADPRO_DLG DIALOG DISCARDABLE  0, 0, 243, 99
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Limitare versiune lite"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "incercati-l gratuit astazi!",IDC_ZABKAT,88,61,105,11
+    DEFPUSHBUTTON   "comparare versiuni",IDC_BUT_COMPFEAT,31,80,81,14
+    PUSHBUTTON      "ok",IDOK,185,80,50,14
+    ICON            "",IDC_CUSTICON,5,5,20,20
+    LTEXT           "Aceasta comanda este disponibila in versiunea professional.\n\nPentru a beneficia la maxim de potentialul xplorer² trebuie sa avansati la versiunea professinal. Are multe instrumente folositoare, este mai particularizabil si puteti primi suport personal.\n\n",
+                    IDC_STATIC,31,5,203,52
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TEXTINPUT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_NOTIFY_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_GREP_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_SCRIPTBUILD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_SYNCWIZARD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_SPLIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_BUILDSYNC_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_COLSELECT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_FILTER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_FPP_DATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_FPP_NUMBER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_FPP_TEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_FILTEREDIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_TOUCHATTR_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_COPYTO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_DUPEWIZARD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_GENERICLOG_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 356
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_OPTFRAME_PDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_OPTGENERAL_PDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_MASSRENAME_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_FINDFILES_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_MATCHRULE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_TRYKS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_CUSTLIST_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_CUSTPROPS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_REGPROMPT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_VISHFILTER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_CONFIRMALL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_COPYOPTIONS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_COPYPROGRESS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_OPT3RD_PDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_WELCOME        HTML    DISCARDABLE     "res\\welcome_rom.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "xplorer²"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_CLOSE           "Inchide aceasta fereastra"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Afiseaza informatii despre program, versiunea si dreptul de autor\nDespre"
+    ID_APP_EXIT             "Inchide aplicatia (toate ferestrele)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPY            "Copiaza elementele selectate in clipboard\nCopiere (Ctrl+C)"
+    ID_EDIT_CUT             "Elimina elementele selectate si le copiaza in clipboard\nDecupare (Ctrl+X)"
+    ID_EDIT_PASTE           "Insereaza elementele copiate sau decupate in amplasarea selectata\nLipire (Ctrl+V)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Afiseaza sau ascunde barele de instrumente"
+    ID_VIEW_STATUS_BAR      "Afiseaza sau ascunde bara de stare"
+    ID_VIEW_REFRESH         "Reimprospateaza continutul panoului activ\nReimprospatare (Ctrl+R)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_SCSIZE          "Se modifica dimensiunea ferestrei"
+    ATL_IDS_SCMOVE          "Se modifica pozitia ferestrei"
+    ATL_IDS_SCMINIMIZE      "Se reduce fereastra la o pictograma"
+    ATL_IDS_SCMAXIMIZE      "Se mareste fereastra la dimensiunea maxima"
+    ATL_IDS_SCCLOSE         "Se inchide fereastra activa"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_SCRESTORE       "Se restaureaza fereastra la dimensiunea normala"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Pregatit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_CLONE         "Deschide alta fereastra identica cu aceasta"
+    ID_FILE_TRASH           "Stergere permaneta a selectiei (nu se muta in cosul de reciclare)\nGunoi (Shift+Del)"
+    ID_WINDOW_SETREGKEY     "Salveaza configuratia ferestrei prezente si setarile istoricul"
+    ID_FILE_BROWSE          "Exploreaza folderul ori ruleaza elementul ales"
+    ID_FILE_CLONEBROWSE     "Exploreaza folderul ales intr-o fereastra noua"
+    ID_FILE_UPALEVEL        "In sus\nParinte (Bksp)"
+    ID_VIEW_LARGEICONS      "Afiseaza elementele utilizand pictograme mari"
+    ID_VIEW_SMALLICONS      "Afiseaza elementele utilizand pictograme mici"
+    ID_VIEW_LIST            "Afiseaza elementele intr-o lista"
+    ID_VIEW_DETAILS         "Afiseaza informatii despre fiecare element din fereastra"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INFO_PANE            "fisier: 1,999,999 B; Modificat 31/01/2001 13:35:00"
+    ID_SELECTION_PANE       "9999999: 999.234 MB"
+    ID_FILTRO_PANE          "F"
+    ID_FREESPACE_PANE       "100.9MB liber (99%)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_REGDATA_FIRST        "Exploreaza elementul activ intr-o fereastra noua utilizand aceasta configuratie salvata"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MEMO_REGNAME        "Configuratii"
+    IDS_TITLE_ADDCOLSET     "Titlu set de coloane"
+    IDS_SIZE_FOLDER         "<folder>"
+    IDS_COLUMN_OFF          "<n/a>"
+    IDS_COLYMN_FILETYPE     "fisier"
+    IDS_STOCKCOL_NAME       "Nume"
+    IDS_STOCKCOL_FULLNAME   "Nume complet"
+    IDS_STOCKCOL_EXTENSION  "Extensie"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NUMBOUNDS       "Introduceti un numar intre %1!d! si %2!d!"
+    IDS_ERR_INVALIDINPUT    "Ultima comanda nu a putut fi inteleasa"
+    IDS_ERR_PARTIALREAD     "Anumite elemente au fost inaccesibile (drepturi limitate de acces?)"
+    IDS_ERR_NOVISFILTER     "Nu exista nici un filtru vizual activ"
+    IDS_ERR_NOCAPABILITY    "Selectia nu suporta aceasta comanda"
+    IDS_ERR_NODRAGDROP      "Selectia nu poate fi glisata"
+    IDS_ERR_NOCLIPBOARD     "Clipboard-ul este inaccesibil"
+    IDS_ERR_REFRESHFAILED   "Continutul folderului nu poate fi reimprospatat; incercati sa-l parasiti si apoi reveniti"
+    IDS_ERR_NOCONTENT       "Imposibil de accesat continutul elementelor selectate"
+    IDS_ERR_PASTEFAULT      "Lipirea din clipboard a esuat"
+    IDS_ERR_RENAMEFAULT     "Din anumite motive elementele nu au putut fi redenumite"
+    IDS_ERR_RENAMENIET      "Elementele nu pot fi redenumite"
+    IDS_ERR_NOSHORTCUT      "Aceasta comanda necesita o comanda rapida selectata"
+    IDS_ERR_RESOLVELINK     "Anumite legaturi nu au putut fi rezolvate"
+    IDS_ERR_NOPREVIEW       "Acest element nu are imagine pentru previzualizare"
+    IDS_ERR_CREATEFAULT     "Crearea noului element nu a reusit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STOCKCOL_SIZE       "Dimensiune"
+    IDS_STOCKCOL_ATTRIBUTES "Atribute"
+    IDS_STOCKCOL_MODIFIED   "Data modificarii"
+    IDS_STOCKCOL_CREATED    "Data crearii"
+    IDS_STOCKCOL_ACCESSED   "Data accesarii"
+    IDS_STOCKCOL_TYPE       "Tip"
+    IDS_STOCKCOL_PATH       "Cale"
+    IDS_STOCKCOL_VERSION    "Versiune"
+    IDS_STOCKCOL_HLINKS     "Legaturi"
+    IDS_STOCKCOL_CHECKSUM   "Checksum"
+    IDS_STOCKCOL_VOLINFO    "Mediu"
+    IDS_STOCKCOL_83         "Nume 8.3"
+    IDS_STOCKCOL_COMPRESSED "Dimensiune pe disc"
+    IDS_STOCKCOL_COMMENT    "Comentarii"
+    IDS_STOCKCOL_SUBITEMS   "Continut"
+    IDS_STOCKCOL_KEYWORDS   "Cuvinte cheie"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_COPYNAMEOK      "Numele complet al elementelor selectate a fost copiat in clipboard"
+    IDS_MSG_FOLDERBUSTED    "Folderul a fost redenumit sau sters; se schimba la spatiul de lucru"
+    IDS_MSG_REFRESHOK       "Continutul panoului a fost reimprospatat cu succes"
+    IDS_STAT_EMPTYFOLDER    "Panou gol"
+    IDS_STAT_FORMATTOTAL    "%u element/e"
+    IDS_STAT_VIRTFOLDER     "extensie namespace"
+    IDS_STAT_THINGME        "element virtual"
+    IDS_STAT_FOLDER         "folder"
+    IDS_STAT_SHORTCUT       "legatura"
+    IDS_MSG_PREVIEWCOPIED   "Previzualizare imagine din clipboard"
+    IDS_NEW_FILE            "Fisier nou"
+    IDS_NEW_FOLDER          "Folder nou"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_THUMBNAILS      "Afiseaza elementele utilizand miniaturi"
+    ID_FILE_PROPERTIES      "Afiseaza proprietatile elementelor selectate\nProprietati (F12)"
+    ID_EDIT_COPYNAMES       "Copiaza numele complet a elementelor selectate in clipboard (<Shift> pentru stilul 8.3)"
+    ID_MARK_SELECTALL       "Selecteaza toate elementele"
+    ID_FILE_VIEW            "Examinare continut fisier ca text\nExaminare (F3)"
+    ID_FILE_EDIT            "Editare continut fisier ca text\nEditare (F4)"
+    ID_EDIT_COPYPREVIEW     "Copiaza previzualizare imaginilor ca bitmap"
+    ID_FILE_DELETE          "Sterge elementele selectate (<Shift> pentru stergere permanenta)\nStergere (Del)"
+    ID_FILE_RENAME          "Redenumeste elementul selectat\nRedenumire (F2)"
+    ID_EDIT_COPYTO          "Copiaza elementele selectate la o alta amplasare (<Alt> pentru ultima amplasare)\nCopiere in (F5)"
+    ID_EDIT_MOVETO          "Muta elementele selectate la o alta amplasare (<Alt> pentru ultima amplasare)\nMuta in (F6)"
+    ID_ACTIONS_NEWFILE      "Creare fisier nou, gol\nFisier nou (F7)"
+    ID_ACTIONS_NEWFOLDER    "Creare folder nou, gol\nFolder nou (F8)"
+    ID_EDIT_PASTELINK       "Creare comenzi rapide catre elementele copiate sau decupate in amplasarea selectata"
+    ID_EDIT_FINDTARGET      "Cauta elementul indicat de comanda rapida (rezolvare legatura)"
+    ID_ACTIONS_PASTEHARDLINK 
+                            "Creare legaturi hard pentru elementele din clipboard (doar NTFS)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ACTIONS_SHRED        "Distruge elementele selectate\nDistrugere"
+    ID_ACTIONS_TOUCH        "Stabileste data modificarii elementului selectat"
+    ID_MARK_STICKYSELECTION "Comutare la modul de selectare adeziva (neafectat de clicuri sau taste)\nAdeziv (Alt+S)"
+    ID_MARK_UNSELECTALL     "Deselecteaza toate elementele"
+    ID_MARK_USEVISUALFILTER "Porneste sau opreste wildcard-ul sau filtrul"
+    ID_VIEW_LOCATEINTREE    "Localizeaza folderul explorat in arborele de foldere\nSinc. folder (Alt+T)"
+    ID_VIEW_SHOWTREE        "Afiseaza sau ascunde arborele de foldere\nFoldere (Ctrl+T)"
+    ID_WINDOW_SCRAPFRAME    "Deschide un container scrap pentru a retine temporar elemente din foldere diferite\nScrap"
+    ID_ACTIONS_CHANGEATTRIBUTES 
+                            "Schimba data si atributele DOS ale elementelor selectate\nAtribute (Shift+F12)"
+    ID_FILE_BROWSE2         "Deschide elementul selectat (actiunea standard)"
+    ID_FILE_CLONEBROWSE2    "Incarca elementul selectat intr-un panou obisnuit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOPMOST              "Fixeaza aceasta fereastra deasupra celorlate ferestre"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_OPENWARN        "Sunteti sigur ca doriti sa deschideti toate aceste fisiere?"
+    IDS_MSG_MPVITEMSREMOVED "Element/e eliminat/e (inca exista pe disc)"
+    IDS_MSG_FILTERMAYHIDE   "Filtrul activ poate sa ascunda unele elemente inserate"
+    IDS_HL_CONFIRMTITLE     "Legatura hard"
+    IDS_HL_STATUSMSG        "Se executa lipirea speciala... (ESC pentru anulare)"
+    IDS_SCRAPTITLE          "scrap² - "
+    IDS_MFV_WRITEOK         "Continutul panoului a fost salvat cu succes"
+    IDS_COMMANDPROMPT       "Ctrl+Arrows/Return pentru selectare/alegere nume; F1 pentru completare nume; jetoanele $ sunt acceptate; apasati <Return> pentru rulare"
+    IDS_MEDIA_UNKNOWN       "(necunoscut)"
+    IDS_MEDIA_FLOPPY        "Discheta"
+    IDS_MEDIA_FIXED         "Disc Local"
+    IDS_MEDIA_REMOTE        "Retea"
+    IDS_MEDIA_CD            "Unitate CD"
+    IDS_MEDIA_RAM           "Disc Ram"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_REMOVE          "Elimina elementele selectate din panou (fisierele reale nu sunt afectate)\nEliminare (Del)"
+    ID_PMRITEDRAG_INSERTHERE "Insereaza elementele in acest panou"
+    ID_PMRITEDRAG_CANCEL    "Revoca aceasta actiune"
+    ID_ACTIONS_SPLIT        "Divizeaza fisierul selectat\nDiv. fisier"
+    ID_ACTIONS_MERGEFILES   "Combina elementele selectate intr-un singur fisier (in ordinea din panou)\nUnire"
+    ID_ACTIONS_WRITECONTENTS 
+                            "Salveaza continutul panoului activ pentru uz posterior\nSalvare (Ctrl+S)"
+    ID_ACTIONS_LOADCONTENTS "Deschide continutul de fisiere salvat anterior\nDeschidere"
+    ID_ACTIONS_FLATTENPATH  "Extrage un folder si toate subfolderele sale (sau deschide un fisier cida)"
+    ID_TOOLS_RUNCOMMAND     "Ruleaza orice program (GUI)\nRulare"
+    ID_TOOLS_DOSCOMMAND     "Ruleaza comenzi DOS (dir, md, ren etc.)\nDOS (F10)"
+    ID_GOTO_BACK            "Revenire la folderul explorat anterior\nInapoi (Alt+left)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NOMAINFRAME     "Fereastra principala pentru acest fir de executie nu este diponibila"
+    IDS_ERR_NOSCRAPFRAME    "Imposibil de creat container scrap"
+    IDS_ERR_EXTEDITVIEW     "Imposibil de rulat editorul/examinatorul; verificati comanda din Instrumente | Optiuni"
+    IDS_ERR_CANTEXECUTE     "Desi sa incercat comanda aceasta nu poate fi efectuata"
+    IDS_ERR_HLNOTFILESYS    "Comenzile speciale de lipire necesita elemente sursa (si tinta) normale"
+    IDS_ERR_HLCANTLINK      "Eroare la crearea legaturilor hard; sursa si tinta trebuie sa fie pe aceeasi partitie NTFS"
+    IDS_ERR_HLUPONSELF      "Nu se poate lipi sau efectua legatura hard elemetului in folderul sau"
+    IDS_ERR_HLBOOTSTRAP     "Nu se poate lipi un folder in interiorul sau"
+    IDS_ERR_MFVWRITEKAK     "Eroare la scrierea continutului fisierului"
+    IDS_ERR_MFVLOAD         "Eroare la citire si/sau continutul fisierului este deteriorat"
+    IDS_ERR_MFVLOADPARTIAL  "Anumite elemente not pot fi gasite"
+    IDS_ERR_PIDLRANGE       "Tinta ceruta este in afara spatiului local"
+    IDS_ERR_FOLDERKAK       "Citirea din %1 a esuat"
+    IDS_ERR_DATASOURCE      "Acest folder nu pare a fi o sursa valida de date"
+    IDS_ERR_DROPTARGET      "Folderul tinta nu accepta aceasta operatie pentru fisiere"
+    IDS_ERR_INVALIDFILTER   "Filtrul specificat este invalid"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_SCRAPFRAME          "container scrap #"
+    IDR_CMDFRAME            "consola²"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_DIRSTATFRAME        "date despre folder - "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_BOOKMARKSET     "Semn de carte atribuit cu succes."
+    IDS_ADDRESSBAR          "Bara de adrese"
+    IDS_TRANSLATION         "Traducere in romana"
+    IDS_MSG_FOCUSWARP       "Cursorul focalizat a trecut de ultimul element"
+    IDS_SYNC_FILTERSON      "Cel putin un panou are un filtru vizual activ;%nSincronizarea poate fi incompleta.%nContinuati oricum?"
+    IDS_SYNC_IDENTIFIED     "Sincronizarea a identificat si selectat elementele pentru actiune ulterioara"
+    IDS_SYNC_IDENTICAL      "Continutul celor doua foldere pare a fi identic"
+    IDS_MSG_NOCMDHISTORY    "Nu exista nici o comanda in istoric"
+    IDS_SELECTFILTER        "Selectare filtru"
+    IDS_UNSELECTFILTER      "Deselectare filtru"
+    IDS_VF_INSTRUCTIONS     "Specificati filtrul (e.g. '*.cpp') si apasati <Return>"
+    IDS_VF_TITLE            "Filtru vizual:"
+    IDS_MSG_READINGFOLDER   "Se citeste continutul folderului..."
+    IDS_VF_FILESNOTSAVED    "Filtrul vizual activ (sau verificarea dublurilor) poate ascunde unele elemente;%nastfel de elemente ascunse nu vor fi salvate; Continuati oricum?"
+    IDS_FP_BFFTITLE         "Selectare folder pentru explorare flat"
+    IDS_FP_FLATTENINGMSG    "(ESC pentru anulare); se pregateste pentru explorare flat %d..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GOTO_FORWARD         "Avanseaza la urmatorul folder din lista\nInainte (Alt+right)"
+    ID_GOTO_BOOKMARK        "Salt la folderul marcat cu semn de carte anterior\nSalt (Ctrl+F1)"
+    ID_GOTO_SETBOOKMARK     "Stabilire semn de carte rapid la folderul curent"
+    ID_VIEW_DUALPANE        "Schimba intre modul cu un panou sau doua\nPanou (Ctrl+O)"
+    ID_MARK_SYNCHRONIZEPANES 
+                            "Selecteaza elementele care difera din panouri, utilizand data modificarii\nComparare (F9)"
+    ID_TOOLS_REPEATCOMMAND  "Repeta ultima comanda efectuata"
+    ID_MARK_SELECTGROUP     "Selecteaza elementele care se potrivesc unei reguli"
+    ID_MARK_UNSELECTGROUP   "Deselecteaza elementele care se potrivesc unei reguli"
+    ID_MARK_INVERTSELECTION "Selecteaza elementele neselectate si invers"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NOFILTERMATCH   "Nici un element nu se potriveste filtrului specificat"
+    IDS_ERR_INTERRUPT       "Eroare la citire sau intrerupt de utilizator"
+    IDS_ERR_NOSYNCFOLDERS   "Nici un folder nu a fost gasit potrivit sincronizarii; incercati mai intai comanda de sincronizare (F9)"
+    IDS_ERR_CMDSYNTAX       "Va rugam sa folositi $ sau > pentru a specifica o comanda sau scrieti o adresa pentru a o adauga in lista"
+    IDS_ERR_IOSCRIPT        "Eroare I/O in timpul scrierii fisierului de script"
+    IDS_ERR_OUTOFMEM        "Memorie insuficienta pentru operatia ceruta"
+    IDS_ERR_CMDTEMPL        "Sablonul comenzii este invalid"
+    IDS_ERR_NOHELPFILE      "Fisierul ""%s"" nu este prezent in folderul instalarii"
+    IDS_ERR_SHREDIO         "Eroare la sciere, distrugere anulata"
+    IDS_ERR_NOTFILE         "Aceasta operatie necesita un fisier"
+    IDS_ERR_SPLITIO         "Eroare I/O sau operatie terminata de utilizator"
+    IDS_ERR_NOMERGE         "Prea putine fisiere selectate pentru unire"
+    IDS_ERR_NOFOLDERTARGET  "Folderul tinta este invalid"
+    IDS_ERRDDV_BUILDFROM    "Campul ""De la"" nu trebuie sa fie gol"
+    IDS_ERRDDV_BUILDTO      "Campul ""La"" nu trebuie sa fie gol\nsau sa contina wildcard sau/si caracterul punct (.)"
+    IDS_ERR_VIRTCOLUMNS     "Selectarea coloanelor nu este posibila pentru foldere virtuale"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_VISUALFILTER    "Constrange vizibilitatea elementelor in concordanta cu wildcard-ul furnizat"
+    ID_GOTO_MIRRORBROWSING  "Daca este selectat, panourile afiseaza acelasi lucru in timpul parcurgerii arborelui de foldere\nOglinda (Ctrl+M)"
+    ID_TOOLS_COMMANDSCRIPT  "Creare script (fisier batch), aplicand asupra fiecarui element selectat comenzi predefinite\nScript (Ctrl+B)"
+    ID_EDIT_SYNCOPASTE      "Obliga sincronizarea rezultatelor, copiind elementele selectate in folderele lor tinta"
+    ID_MARK_CONTAININGTEXT  "Selecteaza fisierele care contin un text specificat\nCautare text (Ctrl+G)"
+    ID_TOOLS_RUNHISTORY     "Selecteaza o comanda din istoric\nIstoric (Ctrl+F10)"
+    ID_GOTO_SAMEFOLDER      "Continutul panoului activ este afisat in cel inactiv (<Alt> invers)\n<-/->"
+    ID_GOTO_SWAPPANES       "Interschimba cotinutul panourilor intre ele"
+    ID_HELP_ALPHAINFO       "Notiuni introductive despre xplorer²"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYNC_NOMATCH        "Nici un element nu se potriveste filtrului sincronizarii"
+    IDS_SYNC_DODGY          " (exista elemente nedeterminate)"
+    IDS_MSG_GREPROMPT       "Se scaneaza continutul... (ESC pentru anulare)"
+    IDS_GREP_NOMATCH        "Nici un element nu se potriveste regulii (text) specificate"
+    IDS_GREP_FOUND          "Elementele care se potrivesc regulii (text) au fost selectate pentru actiune ulterioara"
+    IDS_TIT_CMDHISTORY      "Selectare comanda:"
+    IDS_MSG_CMDTOKENS       "Aceste jetoane sunt substituite automat in sablonul comenzii:\n\n$N\tNume fisier (exemplu.txt)\n$B\tNume de baza (exemplu)\n$E\tExtensie (txt)\n$P\tCale (c:\\folder)\n$D\tData modificarii (13/3/2004 10:12)\n$C\tNume simplu parinte (folder)\n$F\tCale+fisier (c:\\folder\\exemplu.txt)\n$S\tNumele tuturor fisierelor selectate\n$A\tNumele tuturor fisierelor selectate (cale completa)\n$L\tCalea panoului din stanga (sus)\n$R\tCalea panoului din dreapta (jos)\n$I\tCalea panoului inactiv\n$Q\tNume fisier din panoul inactiv (nou.txt)\n$G\tNume fisier+calea din panoul inactiv (d:\\nou.txt)\n$Z\tNume temporar fisier extras din arhive zip, FTP etc\n$#\tIncrementare automata a contorului incepand cu numarul #\n$?\tCerere pentru un singur argument\n$$\t(Escape) pentru un singur $\n\nToate versiunile prezentate scrise cu litere mici (e.g. $f)\nfolosesc formatul 8.3 pentru nume de fisiere\\cale\n\n${nume_coloana} insereaza continutul acelei coloane;\ne.g. ${dimensiune} va fi inlocuit cu dimensiunea fisierului, ${nume} se comporta ca $N etc"
+    IDS_MSG_BRANCHEXPAND    "Se extind toate ramurile... (ESC pentru anulare)"
+    IDS_OFN_SAVEPROMPT      "Salvati schimbarile in '%1' ?"
+    IDS_MSG_SYNCPROGRESS    "Se compara elementele... (ESC pentru anulare)"
+    IDS_ECF_EOL             "End of line"
+    IDS_ECF_TAB             "Tab"
+    IDS_ECF_CR              "Return"
+    IDS_ECF_LF              "Line feed"
+    IDS_ECF_SPACE           "Space"
+    IDS_ECF_COMMA           "Virgula"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_HELP_CONTENTS        "Manual complet"
+    ID_GOTO_DESKTOP         "Spatiu de lucru a.k.a. Desktop"
+    ID_GOTO_MEDOCS          "Contine fisiere personale"
+    ID_GOTO_NETWORK         "Computere din acelasi grup de lucru"
+    ID_GOTO_KRAP            "Fisiere si foldere sterse"
+    ID_GOTO_CPANEL          "Setarile computerului"
+    ID_GOTO_MEKOMP          "Unitatile de disc locale si CD"
+    ID_GOTO_PRINTERS        "Imprimante disponibile"
+    ID_GOTO_RECENTD         "Documente si foldere accesate recent"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GOTO_STARTMENU       "Foldere ce apar la apasarea butonului Start"
+    ID_GOTO_STARTUP         "Programe ce pornesc de fiecare data cand se face log on"
+    ID_GOTO_CDBURNING       "Fisiere ce asteapta sa fie scrise pe CD (Windows XP)"
+    ID_GOTO_SENDTO          "Schimbare la folderul ce contine elementele din Trimitere la"
+    ID_BOOKMARKS_FAVORITES  "Mutare la folderul cu preferinte Internet Explorer"
+    ID_TOOLS_FINDFILES      "Cauta fisiere si foldere care se potrivesc unui filtru\nCautare (Ctrl+F)"
+    ID_MARK_SYNCWIZARD      "Sincronizare panouri dupa anumite optiuni"
+    ID_MARK_CHECKBUILD      "Selecteaza elementele dupa reguli de transformare a fisierelor (e.g. compilare)\nCompilare (Ctrl+F12)"
+    ID_VIEW_SELECTCOLUMNS   "Organizeaza coloanele pentru modul de vizualizare detaliat\nColoane (Alt+K)"
+    ID_MARK_SELECTRANGE     "Selecteaza un numar de elemente dupa cel activ"
+    ID_VIEW_SORTBY_NAME     "Sorteaza elementele in panou dupa nume"
+    ID_VIEW_SORTBY_SIZE     "Sorteaza elementele in panou dupa dimensiune"
+    ID_VIEW_SORTBY_DATE     "Sorteaza elementele in panou dupa data modificarii"
+    ID_VIEW_SORTBY_TYPE     "Sorteaza elementele in panou dupa extensie"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_SHREDWARNING    "Sunteti pe punctul de a distruge aceste fisiere.\nEste imposibil sa recuperati elementele distruse.\n\nSunteti sigur ca doriti sa continuati?"
+    IDS_MSG_SHREDDING       "Se distruge... (ESC pentru anulare)"
+    IDS_MSG_SHREDABORTED    "Distrugere anulata (unele fisiere pot fi pierdute)"
+    IDS_OVERWRITE_QUESTION  "%s\n\nUn fisier cu acelasi nume exista deja; il inlocuiti oricum?"
+    IDS_SPLIT_CONFIRMTITLE  "Divizare fisier"
+    IDS_SPLIT_PROMPT        "Se divizeaza.. (ESC pentru anulare)"
+    IDS_ASYNCMERGE          "Datele crearii fisierelor selectate nu sunt in ordine\n(asigurati-va ca sunt aranjate\\sortate corespunzator)\n\nContinuati unirea oricum?"
+    IDS_MERGE_TARGET        "Nume fisier tinta"
+    IDS_MERGE_PROMPT        "Se uneste... (ESC pentru anulare)"
+    IDS_CHKBLD_ALLOK        "Toate fisierele sunt actualizate"
+    IDS_CHKBLD_NOMATCH      "Nici un element nu se potriveste filtrului sursa specificat"
+    IDS_STOCKDESCR_NAME     "Nume fisier"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STOCKDESCR_FULLNAME "Nume fisier complet"
+    IDS_STOCKDESCR_EXTENSION "Extensie fisier"
+    IDS_STOCKDESCR_SIZE     "Dimensiune fisier"
+    IDS_STOCKDESCR_ATTRIBUTES "Atribute fisier"
+    IDS_STOCKDESCR_MODIFIED "Data ultimei modificari"
+    IDS_STOCKDESCR_CREATED  "Data crearii"
+    IDS_STOCKDESCR_ACCESSED "Data ultimei accesari"
+    IDS_STOCKDESCR_TYPE     "Tip fisier"
+    IDS_STOCKDESCR_PATH     "Calea completa"
+    IDS_STOCKDESCR_VERSION  "Versiune executabil sau DLL"
+    IDS_STOCKDESCR_HLINKS   "Numar legaturi hard"
+    IDS_STOCKDESCR_CHECKSUM "Checksum continut"
+    IDS_STOCKDESCR_VOLINFO  "Informatii despre mediul de date"
+    IDS_STOCKDESCR_83       "Nume DOS format 8.3"
+    IDS_STOCKDESCR_COMPRESSED "Dimensiune ocupata pe disc"
+    IDS_STOCKDESCR_COMMENT  "Informatii suplimentare"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STOCKDESCR_SUBITEMS "Numar de elemente aflate direct in folder"
+    IDS_STOCKDESCR_KEYWORDS "Cuvinte cheie asociate documentului"
+    IDS_STOCKDESCR_ADS      "Numar fluxuri de date alternative"
+    IDS_STOCKDESCR_VERFIRMA "Compania care detine drepturi asupra codului binar"
+    IDS_STOCKDESCR_VERCPRITE "Informatii extinse despre modul"
+    IDS_STOCKDESCR_EXIFCX   "Latime imagine (EXIF)"
+    IDS_STOCKDESCR_EXIFCY   "Inaltime imagine (EXIF)"
+    IDS_STOCKDESCR_EXIFDATE "Data la care a fost facuta poza (EXIF)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EST_FILE            "Nume fisier"
+    IDS_EST_BASE            "Nume de baza"
+    IDS_EST_EXT             "Extensie"
+    IDS_EST_COUNTER         "Contor automat"
+    IDS_EST_DOLLAR          "Dolar ($)"
+    IDS_EST_DATE            "Data modificarii"
+    IDS_EST_PARENT          "Nume folder parinte"
+    IDS_EST_FOLDER          "Cale folder"
+    IDS_EST_PATH            "Cale completa"
+    IDS_EST_SEL             "Numele fisierelor selectate"
+    IDS_EST_SELPATH         "Calea elementelor selectate"
+    IDS_EST_LPATH           "Cale panou stanga (sus)"
+    IDS_EST_RPATH           "Cale panou dreapta (jos)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EST_IPATH           "Cale panou inactiv"
+    IDS_EST_IFOCUS          "Focus panou inactiv"
+    IDS_EST_IFULLPATH       "Cale focus panou inactiv"
+    IDS_EST_ZIPTEMP         "Fisier extras din folder zip"
+    IDS_EST_COMMA           "Virgula (,)"
+    IDS_FMT_FREESPACE       "Spatiu liber: "
+    IDS_FMT_SELRANGE        "Sir dupa elementul %d"
+    IDS_TIT_RENAMEDOS       "Nume nou:"
+    IDS_MIRRORB_ON          "Explorare & scrolling in oglinda PORNIT"
+    IDS_MIRRORB_OFF         "Explorare & scrolling in oglinda OPRIT"
+    IDS_SCRAP_UNTITLED      "fara titlu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_COPYCOLSOK      "Coloanele selectiei au fost copiate in clipboard"
+    IDS_MSG_SELCLIPOK       "Selectia curenta a fost pastrata"
+    IDS_MSG_ACTIVATESIZECOL "Pentru a vizualiza dimensiunile folderelor folositi coloana Dimensiune din stoc [S]"
+    IDS_MSG_DIRSIZEPROGRESS "Se citesc subfolderele... (ESC pentru anulare)"
+    IDS_DTUNIT_MONTH        "luna(luni)"
+    IDS_DTUNIT_DAY          "zi(zile)"
+    IDS_DTUNIT_HOUR         "ora(ore)"
+    IDS_DTUNIT_MINS         "min."
+    IDS_DTUNIT_SEC          "sec."
+    IDS_FMT_PREVDATE        "%s data pana in %u %s"
+    IDS_FMT_DATEWITHIN      "%s data intre %s si %s"
+    IDS_FMT_DATEAFTER       "%s data dupa %s"
+    IDS_FMT_DATEBEFORE      "%s data inainte de %s"
+    IDS_FMT_INTWITHIN       "%s valoare de la %u%c la %u%c"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERRDDV_NOCOLUMNS    "Trebuie sa selectati cel putin o coloana"
+    IDS_ERR_NOFREESPACE     "Aceasta comanda poate fi folosita doar in cazul folderelor normale"
+    IDS_ERR_NORENCOLUMN     "Aceasta coloana nu poate fi redenumita; va rugam folositi Nume ca prima coloana"
+    IDS_ERR_NOSELCLIP       "Nici un element nu este inmagazinat in clipboard"
+    IDS_ERR_SECNOMATCH      "Nici un element nu se potriveste celor inmagazinate in clipboard"
+    IDS_ERR_PSNODIRS        "Obiectul lipit nu contine foldere"
+    IDS_ERR_PSWRITE         "Eroare la scriere in timpul lipirii tintei speciale"
+    IDS_ERR_PSDESKTOP       "Structura relativa a folderului este ambigua; lipire anulata"
+    IDS_ERR_RULEINVALID     "Date invalide pentru regula\nVa rugam verificati daca dimensiunile si datele sunt trecute in ordine"
+    IDS_ERRDDV_NOLOOKIN     "Trebuie sa specificati folderul in care doriti sa efectuati cautarea"
+    IDS_ERR_FILTERNOCON     "Filtrul de cautare trebuie sa prezinte anumite constrangeri"
+    IDS_ERR_LOOKINFAULT     "Specificatiile din campul ""Tinta"" sunt invalide"
+    IDS_ERR_NOTFILESYSCMD   "Aceasta comanda este aplicabila doar elementelor normale"
+    IDS_ERR_ATTRIBUTEIO     "Anumite atribute nu au putut fi stabilite"
+    IDS_ERR_NOCOMMENT       "Anumite elemente nu suporta comantarii (partitii FAT?)"
+    IDS_ERR_NOITEMSNODUPE   "Trebuie sa introduceti elementele pentru comparat (puteti folosi comanda Adresa flat)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_SORTBY_UNSORTED "Elementele nu sunt sortate; afisarea se face in ordine citirii de pe disc"
+    ID_VIEW_ARRANGEBY_PATH  "Sorteaza dupa adresa folderului parinte"
+    ID_VIEW_SORTBY_OTHER    "Sorteaza dupa o coloana non-standard"
+    ID_VIEW_SORTBY_ASCENDING 
+                            "Schimba sortarea de la cel mai ""mic"" la cel mai ""mare"""
+    ID_TOOLS_FREESPACE      "Verifica spatiul liber de pe discul explorat; reimprospatati daca este necesar\nSpatiu"
+    ID_FILE_CHANGETYPE      "Redenumeste elementul inclusiv extensia DOS"
+    ID_FILE_BROWSEFLAT      "Deschide un container scrap pentru selectie (folder sau cida) (<Ctrl> pentru reutiliza o fereastra existenta)\nExp. Flat (Shift+Enter)"
+    ID_HELP_CHECKUPDATES    "Vizitati situl oficial pentru a descarca ultima versiune"
+    ID_WINDOW_LIST          "Listeaza toate ferestrele controlate de aceasta aplicatie; optional puteti sa le schimbati intre ele\nFerestre (Ctrl+W)"
+    ID_VIEW_SAVESETTINGSNOW "Salveaza setarile curente imediat"
+    ID_EDIT_COPYSELECTION   "Copiaza textul coloanelor elementelor selectate din panoul activ (pentru imprimare etc.)"
+    ID_MARK_SELECTION_STORE "Pastreaza elementele selectate pentru a fi folosite mai tarziu"
+    ID_MARK_SELECTION_SELECT 
+                            "Selecteaza toate elementele inmagazinate anterior in clipboard"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MARK_SELECTION_UNSELECT 
+                            "Deselecteaza toate elementele inmagazinate anterior in clipboard"
+    ID_EDIT_PASTESPECIAL_FOLDERSTRUCTURE 
+                            "Lipeste toate si numai subfolderele fara fisierele pe care le contin"
+    ID_EDIT_PASTESPECIAL_STRUCTUREDSCRAPCLIPS 
+                            "Lipeste elementele (din containere scrap) reconstruind structura originala a folderelor"
+    ID_TOOLS_SUBFOLDERSIZE  "Calculeaza spatiul total ocupat de foldere si subfolderele lor\nMasuratori (Ctrl+D)"
+    ID_LTB_NEW              "Adaugare nou (Space)"
+    ID_LTB_DELETE           "Stergere (Del)"
+    ID_LTB_UP               "Mutare in sus (Ctrl+Up)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_LTB_DOWN             "Mutare in jos (Ctrl+Down)"
+    ID_LTB_EDIT             "Proprietati (Enter)"
+    ID_MARK_RULEBASED       "Selecteaza elementele ale caror proprietati se potrivesc unei reguli complexe"
+    ID_GOTO_MIRRORSCROLLING "Afiseaza elementele din panoul inactiv care sunt identice cu cele din panoul activ"
+    ID_VIEW_QUICKVIEWER     "Afiseaza sau ascunde panoul de previzualizare\nPreviz. (Ctrl+Q)"
+    ID_QUIKVIEW_SELECTALL   "Selecteaza tot textul"
+    ID_QUIKVIEW_SETFONT     "Selecteaza fontul pentru previzualizare"
+    ID_QUIKVIEW_WORDWRAP    "Incadrare cuvant"
+    ID_QUIKVIEW_FINDNEXT    "Cauta urmatoare aparitie a textului selectat"
+    ID_QUIKVIEW_FIND        "Cauta textul ales in panou"
+    ID_GOTO_DRIVE           "Selecteaza disc local sau unitati CD\nDisc (Alt+F1)"
+    ID_QUIKVIEW_COPY        "Copiaza selectia sau imaginea in clipboard"
+    ID_GOTO_ROOT            "Radacina unitatii ce contine folderul, e.g. C:\\"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FMT_INTLARGER       "%s valoare mai mare decat %u%c"
+    IDS_FMT_INTSMALLER      "%s valoare mai mica decat %u%c"
+    IDS_FMT_TEXTWITH        "%s contine ""%s"""
+    IDS_MGS_SEARCHINGFILES  "(ESC pentru anulare); se cauta %s ..."
+    IDS_TIT_ROOTSEARCH      "Selectare director pentru cautare"
+    IDS_TIT_LOCALDISK       "Unitati fixe de stocare locale"
+    IDS_MIRRORSCR_OFF       "Scrolling in oglinda OPRIT"
+    IDS_MIRRORSCR_ON        "Scrolling in oglinda PORNIT"
+    IDS_PREVIEW_MORE        "(...mai mult...)"
+    IDS_MSG_READINGFOLDER_ESC 
+                            "Se citeste continutul folderului... (ESC pentru anulare)"
+    IDS_ACD_TITLE           "Atribuire comentariu"
+    IDS_MSG_SUSPENDARON     "Caracteristica de autoreimprospatare suspendata"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_SUSPENDAROFF    "Caracteristica de autoreimprospatare activata"
+    IDS_CPMVTO_MOVE         "Mutare"
+    IDS_CPMVTO_COPY         "Copiere"
+    IDS_TIT_CPMVTGT         "Selectare folder destinatie"
+    IDS_ENC_DEFAULT         "Implicit"
+    IDS_ENC_OEM             "OEM"
+    IDS_ENC_UTF8            "UTF-8"
+    IDS_ENC_UNICODE         "Unicode"
+    IDS_ENC_RAW             "Raw"
+    IDS_DUPESFOUND          "Dublurile au fost identificate si grupate"
+    IDS_MSG_SAVEDSETTINGS   "Setarile au fost salvate (salvarea automata la inchidere este %s)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ACTIONS_SETCOMMENT   "Atribuie sau editeaza comentariul daca este posibil\nComentariu (Alt+Z)"
+    ID_GOTO_RECENTFOLDER    "Selecteaza dintre folderele explorate recent in acest panou"
+    ID_VIEW_HOLDAUTOREFRESH "Suspenda temporar senzorii de autoreimprospatare a panoului, util pentru folderele care se schimba incet sau repede"
+    ID_VIEW_HIDEFOLDERS     "Ascunde toate folderele din panoul activ"
+    ID_QUIKVIEW_ENCODING_WINDOWS "Normal character set"
+    ID_QUIKVIEW_ENCODING_OEM "Original Equipment Manufacturer's code page"
+    ID_QUIKVIEW_ENCODING_UTF8 "Multibyte unicode"
+    ID_QUIKVIEW_ENCODING_UNICODE "Wide character unicode (16)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_LINKRESOLVE     "Se rezolva legaturile... (ESC pentru anulare)"
+    IDS_MSG_FOLDERSAVED     "Setarile folderului au fost salvate"
+    IDS_MSG_ADDED2SCRAP     "%d element/e adaugat/e in "
+    IDS_INFO_LOGDETAILS     "\r\nInformatii detaliate\r\n--------------------\r\n"
+    IDS_TIT_SCRAPERLOG      "Raport fisiere lipsa"
+    IDS_TIT_CMDFIND         "Cautare text"
+    IDS_GREP_UNSELECTED     "Toate elemetele potrivite regulii (text) au fost deselectate"
+    IDS_MSG_TREEPRINT       "Structura folderului a fost copiata in clipboard"
+    IDS_TIT_OPTIONS         "Optiuni program [%s]"
+    IDS_DASEMPTY            "(gol)"
+    IDS_ICON_NORMALLEN      "Normale"
+    IDS_ICON_SIMPLE         "Simple (rapid)"
+    IDS_ICON_PLAIN          "Fara (foarte rapid)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_AUTOSIZECOLUMNS "Ajusteaza latimea coloanelor pentru a incapea toate elementele (<Shift> pentru a folosi si numele coloanei)"
+    ID_TOOLS_CHECKDUPLICATES 
+                            "Examineaza elementele continute de posibile dubluri si regrupeaza\nDubluri"
+    ID_QUIKVIEW_TEXTMODE    "Blocheaza previzualizarea in mod text, fara imagini sau sunete"
+    ID_ACTIONS_FOLDERSETTINGS_SAVE 
+                            "Salveaza setarile acestui folder, incluzand stilul panoului, coloanele si modul de sortare"
+    ID_ACTIONS_FOLDERSETTINGS_CLEAR 
+                            "Elimina toate setarile salvate ale acestui folder"
+    ID_FILE_SENDTOSCRAP     "Plaseaza selectia in cel mai apropiat container scrap\nIn scrap (Ctrl+S)"
+    ID_VIEW_SETFONT         "Stabilire font\nFont"
+    ID_CMDEDIT_FIND         "Cautare text\nCautare (Ctrl+F)"
+    ID_TOOLS_REVEALUNIQUE   "Afiseaza toate elementele ascunse ca rezultat al verificarii dublurilor"
+    ID_TOOLS_OPTIONS        "Optiunile acestui program\nOptiuni"
+    ID_FILE_MASSRENAME      "Redenumeste elementele selectate folosind predefiniri de nume"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NODUPECRITERIA  "Trebuie sa specificati cel putin un criteriu pentru comparare"
+    IDS_ERR_NODUPES         "Nu au fost gasite elemente identice"
+    IDS_ERR_DESKINI         "Eroare I/O la accesarea fisierului desktop.ini"
+    IDS_ERR_SCRAPLOADMISSING 
+                            "Unele elemente din fisierul cida nu au fost gasite\nDoriti sa vedeti raportul?"
+    IDS_ERR_ILLEGALRENCH    "Sablonul pentru nume contine caractere nestandard.\nComanda de redenumire probabil va esua; continuati oricum?"
+    IDS_ERR_NOVARTEMPLATE   "Sablonul pentru nume nu are variabilitate (jetoane $).\nToate fisierele vor redenumite folosind acelasi nume; continuati oricum?"
+    IDS_ERR_NOSEARCHLOG     "Nici o informatie disponibila"
+    IDS_ERR_NOSYNTOUMATCH   "Nici un element care sa se potriveasca nu a fost gasit in panoul inactiv"
+    IDS_ERR_NOTREECMD       "Aceasta comanda nu este utilizabila in cazul arborelui de dosare"
+    IDS_ERRDDV_NOCUST       "Trebuie sa lasati cel putin un element in lista"
+    IDS_ERR_DUPLNAME        "Acest identificator exista deja, va rugam sa folositi altul"
+    IDS_ERR_CUSTNAME        "Campul ""Nume"" nu trebuie sa fie gol"
+    IDS_ERR_CUSTSHIFT       "<Shift> singur nu este o tasta valida pentru comanda rapida\nVa rugam sa-l folositi in combinatie cu <Alt> si/sau <Ctrl>"
+    IDS_ERR_CUSTALT         "Tastele de comanda rapida pentru semnele de carte nu trebuie sa contina tasta <Alt>"
+    IDS_ERR_CUSTOVERFLOW    " - lista este plina; va rugam sa stergeti unele elemente nefolosite"
+    IDS_ERR_CUSTDESCR       "Campul ""Descriere"" nu trebuie sa fie gol"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_WNDREBOOT       "Anumite schimbari vor fi implementate data viitoare cand veti porni xplorer2\n(S-ar putea sa doriti sa inchideti/reporniti imediat)"
+    IDS_MSG_GENERROR        "!Eroare!"
+    IDS_MSG_RENPROGRESS     "Se redenumeste... (ESC pentru anulare)"
+    IDS_TIT_SEARCHLOG       "Raport cautare fisiere"
+    IDS_FFLOG_FINITO        "\r\nCautare completa"
+    IDS_FFLOG_ONGOING       "\r\nSe cauta..."
+    IDS_FFLOG_ROOT          "Cautare in: %s\r\n"
+    IDS_FFLOG_EXCLUDED      "Foldere excluse: %s\r\n"
+    IDS_FFLOG_SUBDIRS       "Subfoldere, "
+    IDS_FFLOG_ARCHIVE       "Continut arhivat, "
+    IDS_FFLOG_BREADTH       "In latime"
+    IDS_FFLOG_DEPTH         "In adancime"
+    IDS_FFLOG_FLAGS         "Parametri: %s\r\n"
+    IDS_FFLOG_PROLOG        "----------------\r\nFOLDERE CAUTATE\r\n----------------\r\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FFLOG_FILTER        "DETALII FILTRU\r\nPotrivire elemente: %s\r\n"
+    IDS_FFLOG_FOLDERS       "Foldere, "
+    IDS_FFLOG_FILES         "Fisiere"
+    IDS_FFLOG_WILDCARD      "Nume wildcard: %s\r\n"
+    IDS_FFLOG_ANDRULE       "[SI] %s\r\n"
+    IDS_FFLOG_ORRULE        "[SAU] %s\r\n"
+    IDS_FFLOG_NOTRULE       "[NEGARE] %s\r\n"
+    IDS_FFLOG_GREP          "Continand textul: %s\r\n"
+    IDS_FFLOG_TEXTOPT       "Optiuni text: %s\r\n"
+    IDS_FFLOG_CASE          "Sensibil la litere, "
+    IDS_FFLOG_RE            "Expresii regulate, "
+    IDS_FFLOG_BIN           "Toate fisierele"
+    IDS_FFLOG_FENCO         "Codificare fortata: %s\r\n"
+    IDS_FFLOG_WORDS         "Tot cuvantul, "
+    IDS_FFLOG_SUMA          "%u folder/e cautat/e in total\r\n"
+    IDS_FFLOG_BLAKLIST      " [EXCLUS]\r\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_SEARCHSTATUS   "Afiseaza raportul unei cautari de fisiere in curs de desfasurare sau terminate"
+    ID_HELP_TIPOFTHEDAY     "Sfaturi & trucuri pentru a maximiza experienta explorarii!\nSfaturi"
+    ID_VIEW_RAWCONTENTS     "Exploreaza un folder virtual ca si cum ar fi stocat pe disc"
+    ID_MARK_SELECTION_COMBINE 
+                            "Combina selectiile salvate si existente in mod logic SI"
+    ID_ACTIONS_SYNCTOUCH    "Sincronizeaza data modificarii elementelor care se potrivesc (din panoul activ in cel inactiv)"
+    ID_VIEW_SELECTEDONLY    "Ascunde toate elementele care nu sunt selectate"
+    ID_VIEW_SHOWALL         "Anuleaza toate filtrele vizuale"
+    ID_VIEW_VIEWMODE        "Schimba stilul panoului activ\nVizualizare (Ctrl+Alt+V)"
+    ID_BOOKMARKS_ADD        "Adauga folderul curent in lista"
+    ID_BOOKMARKS_ORGANIZE   "Redenumeste, sterge sau reordoneaza semnele de carte si atribuie taste de comanda rapida"
+    ID_BOOKMARKS_MORE       "Selecteaza un folder din lista completa a semnelor de carte"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RTF_TIPPROLOG       "{\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang2057{\\fonttbl{\\f0\\fswiss\\fprq2\\fcharset0 Verdana;}{\\f1\\fmodern\\fprq1\\fcharset0 Courier New;}}\n{\\colortbl ;\\red255\\green0\\blue0;\\red0\\green0\\blue255;}\n\\viewkind4\\uc1\\pard\\b\\f0\\fs26 Stiati ca...\\fs18\\b0\\par\n\\par\n"
+    IDS_MSG_SYNCTOUCHOK     "Datele au fost transferate in folderul tinta cu succes"
+    IDS_MSG_LOADIDA         "Se incarca elementele..."
+    IDS_TOOLBAR             "Bara de instrumente"
+    IDS_MEMO_FAVNAME        "Semne de carte"
+    IDS_MEMO_UCOMNAME       "Comenzi utilizator"
+    IDS_MEMO_CSETNAME       "Seturi de coloane"
+    IDS_STR_DESCRIPTION     "Descriere"
+    IDS_STR_ACCEL           "Comanda rapida"
+    IDS_STR_SELECT          "Selectare"
+    IDS_TITLE_ADDX          "Adaugare %s"
+    IDS_CUMSG_ACCELEXISTS   "Aceasta tasta de comanda rapida este atribuita deja\nO inlocuiti oricum?"
+    IDS_TIT_ACCELLOG        "Utilizare tastatura"
+    IDS_ACLOG_AVAIL         "(liber)"
+    IDS_MSG_EXECUTING       "S-a executat: "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BOOKMARKS_FIRST      "Salt la acest folder"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CUSTOMIZE_TOOLBARS_ADDNEW "Adauga o bara de instrumente suplimentara"
+    ID_CUSTOMIZE_TOOLBARS_ORGANIZE 
+                            "Redenumeste sau sterge barele de instrumente suplimentare"
+    ID_CUSTOMIZE_COLUMNS_ADD "Adauga setul curent de coloane in lista"
+    ID_CUSTOMIZE_COLUMNS_ORGANIZE 
+                            "Redenumeste, sterge sau reordoneaza seturile de coloane si atribuie taste de comanda rapida"
+    ID_CUSTOMIZE_COLUMNS_MORE "Alege un set de coloane din lista completa"
+    ID_CUSTOMIZE_USERCOMMANDS_ADDNEW 
+                            "Adauga un sablon de comenzi in meniul utilizatorului"
+    ID_CUSTOMIZE_USERCOMMANDS_ORGANIZE 
+                            "Redenumeste, sterge sau reordoneaza comenzile utilizatorului si atribuie taste de comanda rapida"
+    ID_CUSTOMIZE_USERCOMMANDS_MORE "Alege o comanda din lista completa"
+    ID_WINDOW_SETACCELERATOR 
+                            "Atribuie taste de comanda rapida sau sterge configuratii"
+    ID_WINDOW_MORE          "Cloneaza o fereastra folosind alta configuratie salvata"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TBCUST_FIRST         "Adauga sau elimina butoane din aceasta bara de instrumente (clic dreapta pe bara pentru optiuni asupra textului)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_COLUMNSET_FIRST      "Restabileste acest set de coloane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_USERTOOL_FIRST       "Executa aceasta comanda"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ASK_COLUMNCLSID     "Acest set de coloane apartine unui tip diferit de folder;\nIl folositi oricum?"
+    IDS_DSM_ASFILE          "ca fisiere"
+    IDS_DSM_BUNDLE          "separat"
+    IDS_DSM_MIXED           "mod mixt"
+    IDS_UNIT_1              "1"
+    IDS_UNIT_KILO           "Kilo"
+    IDS_UNIT_MEGA           "Mega"
+    IDS_UNIT_GIGA           "Giga"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_CUSTMODIFIER    "Trebuie sa alegeti o tasta pentru comanda rapida (<Ctrl>)"
+    IDS_ERR_INVALIDRKEY     "Numele configuratie contine caractere nestandard sau este rezervat"
+    IDS_ERR_INCOMPATCOLS    "Acest set de coloane este incompatibil cu actualul mod de vizualizare a folderului"
+    IDS_ERR_INCOMPATHFILT   "Acest filtru este incompatibil cu scopul cautarii\nAnumite reguli corespund unui alt tip de folder"
+    IDS_ERR_HFILTNAME       "Trebuie sa specificati un nume pentru filtru (pentru a fi salvat sau sters)"
+    IDS_ERR_IDNAME          "Identificatorii nu pot fi mai lungi de %1!d! caractere"
+    IDS_ERR_REGLIC          "Eroare subsistem de licenta: %d:%08x:%d%d%d\n\nProbabil:\n*Nu aveti privilegii de administrator pentru instalare\n*Ati tastat cheia de licenta incorect! va rugam sa o rescrieti\n\nDaca problema persista, va rugam sa raportati acest cod de eroare autorului\n"
+    IDS_ERR_INVALIDRC       "Aceasta nu este o cheie valida de inregistrare;\nCheile sunt de ~200 de caractere lungime si contin numai litere mari si numere\n\nAr fi mai usor sa COPIATI cheia primita prin posta electronica\napoi clic dreapta si LIPIRE in caseta din dialog"
+    IDS_ERR_FATALREG        "Datorita unor probleme in timpul instalarii, programul se va inchide\nDoriti sa trimiteti un raport de eroare autorului?"
+    IDS_ERR_INCOMPATDIRS    "Folderele implicate au coloane incompatibile"
+    IDS_ERR_NOCLTEXT        "Nu exista nici un text in clipboard"
+    IDS_ERR_NOTAB           "Eroare la crearea noului tab"
+    IDS_ERR_NOTABGROUP      "Trebuie sa existe cel putin doua tab-uri pentru a defini un grup"
+    IDS_ERR_FOPSOURCEREAD   "Eroare la citirea din sursa"
+    IDS_ERR_FOPSOURCEONSELF "Tinta si sursa nu pot fi identice"
+    IDS_ERR_FOPSOURCEMISMATCH 
+                            "Incercare de a inlocui folderul cu fisierul sau vice-versa"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CUSTOMIZE_KEYBOARDUSE "Vizualizeaza taste libere si atribuite"
+    ID_MARK_ALLFOLDERS      "Selecteaza toate folderele"
+    ID_EDIT_CLEARSCREEN     "\nGolire"
+    ID_TBCM_TEXTLABELS      "Afiseaza sau ascunde textele din bara de instrumente"
+    ID_VIEW_SORTBY          "Schimba aranjarea elementelor\nSortare"
+    ID_GOTO_SYSTEM          "Salt la foldere speciale\nSistem (Ctrl+Alt+F)"
+    ID_HELP_REGISTERPROGRAM "Actualizeaza si/sau obtine o licenta pentru a utiliza versiunea ""pro"" fara restrictii\nInregistrare"
+    ID_HELP_DONATE          "Sprijiniti dezvoltarea acestui program facand donatii voluntare\nDonatii"
+    ID_HELP_GETSUPPORT      "Conectare la centrul online de ajutor si asistenta"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TBCM_LABEL          "Text informativ"
+    IDS_TBCM_CUSTOM         "Particularizare..."
+    IDS_HFILT_DELETE        "Sunteti sigur ca doriti sa stergeti acest filtru din lista?"
+    IDS_HFILT_OVERWRITE     "Un filtru cu acest nume este definit deja;\nIl inlocuiti oricum?"
+    IDS_MSG_LAYOUTREG       "Informatiile despre configuratie nu pot fi salvate atat timp cat salvarea automata a setarilor la inchidere este oprita.\nSalvati setarile acum? (salvarea automata nu va fi afectata)"
+    IDS_MSG_THREADBUSY      "Acest fir de executie este ocupat de o operatie in fundal.\nInchiderea acestei ferestre poate avea rezultate imprevizibile;\nContinuati oricum?"
+    IDS_SPLIT_35            "Discheta 3.5"
+    IDS_SPLIT_CD            "CD-R 650"
+    IDS_SPLIT_CD2           "CD-R 700"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TBSHOW_FIRST         "Arata sau ascunde aceasta bara de instrumente"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_TRIAL           "xplorer² este o aplicatie ce poate fi evaluata gratuit pentru o perioada limitata de timp. Va rugam sa cumparati o licenta pentru a elimina toate restrictile, inclusiv dialogul de inregistrare."
+    IDS_MSG_TRIAL2          "Zile ramase pentru evaluare: %d"
+    IDS_MSG_REGWELCOME      "Cheia de inregistrare a fost acceptata.\nVa rugam sa o pastrati in siguranta deoarece s-ar putea sa aveti nevoie de ea pentru ajutor si asistenta\n\nVA RUGAM SA NU DISTRIBUITI CHEIA DE INREGISTRARE!\nInmanarea acestei chei altor persoane este o incalcare a licentei dumneavoastra\nVa multumim pentru ca aveti incredere in noi in gestionarea fisierelor dumneavoastra!"
+    IDS_INFO_REGOPT         "Exista si optiuni mai ""exotice"" disponibile prin editarea registrilor\nConsultati registry.txt pentru mai multe informatii"
+    IDS_INFO_DIRDATA        """%s"" [%s]: Subfoldere=%d, Fisiere=%d"
+    IDS_INFO_LFDATA         "%s in %d fisier/e local/e"
+    IDS_HELP_MAINPDF        "\n\nDatorita dimensiunilor mari fisierul principal al manualului de utilizare este distribuit separat.\nDoriti sa vizitati situl si sa-l descarcati acum?"
+    IDS_STATUS_FREE         "%s liber (%d%%)"
+    IDS_MEMO_DIRTABNAME     "Grupuri de foldere"
+    IDS_TIT_FILEREPLACE     "Confirmare inlocuire fisier"
+    IDS_MSG_FILEXIST        "Acest folder contine deja un fisier cu numele '%s'\n\nInlocuti fisierul existent\n%s\ncu acesta\n%s\n"
+    IDS_MSG_COPYACTIVE      "Unele operatiuni de copiere nu au fost inca terminate.\nDoriti sa asteptati?"
+    IDS_TIT_KOPYERLOG       "Raport transfer fisiere"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CHECK_BINARY        "Cauta in documente Word, PDF, executabile sau alte fisiere binare\nIncetineste cautarea"
+    IDC_CHECK_REGEXP        "Cauta expresii regulate precum [ab]*c\nconsultati manualul pentru detalii"
+    IDC_COMBO_FIND          "Textul de cautat in fisiere\nCuvintele cheie multiple se separa cu virgula\nIncepeti cu + sau - pentru SI/SAU logice\n(e.g. ""+text, -exclude"")"
+    IDC_COMBO_WHERE         "Folderul/ele radacina pentru cautare\nCaile multiple separate prin virgula si excluderile sunt acceptate\n""c:\\, D:\\, -*temp*"" cauta in C/D cu exceptia folderelor ce contin ""temp"" in nume"
+    IDC_COMBO_NAMED         "Numele elementului cautat\nNumele partiale si wildcard-urile sunt acceptate\ne.g. ""*.cpp, *.h"""
+    IDC_BUTTON_PREVIEW      "Testeaza sablonul pe selectia existenta\nDaca totul este in ordine puteti folositi comanda actuala"
+    IDC_RADIO_MOD           "(compara si dimensiunile fisierelor)\nFoarte rapid dar nu 100% concludent"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_EDIT_TSIZE          "Previzualizatorul incarca doar o parte a fisierului\nCu cat valoarea este mai mare cu atat se incarca mai greu"
+    IDC_CHECK_NOHEX         "Bifati daca nu doriti sa previzualizati\nexecutabile sau alte fisiere binare"
+    IDC_CHECK_VERBA         "Dezactivare procesare caractere speciale (virgula si $)\nCautare text asa cum este scris"
+    IDC_EDIT_NAME           "Identificator folosit in meniuri si bare de instrumente\nTrebuie sa fie unic in grupul sau"
+    IDC_EDIT_DESCR          "Semne de carte: calea folderului\nComenzi utilizator: ceea ce trebuie executat (se incepe cu > sau $)\nPentru restul tipurilor: comentarii"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_RADIO_CONTENT       "Compara fisierele octet cu octet\nPrecis dar incet"
+    IDC_RADIO_NAME          "Daca numele se potrivesc atunci sunt ""identice""\n(fara verificari ulterioare)"
+    IDC_CHECK_UNDECIDABLE   "Acestea sunt elementele cu semnul intrebarii pe pictograma"
+    IDC_COMBO_ESPECIAL      "Insereaza caractere speciale, fie rezervate sau neimprimabile\n$xx cauta caracterul ce are codul in hex xx"
+    IDC_EDIT_SIZE           "Dimensiunea fiecarei portiuni din fisier\nSelectati in concordanta cu dispozitivul tinta\ne.g. 1423 kO pentru discheta"
+    IDC_COMBO_TOKENS        "Jetoanele $ sunt inlocuite cu portiuni din numele fisierelor selectate\nAu in vedere sabloanele reutilizabile"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_LIST_AVAIL          "Coloanele cu [S] dupa nume sunt mai rapide"
+    IDC_CHECK_TRACKSEL      "Incompatibil cu modul de selectare adeziva"
+    IDC_BUTTON_IBGCOL       "Culoare folosita pentru fundalul\nfolderului inactiv"
+    IDC_RDOVR_RENAME        "E.g. file.txt va fi redenumit in file_1.txt\nToate fisierele sunt pastrate"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_COMBO_NUM           "Selectati un numar pentru comanda rapida\nLasati liber pentru a sterge comanda rapida existenta"
+    IDC_COMBO_DIRSORT       "ca fisiere: amestecate cu fisiere\nseparat: mereu afisate deasupra\nmod mixt: separat pentru nume/extensie si amestecat pentru dimensiune etc"
+    IDC_CHECK_PLAINMEN      "Se reduce dimensiunea meniului\nafisand doar comenzile de baza"
+    IDC_CHECK_BALONI        "Pornire/Oprire mesaje pop-up"
+    IDC_COMBO_ENCODING      "Codificare presupusa pentru fisier text fara BOM"
+    IDC_CHECK_CONTENT       "Daca este bifat doar Continut, fisierele sunt comparate in mod binar\nFoarte incet dar sigur\n(se detecteaza si dublurile cu nume diferite)"
+    IDC_COMBO_RNTEMPL       "Se combina text si jetoane pentru nume\ne.g. ""$B.xxx"" schimba extensia fisierului la xxx"
+    IDC_EXTEDITORNAME       "Se utilizeaza pentru comanda F4\nPuteti include si parametri optionali"
+    IDC_EXTVIEWERNAME       "Se utilizeaza cand editor² este prezent, apasati <Ctrl+F3>"
+    IDC_EDIT_ZIPSIZE        "Limita pentru extragerea continutului elementelor\ndin foldere zip, FTP etc"
+    IDC_COMBO_BATPLATE      "Compunere comenzi pentru elementele selectate utilizand jetoanele $\nPentru comenzi multiple asupra unui element se foloseste virgula\ne.g. copy $N $B.dat, del $N"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_LISTRULES           "Dublu clic pentru a mai adauga o regula\nToate coloanele pot fi folosite ca parametri\ne.g. Dimensiune, Comentarii, Proprietar etc"
+    IDC_CHECK_REFINE        "Cauta in rezultatele anterioare\n(elementele afisate in panoul activ)"
+    IDC_DOTS                "Rasfoire pentru folder"
+    IDC_BUTTON_SAVE         "Salveaza filtrul curent sau sterge unul vechi"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CHECK_SYSTEM        "Nu schimbati acest atribut\ndecat daca sunteti foarte sigur"
+    IDC_DATE_MODIFIED       "Doar data/ora se schimba daca bifati caseta"
+    IDC_BUTTON_MODNOW       "Stabilire data si ora curenta\nEchivalent cu ""sincronizarea"""
+    IDC_RADIO_BREADTH       "Utilizati aceasta metoda cand credeti ca tinta\nnu este la foarte mare adancime sub folderul radacina"
+    IDC_CHECK_SELECTEM      "Util pentru stergerea dublurilor dupa detectare"
+    IDC_MAXWIDTH            "(pixeli); are efect in modul de vizualizare Listare"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_BUTTON_EDIT         "Generare script si deschidere pentru editare\nPentru executare, dublu clic pe fisierul .BAT"
+    IDC_BUTTON_WINEXEC      "Doar pentru scripturile de Windows\nComenzi precum ""ren"" nu sunt permise"
+    IDC_COMBO_SPLITARGET    "Locul unde vor fi plasate portiunile din fisier"
+    IDC_CHECK_FOLDERS       "Folderele sunt comparate doar dupa nume"
+    IDC_COMBO_SAVED         "Initializare filtru salvat anterior\nSau scrieti un nume pentru filtrul curent si apasati Salvare\nSau apasati Stergere apoi Salvare pentru a sterge filtrul salvat"
+    IDC_DATE_TO             "Bifati pentru a stabili limita superioara a datei\nAltfel se vor folosi fisierele dupa limita inferioara a datei"
+    IDC_COMBO_STD           "Dimensiuni standard pentru diferite dispozitive"
+    IDC_BUTTON_BUY          "Vizitati situl de internet pentru a obtine o cheie de inregistrare"
+    IDC_EDIT_CODE           "Scrieti cheia primita in email-ul de inregistrare\nPuteti sa o copiati din email-ul dumneavoastra si apoi utilizati Ctrl+V pentru a o lipi aici\nPentru a continua utilizarea ca versiune de evaluare, lasati acest camp liber"
+    IDC_BUTTON_LINFO        "Informatii suplimentare pentru acest element, daca sunt disponibile"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_DATE_FROM           "Bifati pentru a stabili limita inferioara a datei\nAltfel se vor folosi fisierele precedente limitei superioara a datei"
+    IDC_EDIT_MINSIZE        "Limita inferioara\nLasati liber pentru ""mai putin decat"" limita superioara"
+    IDC_EDIT_MAXSIZE        "Limita superioara\nLasati liber pentru ""mai mult decat"" limita inferioara"
+    IDC_EDIT_FINDTXT        "Textul de cautat in coloana\nCuvintele cheie multiple se separa cu virgula\ne.g ""+A, -H""\neste valid pentru cautarea atributelor"
+    IDC_COMBO_PROPERTIES    "Proprietati ce corespund coloanelor de foldere"
+    IDC_RADIO_NOT           "Se utilizeaza doar elementele care nu indeplinesc aceasta regula"
+    IDC_BUTTON_CLEAR        "Goleste toate campurile filtrului"
+    IDC_CHECK_ZIPFOLDERS    "Bifati pentru a cauta in foldere\nprecum arhive zip, FTP, foldere web etc"
+    IDC_COMBO_VIRTUALS      "Cautare in foldere speciale\nCampul ""Tinta"" poate contine excluderi e.g. ""-*temp*"""
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MGS_SEECPLOG        "Au fost unele probleme in timpul transferului\nDoriti sa vedeti raportul?"
+    IDS_BUT_PAUSE           "&pauza"
+    IDS_BUT_RESUME          "re&luare"
+    IDS_MSG_MOVEROF         "Fisierul sursa '%s' are atribute speciale\n%s\nSunteti sigur ca doriti sa-l stergeri?\n"
+    IDS_TIT_MOVEROF         "Confirmare stergere fisier"
+    IDS_BUT_CLOSE           "inchidere"
+    IDS_TIT_AFSLOG          "Informatii fluxuri de date alternative"
+    IDS_HEADER_AFSLOG       "TIP\tDIMENSIUNE\tNUME\tCONTINUT\r\n----------------------------------------\r\n"
+    IDS_BUNDLE_TARGET       "Nume pachet"
+    IDS_BUNDLE_BUSY         "(ESC pentru anulare) Se compileaza fluxurile de date %s..."
+    IDS_BUNDLE_TOTAL        "%d fisier/e impachetate %s"
+    IDS_UNBUNDLE_BUSY       "(ESC pentru anulare) Se extrag fluxurile de date ale fisierului %s..."
+    IDS_MSG_DISKQUOTA       "Discul tinta pare a nu avea destul spatiu liber\npentru transferul selectiei. Continuati oricum?"
+    IDS_MSG_IDENTEXIST      "Indentificatorul '%1' este in uz deja\nIl inlocuiti cu definitia curenta?"
+    IDS_UNBUNDLE_PROMPT     "Extragere in folder"
+    IDS_TIT_REGEXPORT       "Nume fisier setari"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_UNSELECT            "Deselecteaza toate elementele care se potrivesc criteriului"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DIRDATA_COPYTEXT     "Copiaza structura de date a folderului, incepand cu selectia curenta"
+    ID_TOOLS_FOLDERSTATISTICS 
+                            "Afiseaza statistici pentru acest folder si subfolderele sale\nStatistica (Alt+D)"
+    ID_HELP_LASTERROR       "Afiseaza ultimul mesaj de eroare"
+    ID_QUIKVIEW_NEXT        "Incarca fisierul urmator din panoul activ"
+    ID_QUIKVIEW_PREVIOUS    "Incarca fisierul precedent din panoul activ"
+    ID_VIEW_VISUALFILTER_RULEBASED 
+                            "Afiseaza doar elementele ale caror proprietati se potrivesc unei reguli complexe\nFiltru (Alt+H)"
+    ID_VIEW_VISUALFILTER_SAMEFILTER 
+                            "Impune acelasi filtru vizual si in panoul inactiv"
+    ID_ACTIONS_IMPORTCLIPBOARD 
+                            "Insereaza elementele din clipboard-ul cu nume (unul pe linie)"
+    ID_FILE_NEWTAB          "Exploreaza elementul focalizat intr-un tab nou\nTab (Ctrl+Ins)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CUSTOMIZE_TABSETS_ADDNEW "Adauga grupul de foldere curent in lista"
+    ID_CUSTOMIZE_TABSETS_ORGANIZE 
+                            "Redenumeste, sterge sau reordoneaza grupurile de foldere si atribuie taste de comanda rapida"
+    ID_CUSTOMIZE_TABSETS_MORE "Alege un grup de foldere din lista completa"
+    ID_WINDOW_CLOSETAB      "Inchide tab-ul folderului activ"
+    ID_WINDOW_CLOSEALLTABS  "Inchide toate tab-urile cu exceptia celui activ"
+    ID_EDIT_DUPLICATEFILE   "Creare o ""Copie a"" elementului/elor selectat/e in acelasi folder "
+    ID_ACTIONS_FOLDERSETTINGS_SUSPEND 
+                            "Ignora temporar toate setarile acestui folder pentru acest panou"
+    ID_VIEW_AUTOFILTER      "Afiseaza doar un tip de fisiere prezent in acest folder\nAutofiltru"
+    ID_ACTIONS_VIEWSTREAMS  "Afiseaza orice fluxuri de date alternative continute in selectie"
+    ID_ACTIONS_BUNDLETOGO   "Impacheteaza toate informatiile fisierului/lor (selectat/e) pentru transport, incluzand comentarii etc"
+    ID_ACTIONS_UNPACKBUNDLE "Restabileste informatiile fisierelui dintr-un pachet existent"
+    ID_VIEW_TOOLBARS_INFOBARS 
+                            "Afiseaza sau ascunde bara de informatii detaliate pentru elementul (fisierul) activ"
+    ID_ACTIONS_EXPORTSETTINGS 
+                            "Exporta setarile programului intr-un fisier .REG ce poate fi utilizat la alt PC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TABSETS_FIRST        "Restabileste acest grup de foldere"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_FOPBOOTSTRAP    "Incercare de a muta folderul sub el"
+    IDS_ERR_FOPDIRCREATE    "Eroare la crearea folderului tinta"
+    IDS_ERR_FOPDIRREAD      "Folderul nu a putut fi citit in totalitate"
+    IDS_ERR_FOPCOPY         "Copierea fisierelor a esuat"
+    IDS_ERR_FOPSTREAMLOST   "Fluxurile de date secundare (e.g. comentariile fisierelor) nu au putut fi transferate"
+    IDS_ERR_FOPFREESPACE    "Nu este destul spatiu pe disc pentru a copia acest fisier\nVa rugam sa introduceti un disc nou pentru a continua"
+    IDS_ERR_NTONLY          "Aceasta comanda nu este disponibila pentru Windows 9x"
+    IDS_ERR_OUTFILE         "Eroare la scriere in %s:"
+    IDS_ERR_NOBUNDLES       "Nu exista fisiere impachetate in selectia curenta"
+    IDS_ERR_CORRUPTBUN      "%1\nPachetul este deteriorat, extragere anulata"
+    IDS_ERR_RESYNTAX        "Sintaxa expresiei regulate este incorecta"
+    IDS_ERR_NOQUEUE         "Nu exista elemete in asteptare pentru transfer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_RDPRI_BG            "Copiaza fisierele mai incet utilizand mai putine resurse"
+    IDC_CHECK_CDRONLY       "Util cand se copiaza de pe discuri CD-ROM"
+    IDC_BUTTON_PAUSE        "Incetare temporara a transferului de fisiere\nClic reluare pentru a continua"
+    IDC_BUTTON_QUEUE        "Pune acest transfer in asteptare\nVa fi procesat secvential, o copiere o data"
+    IDC_CHECK_WINDOWON      "e.g. pentru a vedea detalii despre erori si fisiere sarite"
+    IDC_CHECK_SIZEUPFRONT   "Estimarea timpului ramas este exacta\ndar poate intarzia inceperea transferului"
+    IDC_COMBO_PRECOLS       "Listate in meniul Particularizare | Seturi de coloane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_PRECPSIZE       "Se calculeaza dimensiunea transferului... (ESC pentru revocare)"
+    IDS_TIT_CMDARG          "Parametru comanda"
+    IDS_QVTAB_DRAFT         "Previzualizare rapida"
+    IDS_QVTAB_NORMAL        "Normal"
+    IDS_SYSC_DIFFER         "Diferit"
+    IDS_SYSC_IDENTIC        "Identic"
+    IDS_TITLE_TABREN        "Nume tab"
+    IDS_MI_NOFILTER         "&Toate fisierele (*)"
+    ID_MENU_TOPMOST         "Mereu &deasupra"
+    IDS_MEMO_TQUEUE         "Transferuri in asteptare"
+    IDS_FMT_QUEUEDESCR      "%s %d element/e in %s"
+    IDS_DRIVEBAR            "Drivebar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_COMPARESUBFOLDERS 
+                            "Compara continutul panourilor luand in considerare toate subfolderele"
+    ID_EDIT_QUEUESTATUS     "Examineaza si organizeaza transferurile in asteptare\nAsteptare"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CHECK_STATINFO      "Nu este necesara daca Bara de informatii este activata"
+    IDC_CHECK_XPSORT        "e.g. file1, file2, file10\nImplicit ar fi file1, file10, file2"
+    IDC_CHECK_NOCURDIR      "Stergerea folderelor devine mai usoara dar afecteaza consola DOS\n(trebuie sa specificati calea completa in comenzi)"
+    IDC_CHECK_AUTOSUBDIR    "(pentru coloana ""Dimensiune"")\nConsuma multe resurse daca este activata!"
+    IDC_CHECK_FREEFORM      "Comapara elementele potrivind doar numele,\nignorand pozitia lor in ierarhia folderului"
+    IDC_COMBO_SCENARIA      "Optiuni prestabilite pentru scenarii tipice de sincronizare"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STOCKCOL_ADS        "Fluxuri de date"
+    IDS_STOCKCOL_VERFIRMA   "Companie"
+    IDS_STOCKCOL_VERCPRITE  "Descriere"
+    IDS_STOCKCOL_EXIFCX     "Latime"
+    IDS_STOCKCOL_EXIFCY     "Inaltime"
+    IDS_STOCKCOL_EXIFDATE   "Data poza"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

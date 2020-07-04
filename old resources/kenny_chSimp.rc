@@ -1,0 +1,4252 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+#include "conditional.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "#include ""conditional.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR_DUMMY TOOLBAR 1, 16
+BEGIN
+    BUTTON      IDC_ADDRBAR_COMBO
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR_DUMMY       BITMAP                  "res\\toolbar_.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "浏览(&B)\t回车",                  ID_FILE_BROWSE
+        MENUITEM "克隆+浏览(&O)\tCtrl+回车",          ID_FILE_CLONEBROWSE
+        MENUITEM "进入存档(&A)",                    ID_FILE_ENTERARCHIVE
+        MENUITEM SEPARATOR
+        MENUITEM "新标签(&W)\tCtrl+Ins",           ID_FILE_NEWTAB
+        MENUITEM "展开浏览(&F)\tShift+回车",          ID_FILE_BROWSEFLAT
+        MENUITEM "发送到虚拟文件夹(&S)\tCtrl+S",        ID_FILE_SENDTOSCRAP
+        MENUITEM SEPARATOR
+        MENUITEM "查看(&V)\tF3",                  ID_FILE_VIEW
+        MENUITEM "编辑(&E)\tF4",                  ID_FILE_EDIT
+        MENUITEM "外壳编辑(&H)",                    ID_FILE_SHELLEDIT
+        MENUITEM "属性(&P)...\tF12",              ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "重命名(&R)\tF2",                 ID_FILE_RENAME
+        MENUITEM "改变类型(&T)\tCtrl+F2",           ID_FILE_CHANGETYPE
+        MENUITEM "批量重命名(&M)...",                ID_FILE_MASSRENAME
+        MENUITEM "删除(&D)\tDel",                 ID_FILE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM "退出(&X)\tAlt+X",               ID_APP_EXIT
+    END
+    POPUP "转到(&O)"
+    BEGIN
+        MENUITEM "上一级(&U)\tBksp",               ID_FILE_UPALEVEL
+        MENUITEM "返回(&B)\tAlt+<-",              ID_GOTO_BACK
+        MENUITEM "前进(&F)\tAlt+->",              ID_GOTO_FORWARD
+        MENUITEM "查找目标(&T)\tCtrl+L",            ID_EDIT_FINDTARGET
+        MENUITEM SEPARATOR
+        MENUITEM "选择驱动器(&D)...\tAlt+F1",        ID_GOTO_DRIVE
+        MENUITEM "最近访问过的文件夹(&R)\tAlt+F2",       ID_GOTO_RECENTFOLDER
+        MENUITEM "拖放目标(&O)",                    ID_GOTO_DROPTARGET
+        POPUP "特定文件夹(&A)"
+        BEGIN
+            MENUITEM "我的文档(&M)\tCtrl+K",            ID_GOTO_MEDOCS
+            MENUITEM "图片收藏(&I)",                    ID_GOTO_SPECIALFOLDERS_MYPICTURES
+            MENUITEM "我的音乐(&Y)",                    ID_GOTO_SPECIALFOLDERS_MYMUSIC
+            MENUITEM "我的下载(&W)",                    ID_GOTO_SPECIALFOLDERS_DOWNLOADS
+            MENUITEM SEPARATOR
+            MENUITEM "最近的文档(&E)",                   ID_GOTO_RECENTD
+            MENUITEM "回收站(&B)",                     ID_GOTO_KRAP
+            MENUITEM SEPARATOR
+            MENUITEM "桌面(&D)\tCtrl+Back",           ID_GOTO_DESKTOP
+            MENUITEM "根目录(&R)\tShift+Back",         ID_GOTO_ROOT
+            MENUITEM "我的电脑(&U)",                    ID_GOTO_MEKOMP
+            MENUITEM "网上邻居(&N)",                    ID_GOTO_NETWORK
+            MENUITEM SEPARATOR
+            MENUITEM "控制面板(&C)",                    ID_GOTO_CPANEL
+            MENUITEM "打印机(&P)",                     ID_GOTO_PRINTERS
+            MENUITEM "开始菜单(&S)",                    ID_GOTO_STARTMENU
+            MENUITEM "启动(&T)",                      ID_GOTO_STARTUP
+            MENUITEM "CD 刻录(&G)",                   ID_GOTO_CDBURNING
+            MENUITEM "发送到(&O)",                     ID_GOTO_SENDTO
+            MENUITEM "兼容性文件(&F)",                   ID_GOTO_SPECIALFOLDERS_COMPATIBILITYFILES
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "快速定位书签(&K)\tCtrl+F1",         ID_GOTO_BOOKMARK
+        MENUITEM "设置快速书签(&S)\tCtrl+Shift+F1",   ID_GOTO_SETBOOKMARK
+        POPUP "常用(&Q)"
+        BEGIN
+            MENUITEM "文件夹",                         ID_GOTO_FREQUENT_FOLDER
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "镜像浏览(&M)\tCtrl+M",            ID_GOTO_MIRRORBROWSING
+        MENUITEM "镜像滚屏(&C)",                    ID_GOTO_MIRRORSCROLLING
+        MENUITEM SEPARATOR
+        MENUITEM "相同文件夹(&E)\tCtrl+I",           ID_GOTO_SAMEFOLDER
+        MENUITEM "对调面板(&P)\tCtrl+U",            ID_GOTO_SWAPPANES
+    END
+    POPUP "书签(&B)"
+    BEGIN
+        POPUP "双书签(&D)"
+        BEGIN
+            MENUITEM "添加当前(&A)",                    ID_BOOKMARKS2_ADD
+            MENUITEM "管理(&O)...",                   ID_BOOKMARKS2_ORGANIZE
+            MENUITEM SEPARATOR
+            MENUITEM "(空)",                         ID_BOOKMARKS2_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "更多(&M)...",                   ID_BOOKMARKS2_MORE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "添加当前(&A)",                    ID_BOOKMARKS_ADD
+        MENUITEM "管理(&O)...",                   ID_BOOKMARKS_ORGANIZE
+        MENUITEM SEPARATOR
+        MENUITEM "(空)",                         ID_BOOKMARKS_FIRST
+        MENUITEM SEPARATOR
+        MENUITEM "更多(&M)...",                   ID_BOOKMARKS_MORE
+        MENUITEM "IE 收藏夹(&F)",                  ID_BOOKMARKS_FAVORITES
+        MENUITEM "资源管理器 收藏夹(&F)",               ID_BOOKMARKS_EXPLORERFAVORITES
+    END
+    POPUP "标记(&M)"
+    BEGIN
+        MENUITEM "全部选定(&A)\tCtrl+A",            ID_MARK_SELECTALL
+        MENUITEM "取消全部选定(&L)\tAlt+A",           ID_MARK_UNSELECTALL
+        MENUITEM "全部文件夹(&F)\tCtrl+Alt+Q",       ID_MARK_ALLFOLDERS
+        MENUITEM "粘滞选择(&Y)\tAlt+S",             ID_MARK_STICKYSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "分组选择(&S)...\tGray +",         ID_MARK_SELECTGROUP
+        MENUITEM "取消分组选择(&U)...\tGray -",       ID_MARK_UNSELECTGROUP
+        MENUITEM "反向选择(&I)\tGray *",            ID_MARK_INVERTSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "选择范围(&R)...",                 ID_MARK_SELECTRANGE
+        MENUITEM "合计大小(&T)...",                 ID_MARK_TOTALSIZE
+        MENUITEM SEPARATOR
+        MENUITEM "同步面板(&P)\tF9",                ID_MARK_SYNCHRONIZEPANES
+        MENUITEM "同步向导(&W)...\tCtrl+F9",        ID_MARK_SYNCWIZARD
+        MENUITEM "控制编译(&B)...\tCtrl+F12",       ID_MARK_CHECKBUILD
+        MENUITEM SEPARATOR
+        MENUITEM "包含文字(&C)...\tCtrl+G",         ID_MARK_CONTAININGTEXT
+        MENUITEM "匹配规则(&M)...\tAlt+G",          ID_MARK_RULEBASED
+        MENUITEM "快捷搜索(&Q)...",                 ID_MARK_QUICKSEARCH
+        MENUITEM SEPARATOR
+        POPUP "选择项(&E)"
+        BEGIN
+            MENUITEM "存储(&T)\tCtrl+F11",            ID_MARK_SELECTION_STORE
+            MENUITEM SEPARATOR
+            MENUITEM "选择(&S)\tF11",                 ID_MARK_SELECTION_SELECT
+            MENUITEM "取消选择(&U)\tAlt+F11",           ID_MARK_SELECTION_UNSELECT
+            MENUITEM "组合(&C)\tShift+F11",           ID_MARK_SELECTION_COMBINE
+            MENUITEM "显示(&W)\tCtrl+Shift+F11",      ID_MARK_SELECTION_SHOW
+        END
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "复制到(&O)...\tF5",              ID_EDIT_COPYTO
+        MENUITEM "移动到(&M)...\tF6",              ID_EDIT_MOVETO
+        MENUITEM "队列状态(&Q)...",                 ID_EDIT_QUEUESTATUS
+        MENUITEM SEPARATOR
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "粘贴为链接(&L)",                   ID_EDIT_PASTELINK
+        POPUP "选择性粘贴(&E)"
+        BEGIN
+            MENUITEM "文件夹结构(&F)",                   ID_EDIT_PASTESPECIAL_FOLDERSTRUCTURE
+            MENUITEM "含结构的对象(&S)",                  ID_EDIT_PASTESPECIAL_STRUCTUREDSCRAPCLIPS
+            MENUITEM "多重粘贴(&M)",                    ID_EDIT_PASTESPECIAL_MULTIPASTE
+            MENUITEM SEPARATOR
+            MENUITEM "硬链接(&H)\tCtrl+Alt+H",         ID_ACTIONS_PASTEHARDLINK
+            POPUP "文件夹链接点(&J)"
+            BEGIN
+                MENUITEM "粘贴(&P)",                      ID_EDIT_FOLDERJUNCTION_PASTE
+                MENUITEM "删除(&D)",                      ID_EDIT_FOLDERJUNCTION_DELETE
+            END
+            MENUITEM "符号链接(&Y)",                    ID_EDIT_PASTESPECIAL_SYMBOLICLINK
+        END
+        MENUITEM "复件(&D)",                      ID_EDIT_DUPLICATEFILE
+        MENUITEM SEPARATOR
+        MENUITEM "复制名称(&N)\tAlt+C",             ID_EDIT_COPYNAMES
+        MENUITEM "复制预览(&V)",                    ID_EDIT_COPYPREVIEW
+        MENUITEM "复制列(&U)\tCtrl+P",             ID_EDIT_COPYSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "提取文本(&X)",                    ID_EDIT_EXTRACTTEXT
+        MENUITEM "输出 CSV(&S)",                  ID_EDIT_EXPORTCSV
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "双面板(&D)\tCtrl+O",             ID_VIEW_DUALPANE
+        MENUITEM "横向平铺(&N)",                    ID_VIEW_HORIZONTALTILES
+        MENUITEM "功能区(&B)",                     ID_VIEW_RIBBON
+        MENUITEM SEPARATOR
+        MENUITEM "快捷查看器(&Q)\tCtrl+Q",           ID_VIEW_QUICKVIEWER
+        MENUITEM "锁定查看器(&L)",                   ID_VIEW_LOCKVIEWER
+        POPUP "工具栏(&T)"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "全部工具栏(&A)",                   ID_VIEW_TOOLBAR
+            MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+            MENUITEM "信息栏(&I)",                     ID_VIEW_TOOLBARS_INFOBARS
+            MENUITEM SEPARATOR
+            MENUITEM "锁定停靠面板(&L)",                  ID_VIEW_LOCKDOCK
+        END
+        MENUITEM "详情面板(&S)",                    ID_VIEW_DETAILSPANE
+        MENUITEM SEPARATOR
+        POPUP "面板风格(&P)"
+        BEGIN
+            MENUITEM "大图标(&G)",                     ID_VIEW_LARGEICONS
+            MENUITEM "小图标(&M)",                     ID_VIEW_SMALLICONS
+            MENUITEM "列表(&L)",                      ID_VIEW_LIST
+            MENUITEM "详细资料(&D)",                    ID_VIEW_DETAILS
+            MENUITEM "缩略图(&U)",                     ID_VIEW_THUMBNAILS
+            MENUITEM "迷你缩略图(&T)",                   ID_VIEW_PANESTYLE_MINITHUMBS
+            MENUITEM "详细缩略图(&E)",                   ID_VIEW_PANESTYLE_DETAILEDTHUMBS
+        END
+        MENUITEM "选定列(&E)...\tAlt+K",           ID_VIEW_SELECTCOLUMNS
+        POPUP "排序方式(&A)"
+        BEGIN
+            MENUITEM "按名称(&N)\tCtrl+Alt+N",         ID_VIEW_SORTBY_NAME
+            MENUITEM "按大小(&S)\tCtrl+Alt+S",         ID_VIEW_SORTBY_SIZE
+            MENUITEM "按日期(&D)\tCtrl+Alt+D",         ID_VIEW_SORTBY_DATE
+            MENUITEM "按类型(&T)\tCtrl+Alt+T",         ID_VIEW_SORTBY_TYPE
+            MENUITEM "其它方式",                        ID_VIEW_SORTBY_OTHER
+            MENUITEM SEPARATOR
+            MENUITEM "取消排序(&U)\tCtrl+Alt+U",        ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "升序(&A)\tCtrl+Alt+A",          ID_VIEW_SORTBY_ASCENDING
+            MENUITEM "手动(&M)",                      ID_VIEW_ARRANGEBY_MANUALLY
+            MENUITEM SEPARATOR
+            MENUITEM "分组显示(&G)",                    ID_VIEW_PANESTYLE_SHOWINGROUPS
+            MENUITEM "自定义分组(&C)...\tCtrl+Alt+G",    ID_VIEW_ARRANGEBY_CUSTOMGROUPS
+        END
+        MENUITEM "自动调整列大小(&Z)\tCtrl+Add",       ID_VIEW_AUTOSIZECOLUMNS
+        MENUITEM SEPARATOR
+        MENUITEM "刷新(&R)\tCtrl+R",              ID_VIEW_REFRESH
+        MENUITEM "抑制自动刷新(&U)\tCtrl+Alt+R",      ID_VIEW_HOLDAUTOREFRESH
+        MENUITEM "原始状态内容(&W)",                  ID_VIEW_RAWCONTENTS
+        MENUITEM SEPARATOR
+        MENUITEM "显示目录树(&H)\tCtrl+T",           ID_VIEW_SHOWTREE
+        MENUITEM "定位到目录树(&C)\tAlt+T",           ID_VIEW_LOCATEINTREE
+        MENUITEM "迷你面板(&M)",                    ID_VIEW_MINISCRAP
+        MENUITEM SEPARATOR
+        POPUP "虚拟过滤器(&V)"
+        BEGIN
+            MENUITEM "通配符(&W)...\tCtrl+H",          ID_FILE_VISUALFILTER
+            MENUITEM "基于规则(&R)...\tAlt+H",          ID_VIEW_VISUALFILTER_RULEBASED
+            MENUITEM "自动过滤器(&A)",                   ID_VIEW_AUTOFILTER
+            MENUITEM "打开/关闭(&O)\tCtrl+J",           ID_MARK_USEVISUALFILTER
+            MENUITEM SEPARATOR
+            MENUITEM "隐藏文件夹(&F)\tAlt+J",            ID_VIEW_HIDEFOLDERS
+            MENUITEM "仅显示选择项(&Y)\tCtrl+Alt+J",      ID_VIEW_SELECTEDONLY
+            MENUITEM SEPARATOR
+            MENUITEM "相同过滤器(&S)\tCtrl+Alt+M",       ID_VIEW_VISUALFILTER_SAMEFILTER
+        END
+        MENUITEM "全部显示(&O)",                    ID_VIEW_SHOWALL
+    END
+    POPUP "操作(&N)"
+    BEGIN
+        MENUITEM "新建文件(&N)\tF7",                ID_ACTIONS_NEWFILE
+        MENUITEM "新建文件夹(&F)\tF8",               ID_ACTIONS_NEWFOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "设置注释(&C)...\tAlt+Z",          ID_ACTIONS_SETCOMMENT
+        POPUP "&ADS"
+        BEGIN
+            MENUITEM "查看数据流(&V)",                   ID_ACTIONS_VIEWSTREAMS
+            MENUITEM "拆分数据流(&S)",                   ID_ACTIONS_ADS_SPLITSTREAMS
+            MENUITEM SEPARATOR
+            MENUITEM "打包数据(&B)...",                 ID_ACTIONS_BUNDLETOGO
+            MENUITEM "解包数据(&U)",                    ID_ACTIONS_UNPACKBUNDLE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "修改属性(&T)...\tShift+F12",      ID_ACTIONS_CHANGEATTRIBUTES
+        MENUITEM "同步相关项(&Y)",                   ID_ACTIONS_SYNCTOUCH
+        MENUITEM "修改日期(&G)...",                 ID_ACTIONS_CHANGEDATES
+        MENUITEM SEPARATOR
+        MENUITEM "拆分文件(&S)...",                 ID_ACTIONS_SPLIT
+        MENUITEM "合并文件(&M)...",                 ID_ACTIONS_MERGEFILES
+        MENUITEM "粉碎(&D)",                      ID_ACTIONS_SHRED
+        MENUITEM SEPARATOR
+        MENUITEM "立刻保存设置(&W)",                  ID_VIEW_SAVESETTINGSNOW
+        MENUITEM "导出设置(&X)",                    ID_ACTIONS_EXPORTSETTINGS
+        MENUITEM "导入设置(&I)",                    ID_ACTIONS_IMPORTSETTINGS
+        POPUP "文件夹设置(&E)"
+        BEGIN
+            MENUITEM "保存(&S)",                      ID_ACTIONS_FOLDERSETTINGS_SAVE
+            MENUITEM "清除(&C)",                      ID_ACTIONS_FOLDERSETTINGS_CLEAR
+            MENUITEM SEPARATOR
+            MENUITEM "挂起(&U)",                      ID_ACTIONS_FOLDERSETTINGS_SUSPEND
+            MENUITEM "缺省(&D)",                      ID_ACTIONS_FOLDERSETTINGS_DEFAULT
+        END
+    END
+    POPUP "工具(&L)"
+    BEGIN
+        MENUITEM "执行命令(&R)",                    ID_TOOLS_RUNCOMMAND
+        MENUITEM "DOS 命令(&D)\tF10",             ID_TOOLS_DOSCOMMAND
+        MENUITEM "执行历史记录(&H)...\tCtrl+F10",     ID_TOOLS_RUNHISTORY
+        MENUITEM "重复命令(&E)\tAlt+F10",           ID_TOOLS_REPEATCOMMAND
+        MENUITEM "命令脚本(&S)...\tCtrl+B",         ID_TOOLS_COMMANDSCRIPT
+        MENUITEM SEPARATOR
+        MENUITEM "查找文件(&F)...\tCtrl+F",         ID_TOOLS_FINDFILES
+        MENUITEM "快速搜索(&T)...",                 ID_TOOLS_FASTSEARCH
+        MENUITEM "检查重复项(&C)...",                ID_TOOLS_CHECKDUPLICATES
+        MENUITEM "比较子目录(&B)...",                ID_TOOLS_COMPARESUBFOLDERS
+        MENUITEM "映射网络驱动器(&)...",               ID_TOOLS_MAPNETWORKDRIVE
+        MENUITEM SEPARATOR
+        MENUITEM "剩余空间(&P)\tCtrl+Alt+空格",       ID_TOOLS_FREESPACE
+        MENUITEM "子目录大小(&U)\tCtrl+D",           ID_TOOLS_SUBFOLDERSIZE
+        MENUITEM "文件夹统计表(&L)...\tAlt+D",        ID_TOOLS_FOLDERSTATISTICS
+        MENUITEM SEPARATOR
+        MENUITEM "选项(&O)...",                   ID_TOOLS_OPTIONS
+        MENUITEM "高级选项(&A)...",                 ID_TOOLS_ADVANCEDOPTIONS
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "虚拟文件夹(&P)",                   ID_WINDOW_SCRAPFRAME
+        MENUITEM "列表(&L)...\tCtrl+W",           ID_WINDOW_LIST
+        MENUITEM "管理员(&D)",                     ID_WINDOW_ADMINISTRATOR
+        MENUITEM SEPARATOR
+        MENUITEM "关闭标签(&T)\tCtrl+F4",           ID_WINDOW_CLOSETAB
+        MENUITEM "关闭全部标签(&A)\tCtrl+Shift+F4",   ID_WINDOW_CLOSEALLTABS
+        MENUITEM "重新打开标签(&R)",                  ID_WINDOW_REOPENTAB
+        POPUP "激活标签(&v)"
+        BEGIN
+            MENUITEM "标签",                          ID_WINDOW_ACTIVATETAB
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "克隆(&C)\tCtrl+N",              ID_WINDOW_CLONE
+        MENUITEM "保存布局(&S)...",                 ID_WINDOW_SETREGKEY
+        MENUITEM SEPARATOR
+        MENUITEM "(空)",                         ID_REGDATA_FIRST
+        MENUITEM SEPARATOR
+        MENUITEM "管理(&O)...",                   ID_WINDOW_SETACCELERATOR
+        MENUITEM "更多布局(&M)...",                 ID_WINDOW_MORE
+    END
+    POPUP "定制(&U)"
+    BEGIN
+        POPUP "工具栏(&T)"
+        BEGIN
+            MENUITEM "新增(&A)...",                   ID_CUSTOMIZE_TOOLBARS_ADDNEW
+            MENUITEM "管理(&O)...",                   ID_CUSTOMIZE_TOOLBARS_ORGANIZE
+            MENUITEM SEPARATOR
+            MENUITEM "(空)",                         ID_TBCUST_FIRST
+        END
+        POPUP "列设置(&C)"
+        BEGIN
+            MENUITEM "添加当前(&A)",                    ID_CUSTOMIZE_COLUMNS_ADD
+            MENUITEM "管理(&O)...",                   ID_CUSTOMIZE_COLUMNS_ORGANIZE
+            MENUITEM SEPARATOR
+            MENUITEM "(空)",                         ID_COLUMNSET_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "更多(&M)...",                   ID_CUSTOMIZE_COLUMNS_MORE
+        END
+        POPUP "用户命令(&U)"
+        BEGIN
+            MENUITEM "新增(&A)...",                   ID_CUSTOMIZE_USERCOMMANDS_ADDNEW
+            MENUITEM "添加当前(&C)",                    ID_CUSTOMIZE_USERCOMMANDS_ADDCURRENT
+            MENUITEM "管理(&O)...",                   ID_CUSTOMIZE_USERCOMMANDS_ORGANIZE
+            MENUITEM SEPARATOR
+            MENUITEM "(空)",                         ID_USERTOOL_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "更多(&M)...",                   ID_CUSTOMIZE_USERCOMMANDS_MORE
+        END
+        POPUP "文件夹组(&F)"
+        BEGIN
+            MENUITEM "添加当前(&A)",                    ID_CUSTOMIZE_TABSETS_ADDNEW
+            MENUITEM "管理(&O)...",                   ID_CUSTOMIZE_TABSETS_ORGANIZE
+            MENUITEM SEPARATOR
+            MENUITEM "(空)",                         ID_TABSETS_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "更多(&M)...",                   ID_CUSTOMIZE_TABSETS_MORE
+            MENUITEM "启动(&S)",                      ID_CUSTOMIZE_FOLDERGROUPS_STARTUP
+        END
+        POPUP "自定义分组(&G)"
+        BEGIN
+            MENUITEM "添加当前(&A)",                    ID_CUSTOMIZE_CUSTOMGROUPS_ADDCURRENT
+            MENUITEM "管理(&O)...",                   ID_CUSTOMIZE_CUSTOMGROUPS_ORGANIZE
+            MENUITEM SEPARATOR
+            MENUITEM "(空)",                         ID_CATEGORIES_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "更多(&M)...",                   ID_CUSTOMIZE_CUSTOMGROUPS_MORE
+        END
+        POPUP "宏(&M)"
+        BEGIN
+            MENUITEM "新建宏(&N)...\tF12",             ID_TOOLS_MACRO
+            MENUITEM "编辑宏(&E)...",                  ID_TOOLS_MACROEDIT
+            MENUITEM "管理(&O)...",                   ID_CUSTOMIZE_MACROS_ORGANIZE
+            MENUITEM SEPARATOR
+            MENUITEM "(空)",                         ID_MACROS_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "更多(&M)...",                   ID_CUSTOMIZE_MACROS_MORE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "键盘(&Y)...",                   ID_CUSTOMIZE_KEYBOARD
+        MENUITEM "快捷键使用(&K)...",                ID_CUSTOMIZE_KEYBOARDUSE
+        MENUITEM SEPARATOR
+        MENUITEM "颜色代码(&N)...",                 ID_VIEW_COLORCODING
+    END
+    POPUP "帮助(&P)"
+    BEGIN
+        MENUITEM "快速入门(&Q)",                    ID_HELP_ALPHAINFO
+        MENUITEM "内容(&C)\tF1",                  ID_HELP_CONTENTS
+        MENUITEM "每日提示(&T)...",                 ID_HELP_TIPOFTHEDAY
+        MENUITEM "在线指南(&H)",                    ID_HELP_HOWDOI
+        MENUITEM "命令查找器(&M)...",                ID_HELP_COMMANDFINDER
+        MENUITEM SEPARATOR
+        MENUITEM "激活密钥(&K)...",                 ID_HELP_ACTIVATEWITHKEY
+        MENUITEM "注册程序(&R)",                    ID_HELP_REGISTERPROGRAM
+        MENUITEM "升级到旗舰版(&P)",                  ID_HELP_UPGRADETOULTIMATE
+        MENUITEM "捐献(&D)",                      ID_HELP_DONATE
+        MENUITEM "检查更新(&U)",                    ID_HELP_CHECKUPDATES
+        MENUITEM "在线支持(&O)",                    ID_HELP_GETSUPPORT
+        MENUITEM SEPARATOR
+        MENUITEM "English Version(&E)",         ID_HELP_TRANSLATION
+        MENUITEM "上次错误(&L)",                    ID_HELP_LASTERROR
+        MENUITEM "崩溃信息(&I)",                    ID_HELP_CRASHINFORMATION
+        MENUITEM SEPARATOR
+        MENUITEM "关于 xplorer2(&A)...",          ID_APP_ABOUT
+        MENUITEM "许可协议(&G)...",                 ID_HELP_LICENCEAGREEMENT
+        MENUITEM SEPARATOR
+        MENUITEM "新特性(&W)",                     ID_HELP_CHANGES
+        MENUITEM "告诉朋友(&F)...",                 ID_HELP_TELLAFRIEND
+    END
+END
+
+IDR_CONTEXTMENU MENU
+BEGIN
+    POPUP "paneLR"
+    BEGIN
+        MENUITEM "新建文件(&N)\tF7",                ID_ACTIONS_NEWFILE
+        MENUITEM "新建文件夹(&F)\tF8",               ID_ACTIONS_NEWFOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "粘贴为链接(&L)",                   ID_EDIT_PASTELINK
+        POPUP "选择性粘贴(&E)"
+        BEGIN
+            MENUITEM "硬链接(&H)\tCtrl+Alt+H",         ID_ACTIONS_PASTEHARDLINK
+            MENUITEM "文件夹结构(&F)",                   ID_EDIT_PASTESPECIAL_FOLDERSTRUCTURE
+            MENUITEM "含结构的对象(&S)",                  ID_EDIT_PASTESPECIAL_STRUCTUREDSCRAPCLIPS
+        END
+        MENUITEM SEPARATOR
+        POPUP "面板风格(&S)"
+        BEGIN
+            MENUITEM "大图标(&G)",                     ID_VIEW_LARGEICONS
+            MENUITEM "小图标(&M)",                     ID_VIEW_SMALLICONS
+            MENUITEM "列表(&L)",                      ID_VIEW_LIST
+            MENUITEM "详细资料(&D)",                    ID_VIEW_DETAILS
+            MENUITEM "缩略图(&U)",                     ID_VIEW_THUMBNAILS
+            MENUITEM "迷你缩略图(&T)",                   ID_VIEW_PANESTYLE_MINITHUMBS
+            MENUITEM "详细缩略图(&E)",                   ID_VIEW_PANESTYLE_DETAILEDTHUMBS
+        END
+        POPUP "排序方式(&A)"
+        BEGIN
+            MENUITEM "按名称(&N)\tCtrl+Alt+N",         ID_VIEW_SORTBY_NAME
+            MENUITEM "按大小(&S)\tCtrl+Alt+S",         ID_VIEW_SORTBY_SIZE
+            MENUITEM "按日期(&D)\tCtrl+Alt+D",         ID_VIEW_SORTBY_DATE
+            MENUITEM "按类型(&T)\tCtrl+Alt+T",         ID_VIEW_SORTBY_TYPE
+            MENUITEM "其它方式",                        ID_VIEW_SORTBY_OTHER
+            MENUITEM SEPARATOR
+            MENUITEM "取消排序(&U)\tCtrl+Alt+U",        ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "升序(&A)\tCtrl+Alt+A",          ID_VIEW_SORTBY_ASCENDING
+            MENUITEM "手动(&M)",                      ID_VIEW_ARRANGEBY_MANUALLY
+            MENUITEM SEPARATOR
+            MENUITEM "分组显示(&G)",                    ID_VIEW_PANESTYLE_SHOWINGROUPS
+            MENUITEM "自定义分组(&C)...\tCtrl+Alt+G",    ID_VIEW_ARRANGEBY_CUSTOMGROUPS
+        END
+    END
+    POPUP "多面板"
+    BEGIN
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        POPUP "面板风格(&S)"
+        BEGIN
+            MENUITEM "大图标(&G)",                     ID_VIEW_LARGEICONS
+            MENUITEM "小图标(&M)",                     ID_VIEW_SMALLICONS
+            MENUITEM "列表(&L)",                      ID_VIEW_LIST
+            MENUITEM "详细资料(&D)",                    ID_VIEW_DETAILS
+            MENUITEM "缩略图(&U)",                     ID_VIEW_THUMBNAILS
+            MENUITEM "迷你缩略图(&T)",                   ID_VIEW_PANESTYLE_MINITHUMBS
+            MENUITEM "详细缩略图(&E)",                   ID_VIEW_PANESTYLE_DETAILEDTHUMBS
+        END
+        POPUP "排序方式(&A)"
+        BEGIN
+            MENUITEM "按名称(&N)\tCtrl+Alt+N",         ID_VIEW_SORTBY_NAME
+            MENUITEM "按大小(&S)\tCtrl+Alt+S",         ID_VIEW_SORTBY_SIZE
+            MENUITEM "按日期(&D)\tCtrl+Alt+D",         ID_VIEW_SORTBY_DATE
+            MENUITEM "按类型(&T)\tCtrl+Alt+T",         ID_VIEW_SORTBY_TYPE
+            MENUITEM "按路径(&P)",                     ID_VIEW_ARRANGEBY_PATH
+            MENUITEM "其它方式",                        ID_VIEW_SORTBY_OTHER
+            MENUITEM SEPARATOR
+            MENUITEM "取消排序(&U)\tCtrl+Alt+U",        ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "升序(&A)\tCtrl+Alt+A",          ID_VIEW_SORTBY_ASCENDING
+            MENUITEM SEPARATOR
+            MENUITEM "分组显示(&G)",                    ID_VIEW_PANESTYLE_SHOWINGROUPS
+            MENUITEM "自定义分组(&C)...\tCtrl+Alt+G",    ID_VIEW_ARRANGEBY_CUSTOMGROUPS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "清除(&E)",                      ID_FILE_CLEAR
+        MENUITEM "加载内容(&L)...",                 ID_ACTIONS_LOADCONTENTS
+        MENUITEM "写入内容(&W)\tCtrl+S",            ID_ACTIONS_WRITECONTENTS
+        MENUITEM "另存为(&V)...",                  ID_ACTIONS_SAVEAS
+        MENUITEM "最近文件(&R)",                    ID_FILE_RECENT
+    END
+    POPUP "pmRiteDrag"
+    BEGIN
+        MENUITEM "在此插入(&I)",                    ID_PMRITEDRAG_INSERTHERE
+        MENUITEM "展开浏览(&F)",                    ID_ACTIONS_FLATTENPATH
+        MENUITEM "获取子文件夹(&G)",                  ID_ACTIONS_GETSUBFOLDERS
+        MENUITEM SEPARATOR
+        MENUITEM "取消(&C)",                      ID_PMRITEDRAG_CANCEL
+    END
+    POPUP "列头"
+    BEGIN
+        MENUITEM "选定列(&E)...\tAlt+K",           ID_VIEW_SELECTCOLUMNS
+        MENUITEM "自动调整列大小(&Z)\tCtrl+Add",       ID_VIEW_AUTOSIZECOLUMNS
+        MENUITEM "过滤器详情(&f)",                   ID_HEADER_DETAILSFROMFILTER
+        MENUITEM "可编程(&P)...",                  ID_HEADER_PROGRAMMABLECOLUMN
+    END
+    POPUP "快捷视图"
+    BEGIN
+        MENUITEM "复制(&C)\tCtrl+C",              ID_QUIKVIEW_COPY
+        MENUITEM "全部选定(&A)\tCtrl+A",            ID_QUIKVIEW_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "搜索(&S)...\tCtrl+F",           ID_QUIKVIEW_FIND
+        MENUITEM "查找下一个(&N)\tF3",               ID_QUIKVIEW_FINDNEXT
+        MENUITEM SEPARATOR
+        MENUITEM "自动换行(&W)\tF2",                ID_QUIKVIEW_WORDWRAP
+        MENUITEM "设置字体(&F)...",                 ID_QUIKVIEW_SETFONT
+        POPUP "编码(&E)"
+        BEGIN
+            MENUITEM "&Windows",                    ID_QUIKVIEW_ENCODING_WINDOWS
+            MENUITEM "&OEM",                        ID_QUIKVIEW_ENCODING_OEM
+            MENUITEM "UTF-&8",                      ID_QUIKVIEW_ENCODING_UTF8
+            MENUITEM "&Unicode",                    ID_QUIKVIEW_ENCODING_UNICODE
+            MENUITEM "cp",                          ID_QUIKVIEW_ENCODING_CP
+        END
+        MENUITEM "尾部模式(&M)",                    ID_QUIKVIEW_TAILMODE
+        MENUITEM SEPARATOR
+        MENUITEM "文本模式(&T)",                    ID_QUIKVIEW_TEXTMODE
+        MENUITEM "下一个(&X)\tCtrl+↓",             ID_QUIKVIEW_NEXT
+        MENUITEM "上一个(&P)\tCtrl+↑",             ID_QUIKVIEW_PREVIOUS
+    END
+    POPUP "标签"
+    BEGIN
+        MENUITEM "向左移动(&L)",                    ID_TABZ_MOVELEFT
+        MENUITEM "向右移动(&R)",                    ID_TABZ_MOVERIGHT
+        MENUITEM "面板交叉(&A)",                    ID_TABZ_MOVEACROSS
+        MENUITEM SEPARATOR
+        MENUITEM "重命名(&N)",                     ID_TABZ_RENAME
+        MENUITEM "复制全部路径(&P)",                  ID_TABZ_COPYALLPATHS
+        MENUITEM SEPARATOR
+        MENUITEM "锁定(&O)",                      ID_TABZ_LOCK
+        MENUITEM "关闭(&C)",                      ID_TABZ_CLOSE
+    END
+    POPUP "树"
+    BEGIN
+        MENUITEM "按名称排序(&N)",                   ID_TREE_SORTBY_NAME
+        MENUITEM "按日期排序(&D)",                   ID_TREE_SORTBY_DATE
+        MENUITEM SEPARATOR
+        MENUITEM "大图标(&L)",                     ID_TREE_LARGEICONS
+    END
+    POPUP "检查"
+    BEGIN
+        MENUITEM "全部勾选(&T)",                    ID_CHECK_TICKALL
+        MENUITEM "全部清除(&C)",                    ID_CHECK_CLEARALL
+    END
+    POPUP "通用"
+    BEGIN
+        MENUITEM "管理(&O)...",                   ID_CUSTOM_ORGANIZE
+    END
+    POPUP "过滤器"
+    BEGIN
+        MENUITEM "过滤器(&F)",                     ID_FILTER_FILTER
+        MENUITEM "选择(&S)",                      ID_FILTER_SELECT
+        MENUITEM "搜索(&E)",                      ID_FILTER_SEARCH
+        MENUITEM SEPARATOR
+        MENUITEM "所有属性(&A)",                    ID_FILTER_ALLPROPERTIES
+        MENUITEM "文本内容(&T)",                    ID_FILTER_TEXTCONTENTS
+        MENUITEM "Windows搜索(&W)",               ID_FILTER_WINDOWSSEARCH
+    END
+    POPUP "标记"
+    BEGIN
+        MENUITEM "红色",                          ID_COLTAG_FILTERCOL
+        MENUITEM "任一标记(&A)",                    ID_COLTAG_FILTERALL
+        MENUITEM "未加标记(&U)",                    ID_COLTAG_UNTAGGED
+        MENUITEM "显示所有(&S)",                    ID_VIEW_SHOWALL
+        MENUITEM SEPARATOR
+        MENUITEM "找到标记...(&F)",                 ID_TAG_FINDTAGS
+    END
+    POPUP "富文本编辑"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "拷贝(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "清除所有(&A)",                    ID_EDIT_CLEAR
+    END
+END
+
+IDR_SCRAPFRAME MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "打开(&O)\t回车",                  ID_FILE_BROWSE2
+        MENUITEM "浏览(&B)\tCtrl+回车",             ID_FILE_CLONEBROWSE2
+        MENUITEM SEPARATOR
+        MENUITEM "查看(&V)\tF3",                  ID_FILE_VIEW
+        MENUITEM "编辑(&E)\tF4",                  ID_FILE_EDIT
+        MENUITEM "外壳编辑(&H)",                    ID_FILE_SHELLEDIT
+        MENUITEM "属性(&P)...\tF12",              ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "重命名(&R)\tF2",                 ID_FILE_RENAME
+        MENUITEM "改变类型(&T)\tCtrl+F2",           ID_FILE_CHANGETYPE
+        MENUITEM "批量重命名(&S)...",                ID_FILE_MASSRENAME
+        MENUITEM SEPARATOR
+        MENUITEM "移除(&M)\tDel",                 ID_FILE_REMOVE
+        MENUITEM "删除(&D)\tCtrl+Del",            ID_FILE_DELETE
+        MENUITEM "清除(&A)",                      ID_FILE_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM "退出(&X)\tAlt+X",               ID_APP_EXIT
+    END
+    POPUP "标记(&M)"
+    BEGIN
+        MENUITEM "全部选定(&A)\tCtrl+A",            ID_MARK_SELECTALL
+        MENUITEM "取消全部选定(&L)\tAlt+A",           ID_MARK_UNSELECTALL
+        MENUITEM "全部文件夹(&F)\tCtrl+Alt+Q",       ID_MARK_ALLFOLDERS
+        MENUITEM "粘滞选择(&Y)\tAlt+S",             ID_MARK_STICKYSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "分组选择(&S)...\tGray +",         ID_MARK_SELECTGROUP
+        MENUITEM "取消分组选择(&U)...\tGray -",       ID_MARK_UNSELECTGROUP
+        MENUITEM "反向选择(&I)\tGray *",            ID_MARK_INVERTSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "选择范围(&R)...",                 ID_MARK_SELECTRANGE
+        MENUITEM "合计大小(&T)...",                 ID_MARK_TOTALSIZE
+        MENUITEM SEPARATOR
+        MENUITEM "同步面板(&P)\tF9",                ID_MARK_SYNCHRONIZEPANES
+        MENUITEM "同步向导(&W)...\tCtrl+F9",        ID_MARK_SYNCWIZARD
+        MENUITEM SEPARATOR
+        MENUITEM "包含文字(&C)...\tCtrl+G",         ID_MARK_CONTAININGTEXT
+        MENUITEM "匹配规则(&M)...\tAlt+G",          ID_MARK_RULEBASED
+        MENUITEM "快捷搜索(&Q)...",                 ID_MARK_QUICKSEARCH
+        MENUITEM SEPARATOR
+        POPUP "选择项(&E)"
+        BEGIN
+            MENUITEM "存储(&T)\tCtrl+F11",            ID_MARK_SELECTION_STORE
+            MENUITEM SEPARATOR
+            MENUITEM "选择(&S)\tF11",                 ID_MARK_SELECTION_SELECT
+            MENUITEM "取消选择(&U)\tAlt+F11",           ID_MARK_SELECTION_UNSELECT
+            MENUITEM "组合(&C)\tShift+F11",           ID_MARK_SELECTION_COMBINE
+            MENUITEM "显示(&W)\tCtrl+Shift+F11",      ID_MARK_SELECTION_SHOW
+        END
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "复制到(&O)...\tF5",              ID_EDIT_COPYTO
+        MENUITEM "移动到(&M)...\tF6",              ID_EDIT_MOVETO
+        MENUITEM "队列状态(&Q)...",                 ID_EDIT_QUEUESTATUS
+        MENUITEM SEPARATOR
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "同步粘贴(&S)",                    ID_EDIT_SYNCOPASTE
+        MENUITEM "多重粘贴(&L)",                    ID_EDIT_PASTESPECIAL_MULTIPASTE
+        MENUITEM SEPARATOR
+        MENUITEM "复制名称(&N)\tAlt+C",             ID_EDIT_COPYNAMES
+        MENUITEM "复制预览(&V)",                    ID_EDIT_COPYPREVIEW
+        MENUITEM "复制列(&U)\tCtrl+P",             ID_EDIT_COPYSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "提取文本(&X)",                    ID_EDIT_EXTRACTTEXT
+        MENUITEM "输出 CSV(&S)",                  ID_EDIT_EXPORTCSV
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "双面板(&D)\tCtrl+O",             ID_VIEW_DUALPANE
+        MENUITEM "横向平铺(&N)",                    ID_VIEW_HORIZONTALTILES
+        MENUITEM "功能区(&B)",                     ID_VIEW_RIBBON
+        MENUITEM SEPARATOR
+        MENUITEM "快捷查看器(&Q)\tCtrl+Q",           ID_VIEW_QUICKVIEWER
+        MENUITEM "锁定查看器(&L)",                   ID_VIEW_LOCKVIEWER
+        POPUP "工具栏(&T)"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "全部工具栏(&A)",                   ID_VIEW_TOOLBAR
+            MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+            MENUITEM "信息栏(&I)",                     ID_VIEW_TOOLBARS_INFOBARS
+        END
+        MENUITEM "详情面板(&S)",                    ID_VIEW_DETAILSPANE
+        MENUITEM SEPARATOR
+        POPUP "面板风格(&P)"
+        BEGIN
+            MENUITEM "大图标(&G)",                     ID_VIEW_LARGEICONS
+            MENUITEM "小图标(&M)",                     ID_VIEW_SMALLICONS
+            MENUITEM "列表(&L)",                      ID_VIEW_LIST
+            MENUITEM "详细资料(&D)",                    ID_VIEW_DETAILS
+            MENUITEM "缩略图(&U)",                     ID_VIEW_THUMBNAILS
+            MENUITEM "迷你缩略图(&T)",                   ID_VIEW_PANESTYLE_MINITHUMBS
+            MENUITEM "详细缩略图(&E)",                   ID_VIEW_PANESTYLE_DETAILEDTHUMBS
+        END
+        MENUITEM "选定列(&E)...\tAlt+K",           ID_VIEW_SELECTCOLUMNS
+        POPUP "排序方式(&A)"
+        BEGIN
+            MENUITEM "按名称(&N)\tCtrl+Alt+N",         ID_VIEW_SORTBY_NAME
+            MENUITEM "按大小(&S)\tCtrl+Alt+S",         ID_VIEW_SORTBY_SIZE
+            MENUITEM "按日期(&D)\tCtrl+Alt+D",         ID_VIEW_SORTBY_DATE
+            MENUITEM "按类型(&T)\tCtrl+Alt+T",         ID_VIEW_SORTBY_TYPE
+            MENUITEM "按路径(&P)",                     ID_VIEW_ARRANGEBY_PATH
+            MENUITEM "其它方式",                        ID_VIEW_SORTBY_OTHER
+            MENUITEM SEPARATOR
+            MENUITEM "取消排序(&U)\tCtrl+Alt+U",        ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "升序(&A)\tCtrl+Alt+A",          ID_VIEW_SORTBY_ASCENDING
+            MENUITEM SEPARATOR
+            MENUITEM "分组显示(&G)",                    ID_VIEW_PANESTYLE_SHOWINGROUPS
+            MENUITEM "自定义分组(&C)...\tCtrl+Alt+G",    ID_VIEW_ARRANGEBY_CUSTOMGROUPS
+        END
+        MENUITEM "自动调整列大小(&Z)\tCtrl+Add",       ID_VIEW_AUTOSIZECOLUMNS
+        MENUITEM SEPARATOR
+        MENUITEM "刷新(&R)\tCtrl+R",              ID_VIEW_REFRESH
+        MENUITEM "抑制自动刷新(&U)\tCtrl+Alt+R",      ID_VIEW_HOLDAUTOREFRESH
+        MENUITEM SEPARATOR
+        POPUP "虚拟过滤器(&V)"
+        BEGIN
+            MENUITEM "通配符(&W)...\tCtrl+H",          ID_FILE_VISUALFILTER
+            MENUITEM "规则基准(&R)...\tAlt+H",          ID_VIEW_VISUALFILTER_RULEBASED
+            MENUITEM "开/关(&O)\tCtrl+J",             ID_MARK_USEVISUALFILTER
+            MENUITEM SEPARATOR
+            MENUITEM "隐藏文件夹(&F)\tAlt+J",            ID_VIEW_HIDEFOLDERS
+            MENUITEM "仅选定(&Y)\tCtrl+Alt+J",         ID_VIEW_SELECTEDONLY
+            MENUITEM SEPARATOR
+            MENUITEM "相同过滤器(&S)\tCtrl+Alt+M",       ID_VIEW_VISUALFILTER_SAMEFILTER
+        END
+        MENUITEM "全部显示(&O)",                    ID_VIEW_SHOWALL
+    END
+    POPUP "操作(&N)"
+    BEGIN
+        MENUITEM "展开路径(&P)...",                 ID_ACTIONS_FLATTENPATH
+        MENUITEM SEPARATOR
+        MENUITEM "修改属性(&T)...\tShift+F12",      ID_ACTIONS_CHANGEATTRIBUTES
+        MENUITEM "修改日期(&G)...",                 ID_ACTIONS_CHANGEDATES
+        MENUITEM "设置注释(&C)...\tAlt+Z",          ID_ACTIONS_SETCOMMENT
+        POPUP "&ADS"
+        BEGIN
+            MENUITEM "查看数据流(&V)",                   ID_ACTIONS_VIEWSTREAMS
+            MENUITEM "打包数据(&B)...",                 ID_ACTIONS_BUNDLETOGO
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "拆分文件(&S)...",                 ID_ACTIONS_SPLIT
+        MENUITEM "合并文件(&M)...",                 ID_ACTIONS_MERGEFILES
+        MENUITEM "粉碎(&D)",                      ID_ACTIONS_SHRED
+        MENUITEM SEPARATOR
+        MENUITEM "加载内容(&L)...",                 ID_ACTIONS_LOADCONTENTS
+        MENUITEM "写入内容(&W)\tCtrl+S",            ID_ACTIONS_WRITECONTENTS
+        MENUITEM "最近文件(&R)",                    ID_FILE_RECENT
+        MENUITEM SEPARATOR
+        MENUITEM "导入剪贴板(&I)",                   ID_ACTIONS_IMPORTCLIPBOARD
+    END
+    POPUP "工具(&L)"
+    BEGIN
+        MENUITEM "执行命令(&R)",                    ID_TOOLS_RUNCOMMAND
+        MENUITEM "DOS 命令(&D)\tF10",             ID_TOOLS_DOSCOMMAND
+        MENUITEM "执行历史记录(&H)...\tCtrl+F10",     ID_TOOLS_RUNHISTORY
+        MENUITEM "重复命令(&E)\tAlt+F10",           ID_TOOLS_REPEATCOMMAND
+        MENUITEM SEPARATOR
+        MENUITEM "命令脚本(&S)...\tCtrl+B",         ID_TOOLS_COMMANDSCRIPT
+        MENUITEM "子目录大小(&U)\tCtrl+D",           ID_TOOLS_SUBFOLDERSIZE
+        MENUITEM "查找目标(&T)\tCtrl+L",            ID_EDIT_FINDTARGET
+        MENUITEM SEPARATOR
+        MENUITEM "查找文件(&F)...\tCtrl+F",         ID_TOOLS_FINDFILES
+        MENUITEM "搜索状态(&C)...",                 ID_TOOLS_SEARCHSTATUS
+        MENUITEM "保存搜索(&B)...",                 ID_TOOLS_SAVESEARCH
+        POPUP "最近搜索(&N)"
+        BEGIN
+            MENUITEM "无",                           ID_SAVEDSEARCH_FIRST
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "检查重复项(&P)...",                ID_TOOLS_CHECKDUPLICATES
+        MENUITEM "显示唯一项(&V)",                   ID_TOOLS_REVEALUNIQUE
+        MENUITEM "模糊分组(&Z)...",                 ID_TOOLS_FUZZYMATCHING
+        MENUITEM "查找相似照片(M)",                   ID_TOOLS_SIMILARPHOTOS
+        MENUITEM SEPARATOR
+        MENUITEM "选项(&O)...",                   ID_TOOLS_OPTIONS
+        MENUITEM "高级选项(&A)...",                 ID_TOOLS_ADVANCEDOPTIONS
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建虚拟文件夹(&P)",                 ID_WINDOW_SCRAPFRAME
+        MENUITEM "列表(&L)...\tCtrl+W",           ID_WINDOW_LIST
+        MENUITEM "设置标题(&S)",                    ID_WINDOW_SETTITLE
+        MENUITEM SEPARATOR
+        MENUITEM "镜像滚屏(&C)\tCtrl+M",            ID_GOTO_MIRRORSCROLLING
+    END
+    POPUP "定制(&U)"
+    BEGIN
+        POPUP "工具栏(&T)"
+        BEGIN
+            MENUITEM "新增(&A)...",                   ID_CUSTOMIZE_TOOLBARS_ADDNEW
+            MENUITEM "管理(&O)...",                   ID_CUSTOMIZE_TOOLBARS_ORGANIZE
+            MENUITEM SEPARATOR
+            MENUITEM "(样例)",                        ID_TBCUST_FIRST
+        END
+        POPUP "列设置(&C)"
+        BEGIN
+            MENUITEM "添加当前(&A)",                    ID_CUSTOMIZE_COLUMNS_ADD
+            MENUITEM "管理(&O)...",                   ID_CUSTOMIZE_COLUMNS_ORGANIZE
+            MENUITEM SEPARATOR
+            MENUITEM "(样例)",                        ID_COLUMNSET_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "更多(&M)...",                   ID_CUSTOMIZE_COLUMNS_MORE
+        END
+        POPUP "用户命令(&U)"
+        BEGIN
+            MENUITEM "新增(&A)...",                   ID_CUSTOMIZE_USERCOMMANDS_ADDNEW
+            MENUITEM "添加当前(&C)",                    ID_CUSTOMIZE_USERCOMMANDS_ADDCURRENT
+            MENUITEM "管理(&O)...",                   ID_CUSTOMIZE_USERCOMMANDS_ORGANIZE
+            MENUITEM SEPARATOR
+            MENUITEM "(样例)",                        ID_USERTOOL_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "更多(&M)...",                   ID_CUSTOMIZE_USERCOMMANDS_MORE
+        END
+        POPUP "自定义分组(&G)"
+        BEGIN
+            MENUITEM "添加当前(&A)",                    ID_CUSTOMIZE_CUSTOMGROUPS_ADDCURRENT
+            MENUITEM "管理(&O)...",                   ID_CUSTOMIZE_CUSTOMGROUPS_ORGANIZE
+            MENUITEM SEPARATOR
+            MENUITEM "(样例)",                        ID_CATEGORIES_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "更多(&M)...",                   ID_CUSTOMIZE_CUSTOMGROUPS_MORE
+        END
+        POPUP "宏(&M)"
+        BEGIN
+            MENUITEM "新建宏(&N)...\tF12",             ID_TOOLS_MACRO
+            MENUITEM "编辑宏(&E)...",                  ID_TOOLS_MACROEDIT
+            MENUITEM "管理(&O)...",                   ID_CUSTOMIZE_MACROS_ORGANIZE
+            MENUITEM SEPARATOR
+            MENUITEM "(空)",                         ID_MACROS_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "更多(&M)...",                   ID_CUSTOMIZE_MACROS_MORE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "键盘(&Y)...",                   ID_CUSTOMIZE_KEYBOARD
+        MENUITEM "快捷键使用(&K)...",                ID_CUSTOMIZE_KEYBOARDUSE
+        MENUITEM SEPARATOR
+        MENUITEM "颜色代码(&N)...",                 ID_VIEW_COLORCODING
+    END
+    POPUP "帮助(&P)"
+    BEGIN
+        MENUITEM "快速入门(&Q)",                    ID_HELP_ALPHAINFO
+        MENUITEM "内容(&C)\tF1",                  ID_HELP_CONTENTS
+        MENUITEM "每日提示(&T)...",                 ID_HELP_TIPOFTHEDAY
+        MENUITEM "命令查找器(&M)...",                ID_HELP_COMMANDFINDER
+        MENUITEM SEPARATOR
+        MENUITEM "注册程序(&R)",                    ID_HELP_REGISTERPROGRAM
+        MENUITEM "检查更新(&U)",                    ID_HELP_CHECKUPDATES
+        MENUITEM "在线支持(&O)",                    ID_HELP_GETSUPPORT
+        MENUITEM SEPARATOR
+        MENUITEM "上次错误(&L)",                    ID_HELP_LASTERROR
+        MENUITEM SEPARATOR
+        MENUITEM "关于 xplorer2(&A)...",          ID_APP_ABOUT
+        MENUITEM "许可协议(&G)...",                 ID_HELP_LICENCEAGREEMENT
+        MENUITEM SEPARATOR
+        MENUITEM "新特性(&W)",                     ID_HELP_CHANGES
+        MENUITEM "告诉朋友(&F)...",                 ID_HELP_TELLAFRIEND
+    END
+END
+
+IDR_DIRSTATFRAME MENU
+BEGIN
+    POPUP "动作(&A)"
+    BEGIN
+        MENUITEM "浏览(&B)\t回车",                  ID_FILE_CLONEBROWSE2
+        MENUITEM SEPARATOR
+        MENUITEM "按名称排序(&N)",                   ID_VIEW_SORTBY_NAME
+        MENUITEM "按大小排序(&S)",                   ID_VIEW_SORTBY_SIZE
+        MENUITEM SEPARATOR
+        MENUITEM "复制为文本(&T)\tCtrl+C",           ID_DIRDATA_COPYTEXT
+        MENUITEM "查找(&F)...\tCtrl+F",           ID_DIRDATA_FIND
+        MENUITEM "查找下一个\tF3",                   ID_DIRDATA_FINDNEXT
+        MENUITEM SEPARATOR
+        MENUITEM "刷新(&R)\tCtrl+R",              ID_VIEW_REFRESH
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+    END
+END
+
+IDR_ROBUSTDELFRAME MENU
+BEGIN
+    POPUP "动作(&A)"
+    BEGIN
+        MENUITEM "队列状态(&Q)...",                 ID_DEL_QUEUESTATUS
+        MENUITEM SEPARATOR
+        MENUITEM "设置字体(&F)...",                 ID_ACTIONS_SETFONT
+        MENUITEM "清除日志(&E)",                    ID_ACTIONS_CLEARLOG
+        MENUITEM SEPARATOR
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+    END
+END
+
+IDR_MENU_DOCK MENU
+BEGIN
+    POPUP "dkm"
+    BEGIN
+        MENUITEM "浮动(&F)",                      ID_DKM_FLOAT
+        MENUITEM "停靠(&D)",                      ID_DKM_DOCK
+        MENUITEM "自动隐藏(&A)",                    ID_DKM_AUTOHIDE
+        MENUITEM "关闭(&C)",                      ID_DKM_CLOSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(PRO)
+#if defined(APSTUDIO_INVOKED)
+IDD_ABOUTBOX$(PRO) DIALOGEX 0, 0, 242, 121
+#else
+IDD_ABOUTBOX DIALOGEX 0, 0, 242, 121
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 xplorer2 - %s"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "购买或升级\n许可证",IDC_EMAIL,176,7,57,28,BS_CENTER |
+                    BS_VCENTER | BS_MULTILINE
+    PUSHBUTTON      "在线支持",IDC_ONLINE,173,39,63,14,BS_CENTER |
+                    BS_VCENTER | BS_MULTILINE
+    DEFPUSHBUTTON   "确定",IDOK,179,57,50,14
+    EDITTEXT        IDC_BUILD,64,14,96,12,ES_AUTOHSCROLL | ES_READONLY | NOT
+                    WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "版权所有(C) 2002-2020 ZABKAT\n保留所有权利",IDC_STATIC,
+                    11,63,149,19
+    ICON            128,IDC_STATICON,13,10,20,20
+    GROUPBOX        "",IDC_STATIC,7,3,158,82
+    LTEXT           "版本",IDC_STATIC,36,16,15,8
+    LTEXT           "警告: 本计算机程序受著作权法和国际条约保护. 如未经授权而擅自复制或传播本程序, 将可能收到严厉的民事和刑事制裁.",
+                    IDC_WARNING,7,91,228,20
+    LTEXT           "www.zabkat.com",IDC_ZABKAT,176,77,56,8
+    EDITTEXT        IDC_HONESTJIM,12,33,148,24,ES_MULTILINE | ES_AUTOVSCROLL |
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+END
+#endif
+
+
+IDD_TEXTINPUT_DLG DIALOGEX 0, 0, 158, 46
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO,7,6,144,95,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,30,26,42,14
+    PUSHBUTTON      "取消",IDCANCEL,86,26,42,14
+END
+
+IDD_NOTIFY_DLG DIALOGEX 0, 0, 238, 210
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    CONTROL         "不再次显示此信息(&D)",IDC_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,49,181,82,10
+    DEFPUSHBUTTON   "确定",IDOK,181,170,50,14
+    PUSHBUTTON      "取消",IDCANCEL,181,190,50,14
+    ICON            "",IDC_CUSTICON,7,176,20,20
+    LTEXT           "消息",IDC_MESSAGE,7,7,224,157
+END
+
+IDD_GREP_DLG DIALOGEX 0, 0, 187, 138
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "在文件内查找文字"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "查找内容(&F):",IDC_STATIC,9,9,40,8
+    COMBOBOX        IDC_COMBO_FIND,52,7,128,88,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "特定字符(&S):",IDC_STATIC,9,27,44,8
+    COMBOBOX        IDC_COMBO_ESPECIAL,76,24,51,81,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "逐字(&V)",IDC_CHECK_VERBA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,137,25,40,10
+    CONTROL         "匹配字符大小写(&C)",IDC_CHECK_CASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,50,75,10
+    CONTROL         "匹配整个词(&W)",IDC_CHECK_WORD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,63,62,10
+    CONTROL         "同时搜索非文本文件(&N)",IDC_CHECK_BINARY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,76,88,10
+    CONTROL         "使用搜索索引(&X)",IDC_CHECK_INDEX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,108,50,62,10
+    CONTROL         "正则表达式(&R)",IDC_CHECK_REGEXP,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,108,63,61,10
+    LTEXT           "文本文件编码(&E):",IDC_STATIC,41,92,55,8
+    COMBOBOX        IDC_COMBO_ENCODING,103,91,51,69,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "选择(&T)",IDOK,7,117,50,14
+    PUSHBUTTON      "取消选择(&U)",IDC_UNSELECT,68,117,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,117,50,14
+END
+
+IDD_SCRIPTBUILD_DLG DIALOGEX 0, 0, 286, 142
+STYLE DS_SETFONT | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "脚本向导"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "模板(&T):",IDC_STATIC,9,9,27,8
+    COMBOBOX        IDC_COMBO_BATPLATE,46,6,233,106,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "特定令牌(&S):",IDC_STATIC,74,26,42,8
+    COMBOBOX        IDC_COMBO_TOKENS,120,24,104,88,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "预览(&P)",IDC_BUTTON_PREVIEW,7,24,50,14
+    PUSHBUTTON      "$-令牌帮助(&H)",IDC_BUTTON_HELP,229,23,50,14
+    PUSHBUTTON      "编辑(&E)",IDC_BUTTON_EDIT,7,121,50,14
+    PUSHBUTTON      "执行(DOS)(&X)",IDOK,73,121,61,14
+    PUSHBUTTON      "执行(外壳)(&C)",IDC_BUTTON_WINEXEC,150,121,61,14
+    PUSHBUTTON      "取消",IDCANCEL,227,121,50,14
+    EDITTEXT        IDC_EDIT_PREVIEW,7,43,272,70,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+END
+
+IDD_SYNCWIZARD_DLG DIALOGEX 0, 0, 194, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "同步选项"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "选择项目:",IDC_STATIC,7,7,102,50,WS_GROUP
+    CONTROL         "唯一(&U)",IDC_CHECK_UNIQUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,18,40,10
+    CONTROL         "相同(&I)",IDC_CHECK_IDENTICAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,62,18,40,10
+    CONTROL         "较新(&N)",IDC_CHECK_NEWER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,31,40,10
+    CONTROL         "较旧(&O)",IDC_CHECK_OLDER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,62,31,39,10
+    CONTROL         "不确定(&D)",IDC_CHECK_UNDECIDABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,43,47,10
+    GROUPBOX        "比较基准:",IDC_STATIC,7,62,119,64,WS_GROUP
+    CONTROL         "修改日期(&M)",IDC_RADIO_MOD,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,13,73,54,10
+    CONTROL         "文件内容(&F)",IDC_RADIO_CONTENT,"Button",BS_AUTORADIOBUTTON,13,85,53,10
+    CONTROL         "仅名称(&A)",IDC_RADIO_NAME,"Button",BS_AUTORADIOBUTTON,13,96,47,10
+    CONTROL         "",IDC_RADIO_COLUMN,"Button",BS_AUTORADIOBUTTON,13,110,9,8
+    COMBOBOX        IDC_COMBO_COLUMN,24,108,97,82,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "同时同步文件夹(&C)",IDC_CHECK_FOLDERS,"Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_GROUP | WS_TABSTOP,113,23,73,10
+    CONTROL         "名称不精确匹配(&L)",IDC_CHECK_FREEFORM,"Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,113,37,68,9
+    DEFPUSHBUTTON   "确定",IDOK,137,96,50,14
+    PUSHBUTTON      "取消",IDCANCEL,137,133,50,14
+    COMBOBOX        IDC_COMBO_SCENARIA,112,7,73,38,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "忽略(&G)",IDC_CHECK_IGNORE,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,7,134,33,10
+    EDITTEXT        IDC_EDIT_XDAYS,42,133,27,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_PREVNUM,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,60,133,10,14
+    COMBOBOX        IDC_COMBO_DTUNIT,71,133,55,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SPLIT_DLG DIALOG 0, 0, 219, 69
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "拆分文件选项"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "拆分大小(kB)(&S):",IDC_STATIC,7,10,56,8
+    EDITTEXT        IDC_EDIT_SIZE,65,8,51,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "标准(&T)",IDC_STATIC,120,9,35,8
+    COMBOBOX        IDC_COMBO_STD,158,7,54,46,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "目标文件夹(&D):",IDC_STATIC,8,29,49,8
+    COMBOBOX        IDC_COMBO_SPLITARGET,60,27,137,78,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_DOTS,199,27,13,12
+    LTEXT           "拆分块数(&P):",IDC_STATIC,15,51,41,8
+    EDITTEXT        IDC_STATIC_BITS,58,49,40,12,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "确定",IDOK,106,48,50,14
+    PUSHBUTTON      "取消",IDCANCEL,162,48,50,14
+END
+
+IDD_BUILDSYNC_DLG DIALOGEX 0, 0, 187, 142
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "检查编译向导"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "转换规则",IDC_STATIC,7,7,173,63
+    LTEXT           "从(&F) (通配符):",IDC_STATIC,14,21,48,8
+    EDITTEXT        IDC_EDIT_FROM,76,19,95,12,ES_AUTOHSCROLL
+    LTEXT           "到扩展名(&T):",IDC_STATIC,14,36,41,8
+    EDITTEXT        IDC_EDIT_TO,76,34,95,12,ES_AUTOHSCROLL
+    LTEXT           "预定义(&P):",IDC_STATIC,14,52,34,8
+    COMBOBOX        IDC_COMBO_PREDEF,59,50,112,74,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "源文件选择为:",IDC_STATIC,7,74,110,61,WS_GROUP
+    CONTROL         "未经编译(&N)",IDC_CHECK_UNIQUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,87,54,10
+    CONTROL         "最后编译以来修改过(&M)",IDC_CHECK_NEWER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,102,89,10
+    CONTROL         "最新的(&U)",IDC_CHECK_OLDER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,117,47,10
+    DEFPUSHBUTTON   "确定",IDOK,130,97,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,121,50,14
+END
+
+IDD_COLSELECT_DLG DIALOGEX 0, 0, 275, 181
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "列自定义"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "当前配置(&C)",IDC_TBPLACE,7,7,97,13,SS_CENTERIMAGE | SS_SUNKEN
+    LISTBOX         IDC_LIST_CURRENT,7,20,97,105,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "可用列(&A)",IDC_STATIC,171,7,97,13,SS_CENTERIMAGE | SS_SUNKEN
+    LISTBOX         IDC_LIST_AVAIL,171,20,97,91,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_COLFILTER,171,113,97,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加(&D) <",IDC_BUTTON_ADD,111,46,50,14
+    PUSHBUTTON      "移除(&R) >",IDC_BUTTON_REMOVE,111,75,50,14
+    LTEXT           "预定义(&P):",IDC_STATIC,44,136,34,8
+    COMBOBOX        IDC_COMBO_PRECOLS,90,134,143,115,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,162,160,50,14
+    PUSHBUTTON      "取消",IDCANCEL,218,160,50,14
+    LTEXT           "",IDC_STATIC_DESCRIPTION,7,156,146,18,SS_SUNKEN
+END
+
+IDD_FILTER_DLG DIALOGEX 0, 0, 235, 163
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    RTEXT           "名称(&N):",IDC_STATIC,7,7,28,8
+    COMBOBOX        IDC_COMBO_NAMED,36,5,123,88,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_FUZZY,163,5,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "文件(&F)",IDC_CHECK_FILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,2,39,10
+    CONTROL         "文件夹(&O)",IDC_CHECK_DIRS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,12,41,10
+    GROUPBOX        "包含文字(&T)",IDC_STATIC,7,27,221,44,WS_GROUP
+    COMBOBOX        IDC_COMBO_FIND,14,36,156,88,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ESPECIAL,175,36,51,81,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "区分大小写(&C)",IDC_CHECK_CASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,50,61,10
+    CONTROL         "匹配整个字(&W)",IDC_CHECK_WORD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,60,62,10
+    CONTROL         "搜索所有文件(&A)",IDC_CHECK_BINARY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,78,50,67,10
+    CONTROL         "逐字(&B)",IDC_CHECK_VERBA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,78,60,40,10
+    CONTROL         "正则表达式(&E)",IDC_CHECK_REGEXP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,60,60,10
+    COMBOBOX        IDC_COMBO_ENCODING,175,53,51,69,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "附加规则(&R)",IDC_TBPLACE,7,80,221,13,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "",IDC_LISTRULES,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_TABSTOP,7,93,221,44,WS_EX_CLIENTEDGE
+    RTEXT           "预定义(&P):",IDC_STATIC,7,149,34,8
+    COMBOBOX        IDC_COMBO_SAVED,51,147,133,88,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "保存(&V)",IDC_BUTTON_SAVE,192,146,36,14
+END
+
+IDD_FPP_DATE DIALOGEX 0, 0, 195, 49
+STYLE DS_SETFONT | DS_NOFAILCREATE | DS_CONTROL | WS_CHILD
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "日期设置",IDC_STATIC,2,0,190,47,WS_GROUP
+    CONTROL         "以前的时间(&D):",IDC_RADIO_PREV,"Button",BS_AUTORADIOBUTTON | WS_GROUP,5,11,64,10
+    CONTROL         "介于(&B):",IDC_RADIO_BETWEEN,"Button",BS_AUTORADIOBUTTON,5,30,43,10
+    EDITTEXT        IDC_EDIT_XDAYS,88,10,39,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_PREVNUM,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,119,9,10,14
+    COMBOBOX        IDC_COMBO_DTUNIT,133,10,56,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_DATE_FROM,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,54,28,59,13
+    LTEXT           "到",IDC_STATIC,117,30,8,8
+    CONTROL         "",IDC_DATE_TO,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,130,28,59,13
+END
+
+IDD_FPP_NUMBER DIALOGEX 0, 0, 195, 49
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "数量设置",IDC_STATIC,2,0,190,47,WS_GROUP
+    LTEXT           "最小值(&M):",IDC_STATIC,10,12,35,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_MINSIZE,47,10,91,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_MIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,130,9,10,14
+    LTEXT           "最大值(&X):",IDC_STATIC,10,31,35,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_MAXSIZE,47,29,91,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_MAX,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,130,28,10,14
+    LTEXT           "单位(&U):",IDC_STATIC,146,11,28,8
+    COMBOBOX        IDC_COMBO_UNITS,146,22,40,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FPP_TEXT DIALOGEX 0, 0, 195, 49
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "文本设置",-1,2,0,190,47,WS_GROUP
+    LTEXT           "查找(&F):",-1,7,17,27,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_FINDTXT,36,15,151,12,ES_AUTOHSCROLL
+    CONTROL         "逐字(&V)",IDC_CHECK_VERBA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,36,30,40,10
+    CONTROL         "正则表达式(&R)",IDC_CHECK_REGEXP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,30,61,10
+END
+
+IDD_FILTEREDIT_DLG DIALOGEX 0, 0, 195, 140
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "规则定义"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "属性与描述(&P):",IDC_STATIC,5,9,48,8
+    COMBOBOX        IDC_COMBO_PROPERTIES,4,21,105,112,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_STATIC_DESCRIPTION,113,5,77,35,SS_SUNKEN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,2,42,190,47
+    GROUPBOX        "布尔值(逻辑关系)",IDC_STATIC,7,100,108,33
+    CONTROL         "与(&A)",IDC_RADIO_AND,"Button",BS_AUTORADIOBUTTON | WS_GROUP,11,115,30,10
+    CONTROL         "或(&O)",IDC_RADIO_OR,"Button",BS_AUTORADIOBUTTON,47,115,30,10
+    CONTROL         "非(&N)",IDC_RADIO_NOT,"Button",BS_AUTORADIOBUTTON,82,115,30,10
+    DEFPUSHBUTTON   "确定",IDOK,138,100,50,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,138,119,50,14
+END
+
+IDD_TOUCHATTR_DLG DIALOGEX 0, 0, 206, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_NOFAILCREATE | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "改变属性"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "修改日期(&M):",IDC_STATIC,7,9,42,8
+    CONTROL         "",IDC_DATE_MODIFIED,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,54,7,59,13
+    CONTROL         "",IDC_TIME_MODIFIED,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,115,7,52,13
+    PUSHBUTTON      "当前",IDC_BUTTON_MODNOW,171,7,28,13
+    LTEXT           "创建日期(&C):",IDC_STATIC,7,29,42,8
+    CONTROL         "",IDC_DATE_CREATED,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,54,27,59,13
+    CONTROL         "",IDC_TIME_CREATED,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,115,27,52,13
+    PUSHBUTTON      "当前",IDC_BUTTON_CRNOW,171,27,28,13
+    CONTROL         "赋予所有人完整的读取/写入权限(&G)",IDC_CHECK_SECURITY,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,16,48,126,10
+    GROUPBOX        "属性",IDC_STATIC,7,63,119,42,WS_GROUP
+    CONTROL         "存档(&A)",IDC_CHECK_ARCHIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,75,40,10
+    CONTROL         "只读(&R)",IDC_CHECK_READONLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,89,40,10
+    CONTROL         "隐藏(&H)",IDC_CHECK_HIDDEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,73,75,40,10
+    CONTROL         "系统(&S)",IDC_CHECK_SYSTEM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,73,89,40,10
+    DEFPUSHBUTTON   "确定",IDOK,149,70,50,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,149,91,50,14
+END
+
+IDD_COPYTO_DLG DIALOGEX 0, 0, 247, 179
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "到目标文件夹"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    CONTROL         "这里(&H)",IDC_RADIO_HERE,"Button",BS_AUTORADIOBUTTON,8,46,36,10
+    COMBOBOX        IDC_COMBO_TARGET,49,44,172,78,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_DOTS,227,44,13,12
+    CONTROL         "标签(&T)",IDC_RADIO_TAB,"Button",BS_AUTORADIOBUTTON,8,65,36,10
+    COMBOBOX        IDC_COMBO_TABS,49,64,172,79,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "过滤器(&F)",IDC_STATIC,7,86,233,31
+    CONTROL         "",IDC_CHECK_USEFILTER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,99,8,8
+    COMBOBOX        IDC_COMBO_EXIFILTER,23,97,149,88,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "定义(&D)",IDC_BUTTON_NEWFILTR,181,96,50,14
+    GROUPBOX        "选项(&I)",IDC_STATIC,7,120,233,31
+    COMBOBOX        IDC_COMBO_CPPRESET,14,131,158,88,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "选项(&P)",IDC_BUTTON_OPTIONS,181,130,50,14
+    CONTROL         "使用队列(&U)",IDC_BUTTON_QUEUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,160,54,10
+    DEFPUSHBUTTON   "确定",IDOK,131,158,50,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,190,158,50,14
+    CONTROL         "另一面板(&O)",IDC_RADIO_OPPOSITE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,8,25,54,10
+    EDITTEXT        IDC_OTHER_PANE,75,24,165,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           " %d 个选定项目到:",IDC_LABEL,16,9,128,8
+END
+
+IDD_DUPEWIZARD_DLG DIALOGEX 0, 0, 147, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "重复项检测"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "比较基准:",-1,7,4,133,59,WS_GROUP
+    CONTROL         "名称(&N)",IDC_CHECK_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,16,40,10
+    CONTROL         "大小(&S)",IDC_CHECK_SIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,91,16,40,10
+    CONTROL         "修改日期(&M)",IDC_CHECK_MDATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,29,54,10
+    CONTROL         "内容(&C)",IDC_CHECK_CONTENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,91,29,41,10
+    CONTROL         "",IDC_CHECK_METADATA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,44,8,8
+    COMBOBOX        IDC_COMBO_COLUMN,25,42,108,84,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "选择全部重复项(&D)",IDC_CHECK_SELECTEM,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,30,72,88,10
+    DEFPUSHBUTTON   "确定",IDOK,31,89,50,14
+    PUSHBUTTON      "取消",IDCANCEL,90,89,50,14
+END
+
+IDD_GENERICLOG_DLG DIALOG 0, 0, 358, 177
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "Courier New"
+BEGIN
+    EDITTEXT        IDC_EDIT,2,2,354,173,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_OPTFRAME_PDLG DIALOG 0, 0, 250, 218
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "窗口"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "视图面板",IDC_STATIC,7,3,236,90,WS_GROUP
+    CONTROL         "单击转至前端(&S)",IDC_CHK_1CLICKLIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,12,85,10
+    CONTROL         "详情模式显示网格线(&G)",IDC_CHK_GRIDLIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,12,102,10
+    CONTROL         "项目使用信息提示(&I)",IDC_CHK_TIPLIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,23,97,10
+    CONTROL         "整行选择(&R)",IDC_CHK_FULLROWSEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,23,70,10
+    CONTROL         "允许慢速双击来重命名项目(&D)",IDC_CHECK_CLKRENAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,34,109,10
+    CONTROL         "悬停选择(&Q)",IDC_CHECK_TRACKSEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,34,54,10
+    CONTROL         "移动/复制等操作之后自动重新排序内容(&E)",IDC_AUTOSORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,45,213,10
+    CONTROL         "高亮显示主要排序列(&P) (XP 或更新操作系统)",IDC_CHECK_SORTCOL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,56,185,10
+    RTEXT           "列最大列表宽度(&M):",IDC_STATIC,21,68,67,8,NOT WS_GROUP
+    EDITTEXT        IDC_MAXWIDTH,90,67,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "文件夹排序(&T):",IDC_STATIC,126,68,53,8
+    COMBOBOX        IDC_COMBO_DIRSORT,181,66,55,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "双面板排列 (平铺):",IDC_STATIC,24,80,70,8,NOT WS_GROUP
+    CONTROL         "横向(&H)",IDC_TILE_HORZ,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,99,80,39,10
+    CONTROL         "纵向(&V)",IDC_TILE_VERT,"Button",BS_AUTORADIOBUTTON,143,80,37,10
+    GROUPBOX        "目录树",IDC_STATIC,7,96,236,56,WS_GROUP
+    CONTROL         "单击即可改变文件夹并自动前端显示(&C)",IDC_CHK_1CLICKTREE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,105,186,10
+    CONTROL         "焦点自动转移到前端显示的视图(&F)",IDC_CHK_FOKOSTREE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,116,175,10
+    CONTROL         "在某个节点上悬停时自动展开分支(&A)",IDC_CHK_HOVERTREE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,127,196,10
+    CONTROL         "在当前视图面板文件夹保持同步(&Z)",IDC_CHECK_TREESYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,138,168,10
+    GROUPBOX        "快速查看器",IDC_STATIC,7,155,236,35,WS_GROUP
+    LTEXT           "预览文本大小(字节)(&B):",IDC_STATIC,13,165,78,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_TSIZE,95,164,51,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "标签宽度(&W):",IDC_STATIC,155,165,54,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_TABS,213,163,24,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "即时播放媒体文件(&L)",IDC_CHECK_AUTOPLAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,177,103,10
+    CONTROL         "不进行十六进制预览(&X)",IDC_CHECK_NOHEX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,132,177,104,10
+    PUSHBUTTON      "主字体(&O)...",IDC_BUTTON_FONT,7,197,50,14,WS_GROUP
+    LTEXT           "非活动背景色:",IDC_STATIC,66,200,45,9
+    PUSHBUTTON      "",IDC_BUTTON_IBGCOL,115,197,40,14
+    CONTROL         "纯文字菜单(&U)",IDC_CHECK_PLAINMEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,170,194,66,10
+    CONTROL         "对话框气泡帮助(&N)",IDC_CHECK_BALONI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,170,205,77,10
+END
+
+IDD_OPTGENERAL_PDLG DIALOGEX 0, 0, 250, 218
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "常规"
+FONT 8, "Verdana", 0, 0, 0x0
+BEGIN
+    CONTROL         "退出时保存程序状态到(&S):",IDC_SAVEONEXIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,111,10
+    COMBOBOX        IDC_COMBO_INILOC,124,5,119,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "显示隐藏文件和文件夹(&H)",IDC_SHOWHIDDEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,18,119,10
+    CONTROL         "显示网络文件夹的管理共享(&A)",IDC_CHECK_NETSHARE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,29,145,10
+    CONTROL         "按字节显示文件大小(&Z) (明确显示 kB/MB/GB)",IDC_CHECK_BYTES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,40,200,10
+    CONTROL         "警告和错误时鸣叫(&B)",IDC_CHECK_BEEP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,51,114,10
+    CONTROL         "忽略面板上的首次鼠标点击以防止误选(&E)",IDC_CHECK_EATCLIK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,62,186,10
+    CONTROL         "DOS 命令重定向输出到本机控制台窗口 (&C)",IDC_CHECK_CONSOLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,73,184,10
+    RTEXT           "下拉列表中保留的历史项目数(&Y):",IDC_STATIC,9,88,120,8,NOT WS_GROUP
+    EDITTEXT        IDC_NUMHISTORY,133,86,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "清除历史(&R)",IDC_BUTTON_CLEARHIST,187,85,56,14
+    RTEXT           "缩略图大小(像素)(&T):",IDC_STATIC,7,102,72,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_THUMBSIZE,81,100,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "项目图标(&I):",IDC_STATIC,127,102,43,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_ICONS,172,100,68,46,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "外部文本编辑器/查看器命令行",IDC_STATIC,7,118,236,46,WS_GROUP
+    RTEXT           "编辑器(&D):",IDC_STATIC,11,132,37,8,NOT WS_GROUP
+    EDITTEXT        IDC_EXTEDITORNAME,49,130,172,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_DOTS_EDITOR,224,130,13,12
+    RTEXT           "查看器(&V):",IDC_STATIC,11,149,37,8,NOT WS_GROUP
+    EDITTEXT        IDC_EXTVIEWERNAME,49,147,172,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_DOTS_VIEWER,224,147,13,12
+    GROUPBOX        "提取时的的文件大小字节限制... (0 表示无限)",IDC_STATIC,7,169,236,45,WS_GROUP
+    RTEXT           "信息提示(&F)",IDC_STATIC,11,183,47,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_INFOSIZE,60,181,47,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "缩略图(&U)",IDC_STATIC,22,199,35,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SIZEPIX,60,197,47,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "校验和列(&K)",IDC_STATIC,121,183,62,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SUMSIZE,185,181,47,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "ZIP/FTP 中的项目(&P)",IDC_STATIC,109,199,74,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_ZIPSIZE,185,197,47,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_MASSRENAME_DLG DIALOG 0, 0, 230, 182
+STYLE DS_SETFONT | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "批量重命名向导"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "模式(&M):",IDC_STATIC,7,9,29,8
+    COMBOBOX        IDC_COMBO_MODE,41,7,116,57,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "保留扩展名(&X)",IDC_CHECK_ONLYNAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,163,8,60,10
+    CONTROL         "正则式(&R)",IDC_CHECK_REGEXP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,29,57,11
+    RTEXT           "匹配内容(&W):",IDC_STATICWHAT,52,31,43,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_SRCMATCH,97,29,126,106,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "用于重命名目标的模板(&T):",IDC_STATIC,7,48,88,8
+    COMBOBOX        IDC_COMBO_RNTEMPL,97,46,126,106,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "特定令牌(&S):",IDC_STATIC,72,65,44,8
+    COMBOBOX        IDC_COMBO_TOKENS,121,63,102,88,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "预览(&P)",IDC_BUTTON_PREVIEW,7,63,50,14
+    PUSHBUTTON      "$-令牌帮助(&H)",IDC_BUTTON_HELP,7,161,57,14
+    PUSHBUTTON      "重命名(&R)",IDOK,101,161,61,14
+    PUSHBUTTON      "取消",IDCANCEL,173,161,50,14
+    CONTROL         "",IDC_EDIT_PREVIEW,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,85,216,65
+END
+
+IDD_FINDFILES_DLG DIALOGEX 0, 0, 235, 266
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查找文件或文件夹"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    RTEXT           "查找这里(&I):",-1,9,10,39,8
+    COMBOBOX        IDC_COMBO_WHERE,54,7,156,88,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_DOTS,214,7,13,12
+    LTEXT           "特定文件夹(&D):",-1,9,24,49,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_VIRTUALS,63,22,116,73,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "搜索子文件夹(&S)",IDC_CHECK_SUBFOLDERS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,38,67,10
+    CONTROL         "文档内容(&H)",IDC_CHECK_ZIPFOLDERS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,90,38,54,10
+    CONTROL         "深度优先(&G)",IDC_RADIO_DEPTH,"Button",BS_AUTORADIOBUTTON,31,51,54,10
+    CONTROL         "广度优先(&B)",IDC_RADIO_BREADTH,"Button",BS_AUTORADIOBUTTON,92,51,54,10
+    CONTROL         "使用搜索索引(&X)",IDC_CHECK_INDEX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,153,51,72,10
+    CONTROL         "本地搜索(&L)",IDC_CHECK_REFINE,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,168,38,53,10
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,64,227,1
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,68,228,170
+    PUSHBUTTON      "清除(&E)",IDC_BUTTON_CLEAR,7,243,50,14
+    DEFPUSHBUTTON   "确定",IDOK,113,243,50,14
+    PUSHBUTTON      "取消",IDCANCEL,177,243,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,237,227,1
+END
+
+IDD_MATCHRULE_DLG DIALOGEX 0, 0, 235, 198
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "依据规则标记项目"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,3,228,170
+    PUSHBUTTON      "清除(&E)",IDC_BUTTON_CLEAR,7,177,50,14
+    DEFPUSHBUTTON   "选择(&S)",IDOK,71,177,50,14
+    PUSHBUTTON      "取消选择(&U)",IDC_UNSELECT,125,177,50,14
+    PUSHBUTTON      "取消",IDCANCEL,179,177,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,171,227,1
+END
+
+IDD_TRYKS_DLG DIALOGEX 0, 0, 227, 158
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "每日提示"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    CONTROL         "每日显示提示(&S)",IDC_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,139,67,10
+    PUSHBUTTON      "下一提示(&N)",IDC_NEXT,108,137,50,14
+    DEFPUSHBUTTON   "关闭(&C)",IDOK,170,137,50,14
+    LTEXT           "",IDC_PLACEHOLDER,7,7,213,121
+END
+
+IDD_CUSTLIST_DLG DIALOGEX 0, 0, 298, 145
+STYLE DS_SETFONT | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "管理"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | LVS_NOSORTHEADER | WS_TABSTOP,7,19,284,101,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "确定",IDOK,178,124,50,14
+    PUSHBUTTON      "取消",IDCANCEL,241,124,50,14
+    LTEXT           "",IDC_TBPLACE,7,7,284,13,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_CUSTPROPS_DLG DIALOGEX 0, 0, 210, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "属性"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "名称(&N)",IDC_STATIC,24,11,25,8
+    EDITTEXT        IDC_EDIT_NAME,50,9,151,12,ES_AUTOHSCROLL
+    LTEXT           "描述(&D)",IDC_STATIC,24,31,25,8
+    EDITTEXT        IDC_EDIT_DESCR,51,30,152,28,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY
+    PUSHBUTTON      "信息(&I)",IDC_BUTTON_LINFO,16,47,30,11,WS_DISABLED
+    GROUPBOX        "图标(&O)",IDC_STATIC,7,65,196,40,WS_GROUP
+    ICON            "",IDC_STATICICON,13,77,20,20
+    COMBOBOX        IDC_COMBOICON,32,72,62,45,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_IPATH,32,88,167,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "键盘快捷键",IDC_STATIC,7,113,128,34,WS_GROUP
+    CONTROL         "&Ctrl",IDC_CHECK_CTRL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,127,28,10
+    CONTROL         "&Alt",IDC_CHECK_ALT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,43,127,25,10
+    CONTROL         "&Shift",IDC_CHECK_SHIFT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,127,31,10
+    COMBOBOX        IDC_COMBO_NUM,103,125,27,90,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,153,113,50,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,153,132,50,14
+END
+
+IDD_REGPROMPT_DLG DIALOG 0, 0, 283, 158
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "xplorer2 评估版"
+FONT 8, "Verdana"
+BEGIN
+    ICON            "",IDC_CUSTICON,7,7,20,20
+    LTEXT           "抱歉, 不过评估期确实期已满. 如果您想要继续使用该软件, 您必须购买一份许可并点击下面的按钮激活许可.",IDC_MESSAGE,35,7,241,28
+    LTEXT           "",IDC_MESSAGE2,33,36,117,8
+    LTEXT           "通过 TrialPay 您可以免费获取专业版. 找到并购买您喜欢的商品, 或许就能获得一个免费的 xplorer2 许可证. 点击下面的链接, 看看能否找到对您有用的信息",IDC_STATIC_WHITE,20,128,158,30
+    LTEXT           "http://zabkat.com/x2-trialpay.htm",IDC_STATIC_TPAY,189,125,71,25
+    CONTROL         "",IDC_STATIC_FONTO,"Static",SS_WHITERECT,0,121,283,37
+    DEFPUSHBUTTON   "我有解锁密钥(&H)",IDC_BUT_KEY,34,73,81,14
+    PUSHBUTTON      "请等待 %d 秒",IDOK,34,93,81,14,WS_DISABLED
+    PUSHBUTTON      "在线安全订购(&S)",IDC_BUTTON_BUY,34,53,81,14
+    CONTROL         217,IDC_STATIC_CARDS,"Static",SS_BITMAP,34,130,139,18
+    ICON            32515,IDC_STATIC_WARN,177,70,20,20
+    LTEXT           "您的许可证已过期!",IDC_STATIC_EXPIRED,197,75,66,14,SS_NOTIFY
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(CHEAPO)
+#if defined(APSTUDIO_INVOKED)
+IDD_ABOUTBOX$(CHEAPO) DIALOGEX 0, 0, 242, 121
+#else
+IDD_ABOUTBOX DIALOGEX 0, 0, 242, 121
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 xplorer2 免费版"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "升级到\n专业版",IDC_EMAIL,174,30,61,21,BS_MULTILINE
+    DEFPUSHBUTTON   "确定",IDOK,179,57,50,14
+    EDITTEXT        IDC_BUILD,72,14,89,12,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "有效提高您的海量文件管理效率\n\n版权所有(C) 2002-2020 ZABKAT\n保留所有权利",IDC_STATIC,11,34,149,34
+    ICON            128,IDC_STATICON,17,10,20,20
+    GROUPBOX        "",IDC_STATIC,7,3,158,82
+    LTEXT           "版本:",IDC_STATIC,41,16,18,8
+    LTEXT           "警告: 本计算机程序受著作权法和国际条约保护. 如未经授权而擅自复制或传播本程序, 将可能收到严厉的民事和刑事制裁.",IDC_WARNING,7,94,228,19
+    LTEXT           "仅对个人和学术使用免费",IDC_FREEMANS,45,72,80,8
+    LTEXT           "www.zabkat.com",IDC_ZABKAT,176,77,56,8
+    CTEXT           "您已经使用 x2\n %d 次",IDC_USECOUNT,174,6,60,18,SS_SUNKEN
+END
+#endif
+
+IDD_VISHFILTER_DLG DIALOGEX 0, 0, 235, 198
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "依据规则显示项目"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,3,228,170
+    PUSHBUTTON      "清除(&E)",IDC_BUTTON_CLEAR,7,177,50,14
+    DEFPUSHBUTTON   "过滤器(&F)",IDOK,119,177,50,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,179,177,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,171,227,1
+END
+
+IDD_CONFIRMALL_DLG DIALOGEX 0, 0, 238, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "消息",IDC_MESSAGE,7,7,224,45
+    PUSHBUTTON      "是(&Y)",IDYES,7,55,50,14
+    PUSHBUTTON      "全都是(&A)",IDIGNORE,7,74,50,14
+    PUSHBUTTON      "否(&N)",IDNO,181,55,50,14
+    PUSHBUTTON      "全都否(&O)",IDCANCEL,181,74,50,14
+    PUSHBUTTON      "取消(&C)",IDABORT,94,55,50,14
+    ICON            "",IDC_CUSTICON,110,71,20,20
+END
+
+IDD_COPYOPTIONS_DLG DIALOG 0, 0, 211, 274
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "传输选项"
+FONT 8, "Verdana"
+BEGIN
+    RTEXT           "预定义(&D):",IDC_STATIC,7,5,35,8
+    COMBOBOX        IDC_COMBO_CPSAVED,7,16,158,88,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "静默操作, 不需确认或显示错误报告(&S)",IDC_CHECK_SILENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,44,181,10
+    GROUPBOX        "覆盖现有对象",IDC_STATIC,7,58,197,47,WS_GROUP
+    CONTROL         "需要确认(&A)",IDC_RDOVR_ASK,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,11,69,74,10
+    CONTROL         "较新则覆盖, 否则跳过(&O)",IDC_RDOVR_NEWER,"Button",BS_AUTORADIOBUTTON,11,80,98,10
+    CONTROL         "重命名目标项(&G)",IDC_RDOVR_RENAME,"Button",BS_AUTORADIOBUTTON,11,91,87,10
+    CONTROL         "只读和系统文件总是需要确认(&R)",IDC_CHECK_READHID,"Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,110,67,88,19
+    CONTROL         "替换整个目标文件夹(&T)",IDC_CHECK_OVERFOLDERS,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,110,84,88,18
+    GROUPBOX        "出现错误时",IDC_STATIC,7,110,197,35,WS_GROUP
+    CONTROL         "报告并提示操作(&P)",IDC_RDERR_PROMPT,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,11,120,124,10
+    CONTROL         "记录错误并继续复制(&L)",IDC_RDERR_LOGIT,"Button",BS_AUTORADIOBUTTON,11,131,144,10
+    CONTROL         "开始传输之前计算文件总大小(&U)",IDC_CHECK_SIZEUPFRONT,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,7,150,169,10
+    CONTROL         "结束传输之后保持进程窗口打开(&K)",IDC_CHECK_WINDOWON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,161,177,10
+    CONTROL         "保留所有原始文件及文件夹日期(创建等)(&E)",IDC_CHECK_FIXDATES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,173,190,10
+    GROUPBOX        "复制选项",IDC_STATIC,7,188,197,46,WS_GROUP
+    CONTROL         "清除目标文件的只读属性(&C)",IDC_CHECK_CDRONLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,198,149,10
+    CONTROL         "清除源文件的存档属性(&H)",IDC_CHECK_ARCHIVEAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,209,154,10
+    CONTROL         "仅复制已存在于目标中的文件(&X)",IDC_CHECK_COPYEXIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,220,166,10
+    GROUPBOX        "任务优先级",IDC_STATIC,7,241,118,26,WS_GROUP
+    CONTROL         "标准(&N)",IDC_RDPRI_NORMAL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,11,251,40,10
+    CONTROL         "后台(&B)",IDC_RDPRI_BG,"Button",BS_AUTORADIOBUTTON,62,251,40,10
+    DEFPUSHBUTTON   "确定",IDOK,154,236,50,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,154,253,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,36,204,1
+    PUSHBUTTON      "保存(&V)",IDC_BUTTON_CPSAVE,168,15,36,14
+END
+
+IDD_COPYPROGRESS_DLG DIALOGEX 0, 0, 262, 126
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "增强型传送"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "",IDC_BUTTON_PAUSE,205,59,50,14
+    PUSHBUTTON      "取消",IDCANCEL,205,77,50,14
+    RTEXT           "从(&F):",IDC_STATIC,7,7,24,8
+    EDITTEXT        IDC_EDIT_CPFROM,34,6,221,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "到(&T):",IDC_STATIC,8,21,23,8
+    EDITTEXT        IDC_EDIT_CPTO,34,20,221,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "已传输文件(&S):",IDC_STATIC,12,88,70,8
+    EDITTEXT        IDC_EDIT_TOTFILES,86,87,65,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "传输速度(&R):",IDC_STATIC,12,74,70,8
+    EDITTEXT        IDC_EDIT_TOTBYTES,86,73,65,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "预计剩余时间(&E):",IDC_STATIC,12,60,70,8
+    EDITTEXT        IDC_EDIT_REMAINDER,86,59,65,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "错误日志(&L)",IDC_BUTTON_LOG,205,105,50,14
+    CONTROL         "传输结束后此窗口仍然打开(&K)",IDC_CHECK_WINDOWON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,109,146,10
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,41,248,10
+    LTEXT           "进度",IDC_STATICPLOT,155,59,45,40,SS_NOTIFY
+END
+
+IDD_OPT3RD_PDLG DIALOG 0, 0, 251, 218
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "高级"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "状态栏面板",IDC_STATIC,7,3,237,36,WS_GROUP
+    CONTROL         "显示合计文件夹大小(&S)",IDC_CHECK_STATDIR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,13,116,10
+    CONTROL         "显示磁盘剩余空间(&F)",IDC_CHECK_STATFREE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,147,13,93,10
+    CONTROL         "显示当前项目信息(&A)",IDC_CHECK_STATINFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,25,114,10
+    CONTROL         "显示项目索引(&I)",IDC_CHECK_IDXOFFSET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,147,26,78,10
+    CONTROL         "文件夹标签置顶(&T)",IDC_CHECK_TABSTOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,43,74,10
+    CONTROL         "和 2xExplorer 一样高亮显示活动面板的标题栏(&H) ",IDC_CHECK_2XMODE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,53,214,10
+    CONTROL         "按自然数排序(&N) (XP 或更新操作系统)",IDC_CHECK_XPSORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,63,184,10
+    CONTROL         "不锁定浏览过的文件夹(&L)",IDC_CHECK_NOCURDIR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,73,161,10
+    CONTROL         "自动计算子目录大小(&C)",IDC_CHECK_AUTOSUBDIR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,83,189,10
+    CONTROL         "提取定制的图标叠加层(&O) (比如用于 CVS)",IDC_CHECK_CVSOVERLAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,93,202,10
+    CONTROL         "快速预览面板停靠在右侧(&Q)",IDC_CHECK_QVDOCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,103,162,10
+    CONTROL         "在地址栏自动完成路径, 资源管理器风格(&E) ",IDC_CHECK_XPAUTOCOMP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,113,198,10
+    CONTROL         "用户界面友好的日期列信息(&U)",IDC_CHECK_INEXACTDATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,124,189,10
+    CONTROL         "克隆新布局之后关闭旧窗口(&W)",IDC_CHECK_CLOSECLONE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,134,172,10
+    CONTROL         "所有视图风格均显示列标题 (&Vista 或更新操作系统)",IDC_CHECK_VISTAHEADER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,144,213,10
+    CONTROL         "详细资料视图下自动调整名称列的大小(&M)",IDC_CHECK_AUTOCOLUMN1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,154,190,10
+    PUSHBUTTON      "撤销替换资源管理器(&X)",IDC_BUTTON_UNDOXR,157,199,87,14
+    CONTROL         "设置文件注释后保留修改日期(&P)",IDC_CHECK_COMDATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,164,183,10
+    PUSHBUTTON      "文件夹选项(&D)",IDC_BUTTON_CPOPTIONS,7,199,60,14
+    CONTROL         "使用扁平图标等风格以提高网络访问速度(&K)",IDC_CHECK_ECONOMYNET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,174,200,10
+    CONTROL         "在详情视图模式时直接编辑文件属性(&R)",IDC_CHECK_XLS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,184,187,10
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(CHEAPO)
+#if defined(APSTUDIO_INVOKED)
+IDD_ADPRO_DLG$(CHEAPO) DIALOGEX 0, 0, 243, 142
+#else
+IDD_ADPRO_DLG DIALOGEX 0, 0, 243, 142
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lite版本限制"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "今天就免费试用一下吧!",IDC_ZABKAT,85,59,106,11
+    DEFPUSHBUTTON   "版本比较",IDC_BUT_COMPFEAT,31,80,81,14
+    PUSHBUTTON      "确定",IDOK,185,80,50,14
+    ICON            "",IDC_CUSTICON,5,5,20,20
+    LTEXT           "该命令只在专业版中可用.\n\n如需发挥 xplorer2 的完整功能, 您必须升级. 专业版提供了很多有用的附加工具, 更易根据您的使用习惯进行定制, 同时您可以获得单独的客户支持. 当然它的价格您应该也可以接受!",IDC_STATIC,29,10,203,43
+    LTEXT           "通过 TrialPay 您可以免费获取专业版. 找到并购买您喜欢的商品, 或许就能获得一个免费的 xplorer2 许可证. 点击下面的链接, 看看能否找到对您有用的信息",IDC_STATIC_WHITE,7,110,158,30
+    LTEXT           "http://zabkat.com/x2-trialpay.htm",IDC_STATIC_TPAY,171,107,71,25
+    CONTROL         "",IDC_STATIC_FONTO,"Static",SS_WHITERECT,0,104,244,38
+END
+#endif
+
+IDD_FILTERPLAIN_DLG DIALOGEX 0, 0, 235, 198
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "定义定制的过滤器"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,3,228,170
+    PUSHBUTTON      "清除(&E)",IDC_BUTTON_CLEAR,7,177,50,14
+    DEFPUSHBUTTON   "确定",IDOK,119,177,50,14
+    PUSHBUTTON      "取消",IDCANCEL,179,177,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,171,227,1
+END
+
+IDD_GROUPRULE_DLG DIALOGEX 0, 0, 235, 222
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "分组成员规则"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "组名称(&G):",IDC_STATIC,15,8,35,8
+    EDITTEXT        IDC_EDIT_GRPNAME,61,6,160,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,25,228,170
+    PUSHBUTTON      "清除(&E)",IDC_BUTTON_CLEAR,7,200,50,14
+    DEFPUSHBUTTON   "确定",IDOK,119,200,50,14
+    PUSHBUTTON      "取消",IDCANCEL,179,200,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,193,227,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,23,227,1
+END
+
+IDD_CATEGORIZER_DLG DIALOGEX 0, 0, 235, 143
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自定义分类"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    RTEXT           "预定义(&P):",IDC_STATIC,14,10,34,8
+    COMBOBOX        IDC_CATEGORIZER_SAVED,58,8,154,88,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "分类(&C)",IDC_TBPLACE,7,27,221,13,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "",IDC_KAT_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_TABSTOP,7,40,221,77,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "清除(&E)",IDC_BUTTON_CLEAR,7,123,50,14
+    DEFPUSHBUTTON   "确定",IDOK,122,123,50,14
+    PUSHBUTTON      "取消",IDCANCEL,178,123,50,14
+END
+
+IDD_COLORRULE_DLG DIALOGEX 0, 0, 235, 262
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自定义文件类型的颜色"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "描述(&D):",IDC_STATIC,15,8,28,8
+    EDITTEXT        IDC_EDIT_COLRNAME,61,6,160,12,ES_AUTOHSCROLL
+    LTEXT           "文本颜色(&T):",IDC_STATIC,38,27,41,8
+    PUSHBUTTON      "",IDC_BUTTON_COLTEXT,83,24,50,14
+    LTEXT           "背景颜色(&B):",IDC_STATIC,38,44,41,8
+    PUSHBUTTON      "",IDC_BUTTON_COLBG,83,41,50,14
+    CONTROL         "粗体(&F)",IDC_CHECK_BOLD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,161,28,39,10
+    CONTROL         "斜体(&L)",IDC_CHECK_ITALIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,161,40,39,10
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,65,228,170
+    PUSHBUTTON      "清除(&E)",IDC_BUTTON_CLEAR,7,240,50,14
+    DEFPUSHBUTTON   "确定",IDOK,119,240,50,14
+    PUSHBUTTON      "取消",IDCANCEL,179,240,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,233,227,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,63,227,1
+END
+
+IDD_COLORENCODE_DLG DIALOGEX 0, 0, 235, 143
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自定义颜色编码"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "过滤器(&F)",IDC_TBPLACE,7,7,221,13,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "",IDC_COLENCODE_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_TABSTOP,7,20,221,96,WS_EX_CLIENTEDGE
+    CONTROL         "激活颜色编码(&A)",IDC_CHECK_CENCON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,126,67,10
+    DEFPUSHBUTTON   "确定",IDOK,122,123,50,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,178,123,50,14
+END
+
+IDD_ACCELEDIT_DLG DIALOGEX 0, 0, 247, 146
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "定制键盘布局"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "分类(&C):",IDC_STATIC,9,9,28,8
+    COMBOBOX        IDC_COMBO_CATEGORY,49,7,100,67,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LIST_COMMANDS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_AUTOARRANGE | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_TABSTOP,7,24,142,66,WS_EX_CLIENTEDGE
+    LTEXT           "当前按键(&U)",IDC_STATIC_CK,174,14,39,8
+    LISTBOX         IDC_LIST_KEYS,155,24,86,35,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "请按下新快捷键(&N):",IDC_STATIC,155,66,62,8,NOT WS_GROUP
+    CONTROL         "HotKey1",IDC_HOTKEY,"msctls_hotkey32",WS_BORDER | WS_TABSTOP,155,76,86,14
+    PUSHBUTTON      "赋值(&A)",IDC_BUT_ASSIGN,155,97,41,14
+    PUSHBUTTON      "删除(&R)",IDC_BUT_REMOVE,199,97,41,14
+    PUSHBUTTON      "全部重置(&S)",IDC_BUT_RESET,7,125,50,14
+    DEFPUSHBUTTON   "确定",IDOK,130,125,50,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,190,125,50,14
+    LTEXT           "",IDC_STATIC_DESCRIPTION,7,95,142,18,SS_NOPREFIX | SS_SUNKEN
+END
+
+IDD_RDELETE_DLG DIALOG 0, 0, 247, 167
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "确认删除"
+FONT 8, "Verdana"
+BEGIN
+    ICON            "",IDC_STATIC_DEL,7,7,20,20
+    LTEXT           "您将要永久删除 %d 个选定的项目...",IDC_LABEL,29,6,209,8
+    GROUPBOX        "选项(&I)",IDC_STATIC,7,32,233,43,WS_GROUP
+    CONTROL         "确认删除只读、云或系统文件(&R)",IDC_CHECK_READHID,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,13,42,132,10
+    CONTROL         "确认删除文件夹链接点(&J)",IDC_CHECK_JUNCTIONS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,52,126,10
+    CONTROL         "停止并报告任何错误(&E)",IDC_CHECK_ERRORS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,62,132,10
+    CONTROL         "静默操作； 不需确认或显示错误报告(&S)",IDC_CHECK_SILENT,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,13,79,188,10
+    CONTROL         "删除结束之前一直开着进程窗口(&K)",IDC_CHECK_WINDOWON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,89,190,10
+    GROUPBOX        "过滤器(&F)",IDC_STATIC,7,106,233,31
+    CONTROL         "",IDC_CHECK_USEFILTER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,119,8,8
+    COMBOBOX        IDC_COMBO_EXIFILTER,22,117,150,88,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "定义(&D)",IDC_BUTTON_NEWFILTR,181,116,50,14
+    CONTROL         "后台操作(&B)",IDC_RDPRI_BG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,148,54,10
+    DEFPUSHBUTTON   "删除",IDOK,131,146,50,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,190,146,50,14
+    LTEXT           "文件...",IDC_STATIC_FILENAME,32,17,201,15
+END
+
+IDD_RDELPROGRESS_FORM DIALOGEX 0, 0, 247, 87
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_STATICEDGE
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "删除(&D):",IDC_STATIC,7,9,28,8
+    EDITTEXT        IDC_EDIT_DELETING,38,7,202,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,28,234,10
+    RTEXT           "已删除文件(&F):",IDC_STATIC,7,54,60,8
+    EDITTEXT        IDC_EDIT_TOTFILES,70,52,38,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "队列中的工作(&J):",IDC_STATIC,5,68,62,8
+    EDITTEXT        IDC_EDIT_INQUEUE,70,68,38,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "暂停",IDC_BUTTON_PAUSE,190,49,50,14
+    PUSHBUTTON      "取消",IDCANCEL,190,66,50,14
+END
+
+IDD_SEARCHCMD_DLG DIALOGEX 0, 0, 213, 141
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "命令查找器"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "关键词(&K):",IDC_STATIC,7,8,35,8
+    EDITTEXT        IDC_EDIT_KEYWORDS,46,6,105,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_BOOL,158,6,48,43,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "匹配菜单命令(&M)",IDC_STATIC,5,25,203,87
+    CONTROL         "List2",IDC_LIST_MATCHING,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_AUTOARRANGE | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_TABSTOP,9,37,194,45,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "确定",IDOK,97,120,50,14
+    PUSHBUTTON      "取消",IDCANCEL,156,120,50,14
+    EDITTEXT        IDC_STATIC_DESCRIPTION,9,87,194,21,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_MAINDLG DIALOGEX 0, 0, 331, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "xplorer2 许可证管理工具"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "请粘贴或输入您的注册密钥(&P):",IDC_STATIC,7,49,96,8
+    EDITTEXT        IDC_EDIT_CODE,7,61,317,64,ES_MULTILINE | ES_AUTOVSCROLL
+    DEFPUSHBUTTON   "激活许可",IDOK,231,132,93,14
+    ICON            "",IDC_CUSTICON,7,7,20,20
+    LTEXT           "请打开您购买本软件后收到的邮件, 复制出密钥, 然后用 <Ctrl+V> 键或点击鼠标右键, 粘贴到下面的文本框中; 再点击 [激活] 按钮.",IDC_MESSAGE,32,10,292,28
+    LTEXT           "路径:",IDC_STATIC_PATH,8,134,18,8
+    EDITTEXT        IDC_EDIT_PATH,28,133,185,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "www.zabkat.com",IDC_ZABKAT,267,49,56,8
+END
+
+IDD_SETCOMMENT_DLG DIALOG 0, 0, 191, 103
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "管理注释(标记)"
+FONT 8, "Verdana"
+BEGIN
+    EDITTEXT        IDC_EDIT_TAGS,7,7,177,37,ES_MULTILINE | ES_AUTOVSCROLL
+    GROUPBOX        "多文件操作(&M)",IDC_STATIC,7,47,113,49,WS_GROUP
+    CONTROL         "替换(&R)",IDC_RADIO_REPLACE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,14,57,40,10
+    CONTROL         "增加标记(&A)",IDC_RADIO_APPEND,"Button",BS_AUTORADIOBUTTON,14,70,63,10
+    CONTROL         "移除标记(&T)",IDC_RADIO_REMOVE,"Button",BS_AUTORADIOBUTTON,14,83,63,10
+    DEFPUSHBUTTON   "确定",IDOK,134,60,50,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,134,82,50,14
+END
+
+IDD_FUZZYGROUP_DLG DIALOGEX 0, 0, 183, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "模糊分组 "
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "模糊因子(&F):",IDC_STATIC,19,31,44,8
+    EDITTEXT        IDC_EDIT_FUZZFACTOR,68,29,108,12,ES_AUTOHSCROLL
+    LTEXT           "在此列分组(&G):",IDC_STATIC,10,10,51,8
+    COMBOBOX        IDC_COMBO_COLUMN,68,7,108,84,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,69,52,50,14
+    PUSHBUTTON      "取消",IDCANCEL,126,52,50,14
+END
+
+IDD_FASTSEARCH_DLG DIALOGEX 0, 0, 187, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "快速搜索"
+FONT 8, "Verdana", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_FINDWHAT,7,7,173,12,ES_AUTOHSCROLL
+    GROUPBOX        "搜索于:",IDC_STATIC,7,24,114,75,WS_GROUP
+    CONTROL         "所有(&E)",IDC_CHECK_STAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,38,55,10
+    CONTROL         "文件名(&F)",IDC_CHECK_ITEMNAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,53,47,10
+    CONTROL         "内容(&C)",IDC_CHECK_INSIDE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,68,45,10
+    CONTROL         "注释(&O)",IDC_CHECK_COMMENTS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,66,53,41,10
+    CONTROL         "标签(&T)",IDC_CHECK_TAGS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,66,68,41,10
+    CONTROL         "",IDC_CHECK_METADATA2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,84,8,8
+    COMBOBOX        IDC_COMBO_COLUMN,21,82,92,84,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,130,61,50,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,130,84,50,14
+END
+
+IDD_FINDCTAG_DLG DIALOG 0, 0, 183, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "搜索颜色标签"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "",IDC_LIST_COLORS,"SysListView32",LVS_LIST | LVS_SHAREIMAGELISTS | LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,7,45,169,40
+    GROUPBOX        "搜索范围",IDC_STATIC,7,3,169,36,WS_GROUP
+    CONTROL         "搜索所有(&E)",IDC_RADIO_EVERYWHERE,"Button",BS_AUTORADIOBUTTON,10,14,80,10
+    CONTROL         "仅在当前文件夹搜索(&C)",IDC_RADIO_LOCALTAG,"Button",BS_AUTORADIOBUTTON,10,26,123,10
+    DEFPUSHBUTTON   "确定",IDOK,69,90,50,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,126,90,50,14
+END
+
+IDD_DETECTIVE_DLG DIALOGEX 0, 0, 271, 130
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "可编程列"
+FONT 8, "Verdana", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_EXPRESSION,5,34,260,46,ES_MULTILINE | ES_AUTOVSCROLL
+    LTEXT           "属性(&P)",IDC_STATIC,5,4,29,8
+    COMBOBOX        IDC_COMBO_COLUMN,5,14,97,82,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "操作符(&O)",IDC_STATIC,112,4,39,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_OPERATOR,112,14,73,47,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "功能(&F)",IDC_STATIC,194,4,28,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_FUNCTION,194,14,72,47,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "保存(&V)",IDC_BUTTON_SAVE,5,86,36,14
+    RTEXT           "预定义(&D):",IDC_STATIC,54,89,39,8
+    COMBOBOX        IDC_COMBO_SAVEDPROG,98,87,167,88,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,152,111,50,14
+    PUSHBUTTON      "取消",IDCANCEL,215,111,50,14
+    PUSHBUTTON      "预览(&P)",IDC_BUTTON_PREVIEW,5,111,50,14
+END
+
+IDD_MACRO_DLG DIALOG 0, 0, 315, 178
+STYLE DS_SETFONT | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "宏编辑器"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "命令(&C)",IDC_STATIC,7,8,35,8
+    COMBOBOX        IDC_COMBO_CMD,46,7,193,77,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "清除(&L)",IDC_BUTTON_CLEAN,270,6,38,14
+    EDITTEXT        IDC_EDIT_MACRO,7,22,301,129,ES_MULTILINE | ES_AUTOHSCROLL | ES_NOHIDESEL | ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "运行(&R)",IDC_BUTTON_RUN,7,157,50,14
+    PUSHBUTTON      "调试(&D)",IDC_BUTTON_DEBUG,69,156,50,14
+    PUSHBUTTON      "保存(&S)",IDC_SAVEMACRO,195,157,50,14
+    PUSHBUTTON      "取消",IDCANCEL,258,157,50,14,WS_GROUP
+END
+
+IDD_MACRORUN_DLG DIALOGEX 0, 0, 187, 113
+STYLE DS_SETFONT | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "运行宏"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "取消",IDCANCEL,130,30,50,14
+    EDITTEXT        IDC_EDIT_CODE,7,7,173,19,ES_MULTILINE | ES_AUTOHSCROLL | ES_NOHIDESEL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,30,118,14
+    LTEXT           "调试日志",IDC_STATIC_DBG,7,62,34,8
+    PUSHBUTTON      "逐步(&S)",IDC_BUTTON_STEP,68,54,50,14
+    EDITTEXT        IDC_EDIT_DBGLOG,7,73,173,33,ES_MULTILINE | ES_AUTOHSCROLL | ES_NOHIDESEL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+END
+
+IDD_MACROREC_DLG DIALOGEX 0, 0, 123, 28
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "录制宏..."
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "结束",IDOK,7,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,66,7,50,14
+END
+
+IDD_DUPEPICS_DLG DIALOGEX 0, 0, 130, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "分组相似图片"
+FONT 8, "Verdana", 0, 0, 0x0
+BEGIN
+    LTEXT           "相似性阈值(&S):",IDC_STATIC,13,56,53,8
+    EDITTEXT        IDC_EDIT_THRESHOLD,80,54,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "待处理照片排序:",IDC_STATIC,7,4,116,41,WS_GROUP
+    CONTROL         "文件名(&F)",IDC_RADIO_FILENAME,"Button",BS_AUTORADIOBUTTON,12,18,47,10
+    CONTROL         "日期(&D)",IDC_RADIO_FILEDATE,"Button",BS_AUTORADIOBUTTON,72,18,41,10
+    CONTROL         "与面板显示相同(&A)",IDC_RADIO_PREORDER,"Button",BS_AUTORADIOBUTTON,12,31,92,10
+    DEFPUSHBUTTON   "确定",IDOK,7,89,50,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,73,89,50,14
+    LTEXT           "图片类型:",IDC_STATIC,30,73,40,8
+    LTEXT           " *.JPG ",IDC_STATIC,80,72,24,11,SS_SUNKEN
+END
+
+IDD_DATECHANGE_DLG DIALOGEX 0, 0, 250, 92
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改日期"
+FONT 8, "Verdana", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_COMBO_FROMDATE,14,14,62,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "操作",IDC_STATIC,86,3,157,58
+    CONTROL         "设置等于(&E)",IDC_RADIO_DEQUAL,"Button",BS_AUTORADIOBUTTON,93,16,54,10
+    COMBOBOX        IDC_COMBO_COLUMN,150,15,88,84,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "或 调整(&S)",IDC_RADIO_DSHIFT,"Button",BS_AUTORADIOBUTTON,93,42,49,10
+    EDITTEXT        IDC_EDIT_SHIFTBY,150,41,35,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_PREVNUM,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,179,40,10,14
+    COMBOBOX        IDC_COMBO_DTUNIT,191,41,47,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,134,71,50,14
+    PUSHBUTTON      "取消",IDCANCEL,193,71,50,14
+    PUSHBUTTON      "接触日期(&T)...",IDC_BUTTON_TOUCH,13,71,64,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_TEXTINPUT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_NOTIFY_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_GREP_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_SCRIPTBUILD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_SYNCWIZARD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_SPLIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_BUILDSYNC_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_COLSELECT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_FILTER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_FPP_DATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_FPP_NUMBER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_FPP_TEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_FILTEREDIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_TOUCHATTR_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_COPYTO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_DUPEWIZARD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_GENERICLOG_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 356
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_OPTFRAME_PDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_OPTGENERAL_PDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_MASSRENAME_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_FINDFILES_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_MATCHRULE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_TRYKS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_CUSTLIST_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_CUSTPROPS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_REGPROMPT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+    END
+
+    IDD_VISHFILTER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_CONFIRMALL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_COPYOPTIONS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+
+    IDD_COPYPROGRESS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_OPT3RD_PDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_FILTERPLAIN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_CATEGORIZER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_COLORENCODE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_ACCELEDIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_RDELETE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_RDELPROGRESS_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_SEARCHCMD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_MAINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 324
+        TOPMARGIN, 7
+    END
+
+    IDD_SETCOMMENT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_FUZZYGROUP_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_FASTSEARCH_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_FINDCTAG_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_DETECTIVE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 265
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_MACRORUN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_MACROREC_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 116
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 21
+    END
+
+    IDD_DUPEPICS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 123
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_DATECHANGE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_WELCOME        HTML                    "res\\welcome_chsimp.htm"
+IDR_HTML_TUTOR          HTML                    "res\\html_tut_chsimp.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_STOCKCOL_TYPE       "类型"
+    IDS_STOCKCOL_PATH       "路径"
+    IDS_STOCKCOL_VERSION    "版本"
+    IDS_STOCKCOL_HLINKS     "链接"
+    IDS_STOCKCOL_CHECKSUM   "校验和"
+    IDS_STOCKCOL_VOLINFO    "介质"
+    IDS_STOCKCOL_83         "8.3 名称"
+    IDS_STOCKCOL_COMPRESSED "硬盘上的大小"
+    IDS_STOCKCOL_COMMENT    "注释"
+    IDS_STOCKCOL_SUBITEMS   "内容"
+    IDS_STOCKCOL_KEYWORDS   "关键词"
+    IDS_STOCKCOL_ADS        "流"
+    IDS_STOCKCOL_VERFIRMA   "公司"
+    IDS_STOCKCOL_VERCPRITE  "描述"
+    IDS_STOCKCOL_LINKTGT    "快捷方式"
+    IDS_STOCKCOL_SIGNED     "签名"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STOCKCOL_INFO       "信息提示"
+    IDS_STOCKCOL_MD5        "MD5 哈希"
+    IDS_STOCKCOL_PATHLEN    "字符"
+    IDS_STOCKCOL_STREAMS    "流名称"
+    IDS_STOCKCOL_GROUPID    "组ID"
+    IDS_STOCKCOL_COLORTAG   "颜色标签"
+    IDS_STOCKCOL_EXIFCX     "宽度"
+    IDS_STOCKCOL_EXIFCY     "高度"
+    IDS_STOCKCOL_EXIFDATE   "照片日期"
+    IDS_STOCKCOL_PROG1      "可编程"
+    IDS_STOCKCOL_BLUR       "模糊"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOOLS_COMPARESUBFOLDERS "执行一个 DOS 解析程序的令 (dir, ren, 等等)\nDOS (F10)"
+    ID_MARK_LIKETHIS        "用与选定项目相同的扩展名选择(标记)项目"
+    ID_MARK_LIKETHISUNSEL   "删除与选定项目相同的扩展名相同的项目"
+    ID_EDIT_QUEUESTATUS     "检查并管理传输队列\n队列"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_CHECK_STATINFO      "如果您已激活信息栏, 本项非必须"
+    IDC_CHECK_XPSORT        "例如. 文件1, 文件2, 文件10\n默认是 文件1, 文件10, 文件2"
+    IDC_CHECK_NOCURDIR      "删除文件夹更容易, 不过会影响 DOS 控制台\n(您必须在命令中指定完整路径)"
+    IDC_CHECK_AUTOSUBDIR    "(文件夹""大小""列)\n如果打开会显著占用资源!"
+    IDC_CHECK_FREEFORM      "只通过项目名称来比较项目,\n忽视它们在文件夹层级中的位置"
+    IDC_COMBO_SCENARIA      "用于典型同步情景的预置选项"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_RDPRI_BG            "操作较慢, 占用资源较少"
+    IDC_CHECK_CDRONLY       "从 CD-ROM 盘片中复制文件时比较有用"
+    IDC_BUTTON_PAUSE        "临时挂起文件传输\n点击续传即可继续"
+    IDC_BUTTON_QUEUE        "把这个传输放到队列中\n它将被按顺序处理, 每次一个"
+    IDC_CHECK_WINDOWON      "例如, 查看错误的详细资料和跳过文件"
+    IDC_CHECK_SIZEUPFRONT   "让剩余时间的估算更精确\n不过可能会造成传输启动延迟较大"
+    IDC_COMBO_PRECOLS       "在 [定制]  | 列 设置菜单下列出"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_FOPBOOTSTRAP    "尝试移动文件夹到其自身之下"
+    IDS_ERR_FOPDIRCREATE    "创建目标文件夹出错"
+    IDS_ERR_FOPDIRREAD      "文件夹不能被完整读取"
+    IDS_ERR_FOPCOPY         "文件复制失败"
+    IDS_ERR_FOPSTREAMLOST   "次要的数据流 (例如文件注释) 不能传送到目标项中"
+    IDS_ERR_FOPFREESPACE    "磁盘上没有足够的空间复制这个文件\n请插入新磁盘继续"
+    IDS_ERR_NTONLY          "Windows 9x 不支持这个命令"
+    IDS_ERR_OUTFILE         "写入到 %s 出错:"
+    IDS_ERR_NOBUNDLES       "当前选择项中没有封包文件"
+    IDS_ERR_CORRUPTBUN      "%1\n封包文件被损坏, 提取中断"
+    IDS_ERR_RESYNTAX        "正则表达式语法不正确"
+    IDS_ERR_NOQUEUE         "操作队列中没有项目"
+    IDS_ERR_CANTGROUP       "这个栏目列不能分组"
+    IDS_ERR_FOLDEREXISTS    "使用这个名称的项目已经存在, 请提供唯一的称"
+    IDS_ERR_CANTJUNCTION    "链接点功能只支持本地路径下的 NTFS 分区"
+    IDS_ERR_NOJUNCTION      "选择项不含任何文件夹链接点"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TABSETS_FIRST        "恢复这个文件夹组"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CUSTOMIZE_TABSETS_ADDNEW "当前的文件夹组(标签设置)添加到列表"
+    ID_CUSTOMIZE_TABSETS_ORGANIZE "重命名, 删除或重新安排文件夹组, 赋值快捷键"
+    ID_CUSTOMIZE_TABSETS_MORE "从完整列表中选择一个文件夹组"
+    ID_WINDOW_CLOSETAB      "关闭当前文件夹标签"
+    ID_WINDOW_CLOSEALLTABS  "关闭除了当前之外的全部文件夹标签"
+    ID_EDIT_DUPLICATEFILE   "在同一个文件夹为选定的项目创建一个 [复件]"
+    ID_ACTIONS_FOLDERSETTINGS_SUSPEND "临时忽略这个视图面板上的全部自定义的文件夹设置 (切换)"
+    ID_VIEW_AUTOFILTER      "只显示呈现在这个文件夹中的文件类型\n自动过滤器"
+    ID_QV_TABSWITCH         "在草稿和标准快速预览标签之间切换"
+    ID_ACTIONS_VIEWSTREAMS  "显示包含在选择项中全部交替数据流"
+    ID_ACTIONS_BUNDLETOGO   "打包全部 (选定的) 要传输的文件信息, 包含注释等等"
+    ID_ACTIONS_UNPACKBUNDLE "从一个现有的封包中恢复文件信息"
+    ID_VIEW_TOOLBARS_INFOBARS "显示或隐藏当前面板项目(文件)的详细资料信息栏"
+    ID_ACTIONS_EXPORTSETTINGS "程序设置导出为 .REG 文件, 以便在其它计算机上重现您的设置"
+END
+
+STRINGTABLE
+BEGIN
+    ID_HELP_UPGRADETOULTIMATE "升级到旗舰版, 提升您的xplorer2使用体验"
+    ID_DIRDATA_COPYTEXT     "文件夹层级资料复制为文本, 从当前选择项开始"
+    ID_TOOLS_FOLDERSTATISTICS "显示这个文件夹及其子目录的统计表\n统计 (Alt+D)"
+    ID_HELP_LASTERROR       "再次显示上一次的错误讯息"
+    ID_QUIKVIEW_NEXT        "从当前面板加载下一个文件"
+    ID_QUIKVIEW_PREVIOUS    "从当前面板加载上一个文件"
+    ID_VIEW_EQUALWIDTH      "在两个相同视图面板和一个大视图面板间切换"
+    ID_VIEW_VISUALFILTER_RULEBASED "只显示哪些属性匹配组合规则的项目\n过滤器 (Alt+H)"
+    ID_VIEW_VISUALFILTER_SAMEFILTER "非活动面板强制采用相同的可视过滤器"
+    ID_ACTIONS_IMPORTCLIPBOARD "插入剪贴板名称项目(每行一个路径)"
+    ID_FILE_NEWTAB          "在新标签下浏览关注的项目\n标签 (Ctrl+Ins)"
+    ID_VIEW_NEXTTAB         "切换到下一个视图标签"
+    ID_VIEW_PREVTAB         "切换到前一个视图标签"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_UNSELECT            "取消选择匹配您设定标准的全部项目"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MGS_SEECPLOG        "传输期间出现一些问题\n您想要查看日志吗?"
+    IDS_BUT_PAUSE           "暂停(&P)"
+    IDS_BUT_RESUME          "续传(&S)"
+    IDS_MSG_MOVEROF         "项目 '%s' 含有特定属性\n%s\n您确信您想要移除它吗?\n"
+    IDS_TIT_MOVEROF         "确认文件删除"
+    IDS_BUT_CLOSE           "关闭"
+    IDS_TIT_AFSLOG          "交替数据流信息"
+    IDS_HEADER_AFSLOG       "类型\t大小\t名称\t内容\r\n-------------------------------\r\n"
+    IDS_BUNDLE_TARGET       "封包名称"
+    IDS_BUNDLE_BUSY         "(ESC 即可中断) 正在封包数据流 %s..."
+    IDS_BUNDLE_TOTAL        "%d 个文件已封包 %s"
+    IDS_UNBUNDLE_BUSY       "(ESC 即可中断) 正在释放文件数据流 %s..."
+    IDS_MSG_DISKQUOTA       "目标磁盘看起来没有足够的剩余空间\n来传输选择项. 坚持要继续吗?"
+    IDS_MSG_IDENTEXIST      "识别符 '%1' 已经在使用了\n用当前的定义覆盖吗?"
+    IDS_UNBUNDLE_PROMPT     "释放到文件夹"
+    IDS_TIT_REGEXPORT       "设置文件名"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_DATE_FROM           "选中则对日期限制较低\n否则按较高的日期匹配要求来匹配全部文件 "
+    IDC_EDIT_MINSIZE        "数值范围的低端\n留空意味着用[少于]规则"
+    IDC_EDIT_MAXSIZE        "数值范围的高端\n留空意味着用[大于]规则"
+    IDC_EDIT_FINDTXT        "要在列文字中查找什么\n用逗号分隔多个关键词\n例如 ""+A, -H"" 对属性搜索而言是有效的"
+    IDC_COMBO_PROPERTIES    "属性符合文件夹列\n上箭头键可以自动填完名称"
+    IDC_RADIO_NOT           "只匹配那些不符合条件的项目"
+    IDC_BUTTON_CLEAR        "清空全部过滤条件"
+    IDC_CHECK_ZIPFOLDERS    "选中即可在慢速文件夹中搜索\n类似 zip 压缩包, FTP, 网络文件夹等等"
+    IDC_COMBO_VIRTUALS      "特定文件夹的搜索\n [查找] 字段可以包含排除通配符. 类似 ""-*temp*"""
+END
+
+STRINGTABLE
+BEGIN
+    IDC_BUTTON_EDIT         "生成脚本并加载它进行编辑\n如需执行, 双击 .BAT 文件"
+    IDC_BUTTON_WINEXEC      "只用于纯粹的 Windows 脚本\n不允许使用解释命令 (ren 等)"
+    IDC_COMBO_SPLITARGET    "文件拆开部分存放在哪个位置"
+    IDC_CHECK_FOLDERS       "只按名称比较文件夹"
+    IDC_COMBO_SAVED         "基于早先保存的过滤条件初始化字段\n或为当前的过滤器输入一个名称, 然后点击[保存到]按钮即可存储它\n或点击[清除后保存]来删除一个存储过的过滤条件"
+    IDC_DATE_TO             "选中即可启用日期的上限\n否则匹配符合下限的全部文件"
+    IDC_COMBO_STD           "用于标准目标媒体的固定大小"
+    IDC_BUTTON_BUY          "转到网站获取注册码"
+    IDC_EDIT_CODE           "输入您通过注册邮件收到的注册码\n您可以从您的邮件中复制它, 然后用 Ctrl+V 把它粘贴到这里\n如果继续试用, 让这个字段留空即可"
+    IDC_BUTTON_LINFO        "如果可能, 显示用于这个项目的额外信息"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_CHECK_SYSTEM        "请不要修改这个属性\n除非您了解这样做的后果"
+    IDC_DATE_MODIFIED       "只在您选中复选框时才会修改日期/时间"
+    IDC_BUTTON_MODNOW       "文件的日期/时间设置为当前\n相当于 [轻触时间]"
+    IDC_RADIO_BREADTH       "如果您认为目标位于根目录下\n不太深人的位置, 则可以使用这种模式"
+    IDC_CHECK_SELECTEM      "适合在检测之后删除重复项目"
+    IDC_MAXWIDTH            "(像素); 只在列表视图模式有效"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_LISTRULES           "双击即可添加额外的规则\n文件中的全部栏目夹列都可以用作参数\n例如 大小, 日期, 注释, 属主等等"
+    IDC_CHECK_REFINE        "在以前的结果中搜索\n(项目被显示在当前的板中)"
+    IDC_DOTS                "浏览文件夹"
+    IDC_BUTTON_SAVE         "存储当前的过滤器或删除旧的"
+    IDC_BUT_KEY             "使用您购买的解锁密钥激活程序"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_COMBO_NUM           "为快捷键选择数值\n清除则可移除现有的快捷键"
+    IDC_EDIT_IPATH          "图标源文件的路径"
+    IDC_COMBO_DIRSORT       "对文件: 与文件混合\n分开: 总是先显示\n已混合: 按名称/扩展名分开并按大小混合等等\n文件之后: 文件夹放在最后"
+    IDC_CHECK_PLAINMEN      "精简窗口菜单的规模\n仅显示基本命令"
+    IDC_CHECK_BALONI        "对话框气泡提示的开关"
+    IDC_COMBO_ENCODING      "假定文本文件的编码不含 BOM"
+    IDC_CHECK_CONTENT       "如果只有内容被选中, 文件将按二进制方式比较\n虽慢但非常强大\n(能发现不同文件名的重复项目)"
+    IDC_COMBO_RNTEMPL       "名称使用了文本和特定符号的组合\n例如 ""$B.xxx"" 将把文件扩展名改为 xxx"
+    IDC_EXTEDITORNAME       "用于 F4 命令\n您可以选择包含自变量"
+    IDC_EXTVIEWERNAME       "当 editor2 呈现时使用它, 请按 <Ctrl+F3>"
+    IDC_EDIT_ZIPSIZE        "限制释放项目的内容\n如位于压缩文件夹, FTP 等"
+    IDC_COMBO_BATPLATE      "用 $-符号为选定项目撰写命令\n对于多个命令, 每个项目之间使用逗号分隔\n例如 copy $N $B.dat, del $N"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_LIST_AVAIL          "名称之后含有 [S] 的列比较快"
+    IDC_CHECK_TRACKSEL      "不兼容的粘滞选择项模式"
+    IDC_BUTTON_IBGCOL       "非活动浏览面板\n使用的背景颜色"
+    IDC_RDOVR_RENAME        "例如 file.txt 将被重命名为 file_1.txt\n全部文件都将被保留"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_RADIO_CONTENT       "逐个字节比较文件\n精确不过较慢"
+    IDC_RADIO_NAME          "如果名称匹配它们就 ""相同""\n(不再进行进一步检查)"
+    IDC_CHECK_UNDECIDABLE   "在它们的图标上有问号标记的这些项目"
+    IDC_COMBO_ESPECIAL      "插入特定字符, 保留字符或不可打印的字符\n$xx 用于搜索十六进制字符 xx"
+    IDC_EDIT_SIZE           "您希望拆分后的个文件部分多大?\n依据目标设备选择\n例如 1423 kB 适合软盘"
+    IDC_SHOWHIDDEN          "要查看所有隐藏文件, 请从 控制面板 > 文件夹选项 > 视图 清除'隐藏受保护的系统文件'\n勾选框"
+    IDC_COMBO_TOKENS        "$-令牌是用来替换选定文件名的一部分\n允许它们用在反复使用的模板上"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_COMBO_SAVEDPROG     "为表达式命名并点击 保存, 以便将来使用"
+    IDC_SAVEMACRO           "保存此宏以便将来使用"
+    IDC_BUTTON_DEBUG        "逐步运行宏来修复问题"
+    IDC_EDIT_THRESHOLD      "提高阈值以获得更高的图片相似性\n值 >200 只匹配相同图片"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_EDIT_TSIZE          "预览器只加载文件的一部分\n看到的越多, 加载就越慢"
+    IDC_CHECK_NOHEX         "选中它, 意味着您不想 [预览] \n可执行文件和其它二进制文件"
+    IDC_CHECK_VERBA         "禁用特定字符处理 (逗号和 $)\n严格按照键入的内容查找文本"
+    IDC_EDIT_NAME           "项目标识符, 用于菜单和工具栏\n它必须在它的组内是唯一的"
+    IDC_EDIT_DESCR          "书签: 文件夹路径\n用户命令: 想要执行 (以 > 或 $ 开始)\n对所有剩余的其他类型: 注释"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_CHECK_BINARY        "在 Word 文档, PDF 文档, 可执行文件和其它二进制文件内搜索\n会让搜索较慢"
+    IDC_CHECK_REGEXP        "用类似 [ab]*c 正则表达式搜索文件\n请查看手册了解详细资料"
+    IDC_COMBO_FIND          "要在文件中查找的文本\n多个关键词用逗号分隔\n开头加上 + 或 - 代表布尔值 AND/NOT\n(例如 ""+text, -exclude"")"
+    IDC_COMBO_WHERE         "搜索根目录\n允许用逗号分隔来添加多个路径和排除项目\n""c:\\, d:\\, -*temp*"" 是搜索磁盘 C 和 D, 同时排除名称中含有 ""temp"" 的文件夹"
+    IDC_COMBO_NAMED         "要匹配怎样的文件名\n部分名称和通配符都可以接受\n例如 ""*.cpp, *.h"""
+    IDC_BUTTON_PREVIEW      "在现有选择项中测试模板 \n如果您喜欢在实际命令执行之前先预览的话"
+    IDC_RADIO_MOD           "(也比较文件大小)\n非? ? 但并非 100% 可靠"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSG_TRIAL           "xplorer2 是一个 [购买前试用] 的应用程序, 可以在有限的时间内免费评估. 请购买许可权来解除全部限制, 包括这个呼吁注册的对话框."
+    IDS_MSG_TRIAL2          "评估期剩余天数: %d"
+    IDS_REG_TRIAL           "继续免费试用模式(&C)"
+    IDS_MSG_REGWELCOME      "注册码已经被接受.\n请妥善保管它, 您可能在寻求客户支持时需要用到它\n\n请不要发布这个注册码!\n把注册码传给其它人是违反您签订的许可协议的\n\n感谢您委托我们的软件对您的文件进行管理"
+    IDS_INFO_REGOPT         "还有更多 ""超常"" 的选项可以通过注册表编辑实现\n请参考registry.txt 了解更多信息"
+    IDS_INFO_DIRDATA        """%s"" [%s]: 子目录=%d, 文件=%d"
+    IDS_INFO_LFDATA         "%s 在 %d 个本地文件内"
+    IDS_HELP_MAINPDF        "\n\n主帮助文件较大并采用单独发布模式.\n您想要马上转到网站下载它吗?"
+    IDS_STATUS_FREE         "%s 剩余 (%d%%)"
+    IDS_MEMO_DIRTABNAME     "文件夹分组"
+    IDS_TIT_FILEREPLACE     "确认文件替换"
+    IDS_MSG_FILEXIST        "这个文件夹已经包含了一个名为 '%s' 的文件了\n\n您希望替换现有文件\n%s\n从而使用如下文件\n%s 吗\n"
+    IDS_MSG_COPYACTIVE      "某些后台操作还没有完成.\n不妨我们等它们完成?"
+    IDS_TIT_KOPYERLOG       "文件传输日志"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TBSHOW_FIRST         "显示或隐藏该工具栏"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TBCM_LABEL          "文本标签"
+    IDS_TBCM_CUSTOM         "定制..."
+    IDS_HFILT_DELETE        "您确信您想要从列表中删除这个过滤器吗?"
+    IDS_HFILT_OVERWRITE     "使用这个名称的过滤器已经定义;\n坚持要覆盖吗?"
+    IDS_MSG_LAYOUTREG       "布局信息不能在[退出时自动保存设置]关闭的情况下进行保存.\n现在保存设置吗? (自动保存将不会受到影响)"
+    IDS_MSG_THREADBUSY      "这个线程正忙于后台操作.\n关闭这个窗口可能导致无法预知的结果;\n坚持要继续吗?"
+    IDS_SPLIT_35            "3.5 英寸软盘"
+    IDS_SPLIT_CD            "CD-R 650"
+    IDS_SPLIT_CD2           "CD-R 700"
+    IDS_SPLIT_DVD           "DVD 4.5G"
+    IDS_SPLIT_RAPID         "快速共享"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CUSTOMIZE_KEYBOARDUSE "查看赋值和可用的键盘快捷键"
+    ID_MARK_ALLFOLDERS      "标记呈现为文件夹的全部项目"
+    ID_EDIT_CLEARSCREEN     "\n清除"
+    ID_TBCM_TEXTLABELS      "切换该工具栏的文本标签"
+    ID_VIEW_SORTBY          "改变项目的排列顺序\n排序"
+    ID_GOTO_SYSTEM          "转到一个特定系统文件夹\n系统 (Ctrl+Alt+F)"
+    ID_HELP_REGISTERPROGRAM "升级和/或获得一个无使用限制的专业版许可证\n注册"
+    ID_HELP_DONATE          "通过自愿捐献方式来支持这个程序的开发\n捐献"
+    ID_HELP_TELLAFRIEND     "把 xplorer2 推荐给您的朋友\n赞誉"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ACTIONS_CLEARLOG     "清除旧的进程和错误讯息"
+    ID_ACTIONS_SETFONT      "选择日志窗口的字体"
+    ID_HELP_COMMANDFINDER   "通过匹配关键词来定位菜单命令"
+    ID_CUSTOMIZE_USERCOMMANDS_ADDCURRENT "把当前选定的可执行程序添加为用户命令"
+    ID_GOTO_SPECIALFOLDERS_COMPATIBILITYFILES 
+                            "为解决老版本应用程序遗留问题服务的文件夹(vista 或更新操作系统)"
+    ID_VIEW_HORIZONTALTILES "左/右排列双面板(取消标记则变成上/下排列)"
+    ID_VIEW_TOGGLEHIDDEN    "切换 显示/隐藏 系统与隐藏文件"
+    ID_WINDOW_ADMINISTRATOR "启动提权了的 xplorer2 窗口来绕过 UAC 访问权限的困扰\n管理员"
+    ID_HELP_GETSUPPORT      "通过网络连接转到在线客户支持中心"
+    ID_HELP_CRASHINFORMATION "定位崩溃转储文件, 并作为电子邮件的附件发送给客户支持部门"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_CUSTMODIFIER    "您必须为快捷方式选取一个组合键, 例如 <Ctrl>"
+    IDS_ERR_INVALIDRKEY     "布局名称包含无效的字符或保留字符"
+    IDS_ERR_INCOMPATCOLS    "这个列设置与当前文件夹视图不兼容"
+    IDS_ERR_INCOMPATHFILT   "这个过滤器与这个搜索范围不协调\n它的某些规则符合其它文件夹类型"
+    IDS_ERR_HFILTNAME       "您必须为(要被添加或删除的)过滤器指定一个名称"
+    IDS_ERR_IDNAME          "标识符不能超过 %1!d! 个字符"
+    IDS_ERR_REGLIC          "许可证子系统严重错误 %d:%08x:%d%d%d\n\n*您有足够的权限来安装程序吗?\n(对 VISTA/7 可使用 ""以管理员身份运行"" 菜单)\n\n*您正确地输入了注册码了吗?\n\n如果问题仍未解决, 请向作者报告这个导致错误的注册码"
+    IDS_ERR_INVALIDRC       "这是一个无效的注册码;\n注册码是 ~200 个字符长度并只含大写字符和数字\n\n它可以很容易地从您收到的邮件中复制过来\n也可以右键把它粘贴到位"
+    IDS_ERR_FATALREG        "由于安装的问题,本程序将会结束\n您想向作者递交错误报告吗?"
+    IDS_ERR_INCOMPATDIRS    "相关的文件夹含有不兼容的列"
+    IDS_ERR_NOCLTEXT        "剪贴板中没有文本"
+    IDS_ERR_NOTAB           "创建新的浏览器标签失败"
+    IDS_ERR_NOTABGROUP      "至少两个标签才能定义一个组, 请使用文件 | 新建标签菜单"
+    IDS_ERR_FOPSOURCEREAD   "从源项目中读取出错"
+    IDS_ERR_FOPSOURCEONSELF "目标名称不能与源名称相同"
+    IDS_ERR_FOPSOURCEMISMATCH "尝试用文件覆盖文件夹或反向操作"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ASK_COLUMNCLSID     "这个列设置属于其它文件夹类型;\n坚持要应用它吗?"
+    IDS_DSM_ASFILE          "为文件"
+    IDS_DSM_BUNDLE          "分隔"
+    IDS_DSM_MIXED           "混合模式"
+    IDS_DSM_LAST            "文件后"
+    IDS_UNIT_1              "1"
+    IDS_UNIT_KILO           "千"
+    IDS_UNIT_MEGA           "兆"
+    IDS_UNIT_GIGA           "千兆"
+    IDS_TBCM_SMALL          "小图标"
+    IDS_TBCM_LOCK           "锁定工具栏"
+END
+
+STRINGTABLE
+BEGIN
+    ID_USERTOOL_FIRST       "执行此命令"
+END
+
+STRINGTABLE
+BEGIN
+    ID_COLUMNSET_FIRST      "恢复此项列设置"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TBCUST_FIRST         "添加或删除这个工具栏上的按钮 (右击它出现文本选项)"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CUSTOMIZE_TOOLBARS_ADDNEW "额外新增一个工具栏"
+    ID_CUSTOMIZE_TOOLBARS_ORGANIZE "重命名或删除额外新增的工具栏"
+    ID_CUSTOMIZE_COLUMNS_ADD "当前列设置添加到列表"
+    ID_CUSTOMIZE_COLUMNS_ORGANIZE "重命名, 删除或重新安排列设置, 赋值快捷键"
+    ID_CUSTOMIZE_COLUMNS_MORE "从完整列表中选择一个列设置"
+    ID_CUSTOMIZE_USERCOMMANDS_ADDNEW "添加一个命令模板到用户菜单"
+    ID_CUSTOMIZE_USERCOMMANDS_ORGANIZE "重命名, 删除或重新安排用户命令, 赋值快捷键"
+    ID_CUSTOMIZE_USERCOMMANDS_MORE "从完整列表中选择一个命令"
+    ID_WINDOW_SETACCELERATOR "赋值快捷键或删除窗口布局"
+    ID_WINDOW_MORE          "从其他保存的布局中克隆一个"
+END
+
+STRINGTABLE
+BEGIN
+    ID_BOOKMARKS_FIRST      "转到该文件夹"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_RTF_TIPPROLOG       "{\\rtf1\\ansi\\ansicpg936\\deff0\\deflang2057\\deflangfe2052{\\fonttbl{\\f0\\fswiss\\fprq2\\fcharset134 Verdana;}{\\f1\\fmodern\\fprq1\\fcharset0 Courier New;}}\n{\\colortbl ;\\red0\\green0\\blue255;\\red255\\green0\\blue0;}\n{\\*\\generator Msftedit 5.41.15.1507;}\\viewkind4\\uc1\\pard\\b\\f0\\fs26 Did you know...\\b0\\fs18\\par\\par\n"
+    IDS_MSG_SYNCTOUCHOK     "日期成功传输到目标文件夹"
+    IDS_MSG_LOADIDA         "加载项目... (按 ESC 取消)"
+    IDS_TOOLBAR             "工具栏"
+    IDS_MEMO_FAVNAME        "书签"
+    IDS_MEMO_UCOMNAME       "用户命令"
+    IDS_MEMO_CSETNAME       "列设置"
+    IDS_MEMO_FAVNAME2       "双书签"
+    IDS_STR_DESCRIPTION     "描述"
+    IDS_STR_ACCEL           "快捷方式"
+    IDS_STR_SELECT          "选择"
+    IDS_TITLE_ADDX          "增加 %s"
+    IDS_CUMSG_ACCELEXISTS   "该键盘快捷键已分配\n确定覆盖吗?"
+    IDS_TIT_ACCELLOG        "键盘分配"
+    IDS_ACLOG_AVAIL         "(免费)"
+    IDS_MSG_EXECUTING       "已执行: "
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOOLS_SEARCHSTATUS   "查看正在进行或已进行过的查找文件命令的日志"
+    ID_HELP_TIPOFTHEDAY     "让您最有效地进行软件探索历程的提示和技巧!\n提示"
+    ID_VIEW_RAWCONTENTS     "严格按照它存储在磁盘上的形式浏览虚拟文件夹 (绕过资源管理器)"
+    ID_MARK_SELECTION_COMBINE "按布尔值 AND 方式组合现有和保存的选择项"
+    ID_ACTIONS_SYNCTOUCH    "同步匹配项目的修改日期 (从当前到非活动面板)"
+    ID_VIEW_SELECTEDONLY    "隐藏所有未选择的项目"
+    ID_VIEW_SHOWALL         "取消全部可视过滤模式"
+    ID_VIEW_VIEWMODE        "修改活动面板风格\n视图 (Ctrl+Alt+V)"
+    ID_BOOKMARKS_ADD        "在书签列表中添加当前文件夹"
+    ID_BOOKMARKS_ORGANIZE   "重命名, 删除或重新排序双书签, 分配快捷键"
+    ID_BOOKMARKS_MORE       "从完整书签列表中选择一个文件夹"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FFLOG_FILTER        "过滤器详情\r\n匹配项目: %s\r\n"
+    IDS_FFLOG_FOLDERS       "文件夹, "
+    IDS_FFLOG_FILES         "文件"
+    IDS_FFLOG_WILDCARD      "名称通配符: %s\r\n"
+    IDS_FFLOG_ANDRULE       "[与] %s\r\n"
+    IDS_FFLOG_ORRULE        "[或] %s\r\n"
+    IDS_FFLOG_NOTRULE       "[非] %s\r\n"
+    IDS_FFLOG_GREP          "包含文本: %s\r\n"
+    IDS_FFLOG_TEXTOPT       "文本选项: %s\r\n"
+    IDS_FFLOG_CASE          "区分大小写, "
+    IDS_FFLOG_RE            "正则表达式, "
+    IDS_FFLOG_BIN           "所有文件"
+    IDS_FFLOG_FENCO         "强制编码: %s\r\n"
+    IDS_FFLOG_WORDS         "仅单词, "
+    IDS_FFLOG_SUMA          "%u 搜索的文件夹 总计\r\n"
+    IDS_FFLOG_BLAKLIST      " [已执行]\r\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSG_WNDREBOOT       "某些修改项将在您下次启动 xplorer2 时生效\n(您也许希望马上退出/重新启动后即刻生效)"
+    IDS_MSG_GENERROR        "!出错!"
+    IDS_MSG_RENPROGRESS     "正在重命名... (ESC 即可中断)"
+    IDS_TIT_SEARCHLOG       "查找文件日志"
+    IDS_FFLOG_FINITO        "\r\n搜索完成"
+    IDS_FFLOG_ONGOING       "\r\n搜索更多..."
+    IDS_FFLOG_ROOT          "在 %s 内搜索\r\n"
+    IDS_FFLOG_EXCLUDED      "排除文件夹: %s\r\n"
+    IDS_FFLOG_SUBDIRS       "子文件夹, "
+    IDS_FFLOG_ARCHIVE       "文档内容, "
+    IDS_FFLOG_BREADTH       "范围优先"
+    IDS_FFLOG_DEPTH         "深入优先"
+    IDS_FFLOG_FLAGS         "参数: %s\r\n"
+    IDS_FFLOG_PROLOG        "----------------\r\n已搜索的文件夹\r\n----------------\r\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSG_PRECPSIZE       "正在计算传输大小... (ESC 即可取消)"
+    IDS_TIT_CMDARG          "命令变量"
+    IDS_QVTAB_DRAFT         "草稿预览"
+    IDS_QVTAB_NORMAL        "标准"
+    IDS_SYSC_DIFFER         "不同"
+    IDS_SYSC_IDENTIC        "相同"
+    IDS_TITLE_TABREN        "标签名"
+    IDS_MI_NOFILTER         "全部文件(&A) (*)"
+    ID_MENU_TOPMOST         "顶端(&T)"
+    IDS_MEMO_TQUEUE         "已排队的传输"
+    IDS_FMT_QUEUEDESCR      "%s %d 个项目到 %s"
+    IDS_DRIVEBAR            "驱动器栏"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_NODUPECRITERIA  "您必须指定至少一个比较条件"
+    IDS_ERR_NODUPES         "没找到重复项目"
+    IDS_ERR_DESKINI         "访问 desktop.ini 文件时出现 I/O 错误"
+    IDS_ERR_SCRAPLOADMISSING "在 cida 文件中的某些项目不能定位\n您想要查看日志吗?"
+    IDS_ERR_ILLEGALRENCH    "名称模板中包含的字符对文件来说是非法的.\n重命名命令很可能因此失败; 坚持要继续吗?"
+    IDS_ERR_NOVARTEMPLATE   "您的称模板没有变量 ($-符号).\n全部文件将使用相同的目标名称来重命名; 坚持要继续吗?"
+    IDS_ERR_NOSEARCHLOG     "无信息可用"
+    IDS_ERR_NOSYNTOUMATCH   "在非活动面板中没找到匹配项目"
+    IDS_ERR_NOTREECMD       "这个命令对目录树面板不适用"
+    IDS_ERRDDV_NOCUST       "您必须在列表中至少保留一个项目"
+    IDS_ERR_DUPLNAME        "这个标识符已经存在, 请使用其它的"
+    IDS_ERR_CUSTNAME        " [名称] 字段不应该为空"
+    IDS_ERR_CUSTSHIFT       "<Shift> 其本身不是一个有效的快捷键\n请把它和 <Alt> 或/和 <Ctrl> 进行组合"
+    IDS_ERR_CUSTALT         "用于书签的快捷键不应该包含 <Alt> 键"
+    IDS_ERR_CUSTOVERFLOW    " 列表已满; 请删除一些不使用的项目"
+    IDS_ERR_CUSTDESCR       " [描述] 字段不应该留空"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_AUTOSIZECOLUMNS "调整列宽来适合全部项目 (按<Shift>键即可使用标题大小)"
+    ID_TOOLS_CHECKDUPLICATES "检查可能重复的项目并重组\n重复"
+    ID_QUIKVIEW_TEXTMODE    "预览器锁定为文本模式, 不含图形或声音"
+    ID_ACTIONS_FOLDERSETTINGS_SAVE "保存该文件夹的设置, 包含面板风格, 列和排序方式\n保存设置"
+    ID_ACTIONS_FOLDERSETTINGS_CLEAR "清除这个文件夹的全部存储设置"
+    ID_FILE_SENDTOSCRAP     "把选择项放在最近的虚拟文件夹窗口\n虚拟夹 (Ctrl+S)"
+    ID_VIEW_SETFONT         "隐藏全部未被选定的项目"
+    ID_CMDEDIT_FIND         "查找下一个\n查找 (Ctrl+F)"
+    ID_TOOLS_REVEALUNIQUE   "显示作为重复检查的结果而被隐藏的项目"
+    ID_TOOLS_OPTIONS        "配置程序和这个窗口的选项\n选项"
+    ID_FILE_MASSRENAME      "使用名称模板批量修改选定的文件名\n批量重命名"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSG_LINKRESOLVE     "正在解析链接... (按 ESC 取消)"
+    IDS_MSG_FOLDERSAVED     "文件夹设置已保存"
+    IDS_MSG_ADDED2SCRAP     "%d 个项目增加到 "
+    IDS_INFO_LOGDETAILS     "\r\n详细信息\r\n--------------------\r\n"
+    IDS_TIT_SCRAPERLOG      "缺少项目日志"
+    IDS_TIT_CMDFIND         "查找文本"
+    IDS_GREP_UNSELECTED     "未选择匹配(文本)规则的项目"
+    IDS_MSG_TREEPRINT       "活动分支已复制到粘贴板"
+    IDS_TIT_OPTIONS         "程序选项 [%s]"
+    IDS_DASEMPTY            "(空)"
+    IDS_ICON_NORMALLEN      "普通"
+    IDS_ICON_SIMPLE         "简单 (快速)"
+    IDS_ICON_PLAIN          "扁平 (最快)"
+    IDS_ICON_NONE           "无图标"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ACTIONS_SETCOMMENT   "如果可行, 就设置或编辑项目的注释\n注释 (Alt+Z)"
+    ID_GOTO_RECENTFOLDER    "在这个面板上最近浏览过的文件夹中选择"
+    ID_VIEW_HOLDAUTOREFRESH "临时挂起当前面板的自动刷新传感器, 适用于反应较慢或经常更改的文件夹"
+    ID_VIEW_HIDEFOLDERS     "隐藏当前面板的全部文件夹 (切换)"
+    ID_QUIKVIEW_ENCODING_WINDOWS "标准字符集"
+    ID_QUIKVIEW_ENCODING_OEM "初始设备制造厂商(EOM)的代码页"
+    ID_QUIKVIEW_ENCODING_UTF8 "多字节 unicode"
+    ID_QUIKVIEW_ENCODING_UNICODE "宽字符 unicode (16)"
+    ID_QUIKVIEW_ENCODING_CP "自定义代码页"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSG_SUSPENDAROFF    "自动刷新功能已启用"
+    IDS_CPMVTO_MOVE         "移动"
+    IDS_CPMVTO_COPY         "复制"
+    IDS_TIT_CPMVTGT         "选择目标文件夹"
+    IDS_ENC_DEFAULT         "缺省"
+    IDS_ENC_OEM             "OEM"
+    IDS_ENC_UTF8            "UTF-8"
+    IDS_ENC_UNICODE         "Unicode"
+    IDS_ENC_RAW             "Raw"
+    IDS_DUPESFOUND          "标识与分组的重复项目"
+    IDS_MSG_SAVEDSETTINGS   "设置已保存(退出时自动保存 %s)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FMT_INTLARGER       "%s 比 %u%c 大"
+    IDS_FMT_INTSMALLER      "%s 比 %u%c 小"
+    IDS_FMT_TEXTWITH        "%s 包含 ""%s"" (相似度=%d)"
+    IDS_MGS_SEARCHINGFILES  "(按 ESC 取消); 正在搜索 %s ..."
+    IDS_TIT_ROOTSEARCH      "现在开始搜索的文件夹"
+    IDS_TIT_LOCALDISK       "本地硬盘"
+    IDS_MIRRORSCR_OFF       "镜像滚屏已关闭"
+    IDS_MIRRORSCR_ON        "镜像滚屏已开启"
+    IDS_PREVIEW_MORE        "(...多于...)"
+    IDS_MSG_READINGFOLDER_ESC "正在读取文件夹内容... (按 ESC 取消)"
+    IDS_ACD_TITLE           "添加注释"
+    IDS_MSG_SUSPENDARON     "自动刷新功能已挂起"
+END
+
+STRINGTABLE
+BEGIN
+    ID_LTB_DOWN             "下移 (Ctrl+↓)"
+    ID_LTB_DUPLICATE        "复制项目"
+    ID_LTB_COPY             "复制文本 (Ctrl+C)"
+    ID_LTB_EDIT             "属性 (回车)"
+    ID_MARK_RULEBASED       "选择属性匹配组合规则的项目"
+    ID_GOTO_MIRRORSCROLLING "自动在非活动面板中滚屏以显示与选定项目匹配的项目"
+    ID_VIEW_QUICKVIEWER     "显示或隐藏快捷预览器面板\n预览 (Ctrl+Q)"
+    ID_QUIKVIEW_SELECTALL   "选择全部文本"
+    ID_QUIKVIEW_SETFONT     "为预览器选择字体"
+    ID_QUIKVIEW_WORDWRAP    "切换自动换行 开/关"
+    ID_QUIKVIEW_FINDNEXT    "查找下一个高亮显示的文字"
+    ID_QUIKVIEW_FIND        "查找面板中的文字"
+    ID_GOTO_DRIVE           "转到本地磁盘\n驱动器 (Alt+F1)"
+    ID_QUIKVIEW_COPY        "选择项或图像复制到剪贴板"
+    ID_GOTO_ROOT            "当前文件夹所在驱动器的根目录, 类似 C:\\"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MARK_SELECTION_UNSELECT "取消选择早先存储在选择项剪贴板中的全部项目"
+    ID_EDIT_PASTESPECIAL_FOLDERSTRUCTURE "粘贴全部内容, 及其子文件夹, 不含子文件夹中包含的内容"
+    ID_EDIT_PASTESPECIAL_STRUCTUREDSCRAPCLIPS "粘贴项目(源自虚拟文件夹), 重建源子文件夹结构"
+    ID_TOOLS_SUBFOLDERSIZE  "计算文件夹及其子目录占用空间的总大小\n测算 (Ctrl+D)"
+    ID_LTB_NEW              "新建 (Space)"
+    ID_LTB_DELETE           "删除 (Del)"
+    ID_LTB_UP               "上移 (Ctrl+↑)"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_SORTBY_UNSORTED "不排序项目；按原始顺序显示项目"
+    ID_VIEW_ARRANGEBY_PATH  "根据父文件夹路径排序"
+    ID_VIEW_SORTBY_OTHER    "按非标准列排序"
+    ID_VIEW_SORTBY_ASCENDING "从 [最小] 到 [最大] 升序排列"
+    ID_TOOLS_FREESPACE      "检查浏览过的磁盘的剩余空间, 必要时刷新视图\n空间"
+    ID_FILE_CHANGETYPE      "重命名某个项目, 包含其 DOS 扩展名"
+    ID_FILE_BROWSEFLAT      "为选定项(文件夹或 cida)打开一个虚拟文件夹并添加相关的全部内容 (按 <Ctrl> 可以重新打开一个现有的窗口)\n展开 (Shift+回车)"
+    ID_HELP_CHECKUPDATES    "转到网站了解是否有最新编译的程序"
+    ID_WINDOW_LIST          "列表被这个程序控制的全部窗口; 可随意在它们之间切换\n窗口 (Ctrl+W)"
+    ID_VIEW_SAVESETTINGSNOW "立刻保存当前的全部设置"
+    ID_EDIT_COPYSELECTION   "复制出现在当前面板中的选定项目的列文字 (可用来打印等等), 按 <Alt> 仅可以高亮显示列"
+    ID_MARK_SELECTION_STORE "记住选定项目以便将来使用"
+    ID_MARK_SELECTION_SELECT "选择早先存储在选择项剪贴板中的全部项目"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERRDDV_NOCOLUMNS    "您必须选定至少一个列"
+    IDS_ERR_NOFREESPACE     "这个命令只可用于文件系统文件夹"
+    IDS_ERR_NORENCOLUMN     "这个列不能恰当地重命名; 请先命名该列"
+    IDS_ERR_NOSELCLIP       "选择的剪贴板为空"
+    IDS_ERR_SECNOMATCH      "选择的剪贴板中没有匹配项目"
+    IDS_ERR_PSNODIRS        "粘贴的对象包含非文件夹"
+    IDS_ERR_PSWRITE         "粘贴特定目标时写入出错"
+    IDS_ERR_PSDESKTOP       "相关的文件夹结构不明确; 粘贴中断"
+    IDS_ERR_RULEINVALID     "用于规则的数据无效\n请检查日期和大小是否恰当"
+    IDS_ERRDDV_NOLOOKIN     "您必须指定从哪个文件夹开始搜索"
+    IDS_ERR_FILTERNOCON     "搜索过滤条件一定不能是完全无限的"
+    IDS_ERR_LOOKINFAULT     " [查找] 中指定的内容无效"
+    IDS_ERR_NOTFILESYSCMD   "这个命令只可用于文件系统项目"
+    IDS_ERR_ATTRIBUTEIO     "某些文件日期或属性不能设置"
+    IDS_ERR_NOCOMMENT       "某些项目不支持注释 (FAT 分区?); 或文件可能是只读属性的"
+    IDS_ERR_NOITEMSNODUPE   "首先您必须在想要比较的项目中填写一下 (例如使用展开路径命令)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSG_COPYCOLSOK      "选取列已复制到剪贴板"
+    IDS_MSG_SELCLIPOK       "当前选择项已存储"
+    IDS_MSG_ACTIVATESIZECOL "文件夹大小结果最好显示在大小列"
+    IDS_MSG_DIRSIZEPROGRESS "正在读取子目录... (ESC 即可中断)"
+    IDS_DTUNIT_MONTH        "月"
+    IDS_DTUNIT_DAY          "日"
+    IDS_DTUNIT_HOUR         "小时"
+    IDS_DTUNIT_MINS         "分"
+    IDS_DTUNIT_SEC          "秒"
+    IDS_DTUNIT_YEAR         "年"
+    IDS_FMT_PREVDATE        "%s 日期在最近 %u %s "
+    IDS_FMT_DATEWITHIN      "%s 日期介于 %s 到 %s 之间"
+    IDS_FMT_DATEAFTER       "%s 日期晚于 %s"
+    IDS_FMT_DATEBEFORE      "%s 日期早于 %s"
+    IDS_FMT_INTWITHIN       "%s 值从 %u%c 到 %u%c"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EST_IPATH           "非活动面板路径"
+    IDS_EST_IFOCUS          "非活动面板的焦点"
+    IDS_EST_IFULLPATH       "非活动焦点完整路径"
+    IDS_EST_ZIPTEMP         "已解压的 zip 文件夹文件"
+    IDS_EST_COMMA           "逗号(,)"
+    IDS_EST_COLUMN          "文件属性"
+    IDS_EST_RANGE           "字符范围"
+    IDS_FMT_FREESPACE       "剩余空间: "
+    IDS_FMT_SELRANGE        "项目 %d 下的范围"
+    IDS_TIT_RENAMEDOS       "新项目名称:"
+    IDS_MIRRORB_ON          "镜像浏览和卷屏打开"
+    IDS_MIRRORB_OFF         "镜像浏览和卷屏关闭"
+    IDS_SCRAP_UNTITLED      "无标题"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STOCKDESCR_EXIFDATE "照片拍摄日期(EXIF)"
+    IDS_STOCKDESCR_PROG1    "文件属性组合"
+    IDS_STOCKDESCR_BLUR     "照片模糊(质差概率)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EST_FILE            "文件名"
+    IDS_EST_BASE            "基准名"
+    IDS_EST_EXT             "扩展名"
+    IDS_EST_COUNTER         "自动计数器"
+    IDS_EST_DOLLAR          "美元符号($)"
+    IDS_EST_DATE            "修改日期"
+    IDS_EST_PARENT          "上一级文件夹"
+    IDS_EST_FOLDER          "文件夹路径"
+    IDS_EST_PATH            "完整路径"
+    IDS_EST_SEL             "全部选定的文件名"
+    IDS_EST_SELPATH         "全部选定的完整路径"
+    IDS_EST_LPATH           "左(上)面板路径"
+    IDS_EST_RPATH           "右(下)面板路径"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STOCKDESCR_COMMENT  "额外的用户信息"
+    IDS_STOCKDESCR_SUBITEMS "文件夹中直接子项目数量"
+    IDS_STOCKDESCR_KEYWORDS "有关文档的关键词"
+    IDS_STOCKDESCR_ADS      "交替数据流计数器"
+    IDS_STOCKDESCR_VERFIRMA "公司特有的相关二进制代码"
+    IDS_STOCKDESCR_VERCPRITE "模块扩展信息"
+    IDS_STOCKDESCR_LINKTGT  "与快捷方式相关的对象路径"
+    IDS_STOCKDESCR_SIGNED   "授权码数字签名"
+    IDS_STOCKDESCR_INFO     "扩展的文件类型特定信息"
+    IDS_STOCKDESCR_MD5      "数据完整性MD5 摘要"
+    IDS_STOCKDESCR_PATHLEN  "完整路径名字符长度"
+    IDS_STOCKDESCR_STREAMS  "文件命名流 (ADS)"
+    IDS_STOCKDESCR_GROUPID  "逻辑组标识符 (用于副本)"
+    IDS_STOCKDESCR_COLORTAG "颜色标签组索引"
+    IDS_STOCKDESCR_EXIFCX   "图片宽度(EXIF)"
+    IDS_STOCKDESCR_EXIFCY   "图片高度(EXIF)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STOCKDESCR_NAME     "显示名称"
+    IDS_STOCKDESCR_FULLNAME "实际文件名"
+    IDS_STOCKDESCR_EXTENSION "文件扩展名"
+    IDS_STOCKDESCR_SIZE     "文件大小"
+    IDS_STOCKDESCR_ATTRIBUTES "文件属性"
+    IDS_STOCKDESCR_MODIFIED "最后修改日期"
+    IDS_STOCKDESCR_CREATED  "创建日期"
+    IDS_STOCKDESCR_ACCESSED "最后访问日期"
+    IDS_STOCKDESCR_TYPE     "文件类型"
+    IDS_STOCKDESCR_PATH     "虚拟文件夹完整路径"
+    IDS_STOCKDESCR_VERSION  "可执行程序或 DLL 版本"
+    IDS_STOCKDESCR_HLINKS   "硬链接数"
+    IDS_STOCKDESCR_CHECKSUM "内容完整性校验"
+    IDS_STOCKDESCR_VOLINFO  "数据媒体信息"
+    IDS_STOCKDESCR_83       "DOS 8.3 名称"
+    IDS_STOCKDESCR_COMPRESSED "磁盘占用的实际大小 (包含已压缩/稀疏文件)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSG_SHREDWARNING    "您将要粉碎并消灭文件.\n无法恢复粉碎的项目.\n\n您确信要这样处理吗?"
+    IDS_MSG_SHREDDING       "正在粉碎... (ESC 即可中断)"
+    IDS_MSG_SHREDABORTED    "粉碎中断, 不过某些文件可能已被消灭"
+    IDS_OVERWRITE_QUESTION  "%s\n\n这个名称的文件已经存在; 坚持要覆盖它吗?"
+    IDS_SPLIT_CONFIRMTITLE  "拆分文件"
+    IDS_MSG_BOOKMARKSET     "书签设置成功."
+    IDS_SPLIT_PROMPT        "正在拆分...(ESC 即可中断)"
+    IDS_ASYNCMERGE          "选定文件的创建日期顺序不正确\n(请确保您已经适当地安排了它的顺序/分类)\n\n坚持合并处理吗?"
+    IDS_MERGE_TARGET        "合并目标名"
+    IDS_MERGE_PROMPT        "正在合并...(ESC 即可中断)"
+    IDS_CHKBLD_ALLOK        "全部目标都是最新的"
+    IDS_CHKBLD_NOMATCH      "没有项目匹配选定的源过滤器"
+END
+
+STRINGTABLE
+BEGIN
+    ID_HELP_CONTENTS        "完整操作手册"
+    ID_HELP_LICENCEAGREEMENT "阅读使用这个程序的条款和注意事项"
+    ID_HELP_CHANGES         "查看最新修改和添加的功能列表"
+    ID_GOTO_SAMEFOLDER      "强制非活动面板显示与当前面板相同的文件夹 (按 <Alt> 即可反向操作)\n强行同步"
+    ID_GOTO_SWAPPANES       "互换两个面板的内容"
+    ID_GOTO_SPECIALFOLDERS_MYPICTURES "包含您的数码相片"
+    ID_GOTO_SPECIALFOLDERS_MYMUSIC "包含您的音乐文件(MP3 等)"
+    ID_GOTO_DESKTOP         "名义上的根目录"
+    ID_GOTO_MEDOCS          "包含您的个人文件"
+    ID_GOTO_NETWORK         "网络上与您邻近的计算机"
+    ID_GOTO_KRAP            "包含已删除的文档"
+    ID_GOTO_CPANEL          "计算机设置"
+    ID_GOTO_MEKOMP          "本地和映射驱动器"
+    ID_GOTO_PRINTERS        "可供使用的打印机"
+    ID_GOTO_RECENTD         "包含您最近访问过的文档和文件夹"
+END
+
+STRINGTABLE
+BEGIN
+    ID_GOTO_STARTMENU       "呈现为开始菜单的文件夹"
+    ID_GOTO_STARTUP         "您每次登录时启动的程序"
+    ID_GOTO_CDBURNING       "等待刻录成 CD 的文件 (仅供 XP 或更新的操作系统)"
+    ID_GOTO_SENDTO          "出现在[发送到]右键菜单中的项目"
+    ID_BOOKMARKS_FAVORITES  "转到 IE浏览器中的收藏夹目录"
+    ID_TOOLS_FINDFILES      "查找匹配过滤条件的文件和文件夹\n查找 (Ctrl+F)"
+    ID_MARK_SYNCWIZARD      "用特制的选项同步面板"
+    ID_MARK_CHECKBUILD      "依据文件转换规则制作项目 (类似汇编)\n编译 (Ctrl+F12)"
+    ID_VIEW_SELECTCOLUMNS   "管理细节视图模式下的列\n列 (Alt+K)"
+    ID_MARK_SELECTRANGE     "在当前位置下选择一系列项目"
+    ID_VIEW_SORTBY_NAME     "按名称字母顺序排序"
+    ID_VIEW_SORTBY_SIZE     "按文件大小从小到大排序"
+    ID_VIEW_SORTBY_DATE     "按修改日期由今及古顺序排列"
+    ID_VIEW_SORTBY_TYPE     "按文件扩展名排序"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SYNC_NOMATCH        "没有项目匹配请求的同步掩码"
+    IDS_SYNC_DODGY          " (存在不确定项目)"
+    IDS_MSG_GREPROMPT       "正在扫描内容... (ESC 即可中断)"
+    IDS_GREP_NOMATCH        "没有项目匹配指定的 (文本) 规则"
+    IDS_GREP_FOUND          "选定了匹配 (文本) 规则的项目等待进一步操作"
+    IDS_TIT_CMDHISTORY      "选择一个命令:"
+    IDS_MSG_CMDTOKENS       "这些特定符号在命令模板中会被自动递交:\n\n$N\t文件名 (sample.txt)\n$B\t基础名 (sample)\n$E\t扩展名 (txt)\n$P\t路径 (c:\\folder)\n$D\t修改日期 (13/3/2004 10:12)\n$C\t上一级的纯名称 (folder)\n$F\t路径+文件 (c:\\folder\\sample.txt)\n$U\t完整 UNC 路径 (\\\\comp\\share\\folder\\sample.txt)\n$S\t全部选定的文件名\n$A\t全部选定的文件名 (完整路径)\n$L\t左(上)面板路径\n$R\t右(下)面板路径\n$I\t非活动面板路径\n$Q\t源自非活动面板的文件名 (other.txt)\n$G\t源自非活动面板的文件名+路径 (d:\\other.txt)\n$Z\t从压缩文件夹, FTP 等对象中释放出来的临时文件名\n$#\t自动增量计数的起始数字 #\n$?\t提示单一变量\n$$\t(Esc) 用于单一 $\n\n上面全部使用小写字母 (例如 $f) 兼容 8.3 文件/路径名\n\n${column_name} 插入列名称的内容;\n例如 ${size} 将用文件大小替换, ${name} 相当于 $N 等等"
+    IDS_MSG_BRANCHEXPAND    "正在展开全部分支... (ESC 即可中断)"
+    IDS_OFN_SAVEPROMPT      "修改项保存到 '%1' 吗?"
+    IDS_MSG_SYNCPROGRESS    "正在比较项目... (ESC 即可中断)"
+    IDS_ECF_EOL             "行尾"
+    IDS_ECF_TAB             "Tab"
+    IDS_ECF_CR              "回车"
+    IDS_ECF_LF              "换行"
+    IDS_ECF_SPACE           "空格"
+    IDS_ECF_COMMA           "逗号"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_VISUALFILTER    "依据提供的通配符, 切换项目可见性"
+    ID_GOTO_MIRRORBROWSING  "如果选中, 面板允许您对相关的文件夹层级相互追踪\n镜像 (Ctrl+M)"
+    ID_TOOLS_COMMANDSCRIPT  "创建一个脚本 (批处理文件), 应用在每个选定项目上的令模板\n脚本 (Ctrl+B)创建一个脚本 (批处理文件), 应用每个选定项目上的令模板\n脚本 (Ctrl+B)"
+    ID_EDIT_SYNCOPASTE      "强制深入同步结果, 选定项目复制到它们各自的目标文件夹"
+    ID_MARK_CONTAININGTEXT  "选择包含某些指定文字和字串的文件\n查找文本 (Ctrl+G)"
+    ID_TOOLS_RUNHISTORY     "从历史记录列表中选择一个命令来运行\n运行历史记录 (Ctrl+F10)"
+    ID_VIEW_NEXTPANE        "切换到非活动面板"
+    ID_FOCUSTO_TREE         "切换到目录树结构面板"
+    ID_FOCUSTO_ADDRESS      "切换到地址栏"
+    ID_FOCUSTO_QUICKVIEW    "切换到快速预览面板"
+    ID_FOCUSTO_MMFV         "切换到迷你面板"
+    ID_HELP_ALPHAINFO       "给初学者的 xplorer2 指南"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_NOFILTERMATCH   "没有项目匹配指定的过滤条件"
+    IDS_ERR_INTERRUPT       "读取出错或用户中断"
+    IDS_ERR_NOSYNCFOLDERS   "没找到同步匹配的文件夹; 您首先尝试了同步命令(例如按 F9)了吗?"
+    IDS_ERR_CMDSYNTAX       "请使用 $ 或 > 来指定命令类型或输入一个路径在列表中添加"
+    IDS_ERR_IOSCRIPT        "写入脚本文件期间 I/O 出错"
+    IDS_ERR_OUTOFMEM        "没有足够的内存完成请求的操作"
+    IDS_ERR_CMDTEMPL        "命令模板无效"
+    IDS_ERR_NOHELPFILE      "安装目录中没有文件 ""%s"""
+    IDS_ERR_SHREDIO         "写入错误, 粉碎被中断"
+    IDS_ERR_NOTFILE         "本操作需要一个文件对象"
+    IDS_ERR_SPLITIO         "I/O 错误或用户中断操作"
+    IDS_ERR_NOMERGE         "选定文件太少难以合并"
+    IDS_ERR_NOFOLDERTARGET  "目标文件夹无效"
+    IDS_ERRDDV_BUILDFROM    " [从] 字段不能为空"
+    IDS_ERRDDV_BUILDTO      " [到] 字段不能为空\n或包含通配符或(和)有 [.] 字符"
+    IDS_ERR_MACROEXEC       "发生错误, 宏停止执行 %1!d!%n行: %2!d!%n最后参数: %3"
+END
+
+STRINGTABLE
+BEGIN
+    ID_GOTO_FORWARD         "前进到列表中的下一个文件夹\n前进 (Alt+右箭头键)"
+    ID_GOTO_BOOKMARK        "转到较早标记书签的文件夹\n跳转 (Ctrl+F1)"
+    ID_GOTO_SETBOOKMARK     "给当前文件夹设置快速定位书签"
+    ID_GOTO_NEXTSELECTED    "跳转到下一个选定的项目"
+    ID_GOTO_PREVSELECTED    "跳转到上一个选定的项目"
+    ID_VIEW_DUALPANE        "切换单/双文件夹面板模式\n双面板 (Ctrl+O)"
+    ID_MARK_SYNCHRONIZEPANES "选择面板中的不同项目, 使用日期信息比较\n比较 (F9)"
+    ID_TOOLS_REPEATCOMMAND  "快速重复上次执行过的令"
+    ID_MARK_SELECTGROUP     "选择匹配过滤条件的项目"
+    ID_MARK_UNSELECTGROUP   "取消选择匹配过滤条件的项目"
+    ID_MARK_INVERTSELECTION "选定原先未选中的项目并反向把已选的取消选中"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MEDIA_USB           "USB 驱动器"
+    IDS_ADDRESSBAR          "地址栏"
+    IDS_TRANSLATION         "中文版本"
+    IDS_MSG_FOCUSWARP       "指针焦点已经到达最后一个项目"
+    IDS_SYNC_FILTERSON      "至少一个面板当前使用了视图过滤器;%n 同步可能会不完整.%n 坚持继续吗? "
+    IDS_SYNC_IDENTIFIED     "同步项已识别完成并选定了项目等待进一步操作"
+    IDS_SYNC_IDENTICAL      "两个文件夹的内容看起来相同"
+    IDS_MSG_NOCMDHISTORY    "命令历史记录为空"
+    IDS_SELECTFILTER        "选择过滤器"
+    IDS_UNSELECTFILTER      "取消选择过滤器"
+    IDS_VF_INSTRUCTIONS     "指定过滤条件 (例如 '*.cpp') 后按 <回车>"
+    IDS_VF_TITLE            "可视过滤器:"
+    IDS_MSG_READINGFOLDER   "正在读取文件夹内容..."
+    IDS_VF_FILESNOTSAVED    "当前可视过滤器 (或重复项检查器) 可能隐藏了某些项目;%n 这样的隐藏项目不会被保存; 坚持继续吗? "
+    IDS_FP_BFFTITLE         "选择要展开的文件夹"
+    IDS_FP_FLATTENINGMSG    "(ESC 即可中断); 正在展开文件夹 %d..."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_DIRSTATFRAME        "文件夹数据 -"
+    IDR_ROBUSTDELFRAME      "增强型删除"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_SCRAPFRAME          "虚拟文件夹 #"
+    IDR_CMDFRAME            "控制台2"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_NOMAINFRAME     "用于这个线程的主框架窗口不可用"
+    IDS_ERR_NOSCRAPFRAME    "不能创建虚拟文件夹"
+    IDS_ERR_EXTEDITVIEW     "不能启动编辑器/查看器; 请检查工具 | 选项中的令行"
+    IDS_ERR_CANTEXECUTE     "CPU 尝试结果证明它完好, 不过这个命令无可表达"
+    IDS_ERR_HLNOTFILESYS    "选择性粘贴命令需要文件系统源 (与 目标) 项目"
+    IDS_ERR_HLCANTLINK      "创建硬链接出错; 源 与 目标同样都是 NTFS 分区吗?"
+    IDS_ERR_HLUPONSELF      "不能在它的源文件夹中粘贴 (或链接) 项目"
+    IDS_ERR_HLBOOTSTRAP     "不能在其自身(及其子目录)中粘贴(或链接)文件夹"
+    IDS_ERR_MFVWRITEKAK     "写入文件内容出错"
+    IDS_ERR_MFVLOAD         "读取出错和(或)文件内容损坏"
+    IDS_ERR_MFVLOADPARTIAL  "某些项目不能被定位"
+    IDS_ERR_PIDLRANGE       "请求的路径在本地名义根目录之外"
+    IDS_ERR_FOLDERKAK       "很遗憾, 从 %1 读取失败"
+    IDS_ERR_DATASOURCE      "这个文件夹看起来不是一个有效的数据源"
+    IDS_ERR_DROPTARGET      "目标文件夹不接受这项文件操作"
+    IDS_ERR_INVALIDFILTER   "指定的过滤器无效"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_REMOVE          "移除这个面板中选定的项目 (真实文件不会被删除)\n移除 (Del)"
+    ID_PMRITEDRAG_INSERTHERE "在这个面板中插入项目"
+    ID_PMRITEDRAG_CANCEL    "取消本次右键拖放操作"
+    ID_ACTIONS_SPLIT        "选定文件拆分为较小的数据块\n拆分"
+    ID_ACTIONS_MERGEFILES   "选定的项目合并为单一文件 (按顺序显示在面板上)\n合并"
+    ID_MARK_ESPACESEL       "选择聚焦项目的选择状态"
+    ID_ACTIONS_SAVEAS       "用别的称保存内容"
+    ID_ACTIONS_WRITECONTENTS "当前面板的内容保存为一个文件以便稍后恢复\n保存 (Ctrl+S)"
+    ID_ACTIONS_LOADCONTENTS "打开早先写入的文件内容\n打开"
+    ID_ACTIONS_FLATTENPATH  "在此提取某个文件夹及其全部子目录 (或打开 cida 文件)"
+    ID_TOOLS_RUNCOMMAND     "启动任何 Windows(GUI) 程序\n运行"
+    ID_TOOLS_DOSCOMMAND     "执行一个 DOS 解析程序的令 (dir, ren, 等等)\nDOS (F10)"
+    ID_GOTO_BACK            "返回到以前浏览过的文件夹\n返回 (Alt+左箭头键)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSG_OPENWARN        "您确信您想要打开全部这些文件吗?"
+    IDS_MSG_MPVITEMSREMOVED "项目从视图中移除 (尽管仍存在与磁盘中)"
+    IDS_MSG_FILTERMAYHIDE   "当前的过滤条件可能隐藏了某些插入项目"
+    IDS_HL_CONFIRMTITLE     "硬链接"
+    IDS_HL_STATUSMSG        "正在进行选择性粘贴... (ESC 即可中断)"
+    IDS_SCRAPTITLE          "虚拟文件夹2 - "
+    IDS_MFV_WRITEOK         "面板内容保存成功"
+    IDS_COMMANDPROMPT       "Ctrl+箭头键/回车即可选择/提取名称; F1 用于完整名称; $ (脚本) 符号可接收; 按 <回车> 即可运行"
+    IDS_MEDIA_UNKNOWN       "(未知)"
+    IDS_MEDIA_FLOPPY        "可移动磁盘"
+    IDS_MEDIA_FIXED         "硬盘"
+    IDS_MEDIA_REMOTE        "网上邻居"
+    IDS_MEDIA_CD            "CDROM"
+    IDS_MEDIA_RAM           "闪存盘"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ACTIONS_SHRED        "彻底删除选定的项目,不可恢复\n粉碎"
+    ID_MARK_STICKYSELECTION "切换粘滞项目选择模式 (不受点击或按键影响)\n粘滞 (Alt+S)"
+    ID_MARK_UNSELECTALL     "取消选择全部项目"
+    ID_MARK_USEVISUALFILTER "切换通配符或基于规则过滤条件的开/关"
+    ID_MARK_INSERTSELECT    "选择当前项目并下移到后一个"
+    ID_VIEW_LOCATEINTREE    "定位在目录树结构中浏览过的文件夹\n目录树同步 (Alt+T)"
+    ID_VIEW_SHOWTREE        "显示或隐藏文件夹目录树结构面板\n目录树 (Ctrl+T)"
+    ID_WINDOW_SCRAPFRAME    "从不同的文件夹为临时占用的项目打开一个虚拟文件夹\n虚拟文件夹"
+    ID_ACTIONS_CHANGEATTRIBUTES "修改选定项目的日期和 DOS 属性\n属性 (Shift+F12)"
+    ID_FILE_PROPERTIES      "显示选定项目的属性\n属性 (F12)"
+    ID_FILE_BROWSE2         "打开选定项目 (默认操作)"
+    ID_FILE_CLONEBROWSE2    "选定的项目加载到常规的文件夹面板\n打开位置"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOPMOST              "置顶这个窗口(切换)"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_THUMBNAILS      "显示项目的预览图标\n缩略图"
+    ID_VIEW_PANESTYLE_MINITHUMBS "显示项目较小的预览图标"
+    ID_EDIT_COPYNAMES       "把选定项目的完整名称复制到剪贴板 (按 <Shift> 则是简短的 8.3 格式)"
+    ID_MARK_SELECTALL       "选择全部项目\n全选"
+    ID_FILE_VIEW            "按文本方式查看文件内容\n查看 (F3)"
+    ID_FILE_EDIT            "按文本方式编辑文件内容\n编辑 (F4)"
+    ID_EDIT_COPYPREVIEW     "项目的预览图复制为位图"
+    ID_FILE_DELETE          "选定的项目放到回收站 (按 <Shift> 即可永久删除)\n删除 (Del)"
+    ID_FILE_RENAME          "在相应的位置重命名选定的项目\n重命名 (F2)"
+    ID_EDIT_COPYTO          "选择项复制到其它文件夹 ( 按 <Alt> 键可以复制到上次操作的文件夹)\n复制到 (F5)"
+    ID_EDIT_MOVETO          "选择项移动到其它文件夹 ( 按 <Alt> 键可以移动到上次操作过的文件夹)\n移动到 (F6)"
+    ID_ACTIONS_NEWFILE      "新建一个空文档\n新建文件 (F7)"
+    ID_ACTIONS_NEWFOLDER    "新建一个文件夹\n新建文件夹 (F8)"
+    ID_EDIT_PASTELINK       "创建指向剪贴板内容的快捷方式"
+    ID_EDIT_FINDTARGET      "查找这个快捷方式指向的目标项目 (解析链接)"
+    ID_ACTIONS_PASTEHARDLINK "创建指向剪贴板内容的硬链接 (只支持 NTFS)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MEMO_REGNAME        "布局"
+    IDS_TITLE_ADDCOLSET     "列标题"
+    IDS_SIZE_FOLDER         "<文件夹>"
+    IDS_COLUMN_OFF          "<不可用>"
+    IDS_COLYMN_FILETYPE     "文件"
+    IDS_MSG_COPYNAMEOK      "选定的完整名称复制到剪贴板"
+    IDS_MSG_FOLDERBUSTED    "文件被重命名或删除; 正在切换到桌面"
+    IDS_MSG_REFRESHOK       "面板内容已成功刷新"
+    IDS_ASK_FOODATE         "并非所有选择的项目都有此日期属性\n您需要重选一个吗?"
+    IDS_ASK_RXTOKENS        "在正则表达式模式下 xplorer2 $-tokens 无法工作\n您确认要继续吗?"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STAT_EMPTYFOLDER    "清空面板"
+    IDS_STAT_FORMATTOTAL    "%u 个项目"
+    IDS_STAT_VIRTFOLDER     "名义扩展名"
+    IDS_STAT_THINGME        "虚拟项目"
+    IDS_STAT_FOLDER         "文件夹"
+    IDS_STAT_SHORTCUT       "链接"
+    IDS_MSG_PREVIEWCOPIED   "预览放在剪贴板中的图像"
+    IDS_NEW_FILE            "新建文件"
+    IDS_NEW_FOLDER          "新建文件夹"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STOCKCOL_NAME       "名称"
+    IDS_STOCKCOL_FULLNAME   "全名"
+    IDS_STOCKCOL_EXTENSION  "扩展名"
+    IDS_STOCKCOL_SIZE       "大小"
+    IDS_STOCKCOL_ATTRIBUTES "属性"
+    IDS_STOCKCOL_MODIFIED   "修改日期"
+    IDS_STOCKCOL_CREATED    "创建日期"
+    IDS_STOCKCOL_ACCESSED   "访问日期"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_NUMBOUNDS       "请输入 %1!d! 到 %2!d 中的一个数字!"
+    IDS_ERR_INVALIDINPUT    "CPU无法理解最近输入的含义"
+    IDS_ERR_PARTIALREAD     "某些项目无法访问(访问权限不足?)"
+    IDS_ERR_NOVISFILTER     "没有激活的虚拟过滤器"
+    IDS_ERR_NOCAPABILITY    "选择项不支持这个保留字"
+    IDS_ERR_NODRAGDROP      "选择项不能被拖动"
+    IDS_ERR_NOCLIPBOARD     "剪贴板不可访问"
+    IDS_ERR_REFRESHFAILED   "文件夹内容不能刷新; 请尝试退出后重试"
+    IDS_ERR_NOCONTENT       "不能访问选定项目的内容"
+    IDS_ERR_PASTEFAULT      "从剪贴板粘贴失败"
+    IDS_ERR_RENAMEFAULT     "因为某个原因或其它因素, 项目不能被重命名"
+    IDS_ERR_RENAMENIET      "项目不能重命名"
+    IDS_ERR_NOSHORTCUT      "这个命令需要选定一个快捷方式项目"
+    IDS_ERR_RESOLVELINK     "某些链接现在无法解析"
+    IDS_ERR_NOPREVIEW       "这个项目没有预览图"
+    IDS_ERR_CREATEFAULT     "创建新项目失败"
+END
+
+STRINGTABLE
+BEGIN
+    ID_REGDATA_FIRST        "在新窗口中用保存的布局浏览激活项目"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INFO_PANE            "文件: 1,999,999 B; 修改日期 31/01/2001 13:35:00"
+    ID_IOFFSET_PANE         "19999"
+    ID_SELECTION_PANE       "9999999: 999.234 MB"
+    ID_FILTRO_PANE          "F"
+    ID_HIDDEN_PANE          "H"
+    ID_FREESPACE_PANE       "100.9MB 剩余 (99%)"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_CLONE         "打开和这个一样的其他资源管理器窗口."
+    ID_FILE_TRASH           "永久删除选中项(不放入回收站) - 增强\n回收站 (Shift+Del)"
+    ID_WINDOW_SETREGKEY     "存储呈现的窗口布局和历史记录设置"
+    ID_FILE_BROWSE          "浏览文件夹或启动项目"
+    ID_FILE_CLONEBROWSE     "在新窗口中浏览当前选定的文件"
+    ID_FILE_UPALEVEL        "从当前文件夹向上一级浏览\n上一级 (Bksp)"
+    ID_VIEW_LARGEICONS      "用大图标显示项目"
+    ID_VIEW_SMALLICONS      "用小图标显示项目"
+    ID_VIEW_LIST            "列表显示项目"
+    ID_VIEW_DETAILS         "显示每个项目的详细信息\n详细"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_SCRESTORE       "还原窗口到正常大小"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_SCSIZE          "改变窗口大小"
+    ATL_IDS_SCMOVE          "改变窗口位置"
+    ATL_IDS_SCMINIMIZE      "将窗口缩为图标"
+    ATL_IDS_SCMAXIMIZE      "窗口最大化"
+    ATL_IDS_SCCLOSE         "关闭活动窗口"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏的虚拟文件夹"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏"
+    ID_VIEW_REFRESH         "刷新面板内容\n刷新 (Ctrl+R)"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_COPY            "复制选择项并把它放到剪贴板\n复制 (Ctrl+C)"
+    ID_EDIT_CUT             "剪切选择项并把它放到剪贴板\n剪切 (Ctrl+X)"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴 (Ctrl+V)"
+    ID_EDIT_REPEAT          "重复上次菜单命令"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息, 版本号和版权信息\n关于"
+    ID_APP_EXIT             "退出应用程序 (关闭全部打开的窗口)"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_CLOSE           "关闭这个窗口"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "xplorer2"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SBTIP_INFO          "活动项目信息"
+    IDS_SBTIP_OFFSET        "活动项目在列表中的索引"
+    IDS_SBTIP_SELECT        "选择信息"
+    IDS_SBTIP_FILTER        "虚拟过滤器指示器"
+    IDS_SBTIP_HIDDEN        "隐藏文件"
+    IDS_SBTIP_FREE          "硬盘剩余空间"
+    IDS_STR_LASTUSED        "(最近使用)"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_COMBO_EXIFILTER     "限制匹配过滤条件的文件操作\n输入一个通配符或从下拉式列表中选择一种过滤条件"
+    IDC_CHECK_ARCHIVEAT     "模拟文件备份"
+    IDC_EDIT_GRPNAME        "将在列表视图中按分组标题呈现"
+    IDC_KAT_LIST            "双击即可添加或编辑分组\n它们将按出现在这个列表中一样的顺序显示"
+    IDC_CATEGORIZER_SAVED   "自定义分组菜单下列出 | 自定义分组菜单"
+    IDC_COMBO_CPSAVED       "恢复先前保存的选项\n或为当前的选项输入一个名称后点击保存按钮"
+    IDC_COMBO_CPPRESET      "您早先已经定义和(或)保存的选项设置"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_PASTESPECIAL_MULTIPASTE "在全部选定的文件夹中插入剪贴板内容"
+    ID_VIEW_PANESTYLE_SHOWINGROUPS "按分类的属性分组窗口项目\n分组"
+    ID_MOVEITEM_DOWN        "当前列表项目下移(临时)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSG_DROPCOUNT       "已粘贴剪贴板共 %d 个项目"
+    IDS_MSG_DROPWARN        "您确信您想要放下全部这些项目吗?"
+    IDS_DATEFMT_HOUR        "一小时前"
+    IDS_DATEFMT_TODAY       "今天"
+    IDS_DATEFMT_YESTER      "昨天"
+    IDS_DATEFMT_WEEK        "这个星期"
+    IDS_DATEFMT_LASTWEEK    "上个星期"
+    IDS_DATEFMT_MONTH       "这个月"
+    IDS_DATEFMT_LASTMONTH   "上个月"
+    IDS_DATEFMT_YEAR        "今年"
+    IDS_DATEFMT_LASTYEAR    "去年"
+    IDS_DATEFMT_ANCIENT     "很久以前"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FMT_MKTOTAL         "总字节大小"
+    IDS_MSG_MKSIZE          "正在计算大小... (ESC 即可中断)"
+    IDS_GROUP_UNSPEC        "未指定"
+    IDS_SIZE_TINY           "微小"
+    IDS_SIZE_SMALL          "小"
+    IDS_SIZE_MEDIUM         "中"
+    IDS_SIZE_LARGE          "大"
+    IDS_SIZE_HUGE           "巨大"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MOVEITEM_UP          "当前列表项目上移(临时)"
+    ID_MARK_TOTALSIZE       "显示项目组合起来的大小, 近似值"
+    ID_MARK_CURRENTGROUP    "标记这个组的全部项目"
+    ID_UNMARK_CURRENTGROUP  "取消这个组全部项目的标记"
+    ID_MARK_QUICKSEARCH     "在含有文字的文件名, 栏目列或文件内容中选择项目"
+    ID_GOTO_NEXTGROUP       "跳转到下一组的开始"
+    ID_GOTO_PREVGROUP       "跳转到上一组的开始"
+    ID_EDIT_FOLDERJUNCTION_PASTE "在此创建一个指向剪贴板中文件夹的连接点\n文件夹连接点"
+    ID_EDIT_FOLDERJUNCTION_DELETE "在此创建一个指向剪贴板中文件夹的链接点"
+    ID_VIEW_ARRANGEBY_CUSTOMGROUPS "每个分类使用复杂的过滤器进行分组"
+    ID_CUSTOMIZE_CUSTOMGROUPS_ADDCURRENT "在列表中保c存当前视图分类"
+    ID_CUSTOMIZE_CUSTOMGROUPS_ORGANIZE "重命名, 删除或重新安排自定义分组, 赋值快捷键"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_QSEARCH_PROMPT      "输入您的短语并按 <回车> 即可搜索(<Shift+回车> 可以使用过滤器)"
+    IDS_JUNCTION_PRE        "链接到"
+    IDS_TIT_JUNCTION        "文件夹链接点名称"
+    IDS_JUNCTION_QUESTION   "您确信您想要删除如下链接点吗:\n%s"
+    IDS_ROBUSTNIE           "增强型操作只支持文件系统源文件夹和目标文件夹. 移动文件时目标必须是不同的磁盘卷(驱动器).\n\n这种传输将使用标准的 Windows 功能完成, 放弃全部高级选项或过滤条件."
+    IDS_MEMO_CATEGORY       "自定义分类"
+    IDS_COPT_OVERWRITE      "这个名称已经在使用了;\n坚持要覆盖它吗?"
+    IDS_COLB_AUTO           "自动"
+    IDS_COLB_MORE           "更多颜色..."
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_MRU_FILE        "打开此文档"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_GROUPNAME       "请为这个分组输入一个名称"
+    IDS_ERRDDV_NOKATS       "双击该框即可添加至少一个分类"
+    IDS_ERR_INCOMPATKATEG   "分类器不兼容当前的视图\n它的规则符合其它文件夹类型"
+    IDS_ERR_NOCUKATS        "请先使用视图|按菜单排序命令定义一些自定义分组"
+    IDS_ERR_NOOPTNAME       "请为这个选项设置输入一个名称"
+    IDS_ERR_OSETEXIST       "这个选项设置已经保存为 '%1'"
+    IDS_ERRDDV_TEXTATTR     "您必须指定一些独特的文本属性"
+    IDS_ERR_COLORCLASH      "文本和背景颜色应该不同"
+    IDS_ERR_TOOFUZZY        "您不能将通配符与模糊名称搜索组合使用"
+    IDS_ERR_NOSLASH         "您不能在标示符名称中使用反斜线符号(\\)"
+    IDS_ERR_HOTKEY          "保留或不可用的键盘快捷键\n请使用其它快捷键"
+    IDS_ERR_NONAMEDADS      "该项目没有所谓的次要流"
+    IDS_ERR_NOVISTA         "该功能需要运行在 Windows Vista 或更新版本"
+    IDS_ERR_VISTAUAC        "该命令被 UAC 阻止; 请以管理员身份运行"
+    IDS_ERR_NOCRASH         "该程序版本没有崩溃日志文件"
+    IDS_ERR_FOPDEL          "文件删除失败"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CUSTOMIZE_CUSTOMGROUPS_MORE "从完整列表中选取一个自定义分组"
+    ID_VIEW_LOCKVIEWER      "如果选中, 预览器将停止跟踪当前项目"
+    ID_VIEW_COLORCODING     "依据文件类型自定义其外观"
+    ID_MARK_LIKETHIS_BODY   "选择与聚焦项基准名一样的项目(标记)"
+    ID_MARK_LIKETHISUNSEL_BODY "取消选择与聚焦项基准名一样的项目(标记)"
+    ID_REPEAT_SHELLCMD      "重做上次外壳右键菜单命令"
+    ID_TBCM_LOCKBAR         "锁定工具栏大小和位置(切换)"
+    ID_TBCM_ICONS           "使用小/大工具栏图标(切换)"
+    ID_VIEW_MINISCRAP       "显示或隐藏临时项目保留区(拖放箱)\n迷你面板"
+    ID_ACTIONS_GETSUBFOLDERS "提取全部子文件夹 (非文件)"
+    ID_FILE_CLEAR           "清空所有面板上的全部内容"
+    ID_ADDRESSBAR_GO        "转到路径、执行、命令行等等\n操作(回车)"
+    ID_MARK_SELECTION_SHOW  "把选定的项目引入到视图"
+    ID_CUSTOMIZE_KEYBOARD   "键盘快捷方式改为菜单命令"
+    ID_ACTIONS_ADS_SPLITSTREAMS "从当前项目中提取次要数据流"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ADDRESSBAR_FILTER    "过滤器, 选择或搜索当前视图\n过滤器"
+    ID_EDIT_PASTESPECIAL_SYMBOLICLINK "创建控制在剪贴板中项目的符号链接 (仅供 Vista 或更新操作系统)"
+    ID_HELP_TRANSLATION     "切换英文版本打开/关闭"
+    ID_GOTO_DROPTARGET      "您最近拖放或粘贴过项目的文件夹"
+    ID_HELP_HOWDOI          "显示或隐藏在线指南面板(需要互联网连接)"
+    ID_TOOLS_ADVANCEDOPTIONS "打开一个外部程序来调整高级程序设置"
+    ID_DEL_QUEUESTATUS      "检查并管理队列中删除的项目"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CATEGORIES_FIRST     "恢复这个自定义分组"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_COLENCODE_LIST      "双击即可添加或编辑过滤器及其文本属性"
+    IDC_EDIT_FUZZY          "模糊名称匹配百分比; 100% 意味着精确匹配\n80% 将导致让 ""files"" 去匹配 ""filas"" 等等"
+    IDC_COMBO_CATEGORY      "被组织到这个菜单的令"
+    IDC_HOTKEY              "请按新的组合键后点击[赋值]\n某些组合键不允许使用"
+    IDC_BUT_RESET           "全部组合键重置为初始设置"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FILTER_MUSIC        "音频文件"
+    IDS_FILTER_VIDEO        "视频文件"
+    IDS_FILTER_DOCS         "文档"
+    IDS_FILTER_PICS         "照片"
+    IDS_FILTER_PROGRAMS     "程序文件"
+    IDS_FILTER_SOURCE       "源代码"
+    IDS_FILTER_TEMP         "临时文件"
+    IDS_FILTER_WEB          "web文件"
+    IDS_FILTER_ZIP          "压缩文件"
+    IDS_FILTER_BOOK         "电子书"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EMPTYVIEW           "使用拖放或菜单来添加文件或文件夹"
+    IDS_MINISAVEPROMPT      "如果您想要保留这个迷你面板的内容以便在您以后每次打开它时自动重新加载, 请点击取消后使用 <Ctrl+S> 或它的右键菜单保存它的内容"
+    IDS_FILTERBLOCK         "项目存在; 关掉可视过滤就可以看到"
+    IDS_IGNOREPROB          "忽略这个问题?"
+    IDS_MISCETC             "杂项"
+    IDS_MSG_KEYOVERWRITE    "这个组合键已经被使用.\n清除旧的令赋值项吗? (%1!d!)"
+    IDS_TIT_KEYLIST         "热键\tID\t描述\r\n"
+    IDS_ASK_REGIMPORT       "您这台电脑上的注册表中有旧版的 xplorer2 设置.\n导入您的设置文件将会覆盖这些老的设置.\n您坚持要继续吗?"
+    IDS_TICON_PLAIN         "无格式"
+    IDS_TICON_DEFAULT       "默认值"
+    IDS_TICON_CUSTOM        "自定义..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CUMSG_20ICONS       "只有前 20 个项目可以有自定义的图标\n请在列表中上移这个项目的位置"
+    IDS_SYML_CONFIRMTITLE   "符号链接"
+    IDS_BUT_PIN             "别针"
+    IDR_HOWTOPANE           "我该怎么做?..."
+    IDS_MSG_NOCONFIRM       "不经提示直接覆盖现有的全部文件吗?"
+    IDS_MSG_90DAYCHECK      "您已经有三个月没检查程序的更新了\n去网上看看是否有新版吗?"
+    IDS_RDTAB_PROGRESS      "进程"
+    IDS_RDTAB_LOG           "日志"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_STATIC_TPAY         "点此免费获得 xplorer2！"
+    IDC_STATIC_BITS         "多少文件将被创建"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_CHECK_SECURITY      "修改对象的安全访问权限"
+    IDC_CHECK_JUNCTIONS     "删除交叉链接可能会危及\n链接指向的实际文件, 因此要格外小心！"
+    IDC_COMBO_BOOL          "如何匹配多个关键词"
+    IDC_CHECK_OVERFOLDERS   "所有旧内容将被删除\n然后用源文件和文件夹替换"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FMT_RDELQUEUEDESCR  "删除 %d 个项目"
+    IDS_MEMO_RDQUEUE        "已在队列中的删除项"
+    IDS_MSG_DELERRLOG       "删除时发生了一些问题\n您需要查看日志吗?"
+    IDS_ASK_RDJUNCTION      "警告: 文件夹 '%s' 实际上是个链接点\n删除它将会影响其所链接的文件和文件夹\n\n坚持要删除它吗? "
+    IDS_CB_ANY              "任意"
+    IDS_CB_ALL              "所有"
+    IDS_CB_EXACT            "精确"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BUT_CANCEL          "取消"
+    IDS_CUE_TRIAL           "点击 <ESC> 键继续使用试用版"
+    IDS_COVER_NEWER         "更新"
+    IDS_COVER_OLDER         "较旧"
+    IDS_COVER_BIGGER        "较大"
+    IDS_COVER_SMALLER       "较小"
+    IDS_INFO_UNDOWER        "这将会把 Windows 的资源管理器恢复为您的缺省文件夹处理程序\n您想要继续吗? "
+    IDS_MSG_HTMLHELP        "如果您在您的浏览器上看不到这个对话框的帮助主题\n请点击地址栏后按 <回车>"
+    IDS_MSG_EXPLORERIP      "Windows 资源管理器已经被恢复"
+    IDS_SHOWHIDDEN          "显示隐藏文件已启用"
+    IDS_MSG_VISTAUAC        "如果您使用 Window > 管理员 菜单来启动并提高 xplorer2 进程, 可将由 UAC 及限制权限导致的访问问题对您的影响降到最小\n\n也可以使用拖放或外壳的右键菜单来进行文件操作"
+    IDS_MSG_INTERACTIVE     "这个进程作为其它用户(%s)运行中\n该用户的设置会被保存,而不是当前交互的桌面用户\n\n请点击 xplorer2 桌面图标正常启动程序"
+    IDS_EXTRACTMSG          "正在提取文本... (按 ESC 取消)"
+    IDS_EXTRACTED_CNT       "%d 文本文件已创建"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_ADMINUNDOWE     "没有足够的权限修改文件夹的注册表键值！\n\n如需把 Windows 的资源管理器恢复为您的默认文件夹处理应用程序\n请使用[用管理员权限运行]来运行 xplorer2 或卸载 xplorer2\n\n准备好再操作一次 xplorer2 了吗? "
+    IDS_ERR_NOEXESEL        "当前选择中无可执行程序"
+    IDS_ERR_BADCOFILTER     "该名称与可用列的任一名称都不匹配"
+    IDS_ERR_WRACCESS        "您在这里没有写权限：\n%1\n程序设置不能放在此处, \n试试程序数据文件夹"
+    IDS_ERR_ALREADYINI      "程序设置已导出为 INI 文件:\n%1"
+    IDS_ERR_APPENDMODE      "请输入要从注释中增加或移除的标签"
+    IDS_ERR_EJECT           "不能移除卷标, 请尝试从windows工具栏图标进行安全的设备删除"
+    IDS_ERR_RENAMECHAR      "文件名称不能包含以下任一字符:"
+    IDS_ERR_NOKEYWORD       "请输入一个或多个待搜索的关键字"
+    IDS_ERR_ALREADYWDS      "该文件夹已经在搜索索引中, 或不适合增加"
+    IDS_ERR_NORENTEMPLATE   "请输入批量重命名参数"
+    IDS_ERR_RENFAILED       "文件重命名失败!%n%1 => %2%n%3%n继续操作剩下的文件吗?"
+    IDS_ERR_NOWDS           "这台电脑未安装 Windows 搜索功能"
+    IDS_ERR_SHELLEDIT       "执行 编辑 命令出错, 上下文菜单中有此命令吗?"
+    IDS_ERR_READONLY        "您不能编辑只读项的属性"
+    IDS_ERR_WRITEPROP       "写入属性出错"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_EDIT_COLFILTER      "输入一个关键词来显示匹配它的单列"
+    IDC_COMBO_INILOC        "普通安装时建议用注册表\n便携版本(USB)选择 ""文件夹中的文件"""
+    IDC_CHECK_INDEX         "利用搜索索引以更快地查找文件"
+    IDC_RADIO_REPLACE       "用输入的文本来替换文件的全部内容\n用空文本清空文件内容"
+    IDC_RADIO_APPEND        "增加(通常为一个词)到已有的文件内容\n在您需要增加的标签中输入"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_EDIT_FUZZFACTOR     "相似度; 100为完全匹配\n近似匹配时逐渐减到0\n\n或者输入正则表达式以分组通用子串"
+    IDC_CHECK_IGNORE        "比较日期时，忽略特定的 +/- 时间差"
+    IDS_EDIT_RENAMEOVER     "重命名以保留现有文件(点击 确定 更改)"
+    IDC_STATICPLOT          "传输速度图形 (MB/sec)"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_EXTRACTTEXT     "从选定文档抽取未格式化的文本到新文件"
+    ID_HELP_ACTIVATEWITHKEY "使用您购买的注册密钥解锁程序"
+    ID_BOOKMARKS2_ADD       "在双书签列表中增加左/右文件夹"
+    ID_BOOKMARKS2_ORGANIZE  "重命名、删除或重新排序双书签, 分配快捷键"
+    ID_BOOKMARKS2_MORE      "从完整的双书签列表中选择文件夹"
+    ID_CUSTOM_ORGANIZE      "在这里增加或删除菜单命令"
+    ID_TABZ_LOCK2           "锁定该标签的浏览(切换)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SELCOL_DESCR        "选择的项目数及总大小"
+    IDS_TIP_COPYTO          "复制到 %1"
+    IDS_TIP_MOVETO          "移动到 %1"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TIP_LINKTO          "在 %1 创建关联"
+    IDS_TIP_OPENWITH        "用 %1 打开"
+    IDS_MSG_LICMGR          "要使用您的解锁密钥激活 xplorer2, 您必须重启程序\n继续以管理员权限运行许可证管理器吗?"
+    IDS_MSG_LICMGR_LITE     "免费试用版不需要激活\n如果您已购买许可, 请从网络下载并安装专业版"
+    IDS_SEPARATOR           "- 分隔符 -"
+    IDS_MENUCOMMAND         "菜单命令"
+    IDS_CUSTOMSHELL         "自定义外壳菜单项"
+    IDS_SELECTMCMD          "选择菜单命令"
+    IDS_MSG_RODATE          "只读属性不允许改变日期或安全属性. \n要自动清除只读属性吗? "
+    IDS_INI_REGISTRY        "windows 注册表"
+    IDS_INI_INSTALL         "安装目录中的文件"
+END
+
+STRINGTABLE
+BEGIN
+    ID_BOOKMARKS2_FIRST     "还原这两个文件夹"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_INI_USERDATA        "用户应用程序数据文件夹中的文件"
+    IDS_INI_CUSTOM          "给定/I: 开关的文件"
+    IDS_MSG_INIRECURSE      "将该文件夹的设置应用到所有子文件夹? "
+    IDS_MSG_SAVEINI         "正在写入文件夹设置... (按 ESC 取消)"
+    IDS_MSG_LOCKEDTAB       "该标签已锁定\n您确定要关闭该标签吗? "
+    IDR_QUICKVIEWPANE       "预览"
+    IDR_TREEPANE            "文件夹"
+    IDR_MINIPANE            "Mini虚拟文件夹"
+    IDS_DETAILSPANE         "详情"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_LOCKDOCK        "锁定面板以防止重排(切换)"
+    ID_GOTO_SPECIALFOLDERS_DOWNLOADS "包含您最近下载的文档"
+    ID_ACTIONS_FOLDERSETTINGS_DEFAULT "像这样显示所有文件夹；取消勾选以进行丰富的文件夹视图设置"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LICENCEINFO         "许可给： %s (%s)\r\n参考号： %s\r\n购买于： %s, 席位数: %d"
+    IDS_UNREGISTERED        "未注册, 已使用 %d 次"
+    IDS_LIC_MANAGER         "如果您已购买xplorer2 解锁密钥, 您必须使用外部许可证管理工具激活密钥. 建议您使用完整的管理员身份运行该工具. \n\n点击“是”以管理员身份运行, 点击“否”正常运行, 或者点击“取消”. "
+    IDS_V1UPGRADE           "存在旧版的注册密钥；\n您可以免费或打折升级到最新版本. \n现在进行在线许可校验吗? "
+    IDS_NOTFORTRIAL         "该功能在免费试用版中不支持. \n请购买许可以使用更多功能"
+    IDS_OPENLOCATION        "定位文件(&L)"
+    IDS_REMOVESCRAP         "从面板移除(&R)"
+    IDS_FMT_COMMENTED       "在 %d 个项目上操作成功"
+    IDS_MSG_FINDRULE        "双击这里, 根据日期、文件大小或其他属性搜索"
+    IDS_WARN_EXTENSION      "如果您修改了文件扩展名, 文件可能不可用. \n您确定要修改吗?"
+    IDS_MSG_REGORINI        "请指定特定文件格式:\n是=\tINI 文件, 便于携带\n否=\tREG 文件(注册表导出)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_INVALIDKEY          "无效的密钥. 请完整复制您收到的邮件中的密钥, 应类似于如下内容: \n\n-------\n您的注册密钥是:\n\n88|0.0|X2.1|1|24.09.10|30|Joe_Bloggs|some@email.com|Usax9A\nNRezzwlQsv11jmthisisnotavalidkeyTonDBVZlOQciJ4FDqivrb2oSS49\n+SEtCPSv3CnzPmx5F7NJtMhzA==\n\nYour registration reference# is: X2.1-9B7C0858"
+    IDS_FILEIO              "在安装目录中写入了错误的许可证文件!\n请确保您正以管理员身份运行许可证管理工具"
+    IDS_ERR_NOKTKEY         "这不是您xplorer2当前版本的解锁密钥"
+    IDS_ERR_EXPIRED         "密钥已过期, 请购买升级\n(例如: 使用 帮助 > 注册程序 菜单命令)"
+    IDS_SUCCESS             "您的许可证密钥有效, 许可证文件已创建.\n请重新运行xplorer2"
+    IDS_ERR_EXPLANATION     "\n\n如果您联系程序支持, 请引用错误代码 %d:%d"
+    IDS_ERR_PROKEY          "这是一个xplorer2专业版密钥, 不能激活旗舰版.\n请从网站下载您购买的xplorer2正确版本"
+    IDS_ERR_ULTKEY          "您正使用xplorer2旗舰版密钥激活专业版. \n请从网站下载您购买的xplorer2正确版本"
+    IDS_ULT_UPGRADE         "如果您拥有有效的xplorer2 v2.x专业版许可证, 您可以仅需支付差价升级到旗舰版.\n\n请准备好您的v2.x版的注册密钥, 如果您找不到购买邮件, 可以在安装目录的X2.LIC文件中找到注册密钥"
+    IDS_ERR_TSINSKY         "此密钥不能解锁标准专业版.\n请从网站下载您购买的xplorer2正确版本"
+    IDS_X2PRO               "专业版"
+    IDS_X2ULTIMATE          "旗舰版"
+END
+
+STRINGTABLE
+BEGIN
+    ID_GROUPS_COLLAPSEALL   "折叠所有分组"
+    ID_GROUPS_COLLAPSE      "折叠选定分组"
+    ID_GROUPS_EXPAND        "展开选定分组"
+    ID_VIEW_DETAILSPANE     "显示或隐藏详情面板\n详细"
+    ID_TOOLS_FASTSEARCH     "在当前文件夹下使用Windows索引服务器进行快速搜索"
+    ID_TOOLS_SAVESEARCH     "将最近的搜索参数存为文件"
+    ID_SAVEDSEARCH_FIRST    "重复本次搜索"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSG_DESKQUERY       "未找到您想要的?"
+    IDS_MSG_CHOOSEARCH      "点击进行增强型搜索"
+    IDS_NEEDULTIMATE        "该功能仅在旗舰版中可用(升级)"
+    IDS_MSG_LOCALSEARCH     "该命令仅用于本地固定硬盘"
+    IDS_WARN_AQS            "快速搜索模式仅支持简单的关键词. \n如果您需要 AQS 参数或者符号搜索, 请使用普通查找文件命令"
+    IDS_CREATEFOLDER        "该文件夹不存在, 需要创建吗? "
+    IDS_WARN_SYMBOLSWDS     "Windows 搜索不支持符号, 只支持完整关键词, \n要查找符号, 请使用其它 xplorer2 搜索命令"
+    IDS_TIT_WNDNAME         "新窗口名称:"
+    IDS_ASK_FASTMYCOMP      "文件夹不在搜索索引中, 但它的某些子文件夹可能被索引. 继续搜索吗?"
+    IDS_MSG_EJECT           "设备现在可以安全断开连接"
+    IDS_MSG_UPGRADECHARGE   "在下载新版本之前, 请了解升级可能需要付费\n(除非您拥有终生免费升级密钥)\n\n您的密钥购买于: %1"
+    IDS_MSG_VIRTUALDIR      "访问该文件夹发生问题?"
+    IDS_MSG_WEXPLORER       "点击打开 Windows 浏览器"
+    IDS_MSG_ANSICHARSET     "此版本可能在处理文件名中的非英文字母时发生问题\n(除非控制面板中正确安装了 Ansi 字符编码页)\n\n为避免文件名的问题, 请下载专业 UNICODE 版"
+    IDS_MSG_ADOBERUBBISH    "Adobe PDF 阅读器 与 xplorer2 不兼容. 还有其他免费选择允许您更好的在PDF文档中预览与搜索. 在下面网址查看更多信息:\nhttp://zabkat.com/x2plugins.htm"
+    IDS_ADDTOINDEX          "加入搜索索引"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOOLS_FUZZYMATCHING  "根据相似名称或其他文本属性分组项目"
+    ID_TOOLS_SYSTEMFOLDEROPTIONS "控制面板文件夹选项; 只有少数适用于 xplorer2 文件夹选项"
+    ID_TOOLS_MAPNETWORKDRIVE "给网络资源分配盘符"
+    ID_QUIKVIEW_TAILMODE    "显示文件末尾, 而不是开始"
+    ID_FILTER_FILTER        "虚拟过滤器模式: 只显示匹配成功项"
+    ID_FILTER_SELECT        "选择模式: 标注匹配上的文件"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILTER_SEARCH        "在此文件夹下搜索(打开新窗口)"
+    ID_FILTER_ALLPROPERTIES "仅切换匹配项, 仅使用名称或显示的所有属性(列)"
+    ID_FILTER_TEXTCONTENTS  "切换到文件内容搜索(慢)"
+    ID_FILTER_WINDOWSSEARCH "切换到尽可能使用windows搜索, 以更快匹配"
+    ID_WINDOW_SETTITLE      "给该窗口设置一个常用标题"
+    ID_FOLDER_ADDWDS        "添加文件夹(以及其子文件夹) 到 windows 搜索索引以便加快搜索"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_WARN_QFWILD         "通配符不能在快速过滤器中使用\n可以输入查找内容的一部分"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_EDIT_FINDWHAT       "输入一个或多个待查找的关键字\n使用引号以搜索 ""整个表达式"""
+    IDC_COMBO_MODE          "第一次匹配并替换模式每个文件至多执行一次\n多重替换模式会替换所有出现的匹配上的字符子串"
+    IDC_CHECK_ONLYNAME      "只修改基本文件名, 而不修改扩展名\n修改扩展名会更改文件类型, 并导致文件不可读"
+    IDC_EDIT_TAGS           "用分号(;)分隔多个标记"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSG_WDSADDEDOK      "文件夹添加成功; 可能需要一点时间以进行内容索引"
+    IDS_MODE_RENAME         "替换整个名称"
+    IDS_MODE_REPLACE        "匹配并替换部分"
+    IDS_MODE_MULTIPLE       "搜索并多进行多重替换"
+    IDS_PRVNAME_OLD         "旧名称"
+    IDS_PRVNAME_NEW         "新名称"
+    IDS_MSG_BETTERPREVIEW   "您确定不预览而直接重命名吗?\n重命名发生错误很难撤销"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_RIBBONINFO          "您可以使用新的功能区界面, 或者切换到传统菜单栏.\n要使用部分高级程序特性, 您需要使用菜单栏.\n\n要移除功能区, 使用最左边的(深蓝色)文件功能区标签菜单命令"
+    IDS_SAVEDFILTER         "保存过滤器(&S)"
+    IDS_MSG_RENTALLY        "%d 项目已重命名"
+    IDS_DODGYRENAME         "您的重命名模板可能存在问题.\n请检查高亮的项目"
+    IDS_MSG_NOUPGRADES      "这个特定版本 (或许可证) 不支持免费升级\n如果您安装了一个较新的版本, 您需要购买许可\n还继续检查更新吗?"
+    IDS_SHREDONSSD          "粉碎 SSD 介质上的文件并不明智;\n操作无效而且会缩短磁盘寿命\n还继续粉碎文件吗?"
+    IDS_NOPREVIEW           "无可用的预览"
+    IDS_MSG_RESTART         "请等待导入设置完成, 再重启 xplorer2\n点击 OK 退出这个 xplorer2 进程"
+    IDS_ASK_REVIEW          "看起来您很喜欢 xplorer, 并且经常使用它!\n\n您愿意在商店里给它评分或简单评论吗?\n感谢您的不吝赞美!"
+    IDS_ALTDELETE           "删除到回收站功能在深文件夹中无法工作\n请尝试按 SHIFT+DEL 键永久删除项目\n警告: 永久删除的文件无法恢复!"
+    IDC_REGO                "注册表导出 (REG)\n建议选择"
+    IDC_INIFILE             "传统配置文件 (INI)\n方便移动用途"
+    IDS_REGORINI2           "请指定设置文件格式"
+    IDS_PINGFAILED          "网络文件夹响应很慢已被放弃\n请考虑在高级选项中增加ping超时时长"
+    IDS_FFLOG_TIME          "操作总时长: %d.%d 秒\r\n"
+    IDS_RIBMAIN             "用户接口选择"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_MRULIST             "\n已保存的搜索"
+    IDC_RIBBONFAV           "频繁访问的文件夹书签\n收藏夹"
+    IDC_TAB_HOME            "\n主页(&O)"
+    IDC_RIBBON_HELP         "\n帮助与支持"
+    IDC_RIBBON_LICENSE      "\n许可证管理"
+    IDS_RIBBON_QAT          "在功能区右键上点击右键并使用菜单命令\n""添加到快速访问工具栏"".\n要再次从工具栏移除按钮, 在按钮上点击右键"
+    IDC_RIBBONLAYOUT        "为不同任务定义并重用 window 计划安排\n布局"
+    IDC_RIBBON_UCMD         "运行外部程序, 可将选择的项目作为运行参数\n用户命令"
+    IDC_TAB_VIEW            "\n视图"
+    IDC_TAB_WORKBENCH       "\n工作台"
+    RIDG_BROWSE             "\n浏览"
+    RIDG_CLIPBOARD          "\n剪切板"
+    RIDG_MANAGE             "\n编组"
+    RIDG_VIEW               "\n视图"
+    RIDG_TOOLS              "\n工具"
+    RIDG_FILTER             "\n过滤器"
+END
+
+STRINGTABLE
+BEGIN
+    RIDG_SELECT             "\n选择"
+    RIDG_PANE               "\n面板风格"
+    RIDG_MISC               "\n杂项"
+    RIDG_SCRAP              "\n集合"
+    RIDG_PREVIEW            "\n预览"
+    RIDG_WORK               "\n管理"
+    RIDG_RUN                "\n运行"
+    IDC_RIBBON_TABSET       "使用标签同时浏览多个文件夹\n文件夹分组"
+    IDS_SAFEREMOVE          "安全移除(&V)"
+    IDC_FREQLIST            "\n常用位置"
+    IDS_MSG_STOREUPDATE     "自动为您更新存储的应用程序"
+    IDS_RIBBON_MACROS       "通过编制用户界面脚本以自动执行复杂操作\n宏"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_RIBBON_PANES        "打开或关闭可停靠面板\n面板"
+    ID_VIEW_RIBBON          "显示功能区界面或传统菜单栏\n显示普通菜单"
+    ID_FOCUSTO_FILTERBOX    "切换到过滤器盒(地址栏)"
+    ID_FILE_EJECT           "安全移除当前的可移动设备"
+    ID_DKM_FLOAT            "分离面板独立移动"
+    ID_DKM_DOCK             "恢复面板到常驻位置"
+    ID_DKM_AUTOHIDE         "最小化面板为按钮, 鼠标停留在按钮上时显示面板"
+    ID_DKM_CLOSE            "关闭(隐藏)面板"
+    IDS_DOCKTIP_PIN         "自动隐藏(切换)"
+    IDS_DOCKTIP_CLOSE       "关闭"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DOCKTIP_DOCK        "停靠"
+    ID_SHELL_NEWMENU        "创建一个新的壳项目\n新项目"
+END
+
+STRINGTABLE
+BEGIN
+    ID_BOOKMARKS_EXPLORERFAVORITES "包含在 windows 资源管理器中的收藏夹 (链接) 文件夹"
+    ID_GOTO_FREQUENT_FOLDER "浏览此常用文件夹"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_REOPENTAB     "重新打开最近被关闭的标签"
+    ID_FILE_SHELLEDIT       "在(特定类型的)选择项上执行 ""编辑"" 外壳动作"
+    ID_DIRDATA_FIND         "查找树中的文本"
+    ID_DIRDATA_FINDNEXT     "查找下一处文本"
+    ID_HEADER_DETAILSFROMFILTER "增加列以查看最近使用的过滤器的任何附加规则"
+    ID_WINDOW_ACTIVATETAB   "切换到这个标签"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_PROPTYPE        "属性对这种类型的文件不适用"
+    IDS_ERR_NEWKEY          "您使用了新密钥解锁旧版本\n请下载您的密钥对应的版本\n(从网站下载试用最新版本的程序)"
+    IDS_ERR_NOSELECTREG     "请选择一个 REG 文件 (高级版为 INI 文件) 用于导入设置"
+    IDS_ERR_REGMISMATCH     "此文件类型与您的设置持久性模式不匹配"
+    IDS_ERR_MAXPATH         "该命令不支持在长路径文件夹中使用"
+    IDS_ERR_WCX             "已安装的 WCX 插件均无法打开文档"
+    IDS_ERR_RESTARTX        "看起来您使用本软件遇到了问题\n您愿意给开发者发生一封崩溃信息邮件吗?\n感谢您帮助我们提供软件可靠性"
+    IDS_ERR_INVALIDRE       "请输入有效的正则表达式"
+    IDS_ERR_TEXTCOL         "请选择文本列属性"
+    IDS_ERR_NOTAGDB         "在项目上点击右键用颜色标记"
+    IDS_ERR_GDECOLOR        "请点击一个或多个颜料盒"
+    IDS_ERR_NOWTFOUND       "没有匹配搜索规则的项"
+    IDS_ERR_SYNTAX          "语法错误"
+    IDS_ERR_MACRORUN        "一个宏执行时不能启动另一个宏"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TBZOOM_IN            "放大(Ctrl+Plus)"
+    ID_TBZOOM_OUT           "缩小(Ctrl+Minus)"
+    ID_TBROT_ANTI           "向左旋转(Ctrl+Left)"
+    ID_TBROT_CLOCK          "向右旋转(Ctrl+Right)"
+    ID_ACTIONS_IMPORTSETTINGS "重启 xplorer2 以导入已保存的设置"
+    ID_EDIT_EXPORTCSV       "导出视图内容为 CSV 文本, 可用 Excel 打开"
+    ID_FILE_ENTERARCHIVE    "尝试将文档作为文件夹浏览"
+    ID_VIEW_ZOOMIN          "大图标浏览文件夹 (放大)"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_ZOOMOUT         "小图标浏览文件夹 (缩小)"
+    ID_VIEW_PANESTYLE_DETAILEDTHUMBS "显示项目详情及缩略图预览"
+    ID_FILTER_TAGS          "只显示标记颜色的项目\n颜色过滤器"
+    ID_TAG_FINDTAGS         "列出所有标记颜色的项目"
+    ID_TAG_POPMENU          "用有色边框标记选定项目\n颜色标记"
+    ID_VIEW_ARRANGEBY_MANUALLY "用鼠标排列图标 (类似桌面)"
+    ID_HEADER_PROGRAMMABLECOLUMN "改变可编程列的定义"
+    ID_TOOLS_MACROEDIT      "启动宏编辑器"
+    ID_TOOLS_MACRO          "录制新的宏命令(按<Ctrl>键重复上次的宏命令)\n宏"
+    ID_TOOLS_LASTMACRO      "重复上次的宏命令"
+    ID_CUSTOMIZE_MACROS_ORGANIZE "重命名, 删除, 或重新排序宏并分配快捷键"
+    ID_CUSTOMIZE_MACROS_MORE "从所有列表中挑选一个宏"
+    ID_CUSTOMIZE_FOLDERGROUPS_STARTUP "程序启动时还原原始文件夹标签"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_RIBEXPLAIN          "您需要现代感的带状工具栏还是传统菜单栏? 界面可随时切换"
+    IDC_RIBBONUI            "带状工具栏\n现代感且用户友好"
+    IDC_MENUUI              "菜单栏\n访问高级命令"
+    IDS_CLSHISTORY          "您确定要清除所有 xplorer2 浏览历史吗?\n此操作不能撤销!"
+    IDS_RGB_RED             "红色"
+    IDS_RGB_GREEN           "绿色"
+    IDS_RGB_BLUE            "蓝色"
+    IDS_TAG_CLEAR           "清除标记(&C)"
+    IDS_TAG_MENU            "标记颜色(&C)"
+    IDS_FLATROOT_ASK        "您确定要展开根目录吗?\n可能需要很长时间"
+END
+
+STRINGTABLE
+BEGIN
+    ID_COLTAG_UNTAG         "从选中项中删除颜色标记"
+    ID_COLTAG_TAG           "用此颜色标记选中项"
+END
+
+STRINGTABLE
+BEGIN
+    ID_COLTAG_UNTAGGED      "显示没有标记颜色的项目"
+    ID_COLTAG_FILTERALL     "显示所有标记颜色的项目"
+    ID_COLTAG_FILTERCOL     "显示用此颜色标记的项目"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSG_WNDCLONE        "将会克隆一个新窗口以应用新设置"
+    IDS_TIT_FLATDIR         "%s 子目录内容"
+    IDS_TIT_FLATDUPLIC      "复制 %s 下"
+    IDS_ASK_DIRCOMPARE      "是否仅比较文件夹, 忽略文件?"
+    IDS_LOG_SEARCHTITLE     "在 ""%s"" 中查找 %s"
+    IDS_ULTIMATEINFO        "如果您经常在文档中搜索字符, 请考虑升级到 xplorer2 旗舰版.\n旗舰版使用搜索索引大幅提高搜索速度. 在线查看详情"
+    IDS_OPERSTR_AND         "和 [&]"
+    IDS_OPERSTR_OR          "或 [|]"
+    IDS_OPERSTR_XOR         "异或 [^]"
+    IDS_OPERSTR_EQUAL       "相等 [=]"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OPERSTR_UNEQUAL     "不等 [!=]"
+    IDS_OPERSTR_APPROX      "相似 [~]"
+    IDS_OPERSTR_MORE        "大于 [>]"
+    IDS_OPERSTR_LESS        "小于 [<]"
+    IDS_OPERSTR_PLUS        "加 [+]"
+    IDS_OPERSTR_MINUS       "减 [-]"
+    IDS_OPERSTR_MULT        "乘 [*]"
+    IDS_OPERSTR_DIVIDE      "除 [/]"
+    IDS_OPERSTR_MOD         "取模 [%]"
+    IDS_OPERSTR_NOT         "非 [!]"
+    IDS_OPERSTR_OPEN        "左括号 [(]"
+    IDS_OPERSTR_CLOSE       "右括号 [)]"
+    IDS_OPERSTR_WILD        "通配符 ['*.*']"
+    IDS_OPERSTR_TRUE        "布尔真 [-1]"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FUNC_LEN            "字符串长度 [len()]"
+    IDS_FUNC_MID            "提取串 [mid( , , )]"
+    IDS_FUNC_TRIM           "去除空格 [trim()]"
+    IDS_FUNC_FIND           "在字符串中查找 [find( , )]"
+    IDS_FUNC_DPART          "日期分解 [dpart( , )]"
+    IDS_FUNC_MIN            "最小 [min( , )]"
+    IDS_FUNC_MAX            "最大 [max( , )]"
+    IDS_FUNC_ABS            "绝对值 [abs()]"
+    IDS_FUNC_GREP           "在文件中查找 [grep()]"
+    IDS_FUNC_TOSTR          "转为字符 [str()]"
+    IDS_FUNC_IF             "条件 [if( , , )]"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FUNC_EXTRACT        "文件字节 [fbytes( , )]"
+    IDS_FUNC_TOINT          "转成数字 [int()]"
+    IDS_FUNC_TOKEN          "令牌初始化 [token( , , )]"
+    IDS_FUNC_SYSTEM         "DOS 命令 [system()]"
+    IDS_FUNC_DIRCNT         "文件计数 [dircnt('*' , both)]"
+    IDS_FUNC_DATEFMT        "日期格式 [datetime( , yyyyMMdd, """")]"
+    IDS_MACRO_FIND          "查找按钮或其它控件 [FINDWND {?}]"
+    IDS_MACRO_SETTEXT       "在编辑框设置文本 [SETTEXT {?}]"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MACRO_SELECT        "选择组合框或列表中的项目 [SELECT {?}]"
+    IDS_MACRO_CHECK         "设置或清除复选框 [SETCHECK {0/1}]"
+    IDS_MACRO_CLICK         "点击按钮 [CLICK]"
+    IDS_MACRO_OK            "关闭对话框 [OK]"
+    IDS_MACRO_COMMAND       "执行菜单命令 [COMMAND {?}]"
+    IDS_MACRO_MSG           "显示消息 [MESSAGE {?}]"
+    IDS_MACRO_WAITWND       "等待窗口打开/关闭 [WAITWND]"
+    IDS_MACRO_IDLE          "等待命令执行完成 [WAITIDLE]"
+    IDS_MACRO_REM           "注释行 [REM {?}]"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_RTYPE_TEXT          "文本"
+    IDS_RTYPE_NUM           "数字"
+    IDS_RTYPE_DATE          "日期"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERRPROG_TOKEN       "非期望的标记"
+    IDS_ERRPROG_BRACKET     "括号不匹配"
+    IDS_ERRPROG_QUOTE       "开引号"
+    IDS_ERRPROG_FNARG       "错误的函数参数"
+    IDS_ERRPROG_EMPTY       "表达式为空"
+    IDS_ERR_CONSTPROG       "表达式计算为常量\n您要加些变量吗?"
+    IDS_ERR_LAYOUTDEL       "不能删除活动的布局\n请切换到缺省布局再试一次"
+    IDS_ERR_NOLABEL         "未找到跳转标签"
+    IDS_ERR_DISSIMILAR      "未找到相似的图片, 试试降低阈值"
+    IDS_ERR_SAMEDATE        "您设置了相同日期"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TIT_MACRO           "宏输入"
+    IDS_MACROSTOP           "宏命令结束"
+    IDS_DEBUGMACRO          "\n您需要调试宏吗?"
+    IDS_MEMO_MACROS         "宏"
+    IDS_SAVEMACRO           "宏名字"
+    IDS_RECMACROABORT       "宏录制终止"
+    IDS_SHOWERRORS          "显示错误"
+    IDS_MSG_MACROREC        "使用鼠标和键盘执行命令并操作对话框控件,\n然后点击 结束 按钮生成宏程序"
+    IDS_MSG_STUCK           "后台程序忙\n需要打开新 xplorFer2 窗口吗?"
+    IDS_MSG_REINDEX         "此文件夹已经在搜索索引中\n您需要重新建立索引吗?"
+    IDS_TIT_DEEPCMP         "比较 %s 和 %s"
+    IDS_ASK_DEEPOPEN        "该项目目录太深, 无法打开\n您需要将它拷贝到一个临时文件夹吗?"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MACROS_FIRST         "运行此宏"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOOLS_SIMILARPHOTOS  "根据相似性对 JPG 图片分组"
+    ID_ACTIONS_CHANGEDATES  "文件日期操作 (调整、修改等)"
+    ID_VIEW_CYCLENEXT       "激活下一个窗格"
+    ID_VIEW_CYCLEPREV       "激活前一个窗格"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_EDIT_SHIFTBY        "使用负数将日期调前"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

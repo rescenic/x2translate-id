@@ -1,0 +1,2969 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+#include "conditional.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Slovak resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SKY)
+#ifdef _WIN32
+LANGUAGE LANG_SLOVAK, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&S˙bor"
+    BEGIN
+        MENUITEM "&Otvoriù\tEnter",             ID_FILE_BROWSE
+        MENUITEM "Otvoriù v &novom okne\tCtrl+Enter", ID_FILE_CLONEBROWSE
+        MENUITEM SEPARATOR
+        MENUITEM "Nov˝ p&anel\tCtrl+Ins",       ID_FILE_NEWTAB
+        MENUITEM "Ploöne otvoriù &podadres·re\tShift+Enter", 
+                                                ID_FILE_BROWSEFLAT
+        MENUITEM "Poslaù do &kontajnera\tCtrl+S", ID_FILE_SENDTOSCRAP
+        MENUITEM SEPARATOR
+        MENUITEM "Pre&zeraù\tF3",               ID_FILE_VIEW
+        MENUITEM "&Editovaù\tF4",               ID_FILE_EDIT
+        MENUITEM "&Vlastnosti...\tF12",         ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "P&remenovaù\tF2",             ID_FILE_RENAME
+        MENUITEM "Pre&menovaù aj prÌponu\tCtrl+F2", ID_FILE_CHANGETYPE
+        MENUITEM "&HromadnÈ premenovanie...",   ID_FILE_MASSRENAME
+        MENUITEM "O&dstr·niù\tDel",             ID_FILE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Zavrieù",                    ID_FILE_CLOSE
+        MENUITEM "Kon&iec\tAlt+X",              ID_APP_EXIT
+    END
+    POPUP "&Navig·cia"
+    BEGIN
+        MENUITEM "&O ˙roveÚ vyööie\tBksp",      ID_FILE_UPALEVEL
+        MENUITEM "&Sp‰ù\tAlt+left",             ID_GOTO_BACK
+        MENUITEM "&Vpred\tAlt+right",           ID_GOTO_FORWARD
+        MENUITEM "N·jsù &cieæ\tCtrl+L",         ID_EDIT_FINDTARGET
+        MENUITEM SEPARATOR
+        MENUITEM "Vybraù &disk...\tAlt+F1",     ID_GOTO_DRIVE
+        MENUITEM "&Ned·vne adres·re\tAlt+F2",   ID_GOTO_RECENTFOLDER
+        POPUP "äpeci·lne &adres·re"
+        BEGIN
+            MENUITEM "&Moje dokumenty\tCtrl+K",     ID_GOTO_MEDOCS
+            MENUITEM "N&ed·vne poloûky",            ID_GOTO_RECENTD
+            MENUITEM "&KÙö",                        ID_GOTO_KRAP
+            MENUITEM SEPARATOR
+            MENUITEM "&Plocha\tCtrl+Back",          ID_GOTO_DESKTOP
+            MENUITEM "KoreÚov˝ &adres·r\tShift+Back", ID_GOTO_ROOT
+            MENUITEM "&Tento poËÌtaË",              ID_GOTO_MEKOMP
+            MENUITEM "&Sieù",                       ID_GOTO_NETWORK
+            MENUITEM SEPARATOR
+            MENUITEM "&Ovl·dacie panely",           ID_GOTO_CPANEL
+            MENUITEM "T&laËiarne",                  ID_GOTO_PRINTERS
+            MENUITEM "Ponuka öta&rt",               ID_GOTO_STARTMENU
+            MENUITEM "Po sp&ustenÌ",                ID_GOTO_STARTUP
+            MENUITEM "&Vypaæovanie",                ID_GOTO_CDBURNING
+            MENUITEM "O&doslaù",                    ID_GOTO_SENDTO
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&R˝chla z·loûka\tCtrl+F1",    ID_GOTO_BOOKMARK
+        MENUITEM "Nas&taviù r˝chlu z·loûku\tCtrl+Shift+F1", 
+                                                ID_GOTO_SETBOOKMARK
+        MENUITEM SEPARATOR
+        MENUITEM "&ZrkadlovÈ prezeranie\tCtrl+M", ID_GOTO_MIRRORBROWSING
+        MENUITEM "ZrkadlovÈ ro&lovanie",        ID_GOTO_MIRRORSCROLLING
+        MENUITEM SEPARATOR
+        MENUITEM "Rovna&kÈ adres·re\tCtrl+I",   ID_GOTO_SAMEFOLDER
+        MENUITEM "Prehod&iù panely\tCtrl+U",    ID_GOTO_SWAPPANES
+    END
+    POPUP "&Z·loûky"
+    BEGIN
+        MENUITEM "&Pridaù aktu·lny",            ID_BOOKMARKS_ADD
+        MENUITEM "&Organizovaù...",             ID_BOOKMARKS_ORGANIZE
+        MENUITEM SEPARATOR
+        MENUITEM "(pr·zdny)",                   ID_BOOKMARKS_FIRST
+        MENUITEM SEPARATOR
+        MENUITEM "&Viac...",                    ID_BOOKMARKS_MORE
+        MENUITEM "IE o&bæ˙benÈ",                ID_BOOKMARKS_FAVORITES
+    END
+    POPUP "&OznaËiù"
+    BEGIN
+        MENUITEM "OznaËiù &vöetko\tCtrl+A",     ID_MARK_SELECTALL
+        MENUITEM "&Zruöiù oznaËenie vöetkÈho\tAlt+A", ID_MARK_UNSELECTALL
+        MENUITEM "Vöetky &adres·re\tCtrl+Alt+Q", ID_MARK_ALLFOLDERS
+        MENUITEM "T&rval˝ v˝ber\tAlt+S",        ID_MARK_STICKYSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "OznaËiù &skupinu...\tGray +", ID_MARK_SELECTGROUP
+        MENUITEM "Zruöiù oznaËenie s&kupiny...\tGray -", 
+                                                ID_MARK_UNSELECTGROUP
+        MENUITEM "&Inverzia oznaËenia\tGray *", ID_MARK_INVERTSELECTION
+        MENUITEM "OznaËiù rozsa&h...",          ID_MARK_SELECTRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Porovnaù &panely\tF9",        ID_MARK_SYNCHRONIZEPANES
+        MENUITEM "P&orovn·vacÌ sprievodca...\tCtrl+F9", ID_MARK_SYNCWIZARD
+        MENUITEM "Zistenie ko&mpil·cie...\tCtrl+F12", ID_MARK_CHECKBUILD
+        MENUITEM SEPARATOR
+        MENUITEM "Obsahu&j˙ce text...\tCtrl+G", ID_MARK_CONTAININGTEXT
+        MENUITEM "Vyhovuj˙&ce pravidlu...\tAlt+G", ID_MARK_RULEBASED
+        MENUITEM SEPARATOR
+        POPUP "V˝&ber"
+        BEGIN
+            MENUITEM "&Uloûiù\tCtrl+F11",           ID_MARK_SELECTION_STORE
+            MENUITEM SEPARATOR
+            MENUITEM "&Obnoviù\tF11",               ID_MARK_SELECTION_SELECT
+            MENUITEM "Z&ruöiù oznaËenie uloûen˝ch\tAlt+F11", 
+                                                    ID_MARK_SELECTION_UNSELECT
+
+            MENUITEM "&Kombinovaù\tShift+F11",      ID_MARK_SELECTION_COMBINE
+
+        END
+    END
+    POPUP "⁄&pravy"
+    BEGIN
+        MENUITEM "Vy&strihn˙ù\tCtrl+X",         ID_EDIT_CUT
+        MENUITEM "&KopÌrovaù\tCtrl+C",          ID_EDIT_COPY
+        MENUITEM "K&opÌrovaù do...\tF5",        ID_EDIT_COPYTO
+        MENUITEM "&Presun˙ù do...\tF6",         ID_EDIT_MOVETO
+        MENUITEM "Stav &fronty prenosov...",    ID_EDIT_QUEUESTATUS
+        MENUITEM SEPARATOR
+        MENUITEM "&Vloûiù\tCtrl+V",             ID_EDIT_PASTE
+        MENUITEM "Vloûiù &z·stupcu",            ID_EDIT_PASTELINK
+        POPUP "Vloûiù öp&eci·lne"
+        BEGIN
+            MENUITEM "&Pevn˝ odkaz\tCtrl+Alt+H",    ID_ACTIONS_PASTEHARDLINK
+            MENUITEM "ätrukt˙ru &adres·rov",        ID_EDIT_PASTESPECIAL_FOLDERSTRUCTURE
+
+            MENUITEM "ätrukt˙rovanÈ k˙&sky z kontajnera", 
+                                                    ID_EDIT_PASTESPECIAL_STRUCTUREDSCRAPCLIPS
+
+        END
+        MENUITEM "&Duplik·t",                   ID_EDIT_DUPLICATEFILE
+        MENUITEM SEPARATOR
+        MENUITEM "KopÌrovaù &n·zvy\tAlt+C",     ID_EDIT_COPYNAMES
+        MENUITEM "KopÌrovaù n·&hæad",           ID_EDIT_COPYPREVIEW
+        MENUITEM "KopÌrovaù stÂp&ce\tCtrl+P",   ID_EDIT_COPYSELECTION
+    END
+    POPUP "Zo&braziù"
+    BEGIN
+        MENUITEM "&Dva panely\tCtrl+O",         ID_VIEW_DUALPANE
+        MENUITEM "&N·hæad\tCtrl+Q",             ID_VIEW_QUICKVIEWER
+        POPUP "P&anely n·strojov"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "&Vöetky panely n·strojov",    ID_VIEW_TOOLBAR
+            MENUITEM "&Stavov˝ riadok",             ID_VIEW_STATUS_BAR
+            MENUITEM "&InformaËn˝ riadok",          ID_VIEW_TOOLBARS_INFOBARS
+
+        END
+        MENUITEM SEPARATOR
+        POPUP "ät˝l zobrazenia &panelu"
+        BEGIN
+            MENUITEM "&VeækÈ ikony",                ID_VIEW_LARGEICONS
+            MENUITEM "&MalÈ ikony",                 ID_VIEW_SMALLICONS
+            MENUITEM "&Zoznam",                     ID_VIEW_LIST
+            MENUITEM "&Detaily",                    ID_VIEW_DETAILS
+            MENUITEM "&N·hæady",                    ID_VIEW_THUMBNAILS
+        END
+        MENUITEM "V&ybraù stÂpce...\tAlt+K",    ID_VIEW_SELECTCOLUMNS
+        POPUP "&Zoradiù podæa"
+        BEGIN
+            MENUITEM "&N·zvu\tCtrl+Alt+N",          ID_VIEW_SORTBY_NAME
+            MENUITEM "&Veækosti\tCtrl+Alt+S",       ID_VIEW_SORTBY_SIZE
+            MENUITEM "&D·tumu\tCtrl+Alt+D",         ID_VIEW_SORTBY_DATE
+            MENUITEM "&Typu\tCtrl+Alt+T",           ID_VIEW_SORTBY_TYPE
+            MENUITEM "InÈ",                         ID_VIEW_SORTBY_OTHER
+            , GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "N&etriediù\tCtrl+Alt+U",      ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "&Vzostupne\tCtrl+Alt+A",      ID_VIEW_SORTBY_ASCENDING
+        END
+        MENUITEM "Automaticky na&staviù öÌrku stÂpcov\tCtrl+Add", 
+                                                ID_VIEW_AUTOSIZECOLUMNS
+        MENUITEM SEPARATOR
+        MENUITEM "&Obnoviù\tCtrl+R",            ID_VIEW_REFRESH
+        MENUITEM "Zak·zaù o&bnovovanie\tCtrl+Alt+R", ID_VIEW_HOLDAUTOREFRESH
+        MENUITEM "S&kutoËn˝ obsah",             ID_VIEW_RAWCONTENTS
+        MENUITEM SEPARATOR
+        MENUITEM "Zobraziù s&trom\tCtrl+T",     ID_VIEW_SHOWTREE
+        MENUITEM "N·&jsù v strome\tAlt+T",      ID_VIEW_LOCATEINTREE
+        MENUITEM SEPARATOR
+        POPUP "&Filter"
+        BEGIN
+            MENUITEM "Podæa &masky...\tCtrl+H",     ID_FILE_VISUALFILTER
+            MENUITEM "Podæa &pravidiel...\tAlt+H",  ID_VIEW_VISUALFILTER_RULEBASED
+
+            MENUITEM "A&utomatick˝ filter",         ID_VIEW_AUTOFILTER
+            MENUITEM "&Zapn˙ù/Vypn˙ù\tCtrl+J",      ID_MARK_USEVISUALFILTER
+            MENUITEM SEPARATOR
+            MENUITEM "Schovaù &adres·re\tAlt+J",    ID_VIEW_HIDEFOLDERS
+            MENUITEM "&Len oznaËenÈ\tCtrl+Alt+J",   ID_VIEW_SELECTEDONLY
+            MENUITEM SEPARATOR
+            MENUITEM "&Rovnak˝ filter\tCtrl+Alt+M", ID_VIEW_VISUALFILTER_SAMEFILTER
+
+        END
+        MENUITEM "Zobraziù &vöetko",            ID_VIEW_SHOWALL
+    END
+    POPUP "&Akcie"
+    BEGIN
+        MENUITEM "&Nov˝ s˙bor\tF7",             ID_ACTIONS_NEWFILE
+        MENUITEM "Nov˝ a&dres·r\tF8",           ID_ACTIONS_NEWFOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "&Koment·r...\tAlt+Z",         ID_ACTIONS_SETCOMMENT
+        POPUP "D·tovÈ &pr˙dy"
+        BEGIN
+            MENUITEM "&Zobraziù pr˙dy",             ID_ACTIONS_VIEWSTREAMS
+            MENUITEM "Z&baliù",                     ID_ACTIONS_BUNDLETOGO
+            MENUITEM "&Rozbaliù",                   ID_ACTIONS_UNPACKBUNDLE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Zmeniù &atrib˙ty...\tShift+F12", 
+                                                ID_ACTIONS_CHANGEATTRIBUTES
+        MENUITEM "&SynchrÛnny d·tum",           ID_ACTIONS_SYNCTOUCH
+        MENUITEM SEPARATOR
+        MENUITEM "&Rozdeliù s˙bor...",          ID_ACTIONS_SPLIT
+        MENUITEM "Spo&jiù s˙bory...",           ID_ACTIONS_MERGEFILES
+        MENUITEM "Skar&tovaù",                  ID_ACTIONS_SHRED
+        MENUITEM SEPARATOR
+        MENUITEM "&Uloûiù nastavenia",          ID_VIEW_SAVESETTINGSNOW
+        MENUITEM "E&xportovaù nastavenia",      ID_ACTIONS_EXPORTSETTINGS
+        POPUP "Nasta&venia adres·ra"
+        BEGIN
+            MENUITEM "&Uloûiù",                     ID_ACTIONS_FOLDERSETTINGS_SAVE
+
+            MENUITEM "&Vymazaù",                    ID_ACTIONS_FOLDERSETTINGS_CLEAR
+
+            MENUITEM SEPARATOR
+            MENUITEM "P&ozastaviù",                 ID_ACTIONS_FOLDERSETTINGS_SUSPEND
+
+        END
+    END
+    POPUP "N·s&troje"
+    BEGIN
+        MENUITEM "Spustiù p&rÌkaz",             ID_TOOLS_RUNCOMMAND
+        MENUITEM "PrÌkaz &DOSu\tF10",           ID_TOOLS_DOSCOMMAND
+        MENUITEM "&HistÛria sp˙öùania...\tCtrl+F10", ID_TOOLS_RUNHISTORY
+        MENUITEM "&Opakovaù prÌkaz\tAlt+F10",   ID_TOOLS_REPEATCOMMAND
+        MENUITEM "PrÌkazov˝ &skript...\tCtrl+B", ID_TOOLS_COMMANDSCRIPT
+        MENUITEM SEPARATOR
+        MENUITEM "&N·jsù s˙bory...\tCtrl+F",    ID_TOOLS_FINDFILES
+        MENUITEM "N·jsù du&plik·ty...",         ID_TOOLS_CHECKDUPLICATES
+        MENUITEM "Po&rovnaù podadr&es·re...",   ID_TOOLS_COMPARESUBFOLDERS
+        MENUITEM SEPARATOR
+        MENUITEM "&VoænÈ miesto\tCtrl+Alt+Space", ID_TOOLS_FREESPACE
+        MENUITEM "Veæ&kosù podadres·rov\tCtrl+D", ID_TOOLS_SUBFOLDERSIZE
+        MENUITEM "ätatistika &adres·rov...\tAlt+D", 
+                                                ID_TOOLS_FOLDERSTATISTICS
+        MENUITEM SEPARATOR
+        MENUITEM "&Moûnosti...",                ID_TOOLS_OPTIONS
+    END
+    POPUP "O&kno"
+    BEGIN
+        MENUITEM "&Nov˝ kontajner",             ID_WINDOW_SCRAPFRAME
+        MENUITEM "&Zoznam...\tCtrl+W",          ID_WINDOW_LIST
+        MENUITEM SEPARATOR
+        MENUITEM "Zavrieù &panel\tCtrl+F4",     ID_WINDOW_CLOSETAB
+        MENUITEM "Z&avrieù vöetky panely",      ID_WINDOW_CLOSEALLTABS
+        MENUITEM SEPARATOR
+        MENUITEM "&Klon\tCtrl+N",               ID_WINDOW_CLONE
+        MENUITEM "&Uloûiù rozloûenie...",       ID_WINDOW_SETREGKEY
+        MENUITEM SEPARATOR
+        MENUITEM "(pr·zdny)",                   ID_REGDATA_FIRST
+        MENUITEM SEPARATOR
+        MENUITEM "&Organizovaù...",             ID_WINDOW_SETACCELERATOR
+        MENUITEM "&Viac rozloûenÌ...",          ID_WINDOW_MORE
+    END
+    POPUP "P&rispÙsobiù"
+    BEGIN
+        POPUP "Panely n·s&trojov"
+        BEGIN
+            MENUITEM "Prid&aù nov˝...",             ID_CUSTOMIZE_TOOLBARS_ADDNEW
+
+            MENUITEM "&Organizovaù...",             ID_CUSTOMIZE_TOOLBARS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(pr·zdny)",                   ID_TBCUST_FIRST
+        END
+        POPUP "&StÂpce"
+        BEGIN
+            MENUITEM "Pridaù &aktu·lne",            ID_CUSTOMIZE_COLUMNS_ADD
+            MENUITEM "&Organizovaù...",             ID_CUSTOMIZE_COLUMNS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(pr·zdny)",                   ID_COLUMNSET_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Viac...",                    ID_CUSTOMIZE_COLUMNS_MORE
+
+        END
+        POPUP "&UûÌvateæskÈ prÌkazy"
+        BEGIN
+            MENUITEM "Prid&aù nov˝...",             ID_CUSTOMIZE_USERCOMMANDS_ADDNEW
+
+            MENUITEM "&Organizovaù...",             ID_CUSTOMIZE_USERCOMMANDS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(pr·zdny)",                   ID_USERTOOL_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Viac...",                    ID_CUSTOMIZE_USERCOMMANDS_MORE
+
+        END
+        POPUP "Skupiny &adres·rov"
+        BEGIN
+            MENUITEM "Pridaù &aktu·lnu",            ID_CUSTOMIZE_TABSETS_ADDNEW
+
+            MENUITEM "&Organizovaù...",             ID_CUSTOMIZE_TABSETS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(pr·zdny)",                   ID_TABSETS_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Viac...",                    ID_CUSTOMIZE_TABSETS_MORE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Kl·vesovÈ skratky...",       ID_CUSTOMIZE_KEYBOARDUSE
+    END
+    POPUP "N·pove&da"
+    BEGIN
+        MENUITEM "&R˝chly ötart",               ID_HELP_ALPHAINFO
+        MENUITEM "&Obsah\tF1",                  ID_HELP_CONTENTS
+        MENUITEM "&Tip dÚa...",                 ID_HELP_TIPOFTHEDAY
+        MENUITEM SEPARATOR
+        MENUITEM "&Registrovaù program",        ID_HELP_REGISTERPROGRAM
+        MENUITEM "&Darovaù",                    ID_HELP_DONATE
+        MENUITEM "Zistiù akt&ualiz·cie",        ID_HELP_CHECKUPDATES
+        MENUITEM "Technick· p&odpora",          ID_HELP_GETSUPPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Pos&ledn· chyba",             ID_HELP_LASTERROR
+        MENUITEM SEPARATOR
+        MENUITEM "&O xplorer2...",              ID_APP_ABOUT
+    END
+END
+
+IDR_CONTEXTMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "paneLR"
+    BEGIN
+        MENUITEM "&Nov˝ s˙bor\tF7",             ID_ACTIONS_NEWFILE
+        MENUITEM "Nov˝ a&dres·r\tF8",           ID_ACTIONS_NEWFOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "&Vloûiù\tCtrl+V",             ID_EDIT_PASTE
+        MENUITEM "V&loûiù z·stupcu",            ID_EDIT_PASTELINK
+        POPUP "Vloûiù öp&eci·lne"
+        BEGIN
+            MENUITEM "&Pevn˝ odkaz\tCtrl+Alt+H",    ID_ACTIONS_PASTEHARDLINK
+            MENUITEM "ätrukt˙ra a&dres·rov",        ID_EDIT_PASTESPECIAL_FOLDERSTRUCTURE
+
+            MENUITEM "ätrukt˙rovanÈ k˙&sky z kontajnera", 
+                                                    ID_EDIT_PASTESPECIAL_STRUCTUREDSCRAPCLIPS
+
+        END
+        MENUITEM SEPARATOR
+        POPUP "ät˝l &panelu"
+        BEGIN
+            MENUITEM "&VeækÈ ikony",                ID_VIEW_LARGEICONS
+            MENUITEM "&MalÈ ikony",                 ID_VIEW_SMALLICONS
+            MENUITEM "&Zoznam",                     ID_VIEW_LIST
+            MENUITEM "&Detaily",                    ID_VIEW_DETAILS
+            MENUITEM "&N·hæady",                    ID_VIEW_THUMBNAILS
+        END
+        POPUP "&Zoradiù podæa"
+        BEGIN
+            MENUITEM "&N·zvu\tCtrl+Alt+N",          ID_VIEW_SORTBY_NAME
+            MENUITEM "&Veækosti\tCtrl+Alt+S",       ID_VIEW_SORTBY_SIZE
+            MENUITEM "&D·tumu\tCtrl+Alt+D",         ID_VIEW_SORTBY_DATE
+            MENUITEM "&Typu\tCtrl+Alt+T",           ID_VIEW_SORTBY_TYPE
+            MENUITEM "InÈ",                         ID_VIEW_SORTBY_OTHER
+            , GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "N&etriediù\tCtrl+Alt+U",      ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "&Vzostupne\tCtrl+Alt+A",      ID_VIEW_SORTBY_ASCENDING
+        END
+    END
+    POPUP "paneMulti"
+    BEGIN
+        MENUITEM "&Otvoriù\tEnter",             ID_FILE_BROWSE2
+        MENUITEM "&Presk˙maù\tCtrl+Enter",      ID_FILE_CLONEBROWSE2
+        MENUITEM SEPARATOR
+        MENUITEM "&KopÌrovaù\tCtrl+C",          ID_EDIT_COPY
+        MENUITEM "&Vloûiù\tCtrl+V",             ID_EDIT_PASTE
+        MENUITEM "O&dstr·niù\tDel",             ID_FILE_REMOVE
+        MENUITEM SEPARATOR
+        POPUP "ät˝l &panelu"
+        BEGIN
+            MENUITEM "&VeækÈ ikony",                ID_VIEW_LARGEICONS
+            MENUITEM "&MalÈ ikony",                 ID_VIEW_SMALLICONS
+            MENUITEM "&Zoznam",                     ID_VIEW_LIST
+            MENUITEM "&Detaily",                    ID_VIEW_DETAILS
+            MENUITEM "&N·hæady",                    ID_VIEW_THUMBNAILS
+        END
+        POPUP "&Zoradiù podæa"
+        BEGIN
+            MENUITEM "&N·zvu\tCtrl+Alt+N",          ID_VIEW_SORTBY_NAME
+            MENUITEM "&Veækosti\tCtrl+Alt+S",       ID_VIEW_SORTBY_SIZE
+            MENUITEM "&D·tumu\tCtrl+Alt+D",         ID_VIEW_SORTBY_DATE
+            MENUITEM "&Typu\tCtrl+Alt+T",           ID_VIEW_SORTBY_TYPE
+            MENUITEM "&Cesty",                      ID_VIEW_ARRANGEBY_PATH
+            MENUITEM "InÈ",                         ID_VIEW_SORTBY_OTHER
+            , GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "N&etriediù\tCtrl+Alt+U",      ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "&Vzostupne\tCtrl+Alt+A",      ID_VIEW_SORTBY_ASCENDING
+        END
+    END
+    POPUP "pmRiteDrag"
+    BEGIN
+        MENUITEM "&Vloûiù sem",                 ID_PMRITEDRAG_INSERTHERE
+        MENUITEM "Vloûiù &ploöne",              ID_ACTIONS_FLATTENPATH
+        MENUITEM SEPARATOR
+        MENUITEM "&Zruöiù",                     ID_PMRITEDRAG_CANCEL
+    END
+    POPUP "header"
+    BEGIN
+        MENUITEM "&Vybraù stÂpce...\tAlt+K",    ID_VIEW_SELECTCOLUMNS
+        MENUITEM "Automaticky na&staviù öÌrku stÂpcov\tCtrl+Add", 
+                                                ID_VIEW_AUTOSIZECOLUMNS
+    END
+    POPUP "quikview"
+    BEGIN
+        MENUITEM "&KopÌrovaù\tCtrl+C",          ID_QUIKVIEW_COPY
+        MENUITEM "&Vybraù vöetko\tCtrl+A",      ID_QUIKVIEW_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "&N·jsù...\tCtrl+F",           ID_QUIKVIEW_FIND
+        MENUITEM "N·jsù Ô&alöÌ\tF3",            ID_QUIKVIEW_FINDNEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Zalamovanie\tF2",            ID_QUIKVIEW_WORDWRAP
+        MENUITEM "&PÌsmo...",                   ID_QUIKVIEW_SETFONT
+        POPUP "KÛ&dovanie"
+        BEGIN
+            MENUITEM "&Windows",                    ID_QUIKVIEW_ENCODING_WINDOWS
+
+            MENUITEM "&OEM",                        ID_QUIKVIEW_ENCODING_OEM
+            MENUITEM "UTF-&8",                      ID_QUIKVIEW_ENCODING_UTF8
+
+            MENUITEM "&Unicode",                    ID_QUIKVIEW_ENCODING_UNICODE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Len &text",                   ID_QUIKVIEW_TEXTMODE
+        MENUITEM "œa&löÌ\tCtrl+Down",           ID_QUIKVIEW_NEXT
+        MENUITEM "P&redch·dzaj˙ci\tCtrl+Up",    ID_QUIKVIEW_PREVIOUS
+    END
+    POPUP "tabz"
+    BEGIN
+        MENUITEM "Posun &væavo",                ID_TABZ_MOVELEFT
+        MENUITEM "Posun v&pravo",               ID_TABZ_MOVERIGHT
+        MENUITEM "Pre&menovaù",                 ID_TABZ_RENAME
+    END
+END
+
+IDR_SCRAPFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&S˙bor"
+    BEGIN
+        MENUITEM "&Otvoriù\tEnter",             ID_FILE_BROWSE2
+        MENUITEM "Otvoriù v &novom okne\tCtrl+Enter", ID_FILE_CLONEBROWSE2
+        MENUITEM SEPARATOR
+        MENUITEM "Pre&zeraù\tF3",               ID_FILE_VIEW
+        MENUITEM "&Editovaù\tF4",               ID_FILE_EDIT
+        MENUITEM "&Vlastnosti...\tF12",         ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "P&remenovaù\tF2",             ID_FILE_RENAME
+        MENUITEM "Pre&menovaù aj prÌponu\tCtrl+F2", ID_FILE_CHANGETYPE
+        MENUITEM "&HromadnÈ premenovanie...",   ID_FILE_MASSRENAME
+        MENUITEM SEPARATOR
+        MENUITEM "O&dstr·niù\tDel",             ID_FILE_REMOVE
+        MENUITEM "Vym&azaù\tCtrl+Del",          ID_FILE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Zavrieù",                    ID_FILE_CLOSE
+        MENUITEM "Kon&iec\tAlt+X",              ID_APP_EXIT
+    END
+    POPUP "&OznaËiù"
+    BEGIN
+        MENUITEM "OznaËiù &vöetko\tCtrl+A",     ID_MARK_SELECTALL
+        MENUITEM "&Zruöiù oznaËenie vöetkÈho\tAlt+A", ID_MARK_UNSELECTALL
+        MENUITEM "Vöetky &adres·re\tCtrl+Alt+Q", ID_MARK_ALLFOLDERS
+        MENUITEM "T&rval˝ v˝ber\tAlt+S",        ID_MARK_STICKYSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "OznaËiù &skupinu...\tGray +", ID_MARK_SELECTGROUP
+        MENUITEM "Zruöiù oznaËenie s&kupiny...\tGray -", 
+                                                ID_MARK_UNSELECTGROUP
+        MENUITEM "&Inverzia oznaËenia\tGray *", ID_MARK_INVERTSELECTION
+        MENUITEM "OznaËiù rozsa&h...",          ID_MARK_SELECTRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Porovnaù &panely\tF9",        ID_MARK_SYNCHRONIZEPANES
+        MENUITEM "P&orovn·vacÌ sprievodca...\tCtrl+F9", ID_MARK_SYNCWIZARD
+        MENUITEM SEPARATOR
+        MENUITEM "Obsahu&j˙ce text...\tCtrl+G", ID_MARK_CONTAININGTEXT
+        MENUITEM "Vyhovuj˙&ce pravidlu...\tAlt+G", ID_MARK_RULEBASED
+        MENUITEM SEPARATOR
+        POPUP "V˝&ber"
+        BEGIN
+            MENUITEM "&Uloûiù\tCtrl+F11",           ID_MARK_SELECTION_STORE
+            MENUITEM SEPARATOR
+            MENUITEM "&Obnoviù\tF11",               ID_MARK_SELECTION_SELECT
+            MENUITEM "Z&ruöiù oznaËenie uloûen˝ch\tAlt+F11", 
+                                                    ID_MARK_SELECTION_UNSELECT
+
+            MENUITEM "&Kombinovaù\tShift+F11",      ID_MARK_SELECTION_COMBINE
+
+        END
+    END
+    POPUP "⁄&pravy"
+    BEGIN
+        MENUITEM "Vy&strihn˙ù\tCtrl+X",         ID_EDIT_CUT
+        MENUITEM "&KopÌrovaù\tCtrl+C",          ID_EDIT_COPY
+        MENUITEM "K&opÌrovaù do...\tF5",        ID_EDIT_COPYTO
+        MENUITEM "&Presun˙ù do...\tF6",         ID_EDIT_MOVETO
+        MENUITEM "Stav &fronty prenosov...",    ID_EDIT_QUEUESTATUS
+        MENUITEM SEPARATOR
+        MENUITEM "&Vloûiù\tCtrl+V",             ID_EDIT_PASTE
+        MENUITEM "&SynchronizaËnÈ vloûenie",    ID_EDIT_SYNCOPASTE
+        MENUITEM SEPARATOR
+        MENUITEM "KopÌrovaù &n·zvy\tAlt+C",     ID_EDIT_COPYNAMES
+        MENUITEM "KopÌrovaù n·&hæad",           ID_EDIT_COPYPREVIEW
+        MENUITEM "KopÌrovaù stÂp&ce\tCtrl+P",   ID_EDIT_COPYSELECTION
+    END
+    POPUP "Zo&braziù"
+    BEGIN
+        MENUITEM "&Dva panely\tCtrl+O",         ID_VIEW_DUALPANE
+        MENUITEM "&N·hæad\tCtrl+Q",             ID_VIEW_QUICKVIEWER
+        POPUP "P&anely n·strojov"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "&Vöetky panely n·strojov",    ID_VIEW_TOOLBAR
+            MENUITEM "&Stavov˝ riadok",             ID_VIEW_STATUS_BAR
+            MENUITEM "&InformaËn˝ riadok",          ID_VIEW_TOOLBARS_INFOBARS
+
+        END
+        MENUITEM SEPARATOR
+        POPUP "ät˝l zobrazenia &panelu"
+        BEGIN
+            MENUITEM "&VeækÈ ikony",                ID_VIEW_LARGEICONS
+            MENUITEM "&MalÈ ikony",                 ID_VIEW_SMALLICONS
+            MENUITEM "&Zoznam",                     ID_VIEW_LIST
+            MENUITEM "&Detaily",                    ID_VIEW_DETAILS
+            MENUITEM "&N·hæady",                    ID_VIEW_THUMBNAILS
+        END
+        MENUITEM "V&ybraù stÂpce...\tAlt+K",    ID_VIEW_SELECTCOLUMNS
+        POPUP "&Zoradiù podæa"
+        BEGIN
+            MENUITEM "&N·zvu\tCtrl+Alt+N",          ID_VIEW_SORTBY_NAME
+            MENUITEM "&Veækosti\tCtrl+Alt+S",       ID_VIEW_SORTBY_SIZE
+            MENUITEM "&D·tumu\tCtrl+Alt+D",         ID_VIEW_SORTBY_DATE
+            MENUITEM "&Typu\tCtrl+Alt+T",           ID_VIEW_SORTBY_TYPE
+            MENUITEM "&Cesty",                      ID_VIEW_ARRANGEBY_PATH
+            MENUITEM "InÈ",                         ID_VIEW_SORTBY_OTHER
+            , GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "N&etriediù\tCtrl+Alt+U",      ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "&Vzostupne\tCtrl+Alt+A",      ID_VIEW_SORTBY_ASCENDING
+        END
+        MENUITEM "Automaticky na&staviù öÌrku stÂpcov\tCtrl+Add", 
+                                                ID_VIEW_AUTOSIZECOLUMNS
+        MENUITEM SEPARATOR
+        MENUITEM "&Obnoviù\tCtrl+R",            ID_VIEW_REFRESH
+        MENUITEM "Zak·zaù o&bnovovanie\tCtrl+Alt+R", ID_VIEW_HOLDAUTOREFRESH
+        MENUITEM SEPARATOR
+        POPUP "&Filter"
+        BEGIN
+            MENUITEM "Podæa &masky...\tCtrl+H",     ID_FILE_VISUALFILTER
+            MENUITEM "Podæa &pravidiel...\tAlt+H",  ID_VIEW_VISUALFILTER_RULEBASED
+
+            MENUITEM "&Zapn˙ù/Vypn˙ù\tCtrl+J",      ID_MARK_USEVISUALFILTER
+            MENUITEM SEPARATOR
+            MENUITEM "Schovaù &adres·re\tAlt+J",    ID_VIEW_HIDEFOLDERS
+            MENUITEM "&Len oznaËenÈ\tCtrl+Alt+J",   ID_VIEW_SELECTEDONLY
+            MENUITEM SEPARATOR
+            MENUITEM "&Rovnak˝ filter\tCtrl+Alt+M", ID_VIEW_VISUALFILTER_SAMEFILTER
+
+        END
+        MENUITEM "Zobraziù &vöetko",            ID_VIEW_SHOWALL
+    END
+    POPUP "&Akcie"
+    BEGIN
+        MENUITEM "Vloûiù &ploöne",              ID_ACTIONS_FLATTENPATH
+        MENUITEM SEPARATOR
+        MENUITEM "Zmeniù &atrib˙ty...\tShift+F12", 
+                                                ID_ACTIONS_CHANGEATTRIBUTES
+        MENUITEM "&Koment·r...\tAlt+Z",         ID_ACTIONS_SETCOMMENT
+        POPUP "D·tovÈ &pr˙dy"
+        BEGIN
+            MENUITEM "&Zobraziù pr˙dy",             ID_ACTIONS_VIEWSTREAMS
+            MENUITEM "Z&baliù",                     ID_ACTIONS_BUNDLETOGO
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Rozdeliù s˙bor...",          ID_ACTIONS_SPLIT
+        MENUITEM "S&pojiù s˙bory...",           ID_ACTIONS_MERGEFILES
+        MENUITEM "Skar&tovaù",                  ID_ACTIONS_SHRED
+        MENUITEM SEPARATOR
+        MENUITEM "&NaËÌtaù obsah kontajnera...", ID_ACTIONS_LOADCONTENTS
+        MENUITEM "&Uloûiù obsah kontajnera\tCtrl+S", 
+                                                ID_ACTIONS_WRITECONTENTS
+        MENUITEM "NaËÌtaù zo &schr·nky",        ID_ACTIONS_IMPORTCLIPBOARD
+    END
+    POPUP "N·s&troje"
+    BEGIN
+        MENUITEM "Spustiù p&rÌkaz",             ID_TOOLS_RUNCOMMAND
+        MENUITEM "PrÌkaz &DOSu\tF10",           ID_TOOLS_DOSCOMMAND
+        MENUITEM "&HistÛria sp˙öùania...\tCtrl+F10", ID_TOOLS_RUNHISTORY
+        MENUITEM "&Opakovaù prÌkaz\tAlt+F10",   ID_TOOLS_REPEATCOMMAND
+        MENUITEM SEPARATOR
+        MENUITEM "PrÌkazov˝ &skript...\tCtrl+B", ID_TOOLS_COMMANDSCRIPT
+        MENUITEM "Veækosù p&odadres·rov\tCtrl+D", ID_TOOLS_SUBFOLDERSIZE
+        MENUITEM "N·jsù &cieæ\tCtrl+L",         ID_EDIT_FINDTARGET
+        MENUITEM SEPARATOR
+        MENUITEM "&N·jsù s˙bory...\tCtrl+F",    ID_TOOLS_FINDFILES
+        MENUITEM "V˝sledok &hæadania...",       ID_TOOLS_SEARCHSTATUS
+        MENUITEM SEPARATOR
+        MENUITEM "N·jsù du&plik·ty...",         ID_TOOLS_CHECKDUPLICATES
+        MENUITEM "Zobraziù tieû &jedineËnÈ",    ID_TOOLS_REVEALUNIQUE
+        MENUITEM SEPARATOR
+        MENUITEM "&Moûnosti...",                ID_TOOLS_OPTIONS
+    END
+    POPUP "O&kno"
+    BEGIN
+        MENUITEM "&Nov˝ kontajner",             ID_WINDOW_SCRAPFRAME
+        MENUITEM "&Zoznam...\tCtrl+W",          ID_WINDOW_LIST
+        MENUITEM SEPARATOR
+        MENUITEM "ZrkadlovÈ ro&lovanie\tCtrl+M", ID_GOTO_MIRRORSCROLLING
+    END
+    POPUP "P&rispÙsobiù"
+    BEGIN
+        POPUP "Panely n·s&trojov"
+        BEGIN
+            MENUITEM "Prid&aù nov˝...",             ID_CUSTOMIZE_TOOLBARS_ADDNEW
+
+            MENUITEM "&Organizovaù...",             ID_CUSTOMIZE_TOOLBARS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(pr·zdny)",                   ID_TBCUST_FIRST
+        END
+        POPUP "&StÂpce"
+        BEGIN
+            MENUITEM "Pridaù &aktu·lne",            ID_CUSTOMIZE_COLUMNS_ADD
+            MENUITEM "&Organizovaù...",             ID_CUSTOMIZE_COLUMNS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(pr·dzny)",                   ID_COLUMNSET_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Viac...",                    ID_CUSTOMIZE_COLUMNS_MORE
+
+        END
+        POPUP "&UûÌvateæskÈ prÌkazy"
+        BEGIN
+            MENUITEM "Prid&aù nov˝...",             ID_CUSTOMIZE_USERCOMMANDS_ADDNEW
+
+            MENUITEM "&Organizovaù...",             ID_CUSTOMIZE_USERCOMMANDS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(pr·zdny)",                   ID_USERTOOL_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Viac...",                    ID_CUSTOMIZE_USERCOMMANDS_MORE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Kl·vesovÈ skratky...",       ID_CUSTOMIZE_KEYBOARDUSE
+    END
+    POPUP "N·pove&da"
+    BEGIN
+        MENUITEM "&R˝chly ötart",               ID_HELP_ALPHAINFO
+        MENUITEM "&Obsah\tF1",                  ID_HELP_CONTENTS
+        MENUITEM "&Tip dÚa...",                 ID_HELP_TIPOFTHEDAY
+        MENUITEM SEPARATOR
+        MENUITEM "&Registrovaù program",        ID_HELP_REGISTERPROGRAM
+        MENUITEM "Zistiù akt&ualiz·cie",        ID_HELP_CHECKUPDATES
+        MENUITEM "Technick· p&odpora",          ID_HELP_GETSUPPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Pos&ledn· chyba",             ID_HELP_LASTERROR
+        MENUITEM SEPARATOR
+        MENUITEM "&O xplorer2...",              ID_APP_ABOUT
+    END
+END
+
+IDR_DIRSTATFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&Akcie"
+    BEGIN
+        MENUITEM "&Presk˙maù\tEnter",           ID_FILE_CLONEBROWSE2
+        MENUITEM SEPARATOR
+        MENUITEM "Zoradiù podæa &n·zvu",        ID_VIEW_SORTBY_NAME
+        MENUITEM "Zoradiù podæa veæko&sti",     ID_VIEW_SORTBY_SIZE
+        MENUITEM SEPARATOR
+        MENUITEM "KopÌrovaù &text\tCtrl+C",     ID_DIRDATA_COPYTEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Zavrieù",                    ID_FILE_CLOSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\kenny.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(PRO)
+#if defined(APSTUDIO_INVOKED)
+IDD_ABOUTBOX$(PRO) DIALOG DISCARDABLE  0, 0, 242, 121
+#else
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 242, 121
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "O xplorer2 professional"
+FONT 8, "Verdana"
+BEGIN
+    EDITTEXT        IDC_CHECK_REGI,67,38,85,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "k˙più licenciu",IDC_EMAIL,179,7,50,24,BS_MULTILINE
+    PUSHBUTTON      "technick· podpora",IDC_ONLINE,170,36,69,14,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE
+    DEFPUSHBUTTON   "ok",IDOK,179,57,50,14
+    EDITTEXT        IDC_BUILD,67,14,85,12,ES_MULTILINE | ES_READONLY
+    CTEXT           "© Copyright 2002-2005 Nikos Bozinis\nVöetky pr·va vyhradenÈ",
+                    IDC_STATIC,11,60,149,19
+    ICON            IDR_MAINFRAME,IDC_STATIC,13,10,20,20
+    GROUPBOX        "",IDC_STATIC,7,3,158,82
+    LTEXT           "Verzia:",IDC_STATIC,36,16,24,8
+    LTEXT           "RegistraËn˝ kÛd",IDC_STATIC,11,40,54,8
+    LTEXT           "Varovanie: tento program je chr·nen˝ autorsk˝m z·konom a medzin·rodn˝mi dohodami. Neopr·vnenÈ kopÌrovanie alebo distrib˙cia tohoto programu mÙûe viesù k prÌsnym pokut·m.",
+                    IDC_WARNING,7,93,228,25
+    LTEXT           "www.zabkat.com",IDC_ZABKAT,176,77,56,8
+END
+#endif
+
+IDD_TEXTINPUT_DLG DIALOG DISCARDABLE  0, 0, 139, 45
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "Verdana"
+BEGIN
+    COMBOBOX        IDC_COMBO,7,6,125,95,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "ok",IDOK,21,26,42,14
+    PUSHBUTTON      "zruöiù",IDCANCEL,75,26,42,14
+END
+
+IDD_NOTIFY_DLG DIALOG DISCARDABLE  0, 0, 239, 162
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "&Nezobrazuj t˙to spr·vu znova",IDC_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,48,138,114,10
+    DEFPUSHBUTTON   "ok",IDOK,181,124,50,14
+    PUSHBUTTON      "zruöiù",IDCANCEL,181,143,50,14
+    ICON            "",IDC_CUSTICON,8,134,18,20
+    LTEXT           "message",IDC_MESSAGE,7,7,224,112
+END
+
+IDD_CONFIRMALL_DLG DIALOG DISCARDABLE  0, 0, 239, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "Verdana"
+BEGIN
+    PUSHBUTTON      "¡n&o",IDYES,7,55,50,14
+    PUSHBUTTON      "&Nie",IDNO,181,55,50,14
+    PUSHBUTTON      "¡no, &vöetko",IDIGNORE,7,74,50,14
+    PUSHBUTTON      "Nie, vöet&ko",IDCANCEL,181,74,50,14
+    ICON            "",IDC_CUSTICON,111,71,20,20
+    LTEXT           "spr·va",IDC_MESSAGE,7,7,225,45
+    PUSHBUTTON      "&Zruöiù",IDABORT,94,55,50,14
+END
+
+IDD_GREP_DLG DIALOG DISCARDABLE  0, 0, 187, 138
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "N·jsù text v s˙boroch"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Hæadan˝ text:",IDC_STATIC,7,9,49,8
+    COMBOBOX        IDC_COMBO_FIND,56,7,127,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ä&peci·lne znaky:",IDC_STATIC,8,26,57,8
+    COMBOBOX        IDC_COMBO_ESPECIAL,76,24,51,81,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Doslovne",IDC_CHECK_VERBA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,137,25,46,10
+    CONTROL         "R&ozliöovaù malÈ/veækÈ pÌsmen·",IDC_CHECK_CASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,50,136,10
+    CONTROL         "Len &celÈ slov·",IDC_CHECK_WORD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,63,62,10
+    CONTROL         "Hæadaù aj v &netextov˝ch s˙boroch",IDC_CHECK_BINARY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,76,146,10
+    CONTROL         "&Regul·rny v˝raz",IDC_CHECK_REGEXP,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,110,63,70,10
+    LTEXT           "KÛdovani&e znakov:",IDC_STATIC,33,93,64,8
+    COMBOBOX        IDC_COMBO_ENCODING,103,91,51,69,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "&vybraù",IDOK,7,117,50,14
+    PUSHBUTTON      "odo&braù",IDC_UNSELECT,68,117,50,14
+    PUSHBUTTON      "zruöiù",IDCANCEL,130,117,50,14
+END
+
+IDD_SCRIPTBUILD_DLG DIALOG DISCARDABLE  0, 0, 286, 142
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PrÌkazov· d·vka"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "ä&ablÛna:",IDC_STATIC,7,9,30,8
+    COMBOBOX        IDC_COMBO_BATPLATE,46,7,233,106,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ä&peci·lne tokeny:",IDC_STATIC,39,26,60,8
+    COMBOBOX        IDC_COMBO_TOKENS,99,24,99,88,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "&n·hæad",IDC_BUTTON_PREVIEW,7,24,29,14
+    PUSHBUTTON      "n·poveda k $-&tokenom",IDC_BUTTON_HELP,200,23,79,14
+    PUSHBUTTON      "&editovaù",IDC_BUTTON_EDIT,7,121,50,14
+    PUSHBUTTON      "Sp&ustiù (DOS)",IDOK,73,121,61,14
+    PUSHBUTTON      "&spustiù (shell)",IDC_BUTTON_WINEXEC,150,121,61,14
+    PUSHBUTTON      "zruöiù",IDCANCEL,227,121,50,14
+    EDITTEXT        IDC_EDIT_PREVIEW,7,43,272,70,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+END
+
+IDD_SYNCWIZARD_DLG DIALOG DISCARDABLE  0, 0, 187, 118
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Synchroniz·cia"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "OznaËiù poloûky, ktorÈ s˙:",IDC_STATIC,7,7,110,50,
+                    WS_GROUP
+    CONTROL         "&JedineËnÈ",IDC_CHECK_UNIQUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,18,48,10
+    CONTROL         "&ZhodnÈ",IDC_CHECK_IDENTICAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,18,41,10
+    CONTROL         "&Novöie",IDC_CHECK_NEWER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,31,38,10
+    CONTROL         "&Staröie",IDC_CHECK_OLDER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,31,39,10
+    CONTROL         "Ne&urËitÈ",IDC_CHECK_UNDECIDABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,35,43,43,10
+    GROUPBOX        "Porovn·vaù podæa:",IDC_STATIC,7,63,109,48,WS_GROUP
+    CONTROL         "D·tumu &modifik·cie",IDC_RADIO_MOD,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,73,81,10
+    CONTROL         "&Obsahu s˙boru",IDC_RADIO_CONTENT,"Button",
+                    BS_AUTORADIOBUTTON,13,85,65,10
+    CONTROL         "L&en podæa n·zvu",IDC_RADIO_NAME,"Button",
+                    BS_AUTORADIOBUTTON,13,96,75,10
+    CONTROL         "Zahrn˙ù &aj zloûky",IDC_CHECK_FOLDERS,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_GROUP | WS_TABSTOP,
+                    121,20,55,24
+    DEFPUSHBUTTON   "ok",IDOK,130,75,50,14
+    PUSHBUTTON      "zruöiù",IDCANCEL,130,95,50,14
+    CONTROL         "N·zvy porovnaù &bez cesty",IDC_CHECK_FREEFORM,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,121,44,65,23
+    COMBOBOX        IDC_COMBO_SCENARIA,121,6,59,38,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SPLIT_DLG DIALOG DISCARDABLE  0, 0, 219, 71
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rozdeliù s˙bor"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Veækosù (kB):",IDC_STATIC,5,10,52,8
+    EDITTEXT        IDC_EDIT_SIZE,59,8,51,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "&Cieæov· zloûka:",IDC_STATIC,4,28,56,8
+    COMBOBOX        IDC_COMBO_SPLITARGET,58,27,139,78,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_DOTS,199,27,13,12
+    LTEXT           "ä&tandardn·",IDC_STATIC,118,9,39,8
+    COMBOBOX        IDC_COMBO_STD,158,7,54,46,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "ok",IDOK,93,50,50,14
+    PUSHBUTTON      "zruöiù",IDCANCEL,162,50,50,14
+END
+
+IDD_BUILDSYNC_DLG DIALOG DISCARDABLE  0, 0, 187, 142
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Kontrola kompilaËn˝ch z·vislostÌ"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "TransformaËnÈ pravidl·",IDC_STATIC,7,7,173,63
+    LTEXT           "&Z (maska):",IDC_STATIC,14,21,38,8
+    EDITTEXT        IDC_EDIT_FROM,76,19,97,12,ES_AUTOHSCROLL
+    LTEXT           "&CieæovÈ prÌpony:",IDC_STATIC,14,36,58,8
+    EDITTEXT        IDC_EDIT_TO,76,34,97,12,ES_AUTOHSCROLL
+    LTEXT           "&PreddefinovanÈ:",IDC_STATIC,14,52,55,8
+    COMBOBOX        IDC_COMBO_PREDEF,76,50,97,74,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "OznaËiù zdrojovÈ s˙bory, ktorÈ:",IDC_STATIC,7,74,118,61,
+                    WS_GROUP
+    CONTROL         "&Nebud˙ prekladanÈ",IDC_CHECK_UNIQUE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,87,79,10
+    CONTROL         "Boli z&menenÈ",IDC_CHECK_NEWER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,102,60,10
+    CONTROL         "S˙ akt&u·lne",IDC_CHECK_OLDER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,117,55,10
+    DEFPUSHBUTTON   "ok",IDOK,130,97,50,14
+    PUSHBUTTON      "zruöiù",IDCANCEL,130,121,50,14
+END
+
+IDD_COLSELECT_DLG DIALOG DISCARDABLE  0, 0, 275, 180
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "V˝ber stÂpcov"
+FONT 8, "Verdana"
+BEGIN
+    CTEXT           "&S˙Ëasn˝ stav",IDC_TBPLACE,7,7,97,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LISTBOX         IDC_LIST_CURRENT,7,20,97,105,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "D&ostupnÈ stÂpce",IDC_STATIC,170,7,97,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LISTBOX         IDC_LIST_AVAIL,170,20,97,105,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Pri&daù <",IDC_BUTTON_ADD,111,46,50,14
+    PUSHBUTTON      "Odob&raù >",IDC_BUTTON_REMOVE,111,75,50,14
+    DEFPUSHBUTTON   "ok",IDOK,154,158,50,14
+    PUSHBUTTON      "zruöiù",IDCANCEL,217,158,50,14
+    LTEXT           "",IDC_STATIC_DESCRIPTION,7,156,131,18,SS_SUNKEN
+    LTEXT           "Predd&efinovanÈ:",IDC_STATIC,30,137,59,8
+    COMBOBOX        IDC_COMBO_PRECOLS,97,135,143,115,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FILTER_DLG DIALOG DISCARDABLE 0, 0, 235, 163
+STYLE DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "Verdana"
+BEGIN
+    RTEXT           "&N·zov:",IDC_STATIC,7,7,24,8
+    COMBOBOX        IDC_COMBO_NAMED,39,5,133,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&S˙bory",IDC_CHECK_FILES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,177,2,39,10
+    CONTROL         "&Adres·re",IDC_CHECK_DIRS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,177,12,46,10
+    GROUPBOX        "Obsahuj˙ce &text",IDC_STATIC,7,27,221,44,WS_GROUP
+    COMBOBOX        IDC_COMBO_FIND,14,36,150,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ESPECIAL,170,36,51,81,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Rozliöovaù malÈ/veækÈ",IDC_CHECK_CASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,49,85,10
+    CONTROL         "&CelÈ slov·",IDC_CHECK_WORD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,50,49,10
+    CONTROL         "Vöetky s˙b&ory",IDC_CHECK_BINARY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,59,63,10
+    LTEXT           "œalöie &pravidl·",IDC_TBPLACE,7,80,221,13,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "",IDC_LISTRULES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | 
+                    LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_TABSTOP,7,93,
+                    221,44,WS_EX_CLIENTEDGE
+    RTEXT           "&UloûenÈ:",IDC_STATIC,7,149,30,8
+    COMBOBOX        IDC_COMBO_SAVED,51,147,133,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "U&loûiù",IDC_BUTTON_SAVE,192,146,36,14
+    CONTROL         "&Doslovne",IDC_CHECK_VERBA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,59,46,10
+    COMBOBOX        IDC_COMBO_ENCODING,170,54,51,69,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&RE",IDC_CHECK_REGEXP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,147,58,25,10
+END
+
+IDD_FPP_DATE DIALOG DISCARDABLE  0, 0, 195, 49
+STYLE DS_NOFAILCREATE | DS_CONTROL | WS_CHILD
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Nastavenia d·tumu",IDC_STATIC,2,0,190,47,WS_GROUP
+    CONTROL         "&PoËas predoöl˝ch:",IDC_RADIO_PREV,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,5,11,72,10
+    CONTROL         "&Medzi:",IDC_RADIO_BETWEEN,"Button",BS_AUTORADIOBUTTON,
+                    5,30,37,10
+    EDITTEXT        IDC_EDIT_XDAYS,81,10,39,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_PREVNUM,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,119,9,10,14
+    COMBOBOX        IDC_COMBO_DTUNIT,133,10,56,57,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_DATE_FROM,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,54,28,59,13
+    LTEXT           "a",IDC_STATIC,119,30,8,8
+    CONTROL         "DateTimePicker1",IDC_DATE_TO,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,130,28,59,13
+END
+
+IDD_FPP_NUMBER DIALOG DISCARDABLE  0, 0, 195, 49
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "»ÌselnÈ nastavenia",IDC_STATIC,2,0,190,47,WS_GROUP
+    LTEXT           "&Minimum:",IDC_STATIC,11,12,33,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_MINSIZE,47,10,91,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_MIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,130,9,10,14
+    LTEXT           "Ma&ximum:",IDC_STATIC,9,31,35,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_MAXSIZE,47,29,91,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_MAX,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,130,28,10,14
+    LTEXT           "&Jednotky",IDC_STATIC,146,11,30,8
+    COMBOBOX        IDC_COMBO_UNITS,146,22,40,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FPP_TEXT DIALOG DISCARDABLE  0, 0, 195, 49
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "TextovÈ nastavenia",-1,2,0,190,47,WS_GROUP
+    LTEXT           "N·&jsù:",-1,7,20,25,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_FINDTXT,34,18,153,12,ES_AUTOHSCROLL
+END
+
+IDD_FILTEREDIT_DLG DIALOG DISCARDABLE  0, 0, 195, 140
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DefinÌcia pravidla"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Vlastnosù a popis:",IDC_STATIC,5,9,75,8
+    COMBOBOX        IDC_COMBO_PROPERTIES,4,21,105,112,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_STATIC_DESCRIPTION,113,5,77,35,SS_SUNKEN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,2,42,190,47
+    GROUPBOX        "Logick· podmienka",IDC_STATIC,7,100,108,33
+    CONTROL         "&And",IDC_RADIO_AND,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,115,29,10
+    CONTROL         "&Or",IDC_RADIO_OR,"Button",BS_AUTORADIOBUTTON,50,115,24,
+                    10
+    CONTROL         "&Not",IDC_RADIO_NOT,"Button",BS_AUTORADIOBUTTON,82,115,
+                    27,10
+    DEFPUSHBUTTON   "ok",IDOK,138,100,50,14,WS_GROUP
+    PUSHBUTTON      "zruöiù",IDCANCEL,138,119,50,14
+END
+
+IDD_TOUCHATTR_DLG DIALOG DISCARDABLE  0, 0, 205, 102
+STYLE DS_MODALFRAME | DS_NOFAILCREATE | DS_CONTEXTHELP | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Zmeniù atrib˙ty"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&ZmenenÈ:",IDC_STATIC,7,9,35,8
+    CONTROL         "DateTimePicker1",IDC_DATE_MODIFIED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,54,7,59,13
+    CONTROL         "DateTimePicker1",IDC_TIME_MODIFIED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,115,7,52,
+                    13
+    PUSHBUTTON      "teraz",IDC_BUTTON_MODNOW,170,7,28,13
+    LTEXT           "&VytvorenÈ:",IDC_STATIC,7,29,38,8
+    CONTROL         "DateTimePicker1",IDC_DATE_CREATED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,54,27,59,13
+    CONTROL         "DateTimePicker1",IDC_TIME_CREATED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,115,27,52,
+                    13
+    PUSHBUTTON      "teraz",IDC_BUTTON_CRNOW,170,27,28,13
+    GROUPBOX        "Atrib˙ty",IDC_STATIC,7,52,126,42,WS_GROUP
+    CONTROL         "&ArchÌvny",IDC_CHECK_ARCHIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,64,45,10
+    CONTROL         "Len na ËÌ&tanie",IDC_CHECK_READONLY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,78,61,10
+    CONTROL         "&Skryt˝",IDC_CHECK_HIDDEN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,77,64,38,10
+    CONTROL         "&SystÈmov˝",IDC_CHECK_SYSTEM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,77,78,53,10
+    DEFPUSHBUTTON   "ok",IDOK,148,59,50,14,WS_GROUP
+    PUSHBUTTON      "zruöiù",IDCANCEL,148,80,50,14
+END
+
+IDD_COPYTO_DLG DIALOG DISCARDABLE  0, 0, 247, 106
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " do cieæovÈho adres·ra"
+FONT 8, "Verdana"
+BEGIN
+    COMBOBOX        IDC_COMBO_TARGET,50,44,172,78,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_DOTS,226,44,13,12
+    COMBOBOX        IDC_COMBO_TABS,50,64,172,79,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&nastavenia",IDC_BUTTON_OPTIONS,189,6,50,14
+    CONTROL         "&Druh˝ panel",IDC_RADIO_OPPOSITE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,6,25,56,10
+    CONTROL         "&Adres·r",IDC_RADIO_HERE,"Button",BS_AUTORADIOBUTTON,7,
+                    45,39,10
+    CONTROL         "&Panel",IDC_RADIO_TAB,"Button",BS_AUTORADIOBUTTON,7,65,
+                    34,10
+    DEFPUSHBUTTON   "",IDOK,131,84,50,14
+    PUSHBUTTON      "zruöiù",IDCANCEL,189,84,50,14
+    EDITTEXT        IDC_OTHER_PANE,69,24,171,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           " %d vybrat˝ch poloûiek do:",IDC_LABEL,16,8,128,8
+    PUSHBUTTON      "&fronta",IDC_BUTTON_QUEUE,51,84,50,14
+END
+
+IDD_DUPEWIZARD_DLG DIALOG DISCARDABLE  0, 0, 147, 95
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Zistenie duplik·tov"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Porovn·vaù podæa:",-1,7,7,133,43,WS_GROUP
+    CONTROL         "&N·zov",IDC_CHECK_NAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,20,36,10
+    CONTROL         "Veæko&sù",IDC_CHECK_SIZE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,86,20,49,10
+    CONTROL         "D·tu&m zmeny",IDC_CHECK_MDATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,33,62,10
+    CONTROL         "&Obsah",IDC_CHECK_CONTENT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,86,33,37,10
+    CONTROL         "OznaËiù vöetky n·jdenÈ &duplik·ty",IDC_CHECK_SELECTEM,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,13,57,
+                    127,10
+    DEFPUSHBUTTON   "ok",IDOK,31,74,50,14
+    PUSHBUTTON      "zruöiù",IDCANCEL,90,74,50,14
+END
+
+IDD_GENERICLOG_DLG DIALOG DISCARDABLE  0, 0, 358, 177
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "Courier New"
+BEGIN
+    EDITTEXT        IDC_EDIT,2,2,354,173,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_OPTFRAME_PDLG DIALOG DISCARDABLE  0, 0, 250, 218
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Okno"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Panely",IDC_STATIC,7,3,236,90,WS_GROUP
+    CONTROL         "&Aktiv·cia jedn˝m kliknutÌm",IDC_CHK_1CLICKLIST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,12,103,10
+    CONTROL         "&Mrieûka v podrobnom reûime",IDC_CHK_GRIDLIST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,126,12,108,10
+    CONTROL         "&InformaËnÈ tipy u s˙borov",IDC_CHK_TIPLIST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,23,101,10
+    CONTROL         "OznaËovaù cel˝ &riadok",IDC_CHK_FULLROWSEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,126,23,93,10
+    CONTROL         "Povoliù pomal˝ &dvojklik pre premenovanie",
+                    IDC_CHECK_CLKRENAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,34,154,10
+    CONTROL         "V˝ber uk·zanÌm",IDC_CHECK_TRACKSEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,172,34,69,10
+    CONTROL         "Automaticky zotriediù obsah po presune, kopÌrovanÌ &atÔ.",
+                    IDC_AUTOSORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,45,
+                    213,10
+    CONTROL         "Zv˝razÚovaù &prim·rny triediaci stÂpec (len vo Windows XP)",
+                    IDC_CHECK_SORTCOL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,56,208,10
+    LTEXT           "&Maxim·lna öÌrka stÂpca",IDC_STATIC,10,68,79,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_MAXWIDTH,90,67,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "&Triedenie adres·rov",IDC_STATIC,118,68,67,8
+    COMBOBOX        IDC_COMBO_DIRSORT,185,66,54,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "SpÙsob umiestnenia dvoch panelov:",IDC_STATIC,15,80,120,
+                    8,NOT WS_GROUP
+    CONTROL         "&Vodorovne",IDC_TILE_HORZ,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,137,80,47,10
+    CONTROL         "&Zvisle",IDC_TILE_VERT,"Button",BS_AUTORADIOBUTTON,187,
+                    80,39,10
+    GROUPBOX        "Strom",IDC_STATIC,7,96,236,56,WS_GROUP
+    CONTROL         "JednoduchÈ &kliknutie zobrazÌ adres·r v aktÌvnom paneli",
+                    IDC_CHK_1CLICKTREE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,105,203,10
+    CONTROL         "Automaticky deaktivovaù &strom a aktivovaù panel",
+                    IDC_CHK_FOKOSTREE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,116,201,10
+    CONTROL         "&AutomatickÈ rozbalenie podadres·rov",IDC_CHK_HOVERTREE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,127,196,10
+    CONTROL         "Zost·vaù synchroni&zovan˝ s adres·rom v aktÌvnom paneli",
+                    IDC_CHECK_TREESYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,138,210,10
+    GROUPBOX        "N·hæad",IDC_STATIC,7,155,236,35,WS_GROUP
+    LTEXT           "&Maxim·lny poËet znakov:",IDC_STATIC,13,165,86,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIT_TSIZE,103,163,45,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "äÌrka tab&ul·tora",IDC_STATIC,158,164,54,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_TABS,214,163,24,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Mu&ltimÈdia zaËaù hneÔ prehr·vaù",IDC_CHECK_AUTOPLAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,176,123,10
+    CONTROL         "Zak·zaù he&x n·hæad",IDC_CHECK_NOHEX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,156,176,85,10
+    PUSHBUTTON      "HlavnÈ pÌsm&o...",IDC_BUTTON_FONT,7,197,55,14,WS_GROUP
+    LTEXT           "NeaktÌvne\npozadie",IDC_STATIC,72,195,42,18
+    PUSHBUTTON      "",IDC_BUTTON_IBGCOL,115,197,30,14,BS_BITMAP
+    CONTROL         "ZjednoduöenÈ men&u",IDC_CHECK_PLAINMEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,158,193,83,10
+    CONTROL         "Bubli&nkov· n·poveda",IDC_CHECK_BALONI,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,158,203,86,10
+END
+
+IDD_OPTGENERAL_PDLG DIALOG DISCARDABLE  0, 0, 250, 218
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "VöeobecnÈ"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "Uloûiù na&stavenia pri ukonËenÌ",IDC_SAVEONEXIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,124,10
+    CONTROL         "&Zobrazovaù skrytÈ s˙bory a adres·re",IDC_SHOWHIDDEN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,18,137,10
+    CONTROL         "Ukazovaù &administr·torskÈ zdieæania pri sieùov˝ch adres·roch",
+                    IDC_CHECK_NETSHARE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,29,227,10
+    CONTROL         "Zobrazovaù veæko&sti v bytoch (in·Ë sa prev·dzaj˙ na kB/MB/GB)",
+                    IDC_CHECK_BYTES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    40,230,10
+    CONTROL         "PÌpnuù pri chy&be alebo varovanÌ",IDC_CHECK_BEEP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,51,128,10
+    CONTROL         "Ignorovaù prvÈ kliknuti&e do panelu (ochrana proti zruöeniu v˝beru)",
+                    IDC_CHECK_EATCLIK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,62,233,10
+    CONTROL         "Presmerovaù v˝stup z DOSovsk˝ch prÌkazov do lok·lneho okna",
+                    IDC_CHECK_CONSOLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,73,222,10
+    LTEXT           "PoËet zapam‰tateæn˝ch poloûiek pre rozbaæovacie zoznam&y",
+                    IDC_STATIC,7,88,202,8,NOT WS_GROUP
+    EDITTEXT        IDC_NUMHISTORY,214,86,26,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "&Veækosù n·hæadov (pixle)",IDC_STATIC,7,102,88,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIT_THUMBSIZE,95,100,27,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "&Ikony poloûiek",IDC_STATIC,125,103,49,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_ICONS,175,101,68,46,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "PrÌkazov˝ riadok pre extern˝ editor/prehliadaË",
+                    IDC_STATIC,7,118,236,46,WS_GROUP
+    LTEXT           "E&ditor",IDC_STATIC,13,132,20,8,NOT WS_GROUP
+    EDITTEXT        IDC_EXTEDITORNAME,51,130,169,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_DOTS_EDITOR,224,130,13,12
+    LTEXT           "&PrehliadaË",IDC_STATIC,13,148,35,8,NOT WS_GROUP
+    EDITTEXT        IDC_EXTVIEWERNAME,51,147,169,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_DOTS_VIEWER,224,147,13,12
+    GROUPBOX        "Maxim·lna veækosù s˙boru pre... (0=neobmedzene)",
+                    IDC_STATIC,7,169,236,45,WS_GROUP
+    LTEXT           "BublinovÈ in&fo",IDC_STATIC,10,183,47,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_INFOSIZE,60,181,47,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "N·&hæady",IDC_STATIC,11,199,35,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SIZEPIX,60,197,47,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "&KontrolnÈ s˙Ëty",IDC_STATIC,120,183,57,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SUMSIZE,185,181,47,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Poloûka v ZI&P/FTP",IDC_STATIC,120,199,60,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIT_ZIPSIZE,185,197,47,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "viac moûnostÌ...",IDC_BUTTON_KEALLA,179,7,64,14
+END
+
+IDD_MASSRENAME_DLG DIALOG DISCARDABLE  0, 0, 231, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "HromadnÈ premenovanie"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "äablÛna pre &cieæov˝ n·zov:",IDC_STATIC,7,9,90,8
+    COMBOBOX        IDC_COMBO_RNTEMPL,99,7,126,106,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ä&peci·lne tokeny:",IDC_STATIC,66,26,60,8
+    COMBOBOX        IDC_COMBO_TOKENS,128,24,97,88,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "n·poveda k $-&tokenom",IDC_BUTTON_HELP,7,85,84,14
+    PUSHBUTTON      "p&remenovaù",IDOK,101,85,61,14
+    PUSHBUTTON      "zruöiù",IDCANCEL,174,85,50,14
+    EDITTEXT        IDC_EDIT_PREVIEW,7,43,218,36,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    DEFPUSHBUTTON   "&n·hæad",IDC_BUTTON_PREVIEW,7,24,50,14
+END
+
+IDD_FINDFILES_DLG DIALOG DISCARDABLE  0, 0, 235, 266
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "N·jsù s˙bory alebo adres·re"
+FONT 8, "Verdana"
+BEGIN
+    RTEXT           "Hæadaù &v:",-1,2,9,32,8
+    COMBOBOX        IDC_COMBO_WHERE,39,7,171,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_DOTS,214,7,13,12
+    LTEXT           "äpeci·lne a&dres·re:",-1,7,24,67,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_VIRTUALS,74,23,116,73,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Hæadaù v podadre&s·roch",IDC_CHECK_SUBFOLDERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,38,97,10
+    CONTROL         "V arc&hÌvoch",IDC_CHECK_ZIPFOLDERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,105,38,54,10
+    CONTROL         "NajskÙr do hÂ&bky",IDC_RADIO_DEPTH,"Button",
+                    BS_AUTORADIOBUTTON,49,50,71,10
+    CONTROL         "NajskÙr do öÌ&rky",IDC_RADIO_BREADTH,"Button",
+                    BS_AUTORADIOBUTTON,125,50,70,10
+    CONTROL         "&Lok·ne hæadanie",IDC_CHECK_REFINE,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,159,38,69,10
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,64,227,1
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,68,228,170
+    PUSHBUTTON      "vyma&zaù",IDC_BUTTON_CLEAR,7,243,50,14
+    DEFPUSHBUTTON   "ok",IDOK,113,243,50,14
+    PUSHBUTTON      "zruöiù",IDCANCEL,177,243,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,237,227,1
+END
+
+IDD_MATCHRULE_DLG DIALOG DISCARDABLE  0, 0, 235, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "OznaËenie poloûiek podæa pravidla"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,3,228,170
+    PUSHBUTTON      "vyma&zaù",IDC_BUTTON_CLEAR,7,177,50,14
+    DEFPUSHBUTTON   "&vybraù",IDOK,71,177,50,14
+    PUSHBUTTON      "odo&braù",IDC_UNSELECT,125,177,50,14
+    PUSHBUTTON      "zruöiù",IDCANCEL,179,177,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,171,227,1
+END
+
+IDD_TRYKS_DLG DIALOG DISCARDABLE  0, 0, 227, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tip dÚa"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "&Ukazovaù tipy kaûd˝ deÚ",IDC_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,139,97,10
+    PUSHBUTTON      "ÔalöÌ &tip",IDC_NEXT,108,137,50,14
+    DEFPUSHBUTTON   "zavrieù",IDOK,170,137,50,14
+    LTEXT           "",IDC_PLACEHOLDER,7,7,213,121
+END
+
+IDD_CUSTLIST_DLG DIALOG DISCARDABLE  0, 0, 298, 145
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Organizovaù"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,19,284,101,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "ok",IDOK,178,124,50,14
+    PUSHBUTTON      "zruöiù",IDCANCEL,241,124,50,14
+    LTEXT           "",IDC_TBPLACE,7,7,284,13,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_CUSTPROPS_DLG DIALOG DISCARDABLE  0, 0, 209, 110
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " - vlastnosti"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&N·zov",IDC_STATIC,26,11,21,8
+    EDITTEXT        IDC_EDIT_NAME,50,9,151,12,ES_AUTOHSCROLL
+    LTEXT           "&Popis",IDC_STATIC,27,30,18,8
+    EDITTEXT        IDC_EDIT_DESCR,50,30,152,28,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY
+    GROUPBOX        "Kl·vesov· skratka",IDC_STATIC,7,69,128,34,WS_GROUP
+    CONTROL         "&Ctrl",IDC_CHECK_CTRL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,83,28,10
+    CONTROL         "&Alt",IDC_CHECK_ALT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,43,83,25,10
+    CONTROL         "&Shift",IDC_CHECK_SHIFT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,70,83,31,10
+    COMBOBOX        IDC_COMBO_NUM,103,81,27,90,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "ok",IDOK,152,69,50,14,WS_GROUP
+    PUSHBUTTON      "zruöiù",IDCANCEL,152,88,50,14
+    PUSHBUTTON      "&info",IDC_BUTTON_LINFO,16,47,30,11,WS_DISABLED
+END
+
+IDD_REGPROMPT_DLG DIALOG DISCARDABLE  0, 0, 281, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "xplorer2 na sk˙öku"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&ProsÌm, zapÌöte/vloûte svoj registraËn˝ kæ˙Ë:",
+                    IDC_STATIC,7,49,146,8
+    EDITTEXT        IDC_EDIT_CODE,7,61,267,64,ES_MULTILINE | ES_AUTOVSCROLL
+    DEFPUSHBUTTON   "k˙più licenciu...",IDC_BUTTON_BUY,7,133,84,14
+    PUSHBUTTON      "pokraËovaù",IDOK,224,133,50,14,WS_DISABLED
+    ICON            "",IDC_CUSTICON,7,7,20,20
+    LTEXT           "Prep·Ëte, ale sk˙öobn· doba sa skonËila. Ak chcete pouûÌvaù tento program aj naÔalej, musÌte si zak˙più licenciu a zapÌsaù svoj registraËn˝ kæ˙Ë do kolonky niûöie.",
+                    IDC_MESSAGE,33,7,241,36
+    LTEXT           "",IDC_MESSAGE2,33,36,173,8
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(CHEAPO)
+#if defined(APSTUDIO_INVOKED)
+IDD_ABOUTBOX$(CHEAPO) DIALOG DISCARDABLE  0, 0, 242, 121
+#else
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 242, 121
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "O xplorer2 lite"
+FONT 8, "Verdana"
+BEGIN
+    PUSHBUTTON      "upgrade na\npro verziu",IDC_EMAIL,174,10,61,27,
+                    BS_MULTILINE
+    DEFPUSHBUTTON   "ok",IDOK,179,48,50,14
+    EDITTEXT        IDC_BUILD,72,14,85,12,ES_MULTILINE | ES_READONLY
+    CTEXT           "SprÌstupniù spr·vu s˙borov pre masy\n\n© Copyright 2002-2005 Nikos Bozinis\nVöetky pr·va vyhradenÈ",
+                    IDC_STATIC,11,31,149,34
+    ICON            IDR_MAINFRAME,IDC_STATIC,17,10,20,20
+    GROUPBOX        "",IDC_STATIC,7,3,158,82
+    LTEXT           "Verzia:",IDC_STATIC,41,16,24,8
+    LTEXT           "Varovanie: tento program je chr·nen˝ autorsk˝m z·konom a medzin·rodn˝mi dohodami. Neopr·vnenÈ kopÌrovanie alebo distrib˙cia tohoto programu mÙûe viesù k prÌsnym pokut·m.",
+                    IDC_WARNING,7,93,228,25
+    CTEXT           "Zadarmo len pre osobnÈ && ökolskÈ pouûitie",
+                    IDC_FREEMANS,17,65,136,17
+    LTEXT           "www.zabkat.com",IDC_ZABKAT,176,73,56,8
+END
+#endif
+
+IDD_VISHFILTER_DLG DIALOG DISCARDABLE  0, 0, 235, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Zobraz poloûky podæa pravidla"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,3,228,170
+    PUSHBUTTON      "vyma&zaù",IDC_BUTTON_CLEAR,7,177,50,14
+    DEFPUSHBUTTON   "&filter",IDOK,119,177,50,14
+    PUSHBUTTON      "zruöiù",IDCANCEL,179,177,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,171,227,1
+END
+
+IDD_COPYOPTIONS_DLG DIALOG DISCARDABLE  0, 0, 231, 191
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nastavenia prenosu"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "&Tich· oper·cia; ûiadne potvrdzovanie chybov˝ch hl·senÌ",
+                    IDC_CHECK_SILENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,
+                    6,201,10
+    GROUPBOX        "Prepisovanie existuj˙cich objektov",IDC_STATIC,7,20,216,
+                    61,WS_GROUP
+    CONTROL         "Vyp˝t&aù potvrdenie od uûÌvateæa",IDC_RDOVR_ASK,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,11,31,129,10
+    CONTROL         "PrepÌsaù, ak je n&ovöÌ, inak preskoËiù",IDC_RDOVR_NEWER,
+                    "Button",BS_AUTORADIOBUTTON,11,42,162,10
+    CONTROL         "Premenovaù &cieæ",IDC_RDOVR_RENAME,"Button",
+                    BS_AUTORADIOBUTTON,11,54,81,10
+    CONTROL         "Vûdy potv&rdiù s˙bory systÈmovÈ alebo len na ËÌtanie",
+                    IDC_CHECK_READHID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    11,67,196,10
+    GROUPBOX        "V prÌpade chyby",IDC_STATIC,7,84,216,35,WS_GROUP
+    CONTROL         "ZapÌsaù a zobraziù &potvrdenie pre Ôalöiu akciu",
+                    IDC_RDERR_PROMPT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,11,94,174,10
+    CONTROL         "ZapÌsaù chybu do &Log s˙boru a pokraËovaù v akcii",
+                    IDC_RDERR_LOGIT,"Button",BS_AUTORADIOBUTTON,11,105,189,
+                    10
+    CONTROL         "SpoËÌtaù celkov˙ &veækosù pred zaËiatkom prenosu",
+                    IDC_CHECK_SIZEUPFRONT,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,6,122,218,10
+    CONTROL         "Nechaù zobrazenÈ o&kno s priebehom akcie po skonËenÌ prenosu",
+                    IDC_CHECK_WINDOWON,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,6,133,225,10
+    CONTROL         "Vy&mazaù atrib˙t ""len na ËÌtanie"" z prenesen˝ch s˙borov",
+                    IDC_CHECK_CDRONLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    6,144,205,10
+    GROUPBOX        "Priorita ˙lohy",IDC_STATIC,7,158,118,26
+    CONTROL         "&norm·lna",IDC_RDPRI_NORMAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,15,169,47,10
+    CONTROL         "na po&zadÌ",IDC_RDPRI_BG,"Button",BS_AUTORADIOBUTTON,66,
+                    169,47,10
+    DEFPUSHBUTTON   "ok",IDOK,176,157,50,14,WS_GROUP
+    PUSHBUTTON      "zruöiù",IDCANCEL,176,174,50,14
+END
+
+IDD_COPYPROGRESS_DLG DIALOG DISCARDABLE  0, 0, 262, 126
+STYLE WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Prenos"
+FONT 8, "Verdana"
+BEGIN
+    PUSHBUTTON      "",IDC_BUTTON_PAUSE,205,60,50,14
+    PUSHBUTTON      "zruöiù",IDCANCEL,205,82,50,14
+    RTEXT           "&Z:",IDC_STATIC,12,7,17,8
+    EDITTEXT        IDC_EDIT_CPFROM,30,6,225,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "&Do:",IDC_STATIC,7,21,22,8
+    EDITTEXT        IDC_EDIT_CPTO,30,20,225,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "&PoËet prenesen˝ch s˙borov:",IDC_STATIC,0,87,111,8
+    RTEXT           "&R˝chlosù (za sek.):",IDC_STATIC,16,74,95,8
+    RTEXT           "&Ost·va (odhad):",IDC_STATIC,27,60,84,8
+    PUSHBUTTON      "chybov˝ &log",IDC_BUTTON_LOG,207,105,50,14
+    EDITTEXT        IDC_EDIT_TOTFILES,114,87,76,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_TOTBYTES,114,73,76,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_REMAINDER,114,59,76,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Po skonËenÌ nechat toto okno &otev¯enÈ",
+                    IDC_CHECK_WINDOWON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,109,172,10
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,
+                    41,248,10
+END
+
+IDD_OPT3RD_PDLG DIALOG DISCARDABLE  0, 0, 250, 218
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "PokroËilÈ"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Stavov˝ riadok",IDC_STATIC,7,3,236,36,WS_GROUP
+    CONTROL         "Zobraziù celkov˙ veækosù &adres·ra",IDC_CHECK_STATDIR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,13,144,10
+    CONTROL         "Zobraziù &voænÈ miesto na disku",IDC_CHECK_STATFREE,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | 
+                    WS_TABSTOP,163,12,75,21
+    CONTROL         "Zobraziù &inform·cie o aktu·lnej poloûke ",
+                    IDC_CHECK_STATINFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,25,151,10
+    CONTROL         "&Z·loûky adres·rov hore",IDC_CHECK_TABSTOP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,46,110,10
+    CONTROL         "Zv˝razniù hlaviËku aktÌvneho &panelu ako v 2xExploreru",
+                    IDC_CHECK_2XMODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    57,213,10
+    CONTROL         "PrirodzenÈ &triedenie ËÌsel (len XP)",IDC_CHECK_XPSORT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,68,160,10
+    CONTROL         "&Nezamykaù prech·dzan˝ adres·r",IDC_CHECK_NOCURDIR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,79,165,10
+    CONTROL         "A&utomaticky poËÌtaù veækosti podadres·rov",
+                    IDC_CHECK_AUTOSUBDIR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,90,172,10
+    CONTROL         "Extrah&ovaù uûÌvateæskÈ znaËky na ikon·ch (napr. pre CVS)",
+                    IDC_CHECK_CVSOVERLAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,101,219,10
+    CONTROL         "N·&hæad ukotven˝ na pravej strane stromu adres·rov",
+                    IDC_CHECK_QVDOCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    112,192,10
+    CONTROL         "AutomatickÈ &doplÚovanie cesty v adresnom riadku na öt˝l Explorera",
+                    IDC_CHECK_XPAUTOCOMP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,122,239,10
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(CHEAPO)
+#if defined(APSTUDIO_INVOKED)
+IDD_ADPRO_DLG$(CHEAPO) DIALOG DISCARDABLE  0, 0, 243, 99
+#else
+IDD_ADPRO_DLG DIALOG DISCARDABLE  0, 0, 243, 99
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Obmedzenie verzie 'lite'"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "vysk˙öajte si to dnes zadarmo!",IDC_ZABKAT,79,61,125,11
+    DEFPUSHBUTTON   "porovnaù verzie",IDC_BUT_COMPFEAT,31,80,81,14
+    PUSHBUTTON      "ok",IDOK,185,80,50,14
+    ICON            "",IDC_CUSTICON,5,5,20,20
+    LTEXT           "Tento prÌkaz je dostupn˝ len v profesion·lnej verzii.\n\nPre zÌskanie vöetk˝ch moûnostÌ xploreru2 si musÌte k˙più profesion·lnu verziu. T· obsahuje veæa uûitoËn˝ch n·strojov, tieû je moûnÈ si ju lepöie prizpÙsobiù a mÙûete vyuûÌvaù z·kaznÌcku podporu.\n\n",
+                    IDC_STATIC,31,5,203,52
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TEXTINPUT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_NOTIFY_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_CONFIRMALL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_GREP_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_SCRIPTBUILD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_SYNCWIZARD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_SPLIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_BUILDSYNC_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_COLSELECT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_FILTER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_FPP_DATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_FPP_NUMBER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_FPP_TEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_FILTEREDIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_TOUCHATTR_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_COPYTO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_DUPEWIZARD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_GENERICLOG_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 356
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_OPTFRAME_PDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_OPTGENERAL_PDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_MASSRENAME_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_FINDFILES_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_MATCHRULE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_TRYKS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_CUSTLIST_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_CUSTPROPS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_REGPROMPT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_VISHFILTER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_COPYOPTIONS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_COPYPROGRESS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_WELCOME        HTML    DISCARDABLE     "res\\welcome_slov.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "xplorer≤"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_CLOSE           "Zavrie toto okno"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "ZobrazÌ inform·cie o programe, ËÌslo verzie a copyright\nO programe"
+    ID_APP_EXIT             "UkonËÌ aplik·ciu (vöetky otvorenÈ okn·)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPY            "SkopÌruje vybratÈ poloûky do schr·nky\nKopÌrovaù (Ctrl+C)"
+    ID_EDIT_CUT             "Presunie vybratÈ poloûky do schr·nky\nVystrihn˙ù (Ctrl+X)"
+    ID_EDIT_PASTE           "VloûÌ obsah schr·nky\nVloûiù (Ctrl+V)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "ZobrazÌ alebo skryje panely pre n·stroje"
+    ID_VIEW_STATUS_BAR      "ZobrazÌ alebo skryje stavov˝ riadok"
+    ID_VIEW_REFRESH         "ObnovÌ obsah panelu\nObnoviù (Ctrl+R)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_SCSIZE          "ZmenÌ veækosù okna"
+    ATL_IDS_SCMOVE          "ZmenÌ pozÌciu okna"
+    ATL_IDS_SCMINIMIZE      "ZmenöÌ okno do ikony"
+    ATL_IDS_SCMAXIMIZE      "Zv‰ËöÌ okno na maxim·lnu veækosù"
+    ATL_IDS_SCCLOSE         "Zavrie aktÌvne okno"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_SCRESTORE       "ObnovÌ okno do pÙvodnej veækosti"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Pripraven˝"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_CLONE         "OtvorÌ rovnakÈ okno prieskumnÌka ako je toto"
+    ID_FILE_TRASH           "⁄plne vymaûe v˝ber (obÌde odpadkov˝ kÙö)\n⁄plne vymazaù"
+    ID_WINDOW_SETREGKEY     "UloûÌ aktu·lne rozloûenie panelov v okne a jeho histÛriu"
+    ID_FILE_BROWSE          "OtvorÌ alebo spustÌ s˙bor alebo prejde do adres·ra"
+    ID_FILE_CLONEBROWSE     "OtvorÌ oznaËen˙ poloûku v novom okne"
+    ID_FILE_UPALEVEL        "Prejde o ˙roveÚ vyööie z aktu·lneho adres·ra\nO ˙roveÚ vyööie (Bksp)"
+    ID_VIEW_LARGEICONS      "ZobrazÌ poloûky ako veækÈ ikony"
+    ID_VIEW_SMALLICONS      "ZobrazÌ poloûky ako malÈ ikony"
+    ID_VIEW_LIST            "ZobrazÌ poloûky v zozname"
+    ID_VIEW_DETAILS         "ZobrazÌ detailnÈ inform·cie o kaûdej poloûke"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INFO_PANE            "s˙bor: 1,999,999 B; ZmenenÈ 31/01/2001 13:35:00"
+    ID_SELECTION_PANE       "9999999: 999.234 MB"
+    ID_FILTRO_PANE          "F"
+    ID_FREESPACE_PANE       "100.9MB voæn˝ch (99%)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_REGDATA_FIRST        "ZobrazÌ aktÌvnu poloûku v novom okne s pouûitÌm tohoto uloûenÈho rozloûenia"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MEMO_REGNAME        "Rozloûenie panelov"
+    IDS_TITLE_ADDCOLSET     "N·zov skupiny stÂpcov"
+    IDS_SIZE_FOLDER         "<adres·r>"
+    IDS_COLUMN_OFF          "<n/a>"
+    IDS_COLYMN_FILETYPE     "s˙bor"
+    IDS_STOCKCOL_NAME       "N·zov"
+    IDS_STOCKCOL_FULLNAME   "Pln˝ n·zov"
+    IDS_STOCKCOL_EXTENSION  "PrÌpona"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NUMBOUNDS       "Zadajte prosÌm ËÌslo medzi %1!d! a %2!d!"
+    IDS_ERR_INVALIDINPUT    "Posledn˝ prÌkaz ned·va zmysel"
+    IDS_ERR_PARTIALREAD     "NiektorÈ poloûky boli neprÌstupnÈ (nedostatoËnÈ prÌstupovÈ pr·va?)"
+    IDS_ERR_NOVISFILTER     "Nie je aktÌvny ûiadny obrazov˝ filter"
+    IDS_ERR_NOCAPABILITY    "Na vybrat˝ch poloûk·ch nie je moûnÈ vykonaù zvolen˝ prÌkaz"
+    IDS_ERR_NODRAGDROP      "V˝ber nie je moûnÈ presun˙ù"
+    IDS_ERR_NOCLIPBOARD     "Schr·nka nie je prÌstupn·"
+    IDS_ERR_REFRESHFAILED   "Obsah adres·ra nie je moûnÈ obnoviù; sk˙ste prejsù do inÈho adres·ra a potom nasp‰ù"
+    IDS_ERR_NOCONTENT       "Nie je moûnÈ preËÌtaù obsah vybrat˝ch poloûiek"
+    IDS_ERR_PASTEFAULT      "Vloûenie zo schr·nky sa nepodarilo"
+    IDS_ERR_RENAMEFAULT     "Z nejakÈho dÙvodu nie je moûnÈ poloûku premenovaù"
+    IDS_ERR_RENAMENIET      "Poloûku nie je moûnÈ premenovaù"
+    IDS_ERR_NOSHORTCUT      "T·to funkcia pracuje len so z·stupcami"
+    IDS_ERR_RESOLVELINK     "Niektor˝ z·stupca dnes nie je dostupn˝"
+    IDS_ERR_NOPREVIEW       "T·to poloûka nem· ûiadny n·hæad"
+    IDS_ERR_CREATEFAULT     "Nepodarilo sa vytvoriù nov˙ poloûku"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STOCKCOL_SIZE       "Veækosù"
+    IDS_STOCKCOL_ATTRIBUTES "Atrib˙ty"
+    IDS_STOCKCOL_MODIFIED   "ZmenenÈ"
+    IDS_STOCKCOL_CREATED    "VytvorenÈ"
+    IDS_STOCKCOL_ACCESSED   "OtvorenÈ"
+    IDS_STOCKCOL_TYPE       "Typ"
+    IDS_STOCKCOL_PATH       "Cesta"
+    IDS_STOCKCOL_VERSION    "Verzia"
+    IDS_STOCKCOL_HLINKS     "Odkazy"
+    IDS_STOCKCOL_CHECKSUM   "Kontroln˝ s˙Ëet"
+    IDS_STOCKCOL_VOLINFO    "MÈdium"
+    IDS_STOCKCOL_83         "8.3 N·zov"
+    IDS_STOCKCOL_COMPRESSED "Veækosù na disku"
+    IDS_STOCKCOL_COMMENT    "Pozn·mka"
+    IDS_STOCKCOL_SUBITEMS   "S˙hrn"
+    IDS_STOCKCOL_KEYWORDS   "Kæ˙ËovÈ slov·"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_COPYNAMEOK      "OznaËenÈ n·zvy s cestami boli skopÌrovanÈ do schr·nky"
+    IDS_MSG_FOLDERBUSTED    "Adres·r bol premenovan˝ alebo vymazan˝; zobrazÌ sa Plocha"
+    IDS_MSG_REFRESHOK       "Obsah panelu bol v poriadku obnoven˝"
+    IDS_STAT_EMPTYFOLDER    "Pr·zdny panel"
+    IDS_STAT_FORMATTOTAL    "%u poloûiek"
+    IDS_STAT_VIRTFOLDER     "rozöÌren˝ priestor mien"
+    IDS_STAT_THINGME        "virtu·lna poloûka"
+    IDS_STAT_FOLDER         "adres·r"
+    IDS_STAT_SHORTCUT       "z·stupca"
+    IDS_MSG_PREVIEWCOPIED   "N·hæad bol skopÌrovan˝ do schr·nky"
+    IDS_NEW_FILE            "Nov˝ s˙bor"
+    IDS_NEW_FOLDER          "Nov˝ adres·r"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_THUMBNAILS      "ZobrazÌ n·hæady pre vöetky poloûky"
+    ID_FILE_PROPERTIES      "ZobrazÌ vlastnosti vybrat˝ch poloûiek\nVlastnosti (F12)"
+    ID_EDIT_COPYNAMES       "SkopÌruje celÈ n·zvy vybrat˝ch poloûiek do schr·nky (<Shift> pre kr·tke 8.3 n·zvy)"
+    ID_MARK_SELECTALL       "Vyberie vöetky poloûky v aktu·lnom paneli"
+    ID_FILE_VIEW            "ZobrazÌ obsah s˙boru v textovom editore\nPrezeraù (F3)"
+    ID_FILE_EDIT            "ZobrazÌ obsah s˙boru v textovom editore s moûnosùou zmeniù obsah\nEditovaù (F4)"
+    ID_EDIT_COPYPREVIEW     "SkopÌruje n·hæad vybratej poloûky do schr·nky ako obr·zok"
+    ID_FILE_DELETE          "Presunie vybratÈ poloûky do koöa (<Shift> pre ˙plnÈ vymazanie)\nOdstr·niù (Del)"
+    ID_FILE_RENAME          "Premenuje vybrat˙ poloûku v paneli\nPremenovaù (F2)"
+    ID_EDIT_COPYTO          "SkopÌruje vybratÈ poloûky do inÈho adres·ra (<Alt> do naposledy pouûitÈho adres·ra)\nKopÌrovaù do (F5)"
+    ID_EDIT_MOVETO          "Presunie vybratÈ poloûky do inÈho adres·ra (<Alt> do naposledy pouûitÈho adres·ra)\nPresun˙ù do (F6)"
+    ID_ACTIONS_NEWFILE      "VytvorÌ nov˝ (pr·zdny) s˙bor\nNov˝ s˙bor (F7)"
+    ID_ACTIONS_NEWFOLDER    "VytvorÌ nov˝ adres·r\nNov˝ adres·r (F8)"
+    ID_EDIT_PASTELINK       "VloûÌ z·stupcu pre s˙bory v schr·nke"
+    ID_EDIT_FINDTARGET      "N·jde cieæov˙ poloûku, na ktor˙ odkazuje z·stupca"
+    ID_ACTIONS_PASTEHARDLINK 
+                            "VytvorÌ pevnÈ odkazy na s˙bory v schr·nke (len na NTFS)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ACTIONS_SHRED        "⁄plnÈ zruöenie (skartovanie) vybrat˝ch poloûiek\nSkartuj"
+    ID_ACTIONS_TOUCH        "Nastavenie d·tumu zmeny oznaËen˝ch poloûiek"
+    ID_MARK_STICKYSELECTION "Prepne reûim trvalÈho v˝beru (ned· sa zruöiù kliknutÌm alebo kl·vesami)\nTrval˝ (Alt+S)"
+    ID_MARK_UNSELECTALL     "ZruöÌ v˝ber vöetk˝ch poloûiek"
+    ID_MARK_USEVISUALFILTER "Zapne/vypne zobrazovacÌ filter (masky alebo pravidiel)"
+    ID_VIEW_LOCATEINTREE    "N·jde prezeran˝ adres·r v paneli so stromovou ötrukt˙rou adres·rov\nN·jsù v strome (Alt+T)"
+    ID_VIEW_SHOWTREE        "ZobrazÌ alebo skryje panel so stromovou ötrukt˙rou adres·rov\nStrom (Ctrl+T)"
+    ID_WINDOW_SCRAPFRAME    "OtvorÌ nov˝ kontajner pre doËasnÈ umiestÚovanie poloûiek z rÙznych adres·rov\nKontajner"
+    ID_ACTIONS_CHANGEATTRIBUTES 
+                            "ZmenÌ d·tum a DOS atrib˙ty vybrat˝ch poloûiek\nAtrib˙ty (Shift+F12)"
+    ID_FILE_BROWSE2         "OtvorÌ vybrat˙ poloûku (preddefinovan· akcia)"
+    ID_FILE_CLONEBROWSE2    "Nahr· vybrat˙ poloûku do adres·rovÈho okna"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_OPENWARN        "Naozaj chcete otvoriù vöetky tieto s˙bory?"
+    IDS_MSG_MPVITEMSREMOVED "Poloûky boli odstr·nenÈ z pohæadu (ale zost·vaj˙ na disku)"
+    IDS_MSG_FILTERMAYHIDE   "AktÌvny filter moûno skryl niektorÈ pridanÈ poloûky"
+    IDS_HL_CONFIRMTITLE     "Pevn˝ odkaz"
+    IDS_HL_STATUSMSG        "äpeci·lne vkladanie... (ESC pre preruöenie)"
+    IDS_SCRAPTITLE          "kontajner≤ - "
+    IDS_MFV_WRITEOK         "Obsah panelu bol ˙speöne uloûen˝"
+    IDS_COMMANDPROMPT       "Ctrl+äÌpky/Enter pre v˝ber n·zvov; F1 doplnÌ zvyöok n·zvu; $ tokeny s˙ povolenÈ; stlaË <Enter> pre spustenie"
+    IDS_MEDIA_UNKNOWN       "(nezn·my)"
+    IDS_MEDIA_FLOPPY        "Disketa"
+    IDS_MEDIA_FIXED         "Pevn˝ disk"
+    IDS_MEDIA_REMOTE        "Sieù"
+    IDS_MEDIA_CD            "CDROM"
+    IDS_MEDIA_RAM           "RAM Disk"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_REMOVE          "Odstr·ni vybratÈ poloûky z panelu (skutoËnÈ s˙bory na disku zostan˙ nezmenenÈ)\nOdstr·niù (Del)"
+    ID_PMRITEDRAG_INSERTHERE "VloûÌ pren·öanÈ poloûky do tohoto panelu"
+    ID_PMRITEDRAG_CANCEL    "ZruöÌ oper·ciu pren·öania prav˝m tlaËidlom myöi"
+    ID_ACTIONS_SPLIT        "RozdelÌ vybrat˝ s˙bor na menöie Ëasti\nRozdeliù"
+    ID_ACTIONS_MERGEFILES   "SpojÌ vybratÈ poloûky do jednÈho s˙boru (v poradÌ, v akom s˙ zobrazenÈ v paneli)\nSpojiù"
+    ID_ACTIONS_WRITECONTENTS 
+                            "UloûÌ obsah aktÌvneho panela kontajnera do s˙boru\nUloûiù (Ctrl+S)"
+    ID_ACTIONS_LOADCONTENTS "OtvorÌ skÙr uloûen˝ obsah kontajnera\nOtvoriù"
+    ID_ACTIONS_FLATTENPATH  "VloûÌ obsah adres·ra a vöetk˝ch jeho podadres·rov (alebo otvorÌ CIDA s˙bor) do tohoto panelu"
+    ID_TOOLS_RUNCOMMAND     "SpustÌ windowsovsk˝ (GUI) program\nSpustiù"
+    ID_TOOLS_DOSCOMMAND     "SpustÌ prÌkaz vyûaduj˙ci DOSovsk˝ interpreter (dir, ren, atÔ.)\nDOS (F10)"
+    ID_GOTO_BACK            "N·vrat do predch·dzaj˙ceho zobrazenÈho adres·ra\nSp‰ù (Alt+left)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NOMAINFRAME     "HlavnÈ okno aplik·cie nie je k dispozÌcii"
+    IDS_ERR_NOSCRAPFRAME    "Nie je moûnÈ vytvoriù okno pre kontajner"
+    IDS_ERR_EXTEDITVIEW     "Nie je moûnÈ spustiù prehliadaË/editor; skontrolujte N·stroje | Moûnosti"
+    IDS_ERR_CANTEXECUTE     "Tak˝to prÌkaz nie je moûnÈ vykonaù"
+    IDS_ERR_HLNOTFILESYS    "äpeci·lne prÌkazy vloûenia vyûaduj˙ zdrojovÈ a cieæovÈ poloûky s˙borovÈho systÈmu"
+    IDS_ERR_HLCANTLINK      "Nie je moûnÈ vytvoriù pevn˝ odkaz; je zdroj a cieæ na tej istej NTFS partÌcii?"
+    IDS_ERR_HLUPONSELF      "Nie je moûnÈ vloûiù (alebo vytvoriù pevn˝ odkaz na) poloûku do jeho pÙvodnÈho adres·ra"
+    IDS_ERR_HLBOOTSTRAP     "Nie je moûnÈ vkladaù adres·r samÈho do seba"
+    IDS_ERR_MFVWRITEKAK     "Chyba pri ukladanÌ s˙boru"
+    IDS_ERR_MFVLOAD         "Chyba pri ËÌtanÌ s˙boru a/alebo je obsah s˙boru poökoden˝"
+    IDS_ERR_MFVLOADPARTIAL  "NiektorÈ poloûky neboli n·jdenÈ"
+    IDS_ERR_PIDLRANGE       "Poûadovan· cesta je mimo lok·lny systÈm mien"
+    IDS_ERR_FOLDERKAK       "»Ìtaù z %1 sa ûiaæ nepodarilo"
+    IDS_ERR_DATASOURCE      "Tento adres·r nie je v poriadku"
+    IDS_ERR_DROPTARGET      "Cieæov˝ adres·r odmietol t˙to s˙borov˙ oper·ciu"
+    IDS_ERR_INVALIDFILTER   "Zadan˝ filter nie je spr·vny"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_SCRAPFRAME          "Kontajner #"
+    IDR_CMDFRAME            "Konzola≤"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_DIRSTATFRAME        "Inform·cie o adres·roch - "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_BOOKMARKSET     "Z·loûka bola nastaven·."
+    IDS_ADDRESSBAR          "Liöta Adresa"
+    IDS_TRANSLATION         "Slovensk˝ preklad"
+    IDS_MSG_FOCUSWARP       "Kurzor sa dostal na posledn˙ poloûku"
+    IDS_SYNC_FILTERSON      "Minim·lne jeden panel m· aktÌvny zobrazovacÌ filter;%nsynchroniz·cia mÙûe byù nekompletn·.%nChcete napriek tomu pokraËovaù? "
+    IDS_SYNC_IDENTIFIED     "Synchroniz·cia oznaËila poloûky pre Ôalöiu akciu"
+    IDS_SYNC_IDENTICAL      "Obsah oboch adres·rov je rovnak˝"
+    IDS_MSG_NOCMDHISTORY    "HistÛria prÌkazov je pr·zdna"
+    IDS_SELECTFILTER        "Vybraù filter"
+    IDS_UNSELECTFILTER      "Odobraù filter"
+    IDS_VF_INSTRUCTIONS     "Zadajte filter (napr. '*.cpp') a stlaËte <Enter>"
+    IDS_VF_TITLE            "ZobrazovacÌ filter:"
+    IDS_MSG_READINGFOLDER   "»Ìta sa obsah adres·ra..."
+    IDS_VF_FILESNOTSAVED    "AktÌvny zobrazovacÌ filter (alebo zisùovaË duplik·tov) moûno skryl niektorÈ poloûky;%ntakÈto skrytÈ poloûky nebud˙ uloûenÈ; Chcete napriek tomu pokraËovaù? "
+    IDS_FP_BFFTITLE         "Vyberte adres·r, ktor˝ sa ploöne rozloûÌ do kontajnera"
+    IDS_FP_FLATTENINGMSG    "(ESC pre preruöenie); naËÌtavam adres·r %d..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GOTO_FORWARD         "Prejde do Ôalöieho adres·ra v zozname\nVpred (Alt+right)"
+    ID_GOTO_BOOKMARK        "Prejsù do adres·ra, ktor˝ bol oznaËen˝ ako z·loûka\nSkoË (Ctrl+F1)"
+    ID_GOTO_SETBOOKMARK     "NastavÌ aktu·lny adres·r ako r˝chlu z·loûku"
+    ID_VIEW_DUALPANE        "Prepne medzi zobrazenÌm jednÈho/dvoch panelov\nDva panely (Ctrl+O)"
+    ID_MARK_SYNCHRONIZEPANES 
+                            "Vyberie poloûky, ktorÈ s˙ rÙzne v oboch paneloch, podæa d·tumu\nPorovnaù (F9)"
+    ID_TOOLS_REPEATCOMMAND  "Zopakovaù naposledy spusten˝ prÌkaz"
+    ID_MARK_SELECTGROUP     "Vyberie poloûky, ktorÈ vyhovuj˙ zadanej maske"
+    ID_MARK_UNSELECTGROUP   "ZruöÌ v˝ber poloûiek, ktorÈ vyhovuj˙ zadanej maske"
+    ID_MARK_INVERTSELECTION "ZmenÌ vybratÈ poloûky na nevybratÈ a naopak"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NOFILTERMATCH   "ZadanÈmu filtru nezodpovedaj˙ ûiadne poloûky"
+    IDS_ERR_INTERRUPT       "Chyba pri ËÌtanÌ, alebo preruöenÈ uûÌvateæom"
+    IDS_ERR_NOSYNCFOLDERS   "Neboli n·jdenÈ adres·re pre synchroniz·ciu; sk˙sili ste predt˝m synchronizaËn˝ prÌkaz (napr. F9)?"
+    IDS_ERR_CMDSYNTAX       "Pouûite prosÌm $ alebo > pre urËenie typu prÌkazu, alebo zadajte cestu, ktor· m· byù zapÌsan· do zoznamu"
+    IDS_ERR_IOSCRIPT        "Vstupno/v˝stupn· chyba pri ukladanÌ skriptovÈho s˙boru"
+    IDS_ERR_OUTOFMEM        "Nie je dostatok pam‰ti pre poûadovan˙ oper·ciu"
+    IDS_ERR_CMDTEMPL        "äablÛna pre prÌkazy je nespr·vna"
+    IDS_ERR_NOHELPFILE      "S˙bor ""%s"" sa nenach·dza v inötalaËnom adres·ri"
+    IDS_ERR_SHREDIO         "Chyba pri z·pise, skartovanie preruöenÈ"
+    IDS_ERR_NOTFILE         "T·to oper·cia pracuje len so s˙bormi"
+    IDS_ERR_SPLITIO         "Vstupno/v˝stupn· chyba, alebo preruöenÈ uûÌvateæom"
+    IDS_ERR_NOMERGE         "PrÌliö m·lo s˙borov bolo oznaËen˝ch pre sp·janie"
+    IDS_ERR_NOFOLDERTARGET  "Cieæov˝ adres·r nie je platn˝"
+    IDS_ERRDDV_BUILDFROM    "Poloûka ""Z"" nemÙûe byù pr·zdna"
+    IDS_ERRDDV_BUILDTO      "Pole ""Do"" nesmie byù pr·zdne\na nesmie obsahovaù znaky masky */? alebo oddeæovacie znaky"
+    IDS_ERR_VIRTCOLUMNS     "Pre virtu·lne adres·re nie je moûnÈ vyberaù stÂpce"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_VISUALFILTER    "ZobrazÌ len poloûky vyhovuj˙ce zadanej maske filtra"
+    ID_GOTO_MIRRORBROWSING  "KeÔ je zaökrtnutÈ, panely nasleduj˙ jeden druhÈho pri prech·dzanÌ medzi adres·rmi\nZrkadlo (Ctrl+M)"
+    ID_TOOLS_COMMANDSCRIPT  "VytvorÌ skript (d·vkov˝ s˙bor), aplikuje öablÛnu na vybratÈ poloûky\nSkript (Ctrl+B)"
+    ID_EDIT_SYNCOPASTE      "DokonËÌ synchroniz·ciu, skopÌruje vybratÈ poloûky do ich prÌsluön˝ch cieæov˝ch adres·rov"
+    ID_MARK_CONTAININGTEXT  "Vyberie s˙bory, ktorÈ obsahuj˙ zadan˝ textov˝ reùazec\nN·jdi text (Ctrl+G)"
+    ID_TOOLS_RUNHISTORY     "ZobrazÌ zoznam naposledy spusten˝ch prÌkazov\nHistÛria sp˙öùania (Ctrl+F10)"
+    ID_GOTO_SAMEFOLDER      "V neaktÌvnom paneli zobrazÌ ten ist˝ adres·r ako v aktÌvnom (<Alt> pre opak)\nRovnakÈ"
+    ID_GOTO_SWAPPANES       "Navz·jom vymenÌ obsah oboch panelov"
+    ID_HELP_ALPHAINFO       "⁄vodn· prÌruËka k aplik·cii xplorer≤"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYNC_NOMATCH        "éiadna poloûka nezodpoved· poûadovanej synchronizaËnej maske"
+    IDS_SYNC_DODGY          " (existuj˙ neurËiteænÈ poloûky)"
+    IDS_MSG_GREPROMPT       "Prehæad·va sa obsah... (ESC pre preruöenie)"
+    IDS_GREP_NOMATCH        "éiadna poloûka nezodpoved· zadanÈmu (textovÈmu) pravidlu"
+    IDS_GREP_FOUND          "Poloûky zodpovedaj˙ce (textovÈmu) pravidlu boli oznaËenÈ pre Ôalöiu akciu"
+    IDS_TIT_CMDHISTORY      "Vyberte prÌkaz:"
+    IDS_MSG_CMDTOKENS       "Tieto öpeci·lne tokeny s˙ automaticky nahradzovanÈ v öablÛnach pre prÌkazy:\n\n$N\tN·zov s˙boru (sample.txt)\n$B\tN·zov bez prÌpony (sample)\n$E\tPrÌpona (txt)\n$P\tCesta (c:\\folder)\n$D\tD·tum poslednej zmeny (13/3/2004 10:12)\n$C\tN·zov nadradenÈho adres·ra (folder)\n$F\tCesta+s˙bor (c:\\folder\\sample.txt)\n$S\tVöetky oznaËenÈ s˙bory\n$A\tVöetky oznaËenÈ s˙bory aj s cestami\n$L\tCesta æavÈho (hornÈho) panelu\n$R\tCesta pravÈho (dolnÈho) panelu\n$I\tCesta neaktÌvneho panelu\n$Q\tS˙bor z neaktÌvneho panelu (other.txt)\n$G\tCesta a s˙bor z neaktÌvneho panelu (d:\\other.txt)\n$Z\tDoËasn˝ s˙bor rozbalen˝ zo ZIP s˙boru, FTP, atÔ.\n$#\tAutomaticky zv‰Ëöovan˝ ËÌtaË zaËÌnaj˙ci ËÌslicou #\n$?\tV˝zva na jeden argument\n$$\t(Escape) pre jeden znak $\n\nVöetky doteraz uvedenÈ verzie mal˝m pÌsmenom (napr. $f) poûÌvaj˙ kr·tke 8.3 n·zvy s˙borov\n\n${n·zov_stÂpca} vloûÌ obsah stÂpca;\nnapr. ${size} bude nahradenÈ veækosùou s˙boru, ${name} je rovnakÈ ako $N atÔ."
+    IDS_MSG_BRANCHEXPAND    "Rozbaæuj˙ sa vöetky vetvy... (ESC pre preruöenie)"
+    IDS_OFN_SAVEPROMPT      "Uloûiù zmeny do '%1' ?"
+    IDS_MSG_SYNCPROGRESS    "Porovn·vaj˙ sa poloûky... (ESC pre preruöenie)"
+    IDS_ECF_EOL             "Koniec riadku"
+    IDS_ECF_TAB             "Tabul·tor"
+    IDS_ECF_CR              "ZaËiatok riadku"
+    IDS_ECF_LF              "œalöÌ riadok"
+    IDS_ECF_SPACE           "Medzera"
+    IDS_ECF_COMMA           "»iarka"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_HELP_CONTENTS        "Kompletn· prÌruËka"
+    ID_GOTO_DESKTOP         "KoreÚov˝ adres·r priestoru mien"
+    ID_GOTO_MEDOCS          "Obsahuje Vaöe s˙kromnÈ dokumenty"
+    ID_GOTO_NETWORK         "PoËÌtaËe v lok·lnej sieti"
+    ID_GOTO_KRAP            "ZmazanÈ dokumenty"
+    ID_GOTO_CPANEL          "Nastavenia ËÌslovaËa"
+    ID_GOTO_MEKOMP          "Lok·lne a namapovanÈ disky"
+    ID_GOTO_PRINTERS        "DostupnÈ tlaËiarne"
+    ID_GOTO_RECENTD         "Naposledy pouûÌvanÈ dokumenty alebo adres·re"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GOTO_STARTMENU       "Adres·r reprezentuj˙ci menu ätart"
+    ID_GOTO_STARTUP         "Programy, ktorÈ sa automaticky sp˙öùaj˙ po prihl·senÌ do systÈmu"
+    ID_GOTO_CDBURNING       "S˙bory Ëakaj˙ce na vyp·lenie na CD (len Windows XP)"
+    ID_GOTO_SENDTO          "Poloûky zobrazenÈ v kontextovom menu Odoslaù (pravÈ tlaËidlo v prieskumnÌkovi)"
+    ID_BOOKMARKS_FAVORITES  "Prejde do zloûky Obæ˙benÈ Internet Explorera"
+    ID_TOOLS_FINDFILES      "Hæadanie s˙borov a adres·rov\nN·jsù (Ctrl+F)"
+    ID_MARK_SYNCWIZARD      "Porovn·va panely podæa rÙznych pravidiel"
+    ID_MARK_CHECKBUILD      "OznaËÌ poloûky podæa transformaËn˝ch pravidiel (napr. prekladaËa)\nKompil·cia (Ctrl+F12)"
+    ID_VIEW_SELECTCOLUMNS   "V˝ber stÂpcov pre detailnÈ zobrazenie\nStÂpce (Alt+K)"
+    ID_MARK_SELECTRANGE     "Vyberie zadan˝ poËet poloûiek pod aktu·lnou poloûkou"
+    ID_VIEW_SORTBY_NAME     "ZoradÌ poloûky abecedne podæa n·zvu"
+    ID_VIEW_SORTBY_SIZE     "ZoradÌ poloûky podæa veækosti, od najmenöej po najv‰Ëöiu"
+    ID_VIEW_SORTBY_DATE     "ZoradÌ poloûky podæa d·tumu modifik·cie, od najnovöej po najstaröiu"
+    ID_VIEW_SORTBY_TYPE     "ZoradÌ poloûky podæa prÌpony"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_SHREDWARNING    "Chyst·te sa skartovaù s˙bory.\nTieto s˙bory uû nebude moûnÈ obnoviù.\n\nNaozaj chcete pokraËovaù?"
+    IDS_MSG_SHREDDING       "Skartovanie... (ESC pre preruöenie)"
+    IDS_MSG_SHREDABORTED    "Skartovanie bolo preruöenÈ, ale niektorÈ s˙bory uû mÙûu byù vymazanÈ"
+    IDS_OVERWRITE_QUESTION  "%s\n\nS˙bor s t˝mto n·zvom uû existuje; chcete ho prepÌsaù?"
+    IDS_SPLIT_CONFIRMTITLE  "Rozdeliù s˙bor"
+    IDS_SPLIT_PROMPT        "Rozdeæovanie... (ESC pre preruöenie)"
+    IDS_ASYNCMERGE          "VybratÈ s˙bory nie s˙ zoradenÈ podæa d·tumu vytvorenia\n(uistite sa, ûe s˙ v takom poradÌ, v akom sa maj˙ spojiù)\n\nChcete napriek tomu pokraËovaù v sp·janÌ?"
+    IDS_MERGE_TARGET        "N·zov v˝slednÈho s˙boru"
+    IDS_MERGE_PROMPT        "Sp·janie... (ESC pre preruöenie)"
+    IDS_CHKBLD_ALLOK        "Vöetky cieæovÈ poloûky s˙ zaktualizovanÈ"
+    IDS_CHKBLD_NOMATCH      "éiadne poloûky nevyhovuj˙ zadanÈmu filtru"
+    IDS_STOCKDESCR_NAME     "Zobrazovan˝ n·zov"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STOCKDESCR_FULLNAME "SkutoËn˝ n·zov s˙boru"
+    IDS_STOCKDESCR_EXTENSION "PrÌpona s˙boru"
+    IDS_STOCKDESCR_SIZE     "Veækosù s˙boru"
+    IDS_STOCKDESCR_ATTRIBUTES "Atrib˙ty s˙boru"
+    IDS_STOCKDESCR_MODIFIED "D·tum poslednej zmeny"
+    IDS_STOCKDESCR_CREATED  "D·tum vytvorenia"
+    IDS_STOCKDESCR_ACCESSED "D·tum poslednÈho prÌstupu"
+    IDS_STOCKDESCR_TYPE     "Typ s˙boru"
+    IDS_STOCKDESCR_PATH     "Pln· cesta (pre kontajner)"
+    IDS_STOCKDESCR_VERSION  "Verzia spustiteænÈho s˙boru alebo DLL kniûnice"
+    IDS_STOCKDESCR_HLINKS   "PoËet pevn˝ch odkazov"
+    IDS_STOCKDESCR_CHECKSUM "Jednoduch˝ kontroln˝ s˙Ëet obsahu"
+    IDS_STOCKDESCR_VOLINFO  "Inform·cie o d·tovom mÈdiu"
+    IDS_STOCKDESCR_83       "DOS 8.3 n·zov"
+    IDS_STOCKDESCR_COMPRESSED 
+                            "Miesto zaberanÈ na disku (vr·tane komprimovan˝ch a riedkych s˙borov)"
+    IDS_STOCKDESCR_COMMENT  "œalöie inform·cie pridanÈ uûÌvateæom"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STOCKDESCR_SUBITEMS "PoËet poloûiek v adres·roch"
+    IDS_STOCKDESCR_KEYWORDS "Kæ˙ËovÈ slov· v dokumentoch"
+    IDS_STOCKDESCR_ADS      "AlternatÌvny ËÌtaË d·tov˝ch pr˙dov"
+    IDS_STOCKDESCR_VERFIRMA "SpoloËnosù vlastniaca pr·va k bin·rnemu kÛdu"
+    IDS_STOCKDESCR_VERCPRITE "DoplnkovÈ inform·cie modulu"
+    IDS_STOCKDESCR_EXIFCX   "äÌrka obr·zku (EXIF)"
+    IDS_STOCKDESCR_EXIFCY   "V˝öka obr·zku (EXIF)"
+    IDS_STOCKDESCR_EXIFDATE "D·tum vytvorenia snÌmku (EXIF)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EST_FILE            "N·zov s˙boru s prÌponou"
+    IDS_EST_BASE            "N·zov s˙boru bez prÌpony"
+    IDS_EST_EXT             "PrÌpona"
+    IDS_EST_COUNTER         "Automatick˝ ËÌslovaË"
+    IDS_EST_DOLLAR          "Dol·r ($)"
+    IDS_EST_DATE            "D·tum poslednej zmeny"
+    IDS_EST_PARENT          "Nadraden˝ adres·r"
+    IDS_EST_FOLDER          "Cesta k adres·ru"
+    IDS_EST_PATH            "Pln· cesta"
+    IDS_EST_SEL             "Vöetky vybratÈ n·zvy s˙borov"
+    IDS_EST_SELPATH         "Vöetky vybratÈ plnÈ cesty"
+    IDS_EST_LPATH           "Cesta v æavom (hornom) paneli"
+    IDS_EST_RPATH           "Cesta v pravom (dolnom) paneli"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EST_IPATH           "Cesta v neaktÌvnom paneli"
+    IDS_EST_IFOCUS          "S˙bor v neaktÌvnom paneli"
+    IDS_EST_IFULLPATH       "Cesta a s˙bor v neaktÌvnom paneli"
+    IDS_EST_ZIPTEMP         "Rozbalen˝ s˙bor archÌvneho adres·ra"
+    IDS_EST_COMMA           "»iarka (,)"
+    IDS_FMT_FREESPACE       "VoænÈ miesto: "
+    IDS_FMT_SELRANGE        "Rozsah pod poloûkou %d"
+    IDS_TIT_RENAMEDOS       "Nov˝ n·zov poloûky:"
+    IDS_MIRRORB_ON          "ZrkadlovÈ prech·dzanie & rolovanie zapnutÈ"
+    IDS_MIRRORB_OFF         "ZrkadlovÈ prech·dzanie & rolovanie vypnutÈ"
+    IDS_SCRAP_UNTITLED      "bez n·zvu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_COPYCOLSOK      "StÂpce vybran˝ch poloûiek boli skopÌrovanÈ do schr·nky"
+    IDS_MSG_SELCLIPOK       "Aktu·lny v˝ber bol uloûen˝"
+    IDS_MSG_ACTIVATESIZECOL "Veækosti adres·rov s˙ najlepöie viditeænÈ v stÂpci s veækosùami"
+    IDS_MSG_DIRSIZEPROGRESS "»Ìtanie podadres·rov... (ESC pre preruöenie)"
+    IDS_DTUNIT_MONTH        "mesiacov"
+    IDS_DTUNIT_DAY          "dnÌ"
+    IDS_DTUNIT_HOUR         "hodÌn"
+    IDS_DTUNIT_MINS         "min˙t"
+    IDS_DTUNIT_SEC          "sek˙nd"
+    IDS_FMT_PREVDATE        "%s d·tum medzi posledn˝mi %u %s "
+    IDS_FMT_DATEWITHIN      "%s d·tum medzi %s a %s"
+    IDS_FMT_DATEAFTER       "%s d·tum neskoröÌ ako %s"
+    IDS_FMT_DATEBEFORE      "%s d·tum skoröÌ ako %s"
+    IDS_FMT_INTWITHIN       "%s hodnota od %u%c do %u%c"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERRDDV_NOCOLUMNS    "MusÌte vybraù aspoÚ jeden stÂpec"
+    IDS_ERR_NOFREESPACE     "Tento prÌkaz je povolen˝ len pre adres·re v s˙borovom systÈme"
+    IDS_ERR_NORENCOLUMN     "Tento stÂpec ne je moûnÈ premenovaù na mieste, pretoûe prv˝ sÂlpec nie je N·zov"
+    IDS_ERR_NOSELCLIP       "Schr·nka s v˝berom je pr·zdna"
+    IDS_ERR_SECNOMATCH      "V schr·nke s v˝berom sa nenach·dzaj˙ zodpovedaj˙ce poloûky"
+    IDS_ERR_PSNODIRS        "Vloûen˝ objekt neobsahuje ûiadne adres·re"
+    IDS_ERR_PSWRITE         "Chyba z·pisu pri vkladanÌ öpeci·lneho objektu"
+    IDS_ERR_PSDESKTOP       "RelatÌvna ötrukt˙ra adres·rov nie je jednoznaËn·; vkladanie bolo preruöenÈ"
+    IDS_ERR_RULEINVALID     "Nespr·vne ˙daje pre pravidlo\nSkontrolujte prosÌm spr·vnosù zadan˝ch d·tumov a veækostÌ"
+    IDS_ERRDDV_NOLOOKIN     "MusÌte zadaù poËiatoËn˝ adres·r pre hæadanie"
+    IDS_ERR_FILTERNOCON     "MusÌte zadaù n·zov alebo masku hæadan˝ch s˙borov"
+    IDS_ERR_LOOKINFAULT     "Adres·re v  ""Hæadaù v"" nie s˙ spr·vne"
+    IDS_ERR_NOTFILESYSCMD   "Tento prÌkaz je moûnÈ pouûiù len na poloûky, ktorÈ s˙ v s˙borovom systÈme"
+    IDS_ERR_ATTRIBUTEIO     "Nepodarilo sa nastaviù niektor˝ z atrib˙tov"
+    IDS_ERR_NOCOMMENT       "NiektorÈ poloûky nepodporuj˙ pozn·mky (FAT partÌcie?)"
+    IDS_ERR_NOITEMSNODUPE   "NajskÙr musÌte vloûiù poloûky, ktorÈ chcete porovn·vaù (napr. pouûitÌm Ploöne otvoriù podadres·re)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_SORTBY_UNSORTED "Netriediù poloûky; zobraziù v poradÌ, v akom s˙ na disku"
+    ID_VIEW_ARRANGEBY_PATH  "ZoradÌ poloûky podæa cesty nadriadenÈho adres·ra"
+    ID_VIEW_SORTBY_OTHER    "ZoradÌ poloûky podæa neötandardnÈho stÂpca"
+    ID_VIEW_SORTBY_ASCENDING "Prepne medzi zostupn˝m a vzostupn˝m triedenÌm"
+    ID_TOOLS_FREESPACE      "ZistÌ voænÈ miesto na aktu·lnom disku\nVoænÈ miesto"
+    ID_FILE_CHANGETYPE      "Premenovaù poloûku vr·tane jej DOS prÌpony"
+    ID_FILE_BROWSEFLAT      "OznaËenÈ adres·re alebo CIDA s˙bory otvorÌ do kontajnera ploöne vr·tane vöetk˝ch podadres·rov(<Ctrl> pre znovupouûitie existuj˙ceho okna)\nPloöne otvoriù (Shift+Enter)"
+    ID_HELP_CHECKUPDATES    "OtvorÌ internetov˙ str·nku s poslednou verziou programu"
+    ID_WINDOW_LIST          "Zoznam vöetk˝ch okien aplik·cie s moûnosùou prepÌnaù medzi nimi\nOkn· (Ctrl+W)"
+    ID_VIEW_SAVESETTINGSNOW "Okamûite uloûÌ vöetky nastavenia"
+    ID_EDIT_COPYSELECTION   "SkopÌruje stÂpce vybrat˝ch poloûiek tak, ako sa zobrazuj˙ v aktÌvnom paneli (pre tlaË a pod.)"
+    ID_MARK_SELECTION_STORE "Zapam‰t· si oznaËenÈ poloûky pre neskoröie pouûitie"
+    ID_MARK_SELECTION_SELECT 
+                            "OznaËÌ poloûky, ktorÈ boli skÙr uloûenÈ do pam‰ti"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MARK_SELECTION_UNSELECT 
+                            "ZruöÌ v˝ber poloûiek, ktorÈ boli skÙr uloûenÈ do pam‰ti"
+    ID_EDIT_PASTESPECIAL_FOLDERSTRUCTURE 
+                            "VloûÌ len adres·re a ich podadres·re, bez s˙borov, ktorÈ obsahuj˙"
+    ID_EDIT_PASTESPECIAL_STRUCTUREDSCRAPCLIPS 
+                            "VloûÌ poloûky (ktorÈ boli v kontajneri) vr·tane pÙvodnej ötrukt˙ry podadres·rov"
+    ID_TOOLS_SUBFOLDERSIZE  "ZobrazÌ veækosù adres·rov vr·tane podadres·rov\nVeækosù (Ctrl+D)"
+    ID_LTB_NEW              "Pridaù nov˝ (Space)"
+    ID_LTB_DELETE           "Vymazaù (Del)"
+    ID_LTB_UP               "Posun hore (Ctrl+Up)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_LTB_DOWN             "Posun dole (Ctrl+Down)"
+    ID_LTB_EDIT             "Vlastnosti (Enter)"
+    ID_MARK_RULEBASED       "OznaËÌ poloûky, ktor˝ch vlastnosti vyhovuj˙ zadan˝m pravidl·m"
+    ID_GOTO_MIRRORSCROLLING "Automaticky roluje neaktÌvny panel aby zobrazoval aktu·lne vybratÈ poloûky"
+    ID_VIEW_QUICKVIEWER     "ZobrazÌ alebo skryje okno s n·hæadom\nN·hæad (Ctrl+Q)"
+    ID_QUIKVIEW_SELECTALL   "OznaËÌ cel˝ text"
+    ID_QUIKVIEW_SETFONT     "V˝ber pÌsma pre n·hæad"
+    ID_QUIKVIEW_WORDWRAP    "Zapne/vypne zalamovanie riadkov"
+    ID_QUIKVIEW_FINDNEXT    "N·jde ÔalöÌ v˝skyt oznaËenÈho textu"
+    ID_QUIKVIEW_FIND        "N·jde text vo vn˙tri n·hæadu"
+    ID_GOTO_DRIVE           "Prejde na lok·lny disk\nDisk (Alt+F1)"
+    ID_QUIKVIEW_COPY        "SkopÌruje oznaËen˝ text alebo obr·zok do schr·nky"
+    ID_GOTO_ROOT            "KoreÚov˝ adres·r aktu·lneho disku, napr. C:\\"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FMT_INTLARGER       "%s hodnota v‰Ëöia ako %u%c"
+    IDS_FMT_INTSMALLER      "%s hodnota menöia ako %u%c"
+    IDS_FMT_TEXTWITH        "%s obsahuje ""%s"""
+    IDS_MGS_SEARCHINGFILES  "(ESC pre preruöenie); hæad· sa %s ..."
+    IDS_TIT_ROOTSEARCH      "Vyberte adres·r, odkiaæ sa zaËne hæadaù"
+    IDS_TIT_LOCALDISK       "Lok·lne pevnÈ disky"
+    IDS_MIRRORSCR_OFF       "ZrkadlovÈ rolovanie je vypnutÈ"
+    IDS_MIRRORSCR_ON        "ZrkadlovÈ rolovanie je zapnutÈ"
+    IDS_PREVIEW_MORE        "(...viac...)"
+    IDS_MSG_READINGFOLDER_ESC 
+                            "NaËÌtava sa obsah adres·ra... (ESC pre preruöenie)"
+    IDS_ACD_TITLE           "Pridaù pozn·mku"
+    IDS_MSG_SUSPENDARON     "AutomatickÈ obnovenie vypnutÈ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_SUSPENDAROFF    "AutomatickÈ obnovenie zapnutÈ"
+    IDS_CPMVTO_MOVE         "Preniesù"
+    IDS_CPMVTO_COPY         "KopÌrovaù"
+    IDS_TIT_CPMVTGT         "Vyber cieæov˝ adres·r"
+    IDS_ENC_DEFAULT         "ätandardnÈ"
+    IDS_ENC_OEM             "OEM"
+    IDS_ENC_UTF8            "UTF-8"
+    IDS_ENC_UNICODE         "Unicode"
+    IDS_ENC_RAW             "Neprev·dzaù"
+    IDS_DUPESFOUND          "DuplicitnÈ poloûky boli n·jdenÈ a zoskupenÈ"
+    IDS_MSG_SAVEDSETTINGS   "Nastavenia boli uloûenÈ (automatickÈ uloûenie po ukonËenÌ je  %s)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ACTIONS_SETCOMMENT   "NastavÌ alebo zmenÌ koment·r k poloûke, ak je to moûnÈ\nKoment·r (Alt+Z)"
+    ID_GOTO_RECENTFOLDER    "V˝ber z adres·rov naposledy prezeran˝ch v tomto paneli"
+    ID_VIEW_HOLDAUTOREFRESH "DoËasne zak·ûe automatickÈ obnovovanie aktÌvneho panela, pouûÌteænÈ pre pomalÈ alebo Ëasto sa meniace adres·re"
+    ID_VIEW_HIDEFOLDERS     "Schov· vöetky adres·re v aktÌvnom paneli (prepÌnaË)"
+    ID_QUIKVIEW_ENCODING_WINDOWS "Norm·lne kÛdovanie pouûÌvanÈ vo Windows"
+    ID_QUIKVIEW_ENCODING_OEM 
+                            "KÛdovanie pouûÌvanÈ v DOSe (Original Equipment Manufacturer)"
+    ID_QUIKVIEW_ENCODING_UTF8 "Viacbytov˝ unicode"
+    ID_QUIKVIEW_ENCODING_UNICODE "Dvojbytov˝ unicode"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_LINKRESOLVE     "Rieöenie z·stupcov... (ESC pre preruöenie)"
+    IDS_MSG_FOLDERSAVED     "Nastavenia adres·ra uloûenÈ"
+    IDS_MSG_ADDED2SCRAP     "%d poloûiek pridan˝ch do"
+    IDS_INFO_LOGDETAILS     "\r\nDetailnÈ inform·cie\r\n--------------------\r\n"
+    IDS_TIT_SCRAPERLOG      "Log ch˝baj˙cich poloûiek"
+    IDS_TIT_CMDFIND         "Hæadaù text"
+    IDS_GREP_UNSELECTED     "Zruöenie oznaËenia vöetk˝ch poloûiek, ktorÈ vyhovuj˙ podmienke"
+    IDS_MSG_TREEPRINT       "AktÌvna vetva bola skopÌrovan· do schr·nky"
+    IDS_TIT_OPTIONS         "Nastavenia programu [%s]"
+    IDS_DASEMPTY            "(pr·zdne)"
+    IDS_ICON_NORMALLEN      "Norm·lne"
+    IDS_ICON_SIMPLE         "JednoduchÈ (r˝chle)"
+    IDS_ICON_PLAIN          "Jednoduchöie (najr˝chlejöie)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_AUTOSIZECOLUMNS "NastavÌ öÌrky stÂpcov tak, aby sa do nich zmestili vöetky poloûky (<Shift> aj pre hlaviËky)"
+    ID_TOOLS_CHECKDUPLICATES 
+                            "ZistÌ medzi poloûkami moûnÈ duplik·ty a preskupÌ ich\nDuplik·ty"
+    ID_QUIKVIEW_TEXTMODE    "Zamkne n·hæad len pre texty, zak·ûe obr·zky a zvuky"
+    ID_ACTIONS_FOLDERSETTINGS_SAVE 
+                            "UloûÌ nastavenia tohoto adres·ra, vr·tane öt˝lu panela, stÂpcov a triedenia poloûiek"
+    ID_ACTIONS_FOLDERSETTINGS_CLEAR 
+                            "Vymaûe vöetky uloûenÈ nastavenia tohoto adres·ra"
+    ID_FILE_SENDTOSCRAP     "VloûÌ v˝ber do najbliûöieho kontajnera\nDo kontajnera (Ctrl+S)"
+    ID_VIEW_SETFONT         "Nastaviù font pÌsma pre zobrazenie\nFont"
+    ID_CMDEDIT_FIND         "N·jsù text\nN·jsù (Ctrl+F)"
+    ID_TOOLS_REVEALUNIQUE   "Znova zobrazÌ poloûky, ktorÈ boli schovanÈ po hæadanÌ duplik·tov"
+    ID_TOOLS_OPTIONS        "Nastavenia celÈho programu a tohoto okna\nMoûnosti"
+    ID_FILE_MASSRENAME      "Premenuje oznaËenÈ s˙bory pomocou öablÛny"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NODUPECRITERIA  "MusÌte zadaù aspoÚ jedno kritÈrium pre porovn·vanie"
+    IDS_ERR_NODUPES         "Neboli n·jdenÈ ûiadne duplik·ty"
+    IDS_ERR_DESKINI         "Chyba pri ËÌtanÌ s˙boru desktop.ini"
+    IDS_ERR_SCRAPLOADMISSING 
+                            "NiektorÈ poloûky z .cida s˙boru neboli n·jdenÈ\nChcete vidieù detailn˝ log?"
+    IDS_ERR_ILLEGALRENCH    "äablÛna pre premenovanie obsahuje znaky, ktorÈ sa nesm˙ vyskytovaù v n·zve s˙boru.\nPremenovanie pravdepodobne nebude ˙speönÈ; chcete napriek tomu pokraËovaù?"
+    IDS_ERR_NOVARTEMPLATE   "äablÛna neobsahuje ûiadne $-tokeny.\nVöetky s˙bory bud˙ premenovanÈ rovnak˝m n·zvom; chcete napriek tomu pokraËovaù?"
+    IDS_ERR_NOSEARCHLOG     "Nie s˙ k dispozÌcii ûiadne inform·cie"
+    IDS_ERR_NOSYNTOUMATCH   "NeaktÌvny panel neobsahuje ûiadne vyhovuj˙ce poloûky"
+    IDS_ERR_NOTREECMD       "Tento prÌkaz nie je povolen˝ pre panel so stromovou ötrukt˙rou adres·rov"
+    IDS_ERRDDV_NOCUST       "MusÌte v zozname nechaù aspoÚ jednu poloûku"
+    IDS_ERR_DUPLNAME        "Tento identifik·tor uû existuje, pouûite prosÌm nejak˝ in˝"
+    IDS_ERR_CUSTNAME        "Pole ""N·zov"" by nemalo byù pr·zdne"
+    IDS_ERR_CUSTSHIFT       "Samotn˝ <Shift> nie je moûnÈ pouûiù pre kl·vesov˙ skratku\nSkombinujte ho prosÌm s <Alt> alebo/a <Ctrl>"
+    IDS_ERR_CUSTALT         "Kl·vesovÈ skratky pre z·loûky by nemali obsahovaù kl·vesu <Alt>"
+    IDS_ERR_CUSTOVERFLOW    " zoznam je pln˝; vymaûte prosÌm niektorÈ nepotrebnÈ poloûky"
+    IDS_ERR_CUSTDESCR       "Pole ""Pozn·mka"" by nemalo byù pr·zdne"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_WNDREBOOT       "NiektorÈ zmeny bud˙ vykonanÈ po nasleduj˙com spustenÌ xplorer2\n(Mali by ste hneÔukonËiù/reötartovaù xplorer2)"
+    IDS_MSG_GENERROR        "!Chyba!"
+    IDS_MSG_RENPROGRESS     "Premenovanie... (ESC pre preruöenie)"
+    IDS_TIT_SEARCHLOG       "Log s˙bor vyhæad·vania s˙borov"
+    IDS_FFLOG_FINITO        "\r\nHæadanie ukonËenÈ"
+    IDS_FFLOG_ONGOING       "\r\nHæadanie ÔalöÌch..."
+    IDS_FFLOG_ROOT          "Hæadanie v: %s\r\n"
+    IDS_FFLOG_EXCLUDED      "Vyl˙ËenÈ adres·re: %s\r\n"
+    IDS_FFLOG_SUBDIRS       "Podadres·re, "
+    IDS_FFLOG_ARCHIVE       "Obsah archÌvu, "
+    IDS_FFLOG_BREADTH       "NajskÙr do öÌrky"
+    IDS_FFLOG_DEPTH         "NajskÙr do hÂbky"
+    IDS_FFLOG_FLAGS         "Parametre: %s\r\n"
+    IDS_FFLOG_PROLOG        "----------------\r\nPREHºADAN… ADRES¡RE\r\n----------------\r\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FFLOG_FILTER        "DETAILY FILTRA\r\nZodpovedaj˙ce poloûky: %s\r\n"
+    IDS_FFLOG_FOLDERS       "Adres·re, "
+    IDS_FFLOG_FILES         "S˙bory"
+    IDS_FFLOG_WILDCARD      "Maska n·zvu: %s\r\n"
+    IDS_FFLOG_ANDRULE       "[A] %s\r\n"
+    IDS_FFLOG_ORRULE        "[ALEBO] %s\r\n"
+    IDS_FFLOG_NOTRULE       "[NIE] %s\r\n"
+    IDS_FFLOG_GREP          "Obsahuj˙ce text: %s\r\n"
+    IDS_FFLOG_TEXTOPT       "TextovÈ moûnosti: %s\r\n"
+    IDS_FFLOG_CASE          "Rozliöovaù veækosù pÌsmen, "
+    IDS_FFLOG_RE            "Regul·rny v˝raz, "
+    IDS_FFLOG_BIN           "Vöetky s˙bory"
+    IDS_FFLOG_FENCO         "Vyn˙tenÈ kÛdovanie: %s\r\n"
+    IDS_FFLOG_WORDS         "Len celÈ slov·, "
+    IDS_FFLOG_SUMA          "celkom prehæadan˝ch %u adres·rov\r\n"
+    IDS_FFLOG_BLAKLIST      " [VYL⁄»EN…]\r\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_SEARCHSTATUS   "ZobrazÌ v˝sledok prebiehaj˙ceho alebo minulÈho hæadania s˙borov"
+    ID_HELP_TIPOFTHEDAY     "Tipy a triky pre zv˝öenie Vaöej produktivity\nTip"
+    ID_VIEW_RAWCONTENTS     "ZobrazÌ virtu·lny adres·r tak, ako je uloûen˝ na disku (obÌde funkcie prieskumnÌka)"
+    ID_MARK_SELECTION_COMBINE "Vykon· prienik s˙ËasnÈho a uloûenÈho v˝beru"
+    ID_ACTIONS_SYNCTOUCH    "NastavÌ d·tum poslednej zmeny zodpovedaj˙cich poloûiek v neaktÌvnom paneli podæa aktÌvneho"
+    ID_VIEW_SELECTEDONLY    "Schov· vöetky neoznaËenÈ poloûky"
+    ID_VIEW_SHOWALL         "ZruöÌ vöetky obrazovÈ filtre (zobrazÌ vöetky poloûky)"
+    ID_VIEW_VIEWMODE        "Zmeniù öt˝l aktÌvneho panelu\nZobrazenie (Ctrl+Alt+V)"
+    ID_BOOKMARKS_ADD        "Prid· aktu·lny adres·r do zoznamu z·loûiek"
+    ID_BOOKMARKS_ORGANIZE   "Premenovanie, vymazanie alebo zmena poradia z·loûiek, priradenie kl·vesov˝ch skratiek"
+    ID_BOOKMARKS_MORE       "V˝ber adres·ra z kompletnÈho zoznamu z·loûiek"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RTF_TIPPROLOG       "{\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang2057{\\fonttbl{\\f0\\fswiss\\fprq2\\fcharset0 Verdana;}{\\f1\\fmodern\\fprq1\\fcharset0 Courier New;}}\n{\\colortbl ;\\red255\\green0\\blue0;\\red0\\green0\\blue255;}\n\\viewkind4\\uc1\\pard\\b\\f0\\fs26 Vedeli ste...\\fs18\\b0\\par\n\\par\n"
+    IDS_MSG_SYNCTOUCHOK     "D·tumy boli ˙speöne prenesenÈ do cieæovÈho adres·ra"
+    IDS_MSG_LOADIDA         "NaËÌtavaj˙ sa poloûky..."
+    IDS_TOOLBAR             "Panel n·strojov"
+    IDS_MEMO_FAVNAME        "Z·loûky"
+    IDS_MEMO_UCOMNAME       "UûÌvateæskÈ prÌkazy"
+    IDS_MEMO_CSETNAME       "Skupiny stÂpcov"
+    IDS_STR_DESCRIPTION     "Popis"
+    IDS_STR_ACCEL           "Z·stupca"
+    IDS_STR_SELECT          "Vybraù"
+    IDS_TITLE_ADDX          "Pridaù %s"
+    IDS_CUMSG_ACCELEXISTS   "T·to kl·vesov· skratka je uû priraden·\nChcete ju napriek tomu prepÌsaù?"
+    IDS_TIT_ACCELLOG        "Priradenia kl·vesov˝ch skratiek"
+    IDS_ACLOG_AVAIL         "(voænÈ)"
+    IDS_MSG_EXECUTING       "SpustenÈ: "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BOOKMARKS_FIRST      "Prejdi do tohoto adres·ra"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CUSTOMIZE_TOOLBARS_ADDNEW "Prid· nov˝ panel n·strojov"
+    ID_CUSTOMIZE_TOOLBARS_ORGANIZE 
+                            "Premenuje alebo vymaûe pridanÈ panely n·strojov"
+    ID_CUSTOMIZE_COLUMNS_ADD "Prid· do zoznamu aktu·lnu skupinu stÂpcov"
+    ID_CUSTOMIZE_COLUMNS_ORGANIZE 
+                            "Premenuje, vymaûe alebo zmenÌ poradie skupiny stÂpcov; priradÌ kl·vesovÈ skratky"
+    ID_CUSTOMIZE_COLUMNS_MORE "ZobrazÌ zoznam vöetk˝ch skupÌn stÂpcov"
+    ID_CUSTOMIZE_USERCOMMANDS_ADDNEW "Prid· uûÌvateæsk˝ prÌkaz do menu"
+    ID_CUSTOMIZE_USERCOMMANDS_ORGANIZE 
+                            "Premenuje, vymaûe alebo zmenÌ poradie uûÌvateæsk˝ch prÌkazov; priradÌ kl·vesov˙ skratku"
+    ID_CUSTOMIZE_USERCOMMANDS_MORE 
+                            "ZobrazÌ zoznam vöetk˝ch uûÌvateæsk˝ch prÌkazov"
+    ID_WINDOW_SETACCELERATOR 
+                            "Priradenie kl·vesov˝ch skratiek rozloûeniam okien, alebo ich vymazanie"
+    ID_WINDOW_MORE          "VytvorÌ kÛpiu okna podæa skÙr uloûenÈho uloûenia"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TBCUST_FIRST         "Prid· alebo vymaûe tlaËidl· v tomto paneli n·strojov (kliknite prav˝m tlaËidlom na panel pre textovÈ popisy)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_COLUMNSET_FIRST      "ObnovÌ t˙to skupinu stÂpcov"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_USERTOOL_FIRST       "SpustÌ tento prÌkaz"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ASK_COLUMNCLSID     "T·to skupina stÂpcov patrÌ k inÈmu typu adres·ra;\npouûiù ju aj napriek tomu?"
+    IDS_DSM_ASFILE          "ako s˙bory"
+    IDS_DSM_BUNDLE          "oddelene"
+    IDS_DSM_MIXED           "zmieöan˝ reûim"
+    IDS_UNIT_1              "1"
+    IDS_UNIT_KILO           "Kilo"
+    IDS_UNIT_MEGA           "Mega"
+    IDS_UNIT_GIGA           "Giga"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_CUSTMODIFIER    "MusÌte pridaù pre z·loûku kl·vesy <Ctrl>, <Shift> alebo <Alt>"
+    IDS_ERR_INVALIDRKEY     "N·zov obsahuje zak·zanÈ znaky, alebo je rezervovan˝"
+    IDS_ERR_INCOMPATCOLS    "T·to skupina stÂpcov nie je kompatibiln· s aktu·lnym adres·rom"
+    IDS_ERR_INCOMPATHFILT   "Tento filter nie je kompatibiln˝ s t˝mto rozsahom hæadania\nNiektorÈ pravidl· s˙ pre in˝ typ adres·ra"
+    IDS_ERR_HFILTNAME       "MusÌte zadaù n·zov pre filter (aby bol uloûen˝ alebo vymazan˝)"
+    IDS_ERR_IDNAME          "Identifik·tor nemÙûe byù dlhöÌ ako %1!d! znakov"
+    IDS_ERR_REGLIC          "Chyba licenËnÈho subsystÈmu: %d:%08x:%d%d%d\n\nPravdepodobne:\n*Nem·te administr·torskÈ pr·va pre inötal·ciu\n*Ste zadali registraËn˝ kæ˙Ë nespr·vne? prosÌm sk˙ste ho zadaù znova\n\nAk problÈm trv·, poölite prosÌm ËÌslo chyby autorovi"
+    IDS_ERR_INVALIDRC       "Toto nie je platn˝ registraËn˝ kæ˙Ë.\nkæ˙Ëe maj˙ ~200 znakov a obsahuj˙ len veækÈ pÌsmena a ËÌslice\n\nBude jednoduchöie skopÌrovaù kæ˙Ë z emailu\na potom kliknutÌm pravÈho tlaËidla myöi v poli ho vloûiù"
+    IDS_ERR_FATALREG        "KvÙli problÈmom pri inötal·cii sa tento program teraz ukonËÌ.\nChcete poslaù chybov˙ spr·vu autorovi?"
+    IDS_ERR_INCOMPATDIRS    "Adres·re nemaj˙ navz·jom kompatibilnÈ stÂpce"
+    IDS_ERR_NOCLTEXT        "V schr·nke nie je ûiadny text"
+    IDS_ERR_NOTAB           "Chyba pri vytv·ranÌ novÈho panela"
+    IDS_ERR_NOTABGROUP      "Pre definovanie skupiny musia existovaù aspoÚ dva panely"
+    IDS_ERR_FOPSOURCEREAD   "Chyba ËÌtania zo zdroja"
+    IDS_ERR_FOPSOURCEONSELF "N·zov cieæa nemÙûe byù identick˝ so n·zvom zdroja"
+    IDS_ERR_FOPSOURCEMISMATCH "Pokus prepÌsaù adres·r s˙borom alebo naopak"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CUSTOMIZE_KEYBOARDUSE "ZobrazÌ uûÌvateæskÈ kl·vesovÈ skratky"
+    ID_MARK_ALLFOLDERS      "Vyberie vöetky adres·re v aktu·lnom paneli"
+    ID_EDIT_CLEARSCREEN     "\nVymazaù"
+    ID_TBCM_TEXTLABELS      "Prepne textovÈ popisy pre tento panel n·strojov"
+    ID_VIEW_SORTBY          "ZmenÌ poradie poloûiek\nZotriedenie"
+    ID_GOTO_SYSTEM          "Prejde do öpeci·lneho systÈmovÈho adres·ra\nSystÈm (Ctrl+Alt+F)"
+    ID_HELP_REGISTERPROGRAM "Upgradovaù a/alebo zÌskaù licenciu pre pouûÌvanie ""pro"" verzie bez obmedzenÌ\nRegistrovaù"
+    ID_HELP_DONATE          "Podporte v˝voj tohoto programu dobrovoæn˝m darom\nDarovaù"
+    ID_HELP_GETSUPPORT      "PripojÌ sa na online centrum z·kaznickej podpory"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TBCM_LABEL          "TextovÈ popisy"
+    IDS_TBCM_CUSTOM         "PrispÙsobiù..."
+    IDS_HFILT_DELETE        "Naozaj chcete vymazaù tento filter zo zoznamu?"
+    IDS_HFILT_OVERWRITE     "Filter s t˝mto n·zvom uû existuje;\nChcete ho prepÌsaù?"
+    IDS_MSG_LAYOUTREG       "Inform·cie o rozvrhnutÌ vzhæadu aplik·cie nemÙûu byù uloûenÈ, pretoûe automatickÈ ukladanie nastavenÌ pri ukonËenÌ je vypnutÈ.\nUloûiù nastavenia teraz? (automatickÈ ukladanie nebude ovplyvnenÈ)"
+    IDS_MSG_THREADBUSY      "Toto vl·kno pracuje na pozadÌ.\nZavretie tohoto okna mÙûe spÙsobiù nepredvÌdateænÈ n·sledky;\nChcete napriek tomu pokraËovaù?"
+    IDS_SPLIT_35            "3.5 Disketa"
+    IDS_SPLIT_CD            "CD-R 650"
+    IDS_SPLIT_CD2           "CD-R 700"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TBSHOW_FIRST         "ZobrazÌ alebo skryje tento panel n·strojov"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_TRIAL           "xplorer≤ je trialware aplik·cia, ktor· mÙûe byù voæne testovan· poËas limitovanÈho ËasovÈho intervalu. Zak˙pte si prosÌm licenciu, ak chcete zruöiù vöetky obmedzenia, vr·tane tohoto registraËnÈho okna."
+    IDS_MSG_TRIAL2          "%d dnÌ zost·va do ukonËenia testovania"
+    IDS_MSG_REGWELCOME      "RegistraËn˝ kæ˙Ë bol akceptovan˝.\nUschovajte si ho bezpeËne, lebo ho mÙûete potrebovaù pre uûÌvateæsk˙ podporu.\n\nNEROZäIRUJTE PROSÕM TENTO REGISTRA»N› Kº⁄»!\nPoskytnutie kæ˙Ëa in˝m osob·m je poruöenÌm Vaöej licencie\n\nœakujeme V·m, ûe ste n·m zverili do r˙k spr·vu Vaöich s˙borov!"
+    IDS_INFO_REGOPT         "Viac ""exotick˝ch"" vlastnostÌ je moûno nastaviù upravovanÌm registrov\nPozri registry.txt pre viac inform·ciÌ"
+    IDS_INFO_DIRDATA        """%s"" [%s]: Podadres·rov=%d, S˙borov=%d"
+    IDS_INFO_LFDATA         "%s v %d lok·lnych s˙boroch"
+    IDS_HELP_MAINPDF        "\n\nHlavn˝ s˙bor s n·povedou je dosù veæk˝ a je distribuovan˝ oddelene.\nChcete sa teraz pripojiù na webovsk˙ str·nku a stiahnuù ho?"
+    IDS_STATUS_FREE         "%s voæn˝ch (%d%%)"
+    IDS_MEMO_DIRTABNAME     "Skupiny adres·rov"
+    IDS_TIT_FILEREPLACE     "PotvrÔte prepÌsanie s˙boru"
+    IDS_MSG_FILEXIST        "Tento adres·r uû obsahuje s˙bor s n·zvom '%s'\n\nChcete prepÌsaù existuj˙ci s˙bor\n%s\nt˝mto\n%s\n"
+    IDS_MSG_COPYACTIVE      "NiektorÈ oper·cie kopÌrovania doteraz neskonËili.\nTreba na ne Ëakaù?"
+    IDS_TIT_KOPYERLOG       "Log prenosu s˙borov"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CHECK_BINARY        "Prehæad·vaù aj bin·rne s˙bory, dokumenty MS WORD, PDF,spustiteænÈ s˙bory atÔ.\nSpomaæuje prehæad·vanie"
+    IDC_CHECK_REGEXP        "Vyhæad· regul·rny v˝raz ako [ab]*c\ndetaily s˙ v manu·li"
+    IDC_COMBO_FIND          "Text, ktor˝ sa bude hæadaù vo vn˙tri s˙borov\nViac hæadan˝ch slov je moûnÈ oddeliù Ëiarkami\n+ alebo - na zaËiatku slova znamen· logickÈ a/nie\n(napr. ""+text, -exclude"")"
+    IDC_COMBO_WHERE         "Adres·re, v ktor˝ch sa bude hæadaù\nViacerÈ adres·re je moûnÈ oddeliù Ëiarkami\nMÌnusom zaËÌnaj˙ce n·zvy adres·rov bud˙ z hæadania vynechanÈ\n""c:\\, d:\\, -*temp*"" prehæad· C:/D: okrem adres·rov obsahuj˙cich ""temp"" v n·zve"
+    IDC_COMBO_NAMED         "N·zvy hæadan˝ch s˙borov\nNe˙plnÈ n·zvy a masky s˙ povolenÈ\nnapr. ""*.cpp, *.h"""
+    IDC_BUTTON_PREVIEW      "Vysk˙öaù öablÛnu na existuj˙com v˝bere\nAk V·m bude v˝sledok vyhovovaù, mÙûete pokraËovaù spustenÌm prÌkazu"
+    IDC_RADIO_MOD           "(porovn· aj veækosti s˙borov)\nVeæmi r˝chle, ale nie 100% spoæahlivÈ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_EDIT_TSIZE          "N·hæad zobrazuje len Ëasù s˙boru\n»Ìm viac sa zobrazuje, t˝m dlhöie sa obsah naËÌtava"
+    IDC_CHECK_NOHEX         "Zaökrtnite, ak nechcete vidieù n·hæady spustiteæn˝ch, alebo in˝ch bin·rnych s˙borov"
+    IDC_CHECK_VERBA         "Zak·zaù spracovanie öpeci·lnych znakov (Ëiarky a $)\nHæadaù presne tak˝ text, ak˝ bol zadan˝"
+    IDC_EDIT_NAME           "Identifik·tor poloûky, pouûÌva sa v menu a v paneli n·strojov\nMusÌ byù unik·tny vo svojej skupine"
+    IDC_EDIT_DESCR          "Pre z·loûky: cesta do adres·ra\nPre uûÌvateæskÈ prÌkazy: Ëo sa sp˙öùa (zaËÌna > alebo $)\nPre vöetky ostatnÈ prÌpady: koment·r"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_RADIO_CONTENT       "Porovn· s˙bory znak po znaku\nPresnÈ, ale pomalÈ"
+    IDC_RADIO_NAME          "Ak s˙hlasia n·zvy s˙borov, ber˙ sa ako ""identickÈ""\n(bez Ôalöej kontroly)"
+    IDC_CHECK_UNDECIDABLE   "Toto s˙ poloûky s ot·znikom na ich ikon·ch"
+    IDC_COMBO_ESPECIAL      "VloûÌ öpeci·lne znaky, buÔ rezervovanÈ alebo natlaËiteænÈ\n$xx hæad· znaky s hexadecim·lnym kÛdom xx"
+    IDC_EDIT_SIZE           "AkÈ veækÈ maj˙ byù jednotlivÈ Ëasti s˙borov\nVyberte podæa cieæovÈho zariadenia\nnapr. 1423 kB pre diskety"
+    IDC_COMBO_TOKENS        "$-tokeny s˙ nahradenÈ Ëasùami oznaËen˝ch s˙borov\nPomocou nich je moûnÈ pÌsaù znovu pouûiteænÈ öablÛny"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_LIST_AVAIL          "StÂpce, ktorÈ konËia na [S], s˙ r˝chlejöie"
+    IDC_CHECK_TRACKSEL      "NekompatibilnÈ so zapnutÌm trvalÈho v˝beru"
+    IDC_BUTTON_IBGCOL       "Farba pozadia v neaktÌvnom paneli"
+    IDC_RDOVR_RENAME        "Napr. file.txt bude premenovan˝ na file_1.txt\néiadne s˙bory sa nevymaû˙"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_COMBO_NUM           "Vyberte ËÌslicu pre kl·vesov˙ skratku\nnechajte pr·zdne, ak chcete vymazaù existuj˙cu kl·vesov˙ skratku"
+    IDC_COMBO_DIRSORT       "ako s˙bory: adres·re s˙ premieöanÈ so s˙bormi\noddelene: najskÙr adres·re, potom s˙bory\nzmieöan˝ reûim: oddelene pre n·zov/prÌponu a premieöanÈ pre veækosù atÔ"
+    IDC_CHECK_PLAINMEN      "Zredukovanie veækosti hlavnÈho menu\nzobrazovanie len z·kladn˝ch prÌkazov"
+    IDC_CHECK_BALONI        "Zapnutie/vypnutie bublinovej n·povedy v dialÛgov˝ch okn·ch"
+    IDC_COMBO_ENCODING      "KÛdovanie pre textovÈ s˙bory, ktorÈ nemaj˙ na zaËiatku identifikaËnÈ byty"
+    IDC_CHECK_CONTENT       "Ak je zaökrtnutÈ porovn·vanie podæa obsahu, s˙bory s˙ porovn·vanÈ bin·rne\nPomalÈ, ale veæmi robustnÈ\n(zistÌ aj duplik·ty s rÙznymi menami)"
+    IDC_COMBO_RNTEMPL       "Kombinujte text a öpeci·lne tokeny pre n·zvy\nnapr. ""$B.xxx"" zmenÌ prÌpony na xxx"
+    IDC_EXTEDITORNAME       "SpustÌ sa po stlaËenÌ F4\nmÙûete pridaù aj parametre"
+    IDC_EXTVIEWERNAME       "SpustÌ sa po stlaËenÌ <Ctrl+F3>"
+    IDC_EDIT_ZIPSIZE        "Limit pre ËÌtanie obsahu poloûiek\nv ZIP archÌvoch, FTP atÔ."
+    IDC_COMBO_BATPLATE      "V prÌkazoch pre vybratÈ poloûky je moûnÈ pouûiù $-tokeny\nPre viac prÌkazov na poloûku pouûite Ëiarky\nnapr. copy $N $B.dat, del $N"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_LISTRULES           "œalöie pravidl· prid·te dvojkliknutÌm\nAko parametre je moûnÈ pouûiù vöetky stÂpce v adres·ri\nnapr. Veækosù, D·tum, Pozn·mky, VlastnÌk atÔ."
+    IDC_CHECK_REFINE        "Prehæad·vanie v predch·dzaj˙cich v˝sledkoch hæadania\n(poloûky zobrazenÈ v aktÌvnom paneli)"
+    IDC_DOTS                "Prech·dzaù adres·re"
+    IDC_BUTTON_SAVE         "UloûÌ aktu·lny filter alebo zmaûe star˝"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CHECK_SYSTEM        "MeÚte prosÌm t˙to vlastnosù, len pokiaæ ste si istÌ, ûe viete, Ëo robÌte"
+    IDC_DATE_MODIFIED       "D·tum/Ëas bude zmenen˝ len keÔ zaökrtnete polÌËko"
+    IDC_BUTTON_MODNOW       "Nastaviù d·tum/Ëas na aktu·lny"
+    IDC_RADIO_BREADTH       "Pouûite t˙to metÛdu, keÔ oËak·vate, ûe cieæ neleûÌ moc hlboko pod koreÚov˝m adres·rom"
+    IDC_CHECK_SELECTEM      "PouûiteænÈ pre odstraÚovanie duplik·tov"
+    IDC_MAXWIDTH            "(v bodoch); len pre zobrazenie v öt˝le Zoznam"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_BUTTON_EDIT         "Vygenerovaù skript & otvoriù ho v editore\nV˝sledn˝ .BAT s˙borov mÙûete potom spustiù dvojklikom"
+    IDC_BUTTON_WINEXEC      "Len pre Ëisto Windows skripty\nInterpretovanÈ prÌkazy (ren atÔ.) nie s˙ povolenÈ"
+    IDC_COMBO_SPLITARGET    "Kam zapÌsaù Ëasti s˙borov po rozdelenÌ"
+    IDC_CHECK_FOLDERS       "Adres·re s˙ porovn·vanÈ len podæa n·zvu"
+    IDC_COMBO_SAVED         "Inicializujte polia podæa skÙr uloûenÈho filtra\nalebo napÌöte nov˝ n·zov a kliknite Uloûiù\nalebo kliknite na Vymazaù a potom Uloûiù, ak chcete vymazaù  skÙr uloûen˝ filter"
+    IDC_DATE_TO             "Zaökrtnite prepÌnaË, ak chcete pouûiù horn˝ limit pre d·tum\nIn·Ë sa oznaËia vöetky poloûky, ktorÈ s˙ novöie ako doln˝ limit pre d·tum"
+    IDC_COMBO_STD           "PevnÈ veækosti pre typickÈ cieæovÈ mÈdia"
+    IDC_BUTTON_BUY          "Prejsù na webov˙ str·nku kvÙli zÌskaniu registraËnÈho kæ˙Ëa"
+    IDC_EDIT_CODE           "Vloûte kæ˙Ë, ktor˝ ste dostali v registraËnom emaili\nMÙûete ho skopÌrovaù z emailu a potom pouûiù Ctrl+V pre jeho vloûenie sem\nAk eöte neskonËila sk˙öobn· doba a chcete v nej pokraËovaù, nechajte pole pr·zdne"
+    IDC_BUTTON_LINFO        "œalöie inform·cie alebo n·poveda pre t˙to poloûku"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_DATE_FROM           "Zaökrtnite prepÌnaË, ak chcete pouûiù doln˝ limit pre d·tum\nIn·Ë sa oznaËia vöetky poloûky, ktorÈ s˙ staröie ako horn˝ limit d·tumu"
+    IDC_EDIT_MINSIZE        "Minim·lna veækosù\nNechajte pr·zdne, ak nechcete veækosù obmedzovaù zdola"
+    IDC_EDIT_MAXSIZE        "Maxim·lna veækosù\nNechajte pr·zdne, ak veækosù nechcete obmedzovaù zhora"
+    IDC_EDIT_FINDTXT        "HæadanÈ textovÈ hodnoty stÂpca\nViac hodnÙt je moûnÈ oddeliù Ëiarkami\nnapr. ""+A, -H"" pri hæadanÌ atrib˙tov"
+    IDC_COMBO_PROPERTIES    "Zoznam vöetk˝ch stÂpcov, podæa ktor˝ch je moûnÈ hæadaù"
+    IDC_RADIO_NOT           "OznaËÌ len tie poloûky, ktorÈ nevyhovuj˙ zadanÈmu pravidlu"
+    IDC_BUTTON_CLEAR        "Vymazaù vöetky ˙daje"
+    IDC_CHECK_ZIPFOLDERS    "Zaökrtnite pre hæadanie v pomal˝ch adres·roch\n(v ZIP archÌvoch, FTP, webov˝ch adres·roch atÔ)"
+    IDC_COMBO_VIRTUALS      "Hæadanie v öpeci·lnych adres·roch\nPole ""Hæadaù v"" mÙûe naviac obsahovaù n·zvy, ktorÈ chceme vyl˙Ëiù\nnapr. ""-*temp*"""
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MGS_SEECPLOG        "PoËas prenosu sa vyskytly niektorÈ problÈmy\nChcete vidieù log?"
+    IDS_BUT_PAUSE           "&zastaviù"
+    IDS_BUT_RESUME          "&pokraËovaù"
+    IDS_MSG_MOVEROF         "Zdrojov˝ s˙bor '%s' m· öpeci·lne atrib˙ty\n%s\nNaozaj ho chcete vymazaù?\n"
+    IDS_TIT_MOVEROF         "PotvrÔte vymazanie s˙boru"
+    IDS_BUT_CLOSE           "zatvoriù"
+    IDS_TIT_AFSLOG          "Inform·cie o alternatÌvnych d·tov˝ch pr˙doch"
+    IDS_HEADER_AFSLOG       "TYP\tD≈éKA\tN¡ZOV\tOBSAH\r\n-------------------------------\r\n"
+    IDS_BUNDLE_TARGET       "N·zov balÌka"
+    IDS_BUNDLE_BUSY         "(ESC=preruöiù) BalÌm pr˙dy %s..."
+    IDS_BUNDLE_TOTAL        "%d s˙bor(ov) zbalen˝ch %s"
+    IDS_UNBUNDLE_BUSY       "(ESC=preruöiù) Rozbalujem d·tovÈ pr˙dy %s..."
+    IDS_MSG_DISKQUOTA       "Cieæov˝ disk zrejme nem· dosù voænÈho miesta\npre vybratÈ s˙bory. Chcete napriek tomu pokraËovaù?"
+    IDS_MSG_IDENTEXIST      "Identifik·tor '%1' uû bol pouûit˝\nM· se prepÌsaù novou definÌciou?"
+    IDS_UNBUNDLE_PROMPT     "Rozbaliù do adres·ra"
+    IDS_TIT_REGEXPORT       "N·zov konfiguraËnÈho s˙boru"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_UNSELECT            "ZruöÌ oznaËenie vöetk˝ch poloûiek, ktorÈ vyhovuj˙ zadan˝m kritÈri·m"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DIRDATA_COPYTEXT     "SkopÌruje hierarchiu adres·rov ako text, zaËne od oznaËenÈho adres·ra"
+    ID_TOOLS_FOLDERSTATISTICS 
+                            "ZobrazÌ ötatistiku aktu·lneho adres·ra a jeho podadres·rov\nätatistika (Alt+D)"
+    ID_HELP_LASTERROR       "Znovu zobrazÌ poslednÈ chybovÈ hl·senie"
+    ID_QUIKVIEW_NEXT        "NaËÌta ÔalöÌ s˙bor z aktÌvneho panelu"
+    ID_QUIKVIEW_PREVIOUS    "NaËÌta predch·dzaj˙ci s˙bor z aktÌvneho panelu"
+    ID_VIEW_VISUALFILTER_RULEBASED 
+                            "ZobrazÌ len poloûky, ktor˝ch vlastnosti vyhovuj˙ zadanej komplexnej podmienke\nFilter (Alt+H)"
+    ID_VIEW_VISUALFILTER_SAMEFILTER 
+                            "NastavÌ rovnak˝ filter zobrazenia aj pre neaktÌvny panel"
+    ID_ACTIONS_IMPORTCLIPBOARD "VloûÌ poloûky, ktorÈ s˙ v schr·nke ako n·zvy"
+    ID_FILE_NEWTAB          "OtvorÌ oznaËen˙ poloûku v novom paneli\nPanel (Ctrl+Ins)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CUSTOMIZE_TABSETS_ADDNEW "Prid· aktu·lnu skupinu adres·rov do zoznamu"
+    ID_CUSTOMIZE_TABSETS_ORGANIZE 
+                            "Premenuje, vymaûe alebo zmenÌ poradie skupÌn adres·rov & priradÌ kl·vesovÈ skratky"
+    ID_CUSTOMIZE_TABSETS_MORE "ZobrazÌ zoznam vöetk˝ch skupÌn adres·rov"
+    ID_WINDOW_CLOSETAB      "Zavrie aktÌvny adres·rov˝ panel"
+    ID_WINDOW_CLOSEALLTABS  "Zavrie vöetky adres·rovÈ panely okrem aktÌvneho"
+    ID_EDIT_DUPLICATEFILE   "VytvorÌ duplik·t vybratej poloûky v tom istom adres·ri"
+    ID_ACTIONS_FOLDERSETTINGS_SUSPEND 
+                            "DoËasne ignoruje vöetky uûÌvateæskÈ nastavenia adres·ra pre tento panel (prepÌnaË)"
+    ID_VIEW_AUTOFILTER      "ZobrazÌ s˙bory len jednÈho typu, ktor˝ vyberiete z typov z tohoto adres·ra\nAutofilter"
+    ID_ACTIONS_VIEWSTREAMS  "ZobrazÌ alternatÌvne d·tovÈ pr˙dy existuj˙ce vo v˝bere"
+    ID_ACTIONS_BUNDLETOGO   "ZbalÌ vybranÈ soubory do jedinÈho souboru, vr·tane vöetk˝ch pr˙dov (napr. koment·rov)"
+    ID_ACTIONS_UNPACKBUNDLE "RozbalÌ zbalenÈ soubory"
+    ID_VIEW_TOOLBARS_INFOBARS 
+                            "ZobrazÌ alebo schov· detailn˝ riadok s inform·ciami o aktÌvnej poloûke (s˙bore)"
+    ID_ACTIONS_EXPORTSETTINGS 
+                            "UloûÌ konfigur·ciu programu do .REG s˙boru, ktor˝ je moûnÈ preniesù na inÈ PC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TABSETS_FIRST        "ObnovÌ t˙to skupinu adres·rov"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_FOPBOOTSTRAP    "Pokus preniesù adres·r pod samÈho seba"
+    IDS_ERR_FOPDIRCREATE    "Chyba pri vytv·ranÌ cieæovÈho adres·ra"
+    IDS_ERR_FOPDIRREAD      "Adres·r nie je moûnÈ preËÌtaù ako celok"
+    IDS_ERR_FOPCOPY         "KopÌrovanie s˙boru bolo ne˙speönÈ"
+    IDS_ERR_FOPSTREAMLOST   "Sekund·rne ˙daje (napr. pozn·mky k s˙borom) nemohli byù prenesenÈ do cieæa"
+    IDS_ERR_FOPFREESPACE    "Nie je dostatok miesta na disku pre skopÌrovanie tohoto s˙boru\nProsÌm vloûte nov˝ disk ak chcete pokraËovaù"
+    IDS_ERR_NTONLY          "Tento prÌkaz nie je podporovan˝ vo Windows 9x"
+    IDS_ERR_OUTFILE         "Chyba pri z·pise do %s:"
+    IDS_ERR_NOBUNDLES       "Nie s˙ vybratÈ ûiadne zbalenÈ s˙bory"
+    IDS_ERR_CORRUPTBUN      "%1\nBalÌk je poökoden˝, rozbalovanie je preruöenÈ"
+    IDS_ERR_RESYNTAX        "Syntax regul·rneho v˝razu nie je spr·vna"
+    IDS_ERR_NOQUEUE         "Vo fronte prenosov sa nenach·dza ûiadna poloûka"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_PRECPSIZE       "PoËÌtam celkov˙ veækosù... (ESC=preruöiù)"
+    IDS_TIT_CMDARG          "Parameter prÌkazu"
+    IDS_QVTAB_DRAFT         "Hrub˝ n·hæad"
+    IDS_QVTAB_NORMAL        "Norm·lny"
+    IDS_SYSC_DIFFER         "RÙzne"
+    IDS_SYSC_IDENTIC        "RovnakÈ"
+    IDS_TITLE_TABREN        "N·zov z·loûky"
+    IDS_MI_NOFILTER         "&Vöetky s˙bory (*)"
+    ID_MENU_TOPMOST         "&Najvrchnejöie"
+    IDS_MEMO_TQUEUE         "Prenosy vo fronte"
+    IDS_FMT_QUEUEDESCR      "%s %d poloûka(poloûiek) do %s"
+    IDS_DRIVEBAR            "Liöta so zoznamom diskov"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_RDPRI_BG            "KopÌruje s˙bory pomalöie pouûitÌm menej zdrojov"
+    IDC_CHECK_CDRONLY       "PouûiteænÈ pri kopÌrovanÌ z CD-ROM"
+    IDC_BUTTON_PAUSE        "DoËasne zastavÌ prenos s˙borov\nStlaËte pokraËovaù pre pokraËovanie"
+    IDC_BUTTON_QUEUE        "UloûÌ tento prenos do fronty\nBude vykon·van˝ sekvenËne, jedna kÛpia po druhej"
+    IDC_CHECK_WINDOWON      "napr. pre zobrazenie detailov ch˝b a neprenesen˝ch s˙borov"
+    IDC_CHECK_SIZEUPFRONT   "UpresnÌ odhad zost·vaj˙ceho Ëasu\nale mÙûe spomaliù zaËiatok prenosu"
+    IDC_COMBO_PRECOLS       "Skupiny stÂpcov, ktorÈ s˙ v menu PrispÙsobiù | StÂpce"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CHECK_STATINFO      "Nie je potrebnÈ, keÔ m·te zapnut˝ informaËn˝ riadok"
+    IDC_CHECK_XPSORT        "napr. file1, file2, file10\nNorm·lne by to bolo file1, file10, file2"
+    IDC_CHECK_NOCURDIR      "UæahËuje odstr·nenie adres·ra, ale ovplyvnÌ DOSovsk˝ interpreter\n(musÌte v prÌkazoch pÌsaù celÈ cesty)"
+    IDC_CHECK_AUTOSUBDIR    "(v stÂpci ""Veækosù"")\nVeæmi n·roËnÈ na v˝poËtov˝ v˝kon !"
+    IDC_CHECK_FREEFORM      "Porovnanie poloûiek len podæa ich n·zvu,\nbez ohæadu na ich umiestnenie v hierarchii adres·rov"
+    IDC_COMBO_SCENARIA      "PreddefinovanÈ typickÈ spÙsoby synchroniz·cie"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_COMPARESUBFOLDERS 
+                            "Porovnanie obsahu panelov vr·tane vöetk˝ch podadres·rov"
+    ID_EDIT_QUEUESTATUS     "ZobrazÌ a usporiadava prenosy vo fronte\nQueue"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STOCKCOL_ADS        "D·tovÈ pr˙dy"
+    IDS_STOCKCOL_VERFIRMA   "Firma"
+    IDS_STOCKCOL_VERCPRITE  "Popis"
+    IDS_STOCKCOL_EXIFCX     "äÌrka"
+    IDS_STOCKCOL_EXIFCY     "V˝öka"
+    IDS_STOCKCOL_EXIFDATE   "D·tum obr·zku"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOPMOST              "ZakotvÌ toto okno nad vöetky ostatnÈ okn· (prepÌnaË)"
+END
+
+#endif    // Slovak resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "#include ""conditional.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_LISTTOOLS TOOLBAR DISCARDABLE  14, 12
+BEGIN
+    BUTTON      ID_LTB_NEW
+    BUTTON      ID_LTB_DELETE
+    BUTTON      ID_LTB_EDIT
+    BUTTON      ID_LTB_UP
+    BUTTON      ID_LTB_DOWN
+END
+
+IDR_TOOLBAR_DUMMY TOOLBAR DISCARDABLE  1, 16
+BEGIN
+    BUTTON      IDC_ADDRBAR_COMBO
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_LISTTOOLS           BITMAP  DISCARDABLE     "res\\listtool.bmp"
+IDR_TOOLBAR_DUMMY       BITMAP  DISCARDABLE     "res\\toolbar_.bmp"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

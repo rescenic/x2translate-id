@@ -1,0 +1,3416 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+#include "conditional.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0x21, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_IND)
+#ifdef _WIN32
+LANGUAGE 0x21, 0x1
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "#include ""conditional.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_LISTTOOLS TOOLBAR MOVEABLE PURE  14, 12
+BEGIN
+    BUTTON      ID_LTB_NEW
+    BUTTON      ID_LTB_DELETE
+    BUTTON      ID_LTB_EDIT
+    BUTTON      ID_LTB_UP
+    BUTTON      ID_LTB_DOWN
+END
+
+IDR_TOOLBAR_DUMMY TOOLBAR MOVEABLE PURE  1, 16
+BEGIN
+    BUTTON      IDC_ADDRBAR_COMBO
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_LISTTOOLS           BITMAP  MOVEABLE PURE   "res\\listtool.bmp"
+IDR_TOOLBAR_DUMMY       BITMAP  MOVEABLE PURE   "res\\toolbar_.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Jelajah\tEnter",             ID_FILE_BROWSE
+        MENUITEM "Kl&on+jelajah\tCtrl+Enter",   ID_FILE_CLONEBROWSE
+        MENUITEM SEPARATOR
+        MENUITEM "Tab bar&u\tCtrl+Ins",         ID_FILE_NEWTAB
+        MENUITEM "Jelajah &flat\tShift+Enter",  ID_FILE_BROWSEFLAT
+        MENUITEM "Kirim ke sk&rap\tCtrl+S",     ID_FILE_SENDTOSCRAP
+        MENUITEM SEPARATOR
+        MENUITEM "L&ihat\tF3",                  ID_FILE_VIEW
+        MENUITEM "&Edit\tF4",                   ID_FILE_EDIT
+        MENUITEM "&Sifat...\tF12",              ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Alihnama\tF2",               ID_FILE_RENAME
+        MENUITEM "Ubah &tipe\tCtrl+F2",         ID_FILE_CHANGETYPE
+        MENUITEM "Alihnama jumlah ban&yak...",  ID_FILE_MASSRENAME
+        MENUITEM "&Buang\tDel",                 ID_FILE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Tutu&p",                      ID_FILE_CLOSE
+        MENUITEM "Ke&luar\tAlt+X",              ID_APP_EXIT
+    END
+    POPUP "Perg&i ke"
+    BEGIN
+        MENUITEM "&Atas 1 level\tBksp",         ID_FILE_UPALEVEL
+        MENUITEM "&Kembali\tAlt+left",          ID_GOTO_BACK
+        MENUITEM "&Maju\tAlt+right",            ID_GOTO_FORWARD
+        MENUITEM "Temukan &target\tCtrl+L",     ID_EDIT_FINDTARGET
+        MENUITEM SEPARATOR
+        MENUITEM "Seleksi &drive...\tAlt+F1",   ID_GOTO_DRIVE
+        MENUITEM "Folder seka&rang\tAlt+F2",    ID_GOTO_RECENTFOLDER
+        POPUP "Folder spesia&l"
+        BEGIN
+            MENUITEM "&My documents\tCtrl+K",       ID_GOTO_MEDOCS
+            MENUITEM "R&ecent items",               ID_GOTO_RECENTD
+            MENUITEM "Recycle &bin",                ID_GOTO_KRAP
+            MENUITEM SEPARATOR
+            MENUITEM "&Desktop\tCtrl+Back",         ID_GOTO_DESKTOP
+            MENUITEM "&Root\tShift+Back",           ID_GOTO_ROOT
+            MENUITEM "My comp&uter",                ID_GOTO_MEKOMP
+            MENUITEM "&Network",                    ID_GOTO_NETWORK
+            MENUITEM SEPARATOR
+            MENUITEM "&Control panel",              ID_GOTO_CPANEL
+            MENUITEM "&Printers",                   ID_GOTO_PRINTERS
+            MENUITEM "&Start menu",                 ID_GOTO_STARTMENU
+            MENUITEM "S&tartup",                    ID_GOTO_STARTUP
+            MENUITEM "CD burnin&g",                 ID_GOTO_CDBURNING
+            MENUITEM "Send t&o",                    ID_GOTO_SENDTO
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Penandab&uku cepat\tCtrl+F1", ID_GOTO_BOOKMARK
+        MENUITEM "&Set penanda-cepat\tCtrl+Shift+F1", ID_GOTO_SETBOOKMARK
+        MENUITEM SEPARATOR
+        MENUITEM "Jelajahi ba&yangan\tCtrl+M",  ID_GOTO_MIRRORBROWSING
+        MENUITEM "Putar &bayangan",             ID_GOTO_MIRRORSCROLLING
+        MENUITEM SEPARATOR
+        MENUITEM "&Folder sama\tCtrl+I",        ID_GOTO_SAMEFOLDER
+        MENUITEM "Salingtukar &panel\tCtrl+U",  ID_GOTO_SWAPPANES
+    END
+    POPUP "&Penandabuku"
+    BEGIN
+        MENUITEM "&Tambah saat ini",            ID_BOOKMARKS_ADD
+        MENUITEM "&Atur...",                    ID_BOOKMARKS_ORGANIZE
+        MENUITEM SEPARATOR
+        MENUITEM "(dummy)",                     ID_BOOKMARKS_FIRST
+        MENUITEM SEPARATOR
+        MENUITEM "&Lagi...",                    ID_BOOKMARKS_MORE
+        MENUITEM "IE &Favorit",                 ID_BOOKMARKS_FAVORITES
+    END
+    POPUP "&Tanda"
+    BEGIN
+        MENUITEM "Seleksi &Semua\tCtrl+A",      ID_MARK_SELECTALL
+        MENUITEM "Tdk seleksi sem&ua\tAlt+A",   ID_MARK_UNSELECTALL
+        MENUITEM "Semua &folder\tCtrl+Alt+Q",   ID_MARK_ALLFOLDERS
+        MENUITEM "Seleksi Lek&at\tAlt+S",       ID_MARK_STICKYSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "Se&leksi grup...\tGray +",    ID_MARK_SELECTGROUP
+        MENUITEM "T&dkseleksi grup...\tGray -", ID_MARK_UNSELECTGROUP
+        MENUITEM "In&vers seleksi\tGray *",     ID_MARK_INVERTSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "Seleksi ba&tas...",           ID_MARK_SELECTRANGE
+        MENUITEM "Ukuran &total...",            ID_MARK_TOTALSIZE
+        MENUITEM SEPARATOR
+        MENUITEM "Sinkronisasi &panel\tF9",     ID_MARK_SYNCHRONIZEPANES
+        MENUITEM "Pe&nuntun sinkron...\tCtrl+F9", ID_MARK_SYNCWIZARD
+        MENUITEM "Cek &bangun...\tCtrl+F12",    ID_MARK_CHECKBUILD
+        MENUITEM SEPARATOR
+        MENUITEM "&Mengandung teks...\tCtrl+G", ID_MARK_CONTAININGTEXT
+        MENUITEM "Sesua&ikan aturan...\tAlt+G", ID_MARK_RULEBASED
+        MENUITEM "Cari &cepat...",              ID_MARK_QUICKSEARCH
+        MENUITEM SEPARATOR
+        POPUP "S&eleksi"
+        BEGIN
+            MENUITEM "Sim&pan\tCtrl+F11",           ID_MARK_SELECTION_STORE
+            MENUITEM SEPARATOR
+            MENUITEM "&Seleksi\tF11",               ID_MARK_SELECTION_SELECT
+            MENUITEM "&Tdk seleksi\tAlt+F11",       ID_MARK_SELECTION_UNSELECT
+
+            MENUITEM "&Kombinasi\tShift+F11",       ID_MARK_SELECTION_COMBINE
+
+            MENUITEM "Tampi&l\tCtrl+Shift+F11",     ID_MARK_SELECTION_SHOW
+        END
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Poton&g\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "&Salin\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "S&alin ke...\tF5",            ID_EDIT_COPYTO
+        MENUITEM "&Pindah ke...\tF6",           ID_EDIT_MOVETO
+        MENUITEM "Status ant&rian...",          ID_EDIT_QUEUESTATUS
+        MENUITEM SEPARATOR
+        MENUITEM "&Tempel\tCtrl+V",             ID_EDIT_PASTE
+        MENUITEM "Tempel &Link",                ID_EDIT_PASTELINK
+        POPUP "Tempel sp&esial"
+        BEGIN
+            MENUITEM "Link &keras\tCtrl+Alt+H",     ID_ACTIONS_PASTEHARDLINK
+            MENUITEM "struktur &folder",            ID_EDIT_PASTESPECIAL_FOLDERSTRUCTURE
+
+            MENUITEM "Klip skrap &terstruktur",     ID_EDIT_PASTESPECIAL_STRUCTUREDSCRAPCLIPS
+
+            MENUITEM "Tempel &banyak",              ID_EDIT_PASTESPECIAL_MULTIPASTE
+
+            POPUP "Sam&bungan folder"
+            BEGIN
+                MENUITEM "&Tempel",                     ID_EDIT_FOLDERJUNCTION_PASTE
+
+                MENUITEM "&Hapus",                      ID_EDIT_FOLDERJUNCTION_DELETE
+
+            END
+        END
+        MENUITEM "&Kembaran",                   ID_EDIT_DUPLICATEFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Salin &nama\tAlt+C",          ID_EDIT_COPYNAMES
+        MENUITEM "Salin prali&hat",             ID_EDIT_COPYPREVIEW
+        MENUITEM "Salin kol&om\tCtrl+P",        ID_EDIT_COPYSELECTION
+    END
+    POPUP "&Lihat"
+    BEGIN
+        MENUITEM "&Dua panel\tCtrl+O",          ID_VIEW_DUALPANE
+        MENUITEM "Pelihat &cepat\tCtrl+Q",      ID_VIEW_QUICKVIEWER
+        MENUITEM "Kunci &pelihat",              ID_VIEW_LOCKVIEWER
+        POPUP "&Toolbar"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "S&emua toolbar",              ID_VIEW_TOOLBAR
+            MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+            MENUITEM "&Info bar",                   ID_VIEW_TOOLBARS_INFOBARS
+
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Style panel"
+        BEGIN
+            MENUITEM "Ikon bes&ar",                 ID_VIEW_LARGEICONS
+            MENUITEM "Ikon ke&cil",                 ID_VIEW_SMALLICONS
+            MENUITEM "Da&ftar",                     ID_VIEW_LIST
+            MENUITEM "&Detail",                     ID_VIEW_DETAILS
+            MENUITEM "Gamba&rkecil",                ID_VIEW_THUMBNAILS
+            MENUITEM "Gambar &mini",                ID_VIEW_PANESTYLE_MINITHUMBS
+
+        END
+        MENUITEM "S&eleksi kolom...\tAlt+K",    ID_VIEW_SELECTCOLUMNS
+        POPUP "&Atur berdasar"
+        BEGIN
+            MENUITEM "&Nama\tCtrl+Alt+N",           ID_VIEW_SORTBY_NAME
+            MENUITEM "&Ukuran\tCtrl+Alt+S",         ID_VIEW_SORTBY_SIZE
+            MENUITEM "&Tanggal\tCtrl+Alt+D",        ID_VIEW_SORTBY_DATE
+            MENUITEM "T&ipe\tCtrl+Alt+T",           ID_VIEW_SORTBY_TYPE
+            MENUITEM "Lain",                        ID_VIEW_SORTBY_OTHER
+            , GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "Tdk di&sortir\tCtrl+Alt+U",   ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "&Askending\tCtrl+Alt+A",      ID_VIEW_SORTBY_ASCENDING
+            MENUITEM SEPARATOR
+            MENUITEM "Lihat dlm &grup",             ID_VIEW_PANESTYLE_SHOWINGROUPS
+
+            MENUITEM "Grup &pesanan...\tCtrl+Alt+G", 
+                                                    ID_VIEW_ARRANGEBY_CUSTOMGROUPS
+
+        END
+        MENUITEM "&Otoukuran kolom\tCtrl+Add",  ID_VIEW_AUTOSIZECOLUMNS
+        MENUITEM SEPARATOR
+        MENUITEM "&Refresh\tCtrl+R",            ID_VIEW_REFRESH
+        MENUITEM "Taha&n otorefresh\tCtrl+Alt+R", ID_VIEW_HOLDAUTOREFRESH
+        MENUITEM "Isi menta&h",                 ID_VIEW_RAWCONTENTS
+        MENUITEM SEPARATOR
+        MENUITEM "L&ihat Pohon\tCtrl+T",        ID_VIEW_SHOWTREE
+        MENUITEM "Lo&kasi di pohon\tAlt+T",     ID_VIEW_LOCATEINTREE
+        MENUITEM "Kepingan &mini",              ID_VIEW_MINISCRAP
+        MENUITEM SEPARATOR
+        POPUP "Saringan &visual"
+        BEGIN
+            MENUITEM "&Wildcard...\tCtrl+H",        ID_FILE_VISUALFILTER
+            MENUITEM "&Dasar aturan...\tAlt+H",     ID_VIEW_VISUALFILTER_RULEBASED
+
+            MENUITEM "&Oto-saring",                 ID_VIEW_AUTOFILTER
+            MENUITEM "&Nyala/Mati\tCtrl+J",         ID_MARK_USEVISUALFILTER
+            MENUITEM SEPARATOR
+            MENUITEM "Sembunyikan &folder\tAlt+J",  ID_VIEW_HIDEFOLDERS
+            MENUITEM "Han&ya terseleksi\tCtrl+Alt+J", ID_VIEW_SELECTEDONLY
+            MENUITEM SEPARATOR
+            MENUITEM "Saringan &sama\tCtrl+Alt+M",  ID_VIEW_VISUALFILTER_SAMEFILTER
+
+        END
+        MENUITEM "Ta&mpilkan semua",            ID_VIEW_SHOWALL
+    END
+    POPUP "&Aksi"
+    BEGIN
+        MENUITEM "File &baru\tF7",              ID_ACTIONS_NEWFILE
+        MENUITEM "&Folder baru\tF8",            ID_ACTIONS_NEWFOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "Set k&omentar...\tAlt+Z",     ID_ACTIONS_SETCOMMENT
+        POPUP "&ADS"
+        BEGIN
+            MENUITEM "&Lihat aliran",               ID_ACTIONS_VIEWSTREAMS
+            MENUITEM "&Pisah aliran",               ID_ACTIONS_ADS_SPLITSTREAMS
+
+            MENUITEM SEPARATOR
+            MENUITEM "B&endel siap pergi...",       ID_ACTIONS_BUNDLETOGO
+            MENUITEM "&Buka bendel",                ID_ACTIONS_UNPACKBUNDLE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Ubah &atribut...\tShift+F12", ID_ACTIONS_CHANGEATTRIBUTES
+        MENUITEM "Sentuh-Sin&kron",             ID_ACTIONS_SYNCTOUCH
+        MENUITEM SEPARATOR
+        MENUITEM "&Split file...",              ID_ACTIONS_SPLIT
+        MENUITEM "&Gabung file...",             ID_ACTIONS_MERGEFILES
+        MENUITEM "Ura&i",                       ID_ACTIONS_SHRED
+        MENUITEM SEPARATOR
+        MENUITEM "Simpan setting sk&rg",        ID_VIEW_SAVESETTINGSNOW
+        MENUITEM "Eks&por setting",             ID_ACTIONS_EXPORTSETTINGS
+        POPUP "Fold&er setting"
+        BEGIN
+            MENUITEM "&Simpan",                     ID_ACTIONS_FOLDERSETTINGS_SAVE
+
+            MENUITEM "&Hapus",                      ID_ACTIONS_FOLDERSETTINGS_CLEAR
+
+            MENUITEM SEPARATOR
+            MENUITEM "S&uspen",                     ID_ACTIONS_FOLDERSETTINGS_SUSPEND
+
+        END
+    END
+    POPUP "To&ol"
+    BEGIN
+        MENUITEM "Perintah &Run",               ID_TOOLS_RUNCOMMAND
+        MENUITEM "Perintah &DOS\tF10",          ID_TOOLS_DOSCOMMAND
+        MENUITEM "Se&jarah Run...\tCtrl+F10",   ID_TOOLS_RUNHISTORY
+        MENUITEM "Ulan&gi perintah\tAlt+F10",   ID_TOOLS_REPEATCOMMAND
+        MENUITEM "Perintah &script...\tCtrl+B", ID_TOOLS_COMMANDSCRIPT
+        MENUITEM SEPARATOR
+        MENUITEM "&Temukan file...\tCtrl+F",    ID_TOOLS_FINDFILES
+        MENUITEM "&Cek kembaran...",            ID_TOOLS_CHECKDUPLICATES
+        MENUITEM "Bandingkan sub&folder...",    ID_TOOLS_COMPARESUBFOLDERS
+        MENUITEM SEPARATOR
+        MENUITEM "Ruang &bebas\tCtrl+Alt+Space", ID_TOOLS_FREESPACE
+        MENUITEM "Ukuran s&ubfolder\tCtrl+D",   ID_TOOLS_SUBFOLDERSIZE
+        MENUITEM "Statistik fo&lder...\tAlt+D", ID_TOOLS_FOLDERSTATISTICS
+        MENUITEM SEPARATOR
+        MENUITEM "&Pilihan...",                 ID_TOOLS_OPTIONS
+    END
+    POPUP "&Jendela"
+    BEGIN
+        MENUITEM "Skra&p kontainer",            ID_WINDOW_SCRAPFRAME
+        MENUITEM "&Daftar...\tCtrl+W",          ID_WINDOW_LIST
+        MENUITEM SEPARATOR
+        MENUITEM "Tutup ta&b\tCtrl+F4",         ID_WINDOW_CLOSETAB
+        MENUITEM "Tutup s&emua tab",            ID_WINDOW_CLOSEALLTABS
+        MENUITEM SEPARATOR
+        MENUITEM "&Klon\tCtrl+N",               ID_WINDOW_CLONE
+        MENUITEM "&Simpan layout...",           ID_WINDOW_SETREGKEY
+        MENUITEM SEPARATOR
+        MENUITEM "(dummy)",                     ID_REGDATA_FIRST
+        MENUITEM SEPARATOR
+        MENUITEM "&Atur...",                    ID_WINDOW_SETACCELERATOR
+        MENUITEM "&Tambahan layout...",         ID_WINDOW_MORE
+    END
+    POPUP "K&ustomis"
+    BEGIN
+        POPUP "&Toolbar"
+        BEGIN
+            MENUITEM "&Tambah baru...",             ID_CUSTOMIZE_TOOLBARS_ADDNEW
+
+            MENUITEM "&Atur...",                    ID_CUSTOMIZE_TOOLBARS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_TBCUST_FIRST
+        END
+        POPUP "Set &kolom"
+        BEGIN
+            MENUITEM "&Tambah skrg",                ID_CUSTOMIZE_COLUMNS_ADD
+            MENUITEM "&Atur...",                    ID_CUSTOMIZE_COLUMNS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_COLUMNSET_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "Ta&mbah lagi...",             ID_CUSTOMIZE_COLUMNS_MORE
+
+        END
+        POPUP "Perintah &pemakai"
+        BEGIN
+            MENUITEM "&Tambah baru...",             ID_CUSTOMIZE_USERCOMMANDS_ADDNEW
+
+            MENUITEM "&Atur...",                    ID_CUSTOMIZE_USERCOMMANDS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_USERTOOL_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "Ta&mbah lagi...",             ID_CUSTOMIZE_USERCOMMANDS_MORE
+
+        END
+        POPUP "Grup &folder"
+        BEGIN
+            MENUITEM "&Tambah skrg",                ID_CUSTOMIZE_TABSETS_ADDNEW
+
+            MENUITEM "&Atur...",                    ID_CUSTOMIZE_TABSETS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_TABSETS_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "Ta&mbah lagi...",             ID_CUSTOMIZE_TABSETS_MORE
+
+        END
+        POPUP "Grup &pesanan"
+        BEGIN
+            MENUITEM "T&ambah saat ini",            ID_CUSTOMIZE_CUSTOMGROUPS_ADDCURRENT
+
+            MENUITEM "&Atur...",                    ID_CUSTOMIZE_CUSTOMGROUPS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_CATEGORIES_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Lagi...",                    ID_CUSTOMIZE_CUSTOMGROUPS_MORE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Ke&yboard...",                ID_CUSTOMIZE_KEYBOARD
+        MENUITEM "&Guna keyboard...",           ID_CUSTOMIZE_KEYBOARDUSE
+        MENUITEM SEPARATOR
+        MENUITEM "Kodi&ng pewarnaan...",        ID_VIEW_COLORCODING
+    END
+    POPUP "&Bantuan"
+    BEGIN
+        MENUITEM "Mulai &cepat",                ID_HELP_ALPHAINFO
+        MENUITEM "&Isi\tF1",                    ID_HELP_CONTENTS
+        MENUITEM "&Tip hari ini...",            ID_HELP_TIPOFTHEDAY
+        MENUITEM SEPARATOR
+        MENUITEM "&Register program",           ID_HELP_REGISTERPROGRAM
+        MENUITEM "&Donasi",                     ID_HELP_DONATE
+        MENUITEM "Cek &update",                 ID_HELP_CHECKUPDATES
+        MENUITEM "Dukungan &online",            ID_HELP_GETSUPPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Error tera&khir",             ID_HELP_LASTERROR
+        MENUITEM SEPARATOR
+        MENUITEM "T&entang xplorer²...",        ID_APP_ABOUT
+        MENUITEM "Per&janjian lisensi...",      ID_HELP_LICENCEAGREEMENT
+        MENUITEM "&Apa yg baru?",               ID_HELP_CHANGES
+    END
+END
+
+IDR_CONTEXTMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "paneLR"
+    BEGIN
+        MENUITEM "File &baru\tF7",              ID_ACTIONS_NEWFILE
+        MENUITEM "&Folder baru\tF8",            ID_ACTIONS_NEWFOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "&Tempel\tCtrl+V",             ID_EDIT_PASTE
+        MENUITEM "Tempel &Link",                ID_EDIT_PASTELINK
+        POPUP "Tempel sp&esial"
+        BEGIN
+            MENUITEM "Link &keras\tCtrl+Alt+H",     ID_ACTIONS_PASTEHARDLINK
+            MENUITEM "Struktur &folder",            ID_EDIT_PASTESPECIAL_FOLDERSTRUCTURE
+
+            MENUITEM "Klip skrap ter&struktur",     ID_EDIT_PASTESPECIAL_STRUCTUREDSCRAPCLIPS
+
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Style panel"
+        BEGIN
+            MENUITEM "Ikon bes&ar",                 ID_VIEW_LARGEICONS
+            MENUITEM "Ikon ke&cil",                 ID_VIEW_SMALLICONS
+            MENUITEM "Da&ftar",                     ID_VIEW_LIST
+            MENUITEM "&Detail",                     ID_VIEW_DETAILS
+            MENUITEM "Gamba&rkecil",                ID_VIEW_THUMBNAILS
+            MENUITEM "Gambar &mini",                ID_VIEW_PANESTYLE_MINITHUMBS
+
+        END
+        POPUP "&Atur berdasar"
+        BEGIN
+            MENUITEM "&Nama\tCtrl+Alt+N",           ID_VIEW_SORTBY_NAME
+            MENUITEM "&Ukuran\tCtrl+Alt+S",         ID_VIEW_SORTBY_SIZE
+            MENUITEM "&Tanggal\tCtrl+Alt+D",        ID_VIEW_SORTBY_DATE
+            MENUITEM "T&ipe\tCtrl+Alt+T",           ID_VIEW_SORTBY_TYPE
+            MENUITEM "Lain",                        ID_VIEW_SORTBY_OTHER
+            , GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "Tdk di&sortir\tCtrl+Alt+U",   ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "&Askending\tCtrl+Alt+A",      ID_VIEW_SORTBY_ASCENDING
+            MENUITEM SEPARATOR
+            MENUITEM "Lihat dlm &grup",             ID_VIEW_PANESTYLE_SHOWINGROUPS
+
+            MENUITEM "Grup &pesanan...\tCtrl+Alt+G", 
+                                                    ID_VIEW_ARRANGEBY_CUSTOMGROUPS
+
+        END
+    END
+    POPUP "paneMulti"
+    BEGIN
+        MENUITEM "&Buka\tEnter",                ID_FILE_BROWSE2
+        MENUITEM "&Jelajah\tCtrl+Enter",        ID_FILE_CLONEBROWSE2
+        MENUITEM SEPARATOR
+        MENUITEM "Sa&lin\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "&Tempel\tCtrl+V",             ID_EDIT_PASTE
+        MENUITEM "B&uang\tDel",                 ID_FILE_REMOVE
+        MENUITEM SEPARATOR
+        POPUP "&Style panel"
+        BEGIN
+            MENUITEM "Ikon bes&ar",                 ID_VIEW_LARGEICONS
+            MENUITEM "Ikon ke&cil",                 ID_VIEW_SMALLICONS
+            MENUITEM "Da&ftar",                     ID_VIEW_LIST
+            MENUITEM "&Detail",                     ID_VIEW_DETAILS
+            MENUITEM "Gamba&rkecil",                ID_VIEW_THUMBNAILS
+            MENUITEM "Gambar &mini",                ID_VIEW_PANESTYLE_MINITHUMBS
+
+        END
+        POPUP "&Atur berdasar"
+        BEGIN
+            MENUITEM "&Nama\tCtrl+Alt+N",           ID_VIEW_SORTBY_NAME
+            MENUITEM "&Ukuran\tCtrl+Alt+S",         ID_VIEW_SORTBY_SIZE
+            MENUITEM "&Tanggal\tCtrl+Alt+D",        ID_VIEW_SORTBY_DATE
+            MENUITEM "T&ipe\tCtrl+Alt+T",           ID_VIEW_SORTBY_TYPE
+            MENUITEM "&Jalur",                      ID_VIEW_ARRANGEBY_PATH
+            MENUITEM "Lain",                        ID_VIEW_SORTBY_OTHER
+            , GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "Tdk di&sortir\tCtrl+Alt+U",   ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "&Askending\tCtrl+Alt+A",      ID_VIEW_SORTBY_ASCENDING
+            MENUITEM SEPARATOR
+            MENUITEM "Lihat dlm &grup",             ID_VIEW_PANESTYLE_SHOWINGROUPS
+
+            MENUITEM "Grup &pesanan...\tCtrl+Alt+G", 
+                                                    ID_VIEW_ARRANGEBY_CUSTOMGROUPS
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Hap&us",                      ID_FILE_CLEAR
+        MENUITEM "&Panggil isi...",             ID_ACTIONS_LOADCONTENTS
+        MENUITEM "Tul&is isi\tCtrl+S",          ID_ACTIONS_WRITECONTENTS
+        MENUITEM "Si&mpan sbg...",              ID_ACTIONS_SAVEAS
+        MENUITEM "&File skrg",                  ID_FILE_RECENT
+    END
+    POPUP "pmRiteDrag"
+    BEGIN
+        MENUITEM "&Sisip disini",               ID_PMRITEDRAG_INSERTHERE
+        MENUITEM "Jelajah &Flat",               ID_ACTIONS_FLATTENPATH
+        MENUITEM "&Dptkan subfolder",           ID_ACTIONS_GETSUBFOLDERS
+        MENUITEM SEPARATOR
+        MENUITEM "&Batal",                      ID_PMRITEDRAG_CANCEL
+    END
+    POPUP "header"
+    BEGIN
+        MENUITEM "S&eleksi kolom...\tAlt+K",    ID_VIEW_SELECTCOLUMNS
+        MENUITEM "Otouk&uran kolom\tCtrl+Add",  ID_VIEW_AUTOSIZECOLUMNS
+    END
+    POPUP "quikview"
+    BEGIN
+        MENUITEM "&Salin\tCtrl+C",              ID_QUIKVIEW_COPY
+        MENUITEM "Seleksi Se&mua\tCtrl+A",      ID_QUIKVIEW_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Cari...\tCtrl+F",            ID_QUIKVIEW_FIND
+        MENUITEM "Temukan &Berikutnya\tF3",     ID_QUIKVIEW_FINDNEXT
+        MENUITEM SEPARATOR
+        MENUITEM "Sambung kata ke baris selanjutnya\tF2", 
+                                                ID_QUIKVIEW_WORDWRAP
+        MENUITEM "Set &Huruf...",               ID_QUIKVIEW_SETFONT
+        POPUP "&Enkoding"
+        BEGIN
+            MENUITEM "&Windows",                    ID_QUIKVIEW_ENCODING_WINDOWS
+
+            MENUITEM "&OEM",                        ID_QUIKVIEW_ENCODING_OEM
+            MENUITEM "UTF-&8",                      ID_QUIKVIEW_ENCODING_UTF8
+
+            MENUITEM "&Unicode",                    ID_QUIKVIEW_ENCODING_UNICODE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Hanya &teks",                 ID_QUIKVIEW_TEXTMODE
+        MENUITEM "Ber&ikutnya\tCtrl+Down",      ID_QUIKVIEW_NEXT
+        MENUITEM "Sebe&lumnya\tCtrl+Up",        ID_QUIKVIEW_PREVIOUS
+    END
+    POPUP "tabz"
+    BEGIN
+        MENUITEM "Pindah ke &kiri",             ID_TABZ_MOVELEFT
+        MENUITEM "Pindah ke k&anan",            ID_TABZ_MOVERIGHT
+        MENUITEM "Alih&nama",                   ID_TABZ_RENAME
+        MENUITEM "Salin semua &lajur",          ID_TABZ_COPYALLPATHS
+    END
+END
+
+IDR_SCRAPFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "B&uka\tEnter",                ID_FILE_BROWSE2
+        MENUITEM "&Jelajah\tCtrl+Enter",        ID_FILE_CLONEBROWSE2
+        MENUITEM SEPARATOR
+        MENUITEM "L&ihat\tF3",                  ID_FILE_VIEW
+        MENUITEM "&Edit\tF4",                   ID_FILE_EDIT
+        MENUITEM "&Sifat...\tF12",              ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Alihnama\tF2",               ID_FILE_RENAME
+        MENUITEM "Ubah &tipe\tCtrl+F2",         ID_FILE_CHANGETYPE
+        MENUITEM "Alihnama jumlah ban&yak...",  ID_FILE_MASSRENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Buang\tDel",                 ID_FILE_REMOVE
+        MENUITEM "&Hapus\tCtrl+Del",            ID_FILE_DELETE
+        MENUITEM "Bersih&kan",                  ID_FILE_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Tutu&p",                      ID_FILE_CLOSE
+        MENUITEM "Ke&luar\tAlt+X",              ID_APP_EXIT
+    END
+    POPUP "&Tanda"
+    BEGIN
+        MENUITEM "Seleksi &Semua\tCtrl+A",      ID_MARK_SELECTALL
+        MENUITEM "Tdk seleksi sem&ua\tAlt+A",   ID_MARK_UNSELECTALL
+        MENUITEM "Semua &folder\tCtrl+Alt+Q",   ID_MARK_ALLFOLDERS
+        MENUITEM "Seleksi Lek&at\tAlt+S",       ID_MARK_STICKYSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "Se&leksi grup...\tGray +",    ID_MARK_SELECTGROUP
+        MENUITEM "&Tdkseleksi grup...\tGray -", ID_MARK_UNSELECTGROUP
+        MENUITEM "In&vers seleksi\tGray *",     ID_MARK_INVERTSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "Seleksi &batas...",           ID_MARK_SELECTRANGE
+        MENUITEM "Ukuran &total...",            ID_MARK_TOTALSIZE
+        MENUITEM SEPARATOR
+        MENUITEM "Sinkronisasi &panel\tF9",     ID_MARK_SYNCHRONIZEPANES
+        MENUITEM "Pe&nuntun sinkron...\tCtrl+F9", ID_MARK_SYNCWIZARD
+        MENUITEM SEPARATOR
+        MENUITEM "&Mengandung teks...\tCtrl+G", ID_MARK_CONTAININGTEXT
+        MENUITEM "Sesua&ikan aturan...\tAlt+G", ID_MARK_RULEBASED
+        MENUITEM "Pencarian &cepat...",         ID_MARK_QUICKSEARCH
+        MENUITEM SEPARATOR
+        POPUP "S&eleksi"
+        BEGIN
+            MENUITEM "Sim&pan\tCtrl+F11",           ID_MARK_SELECTION_STORE
+            MENUITEM SEPARATOR
+            MENUITEM "&Seleksi\tF11",               ID_MARK_SELECTION_SELECT
+            MENUITEM "&Tdk seleksi\tAlt+F11",       ID_MARK_SELECTION_UNSELECT
+
+            MENUITEM "&Kombinasi\tShift+F11",       ID_MARK_SELECTION_COMBINE
+
+            MENUITEM "Li&hat\tCtrl+Shift+F11",      ID_MARK_SELECTION_SHOW
+        END
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Poton&g\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "&Salin\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "S&alin ke...\tF5",            ID_EDIT_COPYTO
+        MENUITEM "&Pindah ke...\tF6",           ID_EDIT_MOVETO
+        MENUITEM "Status ant&rian...",          ID_EDIT_QUEUESTATUS
+        MENUITEM SEPARATOR
+        MENUITEM "&Tempel\tCtrl+V",             ID_EDIT_PASTE
+        MENUITEM "S&inkron-o-tempel",           ID_EDIT_SYNCOPASTE
+        MENUITEM "Tempel &banyak",              ID_EDIT_PASTESPECIAL_MULTIPASTE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Salin &nama\tAlt+C",          ID_EDIT_COPYNAMES
+        MENUITEM "Salin pra&lihat",             ID_EDIT_COPYPREVIEW
+        MENUITEM "Salin kol&om\tCtrl+P",        ID_EDIT_COPYSELECTION
+    END
+    POPUP "&Lihat"
+    BEGIN
+        MENUITEM "&Dua panel\tCtrl+O",          ID_VIEW_DUALPANE
+        MENUITEM "Pelihat &cepat\tCtrl+Q",      ID_VIEW_QUICKVIEWER
+        MENUITEM "&Kunci pelihat",              ID_VIEW_LOCKVIEWER
+        POPUP "&Toolbar"
+        BEGIN
+            MENUITEM SEPARATOR
+            MENUITEM "S&emua toolbar",              ID_VIEW_TOOLBAR
+            MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+            MENUITEM "&Info bar",                   ID_VIEW_TOOLBARS_INFOBARS
+
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Style panel"
+        BEGIN
+            MENUITEM "Ikon bes&ar",                 ID_VIEW_LARGEICONS
+            MENUITEM "Ikon ke&cil",                 ID_VIEW_SMALLICONS
+            MENUITEM "Da&ftar",                     ID_VIEW_LIST
+            MENUITEM "&Detail",                     ID_VIEW_DETAILS
+            MENUITEM "Gamba&rkecil",                ID_VIEW_THUMBNAILS
+            MENUITEM "Gambar &mini",                ID_VIEW_PANESTYLE_MINITHUMBS
+
+        END
+        MENUITEM "S&eleksi kolom...\tAlt+K",    ID_VIEW_SELECTCOLUMNS
+        POPUP "&Atur berdasar"
+        BEGIN
+            MENUITEM "&Nama\tCtrl+Alt+N",           ID_VIEW_SORTBY_NAME
+            MENUITEM "&Ukuran\tCtrl+Alt+S",         ID_VIEW_SORTBY_SIZE
+            MENUITEM "&Tanggal\tCtrl+Alt+D",        ID_VIEW_SORTBY_DATE
+            MENUITEM "T&ipe\tCtrl+Alt+T",           ID_VIEW_SORTBY_TYPE
+            MENUITEM "&Jalur",                      ID_VIEW_ARRANGEBY_PATH
+            MENUITEM "Lain",                        ID_VIEW_SORTBY_OTHER
+            , GRAYED
+            MENUITEM SEPARATOR
+            MENUITEM "Tdk di&sortir\tCtrl+Alt+U",   ID_VIEW_SORTBY_UNSORTED
+            MENUITEM "&Askending\tCtrl+Alt+A",      ID_VIEW_SORTBY_ASCENDING
+            MENUITEM SEPARATOR
+            MENUITEM "Lihat dlm &grup",             ID_VIEW_PANESTYLE_SHOWINGROUPS
+
+            MENUITEM "Grup &pesanan...\tCtrl+Alt+G", 
+                                                    ID_VIEW_ARRANGEBY_CUSTOMGROUPS
+
+        END
+        MENUITEM "&Otoukuran kolom\tCtrl+Add",  ID_VIEW_AUTOSIZECOLUMNS
+        MENUITEM SEPARATOR
+        MENUITEM "&Refresh\tCtrl+R",            ID_VIEW_REFRESH
+        MENUITEM "Taha&n otorefresh\tCtrl+Alt+R", ID_VIEW_HOLDAUTOREFRESH
+        MENUITEM SEPARATOR
+        POPUP "Saringan &visual"
+        BEGIN
+            MENUITEM "&Wildcard...\tCtrl+H",        ID_FILE_VISUALFILTER
+            MENUITEM "&Dasar aturan...\tAlt+H",     ID_VIEW_VISUALFILTER_RULEBASED
+
+            MENUITEM "&Nyala/Mati\tCtrl+J",         ID_MARK_USEVISUALFILTER
+            MENUITEM SEPARATOR
+            MENUITEM "Sembunyikan &folder\tAlt+J",  ID_VIEW_HIDEFOLDERS
+            MENUITEM "Han&ya terseleksi\tCtrl+Alt+J", ID_VIEW_SELECTEDONLY
+            MENUITEM SEPARATOR
+            MENUITEM "Saringan &sama\tCtrl+Alt+M",  ID_VIEW_VISUALFILTER_SAMEFILTER
+
+        END
+        MENUITEM "Ta&mpilkan semua",            ID_VIEW_SHOWALL
+    END
+    POPUP "&Aksi"
+    BEGIN
+        MENUITEM "Ratakan &jalur...",           ID_ACTIONS_FLATTENPATH
+        MENUITEM SEPARATOR
+        MENUITEM "Ubah &atribut...\tShift+F12", ID_ACTIONS_CHANGEATTRIBUTES
+        MENUITEM "Set &komentar...\tAlt+Z",     ID_ACTIONS_SETCOMMENT
+        POPUP "&ADS"
+        BEGIN
+            MENUITEM "&Lihat aliran",               ID_ACTIONS_VIEWSTREAMS
+            MENUITEM "&Bendel siap pergi...",       ID_ACTIONS_BUNDLETOGO
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Split file...",              ID_ACTIONS_SPLIT
+        MENUITEM "&Gabung file...",             ID_ACTIONS_MERGEFILES
+        MENUITEM "Ura&i",                       ID_ACTIONS_SHRED
+        MENUITEM SEPARATOR
+        MENUITEM "&Panggil isi...",             ID_ACTIONS_LOADCONTENTS
+        MENUITEM "&Tulis isi\tCtrl+S",          ID_ACTIONS_WRITECONTENTS
+        MENUITEM "File Seka&rang",              ID_FILE_RECENT
+        MENUITEM SEPARATOR
+        MENUITEM "I&mpor papanklip",            ID_ACTIONS_IMPORTCLIPBOARD
+    END
+    POPUP "To&ol"
+    BEGIN
+        MENUITEM "Perintah &Run",               ID_TOOLS_RUNCOMMAND
+        MENUITEM "Perintah &DOS\tF10",          ID_TOOLS_DOSCOMMAND
+        MENUITEM "Se&jarah Run...\tCtrl+F10",   ID_TOOLS_RUNHISTORY
+        MENUITEM "U&langi perintah\tAlt+F10",   ID_TOOLS_REPEATCOMMAND
+        MENUITEM SEPARATOR
+        MENUITEM "Perintah &script...\tCtrl+B", ID_TOOLS_COMMANDSCRIPT
+        MENUITEM "Ukuran s&ubfolder\tCtrl+D",   ID_TOOLS_SUBFOLDERSIZE
+        MENUITEM "Temukan tar&get\tCtrl+L",     ID_EDIT_FINDTARGET
+        MENUITEM SEPARATOR
+        MENUITEM "&Temukan file...\tCtrl+F",    ID_TOOLS_FINDFILES
+        MENUITEM "Status pe&ncarian...",        ID_TOOLS_SEARCHSTATUS
+        MENUITEM SEPARATOR
+        MENUITEM "&Cek kembaran...",            ID_TOOLS_CHECKDUPLICATES
+        MENUITEM "Tamp&ilkan unik",             ID_TOOLS_REVEALUNIQUE
+        MENUITEM SEPARATOR
+        MENUITEM "&Pilihan...",                 ID_TOOLS_OPTIONS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "Skra&p kontainer baru",       ID_WINDOW_SCRAPFRAME
+        MENUITEM "&Daftar...\tCtrl+W",          ID_WINDOW_LIST
+        MENUITEM SEPARATOR
+        MENUITEM "Ge&ser bayangan\tCtrl+M",     ID_GOTO_MIRRORSCROLLING
+    END
+    POPUP "K&ustomis"
+    BEGIN
+        POPUP "&Toolbar"
+        BEGIN
+            MENUITEM "&Tambah baru...",             ID_CUSTOMIZE_TOOLBARS_ADDNEW
+
+            MENUITEM "&Atur...",                    ID_CUSTOMIZE_TOOLBARS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_TBCUST_FIRST
+        END
+        POPUP "Set &kolom"
+        BEGIN
+            MENUITEM "&Tambah skrg",                ID_CUSTOMIZE_COLUMNS_ADD
+            MENUITEM "&Atur...",                    ID_CUSTOMIZE_COLUMNS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_COLUMNSET_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Lagi...",                    ID_CUSTOMIZE_COLUMNS_MORE
+
+        END
+        POPUP "Perintah &pemakai"
+        BEGIN
+            MENUITEM "&Tambah baru...",             ID_CUSTOMIZE_USERCOMMANDS_ADDNEW
+
+            MENUITEM "&Atur...",                    ID_CUSTOMIZE_USERCOMMANDS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_USERTOOL_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Lagi...",                    ID_CUSTOMIZE_USERCOMMANDS_MORE
+
+        END
+        POPUP "Grup &pesanan"
+        BEGIN
+            MENUITEM "&Tambah skrg...",             ID_CUSTOMIZE_USERCOMMANDS_ADDNEW
+
+            MENUITEM "&Atur...",                    ID_CUSTOMIZE_USERCOMMANDS_ORGANIZE
+
+            MENUITEM SEPARATOR
+            MENUITEM "(dummy)",                     ID_USERTOOL_FIRST
+            MENUITEM SEPARATOR
+            MENUITEM "&Lagi...",                    ID_CUSTOMIZE_USERCOMMANDS_MORE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Ke&yboard...",                ID_CUSTOMIZE_KEYBOARD
+        MENUITEM "Guna &keyboard...",           ID_CUSTOMIZE_KEYBOARDUSE
+        MENUITEM SEPARATOR
+        MENUITEM "Kodi&ng pewarnaan...",        ID_VIEW_COLORCODING
+    END
+    POPUP "&Bantuan"
+    BEGIN
+        MENUITEM "Mulai &cepat",                ID_HELP_ALPHAINFO
+        MENUITEM "&Isi\tF1",                    ID_HELP_CONTENTS
+        MENUITEM "&Tip hari ini...",            ID_HELP_TIPOFTHEDAY
+        MENUITEM SEPARATOR
+        MENUITEM "&Register program",           ID_HELP_REGISTERPROGRAM
+        MENUITEM "Cek &update",                 ID_HELP_CHECKUPDATES
+        MENUITEM "Dukungan &online",            ID_HELP_GETSUPPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Error tera&khir",             ID_HELP_LASTERROR
+        MENUITEM SEPARATOR
+        MENUITEM "T&entang xplorer²...",        ID_APP_ABOUT
+        MENUITEM "Per&janjian lisensi...",      ID_HELP_LICENCEAGREEMENT
+        MENUITEM "&Apa yg baru?",               ID_HELP_CHANGES
+    END
+END
+
+IDR_DIRSTATFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&Aksi"
+    BEGIN
+        MENUITEM "&Jelajah\tEnter",             ID_FILE_CLONEBROWSE2
+        MENUITEM SEPARATOR
+        MENUITEM "Sortir berdasar &nama",       ID_VIEW_SORTBY_NAME
+        MENUITEM "Sortir berdasar &ukuran",     ID_VIEW_SORTBY_SIZE
+        MENUITEM SEPARATOR
+        MENUITEM "Salin t&eks\tCtrl+C",         ID_DIRDATA_COPYTEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Tutup",                      ID_FILE_CLOSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\kenny.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(PRO)
+#if defined(APSTUDIO_INVOKED)
+IDD_ABOUTBOX$(PRO) DIALOG DISCARDABLE  0, 0, 242, 121
+#else
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 242, 121
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tentang xplorer² professional"
+FONT 8, "Verdana"
+BEGIN
+    EDITTEXT        IDC_CHECK_REGI,67,38,85,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "beli lisensi",IDC_EMAIL,179,7,50,24,BS_MULTILINE
+    PUSHBUTTON      "dukungan online",IDC_ONLINE,173,37,63,14,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE
+    DEFPUSHBUTTON   "ok",IDOK,179,57,50,14
+    EDITTEXT        IDC_BUILD,67,14,85,12,ES_MULTILINE | ES_READONLY
+    CTEXT           "© Hakcipta 2002-2007 oleh Nikos Bozinis\nDilindungi hak cipta",
+                    IDC_STATIC,11,60,149,19
+    ICON            IDR_MAINFRAME,IDC_STATIC,13,10,20,20
+    GROUPBOX        "",IDC_STATIC,7,3,158,82
+    LTEXT           "Versi:",IDC_STATIC,36,16,20,8
+    LTEXT           "Registrasi #",IDC_STATIC,17,40,40,8
+    LTEXT           "Peringatan: program komputer ini dilindungi UU Hak Cipta lokal dan internasional. Reproduksi atau distribusi tanpa ijin atas program ini dapat dituntut hukum pidana dan perdata.",
+                    IDC_WARNING,7,93,228,25
+    LTEXT           "www.zabkat.com",IDC_ZABKAT,176,77,56,8
+END
+#endif
+
+IDD_TEXTINPUT_DLG DIALOG DISCARDABLE  0, 0, 139, 45
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "Verdana"
+BEGIN
+    COMBOBOX        IDC_COMBO,7,6,125,95,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "ok",IDOK,21,26,42,14
+    PUSHBUTTON      "batal",IDCANCEL,75,26,42,14
+END
+
+IDD_NOTIFY_DLG DIALOG DISCARDABLE  0, 0, 239, 163
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "&Jangan perlihatkan pesan ini lagi",IDC_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,49,135,123,10
+    DEFPUSHBUTTON   "ok",IDOK,182,124,50,14
+    PUSHBUTTON      "batal",IDCANCEL,182,142,50,14
+    ICON            "",IDC_CUSTICON,7,130,20,20
+    LTEXT           "pesan",IDC_MESSAGE,7,7,225,111
+END
+
+IDD_GREP_DLG DIALOG DISCARDABLE  0, 0, 187, 138
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Temukan teks di file"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Cari:",IDC_STATIC,7,9,18,8
+    COMBOBOX        IDC_COMBO_FIND,47,7,133,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Karakter &spesial:",IDC_STATIC,8,26,57,8
+    COMBOBOX        IDC_COMBO_ESPECIAL,76,24,51,81,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Persis",IDC_CHECK_VERBA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,137,25,35,10
+    CONTROL         "C&ocokkan case karakter",IDC_CHECK_CASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,50,96,10
+    CONTROL         "Hanya seluruh &kata",IDC_CHECK_WORD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,63,79,10
+    CONTROL         "Cari juga pada file &bukan-teks",IDC_CHECK_BINARY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,76,115,10
+    CONTROL         "Ekspresi &regular",IDC_CHECK_REGEXP,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,111,63,69,10
+    LTEXT           "File teks &enkoding:",IDC_STATIC,33,93,63,8
+    COMBOBOX        IDC_COMBO_ENCODING,103,91,51,69,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "se&leksi",IDOK,7,117,50,14
+    PUSHBUTTON      "&tdk diseleksi",IDC_UNSELECT,68,117,50,14
+    PUSHBUTTON      "batal",IDCANCEL,130,117,50,14
+END
+
+IDD_SCRIPTBUILD_DLG DIALOG DISCARDABLE  0, 0, 286, 142
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Penuntun script"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Template:",IDC_STATIC,7,9,34,8
+    COMBOBOX        IDC_COMBO_BATPLATE,46,7,233,106,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Huruf &spesial:",IDC_STATIC,65,26,46,8
+    COMBOBOX        IDC_COMBO_TOKENS,111,24,102,88,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "&pralihat",IDC_BUTTON_PREVIEW,7,24,50,14
+    PUSHBUTTON      " &Bantuan $-token",IDC_BUTTON_HELP,217,23,62,14
+    PUSHBUTTON      "&edit",IDC_BUTTON_EDIT,7,121,50,14
+    PUSHBUTTON      "e&ksekusi (DOS)",IDOK,73,121,61,14
+    PUSHBUTTON      "eksek&usi (shell)",IDC_BUTTON_WINEXEC,150,121,61,14
+    PUSHBUTTON      "batal",IDCANCEL,227,121,50,14
+    EDITTEXT        IDC_EDIT_PREVIEW,7,43,272,70,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+END
+
+IDD_SYNCWIZARD_DLG DIALOG DISCARDABLE  0, 0, 187, 118
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pilihan sinkronisasi"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Seleksi item yang:",IDC_STATIC,7,7,110,50,WS_GROUP
+    CONTROL         "&Unik",IDC_CHECK_UNIQUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,18,30,10
+    CONTROL         "&Identik",IDC_CHECK_IDENTICAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,18,39,10
+    CONTROL         "Lebih &baru",IDC_CHECK_NEWER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,31,48,10
+    CONTROL         "Lebih &lama",IDC_CHECK_OLDER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,31,51,10
+    CONTROL         "Tdk di&tentukan",IDC_CHECK_UNDECIDABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,28,43,65,10
+    GROUPBOX        "Bandingan berdasar:",IDC_STATIC,7,62,109,48,WS_GROUP
+    CONTROL         "Tanggal &modifikasi",IDC_RADIO_MOD,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,73,77,10
+    CONTROL         "Isi &file",IDC_RADIO_CONTENT,"Button",
+                    BS_AUTORADIOBUTTON,13,85,36,10
+    CONTROL         "Hanya n&ama",IDC_RADIO_NAME,"Button",BS_AUTORADIOBUTTON,
+                    13,96,57,10
+    CONTROL         "Te&rmasuk folder",IDC_CHECK_FOLDERS,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_GROUP | WS_TABSTOP,
+                    128,20,55,24
+    DEFPUSHBUTTON   "ok",IDOK,130,75,50,14
+    PUSHBUTTON      "batal",IDCANCEL,130,95,50,14
+    CONTROL         "Pencocokan nama &hilang",IDC_CHECK_FREEFORM,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,128,44,55,21
+    COMBOBOX        IDC_COMBO_SCENARIA,123,7,59,38,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SPLIT_DLG DIALOG DISCARDABLE  0, 0, 219, 71
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pilihan file split"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "Ukuran &split (kB):",IDC_STATIC,8,10,59,8
+    EDITTEXT        IDC_EDIT_SIZE,67,8,51,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Folder &target:",IDC_STATIC,11,29,46,8
+    COMBOBOX        IDC_COMBO_SPLITARGET,58,27,139,78,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_DOTS,199,27,13,12
+    LTEXT           "St&andar",IDC_STATIC,129,9,27,8
+    COMBOBOX        IDC_COMBO_STD,158,7,54,46,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "ok",IDOK,93,50,50,14
+    PUSHBUTTON      "batal",IDCANCEL,162,50,50,14
+END
+
+IDD_BUILDSYNC_DLG DIALOG DISCARDABLE  0, 0, 187, 142
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Penuntun cek bangunan"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Aturan transformasi",IDC_STATIC,7,7,173,63
+    LTEXT           "&Dari (wildcard):",IDC_STATIC,14,21,52,8
+    EDITTEXT        IDC_EDIT_FROM,76,19,95,12,ES_AUTOHSCROLL
+    LTEXT           "&Ke ekstensi:",IDC_STATIC,15,35,42,8
+    EDITTEXT        IDC_EDIT_TO,76,34,95,12,ES_AUTOHSCROLL
+    LTEXT           "&Pradefinisi:",IDC_STATIC,14,52,38,8
+    COMBOBOX        IDC_COMBO_PREDEF,59,50,112,74,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Pilih file sumber dimana:",IDC_STATIC,7,74,110,61,
+                    WS_GROUP
+    CONTROL         "&Belum dibangun",IDC_CHECK_UNIQUE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,87,69,10
+    CONTROL         "&Modifikasi terkini dibangun",IDC_CHECK_NEWER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,102,103,10
+    CONTROL         "&Tanggal sekarang",IDC_CHECK_OLDER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,117,74,10
+    DEFPUSHBUTTON   "ok",IDOK,130,97,50,14
+    PUSHBUTTON      "batal",IDCANCEL,130,121,50,14
+END
+
+IDD_COLSELECT_DLG DIALOG DISCARDABLE  0, 0, 275, 181
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pengaturan kolom"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "Skema &sekarang",IDC_TBPLACE,7,7,97,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LISTBOX         IDC_LIST_CURRENT,7,20,97,105,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Kolom ters&edia",IDC_STATIC,171,7,97,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LISTBOX         IDC_LIST_AVAIL,171,20,97,105,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Tambah <",IDC_BUTTON_ADD,111,46,50,14
+    PUSHBUTTON      "&Buang >",IDC_BUTTON_REMOVE,111,75,50,14
+    LTEXT           "&Pradefinisi:",IDC_STATIC,44,136,38,8
+    COMBOBOX        IDC_COMBO_PRECOLS,90,134,143,115,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "ok",IDOK,154,160,50,14
+    PUSHBUTTON      "batal",IDCANCEL,218,160,50,14
+    LTEXT           "",IDC_STATIC_DESCRIPTION,7,156,131,18,SS_SUNKEN
+END
+
+IDD_FILTER_DLG DIALOGEX 0, 0, 235, 163
+STYLE DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    RTEXT           "&Nama:",IDC_STATIC,7,7,23,8
+    COMBOBOX        IDC_COMBO_NAMED,36,5,133,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_FUZZY,172,5,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "&File",IDC_CHECK_FILES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,198,2,27,10
+    CONTROL         "F&older",IDC_CHECK_DIRS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,198,12,36,10
+    GROUPBOX        "Mengandung &Teks",IDC_STATIC,7,27,221,44,WS_GROUP
+    COMBOBOX        IDC_COMBO_FIND,14,36,141,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ESPECIAL,166,36,51,81,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Sensitif &case",IDC_CHECK_CASE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,50,57,10
+    CONTROL         "Seluruh &kata",IDC_CHECK_WORD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,60,58,10
+    CONTROL         "Cari &seluruh file",IDC_CHECK_BINARY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,80,50,68,10
+    CONTROL         "&Persis",IDC_CHECK_VERBA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,80,60,35,10
+    CONTROL         "&RE",IDC_CHECK_REGEXP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,137,60,25,10
+    COMBOBOX        IDC_COMBO_ENCODING,166,54,51,69,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Aturan Tambahan",IDC_TBPLACE,7,80,221,13,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "",IDC_LISTRULES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | 
+                    LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_TABSTOP,7,93,
+                    221,44,WS_EX_CLIENTEDGE
+    RTEXT           "Pra&definisi:",IDC_STATIC,7,149,38,8
+    COMBOBOX        IDC_COMBO_SAVED,51,147,133,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Si&mpan",IDC_BUTTON_SAVE,192,146,36,14,BS_RIGHT
+END
+
+IDD_FPP_DATE DIALOG DISCARDABLE  0, 0, 195, 49
+STYLE DS_NOFAILCREATE | DS_CONTROL | WS_CHILD
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Set tanggal",IDC_STATIC,2,0,190,47,WS_GROUP
+    CONTROL         "&Selama seblmnya:",IDC_RADIO_PREV,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,5,11,77,10
+    CONTROL         "&Antara:",IDC_RADIO_BETWEEN,"Button",BS_AUTORADIOBUTTON,
+                    5,30,41,10
+    EDITTEXT        IDC_EDIT_XDAYS,88,10,39,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_PREVNUM,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,119,9,10,14
+    COMBOBOX        IDC_COMBO_DTUNIT,133,10,56,57,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_DATE_FROM,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,54,28,59,13
+    LTEXT           "dan",IDC_STATIC,115,30,13,8
+    CONTROL         "DateTimePicker1",IDC_DATE_TO,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,130,28,59,13
+END
+
+IDD_FPP_NUMBER DIALOG DISCARDABLE  0, 0, 195, 49
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Set nomor",IDC_STATIC,2,0,190,47,WS_GROUP
+    LTEXT           "&Minimum:",IDC_STATIC,11,12,33,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_MINSIZE,47,10,91,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_MIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,130,9,10,14
+    LTEXT           "Ma&ksimum:",IDC_STATIC,5,31,39,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_MAXSIZE,47,29,91,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_MAX,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,130,28,10,14
+    LTEXT           "&Satuan",IDC_STATIC,146,11,24,8
+    COMBOBOX        IDC_COMBO_UNITS,146,22,40,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FPP_TEXT DIALOG DISCARDABLE  0, 0, 195, 49
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Set teks",-1,2,0,190,47,WS_GROUP
+    LTEXT           "&Temukan:",-1,7,20,34,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_FINDTXT,43,18,144,12,ES_AUTOHSCROLL
+END
+
+IDD_FILTEREDIT_DLG DIALOG DISCARDABLE  0, 0, 195, 140
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Definisi aturan"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Sifat && deskripsi:",IDC_STATIC,5,9,57,8
+    COMBOBOX        IDC_COMBO_PROPERTIES,4,21,105,112,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_STATIC_DESCRIPTION,113,5,77,35,SS_SUNKEN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,2,42,190,47
+    GROUPBOX        "Konteks boolean",IDC_STATIC,7,100,108,33
+    CONTROL         "&Dan",IDC_RADIO_AND,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,115,29,10
+    CONTROL         "&Atau",IDC_RADIO_OR,"Button",BS_AUTORADIOBUTTON,50,115,
+                    31,10
+    CONTROL         "&Tidak",IDC_RADIO_NOT,"Button",BS_AUTORADIOBUTTON,82,
+                    115,30,10
+    DEFPUSHBUTTON   "ok",IDOK,138,100,50,14,WS_GROUP
+    PUSHBUTTON      "batal",IDCANCEL,138,119,50,14
+END
+
+IDD_TOUCHATTR_DLG DIALOG DISCARDABLE  0, 0, 205, 102
+STYLE DS_MODALFRAME | DS_NOFAILCREATE | DS_CONTEXTHELP | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Ubah atribut"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Modifikasi pd:",IDC_STATIC,7,9,46,8
+    CONTROL         "DateTimePicker1",IDC_DATE_MODIFIED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,54,7,59,13
+    CONTROL         "DateTimePicker1",IDC_TIME_MODIFIED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP,115,7,52,13
+    PUSHBUTTON      "skrg",IDC_BUTTON_MODNOW,170,7,28,13
+    LTEXT           "&Kreasi pd:",IDC_STATIC,7,29,35,8
+    CONTROL         "DateTimePicker1",IDC_DATE_CREATED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,54,27,59,13
+    CONTROL         "DateTimePicker1",IDC_TIME_CREATED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP,115,27,52,13
+    PUSHBUTTON      "skrg",IDC_BUTTON_CRNOW,170,27,28,13
+    GROUPBOX        "Atribut",IDC_STATIC,7,52,126,43,WS_GROUP
+    CONTROL         "&Arsip",IDC_CHECK_ARCHIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,64,33,10
+    CONTROL         "Hanya &baca",IDC_CHECK_READONLY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,78,54,10
+    CONTROL         "Ters&embunyi",IDC_CHECK_HIDDEN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,73,64,58,10
+    CONTROL         "&Sistem",IDC_CHECK_SYSTEM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,73,78,38,10
+    DEFPUSHBUTTON   "ok",IDOK,148,59,50,14,WS_GROUP
+    PUSHBUTTON      "batal",IDCANCEL,148,80,50,14
+END
+
+IDD_COPYTO_DLG DIALOG DISCARDABLE  0, 0, 247, 179
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " ke folder tujuan"
+FONT 8, "Verdana"
+BEGIN
+    COMBOBOX        IDC_COMBO_TARGET,39,44,182,78,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_DOTS,227,44,13,12
+    COMBOBOX        IDC_COMBO_TABS,39,64,182,79,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Pilihan",IDC_BUTTON_OPTIONS,181,130,50,14
+    CONTROL         "Panel &seberang",IDC_RADIO_OPPOSITE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,6,25,63,10
+    CONTROL         "&Disini",IDC_RADIO_HERE,"Button",BS_AUTORADIOBUTTON,7,
+                    45,31,10
+    CONTROL         "&Tab",IDC_RADIO_TAB,"Button",BS_AUTORADIOBUTTON,7,65,28,
+                    10
+    DEFPUSHBUTTON   "",IDOK,131,158,50,14,WS_GROUP
+    PUSHBUTTON      "&antri",IDC_BUTTON_QUEUE,39,158,50,14
+    PUSHBUTTON      "batal",IDCANCEL,190,158,50,14
+    EDITTEXT        IDC_OTHER_PANE,75,24,165,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           " %d item terseleksi ke:",IDC_LABEL,16,8,128,8
+    GROUPBOX        "&Filter",IDC_STATIC,7,86,233,31
+    COMBOBOX        IDC_COMBO_EXIFILTER,14,97,158,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&definisi",IDC_BUTTON_NEWFILTR,181,96,50,14
+    GROUPBOX        "Ops&i",IDC_STATIC,7,120,233,31
+    COMBOBOX        IDC_COMBO_CPPRESET,14,131,158,88,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DUPEWIZARD_DLG DIALOG DISCARDABLE  0, 0, 147, 95
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Deteksi kembaran"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Bandingan berdasar:",-1,7,7,133,43,WS_GROUP
+    CONTROL         "&Nama",IDC_CHECK_NAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,20,35,10
+    CONTROL         "&Ukuran",IDC_CHECK_SIZE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,91,20,39,10
+    CONTROL         "Tanggal &modifikasi",IDC_CHECK_MDATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,33,77,10
+    CONTROL         "&Isi",IDC_CHECK_CONTENT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,91,33,24,10
+    CONTROL         "Seleksi seluruh &kembaran",IDC_CHECK_SELECTEM,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,27,56,97,10
+    DEFPUSHBUTTON   "ok",IDOK,31,74,50,14
+    PUSHBUTTON      "batal",IDCANCEL,90,74,50,14
+END
+
+IDD_GENERICLOG_DLG DIALOG DISCARDABLE  0, 0, 358, 177
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "Courier New"
+BEGIN
+    EDITTEXT        IDC_EDIT,2,2,354,173,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_OPTFRAME_PDLG DIALOG DISCARDABLE  0, 0, 250, 218
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Jendela"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Lihat panel",IDC_STATIC,7,3,236,90,WS_GROUP
+    CONTROL         "Aktivasi sa&tu klik",IDC_CHK_1CLICKLIST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,12,85,10
+    CONTROL         "Garis &grid pd mode detail",IDC_CHK_GRIDLIST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,126,12,98,10
+    CONTROL         "In&fotips utk item",IDC_CHK_TIPLIST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,23,67,10
+    CONTROL         "Seleksi b&aris penuh",IDC_CHK_FULLROWSEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,126,23,74,10
+    CONTROL         "Ijinkan klik-&dobel perlahan utk namaulang item",
+                    IDC_CHECK_CLKRENAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,34,165,10
+    CONTROL         "Seleksi hover",IDC_CHECK_TRACKSEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,182,34,54,10
+    CONTROL         "Re-sortir isi s&etlh pindah/salin dsb scr otomatis.",
+                    IDC_AUTOSORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,45,
+                    213,10
+    CONTROL         "Warnai kolom sortir &primer (hanya XP)",
+                    IDC_CHECK_SORTCOL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,56,143,10
+    LTEXT           "&Maks lebar kolom daftar",IDC_STATIC,14,68,82,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_MAXWIDTH,98,66,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Folder ters&ortir",IDC_STATIC,131,68,50,8
+    COMBOBOX        IDC_COMBO_DIRSORT,181,66,55,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Posisi dua panel (tekel):",IDC_STATIC,24,80,101,8,NOT 
+                    WS_GROUP
+    CONTROL         "&Horisontal",IDC_TILE_HORZ,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,132,80,47,10
+    CONTROL         "&Vertikal",IDC_TILE_VERT,"Button",BS_AUTORADIOBUTTON,
+                    187,80,39,10
+    GROUPBOX        "Pohon",IDC_STATIC,7,96,236,56,WS_GROUP
+    CONTROL         "Satu k&lik utk ubah folder && aktivasi ""bebas-tangan""",
+                    IDC_CHK_1CLICKTREE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,105,186,10
+    CONTROL         "Geser fo&kus scr otomatis utk melihat stlh aktivasi",
+                    IDC_CHK_FOKOSTREE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,116,175,10
+    CONTROL         "Otomatis ekspansi &cabang ketika hovering pd suatu noktah",
+                    IDC_CHK_HOVERTREE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,127,212,10
+    CONTROL         "Tetap s&inkronkan dgn folder di panel lihat aktif",
+                    IDC_CHECK_TREESYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,138,169,10
+    GROUPBOX        "Pelihat cepat",IDC_STATIC,7,155,236,35,WS_GROUP
+    LTEXT           "Ukuran pralihat teks (b&yte)",IDC_STATIC,13,165,91,8,
+                    NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_TSIZE,106,163,45,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Le&bar Tab",IDC_STATIC,169,165,34,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_TABS,207,163,24,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Mulai mainkan file media &segera",IDC_CHECK_AUTOPLAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,176,122,10
+    CONTROL         "Tdk pralihat he&x",IDC_CHECK_NOHEX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,169,176,69,10
+    PUSHBUTTON      "Jenis hu&ruf utama...",IDC_BUTTON_FONT,7,197,72,14,
+                    WS_GROUP
+    LTEXT           "Latar\ntdkaktif",IDC_STATIC,87,193,28,18
+    PUSHBUTTON      "",IDC_BUTTON_IBGCOL,115,197,41,14,BS_BITMAP
+    CONTROL         "Men&u datar",IDC_CHECK_PLAINMEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,163,194,53,10
+    CONTROL         "Bantuan balo&n dialog",IDC_CHECK_BALONI,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,163,205,82,10
+END
+
+IDD_OPTGENERAL_PDLG DIALOG DISCARDABLE  0, 0, 250, 218
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Umum"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "&Simpan keadaan program saat keluar",IDC_SAVEONEXIT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,142,10
+    CONTROL         "Lihat file dan folder ters&embunyi",IDC_SHOWHIDDEN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,18,119,10
+    CONTROL         "Lihat share &administratif utk folder network",
+                    IDC_CHECK_NETSHARE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,29,157,10
+    CONTROL         "Lapor semua &ukuran file dlm byte (hapus utk lihat kB/MB/GB)",
+                    IDC_CHECK_BYTES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    40,218,10
+    CONTROL         "&Beep di peringatan dan error",IDC_CHECK_BEEP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,51,111,10
+    CONTROL         "&Makan klik mouse pertama di panel utk melindungi seleksi",
+                    IDC_CHECK_EATCLIK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,62,207,10
+    CONTROL         "Aliharah hasil perintah DOS ke jendela lokal &konsol",
+                    IDC_CHECK_CONSOLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,73,184,10
+    LTEXT           "Se&jarah item dipelihara dari daftar drop-bawah",
+                    IDC_STATIC,7,88,160,8,NOT WS_GROUP
+    EDITTEXT        IDC_NUMHISTORY,168,85,26,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Ukuran &gambarkecil (pixel)",IDC_STATIC,7,102,79,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIT_THUMBSIZE,88,100,32,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Ikon &item",IDC_STATIC,135,102,32,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_ICONS,170,100,68,46,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Editor teks eksternal/pelihat baris perintah",
+                    IDC_STATIC,7,118,236,46,WS_GROUP
+    LTEXT           "E&ditor",IDC_STATIC,13,132,20,8,NOT WS_GROUP
+    EDITTEXT        IDC_EXTEDITORNAME,39,130,181,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_DOTS_EDITOR,224,130,13,12
+    LTEXT           "&Pelihat",IDC_STATIC,11,149,23,8,NOT WS_GROUP
+    EDITTEXT        IDC_EXTVIEWERNAME,39,147,181,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_DOTS_VIEWER,224,147,13,12
+    GROUPBOX        "Byte batasan ukuran file utk ekstraksi... (0 utk tanpabatas)",
+                    IDC_STATIC,7,169,236,45,WS_GROUP
+    LTEXT           "In&fotips",IDC_STATIC,29,183,26,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_INFOSIZE,60,181,47,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Gamba&rkecil",IDC_STATIC,15,199,42,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SIZEPIX,60,197,47,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Kolom jumlah&cek",IDC_STATIC,124,183,58,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_SUMSIZE,185,181,47,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Item dlm &zip/FTP",IDC_STATIC,126,199,56,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_ZIPSIZE,185,197,47,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "pilihan tambahan...",IDC_BUTTON_KEALLA,173,7,70,14
+END
+
+IDD_MASSRENAME_DLG DIALOG DISCARDABLE  0, 0, 231, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Penuntun penamaan ulang dalam jumlah besar"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "Template nama &target:",IDC_STATIC,7,9,76,8
+    COMBOBOX        IDC_COMBO_RNTEMPL,88,7,137,106,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Huruf &spesial:",IDC_STATIC,71,26,46,8
+    COMBOBOX        IDC_COMBO_TOKENS,121,24,104,88,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Bantuan $-huruf",IDC_BUTTON_HELP,7,85,60,14
+    PUSHBUTTON      "nama &ulang",IDOK,101,85,61,14
+    PUSHBUTTON      "batal",IDCANCEL,174,85,50,14
+    EDITTEXT        IDC_EDIT_PREVIEW,7,43,218,36,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    DEFPUSHBUTTON   "&pralihat",IDC_BUTTON_PREVIEW,7,24,50,14
+END
+
+IDD_FINDFILES_DLG DIALOG DISCARDABLE  0, 0, 235, 266
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Temukan file atau folder"
+FONT 8, "Verdana"
+BEGIN
+    RTEXT           "Lihat d&i:",-1,2,9,32,8
+    COMBOBOX        IDC_COMBO_WHERE,39,7,171,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_DOTS,214,7,13,12
+    LTEXT           "Fol&der khusus:",-1,7,24,49,8,NOT WS_GROUP
+    COMBOBOX        IDC_COMBO_VIRTUALS,63,22,116,73,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Cari &subfolder",IDC_CHECK_SUBFOLDERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,38,62,10
+    CONTROL         "Isi a&rsip",IDC_CHECK_ZIPFOLDERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,90,38,42,10
+    CONTROL         "&Pergi kedlm dulu",IDC_RADIO_DEPTH,"Button",
+                    BS_AUTORADIOBUTTON,53,50,71,10
+    CONTROL         "Perl&uas dulu",IDC_RADIO_BREADTH,"Button",
+                    BS_AUTORADIOBUTTON,125,50,56,10
+    CONTROL         "Pencarian &lokal",IDC_CHECK_REFINE,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,154,38,66,10
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,64,227,1
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,68,224,170
+    PUSHBUTTON      "&hapus",IDC_BUTTON_CLEAR,7,243,50,14
+    DEFPUSHBUTTON   "ok",IDOK,113,243,50,14
+    PUSHBUTTON      "batal",IDCANCEL,177,243,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,237,227,1
+END
+
+IDD_MATCHRULE_DLG DIALOG DISCARDABLE  0, 0, 235, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tandai item menurut aturan"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,3,228,170
+    PUSHBUTTON      "&hapus",IDC_BUTTON_CLEAR,7,177,50,14
+    DEFPUSHBUTTON   "&seleksi",IDOK,71,177,50,14
+    PUSHBUTTON      "&tdk diseleksi",IDC_UNSELECT,125,177,50,14
+    PUSHBUTTON      "batal",IDCANCEL,179,177,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,171,227,1
+END
+
+IDD_TRYKS_DLG DIALOG DISCARDABLE  0, 0, 227, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Tip hari ini"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "&Lihat tips setiap hari",IDC_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,139,82,10
+    PUSHBUTTON      "tip &berikutnya",IDC_NEXT,104,137,54,14
+    DEFPUSHBUTTON   "tutup",IDOK,170,137,50,14
+    LTEXT           "",IDC_PLACEHOLDER,7,7,213,121
+END
+
+IDD_CUSTLIST_DLG DIALOG DISCARDABLE  0, 0, 298, 145
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pengaturan"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,19,284,101,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "ok",IDOK,178,124,50,14
+    PUSHBUTTON      "batal",IDCANCEL,241,124,50,14
+    LTEXT           "",IDC_TBPLACE,7,7,284,13,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_CUSTPROPS_DLG DIALOG DISCARDABLE  0, 0, 209, 110
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "sifat"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Nama",IDC_STATIC,26,11,20,8
+    EDITTEXT        IDC_EDIT_NAME,50,9,151,12,ES_AUTOHSCROLL
+    LTEXT           "&Deskripsi",IDC_STATIC,15,31,31,8
+    EDITTEXT        IDC_EDIT_DESCR,50,30,152,28,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY
+    GROUPBOX        "Penggalansingkat keyboard",IDC_STATIC,7,69,128,34,
+                    WS_GROUP
+    CONTROL         "&Ctrl",IDC_CHECK_CTRL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,83,28,10
+    CONTROL         "&Alt",IDC_CHECK_ALT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,43,83,25,10
+    CONTROL         "&Shift",IDC_CHECK_SHIFT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,70,83,31,10
+    COMBOBOX        IDC_COMBO_NUM,103,81,27,90,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "ok",IDOK,152,69,50,14,WS_GROUP
+    PUSHBUTTON      "batal",IDCANCEL,152,88,50,14
+    PUSHBUTTON      "&info",IDC_BUTTON_LINFO,16,47,30,11,WS_DISABLED
+END
+
+IDD_REGPROMPT_DLG DIALOG DISCARDABLE  0, 0, 281, 154
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "xplorer² evaluasi"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Silakan ketik/tempel kunci &registrasi anda:",
+                    IDC_STATIC,7,49,142,8
+    EDITTEXT        IDC_EDIT_CODE,7,61,267,64,ES_MULTILINE | ES_AUTOVSCROLL
+    DEFPUSHBUTTON   "beli lisensi...",IDC_BUTTON_BUY,7,133,84,14
+    PUSHBUTTON      "continue",IDOK,224,133,50,14,WS_DISABLED
+    ICON            "",IDC_CUSTICON,7,7,20,20
+    LTEXT           "Maaf masa evaluasi tlh habis. Jika anda ingin melanjutkan menggunakan program ini anda hrs membeli lisensi dan ketik kunci registrasi anda pada kotak dibawah ini.",
+                    IDC_MESSAGE,33,7,241,36
+    LTEXT           "",IDC_MESSAGE2,33,36,180,8
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(CHEAPO)
+#if defined(APSTUDIO_INVOKED)
+IDD_ABOUTBOX$(CHEAPO) DIALOG DISCARDABLE  0, 0, 242, 121
+#else
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 242, 121
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tentang xplorer² lite"
+FONT 8, "Verdana"
+BEGIN
+    PUSHBUTTON      "ubah ke\nversi pro",IDC_EMAIL,174,10,61,27,BS_MULTILINE
+    DEFPUSHBUTTON   "ok",IDOK,179,48,50,14
+    EDITTEXT        IDC_BUILD,72,14,85,12,ES_MULTILINE | ES_READONLY
+    CTEXT           "Dayaguna pengaturan file dlm jumlah besar \n\n© Hakcipta 2002-2007 oleh Nikos Bozinis\nDilindungi hak cipta",
+                    IDC_STATIC,8,34,155,34
+    ICON            IDR_MAINFRAME,IDC_STATIC,17,10,20,20
+    GROUPBOX        "",IDC_STATIC,7,3,158,82
+    LTEXT           "Versi:",IDC_STATIC,41,16,20,8
+    LTEXT           "Peringatan: program komputer ini dilindungi UU Hak Cipta lokal dan internasional. Reproduksi atau distribusi tanpa ijin atas program ini dapat dituntut hukum pidana dan perdata.",
+                    IDC_WARNING,7,93,228,25
+    LTEXT           "GRATIS utk pribadi && akademisi ",IDC_FREEMANS,14,72,
+                    146,8
+    LTEXT           "www.zabkat.com",IDC_ZABKAT,176,73,56,8
+END
+#endif
+
+IDD_VISHFILTER_DLG DIALOG DISCARDABLE  0, 0, 235, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lihat item menurut aturan"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,3,228,170
+    PUSHBUTTON      "ha&pus",IDC_BUTTON_CLEAR,7,177,50,14
+    DEFPUSHBUTTON   "&saring",IDOK,119,177,50,14
+    PUSHBUTTON      "batal",IDCANCEL,179,177,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,171,227,1
+END
+
+IDD_CONFIRMALL_DLG DIALOG DISCARDABLE  0, 0, 238, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "pesan",IDC_MESSAGE,7,7,224,45
+    PUSHBUTTON      "&ya",IDYES,7,55,50,14
+    PUSHBUTTON      "ya utk &semua",IDIGNORE,7,74,50,14
+    PUSHBUTTON      "&tidak",IDNO,174,55,57,14
+    PUSHBUTTON      "t&idak utk semua",IDCANCEL,174,74,57,14
+    PUSHBUTTON      "&batal",IDABORT,94,55,50,14
+    ICON            "",IDC_CUSTICON,110,71,20,20
+END
+
+IDD_COPYOPTIONS_DLG DIALOG DISCARDABLE  0, 0, 211, 263
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pilihan transfer"
+FONT 8, "Verdana"
+BEGIN
+    RTEXT           "Pra&definisi:",IDC_STATIC,7,5,39,8
+    COMBOBOX        IDC_COMBO_CPSAVED,7,16,158,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Tenang; tdk ada konfirmasi atau laporan error",
+                    IDC_CHECK_SILENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,
+                    44,181,10
+    GROUPBOX        "Tindihtulis obyek yg ada",IDC_STATIC,7,58,197,47,
+                    WS_GROUP
+    CONTROL         "&Minta konfirmasi",IDC_RDOVR_ASK,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,11,69,71,10
+    CONTROL         "T&indihtulis jk lbh baru, skip jk tdk",IDC_RDOVR_NEWER,
+                    "Button",BS_AUTORADIOBUTTON,11,80,132,10
+    CONTROL         "Beri nama lain tar&get",IDC_RDOVR_RENAME,"Button",
+                    BS_AUTORADIOBUTTON,11,91,84,10
+    CONTROL         "Selalu konfirm han&ya-baca atau file sistem",
+                    IDC_CHECK_READHID,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,133,70,68,28
+    GROUPBOX        "Jika ada error",IDC_STATIC,7,110,197,35,WS_GROUP
+    CONTROL         "Lapor dan &prompt aksi",IDC_RDERR_PROMPT,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,11,120,94,10
+    CONTROL         "&Log error dan lanjutkan penyalinan",IDC_RDERR_LOGIT,
+                    "Button",BS_AUTORADIOBUTTON,11,131,146,10
+    CONTROL         "Kalk&ulasi ukuran file total sebelum memulai transfer",
+                    IDC_CHECK_SIZEUPFRONT,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,7,150,197,10
+    CONTROL         "T&etap tampilkan jendela progres setelah transfer selesai",
+                    IDC_CHECK_WINDOWON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,161,197,10
+    GROUPBOX        "Opsi salin",IDC_STATIC,7,175,197,46,WS_GROUP
+    CONTROL         "&Hapus atribut hanya-baca utk file target",
+                    IDC_CHECK_CDRONLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    11,185,146,10
+    CONTROL         "Bersihkan atribut Ars&ip utk file sumber",
+                    IDC_CHECK_ARCHIVEAT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,196,142,10
+    CONTROL         "Hanya salin file yg tlh a&da di tujuan",
+                    IDC_CHECK_COPYEXIST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,207,131,10
+    GROUPBOX        "Prioritas kerja",IDC_STATIC,7,231,118,26,WS_GROUP
+    CONTROL         "&normal",IDC_RDPRI_NORMAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,11,241,39,10
+    CONTROL         "l&atarbelakang",IDC_RDPRI_BG,"Button",
+                    BS_AUTORADIOBUTTON,62,241,54,10
+    DEFPUSHBUTTON   "ok",IDOK,154,226,50,14,WS_GROUP
+    PUSHBUTTON      "batal",IDCANCEL,154,243,50,14
+    PUSHBUTTON      "Sim&pan",IDC_BUTTON_CPSAVE,168,15,36,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,36,204,1
+END
+
+IDD_COPYPROGRESS_DLG DIALOG DISCARDABLE  0, 0, 262, 126
+STYLE WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Transfer nyata"
+FONT 8, "Verdana"
+BEGIN
+    DEFPUSHBUTTON   "",IDC_BUTTON_PAUSE,205,59,50,14
+    PUSHBUTTON      "batal",IDCANCEL,205,77,50,14
+    RTEXT           "&Dari:",IDC_STATIC,7,7,24,8
+    EDITTEXT        IDC_EDIT_CPFROM,34,6,221,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "&Ke:",IDC_STATIC,8,21,23,8
+    EDITTEXT        IDC_EDIT_CPTO,34,20,221,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "File tertran&sfer:",IDC_STATIC,5,88,85,8
+    EDITTEXT        IDC_EDIT_TOTFILES,93,87,76,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "Ke&cepatan transfer:",IDC_STATIC,5,74,85,8
+    EDITTEXT        IDC_EDIT_TOTBYTES,93,73,76,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "&Estimasi waktu sisa:",IDC_STATIC,5,60,85,8
+    EDITTEXT        IDC_EDIT_REMAINDER,93,59,76,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "&log error",IDC_BUTTON_LOG,205,105,50,14
+    CONTROL         "&Tetap tampilkan jendela ini setelah transfer selesai",
+                    IDC_CHECK_WINDOWON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,109,183,10
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,
+                    41,248,10
+END
+
+IDD_OPT3RD_PDLG DIALOG DISCARDABLE  0, 0, 250, 218
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Tingkat lanjut"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "Status panel bar",IDC_STATIC,7,3,236,36,WS_GROUP
+    CONTROL         "Lihat &ukuran total folder",IDC_CHECK_STATDIR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,13,94,10
+    CONTROL         "Lihat ruang s&isa disk",IDC_CHECK_STATFREE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,137,13,83,10
+    CONTROL         "Lihat informasi item &aktif",IDC_CHECK_STATINFO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,25,97,10
+    CONTROL         "Lihat &index item",IDC_CHECK_IDXOFFSET,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,137,25,70,10
+    CONTROL         "&Tab folder diatas",IDC_CHECK_TABSTOP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,46,71,10
+    CONTROL         "&Warnai panel aktif titlebar spt pd 2xExplorer",
+                    IDC_CHECK_2XMODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    56,161,10
+    CONTROL         "Sortir bilangan a&sli (hanya XP)",IDC_CHECK_XPSORT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,66,116,10
+    CONTROL         "Jangan ku&nci folder terjelajah",IDC_CHECK_NOCURDIR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,76,113,10
+    CONTROL         "&Kalkulasi ukuran subfolder scr otomatis",
+                    IDC_CHECK_AUTOSUBDIR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,86,145,10
+    CONTROL         "Ekstrak ikon &overlay tertentu (cth. utk CVS)",
+                    IDC_CHECK_CVSOVERLAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,96,161,10
+    CONTROL         "Lihat &cepat doket ke kanan dari pohon folder",
+                    IDC_CHECK_QVDOCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    106,163,10
+    CONTROL         "Otokomplet di baralamat jalur &Explorer",
+                    IDC_CHECK_XPAUTOCOMP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,116,144,10
+    CONTROL         "Informasi kolom tgl ramah pengg&una",
+                    IDC_CHECK_INEXACTDATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,127,139,10
+    CONTROL         "Tutup &jendela lama stlh kloning layout baru",
+                    IDC_CHECK_CLOSECLONE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,137,159,10
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(CHEAPO)
+#if defined(APSTUDIO_INVOKED)
+IDD_ADPRO_DLG$(CHEAPO) DIALOG DISCARDABLE  0, 0, 243, 99
+#else
+IDD_ADPRO_DLG DIALOG DISCARDABLE  0, 0, 243, 99
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Batasan versi lite"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "silakan mencoba secara gratis hari ini!",IDC_ZABKAT,52,
+                    61,165,11
+    DEFPUSHBUTTON   "bandingkan versi",IDC_BUT_COMPFEAT,31,80,81,14
+    PUSHBUTTON      "ok",IDOK,185,80,50,14
+    ICON            "",IDC_CUSTICON,5,5,20,20
+    LTEXT           "Perintah ini cuma ada di vs pro.\n\nUtk mendpt kemampuan penuh xplorer² anda hrs ubah ke vs pro. Dgn tambahan banyak fungsi, juga lbh memudahkan pengaturan, anda akan memperoleh layanan pelanggan scr pribadi. Perangkat lunak ini sgtlah terjangkau!",
+                    IDC_STATIC,31,5,203,52
+END
+#endif
+
+IDD_FILTERPLAIN_DLG DIALOG DISCARDABLE  0, 0, 235, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Definisi filter pesanan"
+FONT 8, "Verdana"
+BEGIN
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,3,228,170
+    PUSHBUTTON      "b&ersih",IDC_BUTTON_CLEAR,7,177,50,14
+    DEFPUSHBUTTON   "ok",IDOK,119,177,50,14
+    PUSHBUTTON      "batal",IDCANCEL,179,177,50,14
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,4,171,227,1
+END
+
+IDD_GROUPRULE_DLG DIALOG DISCARDABLE  0, 0, 235, 222
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Aturan keanggotaan grup"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Group name:",IDC_STATIC,15,8,44,8
+    EDITTEXT        IDC_EDIT_GRPNAME,61,6,160,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,25,228,170
+    PUSHBUTTON      "b&ersih",IDC_BUTTON_CLEAR,7,200,50,14
+    DEFPUSHBUTTON   "ok",IDOK,119,200,50,14
+    PUSHBUTTON      "batal",IDCANCEL,179,200,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,193,227,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,23,227,1
+END
+
+IDD_CATEGORIZER_DLG DIALOG DISCARDABLE  0, 0, 235, 143
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Kategorisasi pesanan"
+FONT 8, "Verdana"
+BEGIN
+    RTEXT           "&Pradefinisi:",IDC_STATIC,14,10,39,8
+    COMBOBOX        IDC_CATEGORIZER_SAVED,58,8,154,88,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Kategori",IDC_TBPLACE,7,27,221,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "",IDC_KAT_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | 
+                    LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_TABSTOP,7,40,
+                    221,77,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "b&ersih",IDC_BUTTON_CLEAR,7,123,50,14
+    DEFPUSHBUTTON   "ok",IDOK,122,123,50,14
+    PUSHBUTTON      "batal",IDCANCEL,178,123,50,14
+END
+
+IDD_COLORRULE_DLG DIALOG DISCARDABLE  0, 0, 235, 262
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Warna pesanan utk tipefile"
+FONT 8, "Verdana"
+BEGIN
+    LTEXT           "&Deskripsi:",IDC_STATIC,15,8,40,8
+    EDITTEXT        IDC_EDIT_COLRNAME,61,6,160,12,ES_AUTOHSCROLL
+    RTEXT           "Warna &text:",IDC_STATIC,32,27,51,8
+    PUSHBUTTON      "",IDC_BUTTON_COLTEXT,89,24,50,14
+    RTEXT           "Warna latar&belakang:",IDC_STATIC,8,44,75,8
+    PUSHBUTTON      "",IDC_BUTTON_COLBG,89,41,50,14
+    CONTROL         "&Wajah tebal",IDC_CHECK_BOLD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,161,34,64,10
+    GROUPBOX        "",IDC_STATIC_PLACEHOLDER,4,65,228,170
+    PUSHBUTTON      "b&ersih",IDC_BUTTON_CLEAR,7,240,50,14
+    DEFPUSHBUTTON   "ok",IDOK,119,240,50,14
+    PUSHBUTTON      "batal",IDCANCEL,179,240,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,233,227,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,63,227,1
+END
+
+IDD_COLORENCODE_DLG DIALOGEX 0, 0, 235, 143
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Koding pewarnaan pesanan"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "&Filters",IDC_TBPLACE,7,7,221,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CONTROL         "",IDC_COLENCODE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | 
+                    LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_TABSTOP,7,20,
+                    221,96,WS_EX_CLIENTEDGE
+    CONTROL         "&Aktivasi pengkodean warna",IDC_CHECK_CENCON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,126,105,10
+    DEFPUSHBUTTON   "ok",IDOK,122,123,50,14,WS_GROUP
+    PUSHBUTTON      "batal",IDCANCEL,178,123,50,14
+END
+
+IDD_ACCELEDIT_DLG DIALOGEX 0, 0, 247, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Penentuan papankunci"
+FONT 8, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "&Kategori:",IDC_STATIC,9,9,34,8
+    COMBOBOX        IDC_COMBO_CATEGORY,49,7,100,67,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LIST_COMMANDS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | 
+                    LVS_AUTOARRANGE | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | 
+                    WS_TABSTOP,7,24,142,66,WS_EX_CLIENTEDGE
+    LTEXT           "Kunci sk&rg",IDC_STATIC,174,14,44,8
+    LISTBOX         IDC_LIST_KEYS,155,24,86,35,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Tekan pintasan kunci &baru:",IDC_STATIC,155,66,80,8
+    CONTROL         "HotKey1",IDC_HOTKEY,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,155,76,86,14
+    PUSHBUTTON      "&tunjuk",IDC_BUT_ASSIGN,155,97,41,14
+    PUSHBUTTON      "&buang",IDC_BUT_REMOVE,199,97,41,14
+    PUSHBUTTON      "&set ulang semua",IDC_BUT_RESET,7,125,69,14
+    DEFPUSHBUTTON   "ok",IDOK,130,125,50,14
+    PUSHBUTTON      "batal",IDCANCEL,190,125,50,14
+    LTEXT           "",IDC_STATIC_DESCRIPTION,7,95,142,18,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_TEXTINPUT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_NOTIFY_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_GREP_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_SCRIPTBUILD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_SYNCWIZARD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_SPLIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_BUILDSYNC_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_COLSELECT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_FILTER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_FPP_DATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_FPP_NUMBER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_FPP_TEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_FILTEREDIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_TOUCHATTR_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_COPYTO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_DUPEWIZARD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_GENERICLOG_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 356
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_OPTFRAME_PDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_OPTGENERAL_PDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_MASSRENAME_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_FINDFILES_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_MATCHRULE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_TRYKS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_CUSTLIST_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_CUSTPROPS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_REGPROMPT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_VISHFILTER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_CONFIRMALL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_COPYOPTIONS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_COPYPROGRESS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_OPT3RD_PDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_FILTERPLAIN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_CATEGORIZER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_COLORENCODE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_ACCELEDIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_WELCOME        HTML    MOVEABLE PURE   "res\\welcome_ind.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STOCKCOL_ADS        "Aliran"
+    IDS_STOCKCOL_VERFIRMA   "Perusahaan"
+    IDS_STOCKCOL_VERCPRITE  "Deskripsi"
+    IDS_STOCKCOL_LINKTGT    "Cara singkat ke"
+    IDS_STOCKCOL_EXIFCX     "Lebar"
+    IDS_STOCKCOL_EXIFCY     "Tinggi"
+    IDS_STOCKCOL_EXIFDATE   "Tanggal gambar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_COMPARESUBFOLDERS 
+                            "Bandingkan isi panel dengan keseluruhan subfolder"
+    ID_MARK_LIKETHIS        "Pilih (tandai) item dgn ekstensi sama sbg item terfokus"
+    ID_MARK_LIKETHISUNSEL   "Hilangkan tanda item dgn ekstensi sama sbg item terfokus"
+    ID_EDIT_QUEUESTATUS     "Periksa dan atur transfer antrian\nAntri"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CHECK_STATINFO      "Tdk dihrskan jika InfoBar telah teraktivasi"
+    IDC_CHECK_XPSORT        "cth. file1, file2, file10\nDefault berupa file1, file10, file2"
+    IDC_CHECK_NOCURDIR      "Memudahkan penghapusan folder tapi mempengaruhi konsol DOS\n(anda hrs tentukan jalur full dlm perintah)"
+    IDC_CHECK_AUTOSUBDIR    "(utk kolom ""Ukuran"" folder)\nSuatu  kejelekan sumber jika dibuat dapat!"
+    IDC_CHECK_FREEFORM      "Bandingkan item hanya nama mrk,\nabaikan lokasi pd hirarki folder"
+    IDC_COMBO_SCENARIA      "Preset pilihan utk tipikal skenario sinkronisasi"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_RDPRI_BG            "Salin file lbh pelan menggunakan sedikit sumber"
+    IDC_CHECK_CDRONLY       "Berguna ketika menyalin dari kepingan CD-ROM"
+    IDC_BUTTON_PAUSE        "Utk sementara tunda transfer file\nKlik resume utk melanjutkan"
+    IDC_BUTTON_QUEUE        "Letakkan transfer ini pd antrian\nAkan diproses berkelanjutan, satu salinan pd setiap kali"
+    IDC_CHECK_WINDOWON      "cth. utk lihat detail error dan file terlewati"
+    IDC_CHECK_SIZEUPFRONT   "Membuat waktu sisa terestimasi scr benar\ntapi dapat menunda awal proses transfer"
+    IDC_COMBO_PRECOLS       "Terdaftar dibawah Kustomis | Menu set kolom"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_FOPBOOTSTRAP    "Usaha utk memindahkan suatu folder kebawahnya"
+    IDS_ERR_FOPDIRCREATE    "Error pembuatan folder target"
+    IDS_ERR_FOPDIRREAD      "Folder tdk dpt dibaca scr keseluruhan"
+    IDS_ERR_FOPCOPY         "Penyalinan file gagal"
+    IDS_ERR_FOPSTREAMLOST   "Aliran kedua (cth. komentar file) tdk dpt ditransfer ke target"
+    IDS_ERR_FOPFREESPACE    "Tdk cukup ruang tersedia utk menyalin file ini\nSilakan masukkan dsik baru utk melanjutkan"
+    IDS_ERR_NTONLY          "Perintah ini tdk didukung windows 9x"
+    IDS_ERR_OUTFILE         "Error penulisan ke %s:"
+    IDS_ERR_NOBUNDLES       "Tdk ada bendel file di seleksi skrg"
+    IDS_ERR_CORRUPTBUN      "%1\nBendel file terkorupsi, ekstraksi dihentikan"
+    IDS_ERR_RESYNTAX        "Perintah ekspresi regular tdk benar"
+    IDS_ERR_NOQUEUE         "Tdk ada file dlm antrian transfer"
+    IDS_ERR_CANTGROUP       "Tdk bs menggrup pd kolom ini"
+    IDS_ERR_FOLDEREXISTS    "Item dgn nama ini telah ada, silakan cari nama yg unik"
+    IDS_ERR_CANTJUNCTION    "Sambungan hanya didukung partisi NTFS dan utk jalur lokal"
+    IDS_ERR_NOJUNCTION      "Pilihan tdk mempunyai sambungan folder"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TABSETS_FIRST        "Perbarui grup folder ini"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CUSTOMIZE_TABSETS_ADDNEW "Tambahkan grup folder skrg kedlm daftar"
+    ID_CUSTOMIZE_TABSETS_ORGANIZE 
+                            "Alihnama atau hapus grup folder & tunjuk kunci potongsingkat"
+    ID_CUSTOMIZE_TABSETS_MORE "Pilih grup folder dari daftar lengkap"
+    ID_WINDOW_CLOSETAB      "Tutup tab folder aktif"
+    ID_WINDOW_CLOSEALLTABS  "Tutup semua tab folder kec yg aktif"
+    ID_EDIT_DUPLICATEFILE   "Buat ""salinan dari"" item terseleksi dlm folder yg sama"
+    ID_ACTIONS_FOLDERSETTINGS_SUSPEND 
+                            "Abaikan sementara semua setting folder utk panel lihat ini (toggle)"
+    ID_VIEW_AUTOFILTER      "Lihat hanya satu tipe file dr semua yg ada dlm folder ini\nAutofilter"
+    ID_QV_TABSWITCH         "Tukar antara Draft dan Normal utk tab lihat cepat"
+    ID_ACTIONS_VIEWSTREAMS  "Lihat aliran data alternatif yg terkandung dlm seleksi"
+    ID_ACTIONS_BUNDLETOGO   "Pak semua file (terseleksi) informasi utk transpor, termasuk komentar dsb"
+    ID_ACTIONS_UNPACKBUNDLE "Simpan kembali informasi file dr bendel yg ada"
+    ID_VIEW_TOOLBARS_INFOBARS 
+                            "Lihat atau sembunyikan bar informasi detil utk item aktif (file)"
+    ID_ACTIONS_EXPORTSETTINGS 
+                            "Ekspor setting program dlm file .REG yg dpt dipakai kembali di lain PC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DIRDATA_COPYTEXT     "Salin hirarki folder sbg teks, dimulai dr seleksi skrg"
+    ID_TOOLS_FOLDERSTATISTICS 
+                            "Display statistik utk folder ini dan subfoldernya\nStats (Alt+D)"
+    ID_HELP_LASTERROR       "Lihat lagi pesan error terakhir"
+    ID_QUIKVIEW_NEXT        "Panggil file berikutnya dr panel aktif"
+    ID_QUIKVIEW_PREVIOUS    "Panggil file sblmnya dr panel aktif"
+    ID_VIEW_EQUALWIDTH      "Toggle antara dua sama dan satu panel lihat besar"
+    ID_VIEW_VISUALFILTER_RULEBASED 
+                            "Lihat hanya item yg sifatnya sesuai dgn aturan kompleks\nFilter (Alt+H)"
+    ID_VIEW_VISUALFILTER_SAMEFILTER 
+                            "Paksa saringan visual yg sama ke panel tdkaktif"
+    ID_ACTIONS_IMPORTCLIPBOARD 
+                            "Masukkan nama item dr papanklip (satu jalur per baris)"
+    ID_FILE_NEWTAB          "Jelajah item terfokus dlm suatu tab baru\nTab (Ctrl+Ins)"
+    ID_VIEW_NEXTTAB         "Tukar ke tab lihat berikutnya"
+    ID_VIEW_PREVTAB         "Tukar ke tab lihat sblmnya"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_UNSELECT            "Tdk pilih semua item yg memenuhi kriteria anda"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MGS_SEECPLOG        "Ada bbrp problem selama transfer\nAnda mau lihat log?"
+    IDS_BUT_PAUSE           "&pause"
+    IDS_BUT_RESUME          "re&sume"
+    IDS_MSG_MOVEROF         "File sumber '%s' has special attributes\n%s\nApa anda benar yakin ingin membuang?\n"
+    IDS_TIT_MOVEROF         "Konfirmasi penghapusan file"
+    IDS_BUT_CLOSE           "tutup"
+    IDS_TIT_AFSLOG          "Info aliran data cadangan"
+    IDS_HEADER_AFSLOG       "TYPE\tSIZE\tNAME\tCONTENT\r\n-------------------------------\r\n"
+    IDS_BUNDLE_TARGET       "Nama bendel"
+    IDS_BUNDLE_BUSY         "(ESC utk pembatalan) Bendel aliran %s..."
+    IDS_BUNDLE_TOTAL        "%d file(s) bundled %s"
+    IDS_UNBUNDLE_BUSY       "(ESC  utk pembatalan) Ekstraksi aliran file %s..."
+    IDS_MSG_DISKQUOTA       "Disk target nampaknya tdk memiliki cukup ruang\nutk transfer pilihan. Tetap lanjut?"
+    IDS_MSG_IDENTEXIST      "Identitas '%1'sdh terpakai\nTindihpenulisan dgn definisi skrg?"
+    IDS_UNBUNDLE_PROMPT     "Ekstrak ke folder"
+    IDS_TIT_REGEXPORT       "Setting nama file"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_DATE_FROM           "Cek kotak utk mengatur batas bawah tgl\nBilatidak sesuai semua file seblm tgl tinggi"
+    IDC_EDIT_MINSIZE        "Akhir bawah dr batas nomor\nBiarkan kosong utk aturan ""krg dr"""
+    IDC_EDIT_MAXSIZE        "Akhir atas dr batas nomor\nBiarkan kosong utk aturan ""lbh dr"""
+    IDC_EDIT_FINDTXT        "Apa yg dicari dlm teks kolom\nPisahkan multiple katakunci dgn koma\ncth. ""+A, -H"" berlaku utk pencarian atribut"
+    IDC_COMBO_PROPERTIES    "Sifat korespon dgn kolom folder"
+    IDC_RADIO_NOT           "Sesuai hanya item dimana tdk memenuhi aturan ini"
+    IDC_BUTTON_CLEAR        "Kosongkan semua bidang penyaringan"
+    IDC_CHECK_ZIPFOLDERS    "Cek utk mencari dlm folder pelan\nspt arsip ZIP, FTP, folder web dsb"
+    IDC_COMBO_VIRTUALS      "Akar pencarian pd folder spesial\n""Lihat dlm"" bidang yg mengandung penyangkalan wildcard cth. ""-*temp*"""
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_BUTTON_EDIT         "Buat script & panggil utk pengeditan\nUtk eksekusi, klik-d pd file .BAT"
+    IDC_BUTTON_WINEXEC      "Hanya utk script jendela murni\nperintah interpretasi (ren dsb) tdk boleh"
+    IDC_COMBO_SPLITARGET    "Dimana tempat meletakkan bagian split"
+    IDC_CHECK_FOLDERS       "Folder hanya dibedakan dari nama"
+    IDC_COMBO_SAVED         "Inisialisasi bidang dr saringan tersimapn sblmnya\nAtau ketik nama utk saringan skrg dan klik Simpan ukt menyimpan\nAtau klik Hapus kmd Simpan utk menghapus saringan tersimpan"
+    IDC_DATE_TO             "Cek kotak utk mengatur batas atas tgl\nBilatidak sesuai semua file sesdh tgl bawah"
+    IDC_COMBO_STD           "Ukuran tetap utk target media tipikal"
+    IDC_BUTTON_BUY          "Pergi ke situs web utk mendpt kunci registrasi"
+    IDC_EDIT_CODE           "Ketik kunci yg anda peroleh dr email registrasi anda\nAnda dpt menyalinnya dr email dan kmd gunakan Ctrl+V utk menempelnya disini\nUtk melanjutkan masa percobaan, biarkan kosong"
+    IDC_BUTTON_LINFO        "Informasi ekstra utk item ini, jika tersedia"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CHECK_SYSTEM        "Mohon jangan mengubah atribut ini\nkec anda tahu jelas artinya"
+    IDC_DATE_MODIFIED       "Tgl/waktu diubah hanya jika anda cek kotak ini"
+    IDC_BUTTON_MODNOW       "Set tgl file/waktu ke skrg\nEkuivalen ke ""sentuhan"""
+    IDC_RADIO_BREADTH       "Gunakan metode ini ketika anda harap taget\nterletak tdk jauh dr folder akar"
+    IDC_CHECK_SELECTEM      "Berguna utk menghapus kembaran setelah pendeteksian"
+    IDC_MAXWIDTH            "(pixels);hanya berpengaruh utk mode lihat daftar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_LISTRULES           "Klik dobel utk menambah aturan ekstra\nSemua kolom folder dpt digunakan sbg parameter\ncth. Ukuran, Tgl, Komentar, Pemilik dsb"
+    IDC_CHECK_REFINE        "Cari dlm hasil sblmnya\n(item terlihat pd panel aktif)"
+    IDC_DOTS                "Jelajahi folder"
+    IDC_BUTTON_SAVE         "Simpan saringan skrg atau hapus yg lama"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_COMBO_NUM           "Seleksi nomor utk akselerator\nhapus utk membuang potongsingkat keyboard yg ada"
+    IDC_COMBO_DIRSORT       "spt file: kombinasi file jadi satu\nscr terpisah: selalu terlihat pertama\ncampuran: scr terpisah utk nama/ekstensi dan kombinasikan jadi satu dsb"
+    IDC_CHECK_PLAINMEN      "Kurangi ukuran menu jendela\ntampilkan hanya perintah dasar"
+    IDC_CHECK_BALONI        "Nyala/matikan tips balon ini utk dialog"
+    IDC_COMBO_ENCODING      "Asumsi enkoding file teks tanpa BOM"
+    IDC_CHECK_CONTENT       "Hanya jika Isi tercek, file dibandingkan scr binary\nPelan tapi sangat jelas\n(deteksi duplikat dgn nama berbeda)"
+    IDC_COMBO_RNTEMPL       "Kombinasi teks dan huruf spesial utk nama\ncth. ""$B.xxx"" akan mengubah ekstensi file ke xxx"
+    IDC_EXTEDITORNAME       "Digunakan utk perintah F4\nanda dpt memasukkan argumen pilihan"
+    IDC_EXTVIEWERNAME       "Utk digunakan saat editor² tersedia, tekan <Ctrl+F3>"
+    IDC_EDIT_ZIPSIZE        "Batasan utk ekstraksi isi item\ndlm folder zip, FTP dsb"
+    IDC_COMBO_BATPLATE      "Komposisi perintah utk item terseleksi menggunakan $-huruf\nUtk perintah multiple per item gunakan koma\ncth. copy $N $B.dat, del $N"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_LIST_AVAIL          "Kolom dgn [S] stlh nama mrk lbh cepat"
+    IDC_CHECK_TRACKSEL      "Tdk kompatibel dgn mode seleksi lengket"
+    IDC_BUTTON_IBGCOL       "Warna digunakan utk latarbelakang\ndari panel jelajah tdkaktif"
+    IDC_RDOVR_RENAME        "Cth. file.txt akan dialihnama ke file_1.txt\nSemua file akan diubah"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_RADIO_CONTENT       "Bandingkan file byte-ke-byte\nAkurat tapi pelan"
+    IDC_RADIO_NAME          "Jika nama sesuai maka mrk ""identik""\n(tanpa pengecekan lbh lanjut)"
+    IDC_CHECK_UNDECIDABLE   "Item ini memiliki tanda tanya pd ikon mrk"
+    IDC_COMBO_ESPECIAL      "Masukkan karakter spesial, entah terpesan atau tdkdpt-dicetak\n$xx mencari karakter dgn kode hex xx"
+    IDC_EDIT_SIZE           "Brp besar anda ingin utk setiap bagian file\nPilih menurut alat target\ncth. 1423 kB utk floppy"
+    IDC_COMBO_TOKENS        "$-huruf terganti dgn bagian dr nama file terseleksi\nMrk dibolehkan utk penggunaan kembali template"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_EDIT_TSIZE          "Pralihat hanya memanggil sebagian file\nSmkn banyak yg anda lihat, smkn pelan pemanggilan"
+    IDC_CHECK_NOHEX         "Cek jika anda tdk ingin lihat ""pralihat""\ndari file eksekutabel dan binary lain"
+    IDC_CHECK_VERBA         "Disfungsi pemrosesan karakter spesial (koma dan $)\nTemukan teks sesuai yg diketik"
+    IDC_EDIT_NAME           "Identitas item, dipakai utk menu dan toolbar\nHaruslah unik dalam grupnya"
+    IDC_EDIT_DESCR          "Penandabuku: jalur Folder\nPerintah pemakai: apa utk eksekusi (mulai dgn > atau $)\nUtk semua tipe tersisa: komentar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CHECK_BINARY        "Cari dlm dokumen Word, PDF, eksekutabel dan file binary lain\nMemelankan proses pencarian"
+    IDC_CHECK_REGEXP        "Cari ekspresi regular spt [ab]*c\nlihat manual utk detil"
+    IDC_COMBO_FIND          "Teks utk dicari di file\nPisahkan katakunci multipel dgn koma\nGunakan + atau - utk boolean DAN/TIDAK\n(cth. ""+text, -exclude"")"
+    IDC_COMBO_WHERE         "Folder akar pencarian\nMultipel jalur terpisahkan koma dan ekslusi dibolehkan\n""c:\\, d:\\, -*temp*"" mencari C/D kec utk folder dgn ""temp"" pd nama mrk"
+    IDC_COMBO_NAMED         "Nama file apa utk dicocokkan\nSebagian nama & wildcard diterima\ncth. ""*.cpp, *.h"""
+    IDC_BUTTON_PREVIEW      "Tes template pd seleksi yg ada\nJika anda suka dgn pralihat silakan maju dgn perintah aktual"
+    IDC_RADIO_MOD           "(bandingkan juga ukuran file)\nSangat cepat tapi tdk 100% reliabel"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_TRIAL           "xplorer² mrp aplikasi trial yg bisa dievaluasi gratis dlm waktu terbatas. Silakan beli lisensi utk membuang seluruh batasan, termasuk dialog registrasi ini."
+    IDS_MSG_TRIAL2          "Sisa hari utk evaluasi: %d"
+    IDS_MSG_REGWELCOME      "Kunci registrasi tlh diterima.\nSilakan simpan dgn aman krn mungkin anda akan membutuhkannya utk dukungan pelanggan \n\nMOHON UTK TDK MENDISTRIBUSIKAN KUNCI REGISTRASI INI!\nMembagi kunci ke pihak lain adalah pelanggaran\n\nTerimakasih tlh mempercayakan manajemen file anda kpd kami!"
+    IDS_INFO_REGOPT         "Tersedia lbh pilihan ""eksotik""  melalui pengeditan registry\nLihat registry.txt utk informasi lbh lanjut"
+    IDS_INFO_DIRDATA        """%s"" [%s]: Sub-Folder=%d, File=%d"
+    IDS_INFO_LFDATA         "%s dlm %d file lokal"
+    IDS_HELP_MAINPDF        "\n\nFile utama bantuan cukup besar dan didistribusikan terpisah.\nApakah anda ingin membuka situs web dan mendownloadnya skr?"
+    IDS_STATUS_FREE         "%s free (%d%%)"
+    IDS_MEMO_DIRTABNAME     "Grup folder"
+    IDS_TIT_FILEREPLACE     "Konfirmasi penggantian file"
+    IDS_MSG_FILEXIST        "Folder ini sdh memiliki file bernama '%s'\n\nApa anda ingin menumpuk file yg ada\n%s\ndgn yg ini\n%s\n"
+    IDS_MSG_COPYACTIVE      "Bbrp operasi penyalinan blm selesai.\nApakah kita perlu menunggu mrk?"
+    IDS_TIT_KOPYERLOG       "Log transfer file"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TBSHOW_FIRST         "Lihat atau sembunyikan toolbar ini"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TBCM_LABEL          "Label teks"
+    IDS_TBCM_CUSTOM         "Kustomis..."
+    IDS_HFILT_DELETE        "Apakah anda yakin ingin menghapus saringan ini dr daftar?"
+    IDS_HFILT_OVERWRITE     "Saringan dgn nama ini sdh terdefinisi;\nTetap tindihpenulisan?"
+    IDS_MSG_LAYOUTREG       "Informasi layout tdk dpt disimpan selagi setting penyimpanan otomatis saat keluar dimatikan.\nSimpan setting now? (penyimpanan otomatis tdk akan terpengaruh)"
+    IDS_MSG_THREADBUSY      "Thread ini sdg sibuk di operasi latarbelakang.\nPenutupan jendela ini akan berakibat hasil yg tdk terprediksi;\nIngin lanjut?"
+    IDS_SPLIT_35            "3.5 Floppy"
+    IDS_SPLIT_CD            "CD-R 650"
+    IDS_SPLIT_CD2           "CD-R 700"
+    IDS_SPLIT_DVD           "DVD 4.5G"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CUSTOMIZE_KEYBOARDUSE 
+                            "Lihat potongsingkat keyboard tertunjuk dan tersedia"
+    ID_MARK_ALLFOLDERS      "Tandai semua item dimana sbg folder terasumsi"
+    ID_EDIT_CLEARSCREEN     "\nHapus"
+    ID_TBCM_TEXTLABELS      "Toggle label teks utk toolbar ini"
+    ID_VIEW_SORTBY          "Ubah pengaturan item\nSort"
+    ID_GOTO_SYSTEM          "Pergi ke folder sistem spesial\nSystem (Ctrl+Alt+F)"
+    ID_HELP_REGISTERPROGRAM "Ubah dan/atau mendpt lisensi utk menggunakan versi ""pro"" tanpa batasan\nRegister"
+    ID_HELP_DONATE          "Dukung kelanjutan program ini dgn memberikan sumbangan sukarela\nDonasi"
+    ID_HELP_GETSUPPORT      "Sambung ke pusat pendukung pelanggan online"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_CUSTMODIFIER    "Anda hrs tentukan kunci modifikasi utk potongsingkat, cth. <Ctrl>"
+    IDS_ERR_INVALIDRKEY     "Nama layout mengandung karakter invalid sdh terpesan"
+    IDS_ERR_INCOMPATCOLS    "Set kolom ini tdk sesuai dgn penampakan folder skrg"
+    IDS_ERR_INCOMPATHFILT   "Saringan ini tdk sesuai dgn skop pencarian ini\nBbrp aturannya korespon dgn tipe folder berbeda"
+    IDS_ERR_HFILTNAME       "Anda hrs tentukan nama utk saringan (utk ditambahkan atau dihapus)"
+    IDS_ERR_IDNAME          "Pengidentifikasi tdk dpt lbh panjang dr %1!d! karakter"
+    IDS_ERR_REGLIC          "Lisensi subsistem fatal error %d:%08x:%d%d%d\n\nMungkin:\n*Anda tdk memiliki hak administrator utk instalasi ini\n*Apa anda mengetik kunci lisensi tdk benar?silakan ketik lagi\n\nJika problem msh tetap, silakan lapor kode error ini ke pengarang"
+    IDS_ERR_INVALIDRC       "Ini bukan kunci registrasi yg sah;\nkunci mempunyai panjang karakter ~200 dan mengandung hanya huruf KAPITAL & angka\n\nLbh mudah utk SALIN kunci yg diterima dr email\ndan kmd klik-kanan dan TEMPEL pada kotak yg tersedia"
+    IDS_ERR_FATALREG        "Program berhenti dikrnkan problem saat instalasi\nApakah anda ingin mengirim pesan error ke pengarang?"
+    IDS_ERR_INCOMPATDIRS    "Folder yg terlibat mempunyai kolom yg tdk sesuai"
+    IDS_ERR_NOCLTEXT        "Tdk ada teks pd papanklip"
+    IDS_ERR_NOTAB           "Gagal utk membuka tab jelajah baru"
+    IDS_ERR_NOTABGROUP      "Hrs ada sekrg2nya dua tab utk mendefinisikan suatu grup"
+    IDS_ERR_FOPSOURCEREAD   "Error pembacaan dari sumber"
+    IDS_ERR_FOPSOURCEONSELF "Target tdk identik dgn nama sumber"
+    IDS_ERR_FOPSOURCEMISMATCH 
+                            "Usaha utk tindihtulis folder dgn file atau sebaliknya"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ASK_COLUMNCLSID     "Set kolom ini milik tipe folder yg berbeda;\ntetap diterapkan?"
+    IDS_DSM_ASFILE          "spt file"
+    IDS_DSM_BUNDLE          "dgn terpisah"
+    IDS_DSM_MIXED           "mode campuran"
+    IDS_UNIT_1              "1"
+    IDS_UNIT_KILO           "Kilo"
+    IDS_UNIT_MEGA           "Mega"
+    IDS_UNIT_GIGA           "Giga"
+    IDS_TBCM_LOCK           "Kunci toolbar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_USERTOOL_FIRST       "Eksekusi perintah ini"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_COLUMNSET_FIRST      "Kembalikan set kolom ini"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TBCUST_FIRST         "Tambah atau kurangi tombol dr toolbar ini (klik-kanan utk pilihan teks)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CUSTOMIZE_TOOLBARS_ADDNEW "Tambah suatu toolbar ekstra"
+    ID_CUSTOMIZE_TOOLBARS_ORGANIZE "Alihnama atau hapus toolbar ekstra"
+    ID_CUSTOMIZE_COLUMNS_ADD "Tambahkan set kolom skrg kedlm daftar"
+    ID_CUSTOMIZE_COLUMNS_ORGANIZE 
+                            "Alihnama, hapus atau susun kembali set kolom & tentukan kunci potongsingkat"
+    ID_CUSTOMIZE_COLUMNS_MORE "Pilih set kolom dari daftar lengkap"
+    ID_CUSTOMIZE_USERCOMMANDS_ADDNEW 
+                            "Tambahkan template perintah ke menu pemakai"
+    ID_CUSTOMIZE_USERCOMMANDS_ORGANIZE 
+                            "Alihnama, hapus atau susun kembali perintah pemakai & tentukan kunci potongsingkat"
+    ID_CUSTOMIZE_USERCOMMANDS_MORE "Pilih perintah dari daftar lengkap"
+    ID_WINDOW_SETACCELERATOR 
+                            "Tentukan kunci potongsingkat utk atau hapus layout jendela"
+    ID_WINDOW_MORE          "Klon suatu jendela dr layout tersimpan lain"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BOOKMARKS_FIRST      "Pergi ke folder ini"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RTF_TIPPROLOG       "{\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang2057{\\fonttbl{\\f0\\fswiss\\fprq2\\fcharset0 Verdana;}{\\f1\\fmodern\\fprq1\\fcharset0 Courier New;}}\n{\\colortbl ;\\red255\\green0\\blue0;\\red0\\green0\\blue255;}\n\\viewkind4\\uc1\\pard\\b\\f0\\fs26 Apakah anda tahu...\\fs18\\b0\\par\n\\par\n"
+    IDS_MSG_SYNCTOUCHOK     "Tgl tertransfer ke folder target dgn sukses"
+    IDS_MSG_LOADIDA         "Memanggil item..."
+    IDS_TOOLBAR             "Toolbar"
+    IDS_MEMO_FAVNAME        "Penandabuku"
+    IDS_MEMO_UCOMNAME       "Perintah pemakai"
+    IDS_MEMO_CSETNAME       "Set kolom"
+    IDS_STR_DESCRIPTION     "Deskripsi"
+    IDS_STR_ACCEL           "Potongsingkat"
+    IDS_STR_SELECT          "Seleksi"
+    IDS_TITLE_ADDX          "Tambah %s"
+    IDS_CUMSG_ACCELEXISTS   "Potongsingkat keyboard ini telah ditunjuk\nLanjutkan tindihtulis?"
+    IDS_TIT_ACCELLOG        "Penunjukan keyboard"
+    IDS_ACLOG_AVAIL         "(free)"
+    IDS_MSG_EXECUTING       "Tereksekusi "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_SEARCHSTATUS   "Lihat log dr perintah yg sdg berjalan atau perintah cari file sblmnya"
+    ID_HELP_TIPOFTHEDAY     "Tips & trik utk memaksimalkan pengalaman eksplorasi anda!\nTip"
+    ID_VIEW_RAWCONTENTS     "Jelajah folder virtual spt tersimpan pd kepingan (bypass eksplorer)"
+    ID_MARK_SELECTION_COMBINE 
+                            "Kombinasikan seleksi yg ada dan tersimpan dlm suatu boolean DAN gaya"
+    ID_ACTIONS_SYNCTOUCH    "Sinkronisasi tgl modifikasi dr item yg sesuai (dr panel aktif ke tdkaktif)"
+    ID_VIEW_SELECTEDONLY    "Sembunyikan semua item yg tdk terpilih"
+    ID_VIEW_SHOWALL         "Batalkan semua mode penyaringan visual"
+    ID_VIEW_VIEWMODE        "Ubah style panel aktif\nLihat (Ctrl+Alt+V)"
+    ID_BOOKMARKS_ADD        "Tambahkan folder skrg dlm daftar penandabuku"
+    ID_BOOKMARKS_ORGANIZE   "Alihnama, hapus atau susun kembali penandabuku & tentukan kunci potongsingkat"
+    ID_BOOKMARKS_MORE       "Pilih folder dr daftar lengkap penandabuku "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FFLOG_FILTER        "FILTER DETAILS\r\nMatching items: %s\r\n"
+    IDS_FFLOG_FOLDERS       "Folder, "
+    IDS_FFLOG_FILES         "File"
+    IDS_FFLOG_WILDCARD      "Nama wildcard: %s\r\n"
+    IDS_FFLOG_ANDRULE       "[AND] %s\r\n"
+    IDS_FFLOG_ORRULE        "[OR] %s\r\n"
+    IDS_FFLOG_NOTRULE       "[NOT] %s\r\n"
+    IDS_FFLOG_GREP          "Mengandung teks: %s\r\n"
+    IDS_FFLOG_TEXTOPT       "Pilihan teks: %s\r\n"
+    IDS_FFLOG_CASE          "Sensitif case, "
+    IDS_FFLOG_RE            "Ekspresi regular, "
+    IDS_FFLOG_BIN           "Semua file"
+    IDS_FFLOG_FENCO         "Enkoding paksa: %s\r\n"
+    IDS_FFLOG_WORDS         "Hanya kata, "
+    IDS_FFLOG_SUMA          "%u folder(s) searched in total\r\n"
+    IDS_FFLOG_BLAKLIST      " [EXCLUDED]\r\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_WNDREBOOT       "Perubahan akan diterapkan di lain waktu saat buka xplorer2\n(Anda dpt keluar/restart sesegera)"
+    IDS_MSG_GENERROR        "!Error!"
+    IDS_MSG_RENPROGRESS     "Alihnama... (ESC utk batal)"
+    IDS_TIT_SEARCHLOG       "Temukan log file"
+    IDS_FFLOG_FINITO        "\r\nSPencarian selesai"
+    IDS_FFLOG_ONGOING       "\r\nPencarian lbh lanjut..."
+    IDS_FFLOG_ROOT          "Pencarian dlm: %s\r\n"
+    IDS_FFLOG_EXCLUDED      "Tdk termasuk folder: %s\r\n"
+    IDS_FFLOG_SUBDIRS       "Subfolder, "
+    IDS_FFLOG_ARCHIVE       "Isi arsip, "
+    IDS_FFLOG_BREADTH       "Pertama "
+    IDS_FFLOG_DEPTH         "Kedalaman pertama"
+    IDS_FFLOG_FLAGS         "Parameter: %s\r\n"
+    IDS_FFLOG_PROLOG        "----------------\r\nFOLDERS SEARCHED\r\n----------------\r\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_PRECPSIZE       "Kalkulasi ukuran transfer... (ESC utk batal)"
+    IDS_TIT_CMDARG          "Argumen perintah"
+    IDS_QVTAB_DRAFT         "Pralihat draft"
+    IDS_QVTAB_NORMAL        "Normal"
+    IDS_SYSC_DIFFER         "Beda"
+    IDS_SYSC_IDENTIC        "Identik"
+    IDS_TITLE_TABREN        "Nama tab"
+    IDS_MI_NOFILTER         "&Semua file (*)"
+    ID_MENU_TOPMOST         "&Palingbanyak"
+    IDS_MEMO_TQUEUE         "Antrian transfer"
+    IDS_FMT_QUEUEDESCR      "%s %d item(s) to %s"
+    IDS_DRIVEBAR            "Drivebar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NODUPECRITERIA  "Anda hrs menentukan sedikitnya satu kriteria utk perbandingan"
+    IDS_ERR_NODUPES         "Tdk ada kembaran yg ditemukan"
+    IDS_ERR_DESKINI         "I/O Error mengakses file desktop.ini"
+    IDS_ERR_SCRAPLOADMISSING 
+                            "Bbrp item di file cida tdk ketemu\nApa anda ingin lihat log?"
+    IDS_ERR_ILLEGALRENCH    "Nama template mengandung ilegal karakter utk file.\nPerintah alihnama kemungkinan besar gagal; ingin tetap lanjut?"
+    IDS_ERR_NOVARTEMPLATE   "Nama template anda tdk bervariasi ($-huruf).\nSemua file akan dialihnama dgn target nama yg sama; ingin tetap lanjut?"
+    IDS_ERR_NOSEARCHLOG     "Tdk ada informasi tersedia"
+    IDS_ERR_NOSYNTOUMATCH   "Tdk ada item sesuai yg ditemukan di panel tdk aktif"
+    IDS_ERR_NOTREECMD       "Perintah ini tdk bisa dipakai utk panel pohon"
+    IDS_ERRDDV_NOCUST       "Anda hrs membiarkan setidaknya satu item dlm daftar"
+    IDS_ERR_DUPLNAME        "Pengidentifikasi ini sdh ada, silakan gunakan yg lain"
+    IDS_ERR_CUSTNAME        """Nama"" bidang sehrsnya tdk kosong"
+    IDS_ERR_CUSTSHIFT       "<Shift> pd dasarnya ini bukan pemodifikasi akselerator yg sah\nSilakan gunakan ini dikombinasi dgn <Alt> atau/dan <Ctrl>"
+    IDS_ERR_CUSTALT         "Akselerator utk penandabuku hrsnya tdk mengandung <Alt> key"
+    IDS_ERR_CUSTOVERFLOW    "daftar penuh; silakan hapus bbrp item tdk terpakai"
+    IDS_ERR_CUSTDESCR       """Deskripsi"" bidang sehrsnya tdk kosong"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_AUTOSIZECOLUMNS "Atur lebar kolom utk fit semua item (<Shift> to use headers)"
+    ID_TOOLS_CHECKDUPLICATES 
+                            "Periksa kandungan item utk kemungkinan kembaran dan grup ulang\nKembaran"
+    ID_QUIKVIEW_TEXTMODE    "Kunci pralihat dlm mode teks, tanpa gambar atau suara"
+    ID_ACTIONS_FOLDERSETTINGS_SAVE 
+                            "Simpan setting utk folder ini, ternasuk style panel, kolom dan urutan sortir"
+    ID_ACTIONS_FOLDERSETTINGS_CLEAR 
+                            "Hapus semua setting tersimpan utk folder ini"
+    ID_FILE_SENDTOSCRAP     "Letakkan seleksi di jendela kontainer skrap terdekat\nUtk skrap (Ctrl+S)"
+    ID_VIEW_SETFONT         "Set huruf utk lihat\nFont"
+    ID_CMDEDIT_FIND         "Temukan teks\nFind (Ctrl+F)"
+    ID_TOOLS_REVEALUNIQUE   "Tunjukkan item tersembunyi sbg hasil atas pengecekan kembaran"
+    ID_TOOLS_OPTIONS        "Atur pilihan utk program & jendela ini\nOptions"
+    ID_FILE_MASSRENAME      "Ubah filename terpilih di bulky dgn menggunakan nama template"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_LINKRESOLVE     "Sedang menyambungkan link... (ESC utk batal)"
+    IDS_MSG_FOLDERSAVED     "Setting folder tersimpan"
+    IDS_MSG_ADDED2SCRAP     "%d item(s) added in "
+    IDS_INFO_LOGDETAILS     "\r\nInformasi detil\r\n--------------------\r\n"
+    IDS_TIT_SCRAPERLOG      "Kehilangan log item"
+    IDS_TIT_CMDFIND         "Cari teks"
+    IDS_GREP_UNSELECTED     "Semua item sesuai aturan teks tdk terseleksi "
+    IDS_MSG_TREEPRINT       "Cabang aktif tersimpan ke papanklip"
+    IDS_TIT_OPTIONS         "Program options [%s]"
+    IDS_DASEMPTY            "(empty)"
+    IDS_ICON_NORMALLEN      "Normal"
+    IDS_ICON_SIMPLE         "Sederhana (cepat)"
+    IDS_ICON_PLAIN          "Datar (tercepat)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ACTIONS_SETCOMMENT   "Set atau edit komentar item jika memungkinkan\nComment (Alt+Z)"
+    ID_GOTO_RECENTFOLDER    "Seleksi diantara folder yg baru dijelajahi melalui panel ini"
+    ID_VIEW_HOLDAUTOREFRESH "Suspen sementara sensor otorefresh panel aktif, berguna utk lambat atau cepat-pergantian folder"
+    ID_VIEW_HIDEFOLDERS     "Sembunyikan semua folder dr panel aktif (toggle)"
+    ID_QUIKVIEW_ENCODING_WINDOWS "Set karakter normal"
+    ID_QUIKVIEW_ENCODING_OEM 
+                            "Halaman kode utk Original Equipment Manufacturer"
+    ID_QUIKVIEW_ENCODING_UTF8 "Multibyte unicode"
+    ID_QUIKVIEW_ENCODING_UNICODE "Karakter unicode (16) lebar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_SUSPENDAROFF    "Fitur otorefresh aktif"
+    IDS_CPMVTO_MOVE         "Pindah"
+    IDS_CPMVTO_COPY         "Salin"
+    IDS_TIT_CPMVTGT         "Pilih folder tujuan"
+    IDS_ENC_DEFAULT         "Default"
+    IDS_ENC_OEM             "OEM"
+    IDS_ENC_UTF8            "UTF-8"
+    IDS_ENC_UNICODE         "Unicode"
+    IDS_ENC_RAW             "Raw"
+    IDS_DUPESFOUND          "Kembaran item teridentifikasi & tergrup"
+    IDS_MSG_SAVEDSETTINGS   "Setting disimpan (otomatis simpan saat keluar %s)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FMT_INTLARGER       "%s value larger than %u%c"
+    IDS_FMT_INTSMALLER      "%s value smaller than %u%c"
+    IDS_FMT_TEXTWITH        "%s mengandung ""%s"""
+    IDS_MGS_SEARCHINGFILES  "(ESC utk batal); pencarian %s ..."
+    IDS_TIT_ROOTSEARCH      "Pilih folder utk memulai pencarian"
+    IDS_TIT_LOCALDISK       "Hard disk lokal"
+    IDS_MIRRORSCR_OFF       "Scroll bayangan OFF"
+    IDS_MIRRORSCR_ON        "Scroll bayangan ON"
+    IDS_PREVIEW_MORE        "(...lagi...)"
+    IDS_MSG_READINGFOLDER_ESC "Membaca isi folder... (ESC utk batal)"
+    IDS_ACD_TITLE           "Set komentar"
+    IDS_MSG_SUSPENDARON     "Fitur otorefresh disuspen"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_LTB_DOWN             "Pindah kebawah (Ctrl+Down)"
+    ID_LTB_EDIT             "Sifat (Enter)"
+    ID_MARK_RULEBASED       "Pilih item yg memiliki sifat sesuai dgn aturan kompleks"
+    ID_GOTO_MIRRORSCROLLING "Scroll panel tdk aktif utk menampilkan item sesuai dgn fokus aktif"
+    ID_VIEW_QUICKVIEWER     "Lihat atau sembunyikan panel pralihat cepat\nPreview (Ctrl+Q)"
+    ID_QUIKVIEW_SELECTALL   "Seleksi semua teks"
+    ID_QUIKVIEW_SETFONT     "Seleksi huruf utk pralihat"
+    ID_QUIKVIEW_WORDWRAP    "Toggle word-wrapping nyala/mati"
+    ID_QUIKVIEW_FINDNEXT    "Temukan kejadian berikutnya dr teks terpilih"
+    ID_QUIKVIEW_FIND        "Temukan teks pd panel"
+    ID_GOTO_DRIVE           "Pergi ke lokal disk\nDrive (Alt+F1)"
+    ID_QUIKVIEW_COPY        "Salin terseleksi atau imej ke papanklip"
+    ID_GOTO_ROOT            "Akar drive folder skrg, cth. C:\\"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MARK_SELECTION_UNSELECT 
+                            "Tdk seleksi semua item yg terseleksi sblmnya tersimpan di papanklip"
+    ID_EDIT_PASTESPECIAL_FOLDERSTRUCTURE 
+                            "Tempel semua dan hanya subfolder kosong"
+    ID_EDIT_PASTESPECIAL_STRUCTUREDSCRAPCLIPS 
+                            "Tempel item (sumber dr kontainer skrap) membuat kembali struktur subfolder asli"
+    ID_TOOLS_SUBFOLDERSIZE  "Kalkulasi ukuran total terpakai oleh folder dan subfoldernya\nMeasure (Ctrl+D)"
+    ID_LTB_NEW              "Tambah baru (Space)"
+    ID_LTB_DELETE           "Hapus (Del)"
+    ID_LTB_UP               "Pindah keatas (Ctrl+Up)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_SORTBY_UNSORTED "Jangan sortir item; display mrk dlm urutan baca dr kepingan"
+    ID_VIEW_ARRANGEBY_PATH  "Sortir berdasar jalur folder ortu"
+    ID_VIEW_SORTBY_OTHER    "Sortir berdasar kolom non-standar"
+    ID_VIEW_SORTBY_ASCENDING 
+                            "Toggle sortir dr ""lbh kecil"" ke ""paling besar"""
+    ID_TOOLS_FREESPACE      "Cek ruang kosong kepingan saat dijelajahi; refresh tampilan bila perlu\nSpace"
+    ID_FILE_CHANGETYPE      "Alihnama item termasuk ekstensi DOS"
+    ID_FILE_BROWSEFLAT      "Buka kontainer skrap utk seleksi (folder atau cida) dan tambahkan semua isi scr rekursif (<Ctrl> utk menggunakan kembali jendela yg tlh ada)\nFlatten (Shift+Enter)"
+    ID_HELP_CHECKUPDATES    "Pergi ke situs web utk program bangun terakhir"
+    ID_WINDOW_LIST          "Daftar semua jendela yg dikontrol oleh aplikasi ini; dapat saling bertukar\nWindows (Ctrl+W)"
+    ID_VIEW_SAVESETTINGSNOW "Simpan semua setting skrg segera"
+    ID_EDIT_COPYSELECTION   "Salin teks kolom item terseleksi yg tampak pd panel aktif (utk pencetakan dsb)"
+    ID_MARK_SELECTION_STORE "Ingat item terseleksi utk penggunaan nanti"
+    ID_MARK_SELECTION_SELECT 
+                            "Seleksi semua item yg tersimpan sblmnya di papanklip terpilih"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERRDDV_NOCOLUMNS    "Anda hrs seleksi sekrgnya satu kolom"
+    IDS_ERR_NOFREESPACE     "Perintah ini hanya dpt diterapkan ke folder sistem file"
+    IDS_ERR_NORENCOLUMN     "Kolom ini tdk dpt dialihnama ditempat; silakan beri kolom Nama dulu"
+    IDS_ERR_NOSELCLIP       "Papanklip terseleksi kososng"
+    IDS_ERR_SECNOMATCH      "Tdk ada item yg cocok di papanklip terseleksi"
+    IDS_ERR_PSNODIRS        "Obyek tertempel tdk memiliki folder"
+    IDS_ERR_PSWRITE         "Error penulisan ketika tempel target spesial"
+    IDS_ERR_PSDESKTOP       "Struktur relatif folder membingungkan; tempel batal"
+    IDS_ERR_RULEINVALID     "Data tdksah berdsr aturan\nSilakan cek tgl dan ukuran scr terurut"
+    IDS_ERRDDV_NOLOOKIN     "Anda hrs tentukan folder awal utk pencarian"
+    IDS_ERR_FILTERNOCON     "Saringan pencarian tdk sehrsnya tdk memiliki batasan"
+    IDS_ERR_LOOKINFAULT     "Spesifikasi ""Lihat di"" tdk sah"
+    IDS_ERR_NOTFILESYSCMD   "Perintah ini hanya dpt diterapkan utk item sistem file"
+    IDS_ERR_ATTRIBUTEIO     "Bbrp atribut file tdk dpt diset"
+    IDS_ERR_NOCOMMENT       "Bbrp item tdk mendukung komentar (partisi FAT?); atau file pny atribut hanya-baca"
+    IDS_ERR_NOITEMSNODUPE   "Pertama anda hrs isi item yg ingin dibandingkan (cth. gunakan perintah Jalur Datar)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_COPYCOLSOK      "Kolom terseleksi disalin ke papanklip"
+    IDS_MSG_SELCLIPOK       "Seleksi skrg disimpan"
+    IDS_MSG_ACTIVATESIZECOL "Hasil ukuran folder terbaik ditampilkan di kolom ukuran stok"
+    IDS_MSG_DIRSIZEPROGRESS "Membaca subfolder... (ESC utk batal)"
+    IDS_DTUNIT_MONTH        "bulan"
+    IDS_DTUNIT_DAY          "hari"
+    IDS_DTUNIT_HOUR         "jam"
+    IDS_DTUNIT_MINS         "menit"
+    IDS_DTUNIT_SEC          "detik"
+    IDS_DTUNIT_YEAR         "tahun"
+    IDS_FMT_PREVDATE        "%s tgl dlm %u terakhir %s "
+    IDS_FMT_DATEWITHIN      "%s date between %s and %s"
+    IDS_FMT_DATEAFTER       "%s date later than %s"
+    IDS_FMT_DATEBEFORE      "%s date earlier than %s"
+    IDS_FMT_INTWITHIN       "%s value from %u%c to %u%c"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EST_IPATH           "Jalur panel tdk aktif"
+    IDS_EST_IFOCUS          "Fokus panel tdk aktif"
+    IDS_EST_IFULLPATH       "Jalur penuh fokus tdk aktif"
+    IDS_EST_ZIPTEMP         "File folderzip terekstraksi"
+    IDS_EST_COMMA           "Koma (,)"
+    IDS_FMT_FREESPACE       "Sisa ruang: "
+    IDS_FMT_SELRANGE        "Batas bawah item %d"
+    IDS_TIT_RENAMEDOS       "Nama baru item:"
+    IDS_MIRRORB_ON          "Jelajah bayangan & geserl ON"
+    IDS_MIRRORB_OFF         "Jelajah bayangan & geserl OFF"
+    IDS_SCRAP_UNTITLED      "tdk bernama"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EST_FILE            "Nama file"
+    IDS_EST_BASE            "Nama dasar"
+    IDS_EST_EXT             "Ekstensi"
+    IDS_EST_COUNTER         "Penghitung otomatis"
+    IDS_EST_DOLLAR          "Dollar ($)"
+    IDS_EST_DATE            "Tgl modifikasi"
+    IDS_EST_PARENT          "Folder ortu"
+    IDS_EST_FOLDER          "Jalur folder"
+    IDS_EST_PATH            "Jalur lengkap"
+    IDS_EST_SEL             "Semua nama file terseleksi"
+    IDS_EST_SELPATH         "Semua jalur lengkap terseleksi"
+    IDS_EST_LPATH           "Kiri (atas) jalur panel"
+    IDS_EST_RPATH           "Kanan (bawah) jalur panel"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STOCKDESCR_SUBITEMS "Jumlah subitem langsung dlm suatu folder"
+    IDS_STOCKDESCR_KEYWORDS "Katakunci berkenaan dgn dokumen"
+    IDS_STOCKDESCR_ADS      "Penghitung aliran data alternatif"
+    IDS_STOCKDESCR_VERFIRMA "Perusahaan punya hak atas kode binary"
+    IDS_STOCKDESCR_VERCPRITE "Perluasan informasi module"
+    IDS_STOCKDESCR_LINKTGT  "Alur ke obyek yg terhub dgn cara singkat"
+    IDS_STOCKDESCR_EXIFCX   "Lebar gambar (EXIF)"
+    IDS_STOCKDESCR_EXIFCY   "Tinggi gambar (EXIF)"
+    IDS_STOCKDESCR_EXIFDATE "Tgl saat gambar diambil (EXIF)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STOCKDESCR_FULLNAME "Nama file aktual"
+    IDS_STOCKDESCR_EXTENSION "Ekstensi nama file"
+    IDS_STOCKDESCR_SIZE     "Ukuran file"
+    IDS_STOCKDESCR_ATTRIBUTES "Atribut file"
+    IDS_STOCKDESCR_MODIFIED "Tgl terakhir modifikasi"
+    IDS_STOCKDESCR_CREATED  "Tgl pembuatan"
+    IDS_STOCKDESCR_ACCESSED "Tgl terakhir mengakses"
+    IDS_STOCKDESCR_TYPE     "Tipe file"
+    IDS_STOCKDESCR_PATH     "Jalur lengkap container"
+    IDS_STOCKDESCR_VERSION  "Program eksekutabel atau versi DLL"
+    IDS_STOCKDESCR_HLINKS   "Jumlah sambungan keras"
+    IDS_STOCKDESCR_CHECKSUM "Cekjumlah sederhana dr isi"
+    IDS_STOCKDESCR_VOLINFO  "Informasi media data"
+    IDS_STOCKDESCR_83       "Nama DOS 8.3"
+    IDS_STOCKDESCR_COMPRESSED 
+                            "Ukuran aktual yg terpakai pd diskk (termasuk kompres/file bebas)"
+    IDS_STOCKDESCR_COMMENT  "Informasi pemakai tambahan"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_SHREDWARNING    "Anda akan menggiring file ke kepunahan.\nMustahil utk mengembalikan data yg tlh diurai.\n\nApa anda sungguh ingin proses diajalankan?"
+    IDS_MSG_SHREDDING       "Urai... (ESC to abort)"
+    IDS_MSG_SHREDABORTED    "Urai batal, tapi bbrp file sdh benar2 terhapus"
+    IDS_OVERWRITE_QUESTION  "%s\n\nFile dgn nama ini sdh ada; ingin tetap tindih penulisan?"
+    IDS_SPLIT_CONFIRMTITLE  "File Split"
+    IDS_MSG_BOOKMARKSET     "Set penandabuku ok."
+    IDS_SPLIT_PROMPT        "Split... (ESC utk batal)"
+    IDS_ASYNCMERGE          "Tgl pembuatan file terpilih tdk terurut\n(yakinkan anda tlh mengecek/sortir seperlunya)\n\nProses penggabungan tetap lanjut?"
+    IDS_MERGE_TARGET        "Penggabungan nama target"
+    IDS_MERGE_PROMPT        "Gabung... (ESC utk batal)"
+    IDS_CHKBLD_ALLOK        "Semua target sdh terkini"
+    IDS_CHKBLD_NOMATCH      "Tdk ada item yg sesuai dgn saringan sumber yg ditentukan"
+    IDS_STOCKDESCR_NAME     "Display nama"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GOTO_STARTMENU       "Folder mewakili tombol Start"
+    ID_GOTO_STARTUP         "Program memulai setiap saat anda logon"
+    ID_GOTO_CDBURNING       "File menunggu utk ditulis ke CD (hanya XP)"
+    ID_GOTO_SENDTO          "Target nampak dlm menu konteks Kirim Ke shell"
+    ID_BOOKMARKS_FAVORITES  "Pergi ke folder penyimpan favorit eksplorer"
+    ID_TOOLS_FINDFILES      "Cari file dan folder dimana sesuai suatu saringan\nTemukan (Ctrl+F)"
+    ID_MARK_SYNCWIZARD      "Sinkronisasi panel dengan pilihan mode-penjahit"
+    ID_MARK_CHECKBUILD      "Tandai item menurut aturan transformasi file (cth. kompilasi)\nBangun (Ctrl+F12)"
+    ID_VIEW_SELECTCOLUMNS   "Atur kolom utk mode lihat detil\nKolom (Alt+K)"
+    ID_MARK_SELECTRANGE     "Seleksi sejumlah item dibawah yg sedang aktif"
+    ID_VIEW_SORTBY_NAME     "Sortir scr alfabet berdasar nama"
+    ID_VIEW_SORTBY_SIZE     "Sortir berdasar ukuran, dr terkecil ke terbesar"
+    ID_VIEW_SORTBY_DATE     "Sortir berdasar tgl modifikasi, dr terkini smp tertua"
+    ID_VIEW_SORTBY_TYPE     "Sortir berdasar ekstensi nama file"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_HELP_CONTENTS        "Manual lengkap operasi"
+    ID_HELP_LICENCEAGREEMENT 
+                            "Baca persyaratan & kondisi utk penggunaan program ini"
+    ID_HELP_CHANGES         "Lihat daftar perubahan saat ini dan fitur yg baru"
+    ID_GOTO_SAMEFOLDER      "Paksa panel tdk aktif ke folder yg sama spt yg sedang aktif (<Alt> utk kebalikannya)\nPaksa"
+    ID_GOTO_SWAPPANES       "Perubahan isi dari dua panel scr mutual"
+    ID_GOTO_DESKTOP         "Akar ruangnama"
+    ID_GOTO_MEDOCS          "Mengandung file pribadi"
+    ID_GOTO_NETWORK         "Komputer yg terdekat"
+    ID_GOTO_KRAP            "Deleted documents"
+    ID_GOTO_CPANEL          "Setting komputer"
+    ID_GOTO_MEKOMP          "Lokal dan mapped drive"
+    ID_GOTO_PRINTERS        "Printer tersedia"
+    ID_GOTO_RECENTD         "Dokumen dan folder terakses dlm waktu terakhir"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYNC_NOMATCH        "Tdk ada item yg sesuai dgn bayangan sinkronisasi yg diminta"
+    IDS_SYNC_DODGY          " (undetermined items exist)"
+    IDS_MSG_GREPROMPT       "Scan isi... (ESC to abort)"
+    IDS_GREP_NOMATCH        "Tdk ada item yg sesuai dgn aturan (teks) yg ditentukan"
+    IDS_GREP_FOUND          "Item yg sesuai aturan (teks) terseleksi utk aksi lbh lanjut"
+    IDS_TIT_CMDHISTORY      "Seleksi perintah:"
+    IDS_MSG_CMDTOKENS       "Huruf spesial ini scr otomatis disubstitusikan ke template perintah:\n\n$N\tNamafile (sample.txt)\n$B\tNamabasis (sample)\n$E\tEkstensi (txt)\n$P\tJalur (c:\\folder)\n$D\tTgl modifikasi (13/3/2004 10:12)\n$C\tNama jelas ortu (folder)\n$F\tJalur+file (c:\\folder\\sample.txt)\n$S\tSemua nama file terseleksi\n$A\tSemua nama file terseleksi (jalur penuh)\n$L\tKiri (atas) jalur panel\n$R\tKanan (bawah) jalur panel\n$I\tJalur panel tdk aktif\n$Q\tNama file dr panel tdk aktif (other.txt)\n$G\tNamafile+jalur dr panel tdk aktif (d:\\other.txt)\n$Z\tNama file sementara terekstrak dr folder zip, FTP, dsb\n$#\tKonter meningkat otomatis dimulai dr nomor #\n$?\tPermintaan satu alasan\n$$\t(Keluar) utk satu $\n\nSemua dibuat huruf kecil (cth. $f) gunakan ringkas 8.3 file/nama jalur\n\n${column_name} sisipkan isi nama kolom;\ne.g. ${size} akan diganti dgn ukuran file, ${name} sama spt $N dsb"
+    IDS_MSG_BRANCHEXPAND    "Ekspansi semua cabang... (ESC utk batal)"
+    IDS_OFN_SAVEPROMPT      "Simpan perubahan ke '%1' ?"
+    IDS_MSG_SYNCPROGRESS    "Bandingkan item... (ESC utk batal)"
+    IDS_ECF_EOL             "Akhir dari baris"
+    IDS_ECF_TAB             "Tab"
+    IDS_ECF_CR              "Kembali"
+    IDS_ECF_LF              "Makan baris"
+    IDS_ECF_SPACE           "Spasi"
+    IDS_ECF_COMMA           "Koma"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_VISUALFILTER    "Batasi dayalihat item menurut wildcard yg disuplai"
+    ID_GOTO_MIRRORBROWSING  "Jika, panel mengikuti satu sama lain saat anda menyeberang melintasi hirarki folder\nMirror (Ctrl+M)"
+    ID_TOOLS_COMMANDSCRIPT  "Buat script (batch file), terapkan template perintah pd setiap item terseleksi\nScript (Ctrl+B)"
+    ID_EDIT_SYNCOPASTE      "Paksa hasil sinkronisasi dalam, salin item terseleksi ke folder target yg sesuai"
+    ID_MARK_CONTAININGTEXT  "Seleksi file yg mengandung bbrp string teks tertentu\nTemukan teks (Ctrl+G)"
+    ID_TOOLS_RUNHISTORY     "Seleksi perintah dari daftar sejarah\nRun sejarah (Ctrl+F10)"
+    ID_FOCUSTO_TREE         "Tukar ke panel pohon"
+    ID_FOCUSTO_ADDRESS      "Tukar ke batang alamat"
+    ID_FOCUSTO_QUICKVIEW    "Tukar ke panel pralihat cepat"
+    ID_FOCUSTO_MMFV         "Tukar ke panel buangan-mini"
+    ID_HELP_ALPHAINFO       "Petunjuk pengenalan utk xplorer²"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NOFILTERMATCH   "Tdk ada item yg sesuai dgn saringan yg dikehendaki"
+    IDS_ERR_INTERRUPT       "Baca error atau interupsi pemakai"
+    IDS_ERR_NOSYNCFOLDERS   "Tdk ada folder sesuai sinkronisasi ditemukan; apakah sdh anda coba seblmnya perintah sinkronisasi (cth. F9)?"
+    IDS_ERR_CMDSYNTAX       "Silakan gunakan $ atau > utk menentukan tipe perintah atau ketik jalur utk menambahkannya dlm daftar"
+    IDS_ERR_IOSCRIPT        "I/O error saat penulisan file script"
+    IDS_ERR_OUTOFMEM        "Tdk cukup memori utk operasi yg diminta"
+    IDS_ERR_CMDTEMPL        "Template perintah tdk sah"
+    IDS_ERR_NOHELPFILE      "File ""%s"" tdk ada dlm folder instalasi"
+    IDS_ERR_SHREDIO         "Error penulisan, penguraian dihentikan"
+    IDS_ERR_NOTFILE         "Operasi ini memerlukan obyek file"
+    IDS_ERR_SPLITIO         "I/O error atau pemakai menghentikan operasi"
+    IDS_ERR_NOMERGE         "File terseleksi terlalu sedikit utk digabung"
+    IDS_ERR_NOFOLDERTARGET  "Folder target tdk sah"
+    IDS_ERRDDV_BUILDFROM    "Bidang ""Dari"" tdk sehrsnya kosong"
+    IDS_ERRDDV_BUILDTO      "Bidang ""Ke"" tdk sehrsnya kosong\natau mengandung wildcard atau/dan dot karakter"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GOTO_FORWARD         "Tingkatkan ke folder selanjutnya dlm daftar\nMaju (Alt+right)"
+    ID_GOTO_BOOKMARK        "Pergi ke folder tertandai sblmnya\nLompat (Ctrl+F1)"
+    ID_GOTO_SETBOOKMARK     "Set penandabuku-cepat pd folder skrg"
+    ID_GOTO_NEXTSELECTED    "Lompat ke item terpilih selanjutnya"
+    ID_GOTO_PREVSELECTED    "Lompat ke item terpilih sebelumnya"
+    ID_VIEW_DUALPANE        "Toggle mode satu/dua panel folder\nDual (Ctrl+O)"
+    ID_MARK_SYNCHRONIZEPANES 
+                            "Seleksi item berbeda diantara panel, menggunakan informasi tgl\nBanding (F9)"
+    ID_TOOLS_REPEATCOMMAND  "Ulangi-cepat perintah tereksekusi terakhir"
+    ID_MARK_SELECTGROUP     "Seleksi item yg sesuai saringan"
+    ID_MARK_UNSELECTGROUP   "Tdk seleksi item yg sesuai saringan"
+    ID_MARK_INVERTSELECTION "Seleksi item tdk terseleksi dan sebaliknya"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ADDRESSBAR          "Batang alamat"
+    IDS_TRANSLATION         "Indonesian translation"
+    IDS_MSG_FOCUSWARP       "Fokus kursor melewati item terakhir"
+    IDS_SYNC_FILTERSON      "Sekrg2nya satu panel punya saringan visual aktif;%nthe synchronization may be incomplete.%nContinue anyway? "
+    IDS_SYNC_IDENTIFIED     "Sinkronisasi teridentifikasi dan item terseleksi utk aksi lbh lanjut"
+    IDS_SYNC_IDENTICAL      "Isi dari dua folder nampak identik"
+    IDS_MSG_NOCMDHISTORY    "Sejarah perintah kosong"
+    IDS_SELECTFILTER        "Seleksi saringan"
+    IDS_UNSELECTFILTER      "Tdk seleksi saringan"
+    IDS_VF_INSTRUCTIONS     "Tentukan saringan (cth. '*.cpp') dan tekan <Return>"
+    IDS_VF_TITLE            "Saringan visual:"
+    IDS_MSG_READINGFOLDER   "Baca isi folder..."
+    IDS_VF_FILESNOTSAVED    "Saringan visual aktif (atau pengecek kembaran) mungkin tdk dpt mengenali bbrp item;%nspt item tersembunyi tdk akan disimpan; Tetap dilanjutkan? "
+    IDS_FP_BFFTITLE         "Seleksi folder utk pendataran"
+    IDS_FP_FLATTENINGMSG    "(ESC utk batal); pendataran folder %d..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_DIRSTATFRAME        "data folder - "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_SCRAPFRAME          "kontainer skrap #"
+    IDR_CMDFRAME            "konsol²"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NOMAINFRAME     "Jendela frame utama utk thread ini tdk tersedia"
+    IDS_ERR_NOSCRAPFRAME    "Tdk dpt membuat kontainer skrap"
+    IDS_ERR_EXTEDITVIEW     "Tdk dpt memanggil editor/pelihat; cek baris perintah pd Tool | Pilihan"
+    IDS_ERR_CANTEXECUTE     "CPU sdh mencoba yg terbaik tapi perintah ini tdk terdefinisi"
+    IDS_ERR_HLNOTFILESYS    "Perintah tempel spesial memerlukan item sumber sistem file (& target)"
+    IDS_ERR_HLCANTLINK      "Error pembuatan link keras; apakah sumber & target ada pd partisi NTFS yg sama?"
+    IDS_ERR_HLUPONSELF      "Tdk dpt menempel (atau link keras) suatu item dlm folder aslinya"
+    IDS_ERR_HLBOOTSTRAP     "Tdk dpt menempel folder kedlm (dibwh) dirinya sendiri"
+    IDS_ERR_MFVWRITEKAK     "Error penulisan isi file"
+    IDS_ERR_MFVLOAD         "Error pembacaan dan/atau isi file terkorupsi"
+    IDS_ERR_MFVLOADPARTIAL  "Bbrp item tdk dpt ditemukan"
+    IDS_ERR_PIDLRANGE       "Jalur yg diminta berada diluar akar penamaan lokal"
+    IDS_ERR_FOLDERKAK       "Baca dari %1 gagal"
+    IDS_ERR_DATASOURCE      "Folder ini tdk nampak sbg sumber data yg sah"
+    IDS_ERR_DROPTARGET      "Folder target tdk dpt menerima operasi file ini"
+    IDS_ERR_INVALIDFILTER   "Saringan yg ditentukan tdk sah"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_REMOVE          "Buang item terseleksi dr panel ini (file nyata tdk terpengaruh)\nBuang (Del)"
+    ID_PMRITEDRAG_INSERTHERE "Sisipkan item pada panel ini"
+    ID_PMRITEDRAG_CANCEL    "Batalkan operasi drop-kanan ini"
+    ID_ACTIONS_SPLIT        "Split file terseleksi kedlm pecahan kecil\nSplit"
+    ID_ACTIONS_MERGEFILES   "Kombinasikan item terseleksi kedlm satu file (dlm urutan yg tertera pd panel)\nGabung"
+    ID_ACTIONS_SAVEAS       "Simpan isi dgn nama berbeda"
+    ID_ACTIONS_WRITECONTENTS 
+                            "Simpan isi panel aktif dlm file utk pemanggilan kembail\nSimpan (Ctrl+S)"
+    ID_ACTIONS_LOADCONTENTS "Buka isi file tertulis sblmnya\nBuka"
+    ID_ACTIONS_FLATTENPATH  "Ekstrak folder dan semua subfoldernya disini (atau buka file cida)"
+    ID_TOOLS_RUNCOMMAND     "Mulai jendela (GUI) program\nRun"
+    ID_TOOLS_DOSCOMMAND     "Jlnkan perintah yg memerlukan interpreter DOS (dir, ren, dsb)\nDOS (F10)"
+    ID_GOTO_BACK            "Kembali ke folder terjelajah sblmnya\nKembali (Alt+left)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_OPENWARN        "Apakah anda yakin ingin membuka semua file ini?"
+    IDS_MSG_MPVITEMSREMOVED "Item dihilangkan dr tampilan (msh ada pd kepingan tentu saja)"
+    IDS_MSG_FILTERMAYHIDE   "Saringan aktif tdk dpt mengenali dgn jelas item yg disisipkan"
+    IDS_HL_CONFIRMTITLE     "Link Keras"
+    IDS_HL_STATUSMSG        "Tempel spesial... (ESC utk batal)"
+    IDS_SCRAPTITLE          "scrap² - "
+    IDS_MFV_WRITEOK         "Isi panel tersimpan ok"
+    IDS_COMMANDPROMPT       "Ctrl+Arrows/Return to select/pick names; F1 to complete names; $ (script) tokens accepted; press <Return> to run"
+    IDS_MEDIA_UNKNOWN       "(unknown)"
+    IDS_MEDIA_FLOPPY        "Floppy"
+    IDS_MEDIA_FIXED         "Hard Disc"
+    IDS_MEDIA_REMOTE        "Network"
+    IDS_MEDIA_CD            "CDROM"
+    IDS_MEDIA_RAM           "Ram Disc"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ACTIONS_SHRED        "Penghancuran total dr item terseleksi\nShred"
+    ID_ACTIONS_TOUCH        "Set tgl modifikasi item terseleksi"
+    ID_MARK_STICKYSELECTION "Toggle mode seleksi item lengket (tdk dipengaruhi oleh klik atau kunci)\nSticky (Alt+S)"
+    ID_MARK_UNSELECTALL     "Tdk seleksi semua item"
+    ID_MARK_USEVISUALFILTER "Toggle wildcard- atau nyala/mati saringan berdasar aturan"
+    ID_VIEW_LOCATEINTREE    "Lokalisir folder terjelajahi dlm hirarki pohon\nSinkron pohon (Alt+T)"
+    ID_VIEW_SHOWTREE        "Lihat atau sembunyikan panel pohon folder\nPohon (Ctrl+T)"
+    ID_WINDOW_SCRAPFRAME    "Buka kontainer skrap utk scr sementara menyimpan dari berbagai macam folder\nSkrap"
+    ID_ACTIONS_CHANGEATTRIBUTES 
+                            "Ubah tgl dan atribut DOS dr item terseleksi\nAtribut (Shift+F12)"
+    ID_FILE_PROPERTIES      "Tampilkan sifat shell dr item terseleksi\nSifat (F12)"
+    ID_FILE_BROWSE2         "Buka item terseleksi (aksi default)"
+    ID_FILE_CLONEBROWSE2    "Panggil item terseleksi kedlm suatu panel folder regular"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOPMOST              "Pin jendela ini diatas semua jendela lain (toggle)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_THUMBNAILS      "Tampilkan pralihat item ikon"
+    ID_VIEW_PANESTYLE_MINITHUMBS "Tampilkan pralihat kecil utk item"
+    ID_EDIT_COPYNAMES       "Salin nama lengkap item terseleksi ke papanklip (<Shift> scr ringkas jalur 8.3)"
+    ID_MARK_SELECTALL       "Seleksi semua item"
+    ID_FILE_VIEW            "Lihat isi file sbg teks\nLihat (F3)"
+    ID_FILE_EDIT            "Edit isi file sbg teks\nEdit (F4)"
+    ID_EDIT_COPYPREVIEW     "Salin imej pralihat item sbg bitmap"
+    ID_FILE_DELETE          "Kirim item terseleksi ke recycle bin (<Shift> utk penghapusan permanen)\nHapus (Del)"
+    ID_FILE_RENAME          "Alihnama item terseleksi scr langsung\nAlihnama (F2)"
+    ID_EDIT_COPYTO          "Salin seleksi ke folder lain (<Alt> for last target)\nSalin ke (F5)"
+    ID_EDIT_MOVETO          "Pindah seleksi ke folder lain (<Alt> for last target)\nPindah ke (F6)"
+    ID_ACTIONS_NEWFILE      "Buat file baru (kosong)\nFile baru (F7)"
+    ID_ACTIONS_NEWFOLDER    "Buat folder baru\nFolder baru (F8)"
+    ID_EDIT_PASTELINK       "Buat potongsingkat utk item yg termuat di papanklip"
+    ID_EDIT_FINDTARGET      "Temukan item target yg ditunjukkan oleh file potongsingkat ini (link resolve)"
+    ID_ACTIONS_PASTEHARDLINK 
+                            "Buat link keras utk item pada papanklip (hanya NTFS)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_COPYNAMEOK      "Nama lengkap terseleksi disalin ke papanklip"
+    IDS_MSG_FOLDERBUSTED    "Folder sdh dialihnama atau dihapus; diubah ke desktop"
+    IDS_MSG_REFRESHOK       "Isi panel telah di-refresh ok"
+    IDS_STAT_EMPTYFOLDER    "Panel kosong"
+    IDS_STAT_FORMATTOTAL    "%u item"
+    IDS_STAT_VIRTFOLDER     "ekstensi nama"
+    IDS_STAT_THINGME        "item virtual"
+    IDS_STAT_FOLDER         "folder"
+    IDS_STAT_SHORTCUT       "link"
+    IDS_MSG_PREVIEWCOPIED   "Pralihat imej tersimpan di papanklip"
+    IDS_NEW_FILE            "File Baru"
+    IDS_NEW_FOLDER          "Folder Baru"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STOCKCOL_SIZE       "Ukuran"
+    IDS_STOCKCOL_ATTRIBUTES "Atribut"
+    IDS_STOCKCOL_MODIFIED   "Termodifikasi"
+    IDS_STOCKCOL_CREATED    "Terbuat"
+    IDS_STOCKCOL_ACCESSED   "Terakses"
+    IDS_STOCKCOL_TYPE       "Tipe"
+    IDS_STOCKCOL_PATH       "Jalur"
+    IDS_STOCKCOL_VERSION    "Versi"
+    IDS_STOCKCOL_HLINKS     "Link"
+    IDS_STOCKCOL_CHECKSUM   "Cekjumlah"
+    IDS_STOCKCOL_VOLINFO    "Medium"
+    IDS_STOCKCOL_83         "8.3 Nama"
+    IDS_STOCKCOL_COMPRESSED "Ukuran pada disk"
+    IDS_STOCKCOL_COMMENT    "Komentar"
+    IDS_STOCKCOL_SUBITEMS   "Isi"
+    IDS_STOCKCOL_KEYWORDS   "Katakunci"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_NUMBOUNDS       "Silakan masukkan nomor diantara %1!d! dan %2!d!"
+    IDS_ERR_INVALIDINPUT    "CPU tdk dpt mengartikan input terakhir"
+    IDS_ERR_PARTIALREAD     "Bbrp item tdk bisa diakses (tdk cukup hak mengakses?)"
+    IDS_ERR_NOVISFILTER     "Tdk tdpt saringan visual aktif"
+    IDS_ERR_NOCAPABILITY    "Seleksi tdk mendukung kt kerja ini"
+    IDS_ERR_NODRAGDROP      "Seleksi tdk bsa didrag"
+    IDS_ERR_NOCLIPBOARD     "Papanklip tdk bisa diakses"
+    IDS_ERR_REFRESHFAILED   "Isi folder tdk dpt di-refresh; coba keluar dan masukkan lagi"
+    IDS_ERR_NOCONTENT       "Tdk dpt mengakses isi item terseleksi"
+    IDS_ERR_PASTEFAULT      "Tempel dr papanklip gagal"
+    IDS_ERR_RENAMEFAULT     "Krn satu atau lain hal, item tdk dpt dialihnama"
+    IDS_ERR_RENAMENIET      "Item tdk dpt dialihnama"
+    IDS_ERR_NOSHORTCUT      "Perintah ini memerlukan potongsingkat item terseleksi"
+    IDS_ERR_RESOLVELINK     "Bbrp link tdk bisa dibuka hari ini"
+    IDS_ERR_NOPREVIEW       "Item ini tdk punya imej pralihat"
+    IDS_ERR_CREATEFAULT     "Pembuatan item baru gagal"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MEMO_REGNAME        "Layout"
+    IDS_TITLE_ADDCOLSET     "Set judul kolom"
+    IDS_SIZE_FOLDER         "<folder>"
+    IDS_COLUMN_OFF          "<n/a>"
+    IDS_COLYMN_FILETYPE     "file"
+    IDS_STOCKCOL_NAME       "Nama"
+    IDS_STOCKCOL_FULLNAME   "Nama lengkap"
+    IDS_STOCKCOL_EXTENSION  "Ekstensi"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_REGDATA_FIRST        "Jelajah item aktif dlm suatu jendela baru dgn layout tersimpan"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INFO_PANE            "file: 1,999,999 B; Modifkasi 31/01/2001 13:35:00"
+    ID_IOFFSET_PANE         "19999"
+    ID_SELECTION_PANE       "9999999: 999.234 MB"
+    ID_FILTRO_PANE          "F"
+    ID_FREESPACE_PANE       "100.9MB bebas (99%)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_CLONE         "Buka jendela eksplorer lain spt yg ini"
+    ID_FILE_TRASH           "Hapus seleksi scr permanen (bypass recycle bin)\nTrash (Shift+Del)"
+    ID_WINDOW_SETREGKEY     "Simpan layout jendela skrg dan setting sejarah"
+    ID_FILE_BROWSE          "Jelajah folder atau panggil item"
+    ID_FILE_CLONEBROWSE     "Jelajah item terfokus dlm jendela baru"
+    ID_FILE_UPALEVEL        "Jelajah satu level keatas dr folder skrg\nParent (Bksp)"
+    ID_VIEW_LARGEICONS      "Display item menggunakan ikon besar"
+    ID_VIEW_SMALLICONS      "Display item menggunakan ikon kecil"
+    ID_VIEW_LIST            "Display item dlm daftar"
+    ID_VIEW_DETAILS         "Display informasi detil utk setiap item"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Siap"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_SCRESTORE       "Kembalikan jendela ke ukuran normal"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_SCSIZE          "Ubah ukuran jendela"
+    ATL_IDS_SCMOVE          "Ubah posisi jendela"
+    ATL_IDS_SCMINIMIZE      "Kecilkan jendela ke suatu ikon"
+    ATL_IDS_SCMAXIMIZE      "Besarkan jendela ke ukuran penuh"
+    ATL_IDS_SCCLOSE         "Tutup jendela aktif"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Lihat atau sembunyikan kontainer toolbar (rebar)"
+    ID_VIEW_STATUS_BAR      "Lihat atau sembunyikan bar status"
+    ID_VIEW_REFRESH         "Refresh isi panel\nRefresh (Ctrl+R)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPY            "Salin seleksi dan taruh pd papanklip\nSalin (Ctrl+C)"
+    ID_EDIT_CUT             "Potong seleksi dan taruh pd papanklip\nPotong (Ctrl+X)"
+    ID_EDIT_PASTE           "Sisipkan isi papanklip\nTempel (Ctrl+V)"
+    ID_EDIT_REPEAT          "Ulangi perintah menu terakhir"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display informasi program, nomor versi dan hakcipta\nTentang"
+    ID_APP_EXIT             "Keluar aplikasi (semua jendela terbuka)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_CLOSE           "Tutup jendela ini"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "xplorer²"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SBTIP_INFO          "Informasi item aktif"
+    IDS_SBTIP_OFFSET        "Index item aktif di daftar"
+    IDS_SBTIP_SELECT        "Pilihan informasi"
+    IDS_SBTIP_FILTER        "Indikator filter visual"
+    IDS_SBTIP_FREE          "Ruang kosong disc"
+    IDS_STR_LASTUSED        "(pakai terakhir)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_COMBO_EXIFILTER     "Batasi operasi ke file yg sesuai filter\nKetik wildcard atau pilih filter dari list yg terbuka"
+    IDC_CHECK_ARCHIVEAT     "Simulasi backup file semantik"
+    IDC_EDIT_GRPNAME        "akan tampil sbg kepala grup dlm daftar list"
+    IDC_KAT_LIST            "Dobel klik utk menambah atau edit grup\nMrk akan ditampilkan dgn urutan yg sama spt tampilan di daftar ini"
+    IDC_CATEGORIZER_SAVED   "Terdaftar dibwh Kustomis | Menu grup pesanan"
+    IDC_COMBO_CPSAVED       "Perbarui opsi tersimpan terdahulu\nAtau ketik nama utk opsi skr dan klik Simpan"
+    IDC_COMBO_CPPRESET      "Opsi set yg anda definisikan & simpan diawal"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_PASTESPECIAL_MULTIPASTE 
+                            "Sisip isi papanklip pd semua folder pilihan"
+    ID_VIEW_PANESTYLE_SHOWINGROUPS 
+                            "Grup item dlm window dgn sifat tersortir\nGrup"
+    ID_MOVEITEM_DOWN        "Pindahkan kebwh daftar item aktif (sementara)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_DROPCOUNT       "Tempel papanklip ke %d item"
+    IDS_MSG_DROPWARN        "Apa anda sungguh2 ingin membuang semua item ini?"
+    IDS_DATEFMT_HOUR        "Jam terakhir"
+    IDS_DATEFMT_TODAY       "Hari ini"
+    IDS_DATEFMT_YESTER      "Kemaren"
+    IDS_DATEFMT_WEEK        "Minggu ini"
+    IDS_DATEFMT_LASTWEEK    "Minggu terakhir"
+    IDS_DATEFMT_MONTH       "Bulan ini"
+    IDS_DATEFMT_LASTMONTH   "Bulan terakhir"
+    IDS_DATEFMT_YEAR        "Tahun ini"
+    IDS_DATEFMT_LASTYEAR    "Tahun terakhir"
+    IDS_DATEFMT_ANCIENT     "Sdh lama sekali"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FMT_MKTOTAL         "Total ukuran byte"
+    IDS_MSG_MKSIZE          "Menghitung ukuran... (ESC utk batal)"
+    IDS_GROUP_UNSPEC        "Tdk jelas"
+    IDS_SIZE_TINY           "Kecil sekali"
+    IDS_SIZE_SMALL          "Kecil"
+    IDS_SIZE_MEDIUM         "Sedang"
+    IDS_SIZE_LARGE          "Besar"
+    IDS_SIZE_HUGE           "Besar sekali"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MOVEITEM_UP          "Pindah keatas daftar item aktif (sementara)"
+    ID_MARK_TOTALSIZE       "Tandai item yg ukuran terkombinasi kira2 total yg diberikan"
+    ID_MARK_CURRENTGROUP    "Tandai semua item di grup ini"
+    ID_UNMARK_CURRENTGROUP  "Hilangkan tanda semua item di grup ini"
+    ID_MARK_QUICKSEARCH     "Pilih item dgn teks dlm namafile, kolom atau isi file"
+    ID_GOTO_NEXTGROUP       "Lompat ke permulaan grup berikutnya"
+    ID_GOTO_PREVGROUP       "Lompat ke permulaan grup seblmnya"
+    ID_EDIT_FOLDERJUNCTION_PASTE 
+                            "Buat penyambung disini menunjuk ke folder di papanklip"
+    ID_EDIT_FOLDERJUNCTION_DELETE 
+                            "Buang sambungan folder tanpa menyakiti folder tujuan"
+    ID_VIEW_ARRANGEBY_CUSTOMGROUPS 
+                            "Grup item dgn filter kompleks utk setiap kategori"
+    ID_CUSTOMIZE_CUSTOMGROUPS_ADDCURRENT 
+                            "Simpan kategori tampilan skr pd daftar"
+    ID_CUSTOMIZE_CUSTOMGROUPS_ORGANIZE 
+                            "Ganti name, hapus atau ubah urutan grup pesanan & tunjuk kunci shortcut"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_QSEARCH_PROMPT      "ketik frase anda dan tekan <Return> utk mencari (<Shift+Enter> utk memfilter)"
+    IDS_JUNCTION_PRE        "Sambung ke "
+    IDS_TIT_JUNCTION        "Nama folder sambungan"
+    IDS_JUNCTION_QUESTION   "Apa Anda serius menghilangkan sambungan:\n%s"
+    IDS_ROBUSTNIE           "Operation mantap hanya ditujukan utk sumber sistemfile && folder target. Ketika memindahkan file tempat tujuan hrs pd volume (drive) berbeda.\n\nTransfer ini akan selesai menggunakan fungsi normal windows, abaikan setiap pilihan makju atau filter."
+    IDS_MEMO_CATEGORY       "Kategori pesanan"
+    IDS_COPT_OVERWRITE      "Nama ini sdh dipakai;\nTindihtulis saja?"
+    IDS_COLB_AUTO           "Otomatis"
+    IDS_COLB_MORE           "Tambah warna..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_MRU_FILE        "Buka dokumen ini"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_GROUPNAME       "Silakan ketik nama utk grup ini"
+    IDS_ERRDDV_NOKATS       "Dobel klik pd kotak utk menambah skrgnya satu kategori"
+    IDS_ERR_INCOMPATKATEG   "Penggolong ini tdk cocok dgn tampilan skr\nAturannya sesuai utk tipe folder lain"
+    IDS_ERR_NOCUKATS        "Silakan definisikan pertama bbrp grup pesanan dgn Lihat | Atur scr menu"
+    IDS_ERR_NOOPTNAME       "Silakan ketik nama utk set pilihan ini"
+    IDS_ERR_OSETEXIST       "Set pilihan ini sdh tersimpan sbg '%1'"
+    IDS_ERRDDV_TEXTATTR     "Anda hrs tentukan attribut teks unik"
+    IDS_ERR_COLORCLASH      "Teks dan warna latarbelakang hrs berbeda"
+    IDS_ERR_TOOFUZZY        "Anda tdk dpt mengkombinasi wildcard dgn pencarian nama yg tdk jelas"
+    IDS_ERR_NOSLASH         "Anda hrs tdk menggunakan slash balik (\\) dlm pengidentifikasi nama"
+    IDS_ERR_HOTKEY          "Pintasan papankunci terpesan atau tdk diterima"
+    IDS_ERR_NONAMEDADS      "Item ini tdk mempinyai penamaan aliran kedua"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CUSTOMIZE_CUSTOMGROUPS_MORE "Pilih grup pesanan dr daftar lengkap"
+    ID_VIEW_LOCKVIEWER      "Jika terpilih pralihat akan menyetop item aktif sbb"
+    ID_VIEW_COLORCODING     "Pesan tampilan item berdasarkan tipe file"
+    ID_MARK_LIKETHIS_BODY   "Pilih (tandai) item dgn dasar nama sama dgn item terfokus"
+    ID_MARK_LIKETHISUNSEL_BODY 
+                            "Hilangkan tanda item dgn dasar nama sama dgn item terfokus"
+    ID_REPEAT_SHELLCMD      "Ulangi shell perintah menu konteks terakhir"
+    ID_TBCM_LOCKBAR         "Bekukan ukuran toolbar & lokasi (toggle)"
+    ID_VIEW_MINISCRAP       "Lihat atau sembunyikan area penahan item sementara (kotak jatuhan)\\buangan nMini"
+    ID_ACTIONS_GETSUBFOLDERS "Ekstrak semua subfolder (tanpa file)"
+    ID_FILE_CLEAR           "Kosongkan semua isi panel"
+    ID_ADDRESSBAR_GO        "Pergi ke lajur, jlnkan perintah, dll.\nGo (Enter)"
+    ID_MARK_SELECTION_SHOW  "Bawa item terpilih utk dilihat"
+    ID_CUSTOMIZE_KEYBOARD   "Ubah pintasan papankunci ke perintah menu"
+    ID_TABZ_COPYALLPATHS    "Salin lajur dr semua tab panel aktif"
+    ID_ACTIONS_ADS_SPLITSTREAMS "Ekstrak aliran kedua dari item aktif"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CATEGORIES_FIRST     "Perbarui grup pesanan ini"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_COLENCODE_LIST      "Dobel klik utk menambah atau edit filter dan attribut teks"
+    IDC_EDIT_FUZZY          "Persen kecocokan nama tdk jelas; 100% berarti identik\n80% akan membuat ""files"" cocok ke ""filas"" dan selanjutnya"
+    IDC_COMBO_CATEGORY      "Perintah diatur spt dlm menu"
+    IDC_HOTKEY              "Tekan kombinasi kunci baru dan klik Tunjuk\nBbrp kombinasi kunci tdk diijinkan"
+    IDC_BUT_RESET           "Set ulang semua kunci ke setting pabrikan"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FILTER_MUSIC        "file audio"
+    IDS_FILTER_VIDEO        "file video"
+    IDS_FILTER_DOCS         "dokumen"
+    IDS_FILTER_PICS         "gambar"
+    IDS_FILTER_PROGRAMS     "file program"
+    IDS_FILTER_SOURCE       "kode sumber"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EMPTYVIEW           "Gunakan drag-drop atau suatu menu utk menambah file atau folder"
+    IDS_MINISAVEPROMPT      "Jika anda ingin  preserve mempertahankan isi dari kepingan mini ini dan memanggil mrk scr otomatis stp kali anda membukanya, klik CANCEL dan simpan isinya menggunakan <Ctrl+S> atau menu konteksnya"
+    IDS_FILTERBLOCK         "Item ada; matikan filter visual utk melihatnya"
+    IDS_IGNOREPROB          "Abaikan problem ini?"
+    IDS_MISCETC             "Lain-lain"
+    IDS_MSG_KEYOVERWRITE    "Kombinasi kunci ini sdh ada dlm penggunaan.\nHapus penunjukan perintah lama? (%1!d!)"
+    IDS_TIT_KEYLIST         "Hotkey\tID\tDeskripsi\r\n"
+    IDS_ASK_REGIMPORT       "Ada setting lama xplorer2 dlm registry di komputer ini.\nMengimpor file setting anda akan menindih penulisan setting yg lama.\nTetap ingin diproses?"
+END
+
+#endif    // Unknown language: 0x21, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
